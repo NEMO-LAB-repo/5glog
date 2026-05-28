@@ -6,6 +6,12 @@ window.EVENT_INDEX = [
     dataFile: "data/events/handover.json"
   },
   {
+    id: "nr_measurement_events",
+    title: "NR Measurement Events",
+    view: "nrMeasurementEvents",
+    dataFile: "data/events/nr_measurement_events.json"
+  },
+  {
     id: "ue_registration",
     title: "UE Registration",
     view: "registration",

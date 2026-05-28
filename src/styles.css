@@ -89,7 +89,8 @@ button {
 }
 
 .explorer-screen,
-.viewer-screen {
+.viewer-screen,
+.event-config-screen {
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -485,6 +486,15 @@ button {
   padding: 16px;
 }
 
+.event-config-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  overflow: auto;
+}
+
 .viewer-bar {
   width: min(100vw - 32px, 1380px);
   display: flex;
@@ -507,6 +517,145 @@ button {
 .view-title {
   font-size: 22px;
   font-weight: 800;
+}
+
+.event-config-panel {
+  width: min(100vw - 32px, 1380px);
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  background: #ffffff;
+  padding: 28px;
+  display: grid;
+  gap: 22px;
+}
+
+.event-config-hero {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 18px;
+}
+
+.event-config-hero h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.event-config-hero p,
+.event-config-card p {
+  margin: 10px 0 0;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.event-config-card {
+  display: grid;
+  gap: 12px;
+}
+
+.event-config-card h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.event-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-chip {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+  padding: 6px 9px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.event-chip.is-action {
+  cursor: pointer;
+}
+
+.event-chip.is-action:hover {
+  background: #f2f2f2;
+}
+
+.event-table-wrap {
+  overflow: auto;
+  border: 2px solid #000000;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #000000;
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.event-table th {
+  background: #f4f4f4;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.event-table th:nth-child(1) {
+  width: 90px;
+}
+
+.event-table th:nth-child(4) {
+  width: 190px;
+}
+
+.event-table tr.is-muted {
+  color: #555555;
+}
+
+.event-code {
+  width: 76px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  text-align: center !important;
+}
+
+.observed-badge {
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.observed-badge.is-observed {
+  color: #006b3c;
+}
+
+.observed-badge.is-missing {
+  color: #777777;
+}
+
+.event-config-source {
+  color: #555555 !important;
+  font-size: 14px !important;
 }
 
 .placeholder-panel {

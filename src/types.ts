@@ -28,6 +28,28 @@ export type EventIndexItem = {
   status?: string;
 };
 
+export type MeasurementEventInfo = {
+  id: string;
+  condition: string;
+  handoverRelation: string;
+  observedInSample: boolean;
+};
+
+export type MeasurementEventDefinition = {
+  id: string;
+  title: string;
+  description: string;
+  source: string;
+  logEvidence: {
+    summary: string;
+    logcode: string;
+    fields: string[];
+  };
+  sampleObservation: string;
+  events: MeasurementEventInfo[];
+  interRatEvents: MeasurementEventInfo[];
+};
+
 export type FieldTreeRow = {
   pdu_type: number;
   message_type: string;
@@ -92,4 +114,4 @@ export type FieldIndexEntry = {
   records: FieldIndexRecord[];
 };
 
-export type ViewName = "home" | "event" | "message" | "field" | "handover" | "registration";
+export type ViewName = "home" | "event" | "message" | "field" | "handover" | "nrMeasurementEvents" | "registration";

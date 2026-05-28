@@ -1,11 +1,13 @@
 import eventIndexRaw from "../data/events/index.json";
 import handoverRaw from "../data/events/handover.json";
+import nrMeasurementEventsRaw from "../data/events/nr_measurement_events.json";
 import logcodeBundleRaw from "../data/generated/logcode_bundle.json";
 import logcodeIndexRaw from "../data/generated/logcode_index.json";
-import type { EventDefinition, EventIndexItem, FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary } from "./types";
+import type { EventDefinition, EventIndexItem, FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventDefinition } from "./types";
 
 export const eventIndex = eventIndexRaw as EventIndexItem[];
 export const handoverEvent = handoverRaw as EventDefinition;
+export const nrMeasurementEvents = nrMeasurementEventsRaw as MeasurementEventDefinition;
 export const logcodeRecords = logcodeIndexRaw as LogcodeSummary[];
 const logcodeBundle = logcodeBundleRaw as LogcodeRecord[];
 

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, FormEvent } from "react";
-import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, recordLabel } from "./data";
-import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MessageNoteEntry, MessageNotesStore, StepInfo, ViewName } from "./types";
+import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel } from "./data";
+import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepInfo, ViewName } from "./types";
 
 const messageNotesStorageKey = "handover-logcode-message-notes-v1";
 const fieldNotesStorageKey = "handover-logcode-field-notes-v1";
@@ -765,6 +765,80 @@ function FieldNotesPanel({
   );
 }
 
+function ObservedBadge({ observed }: { observed: boolean }) {
+  return <span className={`observed-badge ${observed ? "is-observed" : "is-missing"}`}>{observed ? "Seen in 5g_0523_01" : "Not seen in 5g_0523_01"}</span>;
+}
+
+function MeasurementEventsTable({ events }: { events: MeasurementEventInfo[] }) {
+  return (
+    <div className="event-table-wrap">
+      <table className="event-table">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Condition</th>
+            <th>Relation to handover</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          {events.map((eventItem) => (
+            <tr key={eventItem.id} className={eventItem.observedInSample ? "" : "is-muted"}>
+              <td className="event-code">{eventItem.id}</td>
+              <td>{eventItem.condition}</td>
+              <td>{eventItem.handoverRelation}</td>
+              <td><ObservedBadge observed={eventItem.observedInSample} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function NRMeasurementEventsView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void }) {
+  function openB821Config() {
+    const record = findLogcodeRecord(nrMeasurementEvents.logEvidence.logcode, nrMeasurementEvents.logEvidence.fields);
+    if (record) onOpenLogcode(record, nrMeasurementEvents.logEvidence.fields);
+  }
+
+  return (
+    <div className="event-config-panel">
+      <section className="event-config-hero">
+        <h1>{nrMeasurementEvents.title}</h1>
+        <p>{nrMeasurementEvents.description}</p>
+      </section>
+
+      <section className="event-config-card">
+        <h2>Log Evidence</h2>
+        <p>{nrMeasurementEvents.logEvidence.summary}</p>
+        <div className="event-chip-row">
+          <button className="event-chip is-action" type="button" onClick={openB821Config}>{nrMeasurementEvents.logEvidence.logcode}</button>
+          {nrMeasurementEvents.logEvidence.fields.map((field) => (
+            <span key={field} className="event-chip">{field}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="event-config-card">
+        <h2>A-Events: Normal NR Cell Measurement</h2>
+        <MeasurementEventsTable events={nrMeasurementEvents.events} />
+      </section>
+
+      <section className="event-config-card">
+        <h2>B-Events: Inter-RAT Measurement</h2>
+        <MeasurementEventsTable events={nrMeasurementEvents.interRatEvents} />
+      </section>
+
+      <section className="event-config-card">
+        <h2>Sample Observation</h2>
+        <p>{nrMeasurementEvents.sampleObservation}</p>
+        <p className="event-config-source">{nrMeasurementEvents.source}</p>
+      </section>
+    </div>
+  );
+}
+
 function PopupText({
   value,
   logcodes = [],
@@ -1453,6 +1527,13 @@ export function App() {
         <section className="viewer-screen">
           <TopBar title="Handover" onHome={() => setView("event")} backLabel="Event / Message" />
           <HandoverDiagram onOpenLogcode={openDetail} />
+        </section>
+      ) : null}
+
+      {view === "nrMeasurementEvents" ? (
+        <section className="event-config-screen">
+          <TopBar title="NR Measurement Events" onHome={() => setView("event")} backLabel="Event / Message" />
+          <NRMeasurementEventsView onOpenLogcode={openDetail} />
         </section>
       ) : null}
 

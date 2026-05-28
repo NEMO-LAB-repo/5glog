@@ -1,0 +1,76 @@
+{
+  "id": "nr_measurement_events",
+  "title": "NR Cell Measurement Events",
+  "description": "Generic 5G NR measurement event configuration used by UE RRC measurement reporting. These are normal cell-measurement triggers; A3/A5 are the ones most directly related to handover.",
+  "source": "3GPP TS 38.331 V17.10.0: ReportConfigNR / EventTriggerConfig lists eventA1 through eventA6; inter-RAT reporting lists eventB1 and eventB2.",
+  "logEvidence": {
+    "summary": "In logs, inspect 0xB821 NR5G RRC OTA Packet downlink RRCReconfiguration. Measurement events are normally configured under measConfig -> reportConfigToAddModList -> reportType -> eventTriggered -> eventId.",
+    "logcode": "0xB821",
+    "fields": [
+      "measConfig",
+      "reportConfigToAddModList",
+      "reportType",
+      "eventTriggered",
+      "eventId",
+      "eventA1",
+      "eventA2",
+      "eventA3",
+      "eventA4",
+      "eventA5",
+      "eventA6"
+    ]
+  },
+  "sampleObservation": "For 5g_0523_01.txt, the observed NR measurement event configs are A1, A2, A3, A4, and A5. A6 is not observed. B1/B2 are also not observed as the trigger for this NR handover.",
+  "events": [
+    {
+      "id": "A1",
+      "condition": "Serving cell becomes better than a threshold.",
+      "handoverRelation": "Often used to stop or relax measurement/reporting when the serving cell is good again.",
+      "observedInSample": true
+    },
+    {
+      "id": "A2",
+      "condition": "Serving cell becomes worse than a threshold.",
+      "handoverRelation": "Often used to start inter-frequency or inter-RAT measurement when serving quality degrades.",
+      "observedInSample": true
+    },
+    {
+      "id": "A3",
+      "condition": "Neighbor cell becomes better than the serving cell by an offset.",
+      "handoverRelation": "Most common handover trigger: the neighbor becomes sufficiently better than the current serving cell.",
+      "observedInSample": true
+    },
+    {
+      "id": "A4",
+      "condition": "Neighbor cell becomes better than a threshold.",
+      "handoverRelation": "Neighbor is good enough in absolute terms; can support mobility decisions.",
+      "observedInSample": true
+    },
+    {
+      "id": "A5",
+      "condition": "Serving cell is worse than threshold1 and neighbor cell is better than threshold2.",
+      "handoverRelation": "Common handover condition with stricter two-sided criteria.",
+      "observedInSample": true
+    },
+    {
+      "id": "A6",
+      "condition": "Neighbor cell becomes better than an SCell by an offset.",
+      "handoverRelation": "Mainly SCell / carrier-aggregation related; not the most common ordinary PCell handover event.",
+      "observedInSample": false
+    }
+  ],
+  "interRatEvents": [
+    {
+      "id": "B1",
+      "condition": "Inter-RAT neighbor becomes better than a threshold.",
+      "handoverRelation": "Used for NR to LTE/UTRA or other inter-RAT mobility measurement.",
+      "observedInSample": false
+    },
+    {
+      "id": "B2",
+      "condition": "Serving NR cell is worse than threshold1 and inter-RAT neighbor is better than threshold2.",
+      "handoverRelation": "Inter-RAT mobility trigger with both serving degradation and target quality conditions.",
+      "observedInSample": false
+    }
+  ]
+}
