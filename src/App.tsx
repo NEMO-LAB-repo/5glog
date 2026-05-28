@@ -915,7 +915,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
               <span className="measurement-node-label">{node.label}</span>
               <span className="measurement-node-text">{node.text}</span>
             </button>
-            {index < measurementRelationNodes.length - 1 ? <span className="measurement-arrow">-&gt;</span> : null}
+            {index < measurementRelationNodes.length - 1 ? <span className="measurement-arrow" aria-hidden="true" /> : null}
           </div>
         ))}
       </div>

@@ -768,6 +768,8 @@ button {
   top: 104px;
   right: 20px;
   width: min(560px, calc(100% - 40px));
+  max-height: calc(100vh - 128px);
+  overflow-y: auto;
   display: block;
 }
 
@@ -836,34 +838,31 @@ button {
 }
 
 .measurement-relation-flow {
-  display: flex;
-  gap: 7px;
-  align-items: stretch;
-  overflow-x: auto;
-  padding-bottom: 3px;
+  display: grid;
+  gap: 0;
 }
 
 .measurement-relation-step {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
-  gap: 5px;
+  display: grid;
+  gap: 4px;
 }
 
 .measurement-relation-step:last-child {
-  padding-right: 1px;
+  padding-right: 0;
 }
 
 .measurement-node {
-  width: 130px;
-  min-height: 92px;
+  width: 100%;
+  min-height: 0;
   border: 2px solid #000000;
   border-radius: 6px;
   background: #f7f7f7;
   color: #000000;
-  padding: 7px 8px;
+  padding: 7px 10px;
   display: grid;
+  grid-template-columns: 128px 150px minmax(0, 1fr);
   align-content: start;
+  align-items: center;
   gap: 4px;
   text-align: left;
   cursor: pointer;
@@ -876,20 +875,35 @@ button {
 }
 
 .measurement-node-label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
 }
 
 .measurement-node-text {
   color: #555555;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   line-height: 1.25;
 }
 
 .measurement-arrow {
-  font-size: 18px;
-  font-weight: 900;
+  position: relative;
+  width: 2px;
+  height: 18px;
+  justify-self: center;
+  background: #000000;
+}
+
+.measurement-arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .measurement-relation-note {
