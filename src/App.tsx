@@ -990,7 +990,7 @@ const legacyStepShapes: LegacyStepShape[] = [
     stepNumber: "2",
     body: "M 700 410 L 1072 410 L 1120 432 L 1072 454 L 700 454 Z",
     divider: { x1: 784, y1: 410, x2: 784, y2: 454 },
-    tag: { x: 742, y: 440 },
+    tag: { x: 742, y: 440, text: "ML1" },
     message: { x: 808, y: 441 }
   },
   {
@@ -1027,9 +1027,9 @@ const legacyStepShapes: LegacyStepShape[] = [
     stepNumber: "7",
     tail: "M 720 792 L 760 792",
     body: "M 760 770 L 1342 770 L 1390 792 L 1342 814 L 760 814 Z",
-    divider: { x1: 844, y1: 770, x2: 844, y2: 814 },
-    tag: { x: 802, y: 800, text: "ML1/MAC" },
-    message: { x: 868, y: 801 }
+    divider: { x1: 888, y1: 770, x2: 888, y2: 814 },
+    tag: { x: 824, y: 800, text: "ML1/MAC" },
+    message: { x: 912, y: 801 }
   },
   {
     stepNumber: "8",
