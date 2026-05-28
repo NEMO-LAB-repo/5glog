@@ -4,6 +4,7 @@ import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogco
 import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MessageNoteEntry, MessageNotesStore, StepInfo, ViewName } from "./types";
 
 const messageNotesStorageKey = "handover-logcode-message-notes-v1";
+const fieldNotesStorageKey = "handover-logcode-field-notes-v1";
 const noteDeletePasscode = "985807";
 
 type LogcodeVariantItem = {
@@ -312,15 +313,23 @@ function emptyMessageNoteEntry(): MessageNoteEntry {
   };
 }
 
-function loadMessageNotes(): MessageNotesStore {
+function loadStoredNotes(storageKey: string): MessageNotesStore {
   if (typeof window === "undefined") return {};
   try {
-    const raw = window.localStorage.getItem(messageNotesStorageKey);
+    const raw = window.localStorage.getItem(storageKey);
     if (!raw) return {};
     return sanitizeMessageNotes(JSON.parse(raw));
   } catch {
     return {};
   }
+}
+
+function loadMessageNotes(): MessageNotesStore {
+  return loadStoredNotes(messageNotesStorageKey);
+}
+
+function loadFieldNotes(): MessageNotesStore {
+  return loadStoredNotes(fieldNotesStorageKey);
 }
 
 function sanitizeMessageNotes(value: unknown): MessageNotesStore {
@@ -588,35 +597,40 @@ function LogcodeDetail({ record, selectedTerms }: { record: LogcodeRecord; selec
   );
 }
 
-function MessageNotesPanel({
-  record,
+function EditableNotesPanel({
+  targetId,
+  targetLabel,
   entry,
   onAddNote,
-  onDeleteNote
+  onDeleteNote,
+  builtInNotes = [],
+  ariaLabel = "Notes"
 }: {
-  record: LogcodeRecord;
+  targetId: string;
+  targetLabel: string;
   entry: MessageNoteEntry;
-  onAddNote: (messageId: string, text: string) => void;
-  onDeleteNote: (messageId: string, noteId: string) => void;
+  onAddNote: (targetId: string, text: string) => void;
+  onDeleteNote: (targetId: string, noteId: string) => void;
+  builtInNotes?: string[];
+  ariaLabel?: string;
 }) {
   const [noteDraft, setNoteDraft] = useState("");
   const [pendingDeleteNoteId, setPendingDeleteNoteId] = useState<string | null>(null);
   const [deletePasscodeDraft, setDeletePasscodeDraft] = useState("");
   const [deleteError, setDeleteError] = useState("");
-  const builtInNotes = builtInLogcodeNotes[record.logcode] || [];
 
   useEffect(() => {
     setNoteDraft("");
     setPendingDeleteNoteId(null);
     setDeletePasscodeDraft("");
     setDeleteError("");
-  }, [record.id]);
+  }, [targetId]);
 
   function submitNote(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const text = noteDraft.trim();
     if (!text) return;
-    onAddNote(record.id, text);
+    onAddNote(targetId, text);
     setNoteDraft("");
   }
 
@@ -638,16 +652,16 @@ function MessageNotesPanel({
       setDeleteError("Wrong passcode.");
       return;
     }
-    onDeleteNote(record.id, noteId);
+    onDeleteNote(targetId, noteId);
     cancelDelete();
   }
 
   return (
-    <section className="message-notes-panel" aria-label="Message notes">
+    <section className="message-notes-panel" aria-label={ariaLabel}>
       <div className="message-notes-header">
         <div>
           <div className="message-notes-title">Notes</div>
-          <div className="message-notes-target">{recordLabel(record)}</div>
+          <div className="message-notes-target">{targetLabel}</div>
         </div>
       </div>
 
@@ -701,6 +715,53 @@ function MessageNotesPanel({
         )) : <div className="message-note-empty">No notes yet.</div>}
       </div>
     </section>
+  );
+}
+
+function MessageNotesPanel({
+  record,
+  entry,
+  onAddNote,
+  onDeleteNote
+}: {
+  record: LogcodeRecord;
+  entry: MessageNoteEntry;
+  onAddNote: (messageId: string, text: string) => void;
+  onDeleteNote: (messageId: string, noteId: string) => void;
+}) {
+  return (
+    <EditableNotesPanel
+      targetId={record.id}
+      targetLabel={recordLabel(record)}
+      entry={entry}
+      builtInNotes={builtInLogcodeNotes[record.logcode] || []}
+      ariaLabel="Message notes"
+      onAddNote={onAddNote}
+      onDeleteNote={onDeleteNote}
+    />
+  );
+}
+
+function FieldNotesPanel({
+  field,
+  entry,
+  onAddNote,
+  onDeleteNote
+}: {
+  field: FieldIndexEntry;
+  entry: MessageNoteEntry;
+  onAddNote: (fieldId: string, text: string) => void;
+  onDeleteNote: (fieldId: string, noteId: string) => void;
+}) {
+  return (
+    <EditableNotesPanel
+      targetId={field.id}
+      targetLabel={field.name}
+      entry={entry}
+      ariaLabel="Field notes"
+      onAddNote={onAddNote}
+      onDeleteNote={onDeleteNote}
+    />
   );
 }
 
@@ -1003,6 +1064,7 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
   const [error, setError] = useState("");
   const [selectedField, setSelectedField] = useState<FieldIndexEntry | null>(null);
   const [query, setQuery] = useState("");
+  const [fieldNotes, setFieldNotes] = useState<MessageNotesStore>(loadFieldNotes);
   const normalizedQuery = normalizeForMatch(query);
   const fieldById = useMemo(() => new Map(fields.map((field) => [field.id, field])), [fields]);
   const visibleFields = useMemo(() => {
@@ -1033,6 +1095,48 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.localStorage.setItem(fieldNotesStorageKey, JSON.stringify(fieldNotes));
+  }, [fieldNotes]);
+
+  function addFieldNote(fieldId: string, text: string) {
+    setFieldNotes((current) => {
+      const entry = current[fieldId] || emptyMessageNoteEntry();
+      return {
+        ...current,
+        [fieldId]: {
+          ...entry,
+          notes: [
+            ...entry.notes,
+            {
+              id: createNoteId(),
+              author: "",
+              text,
+              createdAt: new Date().toISOString()
+            }
+          ],
+          updatedAt: new Date().toISOString()
+        }
+      };
+    });
+  }
+
+  function deleteFieldNote(fieldId: string, noteId: string) {
+    setFieldNotes((current) => {
+      const entry = current[fieldId];
+      if (!entry) return current;
+      return {
+        ...current,
+        [fieldId]: {
+          ...entry,
+          notes: entry.notes.filter((note) => note.id !== noteId),
+          updatedAt: new Date().toISOString()
+        }
+      };
+    });
+  }
+
   if (status === "loading") {
     return <div className="status-panel">Loading field index...</div>;
   }
@@ -1049,6 +1153,12 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
           {selectedField.name}
           <div className="field-match-count">{selectedField.records.length} matching logcode{selectedField.records.length === 1 ? "" : "s"}</div>
         </div>
+        <FieldNotesPanel
+          field={selectedField}
+          entry={fieldNotes[selectedField.id] || emptyMessageNoteEntry()}
+          onAddNote={addFieldNote}
+          onDeleteNote={deleteFieldNote}
+        />
         {selectedField.records.map((entry) => {
           const record = logcodeById.get(entry.id);
           if (!record) return null;
@@ -1072,6 +1182,7 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
       {visibleFields.map((field) => (
         <button key={field.id} className={`field-record-button ${isHandoverRelated([field.name]) ? "handover-field" : ""}`} type="button" onClick={() => setSelectedField(fieldById.get(field.id) || field)}>
           {field.name} <span className="field-match-count">{field.records.length} logcode{field.records.length === 1 ? "" : "s"}</span>
+          {noteCountLabel(fieldNotes[field.id]) ? <span className="message-note-badge">{noteCountLabel(fieldNotes[field.id])}</span> : null}
         </button>
       ))}
     </div>
