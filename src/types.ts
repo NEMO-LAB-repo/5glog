@@ -1,3 +1,10 @@
+export type StepEvidenceItem = {
+  title: string;
+  detail?: string;
+  logcodes?: string[];
+  fields?: string[];
+};
+
 export type StepInfo = {
   title: string;
   layer: string;
@@ -5,6 +12,7 @@ export type StepInfo = {
   logcode?: string;
   logcodes?: string[];
   fields?: string[];
+  evidence?: StepEvidenceItem[];
   sequence?: string;
   sequenceLogcodes?: string[];
   sequenceFields?: string[];

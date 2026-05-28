@@ -42,6 +42,35 @@
         "measObjectToAddModList",
         "reportConfigToAddModList",
         "measIdToAddModList"
+      ],
+      "evidence": [
+        {
+          "title": "Measurement config",
+          "detail": "pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration with measConfig.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "DL-DCCH-Message",
+            "rrcReconfiguration",
+            "measConfig",
+            "measObjectToAddModList",
+            "reportConfigToAddModList",
+            "measIdToAddModList"
+          ]
+        },
+        {
+          "title": "Config applied",
+          "detail": "Optional confirmation when UE reports that the RRC configuration was applied.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "UL-DCCH-Message",
+            "rrcReconfigurationComplete",
+            "rrc-TransactionIdentifier"
+          ]
+        }
       ]
     },
     "2": {
@@ -114,6 +143,39 @@
         "rsrp",
         "rsrq",
         "sinr"
+      ],
+      "evidence": [
+        {
+          "title": "RRC MeasurementReport",
+          "detail": "pdu_type 8 UL-DCCH-Message -> c1 -> measurementReport.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "UL-DCCH-Message",
+            "measurementReport",
+            "measResults",
+            "measId",
+            "measResultNeighCells",
+            "physCellId",
+            "rsrp",
+            "rsrq",
+            "sinr"
+          ]
+        },
+        {
+          "title": "Event support",
+          "detail": "Use this only as timing/supporting evidence for the uplink report.",
+          "logcodes": [
+            "0x1FFB"
+          ],
+          "fields": [
+            "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+            "Event",
+            "Timestamp",
+            "meas_id"
+          ]
+        }
       ]
     },
     "4": {
@@ -124,6 +186,28 @@
       "fields": [
         "RRCReconfiguration",
         "reconfigurationWithSync"
+      ],
+      "evidence": [
+        {
+          "title": "No direct UE logcode",
+          "detail": "The network decision/preparation happens in network-side control. UE logs usually reveal it only when the later handover command arrives.",
+          "fields": [
+            "reconfigurationWithSync",
+            "rrcReconfiguration"
+          ]
+        },
+        {
+          "title": "Inference point",
+          "detail": "Infer this step when Step 5 appears with a handover RRCReconfiguration.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "DL-DCCH-Message",
+            "rrcReconfiguration",
+            "reconfigurationWithSync"
+          ]
+        }
       ]
     },
     "5": {
@@ -148,6 +232,54 @@
         "masterKeyUpdate",
         "keySetChangeIndicator",
         "nextHopChainingCount"
+      ],
+      "evidence": [
+        {
+          "title": "Handover command",
+          "detail": "pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration. In NR, the handover indicator is reconfigurationWithSync.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "DL-DCCH-Message",
+            "rrcReconfiguration",
+            "reconfigurationWithSync",
+            "mobilityControlInfo"
+          ]
+        },
+        {
+          "title": "Target cell / RA config",
+          "detail": "Target PCI/frequency, new identity, and dedicated RACH resources are carried inside the same command.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "spCellConfigCommon",
+            "physCellId",
+            "absoluteFrequencySSB",
+            "newUE-Identity",
+            "rach-ConfigDedicated",
+            "masterKeyUpdate",
+            "nextHopChainingCount"
+          ]
+        },
+        {
+          "title": "Cell identity cross-check",
+          "detail": "Use serving-cell info and SIB1 to identify source/target cell identity.",
+          "logcodes": [
+            "0xB823",
+            "0xB821"
+          ],
+          "fields": [
+            "Physical Cell ID",
+            "DL Frequency",
+            "Cell Id",
+            "TAC",
+            "BCCH-DL-SCH-Message",
+            "systemInformationBlockType1",
+            "cellIdentity"
+          ]
+        }
       ],
       "identityLogcodes": [
         "0xB823",
@@ -190,6 +322,53 @@
         "Search Space",
         "TDD UL DL CFG"
       ],
+      "evidence": [
+        {
+          "title": "Apply target handover config",
+          "detail": "ML1 applies target downlink cell and C-RNTI / carrier configuration.",
+          "logcodes": [
+            "0xB952"
+          ],
+          "fields": [
+            "Target Dl Cell Frequency",
+            "Target Phy Cell Id",
+            "Crnti CFG",
+            "CG Add Mod",
+            "Cell Info",
+            "DL Cell frequency"
+          ]
+        },
+        {
+          "title": "Related physical config",
+          "detail": "Common/dedicated ML1 config snippets that help explain target BWP, CORESET, Search Space, and TDD settings.",
+          "logcodes": [
+            "0xB950",
+            "0xB951"
+          ],
+          "fields": [
+            "BWP",
+            "CORESET",
+            "Search Space",
+            "TDD UL DL CFG"
+          ]
+        },
+        {
+          "title": "Target identity cross-check",
+          "detail": "Confirm target PCI/frequency against serving cell info and SIB1.",
+          "logcodes": [
+            "0xB823",
+            "0xB821"
+          ],
+          "fields": [
+            "Physical Cell ID",
+            "DL Frequency",
+            "Cell Id",
+            "BCCH-DL-SCH-Message",
+            "systemInformationBlockType1",
+            "cellIdentity"
+          ]
+        }
+      ],
       "identityLogcodes": [
         "0xB823",
         "0xB821"
@@ -225,6 +404,35 @@
         "PCI",
         "DL EARFCN",
         "Band"
+      ],
+      "evidence": [
+        {
+          "title": "Execution timing",
+          "detail": "Use ML1 event values to mark the start/end of the handover execution window.",
+          "logcodes": [
+            "0xB9A7"
+          ],
+          "fields": [
+            "Event",
+            "HANDOVER_START",
+            "HANDOVER_END",
+            "PCI",
+            "DL EARFCN",
+            "Band"
+          ]
+        },
+        {
+          "title": "Target context",
+          "detail": "Use the target-cell handover config around the same timestamp.",
+          "logcodes": [
+            "0xB952"
+          ],
+          "fields": [
+            "Target Dl Cell Frequency",
+            "Target Phy Cell Id",
+            "Crnti CFG"
+          ]
+        }
       ]
     },
     "8": {
@@ -243,6 +451,38 @@
         "RACH Contention",
         "Carrier Id",
         "RA Id"
+      ],
+      "evidence": [
+        {
+          "title": "RACH trigger",
+          "detail": "MAC starts random access because of handover.",
+          "logcodes": [
+            "0xB889"
+          ],
+          "fields": [
+            "Rach Reason",
+            "HANDOVER",
+            "CRNTI",
+            "RACH Contention",
+            "Carrier Id",
+            "RA Id"
+          ]
+        },
+        {
+          "title": "RACH attempt",
+          "detail": "Detailed Msg1/Msg2/Msg3/Msg4 attempt evidence, when present.",
+          "logcodes": [
+            "0xB88A"
+          ],
+          "fields": [
+            "RACH Msg1",
+            "RACH Msg2",
+            "RACH Msg3",
+            "RACH Msg4",
+            "Contention Type",
+            "RACH Result"
+          ]
+        }
       ]
     },
     "9": {
@@ -263,6 +503,46 @@
         "ARFCN",
         "Cell Id",
         "RRCReconfigurationComplete"
+      ],
+      "evidence": [
+        {
+          "title": "MAC RA success",
+          "detail": "Best direct evidence when the attempt record exposes the final result.",
+          "logcodes": [
+            "0xB88A"
+          ],
+          "fields": [
+            "RACH Result",
+            "SUCCESS",
+            "Contention Type",
+            "CONT_FREE"
+          ]
+        },
+        {
+          "title": "HO acquisition confirm",
+          "detail": "Supporting ML1 evidence that the target-cell acquisition succeeded.",
+          "logcodes": [
+            "0xB9BF"
+          ],
+          "fields": [
+            "Result",
+            "ARFCN",
+            "Cell Id"
+          ]
+        },
+        {
+          "title": "Fallback inference",
+          "detail": "If no explicit RA success field appears, infer success from Step 10 and HO success events.",
+          "logcodes": [
+            "0xB821",
+            "0x1FFB"
+          ],
+          "fields": [
+            "rrcReconfigurationComplete",
+            "EVENT_NR5G_RRC_HO_SUCCESS",
+            "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
+          ]
+        }
       ],
       "confirm": "If no explicit RA success field appears, use Step 10 and 0x1FFB events as confirmation: EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
       "confirmLogcodes": [
@@ -289,6 +569,51 @@
         "Physical Cell Id",
         "Frequency",
         "rrc-TransactionIdentifier"
+      ],
+      "evidence": [
+        {
+          "title": "RRC completion",
+          "detail": "pdu_type 8 UL-DCCH-Message -> c1 -> rrcReconfigurationComplete.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "UL-DCCH-Message",
+            "rrcReconfigurationComplete",
+            "rrc-TransactionIdentifier",
+            "Physical Cell Id",
+            "Frequency"
+          ]
+        },
+        {
+          "title": "HO event confirmation",
+          "detail": "Use event container records as strong timing confirmation.",
+          "logcodes": [
+            "0x1FFB"
+          ],
+          "fields": [
+            "EVENT_NR5G_RRC_HO_STARTED_V2",
+            "EVENT_NR5G_RRC_HO_SUCCESS",
+            "EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+            "Timestamp"
+          ]
+        },
+        {
+          "title": "New serving cell identity",
+          "detail": "Cross-check the target identity after completion.",
+          "logcodes": [
+            "0xB823",
+            "0xB821"
+          ],
+          "fields": [
+            "Physical Cell ID",
+            "DL Frequency",
+            "Cell Id",
+            "BCCH-DL-SCH-Message",
+            "systemInformationBlockType1",
+            "cellIdentity"
+          ]
+        }
       ],
       "confirm": "0x1FFB Encapsulated Event Report: EVENT_NR5G_RRC_HO_STARTED_V2; EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
       "confirmLogcodes": [
@@ -352,6 +677,56 @@
         "TB Bytes",
         "TB New Tx Bytes",
         "Num ULSCH Sched"
+      ],
+      "evidence": [
+        {
+          "title": "New serving-cell state",
+          "detail": "Use RRC config/serving-cell records to confirm the UE is operating on the new cell.",
+          "logcodes": [
+            "0xB825",
+            "0xB823"
+          ],
+          "fields": [
+            "Physical Cell ID",
+            "Physical Cell Id",
+            "DL Frequency",
+            "Cell Id",
+            "Serving Cell",
+            "TAC"
+          ]
+        },
+        {
+          "title": "Broadcast/system info after HO",
+          "detail": "B821 variants show MIB/SIB1/SIB2-SIB5 when decoded after moving to the target cell.",
+          "logcodes": [
+            "0xB821"
+          ],
+          "fields": [
+            "BCCH-BCH-Message",
+            "BCCH-DL-SCH-Message",
+            "mib",
+            "systemInformationBlockType1",
+            "SIB2",
+            "SIB3",
+            "SIB4",
+            "SIB5"
+          ]
+        },
+        {
+          "title": "User-plane data resumes",
+          "detail": "No single RRC message means data resumed; infer from MAC downlink/uplink counters after HO.",
+          "logcodes": [
+            "0xB888",
+            "0xB881"
+          ],
+          "fields": [
+            "Num PDSCH Decode",
+            "Num CRC Pass TB",
+            "TB Bytes",
+            "TB New Tx Bytes",
+            "Num ULSCH Sched"
+          ]
+        }
       ]
     }
   }

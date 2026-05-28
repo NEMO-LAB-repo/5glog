@@ -914,6 +914,70 @@ button {
   line-height: 1.35;
 }
 
+.step-evidence {
+  margin-top: 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.step-evidence-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.step-evidence-list {
+  display: grid;
+  gap: 8px;
+}
+
+.step-evidence-card {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 8px 10px;
+}
+
+.step-evidence-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.step-evidence-codes {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.step-evidence-detail {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.step-evidence-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.step-evidence-fields .popup-hot-field {
+  border: 1px solid #d60000;
+  border-radius: 4px;
+  padding: 1px 5px;
+  background: #fffafa;
+  font-size: 11px;
+}
+
 .field-item {
   border: 2px solid #000000;
   border-radius: 6px;

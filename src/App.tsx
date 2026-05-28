@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, FormEvent } from "react";
 import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel } from "./data";
-import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepInfo, ViewName } from "./types";
+import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepEvidenceItem, StepInfo, ViewName } from "./types";
 
 const messageNotesStorageKey = "handover-logcode-message-notes-v1";
 const fieldNotesStorageKey = "handover-logcode-field-notes-v1";
@@ -926,8 +926,50 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   );
 }
 
+function StepEvidenceList({ items, onOpenLogcode }: { items: StepEvidenceItem[]; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  return (
+    <div className="step-evidence">
+      <div className="step-evidence-title">Evidence</div>
+      <div className="step-evidence-list">
+        {items.map((item, index) => {
+          const fields = item.fields || [];
+          return (
+            <div className="step-evidence-card" key={`${item.title}-${index}`}>
+              <div className="step-evidence-heading">
+                <span>{item.title}</span>
+                {item.logcodes?.length ? (
+                  <span className="step-evidence-codes">
+                    {item.logcodes.map((logcode) => (
+                      <button key={logcode} className="popup-logcode-link" type="button" onClick={() => onOpenLogcode(logcode, fields)}>
+                        {logcode}
+                      </button>
+                    ))}
+                  </span>
+                ) : null}
+              </div>
+              {item.detail ? (
+                <div className="step-evidence-detail">
+                  <PopupText value={item.detail} logcodes={item.logcodes} fields={fields} onOpenLogcode={onOpenLogcode} />
+                </div>
+              ) : null}
+              {fields.length ? (
+                <div className="step-evidence-fields">
+                  {fields.map((field) => (
+                    <span key={field} className="popup-hot-field">{field}</span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementRelationStep = step.title.startsWith("2.");
+  const hasEvidence = Boolean(step.evidence?.length);
 
   return (
     <div className="popup open react-popup" role="dialog">
@@ -935,14 +977,15 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
       {step.decide ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
-      {step.logcode && !isMeasurementRelationStep ? (
+      {step.logcode && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
           <PopupText value={step.logcode} logcodes={step.logcodes} fields={step.fields} onOpenLogcode={onOpenLogcode} />
         </div>
       ) : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {step.sequence && !isMeasurementRelationStep ? (
+      {hasEvidence ? <StepEvidenceList items={step.evidence!} onOpenLogcode={onOpenLogcode} /> : null}
+      {step.sequence && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}
           <PopupText value={step.sequence} logcodes={step.sequenceLogcodes} fields={step.sequenceFields} onOpenLogcode={onOpenLogcode} />
@@ -954,13 +997,13 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
           <PopupText value={step.note} logcodes={step.noteLogcodes} fields={step.noteFields} onOpenLogcode={onOpenLogcode} />
         </div>
       ) : null}
-      {step.confirm ? (
+      {step.confirm && !hasEvidence ? (
         <div className="popup-row">
           <b>HO confirmed by:</b>{" "}
           <PopupText value={step.confirm} logcodes={step.confirmLogcodes} fields={step.confirmFields} onOpenLogcode={onOpenLogcode} />
         </div>
       ) : null}
-      {step.identity ? (
+      {step.identity && !hasEvidence ? (
         <div className="popup-row">
           <b>Source / target identity:</b>{" "}
           <PopupText value={step.identity} logcodes={step.identityLogcodes} fields={step.identityFields} onOpenLogcode={onOpenLogcode} />
