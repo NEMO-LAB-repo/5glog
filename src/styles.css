@@ -619,38 +619,12 @@ button {
   width: 90px;
 }
 
-.event-table th:nth-child(4) {
-  width: 190px;
-}
-
-.event-table tr.is-muted {
-  color: #555555;
-}
-
 .event-code {
   width: 76px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 28px !important;
   font-weight: 900 !important;
   text-align: center !important;
-}
-
-.observed-badge {
-  display: inline-block;
-  border: 2px solid #000000;
-  border-radius: 6px;
-  padding: 5px 8px;
-  white-space: nowrap;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.observed-badge.is-observed {
-  color: #006b3c;
-}
-
-.observed-badge.is-missing {
-  color: #777777;
 }
 
 .event-config-source {

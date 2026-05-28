@@ -765,10 +765,6 @@ function FieldNotesPanel({
   );
 }
 
-function ObservedBadge({ observed }: { observed: boolean }) {
-  return <span className={`observed-badge ${observed ? "is-observed" : "is-missing"}`}>{observed ? "Seen in 5g_0523_01" : "Not seen in 5g_0523_01"}</span>;
-}
-
 function MeasurementEventsTable({ events }: { events: MeasurementEventInfo[] }) {
   return (
     <div className="event-table-wrap">
@@ -778,16 +774,14 @@ function MeasurementEventsTable({ events }: { events: MeasurementEventInfo[] }) 
             <th>Event</th>
             <th>Condition</th>
             <th>Relation to handover</th>
-            <th>Sample</th>
           </tr>
         </thead>
         <tbody>
           {events.map((eventItem) => (
-            <tr key={eventItem.id} className={eventItem.observedInSample ? "" : "is-muted"}>
+            <tr key={eventItem.id}>
               <td className="event-code">{eventItem.id}</td>
               <td>{eventItem.condition}</td>
               <td>{eventItem.handoverRelation}</td>
-              <td><ObservedBadge observed={eventItem.observedInSample} /></td>
             </tr>
           ))}
         </tbody>
@@ -828,12 +822,6 @@ function NRMeasurementEventsView({ onOpenLogcode }: { onOpenLogcode: (record: Lo
       <section className="event-config-card">
         <h2>B-Events: Inter-RAT Measurement</h2>
         <MeasurementEventsTable events={nrMeasurementEvents.interRatEvents} />
-      </section>
-
-      <section className="event-config-card">
-        <h2>Sample Observation</h2>
-        <p>{nrMeasurementEvents.sampleObservation}</p>
-        <p className="event-config-source">{nrMeasurementEvents.source}</p>
       </section>
     </div>
   );
