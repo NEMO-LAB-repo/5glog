@@ -35,14 +35,11 @@ window.EVENT_DATA.handover = {
     2: {
       title: "2. Search / Measure",
       layer: "ML1 / RRC measurement control",
-      decide: "UE uses RRC measConfig to know which NR frequencies, SSB beams, and report conditions to measure. ML1 searches/acquires cells, measures serving and neighbor cells, updates the measurement database, evaluates event conditions, then RRC sends MeasurementReport.",
-      logcode: "0xB821 / 0xB96E: measurement configuration. Fields: measObjectId, ssbFrequency, smtc1, ssb-ToMeasure, reportConfigId, eventId, a3-Offset, hysteresis, timeToTrigger, reportQuantityCell. 0xB96D: search / acquisition config and response. Fields: raster frequency, PCI, SSB, detected beams. 0xB96A: raw cell measurement confirm. Fields: PCI, RSRP, RSRQ, SINR, SSB index. 0xB97F: measurement database update. Fields: filtered cell quality, CellQualityRsrp, CellQualityRsrq. 0xB96F: connected-mode event evaluation. Fields: Meas Id, Cell Id, State, Num Reports Sent, TTT Remaining. 0xB821 U [NR] Measurement Report: final RRC report. Fields: measId, serving PCI/RSRP/RSRQ/SINR, neighbor PCI/RSRP/RSRQ/SINR.",
+      decide: "ML1 follows RRC measurement config, searches/acquires cells, measures quality, filters results, evaluates event/TTT, then RRC sends MeasurementReport.",
+      logcode: "See the relationship diagram below. Click each logcode box to open its structure.",
       logcodes: ["0xB821", "0xB96E", "0xB96D", "0xB96A", "0xB97F", "0xB96F"],
       fields: ["measObjectId", "ssbFrequency", "smtc1", "ssb-ToMeasure", "reportConfigId", "eventId", "a3-Offset", "hysteresis", "timeToTrigger", "reportQuantityCell", "raster frequency", "PCI", "SSB", "detected beams", "RSRP", "RSRQ", "SINR", "SSB index", "filtered cell quality", "CellQualityRsrp", "CellQualityRsrq", "Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining", "MeasurementReport", "measId", "serving PCI", "neighbor PCI"],
-      sequence: "0xB821/0xB96E Config -> 0xB96D Search/ACQ -> 0xB96A Raw Measure -> 0xB97F Filtered DB -> 0xB96F Event Eval -> 0xB821 MeasurementReport.",
-      sequenceLogcodes: ["0xB821", "0xB96E", "0xB96D", "0xB96A", "0xB97F", "0xB96F"],
-      sequenceFields: ["Config", "Search/ACQ", "Raw Measure", "Filtered DB", "Event Eval", "MeasurementReport"],
-      note: "0xB970 NR5G ML1 Searcher Idle S Criteria is idle-mode cell selection / reselection suitability evidence. Do not use it as the connected-mode handover main chain; keep it as context if you are analyzing idle suitability.",
+      note: "0xB970 is idle-mode S-criteria evidence. Do not use it as the connected-mode handover main chain.",
       noteLogcodes: ["0xB970"]
     },
     3: {

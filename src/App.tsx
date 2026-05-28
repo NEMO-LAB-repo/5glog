@@ -927,20 +927,22 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
 }
 
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const isMeasurementRelationStep = step.title.startsWith("2.");
+
   return (
     <div className="popup open react-popup" role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
       {step.decide ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
-      {step.logcode ? (
+      {step.logcode && !isMeasurementRelationStep ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
           <PopupText value={step.logcode} logcodes={step.logcodes} fields={step.fields} onOpenLogcode={onOpenLogcode} />
         </div>
       ) : null}
-      {step.title.startsWith("2.") ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {step.sequence ? (
+      {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {step.sequence && !isMeasurementRelationStep ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}
           <PopupText value={step.sequence} logcodes={step.sequenceLogcodes} fields={step.sequenceFields} onOpenLogcode={onOpenLogcode} />
