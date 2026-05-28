@@ -36,6 +36,9 @@ const logcodeGroupNameOverrides: Record<string, string> = {
 };
 
 const builtInLogcodeNotes: Record<string, string[]> = {
+  "0xB96E": [
+    "ML1 measurement configuration evidence. It is the ML1-side view of configured measurement objects, SMTC/SSB timing, report config, and event thresholds from RRC measurement control. Use it with 0xB821 RRCReconfiguration measConfig to confirm what the UE was asked to measure."
+  ],
   "0xB96D": [
     "Search/acquisition evidence. It shows which configured raster/frequency was searched, which candidate PCI/SSB was detected, and whether basic synchronization/MIB evidence exists. Key fields: Raster List, ARFCN, Band, SCS, Num Cell Detect, Cell Detect List, Phy Cell Id, SSB Index, MIB, SFN, RSRP Raw. Timing: early stage before stable 0xB97F database quality and before the RRC MeasurementReport."
   ],
@@ -45,8 +48,11 @@ const builtInLogcodeNotes: Record<string, string[]> = {
   "0xB97F": [
     "Filtered measurement database evidence. It stores stable serving/neighbor quality after ML1 processing. Key fields: Serving Cell PCI, Raster Freq, Cells, PCI, CellQualityRsrp, CellQualityRsrq, Detected Beams, SSB Index. Timing: this is the ML1 evidence most directly preceding an Event A3-style RRC MeasurementReport."
   ],
+  "0xB96F": [
+    "Connected-mode event evaluation evidence. It shows whether a configured measurement event has entered or is entering report criteria. Key fields: Meas Id, Cell Id, State, Num Reports Sent, TTT Remaining. Timing: it sits after measured/filtered quality and before the RRC MeasurementReport."
+  ],
   "0xB970": [
-    "Suitability / S-criteria evidence, not a new raw measurement sample. It checks whether the candidate cell is usable based on measured quality and broadcast thresholds such as q-RxLevMin and q-QualMin. Timing: interpret after acquisition/measurement evidence; it can repeat and interleave with 0xB97F."
+    "Idle-mode suitability / S-criteria evidence. It is useful for cell selection or reselection analysis, but it is not primary connected-mode handover evidence. Keep it as context rather than part of the main handover measurement-report chain."
   ]
 };
 
@@ -162,6 +168,13 @@ const logcodeVariantSections: Record<string, LogcodeVariantSection[]> = {
 
 const measurementRelationNodes = [
   {
+    code: "0xB96E",
+    codeLabel: "0xB821 / 0xB96E",
+    label: "Config",
+    text: "measObject, SMTC, event rules",
+    fields: ["measConfig", "measObjectId", "ssbFrequency", "smtc1", "reportConfigId", "eventId", "a3-Offset", "timeToTrigger"]
+  },
+  {
     code: "0xB96D",
     label: "Search / ACQ",
     text: "Find freq, PCI, SSB",
@@ -180,10 +193,16 @@ const measurementRelationNodes = [
     fields: ["Serving Cell PCI", "CellQualityRsrp", "CellQualityRsrq", "Detected Beams"]
   },
   {
-    code: "0xB970",
-    label: "Suitability",
-    text: "S-criteria check",
-    fields: ["q-RxLevMin", "q-QualMin", "PCI"]
+    code: "0xB96F",
+    label: "Event Eval",
+    text: "ENTERING / ENTERED, TTT",
+    fields: ["Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining"]
+  },
+  {
+    code: "0xB821",
+    label: "MeasurementReport",
+    text: "RRC sends final report",
+    fields: ["MeasurementReport", "measId", "measResults", "measResultNeighCells", "physCellId", "rsrp", "rsrq", "sinr"]
   }
 ];
 
@@ -205,14 +224,23 @@ const handoverFieldTerms = new Set(
     "HANDOVER",
     "HANDOVER_END",
     "HANDOVER_START",
+    "Meas Id",
     "MIB",
+    "Num Reports Sent",
     "SIB",
     "Search Space",
+    "SSB Index",
+    "State",
     "SUCCESS",
     "TDD UL DL CFG",
+    "TTT Remaining",
+    "a3-Offset",
+    "eventId",
+    "hysteresis",
     "measConfig",
     "measId",
     "measIdToAddModList",
+    "measObjectId",
     "measObjectToAddModList",
     "measResultNeighCells",
     "measResults",
@@ -223,20 +251,23 @@ const handoverFieldTerms = new Set(
     "nextHopChainingCount",
     "Physical Cell Id",
     "physCellId",
-    "q-QualMin",
-    "q-RxLevMin",
     "Rach Reason",
     "RACH Result",
     "rach-ConfigDedicated",
     "RACH Contention",
+    "reportConfigId",
     "reportConfigToAddModList",
+    "reportQuantityCell",
     "reconfigurationWithSync",
     "Result",
     "rrcReconfiguration",
     "rrcReconfigurationComplete",
     "rsrp",
     "rsrq",
+    "smtc1",
     "sinr",
+    "ssb-ToMeasure",
+    "ssbFrequency",
     "spCellConfigCommon"
   ].map(normalizeForMatch)
 );
@@ -880,7 +911,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         {measurementRelationNodes.map((node, index) => (
           <div key={node.code} className="measurement-relation-step">
             <button className="measurement-node" type="button" onClick={() => onOpenLogcode(node.code, node.fields)}>
-              <span className="measurement-node-code">{node.code}</span>
+              <span className="measurement-node-code">{node.codeLabel || node.code}</span>
               <span className="measurement-node-label">{node.label}</span>
               <span className="measurement-node-text">{node.text}</span>
             </button>
@@ -909,6 +940,18 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
         </div>
       ) : null}
       {step.title.startsWith("2.") ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {step.sequence ? (
+        <div className="popup-row">
+          <b>Logic sequence:</b>{" "}
+          <PopupText value={step.sequence} logcodes={step.sequenceLogcodes} fields={step.sequenceFields} onOpenLogcode={onOpenLogcode} />
+        </div>
+      ) : null}
+      {step.note ? (
+        <div className="popup-row">
+          <b>Note:</b>{" "}
+          <PopupText value={step.note} logcodes={step.noteLogcodes} fields={step.noteFields} onOpenLogcode={onOpenLogcode} />
+        </div>
+      ) : null}
       {step.confirm ? (
         <div className="popup-row">
           <b>HO confirmed by:</b>{" "}

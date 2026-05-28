@@ -5,6 +5,12 @@ export type StepInfo = {
   logcode?: string;
   logcodes?: string[];
   fields?: string[];
+  sequence?: string;
+  sequenceLogcodes?: string[];
+  sequenceFields?: string[];
+  note?: string;
+  noteLogcodes?: string[];
+  noteFields?: string[];
   confirm?: string;
   confirmLogcodes?: string[];
   confirmFields?: string[];
