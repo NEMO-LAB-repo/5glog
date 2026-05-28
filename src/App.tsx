@@ -384,6 +384,14 @@ function isHandoverRelated(parts: string[]): boolean {
   return parts.some((part) => handoverFieldTerms.has(normalizeForMatch(part))) || handoverPatterns.some((pattern) => pattern.test(text));
 }
 
+function isDisplayableFieldName(name: string): boolean {
+  const trimmed = name.trim();
+  if (!trimmed) return false;
+  if (/[\u0000-\u001f\u007f]/.test(trimmed)) return false;
+  if (/^<\?xml\b/i.test(trimmed)) return false;
+  return true;
+}
+
 function isSelected(parts: string[], selectedTerms: string[]): boolean {
   if (!selectedTerms.length) return false;
   const normalizedParts = parts.map(normalizeForMatch);
@@ -1011,7 +1019,7 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
     loadFieldIndex()
       .then((loadedFields) => {
         if (cancelled) return;
-        setFields(loadedFields);
+        setFields(loadedFields.filter((field) => isDisplayableFieldName(field.name)));
         setStatus("ready");
       })
       .catch((loadError) => {
