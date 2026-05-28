@@ -1,0 +1,17 @@
+{
+  "id": "numactivecc",
+  "name": "Num Active CC",
+  "records": [
+    {
+      "id": "0xb825-nr5g-rrc-configuration-info",
+      "logcode": "0xB825",
+      "title": "0xB825 NR5G RRC Configuration Info",
+      "name": "NR5G RRC Configuration Info",
+      "category": "RRC",
+      "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+      "paths": [
+        "NR5G RRC Configuration Info -> Num Active CC"
+      ]
+    }
+  ]
+}

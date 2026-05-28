@@ -1,0 +1,172 @@
+{
+  "id": "earfcn",
+  "name": "Earfcn",
+  "records": [
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Earfcn"
+      ]
+    },
+    {
+      "id": "0xb0c1-d-lte-mib",
+      "logcode": "0xB0C1",
+      "title": "0xB0C1 D [LTE] MIB",
+      "name": "D [LTE] MIB",
+      "category": "LTE",
+      "dataFile": "0xB0C1__D_LTE_MIB.json",
+      "paths": [
+        "D [LTE] MIB -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> SubPackets -> [] -> SubPacket -> Idle Meas Cell Select Request -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> pcell -> earfcn"
+      ]
+    },
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> Earfcn"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Request -> E-ARFCN",
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb196-lte-ml1-cell-measurement-results",
+      "logcode": "0xB196",
+      "title": "0xB196 LTE ML1 Cell Measurement Results",
+      "name": "LTE ML1 Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Cell Measurement Results -> Cell Measurement List -> [] -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "LTE ML1 Serving Cell Information -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb19e-lte-ml1-inter-frequency-log",
+      "logcode": "0xB19E",
+      "title": "0xB19E LTE ML1 Inter Frequency Log",
+      "name": "LTE ML1 Inter Frequency Log",
+      "category": "ML1",
+      "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+      "paths": [
+        "LTE ML1 Inter Frequency Log -> EARFCN"
+      ]
+    },
+    {
+      "id": "0xb1b2-lte-ml1-common-dc-offset",
+      "logcode": "0xB1B2",
+      "title": "0xB1B2 LTE ML1 Common DC Offset",
+      "name": "LTE ML1 Common DC Offset",
+      "category": "ML1",
+      "dataFile": "0xB1B2__LTE_ML1_Common_DC_Offset.json",
+      "paths": [
+        "LTE ML1 Common DC Offset -> E-ARFCN"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> EARFCN"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record -> conn_srv_cell -> earfcn"
+      ]
+    }
+  ]
+}

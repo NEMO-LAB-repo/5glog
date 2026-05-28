@@ -1,0 +1,52 @@
+{
+  "id": "rsrq",
+  "name": "rsrq",
+  "records": [
+    {
+      "id": "0x184e-cm-serving-system-msim-event",
+      "logcode": "0x184E",
+      "title": "0x184E CM Serving System MSIM Event",
+      "name": "CM Serving System MSIM Event",
+      "category": "Other",
+      "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+      "paths": [
+        "CM Serving System MSIM Event -> stack -> [] -> rat_mode_info -> lte_mode_info -> rsrq"
+      ]
+    },
+    {
+      "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+      "logcode": "0xB1F5",
+      "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+      "name": "LTE ML1 IRAT NR Meas Results",
+      "category": "ML1",
+      "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+      "paths": [
+        "LTE ML1 IRAT NR Meas Results -> SubPackets -> [] -> SubPacket -> Irat Limited Nr Meas Results -> RspParam -> [] -> Meas Results -> [] -> Meas Info -> Rsrq",
+        "LTE ML1 IRAT NR Meas Results -> SubPackets -> [] -> SubPacket -> Irat Limited Nr Meas Results -> RspParam -> [] -> Meas Results -> [] -> MeasInfoPerBeam -> [] -> Meas Info -> Rsrq"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigInterRAT -> reportType -> eventTriggered -> reportQuantity -> rsrq",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigInterRAT -> reportType -> periodical -> reportQuantity -> rsrq",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> eventTriggered -> reportQuantityCell -> rsrq",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> eventTriggered -> reportQuantityRS-Indexes -> rsrq",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> periodical -> reportQuantityCell -> rsrq",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> periodical -> reportQuantityRS-Indexes -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultNeighCells -> measResultListEUTRA -> measResult -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultNeighCells -> measResultListNR -> measResult -> cellResults -> resultsSSB-Cell -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultNeighCells -> measResultListNR -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Results -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultBestNeighCell -> measResult -> cellResults -> resultsSSB-Cell -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultBestNeighCell -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Results -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultServingCell -> measResult -> cellResults -> resultsSSB-Cell -> rsrq",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultServingCell -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Results -> rsrq"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "eventtcpqc",
+  "name": "EVENT_TCP_QC",
+  "records": [
+    {
+      "id": "0x1ffb-event-tcp-qc",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_TCP_QC",
+      "name": "EVENT_TCP_QC",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_TCP_QC.json",
+      "paths": [
+        "EVENT_TCP_QC",
+        "EVENT_TCP_QC -> Event -> EVENT_TCP_QC"
+      ]
+    }
+  ]
+}

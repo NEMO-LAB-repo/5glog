@@ -1,0 +1,95 @@
+{
+  "id": "0xb16c-lte-ml1-dci-information-report",
+  "logcode": "0xB16C",
+  "name": "LTE ML1 DCI Information Report",
+  "title": "0xB16C LTE ML1 DCI Information Report",
+  "category": "ML1",
+  "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 DCI Information Report": {
+      "Duplex Mode": null,
+      "Subframe Cfg": null,
+      "Number of Records": null,
+      "Record": {
+        "[]": {
+          "System Frame Number": null,
+          "Sub Frame Number": null,
+          "Num UL Grant": null,
+          "Num DL Grant": null,
+          "PDCCH Order Present": null,
+          "TPC DCI Info": {
+            "TPC DCI Present": null,
+            "TPC DCI Format Type": null,
+            "TPC DCI RNTI Type": null,
+            "TPC DCI TPC Command": null
+          },
+          "DL Grant Info": {
+            "[]": {
+              "DL Grant Info": {
+                "DL Grant Cell Index": null,
+                "DL Grant Format Type": null,
+                "Num ACK/NAK Bits": null,
+                "DL Grant TPC Command": null,
+                "DAI": null,
+                "DL Grant Srs Req": null,
+                "DL Grant N CCE": null,
+                "Rnti Type": null,
+                "Aggregation Level": null,
+                "Search Space": null
+              }
+            }
+          },
+          "UL Grant Info": {
+            "[]": {
+              "Cell Index": null,
+              "NDI": null,
+              "HARQ ID": null,
+              "TPC": null,
+              "Rnti Type": null,
+              "K of DCI 0": null,
+              "UL Index/DAI": null,
+              "Redundancy Version Index": null,
+              "MCS Index": null,
+              "TBS Index": null,
+              "Modulation Type": null,
+              "CQI Request": null,
+              "SRS Request": null,
+              "Resource Allocation Type": null,
+              "Rbg Size": null,
+              "Start of Resource Block": null,
+              "Number of Resource Blocks": null,
+              "Cyclic Shift DMRS": null,
+              "Hopping Flag": null,
+              "Search Space": null,
+              "RIV Width": null,
+              "RIV Value": null,
+              "Start of Resource Block 2": null,
+              "Number of Resource Blocks 2": null,
+              "TX Antenna Selection": null,
+              "Aggregation Level": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 45,
+    "samplesParsedSuccessfully": 45,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB16C__LTE_ML1_DCI_Information_Report.json"
+  }
+}

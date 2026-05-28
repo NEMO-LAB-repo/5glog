@@ -1,0 +1,17 @@
+{
+  "id": "uemmidentityresponse",
+  "name": "U [EMM] Identity Response",
+  "records": [
+    {
+      "id": "0xb0ed-u-emm-identity-response",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Identity Response",
+      "name": "U [EMM] Identity Response",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Identity_Response.json",
+      "paths": [
+        "U [EMM] Identity Response"
+      ]
+    }
+  ]
+}

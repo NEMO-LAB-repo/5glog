@@ -1,0 +1,62 @@
+{
+  "id": "action",
+  "name": "ACTION",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-mac-timer-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_TIMER_V2",
+      "name": "EVENT_LTE_MAC_TIMER_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_TIMER_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_TIMER_V2 -> Event -> EVENT_LTE_MAC_TIMER_V2 -> ACTION"
+      ]
+    },
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> RLC RB Info -> Action"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> AddedModifiedRB Struct -> Added/Modified RB -> [] -> Action"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Added/Modified RB -> [] -> Action",
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Nr5G Added/Modified RB -> [] -> Action"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> RLC RB Info -> Action"
+      ]
+    }
+  ]
+}

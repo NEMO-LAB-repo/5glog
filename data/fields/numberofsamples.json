@@ -1,0 +1,28 @@
+{
+  "id": "numberofsamples",
+  "name": "Number of samples",
+  "records": [
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> Number of samples"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Sub Packets -> [] -> Number of samples"
+      ]
+    }
+  ]
+}

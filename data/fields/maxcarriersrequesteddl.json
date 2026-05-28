@@ -1,0 +1,18 @@
+{
+  "id": "maxcarriersrequesteddl",
+  "name": "maxCarriersRequestedDL",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> capabilityRequestFilter -> frequencyBandListFilter -> bandInformationNR -> maxCarriersRequestedDL",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> rf-Parameters -> appliedFreqBandListFilter -> bandInformationNR -> maxCarriersRequestedDL"
+      ]
+    }
+  ]
+}

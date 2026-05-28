@@ -1,0 +1,40 @@
+{
+  "id": "ri",
+  "name": "RI",
+  "records": [
+    {
+      "id": "0xb139-lte-ll1-pusch-tx-report",
+      "logcode": "0xB139",
+      "title": "0xB139 LTE LL1 PUSCH Tx Report",
+      "name": "LTE LL1 PUSCH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 PUSCH Tx Report -> Records -> [] -> RI"
+      ]
+    },
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "NR5G MAC UL TB Stats -> Records -> [] -> RI"
+      ]
+    },
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "NR5G MAC CSF Report -> Records -> [] -> Reports -> [] -> Quantities -> CSI -> Bit Width -> RI",
+        "NR5G MAC CSF Report -> Records -> [] -> Reports -> [] -> Quantities -> CSI -> Metrics -> RI"
+      ]
+    }
+  ]
+}

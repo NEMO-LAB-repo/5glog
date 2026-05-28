@@ -1,0 +1,66 @@
+{
+  "id": "0xb082-lte-rlc-dl-am-all-pdu",
+  "logcode": "0xB082",
+  "name": "LTE RLC DL AM All PDU",
+  "title": "0xB082 LTE RLC DL AM All PDU",
+  "category": "RLC",
+  "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC DL AM All PDU": {
+      "Versions -> Num Meta": null,
+      "Num Rb": null,
+      "Rlc State": {
+        "[]": {
+          "Rb Cfg Idx": null,
+          "Rb Mode": null,
+          "Rlc Sn Len": null,
+          "Rx Next": null,
+          "Rx Next Status Trigger": null,
+          "Rx High Status": null,
+          "Rx Next High": null
+        }
+      },
+      "Meta Log": {
+        "[]": {
+          "Sys Time": {
+            "Sub FN": null,
+            "SFN": null
+          },
+          "Rb Cfg Idx": null,
+          "Status": null,
+          "Start Sn": null,
+          "End Sn": null,
+          "So Start": null,
+          "So End": null,
+          "P": null,
+          "Lsf": null,
+          "Tail Seg": null,
+          "Head Seg": null,
+          "Inner Seg": null,
+          "Payload Len": null,
+          "First Pdcp Sn": null,
+          "Last Pdcp Sn": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 17,
+    "samplesParsedSuccessfully": 17,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json"
+  }
+}

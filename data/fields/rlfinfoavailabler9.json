@@ -1,0 +1,17 @@
+{
+  "id": "rlfinfoavailabler9",
+  "name": "rlf-InfoAvailable-r9",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Complete",
+      "name": "U [LTE] RRC Connection Reestablishment Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Complete.json",
+      "paths": [
+        "U [LTE] RRC Connection Reestablishment Complete -> ul-dcch -> message -> c1 -> rrcConnectionReestablishmentComplete -> criticalExtensions -> rrcConnectionReestablishmentComplete-r8 -> nonCriticalExtension -> rlf-InfoAvailable-r9"
+      ]
+    }
+  ]
+}

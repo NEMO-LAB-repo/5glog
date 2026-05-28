@@ -1,0 +1,36 @@
+{
+  "id": "0x1ff0-diag-version-response",
+  "logcode": "0x1FF0",
+  "name": "DIAG Version Response",
+  "title": "0x1FF0 DIAG Version Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__DIAG_Version_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "DIAG Version Response": {
+      "Cmd Code": null,
+      "DIAG Version Response": {
+        "DIAG Version": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__DIAG_Version_Response.json"
+  }
+}

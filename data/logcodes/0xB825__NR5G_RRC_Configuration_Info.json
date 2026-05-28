@@ -1,0 +1,95 @@
+{
+  "id": "0xb825-nr5g-rrc-configuration-info",
+  "logcode": "0xB825",
+  "name": "NR5G RRC Configuration Info",
+  "title": "0xB825 NR5G RRC Configuration Info",
+  "category": "RRC",
+  "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RRC Configuration Info": {
+      "State": null,
+      "Config Status": null,
+      "Connectivity Mode": null,
+      "Num Active SRB": null,
+      "Num Active DRB": null,
+      "MN MCG DRB IDs": null,
+      "SN MCG DRB IDs": null,
+      "MN SCG DRB IDs": null,
+      "SN SCG DRB IDs": null,
+      "MN Split DRB IDs": null,
+      "SN Split DRB IDs": null,
+      "LTE Serving Cell Info": {
+        "Num Bands": null,
+        "Band List": {
+          "[]": null
+        }
+      },
+      "Num Contiguous CC Groups": null,
+      "Num Active CC": null,
+      "Num Active RB": null,
+      "Contiguous CC Info": {
+        "[]": {
+          "Band Number": null,
+          "DL BW Class": null,
+          "UL BW Class": null
+        }
+      },
+      "NR5G Serving Cell Info": {
+        "[]": {
+          "Param List": {
+            "CC Id": null,
+            "Cell Id": null,
+            "DL Arfcn": null,
+            "UL Arfcn": null,
+            "SSB Arfcn": null,
+            "Band": null,
+            "Band Type": null,
+            "DL Carrier Bandwidth": null,
+            "UL Carrier Bandwidth": null,
+            "DL Max MIMO": null,
+            "UL Max MIMO": null
+          }
+        }
+      },
+      "Radio Bearer Info": {
+        "[]": {
+          "RB ID": null,
+          "Termination Point": null,
+          "DL RB Type": null,
+          "DL RB Path": null,
+          "DL ROHC Enabled": null,
+          "DL Cipher Algo": null,
+          "DL Integrity Algo": null,
+          "UL RB Type": null,
+          "UL RB Path": null,
+          "UL ROHC Enabled": null,
+          "UL Cipher Algo": null,
+          "UL Integrity Algo": null,
+          "UL Primary Path": null,
+          "UL PDCP Dup Activated": null,
+          "UL Data Split Threshold": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1087,
+    "samplesParsedSuccessfully": 1087,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB825__NR5G_RRC_Configuration_Info.json"
+  }
+}

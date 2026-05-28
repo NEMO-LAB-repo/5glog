@@ -1,0 +1,28 @@
+{
+  "id": "statuscause",
+  "name": "Status Cause",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END -> Event -> EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END -> Status Cause"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END -> Event -> EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END -> Status Cause"
+      ]
+    }
+  ]
+}

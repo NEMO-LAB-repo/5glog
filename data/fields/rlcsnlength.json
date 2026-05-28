@@ -1,0 +1,40 @@
+{
+  "id": "rlcsnlength",
+  "name": "RLC SN Length",
+  "records": [
+    {
+      "id": "0xb868-nr5g-rlc-ul-stats",
+      "logcode": "0xB868",
+      "title": "0xB868 NR5G RLC UL Stats",
+      "name": "NR5G RLC UL Stats",
+      "category": "RLC",
+      "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+      "paths": [
+        "NR5G RLC UL Stats -> Per LC -> [] -> LC State -> RLC SN Length"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> Per LC -> [] -> RLC SN Length",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> RLC SN Length"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> RLC RB Param -> [] -> RLC SN Length"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "0x184e-cm-serving-system-msim-event",
+  "logcode": "0x184E",
+  "name": "CM Serving System MSIM Event",
+  "title": "0x184E CM Serving System MSIM Event",
+  "category": "Other",
+  "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "CM Serving System MSIM Event": {
+      "ss_event": null,
+      "asubs_id": null,
+      "number_of_stacks": null,
+      "stack": {
+        "[]": {
+          "changed_fields": null,
+          "changed_fields2": null,
+          "signal_strength_changed_fields": null,
+          "is_operational": null,
+          "srv_status": null,
+          "true_srv_status": null,
+          "srv_domain": null,
+          "srv_capability": null,
+          "sys_mode": null,
+          "roam_status": null,
+          "sys_id": {
+            "Type": null,
+            "MCC": null,
+            "MNC": null,
+            "LAC": null
+          },
+          "is_sys_forbidden": null,
+          "rssiData": null,
+          "ecioData": null,
+          "io": null,
+          "sinr": null,
+          "pathloss": null,
+          "sirData": null,
+          "rssi2Data": null,
+          "rscp": null,
+          "ecio_for_display": null,
+          "psist": null,
+          "active_band": null,
+          "active_channel": null,
+          "thr_status": {
+            "ss_thr_status": null,
+            "thr_uptime": null,
+            "idx": null,
+            "call_status": null
+          },
+          "cell_id": null,
+          "cell_srv_ind": {
+            "hs_ind": null,
+            "dtm_supp": null,
+            "egprs_supp": null,
+            "hs_call_status": null
+          },
+          "reg_reject_info": {
+            "reject_srv_domain": null,
+            "reject_cause": null
+          },
+          "cipher_domain": null,
+          "prev_idle_digital_mode": null,
+          "cur_idle_digital_mode": null,
+          "bcmcs_srv_supported": null,
+          "bcmcs_srv_status": null,
+          "rat_mode_info -> nr5g_mode_info": {
+            "nr5g_rsrp": null,
+            "nr5g_sinr": null,
+            "Tac_5g": {
+              "tac": null
+            },
+            "srv_area_restriction": null
+          },
+          "rat_mode_info -> changed_fields_subs": null,
+          "rat_mode_info -> lte_mode_info": {
+            "rsrp": null,
+            "rsrq": null,
+            "lac": null,
+            "tac": null,
+            "rac_or_mme_code": null,
+            "embms_info": {
+              "is_supported": null,
+              "trace_id": null
+            },
+            "csg_info": {
+              "csg_id": null,
+              "hybrid_cell": null
+            },
+            "voice_support_on_lte": null
+          }
+        }
+      },
+      "is_csfb_call_active": null,
+      "curr_uptime": null,
+      "bsr_in_progress": null,
+      "eutra_detect_status": null,
+      "requesting_client_id": null,
+      "msm_id": null,
+      "ipapp_info": {
+        "reg_status": null,
+        "cause": null,
+        "warn_info": {
+          "present": null,
+          "cause": null,
+          "hostname": null,
+          "description": null
+        }
+      },
+      "current_mcc": null,
+      "home_mcc": null,
+      "plus_dial_setting": null,
+      "gan_info": {
+        "gan_state": null,
+        "gan_conn_status": null,
+        "gan_sig_chan_status": null,
+        "gan_mode_display": {
+          "is_mode_display_on": null,
+          "gan_usz_icon_indicator": null,
+          "gan_ms_location_status": null
+        },
+        "gan_error": {
+          "gan_error_category": null,
+          "gan_error_codepoint": null
+        }
+      },
+      "target_rat": null,
+      "irat_ctxt_target_rat": null,
+      "gwl_irat_asubs_id": null,
+      "voice_domain": null,
+      "sms_domain": null,
+      "div_duplex": null,
+      "def_roam_ind": null,
+      "ps_data_suspend": null,
+      "sys_sel_pref_req_id": null,
+      "ho_attached_needed": null,
+      "voice_support_on_nr5g": null,
+      "n1_nw_feature_support": {
+        "ims_vops_3gpp_supported": null,
+        "ims_vops_non_3gpp_supported": null,
+        "emc": null,
+        "emf": null,
+        "iwk_n26_suppported": null,
+        "mpsi_valid": null,
+        "mcsi_valid": null,
+        "emcw": null
+      },
+      "n1_sms_reg_status": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2088,
+    "samplesParsedSuccessfully": 2088,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x184E__CM_Serving_System_MSIM_Event.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "wcdmaadditionalstatusrequest",
+  "name": "WCDMA/Additional Status Request",
+  "records": [
+    {
+      "id": "0x1fea-wcdma-additional-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Additional Status Request",
+      "name": "WCDMA/Additional Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Additional_Status_Request.json",
+      "paths": [
+        "WCDMA/Additional Status Request",
+        "WCDMA/Additional Status Request -> Subsystem Dispatch Request Message -> WCDMA/Additional Status Request"
+      ]
+    }
+  ]
+}

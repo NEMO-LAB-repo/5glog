@@ -1,0 +1,64 @@
+{
+  "id": "0xb097-lte-rlc-ul-statistics",
+  "logcode": "0xB097",
+  "name": "LTE RLC UL Statistics",
+  "title": "0xB097 LTE RLC UL Statistics",
+  "category": "RLC",
+  "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC UL Statistics": {
+      "Number Of Subpackets": null,
+      "UL Stats": {
+        "[]": {
+          "Log Subpacket": {
+            "Subpacket ID": null,
+            "Subpacket Version": null,
+            "Subpacket Size": null
+          },
+          "Number Of RB's": null,
+          "RLCUL Error Count": null,
+          "RB": {
+            "[]": {
+              "RB CFG Index": null,
+              "Mode": null,
+              "Number Of RST": null,
+              "Number Of Data PDU": null,
+              "Number Of Data PDU Bytes": null,
+              "Number Of SDU": null,
+              "Number Of SDU Bytes": null,
+              "Number Of Control PDU TX": null,
+              "Number Of Control PDU Bytes TX": null,
+              "Number Of RETX PDU": null,
+              "Number Of RETX PDU Bytes": null,
+              "Number Of Control PDU RX": null,
+              "Number Of Comp NACK": null,
+              "Number Of Segment NACK": null,
+              "Number Of Invalid Control PDU RX": null,
+              "Number Of Poll": null,
+              "Number Of T Poll RETX Expiry": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 12,
+    "samplesParsedSuccessfully": 12,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB097__LTE_RLC_UL_Statistics.json"
+  }
+}

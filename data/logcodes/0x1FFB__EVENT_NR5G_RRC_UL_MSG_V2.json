@@ -1,0 +1,40 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-ul-msg-v2",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_UL_MSG_V2",
+  "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_V2",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_V2.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_UL_MSG_V2": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_UL_MSG_V2": {
+          "LC Type": null,
+          "Message Type": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_V2.json"
+  }
+}

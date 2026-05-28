@@ -1,0 +1,36 @@
+{
+  "id": "uespecsspace",
+  "name": "UE spec sspace",
+  "records": [
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> UE spec sspace"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> OTA Params -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> UE spec sspace"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> UE spec sspace"
+      ]
+    }
+  ]
+}

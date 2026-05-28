@@ -1,0 +1,105 @@
+{
+  "id": "status",
+  "name": "Status",
+  "records": [
+    {
+      "id": "0x1fea-nv-diag-nv-read-extension-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA NV/Diag NV Read Extension Request",
+      "name": "NV/Diag NV Read Extension Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+      "paths": [
+        "NV/Diag NV Read Extension Request -> Subsystem Dispatch Request Message -> NV/Diag NV Read Extension Request -> Status"
+      ]
+    },
+    {
+      "id": "0x1ff0-logging-config",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Logging Config",
+      "name": "Logging Config",
+      "category": "Other",
+      "dataFile": "0x1FF0__Logging_Config.json",
+      "paths": [
+        "Logging Config -> Logging Config -> Status"
+      ]
+    },
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "NV/Diag NV Read Extension Response -> Subsystem Dispatch Response Message -> NV/Diag NV Read Extension Response -> Status"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-camped-cell-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "name": "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_CAMPED_CELL_STATUS.json",
+      "paths": [
+        "EVENT_LTE_RRC_CAMPED_CELL_STATUS -> Event -> EVENT_LTE_RRC_CAMPED_CELL_STATUS -> status"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-security-config",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_SECURITY_CONFIG",
+      "name": "EVENT_LTE_RRC_SECURITY_CONFIG",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_SECURITY_CONFIG.json",
+      "paths": [
+        "EVENT_LTE_RRC_SECURITY_CONFIG -> Event -> EVENT_LTE_RRC_SECURITY_CONFIG -> Status"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-tau",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_TAU",
+      "name": "EVENT_NAS_TAU",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+      "paths": [
+        "EVENT_NAS_TAU -> Event -> EVENT_NAS_TAU -> status"
+      ]
+    },
+    {
+      "id": "0xb082-lte-rlc-dl-am-all-pdu",
+      "logcode": "0xB082",
+      "title": "0xB082 LTE RLC DL AM All PDU",
+      "name": "LTE RLC DL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC DL AM All PDU -> Meta Log -> [] -> Status"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Header -> status"
+      ]
+    },
+    {
+      "id": "0xb96d-nr5g-ml1-searcher-acq-config-and-response",
+      "logcode": "0xB96D",
+      "title": "0xB96D NR5G ML1 Searcher ACQ Config And Response",
+      "name": "NR5G ML1 Searcher ACQ Config And Response",
+      "category": "ML1",
+      "dataFile": "0xB96D__NR5G_ML1_Searcher_ACQ_Config_And_Response.json",
+      "paths": [
+        "NR5G ML1 Searcher ACQ Config And Response -> Raster List -> [] -> Status"
+      ]
+    }
+  ]
+}

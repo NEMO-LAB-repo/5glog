@@ -1,0 +1,17 @@
+{
+  "id": "sourcephycellid",
+  "name": "Source Phy Cell Id",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-started-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_STARTED_V2",
+      "name": "EVENT_NR5G_RRC_HO_STARTED_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_STARTED_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_HO_STARTED_V2 -> Event -> EVENT_NR5G_RRC_HO_STARTED_V2 -> Source Phy Cell Id"
+      ]
+    }
+  ]
+}

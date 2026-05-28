@@ -1,0 +1,17 @@
+{
+  "id": "initialpbackoff",
+  "name": "Initial P Backoff",
+  "records": [
+    {
+      "id": "0xb89c-nr5g-mac-flow-control",
+      "logcode": "0xB89C",
+      "title": "0xB89C NR5G MAC Flow Control",
+      "name": "NR5G MAC Flow Control",
+      "category": "MAC",
+      "dataFile": "0xB89C__NR5G_MAC_Flow_Control.json",
+      "paths": [
+        "NR5G MAC Flow Control -> Records -> [] -> MTPL Backoff FC -> Initial P Backoff"
+      ]
+    }
+  ]
+}

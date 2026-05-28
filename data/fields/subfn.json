@@ -1,0 +1,206 @@
+{
+  "id": "subfn",
+  "name": "Sub-FN",
+  "records": [
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> UL TB Info table -> [] -> Sub-FN"
+      ]
+    },
+    {
+      "id": "0xb082-lte-rlc-dl-am-all-pdu",
+      "logcode": "0xB082",
+      "title": "0xB082 LTE RLC DL AM All PDU",
+      "name": "LTE RLC DL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC DL AM All PDU -> Meta Log -> [] -> Sys Time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "LTE RLC DL AM Control PDU -> PDUs -> [] -> Sys Time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> RLCUL PDU -> [] -> AM PDU -> PDU based on D/c union -> AM PDU -> sub_fn",
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> RLCUL PDU -> [] -> AM PDU -> PDU based on D/c union -> Control PDU -> sub_fn"
+      ]
+    },
+    {
+      "id": "0xb169-lte-ue-identification-message-msg3-report",
+      "logcode": "0xB169",
+      "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+      "name": "LTE UE Identification Message (MSG3) Report",
+      "category": "LTE",
+      "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+      "paths": [
+        "LTE UE Identification Message (MSG3) Report -> Sub-fn"
+      ]
+    },
+    {
+      "id": "0xb16a-lte-contention-resolution-message-msg4-report",
+      "logcode": "0xB16A",
+      "title": "0xB16A LTE Contention Resolution Message (MSG4) Report",
+      "name": "LTE Contention Resolution Message (MSG4) Report",
+      "category": "LTE",
+      "dataFile": "0xB16A__LTE_Contention_Resolution_Message_MSG4_Report.json",
+      "paths": [
+        "LTE Contention Resolution Message (MSG4) Report -> Sub-fn"
+      ]
+    },
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> subfn"
+      ]
+    },
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> SubFn"
+      ]
+    },
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "NR5G LL1 LOG SERVING SNR -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> Versions -> Current SFN time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> Current SFN time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> Current SFN time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb959-nr5g-ml1-rlm-stats",
+      "logcode": "0xB959",
+      "title": "0xB959 NR5G ML1 RLM Stats",
+      "name": "NR5G ML1 RLM Stats",
+      "category": "ML1",
+      "dataFile": "0xB959__NR5G_ML1_RLM_Stats.json",
+      "paths": [
+        "NR5G ML1 RLM Stats -> Data per Evaluation Request -> [] -> Sub FN",
+        "NR5G ML1 RLM Stats -> Versions -> Start Time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Header -> subfn"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record -> conn_srv_cell -> subfn"
+      ]
+    },
+    {
+      "id": "0xb98f-nr5g-ml1-antenna-switch-diversity",
+      "logcode": "0xB98F",
+      "title": "0xB98F NR5G ML1 Antenna Switch Diversity",
+      "name": "NR5G ML1 Antenna Switch Diversity",
+      "category": "ML1",
+      "dataFile": "0xB98F__NR5G_ML1_Antenna_Switch_Diversity.json",
+      "paths": [
+        "NR5G ML1 Antenna Switch Diversity -> DL Action Time -> Sub FN"
+      ]
+    },
+    {
+      "id": "0xb9a7-nr5g-ml1-dlm2-ca-metrics-request",
+      "logcode": "0xB9A7",
+      "title": "0xB9A7 NR5G ML1 DLM2 CA Metrics Request",
+      "name": "NR5G ML1 DLM2 CA Metrics Request",
+      "category": "ML1",
+      "dataFile": "0xB9A7__NR5G_ML1_DLM2_CA_Metrics_Request.json",
+      "paths": [
+        "NR5G ML1 DLM2 CA Metrics Request -> Versions -> Current Systime -> Sub FN"
+      ]
+    }
+  ]
+}

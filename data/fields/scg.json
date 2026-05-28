@@ -1,0 +1,17 @@
+{
+  "id": "scg",
+  "name": "SCG",
+  "records": [
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> SCG"
+      ]
+    }
+  ]
+}

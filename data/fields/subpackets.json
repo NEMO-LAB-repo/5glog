@@ -1,0 +1,218 @@
+{
+  "id": "subpackets",
+  "name": "Sub Packets",
+  "records": [
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> DL SRB Integrity Data PDU Subpacket -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Statistics -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb0b6-lte-pdcp-ul-delay-statistics",
+      "logcode": "0xB0B6",
+      "title": "0xB0B6 LTE PDCP UL Delay Statistics",
+      "name": "LTE PDCP UL Delay Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B6__LTE_PDCP_UL_Delay_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Delay Statistics -> Subpackets"
+      ]
+    },
+    {
+      "id": "0xb0cd-lte-rrc-supported-ca-combos",
+      "logcode": "0xB0CD",
+      "title": "0xB0CD LTE RRC Supported CA Combos",
+      "name": "LTE RRC Supported CA Combos",
+      "category": "RRC",
+      "dataFile": "0xB0CD__LTE_RRC_Supported_CA_Combos.json",
+      "paths": [
+        "LTE RRC Supported CA Combos -> CA Combos -> [] -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets",
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Request -> Sub Packets",
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets",
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+      "logcode": "0xB1F5",
+      "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+      "name": "LTE ML1 IRAT NR Meas Results",
+      "category": "ML1",
+      "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+      "paths": [
+        "LTE ML1 IRAT NR Meas Results -> SubPackets"
+      ]
+    },
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "NR5G LL1 FW TX IU RF -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> Sub Packets"
+      ]
+    },
+    {
+      "id": "0xb992-nr5g-ml1-afc-services",
+      "logcode": "0xB992",
+      "title": "0xB992 NR5G ML1 AFC Services",
+      "name": "NR5G ML1 AFC Services",
+      "category": "ML1",
+      "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+      "paths": [
+        "NR5G ML1 AFC Services -> Versions -> Version -> Log Data -> [] -> Log Data Type -> Loop State Data -> Sub Packets"
+      ]
+    }
+  ]
+}

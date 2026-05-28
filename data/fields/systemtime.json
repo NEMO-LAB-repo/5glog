@@ -1,0 +1,152 @@
+{
+  "id": "systemtime",
+  "name": "System Time",
+  "records": [
+    {
+      "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+      "logcode": "0xB840",
+      "title": "0xB840 NR5G PDCP DL Data Pdu",
+      "name": "NR5G PDCP DL Data Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Data Pdu -> Meta Log Buffer -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+      "logcode": "0xB841",
+      "title": "0xB841 NR5G PDCP DL Control Pdu",
+      "name": "NR5G PDCP DL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Control Pdu -> System Time"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> TB Common Info -> System Time"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> Meta -> System Time"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> System Time",
+        "NR5G MAC RACH Attempt -> RACH Msg2 -> System Time",
+        "NR5G MAC RACH Attempt -> RACH Msg3 -> System Time",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> System Time"
+      ]
+    },
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "NR5G MAC CDRX Events Info -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "NR5G MAC UCI Payload Information -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Records -> [] -> System Time"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> System Time"
+      ]
+    },
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Database Update Ext -> System Time"
+      ]
+    }
+  ]
+}

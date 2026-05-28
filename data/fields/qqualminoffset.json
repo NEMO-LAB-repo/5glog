@@ -1,0 +1,28 @@
+{
+  "id": "qqualminoffset",
+  "name": "Q Qual Min Offset",
+  "records": [
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> SubPackets -> [] -> SubPacket -> Idle Meas Cell Select Request -> Release 9 Info -> Q Qual Min Offset"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> Q Qualmin Offset"
+      ]
+    }
+  ]
+}

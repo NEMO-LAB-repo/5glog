@@ -1,0 +1,57 @@
+{
+  "id": "0x17f7-wwcoex-power-info",
+  "logcode": "0x17F7",
+  "name": "WWCoex Power Info",
+  "title": "0x17F7 WWCoex Power Info",
+  "category": "Other",
+  "dataFile": "0x17F7__WWCoex_Power_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "WWCoex Power Info": {
+      "Subcode": null,
+      "Tech Id": null,
+      "Number of Entries": null,
+      "FrequencyUpdate": {
+        "[]": {
+          "Frequency Id": null,
+          "Frequency": null,
+          "Bandwidth": null,
+          "Power": null,
+          "Band": null,
+          "Direction": null,
+          "Type Mask": null
+        }
+      },
+      "PowerUpdate": {
+        "[]": {
+          "Frequency Id": null,
+          "Frequency": null,
+          "Bandwidth": null,
+          "Power": null,
+          "Band": null,
+          "Direction": null,
+          "Type Mask": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 907,
+    "samplesParsedSuccessfully": 907,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x17F7__WWCoex_Power_Info.json"
+  }
+}

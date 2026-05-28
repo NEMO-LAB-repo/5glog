@@ -1,0 +1,28 @@
+{
+  "id": "padsize",
+  "name": "Pad Size",
+  "records": [
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> Pad Size"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> Pad Size"
+      ]
+    }
+  ]
+}

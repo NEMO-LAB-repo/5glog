@@ -1,0 +1,28 @@
+{
+  "id": "txsubfn",
+  "name": "TX Sub FN",
+  "records": [
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record -> [] -> TX Sub FN"
+      ]
+    },
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control -> Records -> [] -> TX Sub FN"
+      ]
+    }
+  ]
+}

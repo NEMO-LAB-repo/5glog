@@ -1,0 +1,37 @@
+{
+  "id": "0x1ffb-event-qc-gps-event",
+  "logcode": "0x1FFB",
+  "name": "EVENT_QC_GPS_EVENT",
+  "title": "0x1FFB EVENT_QC_GPS_EVENT",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_QC_GPS_EVENT.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_QC_GPS_EVENT": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_QC_GPS_EVENT": {}
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 15,
+    "samplesParsedSuccessfully": 15,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_QC_GPS_EVENT.json"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "firstbyterlcheader",
+  "name": "First Byte RLC Header",
+  "records": [
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> Combined Headers -> [] -> RLC PDU Header -> First Byte RLC Header"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> First Packet RLC Header -> First Byte RLC Header",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> Last Packet RLC Header -> First Byte RLC Header"
+      ]
+    }
+  ]
+}

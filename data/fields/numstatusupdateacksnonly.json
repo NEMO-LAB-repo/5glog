@@ -1,0 +1,17 @@
+{
+  "id": "numstatusupdateacksnonly",
+  "name": "Num Status Update Ack SN Only",
+  "records": [
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "NR5G RLC DL Stats -> RB Stats -> [] -> Num Status Update Ack SN Only"
+      ]
+    }
+  ]
+}

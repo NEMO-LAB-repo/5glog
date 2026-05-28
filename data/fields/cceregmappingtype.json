@@ -1,0 +1,51 @@
+{
+  "id": "cceregmappingtype",
+  "name": "cce-REG-MappingType",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdcch-Config -> setup -> controlResourceSetToAddModList -> cce-REG-MappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdcch-Config -> setup -> controlResourceSetToAddModList -> cce-REG-MappingType"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Coreset Add Mod -> [] -> CCE Req Mapping -> CCE_Reg_Mapping_type"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> OTA Params -> CG Add Mod -> Per CC Config -> Coreset Add Mod -> [] -> CCE Req Mapping -> CCE_Reg_Mapping_type"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Coreset Add Mod -> [] -> CCE Req Mapping -> CCE_Reg_Mapping_type"
+      ]
+    }
+  ]
+}

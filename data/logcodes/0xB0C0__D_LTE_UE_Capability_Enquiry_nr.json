@@ -1,0 +1,66 @@
+{
+  "id": "0xb0c0-d-lte-ue-capability-enquiry-nr",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] UE Capability Enquiry : nr",
+  "title": "0xB0C0 D [LTE] UE Capability Enquiry : nr",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] UE Capability Enquiry : nr": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> ueCapabilityEnquiry": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueCapabilityEnquiry-r8": {
+            "ue-CapabilityRequest": {
+              "[]": null
+            },
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "nonCriticalExtension": {
+                      "requestedFreqBandsNR-MRDC-r15": {
+                        "freq": {
+                          "[0] -> bandInformationNR": {
+                            "bandNR": null
+                          },
+                          "[1] -> bandInformationNR": {
+                            "bandNR": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json"
+  }
+}

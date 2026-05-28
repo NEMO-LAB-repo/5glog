@@ -1,0 +1,77 @@
+{
+  "id": "pdcpconfig",
+  "name": "PDCP Config",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> PDCP RB Info -> PDCP Config"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> pdcp-Config"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> pdcp-Config",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> pdcp-Config"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> pdcp-Config",
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> pdcp-Config"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> radioBearerConfig -> srb-ToAddModList -> pdcp-Config",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> drb-ToAddModList -> pdcp-Config",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> srb-ToAddModList -> pdcp-Config",
+        "RadioBearerConfig -> pdu-radioBearerConfig -> drb-ToAddModList -> pdcp-Config"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> PDCP RB Info -> PDCP Config"
+      ]
+    }
+  ]
+}

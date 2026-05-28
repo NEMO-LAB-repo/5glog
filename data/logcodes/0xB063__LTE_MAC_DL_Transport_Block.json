@@ -1,0 +1,99 @@
+{
+  "id": "0xb063-lte-mac-dl-transport-block",
+  "logcode": "0xB063",
+  "name": "LTE MAC DL Transport Block",
+  "title": "0xB063 LTE MAC DL Transport Block",
+  "category": "MAC",
+  "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE MAC DL Transport Block": {
+      "TB Log Buff": {
+        "Config Info": {
+          "Num Tb": null,
+          "Num LCID": null,
+          "Reason": null
+        },
+        "TB Info": {
+          "[]": {
+            "TB Common Info": {
+              "TB Size": null,
+              "Num Pad Bytes": null,
+              "Frame": null,
+              "SubFrame": null,
+              "Reparse Flag": null,
+              "RNTI Type": null,
+              "CC ID": null,
+              "HARQ ID": null,
+              "Num MAC Sdu": null,
+              "MAC Hdr Len": null
+            },
+            "MAC Sdu Info": {
+              "[]": {
+                "MAC Sdu Info Table": {
+                  "MAC Common Info": {
+                    "Is MCE": null,
+                    "LCID": null,
+                    "Sdu Len": null
+                  },
+                  "Mac CE Payload": null,
+                  "RLC PDCP Info": {
+                    "SN": null,
+                    "DC": null,
+                    "P": null,
+                    "RF": null,
+                    "E": null,
+                    "FI": null,
+                    "LSF": null,
+                    "SO": null,
+                    "Num PDCP Grp": null,
+                    "Num NLOs": null
+                  },
+                  "Dynamic Log Info": {
+                    "[]": {
+                      "Li Num": null,
+                      "Li Len": null
+                    }
+                  }
+                },
+                "PDCP Group Info": {
+                  "[]": {
+                    "Group": {
+                      "[]": {
+                        "e": null,
+                        "cs": null,
+                        "Hdr Flag": null,
+                        "PDCP SN LEN": null,
+                        "PDCP DC": null,
+                        "Group Type": null,
+                        "FIRST TWO BYTES": null
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 58,
+    "samplesParsedSuccessfully": 58,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB063__LTE_MAC_DL_Transport_Block.json"
+  }
+}

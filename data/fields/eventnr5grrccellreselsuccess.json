@@ -1,0 +1,18 @@
+{
+  "id": "eventnr5grrccellreselsuccess",
+  "name": "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-cell-resel-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "name": "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_CELL_RESEL_SUCCESS.json",
+      "paths": [
+        "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+        "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS -> Event -> EVENT_NR5G_RRC_CELL_RESEL_SUCCESS"
+      ]
+    }
+  ]
+}

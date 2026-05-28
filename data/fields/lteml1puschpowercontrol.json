@@ -1,0 +1,17 @@
+{
+  "id": "lteml1puschpowercontrol",
+  "name": "LTE ML1 PUSCH Power Control",
+  "records": [
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control"
+      ]
+    }
+  ]
+}

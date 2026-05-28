@@ -1,0 +1,18 @@
+{
+  "id": "callmanagerstateinfoofcurrentsubscriptionrequest",
+  "name": "Call Manager/State Info Of Current Subscription Request",
+  "records": [
+    {
+      "id": "0x1fea-call-manager-state-info-of-current-subscription-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Of Current Subscription Request",
+      "name": "Call Manager/State Info Of Current Subscription Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Of_Current_Subscription_Request.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Request",
+        "Call Manager/State Info Of Current Subscription Request -> Subsystem Dispatch Request Message -> Call Manager/State Info Of Current Subscription Request"
+      ]
+    }
+  ]
+}

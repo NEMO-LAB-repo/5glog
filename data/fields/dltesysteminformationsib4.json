@@ -1,0 +1,17 @@
+{
+  "id": "dltesysteminformationsib4",
+  "name": "D [LTE] System Information : sib4",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4",
+      "name": "D [LTE] System Information : sib4",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4.json",
+      "paths": [
+        "D [LTE] System Information : sib4"
+      ]
+    }
+  ]
+}

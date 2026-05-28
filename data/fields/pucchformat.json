@@ -1,0 +1,28 @@
+{
+  "id": "pucchformat",
+  "name": "PUCCH Format",
+  "records": [
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUCCH Data -> Per PUCCH Data -> [] -> PUCCH Format"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets -> [] -> TX IU Power Sub Packet -> SubVersion -> Power Info -> [] -> PUCCH Data -> PUCCH Format"
+      ]
+    }
+  ]
+}

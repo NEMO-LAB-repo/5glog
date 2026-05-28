@@ -1,0 +1,39 @@
+{
+  "id": "rxdeliv",
+  "name": "Rx Deliv",
+  "records": [
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> RB Stats -> [] -> Rx Deliv"
+      ]
+    },
+    {
+      "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+      "logcode": "0xB840",
+      "title": "0xB840 NR5G PDCP DL Data Pdu",
+      "name": "NR5G PDCP DL Data Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Data Pdu -> PDCP State -> [] -> RX_DELIV"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats -> RB Stats -> [] -> RX Deliv"
+      ]
+    }
+  ]
+}

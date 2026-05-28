@@ -1,0 +1,62 @@
+{
+  "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+  "logcode": "0xB842",
+  "name": "NR5G PDCP DL Rbs Stats",
+  "title": "0xB842 NR5G PDCP DL Rbs Stats",
+  "category": "PDCP",
+  "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G PDCP DL Rbs Stats": {
+      "Num RB": null,
+      "RB Stats": {
+        "[]": {
+          "RB Config Index": null,
+          "RB Mode": null,
+          "Num Reestablish": null,
+          "T Reordering": null,
+          "Pdcp Hdr length": null,
+          "Is RB Flow Enabled": null,
+          "Num Data PDU Received": null,
+          "Data PDU Bytes Received": null,
+          "Num Control PDU Received": null,
+          "Control PDU Bytes Received": null,
+          "Num Control PDU Generated": null,
+          "Num Control PDU Bytes Generated": null,
+          "Num Miss PDU To Upper Layer": null,
+          "Num Duplicate PDU": null,
+          "Dropped PDU Bytes": null,
+          "Num Out Of Win PDU": null,
+          "Num Invalid PDU": null,
+          "Num Reorder Timer Expire": null,
+          "Num Reorder Timer Start": null,
+          "RX Reorder": null,
+          "RX Next": null,
+          "RX Deliv": null,
+          "Num Integrity Fail": null,
+          "Num IP Packet Error": null,
+          "Num Packet Length Error": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3000,
+    "samplesParsedSuccessfully": 3000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json"
+  }
+}

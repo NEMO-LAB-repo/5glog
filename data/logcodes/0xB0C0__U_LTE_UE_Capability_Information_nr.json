@@ -1,0 +1,375 @@
+{
+  "id": "0xb0c0-u-lte-ue-capability-information-nr",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] UE Capability Information : nr",
+  "title": "0xB0C0 U [LTE] UE Capability Information : nr",
+  "category": "LTE",
+  "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] UE Capability Information : nr": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> ueCapabilityInformation": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueCapabilityInformation-r8": {
+            "ue-CapabilityRAT-ContainerList": {
+              "[]": {
+                "rat-Type": null,
+                "ueCapabilityRAT-Container": {
+                  "accessStratumRelease": null,
+                  "pdcp-Parameters": {
+                    "supportedROHC-Profiles": {
+                      "profile0x0000": null,
+                      "profile0x0001": null,
+                      "profile0x0002": null,
+                      "profile0x0003": null,
+                      "profile0x0004": null,
+                      "profile0x0006": null,
+                      "profile0x0101": null,
+                      "profile0x0102": null,
+                      "profile0x0103": null,
+                      "profile0x0104": null
+                    },
+                    "maxNumberROHC-ContextSessions": null,
+                    "uplinkOnlyROHC-Profiles": null,
+                    "continueROHC-Context": null,
+                    "shortSN": null
+                  },
+                  "rlc-Parameters": {
+                    "am-WithShortSN": null,
+                    "um-WithShortSN": null,
+                    "um-WithLongSN": null
+                  },
+                  "mac-Parameters": {
+                    "mac-ParametersXDD-Diff": {
+                      "logicalChannelSR-DelayTimer": null,
+                      "longDRX-Cycle": null,
+                      "multipleSR-Configurations": null
+                    }
+                  },
+                  "phy-Parameters": {
+                    "phy-ParametersCommon": {
+                      "nzp-CSI-RS-IntefMgmt": null,
+                      "dynamicHARQ-ACK-Codebook": null,
+                      "semiStaticHARQ-ACK-Codebook": null,
+                      "ra-Type0-PUSCH": null,
+                      "dynamicSwitchRA-Type0-1-PUSCH": null,
+                      "pdsch-MappingTypeA": null,
+                      "rateMatchingResrcSetSemi-Static": null,
+                      "rateMatchingResrcSetDynamic": null,
+                      "bwp-SwitchingDelay": null,
+                      "rateMatchingCtrlResrcSetDynamic": null,
+                      "maxLayersMIMO-Indication": null
+                    },
+                    "phy-ParametersFRX-Diff": {
+                      "twoFL-DMRS": null,
+                      "supportedDMRS-TypeDL": null,
+                      "supportedDMRS-TypeUL": null,
+                      "onePortsPTRS": null,
+                      "pucch-F2-WithFH": null,
+                      "pucch-F3-WithFH": null,
+                      "tpc-SRS-RNTI": null,
+                      "absoluteTPC-Command": null,
+                      "pusch-HalfPi-BPSK": null,
+                      "pucch-F3-4-HalfPi-BPSK": null,
+                      "almostContiguousCP-OFDM-UL": null,
+                      "csi-RS-IM-ReceptionForFeedback": {
+                        "maxConfigNumberNZP-CSI-RS-PerCC": null,
+                        "maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC": null,
+                        "maxConfigNumberCSI-IM-PerCC": null,
+                        "maxNumberSimultaneousNZP-CSI-RS-PerCC": null,
+                        "totalNumberPortsSimultaneousNZP-CSI-RS-PerCC": null
+                      },
+                      "csi-ReportFramework": {
+                        "maxNumberPeriodicCSI-PerBWP-ForCSI-Report": null,
+                        "maxNumberAperiodicCSI-PerBWP-ForCSI-Report": null,
+                        "maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report": null,
+                        "maxNumberPeriodicCSI-PerBWP-ForBeamReport": null,
+                        "maxNumberAperiodicCSI-PerBWP-ForBeamReport": null,
+                        "maxNumberAperiodicCSI-triggeringStatePerCC": null,
+                        "maxNumberSemiPersistentCSI-PerBWP-ForBeamReport": null,
+                        "simultaneousCSI-ReportsPerCC": null
+                      },
+                      "mux-SR-HARQ-ACK-CSI-PUCCH-OncePerSlot": {
+                        "sameSymbol": null
+                      },
+                      "dl-SchedulingOffset-PDSCH-TypeA": null,
+                      "oneFL-DMRS-TwoAdditionalDMRS-UL": null,
+                      "twoFL-DMRS-TwoAdditionalDMRS-UL": null
+                    },
+                    "phy-ParametersFR1": {
+                      "pdsch-256QAM-FR1": null,
+                      "pdsch-RE-MappingFR1-PerSymbol": null,
+                      "pdsch-RE-MappingFR1-PerSlot": null
+                    }
+                  },
+                  "rf-Parameters": {
+                    "supportedBandListNR": {
+                      "[]": {
+                        "bandNR": null,
+                        "mimo-ParametersPerBand": {
+                          "tci-StatePDSCH": {
+                            "maxNumberConfiguredTCI-StatesPerCC": null,
+                            "maxNumberActiveTCI-PerBWP": null
+                          },
+                          "pusch-TransCoherence": null,
+                          "periodicBeamReport": null,
+                          "aperiodicBeamReport": null,
+                          "maxNumberNonGroupBeamReporting": null,
+                          "maxNumberSSB-BFD": null,
+                          "maxNumberCSI-RS-SSB-CBD": null,
+                          "beamReportTiming": {
+                            "scs-30kHz": null,
+                            "scs-15kHz": null
+                          },
+                          "beamManagementSSB-CSI-RS": {
+                            "maxNumberSSB-CSI-RS-ResourceOneTx": null,
+                            "maxNumberCSI-RS-Resource": null,
+                            "maxNumberCSI-RS-ResourceTwoTx": null,
+                            "supportedCSI-RS-Density": null,
+                            "maxNumberAperiodicCSI-RS-Resource": null
+                          },
+                          "codebookParameters": {
+                            "type1": {
+                              "singlePanel": {
+                                "supportedCSI-RS-ResourceList": {
+                                  "[]": {
+                                    "maxNumberTxPortsPerResource": null,
+                                    "maxNumberResourcesPerBand": null,
+                                    "totalNumberTxPortsPerBand": null
+                                  }
+                                },
+                                "modes": null,
+                                "maxNumberCSI-RS-PerResourceSet": null
+                              }
+                            }
+                          },
+                          "csi-RS-IM-ReceptionForFeedback": {
+                            "maxConfigNumberNZP-CSI-RS-PerCC": null,
+                            "maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC": null,
+                            "maxConfigNumberCSI-IM-PerCC": null,
+                            "maxNumberSimultaneousNZP-CSI-RS-PerCC": null,
+                            "totalNumberPortsSimultaneousNZP-CSI-RS-PerCC": null
+                          },
+                          "csi-ReportFramework": {
+                            "maxNumberPeriodicCSI-PerBWP-ForCSI-Report": null,
+                            "maxNumberAperiodicCSI-PerBWP-ForCSI-Report": null,
+                            "maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report": null,
+                            "maxNumberPeriodicCSI-PerBWP-ForBeamReport": null,
+                            "maxNumberAperiodicCSI-PerBWP-ForBeamReport": null,
+                            "maxNumberAperiodicCSI-triggeringStatePerCC": null,
+                            "maxNumberSemiPersistentCSI-PerBWP-ForBeamReport": null,
+                            "simultaneousCSI-ReportsPerCC": null
+                          },
+                          "csi-RS-ForTracking": {
+                            "maxBurstLength": null,
+                            "maxSimultaneousResourceSetsPerCC": null,
+                            "maxConfiguredResourceSetsPerCC": null,
+                            "maxConfiguredResourceSetsAllCC": null
+                          }
+                        },
+                        "multipleTCI": null,
+                        "bwp-SameNumerology": null,
+                        "pusch-256QAM": null,
+                        "ue-PowerClass": null,
+                        "channelBWs-DL -> fr1": {
+                          "scs-15kHz": null,
+                          "scs-30kHz": null,
+                          "scs-60kHz": null
+                        },
+                        "channelBWs-UL -> fr1": {
+                          "scs-15kHz": null,
+                          "scs-30kHz": null,
+                          "scs-60kHz": null
+                        },
+                        "maxUplinkDutyCycle-PC2-FR1": null,
+                        "channelBWs-DL-v1590 -> fr1": {
+                          "scs-30kHz": null
+                        },
+                        "channelBWs-UL-v1590 -> fr1": {
+                          "scs-30kHz": null
+                        },
+                        "rateMatchingLTE-CRS": null
+                      }
+                    },
+                    "supportedBandCombinationList": {
+                      "[]": {
+                        "bandList": {
+                          "[0] -> nr": {
+                            "bandNR": null,
+                            "ca-BandwidthClassDL-NR": null,
+                            "ca-BandwidthClassUL-NR": null
+                          }
+                        },
+                        "featureSetCombination": null,
+                        "powerClass-v1530": null
+                      }
+                    },
+                    "appliedFreqBandListFilter": {
+                      "[0] -> bandInformationNR": {
+                        "bandNR": null
+                      },
+                      "[1] -> bandInformationNR": {
+                        "bandNR": null
+                      }
+                    },
+                    "supportedBandCombinationList-v1540": {
+                      "[]": {
+                        "bandList-v1540": {
+                          "[]": {
+                            "srs-TxSwitch": {
+                              "supportedSRS-TxPortSwitch": null
+                            }
+                          }
+                        },
+                        "ca-ParametersNR-v1540": {
+                          "csi-RS-IM-ReceptionForFeedbackPerBandComb": {
+                            "maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC": null,
+                            "totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC": null
+                          },
+                          "simultaneousCSI-ReportsAllCC": null
+                        }
+                      }
+                    }
+                  },
+                  "measAndMobParameters": {
+                    "measAndMobParametersCommon": {
+                      "ssb-RLM": null,
+                      "eventB-MeasAndReport": null,
+                      "handoverFDD-TDD": null,
+                      "eutra-CGI-Reporting": null,
+                      "nr-CGI-Reporting": null,
+                      "periodicEUTRA-MeasAndReport": null
+                    },
+                    "measAndMobParametersXDD-Diff": {
+                      "intraAndInterF-MeasAndReport": null,
+                      "eventA-MeasAndReport": null,
+                      "handoverInterF": null,
+                      "handoverLTE-EPC": null
+                    },
+                    "measAndMobParametersFRX-Diff": {
+                      "ss-SINR-Meas": null,
+                      "handoverInterF": null,
+                      "handoverLTE-EPC": null,
+                      "simultaneousRxDataSSB-DiffNumerology": null
+                    }
+                  },
+                  "tdd-Add-UE-NR-Capabilities": {
+                    "phy-ParametersXDD-Diff": {
+                      "dl-SchedulingOffset-PDSCH-TypeA": null
+                    }
+                  },
+                  "featureSets": {
+                    "featureSetsDownlink": {
+                      "[]": {
+                        "featureSetListPerDownlinkCC": {
+                          "[]": null
+                        },
+                        "ue-SpecificUL-DL-Assignment": null
+                      }
+                    },
+                    "featureSetsDownlinkPerCC": {
+                      "[]": {
+                        "supportedSubcarrierSpacingDL": null,
+                        "supportedBandwidthDL -> fr1": null,
+                        "channelBW-90mhz": null,
+                        "maxNumberMIMO-LayersPDSCH": null,
+                        "supportedModulationOrderDL": null
+                      }
+                    },
+                    "featureSetsUplink": {
+                      "[]": {
+                        "featureSetListPerUplinkCC": {
+                          "[]": null
+                        },
+                        "supportedSRS-Resources": {
+                          "maxNumberAperiodicSRS-PerBWP": null,
+                          "maxNumberAperiodicSRS-PerBWP-PerSlot": null,
+                          "maxNumberPeriodicSRS-PerBWP": null,
+                          "maxNumberPeriodicSRS-PerBWP-PerSlot": null,
+                          "maxNumberSemiPersistentSRS-PerBWP": null,
+                          "maxNumberSemiPersistentSRS-PerBWP-PerSlot": null,
+                          "maxNumberSRS-Ports-PerResource": null
+                        }
+                      }
+                    },
+                    "featureSetsUplinkPerCC": {
+                      "[]": {
+                        "supportedSubcarrierSpacingUL": null,
+                        "supportedBandwidthUL -> fr1": null,
+                        "mimo-CB-PUSCH": {
+                          "maxNumberMIMO-LayersCB-PUSCH": null,
+                          "maxNumberSRS-ResourcePerSet": null
+                        },
+                        "supportedModulationOrderUL": null,
+                        "channelBW-90mhz": null
+                      }
+                    },
+                    "featureSetsDownlink-v1540": {
+                      "[]": {
+                        "twoFL-DMRS-TwoAdditionalDMRS-DL": null,
+                        "additionalDMRS-DL-Alt": null
+                      }
+                    }
+                  },
+                  "featureSetCombinations": {
+                    "[]": {
+                      "[]": {
+                        "[0] -> nr": {
+                          "downlinkSetNR": null,
+                          "uplinkSetNR": null
+                        }
+                      }
+                    }
+                  },
+                  "nonCriticalExtension": {
+                    "interRAT-Parameters": {
+                      "eutra": {
+                        "supportedBandListEUTRA": {
+                          "[]": null
+                        },
+                        "eutra-ParametersCommon": {
+                          "mfbi-EUTRA": null
+                        }
+                      }
+                    },
+                    "nonCriticalExtension": {
+                      "ims-Parameters": {
+                        "ims-ParametersFRX-Diff": {
+                          "voiceOverNR": null
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json"
+  }
+}

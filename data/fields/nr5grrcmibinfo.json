@@ -1,0 +1,17 @@
+{
+  "id": "nr5grrcmibinfo",
+  "name": "NR5G RRC MIB Info",
+  "records": [
+    {
+      "id": "0xb822-nr5g-rrc-mib-info",
+      "logcode": "0xB822",
+      "title": "0xB822 NR5G RRC MIB Info",
+      "name": "NR5G RRC MIB Info",
+      "category": "RRC",
+      "dataFile": "0xB822__NR5G_RRC_MIB_Info.json",
+      "paths": [
+        "NR5G RRC MIB Info"
+      ]
+    }
+  ]
+}

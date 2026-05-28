@@ -1,0 +1,171 @@
+{
+  "id": "subsystemdispatchresponsemessage",
+  "name": "Subsystem Dispatch Response Message",
+  "records": [
+    {
+      "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+      "name": "Call Manager/State Info Of Current Subscription Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Call Manager/State Info Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-close-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Close Response",
+      "name": "EFS2/DIAG Close Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Close_Response.json",
+      "paths": [
+        "EFS2/DIAG Close Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-get-item-file-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Get Item File Response",
+      "name": "EFS2/DIAG Get Item File Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json",
+      "paths": [
+        "EFS2/DIAG Get Item File Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-open-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Open Response",
+      "name": "EFS2/DIAG Open Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Open_Response.json",
+      "paths": [
+        "EFS2/DIAG Open Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-read-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Read Response",
+      "name": "EFS2/DIAG Read Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Read_Response.json",
+      "paths": [
+        "EFS2/DIAG Read Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-hello-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Hello Response",
+      "name": "EFS2/Hello Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Hello_Response.json",
+      "paths": [
+        "EFS2/Hello Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-query-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Query Response",
+      "name": "EFS2/Query Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Query_Response.json",
+      "paths": [
+        "EFS2/Query Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Version Response",
+      "name": "GSM/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Version_Response.json",
+      "paths": [
+        "GSM/Version Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-multisim-state-info-responese",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 MultiSim State Info Responese",
+      "name": "MultiSim State Info Responese",
+      "category": "Other",
+      "dataFile": "0x1FF0__MultiSim_State_Info_Responese.json",
+      "paths": [
+        "MultiSim State Info Responese -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "NV/Diag NV Read Extension Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-umts-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 UMTS/Version Response",
+      "name": "UMTS/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__UMTS_Version_Response.json",
+      "paths": [
+        "UMTS/Version Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-additional-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Additional Status Response",
+      "name": "WCDMA/Additional Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Additional_Status_Response.json",
+      "paths": [
+        "WCDMA/Additional Status Response -> Subsystem Dispatch Response Message"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Version Response",
+      "name": "WCDMA/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Version_Response.json",
+      "paths": [
+        "WCDMA/Version Response -> Subsystem Dispatch Response Message"
+      ]
+    }
+  ]
+}

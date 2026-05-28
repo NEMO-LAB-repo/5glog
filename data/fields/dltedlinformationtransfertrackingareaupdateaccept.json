@@ -1,0 +1,17 @@
+{
+  "id": "dltedlinformationtransfertrackingareaupdateaccept",
+  "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "0xb0c0-d-lte-rrc-connection-setup",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] RRC Connection Setup",
+  "title": "0xB0C0 D [LTE] RRC Connection Setup",
+  "category": "RRC",
+  "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] RRC Connection Setup": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-ccch": {
+        "message -> c1 -> rrcConnectionSetup": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionSetup-r8": {
+            "radioResourceConfigDedicated": {
+              "srb-ToAddModList": {
+                "[]": {
+                  "srb-Identity": null,
+                  "rlc-Config -> explicitValue -> am": {
+                    "ul-AM-RLC": {
+                      "t-PollRetransmit": null,
+                      "pollPDU": null,
+                      "pollByte": null,
+                      "maxRetxThreshold": null
+                    },
+                    "dl-AM-RLC": {
+                      "t-Reordering": null,
+                      "t-StatusProhibit": null
+                    }
+                  },
+                  "logicalChannelConfig -> explicitValue": {
+                    "ul-SpecificParameters": {
+                      "priority": null,
+                      "prioritisedBitRate": null,
+                      "bucketSizeDuration": null,
+                      "logicalChannelGroup": null
+                    }
+                  }
+                }
+              },
+              "mac-MainConfig -> explicitValue": {
+                "ul-SCH-Config": {
+                  "maxHARQ-Tx": null,
+                  "periodicBSR-Timer": null,
+                  "retxBSR-Timer": null,
+                  "ttiBundling": null
+                },
+                "timeAlignmentTimerDedicated": null,
+                "phr-Config -> setup": {
+                  "periodicPHR-Timer": null,
+                  "prohibitPHR-Timer": null,
+                  "dl-PathlossChange": null
+                }
+              },
+              "physicalConfigDedicated": {
+                "pdsch-ConfigDedicated": {
+                  "p-a": null
+                },
+                "pusch-ConfigDedicated": {
+                  "betaOffset-ACK-Index": null,
+                  "betaOffset-RI-Index": null,
+                  "betaOffset-CQI-Index": null
+                },
+                "uplinkPowerControlDedicated": {
+                  "p0-UE-PUSCH": null,
+                  "deltaMCS-Enabled": null,
+                  "accumulationEnabled": null,
+                  "p0-UE-PUCCH": null,
+                  "pSRS-Offset": null,
+                  "filterCoefficient": null
+                },
+                "cqi-ReportConfig": {
+                  "cqi-ReportModeAperiodic": null,
+                  "nomPDSCH-RS-EPRE-Offset": null,
+                  "cqi-ReportPeriodic -> setup": {
+                    "cqi-PUCCH-ResourceIndex": null,
+                    "cqi-pmi-ConfigIndex": null,
+                    "cqi-FormatIndicatorPeriodic -> widebandCQI": null,
+                    "ri-ConfigIndex": null,
+                    "simultaneousAckNackAndCQI": null
+                  }
+                },
+                "antennaInfo -> explicitValue": {
+                  "transmissionMode": null,
+                  "ue-TransmitAntennaSelection -> release": null,
+                  "codebookSubsetRestriction -> n2TxAntenna-tm3": null,
+                  "codebookSubsetRestriction -> n2TxAntenna-tm4": null
+                },
+                "schedulingRequestConfig -> setup": {
+                  "sr-PUCCH-ResourceIndex": null,
+                  "sr-ConfigIndex": null,
+                  "dsr-TransMax": null
+                },
+                "pucch-ConfigDedicated": {
+                  "ackNackRepetition -> release": null
+                },
+                "tpc-PDCCH-ConfigPUCCH -> release": null,
+                "tpc-PDCCH-ConfigPUSCH -> release": null,
+                "soundingRS-UL-ConfigDedicated -> release": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 20,
+    "samplesParsedSuccessfully": 20,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json"
+  }
+}

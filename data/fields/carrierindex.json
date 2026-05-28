@@ -1,0 +1,127 @@
+{
+  "id": "carrierindex",
+  "name": "Carrier Index",
+  "records": [
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "LTE LL1 PDSCH Demapper Configuration -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb12a-lte-ll1-pcfich-decoding-results",
+      "logcode": "0xB12A",
+      "title": "0xB12A LTE LL1 PCFICH Decoding Results",
+      "name": "LTE LL1 PCFICH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PCFICH Decoding Results -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb14d-lte-ll1-pucch-csf-log",
+      "logcode": "0xB14D",
+      "title": "0xB14D LTE LL1 PUCCH CSF Log",
+      "name": "LTE LL1 PUCCH CSF Log",
+      "category": "ML1",
+      "dataFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json",
+      "paths": [
+        "LTE LL1 PUCCH CSF Log -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb14e-lte-ll1-pusch-csf",
+      "logcode": "0xB14E",
+      "title": "0xB14E LTE LL1 PUSCH CSF",
+      "name": "LTE LL1 PUSCH CSF",
+      "category": "ML1",
+      "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+      "paths": [
+        "LTE LL1 PUSCH CSF -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets -> [] -> Control AGC Sub Packet -> Log Header -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "NR5G LL1 LOG SERVING SNR -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> CSI Records -> [] -> Carrier Index"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Rasters -> [] -> Meas Window -> [] -> Window Header -> carrierIndex"
+      ]
+    }
+  ]
+}

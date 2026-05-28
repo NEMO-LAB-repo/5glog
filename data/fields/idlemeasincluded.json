@@ -1,0 +1,17 @@
+{
+  "id": "idlemeasincluded",
+  "name": "Idle Meas Included",
+  "records": [
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas Common Config -> Idle Meas Included"
+      ]
+    }
+  ]
+}

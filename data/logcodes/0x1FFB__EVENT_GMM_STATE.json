@@ -1,0 +1,41 @@
+{
+  "id": "0x1ffb-event-gmm-state",
+  "logcode": "0x1FFB",
+  "name": "EVENT_GMM_STATE",
+  "title": "0x1FFB EVENT_GMM_STATE",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_GMM_STATE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_GMM_STATE": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_GMM_STATE": {
+          "GMMSubstate": null,
+          "GMMState": null,
+          "GMMStatus": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 20,
+    "samplesParsedSuccessfully": 20,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_GMM_STATE.json"
+  }
+}

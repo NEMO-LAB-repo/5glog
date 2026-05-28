@@ -1,0 +1,17 @@
+{
+  "id": "nr5gmacdltbreport",
+  "name": "NR5G MAC DL TB Report",
+  "records": [
+    {
+      "id": "0xb886-nr5g-mac-dl-tb-report",
+      "logcode": "0xB886",
+      "title": "0xB886 NR5G MAC DL TB Report",
+      "name": "NR5G MAC DL TB Report",
+      "category": "MAC",
+      "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+      "paths": [
+        "NR5G MAC DL TB Report"
+      ]
+    }
+  ]
+}

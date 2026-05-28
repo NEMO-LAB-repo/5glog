@@ -1,0 +1,50 @@
+{
+  "id": "numrblogged",
+  "name": "Num RB Logged",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> Num RB Logged"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> Num RB Logged"
+      ]
+    },
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Meta -> Num RB Logged"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> Meta -> Num RB Logged"
+      ]
+    }
+  ]
+}

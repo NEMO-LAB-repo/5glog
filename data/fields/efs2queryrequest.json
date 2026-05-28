@@ -1,0 +1,18 @@
+{
+  "id": "efs2queryrequest",
+  "name": "EFS2/Query Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-query-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Query Request",
+      "name": "EFS2/Query Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Query_Request.json",
+      "paths": [
+        "EFS2/Query Request",
+        "EFS2/Query Request -> Subsystem Dispatch Request Message -> EFS2/Query Request"
+      ]
+    }
+  ]
+}

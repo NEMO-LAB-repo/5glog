@@ -1,0 +1,28 @@
+{
+  "id": "rlcrbinfo",
+  "name": "RLC RB Info",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> RLC RB Info"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> RLC RB Info"
+      ]
+    }
+  ]
+}

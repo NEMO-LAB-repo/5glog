@@ -1,0 +1,28 @@
+{
+  "id": "scellindex",
+  "name": "Scell Index",
+  "records": [
+    {
+      "id": "0xb14d-lte-ll1-pucch-csf-log",
+      "logcode": "0xB14D",
+      "title": "0xB14D LTE LL1 PUCCH CSF Log",
+      "name": "LTE LL1 PUCCH CSF Log",
+      "category": "ML1",
+      "dataFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json",
+      "paths": [
+        "LTE LL1 PUCCH CSF Log -> Scell Index"
+      ]
+    },
+    {
+      "id": "0xb14e-lte-ll1-pusch-csf",
+      "logcode": "0xB14E",
+      "title": "0xB14E LTE LL1 PUSCH CSF",
+      "name": "LTE LL1 PUSCH CSF",
+      "category": "ML1",
+      "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+      "paths": [
+        "LTE LL1 PUSCH CSF -> Scell Index"
+      ]
+    }
+  ]
+}

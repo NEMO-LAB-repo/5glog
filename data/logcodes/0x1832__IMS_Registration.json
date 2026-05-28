@@ -1,0 +1,36 @@
+{
+  "id": "0x1832-ims-registration",
+  "logcode": "0x1832",
+  "name": "IMS Registration",
+  "title": "0x1832 IMS Registration",
+  "category": "IMS",
+  "dataFile": "0x1832__IMS_Registration.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "IMS Registration": {
+      "Registration Type": null,
+      "Call Id": null,
+      "Request Uri": null,
+      "To": null,
+      "Result": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1832__IMS_Registration.json"
+  }
+}

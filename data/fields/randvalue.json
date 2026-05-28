@@ -1,0 +1,28 @@
+{
+  "id": "randvalue",
+  "name": "RAND value",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-authentication-request",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Authentication Request",
+      "name": "D [MM5G] Authentication Request",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Authentication_Request.json",
+      "paths": [
+        "D [MM5G] Authentication Request -> Authentication Request -> Authentication parameter RAND -> RAND value"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Authentication Request -> Authentication parameter RAND -> RAND value"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "0xb181-lte-ml1-intra-frequency-cell-reselection",
+  "logcode": "0xB181",
+  "name": "LTE ML1 Intra Frequency Cell Reselection",
+  "title": "0xB181 LTE ML1 Intra Frequency Cell Reselection",
+  "category": "ML1",
+  "dataFile": "0xB181__LTE_ML1_Intra_Frequency_Cell_Reselection.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Intra Frequency Cell Reselection": {
+      "Number Subpackets": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 47,
+    "samplesParsedSuccessfully": 47,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0xB181__LTE_ML1_Intra_Frequency_Cell_Reselection.json"
+  }
+}

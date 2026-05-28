@@ -1,0 +1,17 @@
+{
+  "id": "neighcellsperfreqlist",
+  "name": "neighCellsPerFreqList",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib8",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib8",
+      "name": "D [LTE] System Information : sib8",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib8.json",
+      "paths": [
+        "D [LTE] System Information : sib8 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib8 -> parametersHRPD -> cellReselectionParametersHRPD -> neighCellList -> [] -> neighCellsPerFreqList"
+      ]
+    }
+  ]
+}

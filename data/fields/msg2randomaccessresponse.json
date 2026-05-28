@@ -1,0 +1,17 @@
+{
+  "id": "msg2randomaccessresponse",
+  "name": "Msg2 - Random Access Response",
+  "records": [
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Msg2 - Random Access Response"
+      ]
+    }
+  ]
+}

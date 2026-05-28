@@ -1,0 +1,17 @@
+{
+  "id": "bypassdecode",
+  "name": "Bypass Decode",
+  "records": [
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> Bypass Decode"
+      ]
+    }
+  ]
+}

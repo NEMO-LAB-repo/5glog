@@ -1,0 +1,18 @@
+{
+  "id": "eventqcreserved",
+  "name": "EVENT_QC_RESERVED",
+  "records": [
+    {
+      "id": "0x1ffb-event-qc-reserved",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_RESERVED",
+      "name": "EVENT_QC_RESERVED",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_RESERVED.json",
+      "paths": [
+        "EVENT_QC_RESERVED",
+        "EVENT_QC_RESERVED -> Event -> EVENT_QC_RESERVED"
+      ]
+    }
+  ]
+}

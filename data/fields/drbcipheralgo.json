@@ -1,0 +1,53 @@
+{
+  "id": "drbcipheralgo",
+  "name": "DRB Cipher Algo",
+  "records": [
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> SN Security Config -> DRB Cipher Algo",
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Security Config -> DRB Cipher Algo"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpackets -> UL Cipher Data PDU Subpacket -> DRB Cipher Algo"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> MCG -> DRB Cipher Algo",
+        "NR5G L2 DL Config -> SCG -> DRB Cipher Algo"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> Mn Security Config -> DRB Cipher Algo",
+        "NR5G L2 UL Config -> Sn Security Config -> DRB Cipher Algo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "0xb9be-nr5g-ml1-search-ho-acq-req",
+  "logcode": "0xB9BE",
+  "name": "NR5G ML1 Search HO Acq Req",
+  "title": "0xB9BE NR5G ML1 Search HO Acq Req",
+  "category": "ML1",
+  "dataFile": "0xB9BE__NR5G_ML1_Search_HO_Acq_Req.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Search HO Acq Req": {
+      "Slot Number": null,
+      "SubFrame Number": null,
+      "System Frame Number": null,
+      "SCS": null,
+      "Data": {
+        "Target ARFCN": null,
+        "Target PCI": null,
+        "Band": null,
+        "SSB Bitmask": null,
+        "HO Type": null,
+        "SCS": null,
+        "Duplex Mode": null,
+        "SSBs Period": null,
+        "Max Num SSB": null,
+        "CC Id": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 36,
+    "samplesParsedSuccessfully": 36,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB9BE__NR5G_ML1_Search_HO_Acq_Req.json"
+  }
+}

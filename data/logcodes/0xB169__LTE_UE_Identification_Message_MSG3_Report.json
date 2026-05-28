@@ -1,0 +1,46 @@
+{
+  "id": "0xb169-lte-ue-identification-message-msg3-report",
+  "logcode": "0xB169",
+  "name": "LTE UE Identification Message (MSG3) Report",
+  "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+  "category": "LTE",
+  "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE UE Identification Message (MSG3) Report": {
+      "Versions -> Modulation Type": null,
+      "Cell Index": null,
+      "TPC": null,
+      "MCS": null,
+      "RIV": null,
+      "CQI": null,
+      "UL Delay": null,
+      "SFN": null,
+      "Sub-fn": null,
+      "Hopping Flag": null,
+      "Starting Resource Block": null,
+      "Num Resource Blocks": null,
+      "Transport Block Size Index": null,
+      "Redundancy Version Index": null,
+      "HARQ ID": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json"
+  }
+}

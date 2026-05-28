@@ -1,0 +1,21 @@
+{
+  "id": "freqbandindicatornr",
+  "name": "freqBandIndicatorNR",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> frequencyBandList -> freqBandIndicatorNR",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> frequencyInfoDL -> frequencyBandList -> freqBandIndicatorNR",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon -> frequencyInfoUL -> frequencyBandList -> freqBandIndicatorNR",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> measObjectToAddModList -> measObject -> measObjectNR -> freqBandIndicatorNR",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> frequencyBandList -> freqBandIndicatorNR"
+      ]
+    }
+  ]
+}

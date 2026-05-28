@@ -1,0 +1,55 @@
+{
+  "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-geran-cs-geran-ps-cdma2000-1xrtt",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+  "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> ueCapabilityEnquiry": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueCapabilityEnquiry-r8": {
+            "ue-CapabilityRequest": {
+              "[]": null
+            },
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "requestedFrequencyBands-r11": {
+                  "[]": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 10,
+    "samplesParsedSuccessfully": 10,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_geran-cs_geran-ps_cdma2000-1XRTT.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dedicatedinfotype",
+  "name": "dedicatedInfoType",
+  "records": [
+    {
+      "id": "0xb0c0-lte-rrc-ota-packet",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 LTE RRC OTA Packet",
+      "name": "LTE RRC OTA Packet",
+      "category": "RRC",
+      "paths": [
+        "LTE RRC OTA Packet -> dl-dcch -> message -> c1 -> dlInformationTransfer -> criticalExtensions -> c1 -> dlInformationTransfer-r8 -> dedicatedInfoType",
+        "LTE RRC OTA Packet -> ul-dcch -> message -> c1 -> ulInformationTransfer -> criticalExtensions -> c1 -> ulInformationTransfer-r8 -> dedicatedInfoType"
+      ]
+    }
+  ]
+}

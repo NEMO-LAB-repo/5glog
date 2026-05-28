@@ -1,0 +1,17 @@
+{
+  "id": "rawdci2",
+  "name": "Raw DCI[2]",
+  "records": [
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> DCI Info -> [] -> Raw DCI[2]"
+      ]
+    }
+  ]
+}

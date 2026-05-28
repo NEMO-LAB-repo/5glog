@@ -1,0 +1,28 @@
+{
+  "id": "gmmstate",
+  "name": "GMMState",
+  "records": [
+    {
+      "id": "0x1ffb-event-gmm-state",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_GMM_STATE",
+      "name": "EVENT_GMM_STATE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_GMM_STATE.json",
+      "paths": [
+        "EVENT_GMM_STATE -> Event -> EVENT_GMM_STATE -> GMMState"
+      ]
+    },
+    {
+      "id": "0x7130-umts-nas-gmm-state",
+      "logcode": "0x7130",
+      "title": "0x7130 UMTS NAS GMM State",
+      "name": "UMTS NAS GMM State",
+      "category": "NAS",
+      "dataFile": "0x7130__UMTS_NAS_GMM_State.json",
+      "paths": [
+        "UMTS NAS GMM State -> GMM State"
+      ]
+    }
+  ]
+}

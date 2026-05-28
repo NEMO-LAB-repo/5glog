@@ -1,0 +1,17 @@
+{
+  "id": "sbpmii2",
+  "name": "SB PMI i 2",
+  "records": [
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> CSI Records -> [] -> SB PMI i 2"
+      ]
+    }
+  ]
+}

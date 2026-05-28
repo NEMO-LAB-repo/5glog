@@ -1,0 +1,18 @@
+{
+  "id": "efs2helloresponse",
+  "name": "EFS2/Hello Response",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-hello-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Hello Response",
+      "name": "EFS2/Hello Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Hello_Response.json",
+      "paths": [
+        "EFS2/Hello Response",
+        "EFS2/Hello Response -> Subsystem Dispatch Response Message -> EFS2/Hello Response"
+      ]
+    }
+  ]
+}

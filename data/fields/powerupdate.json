@@ -1,0 +1,17 @@
+{
+  "id": "powerupdate",
+  "name": "PowerUpdate",
+  "records": [
+    {
+      "id": "0x17f7-wwcoex-power-info",
+      "logcode": "0x17F7",
+      "title": "0x17F7 WWCoex Power Info",
+      "name": "WWCoex Power Info",
+      "category": "Other",
+      "dataFile": "0x17F7__WWCoex_Power_Info.json",
+      "paths": [
+        "WWCoex Power Info -> PowerUpdate"
+      ]
+    }
+  ]
+}

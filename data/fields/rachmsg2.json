@@ -1,0 +1,17 @@
+{
+  "id": "rachmsg2",
+  "name": "RACH Msg2",
+  "records": [
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg2"
+      ]
+    }
+  ]
+}

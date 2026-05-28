@@ -1,0 +1,16 @@
+{
+  "id": "encapsulatedeventreport",
+  "name": "Encapsulated Event Report",
+  "records": [
+    {
+      "id": "0x1ffb-encapsulated-event-report",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB Encapsulated Event Report",
+      "name": "Encapsulated Event Report",
+      "category": "Event",
+      "paths": [
+        "Encapsulated Event Report"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "widebandcqicw1",
+  "name": "Wideband CQI CW1",
+  "records": [
+    {
+      "id": "0xb14e-lte-ll1-pusch-csf",
+      "logcode": "0xB14E",
+      "title": "0xB14E LTE LL1 PUSCH CSF",
+      "name": "LTE LL1 PUSCH CSF",
+      "category": "ML1",
+      "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+      "paths": [
+        "LTE LL1 PUSCH CSF -> Wideband CQI CW1"
+      ]
+    }
+  ]
+}

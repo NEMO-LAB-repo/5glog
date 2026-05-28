@@ -1,0 +1,17 @@
+{
+  "id": "dmm5gsecuritymodecommand",
+  "name": "D [MM5G] Security Mode Command",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-security-mode-command",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Security Mode Command",
+      "name": "D [MM5G] Security Mode Command",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+      "paths": [
+        "D [MM5G] Security Mode Command"
+      ]
+    }
+  ]
+}

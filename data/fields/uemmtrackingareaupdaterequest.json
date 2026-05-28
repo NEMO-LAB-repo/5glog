@@ -1,0 +1,17 @@
+{
+  "id": "uemmtrackingareaupdaterequest",
+  "name": "U [EMM] Tracking Area Update Request",
+  "records": [
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request"
+      ]
+    }
+  ]
+}

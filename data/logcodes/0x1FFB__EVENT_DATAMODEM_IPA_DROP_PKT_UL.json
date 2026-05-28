@@ -1,0 +1,40 @@
+{
+  "id": "0x1ffb-event-datamodem-ipa-drop-pkt-ul",
+  "logcode": "0x1FFB",
+  "name": "EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+  "title": "0x1FFB EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_DATAMODEM_IPA_DROP_PKT_UL.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_DATAMODEM_IPA_DROP_PKT_UL": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_DATAMODEM_IPA_DROP_PKT_UL": {
+          "pkt_len": null,
+          "exception_type": null,
+          "drop_resason": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_DATAMODEM_IPA_DROP_PKT_UL.json"
+  }
+}

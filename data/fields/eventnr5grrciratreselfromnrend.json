@@ -1,0 +1,18 @@
+{
+  "id": "eventnr5grrciratreselfromnrend",
+  "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END -> Event -> EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END"
+      ]
+    }
+  ]
+}

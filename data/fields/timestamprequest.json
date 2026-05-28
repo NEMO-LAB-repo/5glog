@@ -1,0 +1,18 @@
+{
+  "id": "timestamprequest",
+  "name": "Timestamp Request",
+  "records": [
+    {
+      "id": "0x1fea-timestamp-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Timestamp Request",
+      "name": "Timestamp Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Timestamp_Request.json",
+      "paths": [
+        "Timestamp Request",
+        "Timestamp Request -> Timestamp Request"
+      ]
+    }
+  ]
+}

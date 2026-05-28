@@ -1,0 +1,28 @@
+{
+  "id": "dlcp",
+  "name": "DL CP",
+  "records": [
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> DL CP"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Record -> [] -> DL CP"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "measurementbw",
+  "name": "Measurement BW",
+  "records": [
+    {
+      "id": "0xb116-lte-ll1-serving-cell-measurement-results",
+      "logcode": "0xB116",
+      "title": "0xB116 LTE LL1 Serving Cell Measurement Results",
+      "name": "LTE LL1 Serving Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE LL1 Serving Cell Measurement Results -> Measurement BW"
+      ]
+    },
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas Intra Frequency Common Config Resel Info -> Measurement BW"
+      ]
+    }
+  ]
+}

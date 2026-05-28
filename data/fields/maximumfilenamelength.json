@@ -1,0 +1,17 @@
+{
+  "id": "maximumfilenamelength",
+  "name": "Maximum File Name Length",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-query-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Query Response",
+      "name": "EFS2/Query Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Query_Response.json",
+      "paths": [
+        "EFS2/Query Response -> Subsystem Dispatch Response Message -> EFS2/Query Response -> Maximum File Name Length"
+      ]
+    }
+  ]
+}

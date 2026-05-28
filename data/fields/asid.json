@@ -1,0 +1,17 @@
+{
+  "id": "asid",
+  "name": "as_id",
+  "records": [
+    {
+      "id": "0x1ffb-event-nas-tau",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_TAU",
+      "name": "EVENT_NAS_TAU",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+      "paths": [
+        "EVENT_NAS_TAU -> Event -> EVENT_NAS_TAU -> as_id"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ueidentitystmsi",
+  "name": "ue-Identity -> s-TMSI",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "D [LTE] Paging -> pcch -> message -> c1 -> paging -> pagingRecordList -> [] -> ue-Identity -> s-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-data",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Data",
+      "name": "U [LTE] RRC Connection Request : mo-Data",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Data.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Data -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Signalling -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI"
+      ]
+    }
+  ]
+}

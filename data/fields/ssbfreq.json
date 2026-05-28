@@ -1,0 +1,28 @@
+{
+  "id": "ssbfreq",
+  "name": "SSB Freq",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_SUCCESS",
+      "name": "EVENT_NR5G_RRC_HO_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_SUCCESS.json",
+      "paths": [
+        "EVENT_NR5G_RRC_HO_SUCCESS -> Event -> EVENT_NR5G_RRC_HO_SUCCESS -> SSB Freq"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-new-cell-ind-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "name": "EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_NEW_CELL_IND_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_NEW_CELL_IND_V2 -> Event -> EVENT_NR5G_RRC_NEW_CELL_IND_V2 -> SSB Freq"
+      ]
+    }
+  ]
+}

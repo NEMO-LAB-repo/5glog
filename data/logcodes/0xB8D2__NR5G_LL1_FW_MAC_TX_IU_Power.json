@@ -1,0 +1,91 @@
+{
+  "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+  "logcode": "0xB8D2",
+  "name": "NR5G LL1 FW MAC TX IU Power",
+  "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+  "category": "ML1",
+  "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G LL1 FW MAC TX IU Power": {
+      "Sub Packets": {
+        "[]": {
+          "Code": null,
+          "Length": null,
+          "TX IU Power Sub Packet": {
+            "Variant ID": null,
+            "Version": null,
+            "SubVersion": {
+              "Log Header": {
+                "System Frame Number": null,
+                "Fractional Unit Slot Number": null,
+                "Log2 Slot To Unit Slot": null
+              },
+              "Power Info": {
+                "[]": {
+                  "Carrier Id": null,
+                  "Channel Type": null,
+                  "PUCCH Data": {
+                    "Transmit Power": null,
+                    "Pathloss": null,
+                    "TPC Adjustment": null,
+                    "MTPL": null,
+                    "Delta TF": null,
+                    "PUCCH Number": null,
+                    "PUCCH Format": null,
+                    "Minimum Power": null
+                  },
+                  "SRS Data": {
+                    "Transmit Power": null,
+                    "Pathloss": null,
+                    "TPC Adjustment": null,
+                    "MTPL": null,
+                    "SRS Number": null,
+                    "M SRS": null,
+                    "Minimum Power": null
+                  },
+                  "PUSCH Data": {
+                    "Transmit Power": null,
+                    "Pathloss": null,
+                    "TPC Adjustment": null,
+                    "MTPL": null,
+                    "Delta TF": null,
+                    "Is Msg3": null,
+                    "Minimum Power": null
+                  },
+                  "PRACH Data": {
+                    "Transmit Power": null,
+                    "RACH Attempt": null,
+                    "Pathloss": null,
+                    "MTPL": null,
+                    "Minimum Power": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json"
+  }
+}

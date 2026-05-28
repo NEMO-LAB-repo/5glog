@@ -1,0 +1,42 @@
+{
+  "id": "0x1fea-diagnostic-services-key-retrieval-request",
+  "logcode": "0x1FEA",
+  "name": "Diagnostic Services/Key Retrieval Request",
+  "title": "0x1FEA Diagnostic Services/Key Retrieval Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Diagnostic_Services_Key_Retrieval_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Diagnostic Services/Key Retrieval Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "Diagnostic Services/Key Retrieval Request": {
+          "Version": null,
+          "Op Code": null,
+          "Retrieve ID": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 6,
+    "samplesParsedSuccessfully": 6,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Diagnostic_Services_Key_Retrieval_Request.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-ho-success",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_HO_SUCCESS",
+  "title": "0x1FFB EVENT_NR5G_RRC_HO_SUCCESS",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_SUCCESS.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_HO_SUCCESS": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_HO_SUCCESS": {
+          "Phy Cell Id": null,
+          "SSB Freq": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 56,
+    "samplesParsedSuccessfully": 56,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_HO_SUCCESS.json"
+  }
+}

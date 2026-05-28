@@ -1,0 +1,17 @@
+{
+  "id": "rsrpresultr9",
+  "name": "rsrpResult-r9",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ue-information-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Information Response",
+      "name": "U [LTE] UE Information Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Information_Response.json",
+      "paths": [
+        "U [LTE] UE Information Response -> ul-dcch -> message -> c1 -> ueInformationResponse-r9 -> criticalExtensions -> c1 -> ueInformationResponse-r9 -> rlf-Report-r9 -> measResultLastServCell-r9 -> rsrpResult-r9"
+      ]
+    }
+  ]
+}

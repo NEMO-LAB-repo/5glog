@@ -1,0 +1,18 @@
+{
+  "id": "callmanagerstateinforequest",
+  "name": "Call Manager/State Info Request",
+  "records": [
+    {
+      "id": "0x1fea-call-manager-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Request",
+      "name": "Call Manager/State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Request.json",
+      "paths": [
+        "Call Manager/State Info Request",
+        "Call Manager/State Info Request -> Subsystem Dispatch Request Message -> Call Manager/State Info Request"
+      ]
+    }
+  ]
+}

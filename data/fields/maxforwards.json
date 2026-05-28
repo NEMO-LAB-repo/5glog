@@ -1,0 +1,61 @@
+{
+  "id": "maxforwards",
+  "name": "Max-Forwards",
+  "records": [
+    {
+      "id": "0x156e-d-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE",
+      "name": "D [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "D [IMS] IMS_SIP_MESSAGE -> Max-Forwards"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-notify",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_NOTIFY",
+      "name": "D [IMS] IMS_SIP_NOTIFY",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_NOTIFY.json",
+      "paths": [
+        "D [IMS] IMS_SIP_NOTIFY -> Max-Forwards"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE",
+      "name": "U [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE -> Max-Forwards"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "U [IMS] IMS_SIP_REGISTER -> Max-Forwards"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_SUBSCRIBE -> Max-Forwards"
+      ]
+    }
+  ]
+}

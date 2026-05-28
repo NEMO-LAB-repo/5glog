@@ -1,0 +1,18 @@
+{
+  "id": "eventqcgpsevent",
+  "name": "EVENT_QC_GPS_EVENT",
+  "records": [
+    {
+      "id": "0x1ffb-event-qc-gps-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_GPS_EVENT",
+      "name": "EVENT_QC_GPS_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_GPS_EVENT.json",
+      "paths": [
+        "EVENT_QC_GPS_EVENT",
+        "EVENT_QC_GPS_EVENT -> Event -> EVENT_QC_GPS_EVENT"
+      ]
+    }
+  ]
+}

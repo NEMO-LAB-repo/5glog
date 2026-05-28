@@ -1,0 +1,17 @@
+{
+  "id": "ltenasemmsecurityprotectedoutgoingmsg",
+  "name": "LTE NAS EMM Security Protected Outgoing Msg",
+  "records": [
+    {
+      "id": "0xb0eb-lte-nas-emm-security-protected-outgoing-msg",
+      "logcode": "0xB0EB",
+      "title": "0xB0EB LTE NAS EMM Security Protected Outgoing Msg",
+      "name": "LTE NAS EMM Security Protected Outgoing Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json",
+      "paths": [
+        "LTE NAS EMM Security Protected Outgoing Msg"
+      ]
+    }
+  ]
+}

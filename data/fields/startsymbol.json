@@ -1,0 +1,40 @@
+{
+  "id": "startsymbol",
+  "name": "Start symbol",
+  "records": [
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUCCH Data -> Per PUCCH Data -> [] -> Start symbol",
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUSCH Data -> Start Symbol"
+      ]
+    },
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "NR5G MAC UCI Payload Information -> Records -> [] -> Channel Info -> [] -> Start Symbol"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Records -> [] -> UCI Info -> [] -> Start Symbol"
+      ]
+    }
+  ]
+}

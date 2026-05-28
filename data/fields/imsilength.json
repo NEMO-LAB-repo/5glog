@@ -1,0 +1,28 @@
+{
+  "id": "imsilength",
+  "name": "IMSI Length",
+  "records": [
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message -> GSM/Status Response -> IMSI Length"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-additional-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Additional Status Response",
+      "name": "WCDMA/Additional Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Additional_Status_Response.json",
+      "paths": [
+        "WCDMA/Additional Status Response -> Subsystem Dispatch Response Message -> WCDMA/Additional Status Response -> IMSI Length"
+      ]
+    }
+  ]
+}

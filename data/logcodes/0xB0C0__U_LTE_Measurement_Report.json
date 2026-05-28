@@ -1,0 +1,97 @@
+{
+  "id": "0xb0c0-u-lte-measurement-report",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] Measurement Report",
+  "title": "0xB0C0 U [LTE] Measurement Report",
+  "category": "LTE",
+  "dataFile": "0xB0C0__U_LTE_Measurement_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] Measurement Report": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> measurementReport": {
+          "criticalExtensions -> c1 -> measurementReport-r8": {
+            "measResults": {
+              "measId": null,
+              "measResultPCell": {
+                "rsrpResult": null,
+                "rsrqResult": null
+              },
+              "measResultNeighCells -> measResultListEUTRA": {
+                "[]": {
+                  "physCellId": null,
+                  "measResult": {
+                    "rsrpResult": null,
+                    "rsrqResult": null
+                  },
+                  "cgi-Info": {
+                    "cellGlobalId": {
+                      "plmn-Identity": {
+                        "mcc": {
+                          "[]": null
+                        },
+                        "mnc": {
+                          "[]": null
+                        }
+                      },
+                      "cellIdentity": null
+                    },
+                    "trackingAreaCode": null
+                  }
+                }
+              },
+              "measResultNeighCells -> measResultNeighCellListNR-r15": {
+                "[]": {
+                  "pci-r15": null,
+                  "measResultCell-r15": {
+                    "rsrpResult-r15": null
+                  },
+                  "measResultRS-IndexList-r15": {
+                    "[]": {
+                      "ssb-Index-r15": null
+                    }
+                  }
+                }
+              },
+              "measResultServFreqList-r10": {
+                "[]": {
+                  "servFreqId-r10": null,
+                  "measResultBestNeighCell-r10": {
+                    "physCellId-r10": null,
+                    "rsrpResultNCell-r10": null,
+                    "rsrqResultNCell-r10": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1017,
+    "samplesParsedSuccessfully": 1017,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_Measurement_Report.json"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "versionsnumberofsubpackets",
+  "name": "Versions -> Number of SubPackets",
+  "records": [
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> Versions -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> Versions -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> Versions -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> Versions -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+      "logcode": "0xB1F5",
+      "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+      "name": "LTE ML1 IRAT NR Meas Results",
+      "category": "ML1",
+      "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+      "paths": [
+        "LTE ML1 IRAT NR Meas Results -> Versions -> Number of SubPackets"
+      ]
+    }
+  ]
+}

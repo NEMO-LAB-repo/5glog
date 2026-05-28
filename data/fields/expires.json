@@ -1,0 +1,39 @@
+{
+  "id": "expires",
+  "name": "Expires",
+  "records": [
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_200_OK.json",
+      "paths": [
+        "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK -> Expires"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "U [IMS] IMS_SIP_REGISTER -> Expires"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_SUBSCRIBE -> Expires"
+      ]
+    }
+  ]
+}

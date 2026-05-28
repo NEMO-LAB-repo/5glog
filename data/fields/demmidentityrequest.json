@@ -1,0 +1,17 @@
+{
+  "id": "demmidentityrequest",
+  "name": "D [EMM] Identity Request",
+  "records": [
+    {
+      "id": "0xb0ec-d-emm-identity-request",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Identity Request",
+      "name": "D [EMM] Identity Request",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Identity_Request.json",
+      "paths": [
+        "D [EMM] Identity Request"
+      ]
+    }
+  ]
+}

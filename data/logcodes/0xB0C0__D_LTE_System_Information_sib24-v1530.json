@@ -1,0 +1,72 @@
+{
+  "id": "0xb0c0-d-lte-system-information-sib24-v1530",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] System Information : sib24-v1530",
+  "title": "0xB0C0 D [LTE] System Information : sib24-v1530",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] System Information : sib24-v1530": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "bcch-dl-sch": {
+        "message -> c1 -> systemInformation": {
+          "criticalExtensions -> systemInformation-r8": {
+            "sib-TypeAndInfo": {
+              "[0] -> sib24-v1530": {
+                "carrierFreqListNR-r15": {
+                  "[]": {
+                    "carrierFreq-r15": null,
+                    "multiBandInfoList-r15": {
+                      "[]": null
+                    },
+                    "measTimingConfig-r15": {
+                      "periodicityAndOffset-r15 -> sf20-r15": null,
+                      "ssb-Duration-r15": null
+                    },
+                    "subcarrierSpacingSSB-r15": null,
+                    "cellReselectionPriority-r15": null,
+                    "cellReselectionSubPriority-r15": null,
+                    "threshX-High-r15": null,
+                    "threshX-Low-r15": null,
+                    "q-RxLevMin-r15": null,
+                    "q-RxLevMinSUL-r15": null,
+                    "p-MaxNR-r15": null,
+                    "deriveSSB-IndexFromCell-r15": null,
+                    "maxRS-IndexCellQual-r15": null,
+                    "threshRS-Index-r15": {
+                      "nr-RSRP-r15": null
+                    }
+                  }
+                },
+                "t-ReselectionNR-r15": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json"
+  }
+}

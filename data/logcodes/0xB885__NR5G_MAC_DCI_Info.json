@@ -1,0 +1,105 @@
+{
+  "id": "0xb885-nr5g-mac-dci-info",
+  "logcode": "0xB885",
+  "name": "NR5G MAC DCI Info",
+  "title": "0xB885 NR5G MAC DCI Info",
+  "category": "MAC",
+  "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC DCI Info": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "System Time": {
+            "Slot Number": null,
+            "SCS": null,
+            "System Frame Number": null
+          },
+          "Num DCI": null,
+          "DCI Info": {
+            "[]": {
+              "Carrier ID": null,
+              "RNTI Type": null,
+              "DCI Format": null,
+              "Agg Level": null,
+              "Is Raw DCI": null,
+              "Raw DCI[2]": null,
+              "Raw DCI[1]": null,
+              "Raw DCI[0]": null,
+              "UL": {
+                "dci_format": null,
+                "Carrier ID": null,
+                "NDI": null,
+                "MCS": null,
+                "Freq Hopping": null,
+                "RV": null,
+                "HARQ ID": null,
+                "PUSCH TPC": null,
+                "Symbol Alloc Index": null,
+                "BWP Ind": null,
+                "PTRS DMRS Association": null,
+                "Beta Offset Ind": null,
+                "RB Assignment": null,
+                "UL SCH Ind": null,
+                "DAI 1": null,
+                "DAI 2": null,
+                "SRS Resource Indication": null,
+                "Precoding Layer Info": null,
+                "Antenna Ports": null,
+                "DMRS Seq Init Flag": null,
+                "SRS Request": null,
+                "CSI Request": null,
+                "CBGTI": null,
+                "RA Type": null,
+                "UL SUL Ind": null,
+                "Prune Reason MSB": null,
+                "Prune Error Bitmask": null
+              },
+              "DL": {
+                "Bandwidth Part Indicator": null,
+                "Time Resource Assignment": null,
+                "TB 1 MCS": null,
+                "TB 1 New Data Indicator": null,
+                "DL Assignment Index": null,
+                "TPC Command For Sched PUCCH": null,
+                "PUCCH Resource Indicator": null,
+                "PDSCH Harq Feedback Indicator": null,
+                "CBG Transmission Info": null,
+                "CBG Flushing Out Info": null,
+                "Transmission Config End": null,
+                "SRS Request": null,
+                "Carrier ID": null,
+                "HARQ ID": null,
+                "ReTx Count": null,
+                "DMRS Antenna Port Table Index": null,
+                "Prune Error Bitmask": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB885__NR5G_MAC_DCI_Info.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "tailmatch",
+  "name": "Tail Match",
+  "records": [
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> Tail Match"
+      ]
+    }
+  ]
+}

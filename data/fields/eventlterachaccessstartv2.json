@@ -1,0 +1,18 @@
+{
+  "id": "eventlterachaccessstartv2",
+  "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rach-access-start-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_START_V2",
+        "EVENT_LTE_RACH_ACCESS_START_V2 -> Event -> EVENT_LTE_RACH_ACCESS_START_V2"
+      ]
+    }
+  ]
+}

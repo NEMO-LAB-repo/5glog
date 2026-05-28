@@ -1,0 +1,39 @@
+{
+  "id": "versionsversion",
+  "name": "Versions -> Version",
+  "records": [
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version"
+      ]
+    },
+    {
+      "id": "0xb992-nr5g-ml1-afc-services",
+      "logcode": "0xB992",
+      "title": "0xB992 NR5G ML1 AFC Services",
+      "name": "NR5G ML1 AFC Services",
+      "category": "ML1",
+      "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+      "paths": [
+        "NR5G ML1 AFC Services -> Versions -> Version"
+      ]
+    }
+  ]
+}

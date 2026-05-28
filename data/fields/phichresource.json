@@ -1,0 +1,50 @@
+{
+  "id": "phichresource",
+  "name": "phich-Resource",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> mobilityControlInfo -> radioResourceConfigCommon -> phich-Config -> phich-Resource"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> mobilityControlInfo -> radioResourceConfigCommon -> phich-Config -> phich-Resource"
+      ]
+    },
+    {
+      "id": "0xb160-lte-downlink-common-configuration",
+      "logcode": "0xB160",
+      "title": "0xB160 LTE Downlink Common Configuration",
+      "name": "LTE Downlink Common Configuration",
+      "category": "LTE",
+      "dataFile": "0xB160__LTE_Downlink_Common_Configuration.json",
+      "paths": [
+        "LTE Downlink Common Configuration -> MIB Info -> PHICH Resource"
+      ]
+    },
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "LTE ML1 Serving Cell Information -> PHICH Resource"
+      ]
+    }
+  ]
+}

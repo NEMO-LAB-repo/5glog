@@ -1,0 +1,28 @@
+{
+  "id": "opcode",
+  "name": "Op Code",
+  "records": [
+    {
+      "id": "0x1fea-diagnostic-services-key-retrieval-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Diagnostic Services/Key Retrieval Request",
+      "name": "Diagnostic Services/Key Retrieval Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Diagnostic_Services_Key_Retrieval_Request.json",
+      "paths": [
+        "Diagnostic Services/Key Retrieval Request -> Subsystem Dispatch Request Message -> Diagnostic Services/Key Retrieval Request -> Op Code"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> Opcode"
+      ]
+    }
+  ]
+}

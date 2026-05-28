@@ -1,0 +1,82 @@
+{
+  "id": "0xb17d-lte-ml1-idle-measurement-request",
+  "logcode": "0xB17D",
+  "name": "LTE ML1 Idle Measurement Request",
+  "title": "0xB17D LTE ML1 Idle Measurement Request",
+  "category": "ML1",
+  "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Idle Measurement Request": {
+      "Versions -> Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "SubPacket ID": null,
+          "Version": null,
+          "SubPacket Size": null,
+          "SubPacket -> Idle Meas Common Config": {
+            "Versions -> Idle Meas Removal": null,
+            "Idle Meas Included": null
+          },
+          "SubPacket -> Idle Meas Resel Common Params": {
+            "Versions -> Qhyst": null,
+            "Same Ref Signals in Neighbors": null,
+            "Mobility State Params": null
+          },
+          "SubPacket -> Idle Meas Serving Frequency Resel Info": {
+            "Versions -> Standards Version": null,
+            "Serving Cell Priority": null,
+            "S Non-Intra Search": null,
+            "Thresh Serving Low": null,
+            "Rel 9 Info": {
+              "S Non Intra Search Q": null,
+              "Thres Serving Low Q": null
+            }
+          },
+          "SubPacket -> Idle Meas Intra Frequency Common Config Resel Info": {
+            "Versions -> Standards Version": null,
+            "Qrxlevmin for Intra Freq Neighbors Data": null,
+            "P_max Data": null,
+            "Measurement BW": null,
+            "Treselection EUTRAN": null,
+            "Treselection EUTRAN Medium": null,
+            "Treselection EUTRAN High": null,
+            "Neighbor Cell Config": null,
+            "CSG PCI Range Present": null,
+            "S Intra Search Raw": null,
+            "CSG PCI Range Start PCI": null,
+            "CSG PCI Range End PCI": null,
+            "Rel 9 Info": {
+              "S Intra Search Q": null,
+              "Q Qual Min Data": null
+            }
+          },
+          "SubPacket -> Idle Meas Intra Frequency Whitelist Info": {
+            "Versions -> Num White Listed Cells": null
+          },
+          "SubPacket -> Idle Meas Intra Frequency Blacklist Cells": {
+            "Versions -> Num Black Listed Cells": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 17,
+    "samplesParsedSuccessfully": 17,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json"
+  }
+}

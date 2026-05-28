@@ -1,0 +1,166 @@
+{
+  "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+  "logcode": "0xB883",
+  "name": "NR5G MAC UL Physical Channel Schedule Report",
+  "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+  "category": "MAC",
+  "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC UL Physical Channel Schedule Report": {
+      "sub_id": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "System Time": {
+            "Slot": null,
+            "SCS": null,
+            "Frame": null
+          },
+          "Num Carrier": null,
+          "Carriers": {
+            "[]": {
+              "Carrier ID": null,
+              "RNTI Type": null,
+              "Phychan Bit Mask": null,
+              "Dual Pol Status": null,
+              "CDD Status": null,
+              "SRS Data": {
+                "num_srs": null,
+                "Num SRS": null,
+                "Per SRS Data": {
+                  "[]": {
+                    "Is Second Phychan": null,
+                    "Resource Set Id": null,
+                    "Resource Id": null,
+                    "Res Config Type": null,
+                    "Config Index": null,
+                    "Num Ports": null,
+                    "Starting Symbol": null,
+                    "Num Symbols": null,
+                    "Spatial Relation Type": null,
+                    "Antenna Switch Indicator": null,
+                    "Spatial Relation Info": null,
+                    "SRS TPC Accum": null,
+                    "Num Hops": null,
+                    "Re start": {
+                      "[]": null
+                    }
+                  }
+                }
+              },
+              "PUCCH Data": {
+                "num_pucch": null,
+                "NUM PUCCH": null,
+                "Per PUCCH Data": {
+                  "[]": {
+                    "Is Second Phychan": null,
+                    "PUCCH Format": null,
+                    "UCI Request BMask": null,
+                    "TPC Accum 0": null,
+                    "TPC Accum 1": null,
+                    "Time Occ Index": null,
+                    "Starting RB": null,
+                    "Num RB": null,
+                    "Num HARQ ACK Bits": null,
+                    "Num SR Bits": null,
+                    "Num UCI P1 Bits": null,
+                    "Num UCI P2 Bits": null,
+                    "Spatial Relation Id": null,
+                    "Antenna Switch Indicator": null,
+                    "M0": null,
+                    "I DMRS": null,
+                    "DFT OCC Length": null,
+                    "DFT OCC Index": null,
+                    "Start symbol": null,
+                    "Num Symbols": null,
+                    "Freq Hopping Flag": null,
+                    "Second Hop RB": null
+                  }
+                }
+              },
+              "PUSCH Data": {
+                "Is Second Phychan": null,
+                "Start Symbol": null,
+                "Num Symbols": null,
+                "HARQ ID": null,
+                "MCS": null,
+                "MCS Table": null,
+                "DMRS Add Pos": null,
+                "RB Start": null,
+                "Num RBs": null,
+                "ra_type": null,
+                "RA Type": null,
+                "Mapping Type": null,
+                "TB Size (bytes)": null,
+                "DMRS Config Type": null,
+                "Antenna Switch Indicator": null,
+                "TX Mode": null,
+                "RV Index": null,
+                "TX Type": null,
+                "BWP Id": null,
+                "Code Rate": null,
+                "UCI Request Mask": null,
+                "Num CSF P1 Bits": null,
+                "Num CSF P2 Bits": null,
+                "Num HARQ ACK Bits": null,
+                "Transform Precoding": null,
+                "K Prime Value": null,
+                "ZC Value": null,
+                "Num CBs": null,
+                "DMRS Symbol Bitmask": null,
+                "SRS Res Ind": null,
+                "CB Size": null,
+                "Freq Hop Flag": null,
+                "TX Slot Offset": null,
+                "TPMI": null,
+                "Data Scrambling Selection": null,
+                "DMRS Ports[0]": null,
+                "Num Gap RBs": null,
+                "DMRS Ports[1]": null,
+                "RB Start Hop": null,
+                "Modulation Order": null,
+                "RNTI Value": null,
+                "CDM Groups": null,
+                "DMRS Scrambling Selection": null,
+                "DMRS PTRS Assoc": null,
+                "Beta Offset Ind": null,
+                "TPC Accum 0": null,
+                "TPC Accum 1": null,
+                "RBG Bitmap": null
+              },
+              "PRACH Data": {
+                "Resource Allocation": null,
+                "ZC Root Seq": null,
+                "Preamble Format": null,
+                "Symbol Offset": null,
+                "Numerology": null,
+                "ZC Cyclic Shift": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json"
+  }
+}

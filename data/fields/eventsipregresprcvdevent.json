@@ -1,0 +1,18 @@
+{
+  "id": "eventsipregresprcvdevent",
+  "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+  "records": [
+    {
+      "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_RESP_RCVD_EVENT",
+        "EVENT_SIP_REG_RESP_RCVD_EVENT -> Event -> EVENT_SIP_REG_RESP_RCVD_EVENT"
+      ]
+    }
+  ]
+}

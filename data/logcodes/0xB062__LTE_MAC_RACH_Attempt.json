@@ -1,0 +1,73 @@
+{
+  "id": "0xb062-lte-mac-rach-attempt",
+  "logcode": "0xB062",
+  "name": "LTE MAC RACH Attempt",
+  "title": "0xB062 LTE MAC RACH Attempt",
+  "category": "MAC",
+  "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE MAC RACH Attempt": {
+      "Number Of Subpackets": null,
+      "Sub Packets": {
+        "[]": {
+          "Header": {
+            "Sub Packet ID": null,
+            "Sub Packet Version": null,
+            "Sub Packet Size": null
+          },
+          "Sub Id": null,
+          "Cell Id": null,
+          "Retx counter": null,
+          "Rach result": null,
+          "Contention procedure": null,
+          "Rach msg bmask": null,
+          "Msg1 - RACH Access Preamble": {
+            "Preamble Index": null,
+            "Preamble index mask": null,
+            "Preamble power offset": null
+          },
+          "Msg2 - Random Access Response": {
+            "Backoff Value": null,
+            "Result": null,
+            "Rach Data": {
+              "TCRNTI": null,
+              "TA value": null
+            }
+          },
+          "Msg3": {
+            "Grant Raw": null,
+            "Grant": null,
+            "Harq ID": null,
+            "MAC PDU": null
+          },
+          "Earfcn": null,
+          "P Max": null,
+          "SCell ID": null,
+          "Max Serv RSRP Present raw": null,
+          "Max Serv RSRP Present": null,
+          "Max Serv RSRP Raw": null,
+          "Max Serv RSRP Cal": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB062__LTE_MAC_RACH_Attempt.json"
+  }
+}

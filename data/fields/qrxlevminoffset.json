@@ -1,0 +1,28 @@
+{
+  "id": "qrxlevminoffset",
+  "name": "q-RxLevMinOffset",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "D [LTE] SIB1 -> bcch-dl-sch -> message -> c1 -> systemInformationBlockType1 -> cellSelectionInfo -> q-RxLevMinOffset"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> q_rxlevmin_offset"
+      ]
+    }
+  ]
+}

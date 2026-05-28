@@ -1,0 +1,17 @@
+{
+  "id": "min1cdma",
+  "name": "MIN1 (CDMA)",
+  "records": [
+    {
+      "id": "0x1ff0-dmss-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DMSS Status Response",
+      "name": "DMSS Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DMSS_Status_Response.json",
+      "paths": [
+        "DMSS Status Response -> DMSS Status Response -> MIN1 (CDMA)"
+      ]
+    }
+  ]
+}

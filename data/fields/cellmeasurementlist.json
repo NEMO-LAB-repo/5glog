@@ -1,0 +1,17 @@
+{
+  "id": "cellmeasurementlist",
+  "name": "Cell Measurement List",
+  "records": [
+    {
+      "id": "0xb196-lte-ml1-cell-measurement-results",
+      "logcode": "0xB196",
+      "title": "0xB196 LTE ML1 Cell Measurement Results",
+      "name": "LTE ML1 Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Cell Measurement Results -> Cell Measurement List"
+      ]
+    }
+  ]
+}

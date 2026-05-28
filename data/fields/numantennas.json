@@ -1,0 +1,29 @@
+{
+  "id": "numantennas",
+  "name": "Num Antennas",
+  "records": [
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> Neighbors -> [] -> Num Antennas",
+        "LTE ML1 AdvRx IC Cell List -> Serving -> Num Antennas"
+      ]
+    },
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "LTE ML1 Serving Cell Information -> Num Antennas"
+      ]
+    }
+  ]
+}

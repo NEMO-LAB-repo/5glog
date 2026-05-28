@@ -1,0 +1,17 @@
+{
+  "id": "drbip",
+  "name": "DRB IP",
+  "records": [
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> PDCP RB Param -> [] -> DRB IP"
+      ]
+    }
+  ]
+}

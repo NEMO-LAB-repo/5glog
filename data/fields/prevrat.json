@@ -1,0 +1,17 @@
+{
+  "id": "prevrat",
+  "name": "prevRAT",
+  "records": [
+    {
+      "id": "0x1ffb-event-rat-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_RAT_CHANGE",
+      "name": "EVENT_RAT_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_RAT_CHANGE.json",
+      "paths": [
+        "EVENT_RAT_CHANGE -> Event -> EVENT_RAT_CHANGE -> prevRAT"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "securityconfig",
+  "name": "Security Config",
+  "records": [
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Security Config"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> securityConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> securityConfig"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> securityConfig",
+        "RadioBearerConfig -> pdu-radioBearerConfig -> securityConfig"
+      ]
+    }
+  ]
+}

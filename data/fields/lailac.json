@@ -1,0 +1,17 @@
+{
+  "id": "lailac",
+  "name": "LAI-LAC",
+  "records": [
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message -> GSM/Status Response -> LAI-LAC"
+      ]
+    }
+  ]
+}

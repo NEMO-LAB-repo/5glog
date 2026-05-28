@@ -1,0 +1,39 @@
+{
+  "id": "nrarfcn",
+  "name": "NRARFCN",
+  "records": [
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> NRARFCN"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Rasters -> [] -> Meas Window -> [] -> Window Header -> nrarfcn"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> NR ARFCN"
+      ]
+    }
+  ]
+}

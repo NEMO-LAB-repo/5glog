@@ -1,0 +1,39 @@
+{
+  "id": "0x1ff0-extended-build-id-response",
+  "logcode": "0x1FF0",
+  "name": "Extended Build ID Response",
+  "title": "0x1FF0 Extended Build ID Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Extended_Build_ID_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Extended Build ID Response": {
+      "Cmd Code": null,
+      "Extended Build ID Response": {
+        "MSM Revision": null,
+        "Mobile Model ID": null,
+        "Mobile Software Revision": null,
+        "Mobile Model Name": {}
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Extended_Build_ID_Response.json"
+  }
+}

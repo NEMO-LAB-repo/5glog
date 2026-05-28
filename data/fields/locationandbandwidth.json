@@ -1,0 +1,24 @@
+{
+  "id": "locationandbandwidth",
+  "name": "locationAndBandwidth",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> genericParameters -> locationAndBandwidth",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP-RedCap-r17 -> genericParameters -> locationAndBandwidth",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> genericParameters -> locationAndBandwidth",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon-v1700 -> initialUplinkBWP-RedCap-r17 -> genericParameters -> locationAndBandwidth",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> genericParameters -> locationAndBandwidth",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> genericParameters -> locationAndBandwidth",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Common -> genericParameters -> locationAndBandwidth",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Common -> genericParameters -> locationAndBandwidth"
+      ]
+    }
+  ]
+}

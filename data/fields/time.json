@@ -1,0 +1,28 @@
+{
+  "id": "time",
+  "name": "Time",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-emm-information",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//EMM Information",
+      "name": "D [LTE] DL Information Transfer//EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_EMM_Information.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//EMM Information -> dedicatedInfoNAS -> EMM Information -> Universal Time And Local Time Zone -> Time"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-emm-information",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] EMM Information",
+      "name": "D [EMM] EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_EMM_Information.json",
+      "paths": [
+        "D [EMM] EMM Information -> EMM Information -> Universal Time And Local Time Zone -> Time"
+      ]
+    }
+  ]
+}

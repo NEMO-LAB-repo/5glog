@@ -1,0 +1,39 @@
+{
+  "id": "mask",
+  "name": "Mask",
+  "records": [
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Record -> [] -> Mask"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> Combined Headers -> [] -> Mask"
+      ]
+    },
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets -> [] -> Control AGC Sub Packet -> AGC Carrier -> Mask"
+      ]
+    }
+  ]
+}

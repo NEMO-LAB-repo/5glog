@@ -1,0 +1,56 @@
+{
+  "id": "0xb19e-lte-ml1-inter-frequency-log",
+  "logcode": "0xB19E",
+  "name": "LTE ML1 Inter Frequency Log",
+  "title": "0xB19E LTE ML1 Inter Frequency Log",
+  "category": "ML1",
+  "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Inter Frequency Log": {
+      "Serving Cell EARFCN": null,
+      "Serving Physical Cell ID": null,
+      "Subframe Number": null,
+      "Serving Filtered RSRP": null,
+      "Serving Filtered RSRQ": null,
+      "EARFCN": null,
+      "Number of measured n-cells": null,
+      "Number of detected cells": null,
+      "Measured Bandwidth": null,
+      "Measured Cell": {
+        "[]": {
+          "Physical Cell ID": null,
+          "Filtered RSRP": null,
+          "Filtered RSRQ": null
+        }
+      },
+      "Detected Cell": {
+        "[]": {
+          "Physical Cell ID": null,
+          "SSS Corr Value": null,
+          "Reference Time": {
+            "[]": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 34,
+    "samplesParsedSuccessfully": 34,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "diagerrno",
+  "name": "DIAG Errno",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-diag-close-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Close Response",
+      "name": "EFS2/DIAG Close Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Close_Response.json",
+      "paths": [
+        "EFS2/DIAG Close Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Close Response -> DIAG Errno"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-open-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Open Response",
+      "name": "EFS2/DIAG Open Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Open_Response.json",
+      "paths": [
+        "EFS2/DIAG Open Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Open Response -> DIAG Errno"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-read-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Read Response",
+      "name": "EFS2/DIAG Read Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Read_Response.json",
+      "paths": [
+        "EFS2/DIAG Read Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Read Response -> DIAG Errno"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "0xb0ec-d-emm-identity-request",
+  "logcode": "0xB0EC",
+  "name": "D [EMM] Identity Request",
+  "title": "0xB0EC D [EMM] Identity Request",
+  "category": "NAS",
+  "dataFile": "0xB0EC__D_EMM_Identity_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [EMM] Identity Request": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Message ID": null,
+      "Identity Request": {
+        "Identity type": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0xB0EC__D_EMM_Identity_Request.json"
+  }
+}

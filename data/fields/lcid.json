@@ -1,0 +1,107 @@
+{
+  "id": "lcid",
+  "name": "LCID",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> TB Info -> [] -> MAC Sdu Info -> [] -> MAC Sdu Info Table -> MAC Common Info -> LCID"
+      ]
+    },
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> RLC RB Info -> LCID"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> Active RB Info -> [] -> LC ID"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> RLC RB Info -> LCID"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> Common State Cfg -> RB Config -> [] -> LCID",
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> Combined Headers -> [] -> MAC PDU Header -> LCID"
+      ]
+    },
+    {
+      "id": "0xb868-nr5g-rlc-ul-stats",
+      "logcode": "0xB868",
+      "title": "0xB868 NR5G RLC UL Stats",
+      "name": "NR5G RLC UL Stats",
+      "category": "RLC",
+      "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+      "paths": [
+        "NR5G RLC UL Stats -> Per LC -> [] -> LC State -> LCID"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> LCID"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> Per LC -> [] -> LCID",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> LCID"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> RLC RB Param -> [] -> LCID"
+      ]
+    }
+  ]
+}

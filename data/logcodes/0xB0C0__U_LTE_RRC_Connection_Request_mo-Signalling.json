@@ -1,0 +1,51 @@
+{
+  "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] RRC Connection Request : mo-Signalling",
+  "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+  "category": "RRC",
+  "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] RRC Connection Request : mo-Signalling": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-ccch": {
+        "message -> c1 -> rrcConnectionRequest": {
+          "criticalExtensions -> rrcConnectionRequest-r8": {
+            "ue-Identity -> s-TMSI": {
+              "mmec": null,
+              "m-TMSI": null
+            },
+            "establishmentCause": null,
+            "spare": null,
+            "ue-Identity -> randomValue": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json"
+  }
+}

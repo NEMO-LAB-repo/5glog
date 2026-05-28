@@ -1,0 +1,39 @@
+{
+  "id": "rachresult",
+  "name": "RACH_RESULT",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rach-access-result-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_RESULT_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_RESULT_V2 -> Event -> EVENT_LTE_RACH_ACCESS_RESULT_V2 -> RACH_RESULT"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Rach result"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Result"
+      ]
+    }
+  ]
+}

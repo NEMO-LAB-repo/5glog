@@ -1,0 +1,20 @@
+{
+  "id": "useallowedcelllist",
+  "name": "useAllowedCellList",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> eventTriggered -> eventId -> eventA3 -> useAllowedCellList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> eventTriggered -> eventId -> eventA4 -> useAllowedCellList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> eventTriggered -> eventId -> eventA5 -> useAllowedCellList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> reportConfigToAddModList -> reportConfig -> reportConfigNR -> reportType -> periodical -> useAllowedCellList"
+      ]
+    }
+  ]
+}

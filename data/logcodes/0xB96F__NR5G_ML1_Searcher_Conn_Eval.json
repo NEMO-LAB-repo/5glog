@@ -1,0 +1,49 @@
+{
+  "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+  "logcode": "0xB96F",
+  "name": "NR5G ML1 Searcher Conn Eval",
+  "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+  "category": "ML1",
+  "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Searcher Conn Eval": {
+      "System Time": {
+        "Slot Number": null,
+        "SubFrame Number": null,
+        "System Frame Number": null,
+        "SCS": null
+      },
+      "Num Cells": null,
+      "Cell Info": {
+        "[]": {
+          "RAT Type": null,
+          "State": null,
+          "Meas Id": null,
+          "Num Reports Sent": null,
+          "Cell Id": null,
+          "TTT Remaining": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 873,
+    "samplesParsedSuccessfully": 873,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json"
+  }
+}

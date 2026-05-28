@@ -1,0 +1,41 @@
+{
+  "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+  "logcode": "0x1FFB",
+  "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+  "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_SIP_REG_RESP_RCVD_EVENT": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_SIP_REG_RESP_RCVD_EVENT": {
+          "RAT Type": null,
+          "Registration Type": null,
+          "Response Status Code": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json"
+  }
+}

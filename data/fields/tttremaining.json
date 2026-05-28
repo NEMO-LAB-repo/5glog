@@ -1,0 +1,17 @@
+{
+  "id": "tttremaining",
+  "name": "TTT Remaining",
+  "records": [
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> Cell Info -> [] -> TTT Remaining"
+      ]
+    }
+  ]
+}

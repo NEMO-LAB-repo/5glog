@@ -1,0 +1,38 @@
+{
+  "id": "0xb80b-u-mm5g-registration-complete",
+  "logcode": "0xB80B",
+  "name": "U [MM5G] Registration Complete",
+  "title": "0xB80B U [MM5G] Registration Complete",
+  "category": "NAS",
+  "dataFile": "0xB80B__U_MM5G_Registration_Complete.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [MM5G] Registration Complete": {
+      "Release Version": null,
+      "Direction": null,
+      "Ext. PD": null,
+      "Security header type": null,
+      "Message ID": null,
+      "Registration Complete": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 29,
+    "samplesParsedSuccessfully": 29,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB80B__U_MM5G_Registration_Complete.json"
+  }
+}

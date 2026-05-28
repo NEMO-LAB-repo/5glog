@@ -1,0 +1,17 @@
+{
+  "id": "compressedpdu",
+  "name": "compressed pdu",
+  "records": [
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpackets -> UL Cipher Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> compressed pdu"
+      ]
+    }
+  ]
+}

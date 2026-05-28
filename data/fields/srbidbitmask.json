@@ -1,0 +1,29 @@
+{
+  "id": "srbidbitmask",
+  "name": "SRB ID Bitmask",
+  "records": [
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> MCG -> SRB ID Bitmask",
+        "NR5G L2 DL Config -> SCG -> SRB ID Bitmask"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> Mn Security Config -> SRB ID Bitmask"
+      ]
+    }
+  ]
+}

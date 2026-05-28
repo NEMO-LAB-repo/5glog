@@ -1,0 +1,17 @@
+{
+  "id": "versioninstnum",
+  "name": "Version -> Inst Num",
+  "records": [
+    {
+      "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+      "logcode": "0xB1F5",
+      "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+      "name": "LTE ML1 IRAT NR Meas Results",
+      "category": "ML1",
+      "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+      "paths": [
+        "LTE ML1 IRAT NR Meas Results -> SubPackets -> [] -> SubPacket -> Irat Limited Nr Meas Results -> Version -> Inst Num"
+      ]
+    }
+  ]
+}

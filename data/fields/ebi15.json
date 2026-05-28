@@ -1,0 +1,72 @@
+{
+  "id": "ebi15",
+  "name": "EBI(15)",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dedicatedInfoNAS -> Tracking Area Update Accept -> EPS bearer context status -> EBI(15)"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> Tracking Area Update Accept -> EPS bearer context status -> EBI(15)"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> EPS bearer context status -> EBI(15)"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> EPS bearer context status -> EBI(15)"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [EMM] Tracking Area Update Accept -> Tracking Area Update Accept -> EPS bearer context status -> EBI(15)"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request -> Tracking Area Update Request -> EPS bearer context status -> EBI(15)"
+      ]
+    }
+  ]
+}

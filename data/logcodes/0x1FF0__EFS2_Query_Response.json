@@ -1,0 +1,45 @@
+{
+  "id": "0x1ff0-efs2-query-response",
+  "logcode": "0x1FF0",
+  "name": "EFS2/Query Response",
+  "title": "0x1FF0 EFS2/Query Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__EFS2_Query_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EFS2/Query Response": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "EFS2/Query Response": {
+          "Maximum File Name Length": null,
+          "Maximum Folder Name Length": null,
+          "Maximum Link Depth": null,
+          "Maximum File Size": null,
+          "Maximum Folder Entries": null,
+          "Maximum Mounts": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__EFS2_Query_Response.json"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "0xb0c0-u-lte-rrc-connection-reconfiguration-complete",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] RRC Connection Reconfiguration Complete",
+  "title": "0xB0C0 U [LTE] RRC Connection Reconfiguration Complete",
+  "category": "RRC",
+  "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reconfiguration_Complete.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] RRC Connection Reconfiguration Complete": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> rrcConnectionReconfigurationComplete": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> rrcConnectionReconfigurationComplete-r8": {}
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 340,
+    "samplesParsedSuccessfully": 340,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_RRC_Connection_Reconfiguration_Complete.json"
+  }
+}

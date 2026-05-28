@@ -1,0 +1,17 @@
+{
+  "id": "numcrcfailtb",
+  "name": "Num CRC Fail TB",
+  "records": [
+    {
+      "id": "0xb888-nr5g-mac-pdsch-stats",
+      "logcode": "0xB888",
+      "title": "0xB888 NR5G MAC PDSCH Stats",
+      "name": "NR5G MAC PDSCH Stats",
+      "category": "MAC",
+      "dataFile": "0xB888__NR5G_MAC_PDSCH_Stats.json",
+      "paths": [
+        "NR5G MAC PDSCH Stats -> Records -> [] -> Num CRC Fail TB"
+      ]
+    }
+  ]
+}

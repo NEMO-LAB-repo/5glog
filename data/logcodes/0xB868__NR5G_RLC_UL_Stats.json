@@ -1,0 +1,69 @@
+{
+  "id": "0xb868-nr5g-rlc-ul-stats",
+  "logcode": "0xB868",
+  "name": "NR5G RLC UL Stats",
+  "title": "0xB868 NR5G RLC UL Stats",
+  "category": "RLC",
+  "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RLC UL Stats": {
+      "Meta": {
+        "Reason": null,
+        "Num LC Logged": null,
+        "Cumulative LC BMask": null,
+        "Configured LC BMask": null
+      },
+      "All LC": {
+        "Total RLC Invalid Status PDUs": null,
+        "Total Poll Expiry": null,
+        "Total ReTx PDUs": null,
+        "Total ReTx Bytes": null
+      },
+      "Per LC": {
+        "[]": {
+          "LC State": {
+            "LCID": null,
+            "RB Mode": null,
+            "RLC SN Length": null,
+            "PDCP SN Length": null,
+            "Tx Next ACK": null,
+            "Tx Next": null
+          },
+          "Current Tx Win PDUs": null,
+          "Total ReTx PDUs": null,
+          "Current Tx Win Bytes": null,
+          "Total Tx PDUs": null,
+          "Total Tx Bytes": null,
+          "Total Poll PDUs": null,
+          "Total High Prio PDUs Tx": null,
+          "Total High Prio Bytes Tx": null,
+          "Total Txed Status PDUs": null,
+          "Total RLC Nack Status PDUs": null,
+          "Last Valid Status PDU Received Time": null,
+          "Total Rxed Status PDU": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3133,
+    "samplesParsedSuccessfully": 3133,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB868__NR5G_RLC_UL_Stats.json"
+  }
+}

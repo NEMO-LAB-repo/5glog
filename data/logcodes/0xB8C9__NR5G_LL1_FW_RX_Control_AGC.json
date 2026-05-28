@@ -1,0 +1,65 @@
+{
+  "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+  "logcode": "0xB8C9",
+  "name": "NR5G LL1 FW RX Control AGC",
+  "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+  "category": "ML1",
+  "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G LL1 FW RX Control AGC": {
+      "Sub Packets": {
+        "[]": {
+          "Code": null,
+          "Length": null,
+          "Control AGC Sub Packet": {
+            "Variant ID": null,
+            "Version": null,
+            "Log Header": {
+              "Log2 Slot To Unit Slot": null,
+              "Fractional Unit Slot Number": null,
+              "SFN": null,
+              "Carrier Index": null,
+              "Log Size": null
+            },
+            "AGC Carrier": {
+              "Mask": null,
+              "FFTEE Symbol Bitmask": null,
+              "Rx Bit0": null,
+              "Rx Bit1": null,
+              "Rx Bit2": null,
+              "Rx Bit3": null
+            },
+            "AGC RX Sub6": {
+              "[]": {
+                "Current LNA Gain State": null,
+                "Inband RSSI": null
+              }
+            }
+          },
+          "Hex Dump": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3433,
+    "samplesParsedSuccessfully": 3433,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json"
+  }
+}

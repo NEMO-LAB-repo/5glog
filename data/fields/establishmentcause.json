@@ -1,0 +1,39 @@
+{
+  "id": "establishmentcause",
+  "name": "establishmentCause",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-data",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Data",
+      "name": "U [LTE] RRC Connection Request : mo-Data",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Data.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Data -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> establishmentCause"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Signalling -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> establishmentCause"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-CCCH-Message -> ul-ccch -> c1 -> rrcSetupRequest -> rrcSetupRequest -> establishmentCause"
+      ]
+    }
+  ]
+}

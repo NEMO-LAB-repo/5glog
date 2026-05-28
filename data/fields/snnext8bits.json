@@ -1,0 +1,20 @@
+{
+  "id": "snnext8bits",
+  "name": "SN Next 8 Bits",
+  "records": [
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> First Packet PDCP Header -> SN Next 8 Bits",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> First Packet RLC Header -> SN Next 8 Bits",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> Last Packet PDCP Header -> SN Next 8 Bits",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> Last Packet RLC Header -> SN Next 8 Bits"
+      ]
+    }
+  ]
+}

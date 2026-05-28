@@ -1,0 +1,19 @@
+{
+  "id": "periodic",
+  "name": "periodic",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> csi-MeasConfig -> setup -> csi-ReportConfigToAddModList -> reportConfigType -> periodic",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> srs-Config -> setup -> srs-ResourceSetToAddModList -> resourceType -> periodic",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> srs-Config -> setup -> srs-ResourceToAddModList -> resourceType -> periodic"
+      ]
+    }
+  ]
+}

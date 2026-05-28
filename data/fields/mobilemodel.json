@@ -1,0 +1,17 @@
+{
+  "id": "mobilemodel",
+  "name": "Mobile Model",
+  "records": [
+    {
+      "id": "0x1ff0-version-number-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Version Number Response",
+      "name": "Version Number Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Version_Number_Response.json",
+      "paths": [
+        "Version Number Response -> Version Number Response -> Mobile Model"
+      ]
+    }
+  ]
+}

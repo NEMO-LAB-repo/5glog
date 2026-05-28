@@ -1,0 +1,18 @@
+{
+  "id": "filtercoefficientrssinr",
+  "name": "filterCoefficientRS-SINR",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> quantityConfig -> quantityConfigNR-List -> quantityConfigCell -> ssb-FilterConfig -> filterCoefficientRS-SINR",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> quantityConfig -> quantityConfigNR-List -> quantityConfigRS-Index -> ssb-FilterConfig -> filterCoefficientRS-SINR"
+      ]
+    }
+  ]
+}

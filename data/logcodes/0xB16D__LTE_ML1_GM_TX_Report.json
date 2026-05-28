@@ -1,0 +1,106 @@
+{
+  "id": "0xb16d-lte-ml1-gm-tx-report",
+  "logcode": "0xB16D",
+  "name": "LTE ML1 GM TX Report",
+  "title": "0xB16D LTE ML1 GM TX Report",
+  "category": "ML1",
+  "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 GM TX Report": {
+      "Duplex Mode": null,
+      "UL DL Cfg": null,
+      "Number of Records": null,
+      "Record": {
+        "[]": {
+          "Channel Type": null,
+          "Cell Index": null,
+          "TX Sys FN": null,
+          "TX Sub FN": null,
+          "UL ACK/NAK Present Flag": null,
+          "ACK/NAK Reporting Mode": null,
+          "CSF Present Flag": null,
+          "SRS Present Flag": null,
+          "CA Mode Enabled": null,
+          "SRS UE/Cell Specific": null,
+          "ACK/NAK to Send Mask": {
+            "[]": null
+          },
+          "ECA/ACK Reporting Mode": null,
+          "W Ul Dai": null,
+          "Total TX Power": null,
+          "PUSCH": {
+            "Dci 0 Present": null,
+            "Transport Block Size": null,
+            "ACK/NAK Length": null,
+            "Redundancy Version": null,
+            "HARQ ID": null,
+            "Retransmission index": null,
+            "Modulation Type": null,
+            "EIB Index": null,
+            "Resource Block Start": null,
+            "Number of Resource Blocks": null,
+            "MCS Index": null,
+            "Number of Bundled Subframes": null,
+            "End of Bundling": null,
+            "Resource Allocation Type": null,
+            "Resource Block Start 2": null,
+            "Number of Resource Blocks 2": null,
+            "Beta PUSCH": null,
+            "Num Antenna": null,
+            "Cyclic Shift DMRS": null,
+            "Freq Hopping Flag": null,
+            "HARQ ACK Offset Index": null,
+            "HARQ ACK Offset X": null,
+            "CQI offset index": null,
+            "RI Offset Index": null,
+            "PUSCH Hopping Payload": null,
+            "N_drms": null,
+            "TTI Bundle Index": null
+          },
+          "CC Max TX Power": null,
+          "Total Max TX Power": null,
+          "Chain0 Mtpl": null,
+          "Chain1 Mtpl": null,
+          "AFC Rx Freq Error": null,
+          "PUCCH": {
+            "ACK/NAK Length": null,
+            "Scheduling Request Present": null,
+            "Temp RNTI ACK Flag": null,
+            "BETA PUCCH": null,
+            "N 1 PUCCH": null,
+            "N 1 PUCCH Num": null,
+            "N 1 PUCCH 0": null,
+            "N 1 PUCCH 1": null,
+            "N 1 PUCCH 2": null,
+            "N 1 PUCCH 3": null,
+            "N 4 PUCCH": null,
+            "N 2 PUCCH": null,
+            "N 3 PUCCH": null,
+            "M PUCCH 4 Rb": null,
+            "N 5 CDM IDX": null,
+            "N 5 PUCCH": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 52,
+    "samplesParsedSuccessfully": 52,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB16D__LTE_ML1_GM_TX_Report.json"
+  }
+}

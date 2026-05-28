@@ -1,0 +1,63 @@
+{
+  "id": "dc",
+  "name": "DC",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> TB Info -> [] -> MAC Sdu Info -> [] -> MAC Sdu Info Table -> RLC PDCP Info -> DC"
+      ]
+    },
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "LTE RLC DL AM Control PDU -> PDUs -> [] -> Payload -> AM PDU -> PDU based on D/c union -> Control PDU -> D/C"
+      ]
+    },
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> RLCUL PDU -> [] -> AM PDU -> PDU based on D/c union -> AM PDU -> D/C",
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> RLCUL PDU -> [] -> AM PDU -> PDU based on D/c union -> Control PDU -> D/C"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpackets -> UL Cipher Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> buffer -> ElsMiniSignBufferBits -> Buffer 18bits -> DC"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> First Packet RLC Header -> DC",
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> Last Packet RLC Header -> DC"
+      ]
+    }
+  ]
+}

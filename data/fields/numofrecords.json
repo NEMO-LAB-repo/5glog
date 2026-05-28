@@ -1,0 +1,28 @@
+{
+  "id": "numofrecords",
+  "name": "Num of Records",
+  "records": [
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "LTE LL1 PDSCH Demapper Configuration -> Num of Records"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Num of Records"
+      ]
+    }
+  ]
+}

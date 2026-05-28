@@ -1,0 +1,38 @@
+{
+  "id": "0xb0ed-u-emm-tracking-area-update-complete",
+  "logcode": "0xB0ED",
+  "name": "U [EMM] Tracking Area Update Complete",
+  "title": "0xB0ED U [EMM] Tracking Area Update Complete",
+  "category": "NAS",
+  "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Complete.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [EMM] Tracking Area Update Complete": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Message ID": null,
+      "Tracking Area Update Complete": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 17,
+    "samplesParsedSuccessfully": 17,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0ED__U_EMM_Tracking_Area_Update_Complete.json"
+  }
+}

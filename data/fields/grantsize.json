@@ -1,0 +1,17 @@
+{
+  "id": "grantsize",
+  "name": "Grant Size",
+  "records": [
+    {
+      "id": "0xb872-nr5g-l2-ul-tb",
+      "logcode": "0xB872",
+      "title": "0xB872 NR5G L2 UL TB",
+      "name": "NR5G L2 UL TB",
+      "category": "L2",
+      "dataFile": "0xB872__NR5G_L2_UL_TB.json",
+      "paths": [
+        "NR5G L2 UL TB -> TTI Info -> [] -> Num TB -> [] -> Grant Size"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "rawdata",
+  "name": "Raw data",
+  "records": [
+    {
+      "id": "0xb0ea-lte-nas-emm-security-protected-incoming-msg",
+      "logcode": "0xB0EA",
+      "title": "0xB0EA LTE NAS EMM Security Protected Incoming Msg",
+      "name": "LTE NAS EMM Security Protected Incoming Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EA__LTE_NAS_EMM_Security_Protected_Incoming_Msg.json",
+      "paths": [
+        "LTE NAS EMM Security Protected Incoming Msg -> Raw data"
+      ]
+    },
+    {
+      "id": "0xb0eb-lte-nas-emm-security-protected-outgoing-msg",
+      "logcode": "0xB0EB",
+      "title": "0xB0EB LTE NAS EMM Security Protected Outgoing Msg",
+      "name": "LTE NAS EMM Security Protected Outgoing Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json",
+      "paths": [
+        "LTE NAS EMM Security Protected Outgoing Msg -> Raw data"
+      ]
+    }
+  ]
+}

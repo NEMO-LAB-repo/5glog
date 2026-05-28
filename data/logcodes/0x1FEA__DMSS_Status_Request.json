@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-dmss-status-request",
+  "logcode": "0x1FEA",
+  "name": "DMSS Status Request",
+  "title": "0x1FEA DMSS Status Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__DMSS_Status_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "DMSS Status Request": {
+      "Cmd Code": null,
+      "DMSS Status Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__DMSS_Status_Request.json"
+  }
+}

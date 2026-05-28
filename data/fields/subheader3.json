@@ -1,0 +1,17 @@
+{
+  "id": "subheader3",
+  "name": "Subheader 3",
+  "records": [
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> Combined Headers -> [] -> PDCP PDU Header -> Subheader 3"
+      ]
+    }
+  ]
+}

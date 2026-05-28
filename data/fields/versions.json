@@ -1,0 +1,56 @@
+{
+  "id": "versions",
+  "name": "Versions",
+  "records": [
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions"
+      ]
+    },
+    {
+      "id": "0xb823-nr5g-rrc-serving-cell-info",
+      "logcode": "0xB823",
+      "title": "0xB823 NR5G RRC Serving Cell Info",
+      "name": "NR5G RRC Serving Cell Info",
+      "category": "RRC",
+      "paths": [
+        "NR5G RRC Serving Cell Info -> Versions"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 DL Common Config -> Versions"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> Versions"
+      ]
+    },
+    {
+      "id": "0xb9a7-nr5g-ml1-dlm2-ca-metrics-request",
+      "logcode": "0xB9A7",
+      "title": "0xB9A7 NR5G ML1 DLM2 CA Metrics Request",
+      "name": "NR5G ML1 DLM2 CA Metrics Request",
+      "category": "ML1",
+      "paths": [
+        "NR5G ML1 DLM2 CA Metrics Request -> Versions"
+      ]
+    }
+  ]
+}

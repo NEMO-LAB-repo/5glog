@@ -1,0 +1,17 @@
+{
+  "id": "csflate",
+  "name": "CSF Late",
+  "records": [
+    {
+      "id": "0xb139-lte-ll1-pusch-tx-report",
+      "logcode": "0xB139",
+      "title": "0xB139 LTE LL1 PUSCH Tx Report",
+      "name": "LTE LL1 PUSCH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 PUSCH Tx Report -> Records -> [] -> CSF Late"
+      ]
+    }
+  ]
+}

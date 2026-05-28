@@ -1,0 +1,39 @@
+{
+  "id": "selectedplmnidentity",
+  "name": "selectedPLMN-Identity",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-service-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Service Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Service Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Service_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Service Request -> ul-dcch -> message -> c1 -> rrcConnectionSetupComplete -> criticalExtensions -> c1 -> rrcConnectionSetupComplete-r8 -> selectedPLMN-Identity"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> ul-dcch -> message -> c1 -> rrcConnectionSetupComplete -> criticalExtensions -> c1 -> rrcConnectionSetupComplete-r8 -> selectedPLMN-Identity"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcSetupComplete -> criticalExtensions -> rrcSetupComplete -> selectedPLMN-Identity"
+      ]
+    }
+  ]
+}

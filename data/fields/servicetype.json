@@ -1,0 +1,41 @@
+{
+  "id": "servicetype",
+  "name": "Service type",
+  "records": [
+    {
+      "id": "0xb80b-u-mm5g-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request",
+      "name": "U [MM5G] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request.json",
+      "paths": [
+        "U [MM5G] Service Request -> Service Request -> Service type"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-service-request-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request//Service Request",
+      "name": "U [MM5G] Service Request//Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request_Service_Request.json",
+      "paths": [
+        "U [MM5G] Service Request//Service Request -> MM5G Message -> Service Request -> Service type",
+        "U [MM5G] Service Request//Service Request -> Service Request -> Service type"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> MM5G Message -> Service Request -> Service type",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Service Request -> Service type"
+      ]
+    }
+  ]
+}

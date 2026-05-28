@@ -1,0 +1,18 @@
+{
+  "id": "nvdiagnvreadextensionresponse",
+  "name": "NV/Diag NV Read Extension Response",
+  "records": [
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "NV/Diag NV Read Extension Response",
+        "NV/Diag NV Read Extension Response -> Subsystem Dispatch Response Message -> NV/Diag NV Read Extension Response"
+      ]
+    }
+  ]
+}

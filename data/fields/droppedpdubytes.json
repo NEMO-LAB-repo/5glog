@@ -1,0 +1,28 @@
+{
+  "id": "droppedpdubytes",
+  "name": "Dropped PDU Bytes",
+  "records": [
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> RB Stats -> [] -> Dropped PDU Bytes"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats -> RB Stats -> [] -> Dropped PDU Bytes"
+      ]
+    }
+  ]
+}

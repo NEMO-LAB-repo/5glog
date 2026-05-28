@@ -1,0 +1,21 @@
+{
+  "id": "message",
+  "name": "message",
+  "records": [
+    {
+      "id": "0xb0c0-lte-rrc-ota-packet",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 LTE RRC OTA Packet",
+      "name": "LTE RRC OTA Packet",
+      "category": "RRC",
+      "paths": [
+        "LTE RRC OTA Packet -> bcch-dl-sch -> message",
+        "LTE RRC OTA Packet -> dl-ccch -> message",
+        "LTE RRC OTA Packet -> dl-dcch -> message",
+        "LTE RRC OTA Packet -> pcch -> message",
+        "LTE RRC OTA Packet -> ul-ccch -> message",
+        "LTE RRC OTA Packet -> ul-dcch -> message"
+      ]
+    }
+  ]
+}

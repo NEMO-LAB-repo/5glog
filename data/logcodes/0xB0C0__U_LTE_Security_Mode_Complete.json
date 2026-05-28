@@ -1,0 +1,44 @@
+{
+  "id": "0xb0c0-u-lte-security-mode-complete",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] Security Mode Complete",
+  "title": "0xB0C0 U [LTE] Security Mode Complete",
+  "category": "LTE",
+  "dataFile": "0xB0C0__U_LTE_Security_Mode_Complete.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] Security Mode Complete": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> securityModeComplete": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> securityModeComplete-r8": {}
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 14,
+    "samplesParsedSuccessfully": 14,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_Security_Mode_Complete.json"
+  }
+}

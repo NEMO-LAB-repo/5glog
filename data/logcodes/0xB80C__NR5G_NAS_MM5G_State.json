@@ -1,0 +1,51 @@
+{
+  "id": "0xb80c-nr5g-nas-mm5g-state",
+  "logcode": "0xB80C",
+  "name": "NR5G NAS MM5G State",
+  "title": "0xB80C NR5G NAS MM5G State",
+  "category": "NAS",
+  "dataFile": "0xB80C__NR5G_NAS_MM5G_State.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G NAS MM5G State": {
+      "MM5G State": null,
+      "Mm5gSubState -> Mm5g Registered Substate": null,
+      "PLMN ID": {
+        "Identity": null
+      },
+      "GUTI": {
+        "UE Id": null,
+        "GUTI PLMN ID": {
+          "Identity": null
+        },
+        "AMF Region ID": null,
+        "AMF Set ID": null,
+        "AMF Pointer": null,
+        "5G TMSI": null
+      },
+      "MM5G Update Status": null,
+      "NR5G TAC": null,
+      "Mm5gSubState -> Substate": null,
+      "Mm5gSubState -> Mm5g Registered Initiated Substate": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 516,
+    "samplesParsedSuccessfully": 516,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB80C__NR5G_NAS_MM5G_State.json"
+  }
+}

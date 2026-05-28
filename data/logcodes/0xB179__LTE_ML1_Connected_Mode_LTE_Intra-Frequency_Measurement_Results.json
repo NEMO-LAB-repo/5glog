@@ -1,0 +1,55 @@
+{
+  "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+  "logcode": "0xB179",
+  "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+  "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+  "category": "ML1",
+  "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results": {
+      "Serving Cell Index": null,
+      "E-ARFCN": null,
+      "Serving Physical Cell ID": null,
+      "Sys/Sub-frame Number": null,
+      "Serving Filtered RSRP": null,
+      "Serving Filtered RSRQ": null,
+      "Number Of Measured Neighbor Cells(N)": null,
+      "Number Of Detected Cells (M)": null,
+      "Measured Cell": {
+        "[]": {
+          "Physical Cell ID": null,
+          "Filtered RSRP": null,
+          "Filtered RSRQ": null
+        }
+      },
+      "Detected Cell": {
+        "[]": {
+          "Physical Cell ID": null,
+          "SSS Corr Value": null,
+          "Reference Time": {
+            "[]": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 60,
+    "samplesParsedSuccessfully": 60,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json"
+  }
+}

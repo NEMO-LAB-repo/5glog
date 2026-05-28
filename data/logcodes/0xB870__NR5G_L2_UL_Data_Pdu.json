@@ -1,0 +1,173 @@
+{
+  "id": "0xb870-nr5g-l2-ul-data-pdu",
+  "logcode": "0xB870",
+  "name": "NR5G L2 UL Data Pdu",
+  "title": "0xB870 NR5G L2 UL Data Pdu",
+  "category": "L2",
+  "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 UL Data Pdu": {
+      "Meta": {
+        "Num TTI": null,
+        "Num LCID Configured": null
+      },
+      "Per LC": {
+        "[]": {
+          "LCID": null,
+          "RB Mode": null,
+          "RLC SN Length": null,
+          "PDCP SN Length": null,
+          "Tx Next Ack": null,
+          "Tx Next": null
+        }
+      },
+      "TTI Info": {
+        "[]": {
+          "Meta": {
+            "System Time": {
+              "Slot Number": null,
+              "FN": null
+            },
+            "TB Buf Ovrflw": null,
+            "TTI Log Incomp": null,
+            "Num TB": null,
+            "Num TB Entry": null
+          },
+          "TB Info": {
+            "[]": {
+              "Meta": {
+                "MCE BMask": {
+                  "Pad": null,
+                  "MCE Built": null,
+                  "BSR Type": null
+                },
+                "CA ID": null,
+                "Numerology": null,
+                "Num LC Built": null,
+                "Num LC Packet Info Entries": null
+              },
+              "LC Packet Info": {
+                "[]": {
+                  "Entry Buf Ovrflw": null,
+                  "LCID": null,
+                  "RB Type": null,
+                  "RB Mode": null,
+                  "RLC TX Type": null,
+                  "PDCP SN Length": null,
+                  "PDU info count": null,
+                  "Num First Pkt PDCP Hdr Bytes": null,
+                  "Num Last Pkt PDCP Hdr Bytes": null,
+                  "Is Poll SN Valid": null,
+                  "Last Poll SN": null,
+                  "rlc_start_sn": null,
+                  "PDCP Start Count": null,
+                  "Num RLC Status PDUs": null,
+                  "Num PDCP Control PDUs": null,
+                  "First Pkt PDCP Header Offset": null,
+                  "RLC SN Length": null,
+                  "Poll RSN": null,
+                  "First Packet PDCP Header": {
+                    "First Byte PDCP Header": null,
+                    "DC Bit Outer": null,
+                    "PDCP SN Length": null,
+                    "PDCP RB Type": null,
+                    "DC Bit": null,
+                    "SN First 4 Bits": null,
+                    "SN Next 8 Bits": null,
+                    "SN Last 8 Bits": null,
+                    "SN 18 Bits": null,
+                    "Extra": null
+                  },
+                  "First Packet RLC Header": {
+                    "First Byte RLC Header": null,
+                    "DC Bit Outer": null,
+                    "P Outer": null,
+                    "SI Outer": null,
+                    "SO Present": null,
+                    "DC": null,
+                    "P": null,
+                    "SI": null,
+                    "SN First 2 Bits": null,
+                    "SN Next 8 Bits": null,
+                    "SN Last 8 Bits": null,
+                    "SN 18 Bits": null,
+                    "un-decoded": null,
+                    "SN First 4 Bits": null,
+                    "SN 12 Bits": null,
+                    "Last 4 Bytes Raw": null,
+                    "SO 16 Bits": null
+                  },
+                  "Last Packet PDCP Header": {
+                    "First Byte PDCP Header": null,
+                    "DC Bit Outer": null,
+                    "PDCP SN Length": null,
+                    "PDCP RB Type": null,
+                    "DC Bit": null,
+                    "SN First 4 Bits": null,
+                    "SN Next 8 Bits": null,
+                    "SN Last 8 Bits": null,
+                    "SN 18 Bits": null,
+                    "Extra": null
+                  },
+                  "Last Packet RLC Header": {
+                    "First Byte RLC Header": null,
+                    "DC Bit Outer": null,
+                    "P Outer": null,
+                    "SI Outer": null,
+                    "SO Present": null,
+                    "DC": null,
+                    "P": null,
+                    "SI": null,
+                    "SN First 2 Bits": null,
+                    "SN Next 8 Bits": null,
+                    "SN Last 8 Bits": null,
+                    "SN 18 Bits": null,
+                    "un-decoded": null,
+                    "SN First 4 Bits": null,
+                    "SN 12 Bits": null,
+                    "Last 4 Bytes Raw": null,
+                    "SO 16 Bits": null
+                  },
+                  "first_pkt_maci_seg_bytes": null,
+                  "last_pkt_maci_seg_bytes": null,
+                  "Remaining Bytes Last Pkt": null,
+                  "PDU Info": {
+                    "[]": {
+                      "Num Packets": null,
+                      "Offset": null,
+                      "Length": null,
+                      "Num Comp Packets": null,
+                      "Num Comp Bytes": null,
+                      "Seg Bytes": null
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2130,
+    "samplesParsedSuccessfully": 2130,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB870__NR5G_L2_UL_Data_Pdu.json"
+  }
+}

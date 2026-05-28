@@ -1,0 +1,28 @@
+{
+  "id": "gsm850",
+  "name": "GSM 850",
+  "records": [
+    {
+      "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+      "name": "Call Manager/State Info Of Current Subscription Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Response -> Subsystem Dispatch Response Message -> Call Manager/State Info Of Current Subscription Response -> GSM 850"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Call Manager/State Info Response -> Subsystem Dispatch Response Message -> Call Manager/State Info Response -> GSM 850"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "preambleformat",
+  "name": "Preamble Format",
+  "records": [
+    {
+      "id": "0xb144-lte-ll1-rach-tx-report",
+      "logcode": "0xB144",
+      "title": "0xB144 LTE LL1 RACH Tx Report",
+      "name": "LTE LL1 RACH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB144__LTE_LL1_RACH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 RACH Tx Report -> Preamble Format"
+      ]
+    },
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Request (MSG1) Report -> Preamble Format"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PRACH Data -> Preamble Format"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> Preamble Format"
+      ]
+    }
+  ]
+}

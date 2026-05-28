@@ -1,0 +1,28 @@
+{
+  "id": "cnassociationepsbeareridentity",
+  "name": "cnAssociation -> eps-BearerIdentity",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> cnAssociation -> eps-BearerIdentity"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> cnAssociation -> eps-BearerIdentity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "dciformats",
+  "name": "dci-Formats",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdcch-Config -> setup -> searchSpacesToAddModList -> searchSpaceType -> ue-Specific -> dci-Formats",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdcch-Config -> setup -> searchSpacesToAddModList -> searchSpaceType -> ue-Specific -> dci-Formats"
+      ]
+    }
+  ]
+}

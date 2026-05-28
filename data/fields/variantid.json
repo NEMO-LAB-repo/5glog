@@ -1,0 +1,52 @@
+{
+  "id": "variantid",
+  "name": "Variant Id",
+  "records": [
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> Variant Id"
+      ]
+    },
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets -> [] -> Control AGC Sub Packet -> Variant ID"
+      ]
+    },
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> MTPL -> Variant ID",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Per Symbol -> Variant ID",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Veto Deveto QSleep -> Variant ID"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets -> [] -> TX IU Power Sub Packet -> Variant ID"
+      ]
+    }
+  ]
+}

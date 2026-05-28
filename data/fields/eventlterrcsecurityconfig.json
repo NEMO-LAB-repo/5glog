@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrcsecurityconfig",
+  "name": "EVENT_LTE_RRC_SECURITY_CONFIG",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-security-config",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_SECURITY_CONFIG",
+      "name": "EVENT_LTE_RRC_SECURITY_CONFIG",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_SECURITY_CONFIG.json",
+      "paths": [
+        "EVENT_LTE_RRC_SECURITY_CONFIG",
+        "EVENT_LTE_RRC_SECURITY_CONFIG -> Event -> EVENT_LTE_RRC_SECURITY_CONFIG"
+      ]
+    }
+  ]
+}

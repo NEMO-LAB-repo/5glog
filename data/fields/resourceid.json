@@ -1,0 +1,28 @@
+{
+  "id": "resourceid",
+  "name": "Resource Id",
+  "records": [
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> SRS Data -> Per SRS Data -> [] -> Resource Id"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> RSRP Records -> [] -> Resource ID"
+      ]
+    }
+  ]
+}

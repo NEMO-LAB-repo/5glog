@@ -1,0 +1,17 @@
+{
+  "id": "snlengthvalue",
+  "name": "SN Length Value",
+  "records": [
+    {
+      "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+      "logcode": "0xB84E",
+      "title": "0xB84E NR5G RLC DL Status PDU",
+      "name": "NR5G RLC DL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC DL Status PDU -> PDUs -> [] -> SN Length Value"
+      ]
+    }
+  ]
+}

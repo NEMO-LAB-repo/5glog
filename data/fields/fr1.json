@@ -1,0 +1,22 @@
+{
+  "id": "fr1",
+  "name": "fr1",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> featureSets -> featureSetsDownlinkPerCC -> supportedBandwidthDL -> fr1",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> featureSets -> featureSetsUplinkPerCC -> supportedBandwidthUL -> fr1",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> rf-Parameters -> supportedBandListNR -> channelBWs-DL -> fr1",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> rf-Parameters -> supportedBandListNR -> channelBWs-DL-v1590 -> fr1",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> rf-Parameters -> supportedBandListNR -> channelBWs-UL -> fr1",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> rf-Parameters -> supportedBandListNR -> channelBWs-UL-v1590 -> fr1"
+      ]
+    }
+  ]
+}

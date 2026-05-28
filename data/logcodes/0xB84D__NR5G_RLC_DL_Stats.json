@@ -1,0 +1,80 @@
+{
+  "id": "0xb84d-nr5g-rlc-dl-stats",
+  "logcode": "0xB84D",
+  "name": "NR5G RLC DL Stats",
+  "title": "0xB84D NR5G RLC DL Stats",
+  "category": "RLC",
+  "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RLC DL Stats": {
+      "Num RB": null,
+      "Reason": null,
+      "Num FC Down Commands": null,
+      "Num FC Up Commands": null,
+      "Num Shutdown Issued": null,
+      "Num RLF Issued": null,
+      "Num FC Level1 Down Commands": null,
+      "Num FC Level1 Up Commands": null,
+      "Num Scell TA Start": null,
+      "Num Scell TA Stop": null,
+      "Num Scell FC Start": null,
+      "Num Scell FC Stop": null,
+      "Num RF Available": null,
+      "Num FC RX Win": null,
+      "Last RLF": null,
+      "Num FC Level1 Inc Segs Dropped": {
+        "[]": null
+      },
+      "Num FC Level1 History Index": null,
+      "Num FC Shutdown Inc Segs Dropped": null,
+      "RB Stats": {
+        "[]": {
+          "RB Config Index": null,
+          "RB Mode": null,
+          "Num Data PDU": null,
+          "Num Status Rxed": null,
+          "Num Invalid PDUs": null,
+          "Num ReTx PDU": null,
+          "Num Duplicate PDU": null,
+          "Num Dropped PDU": null,
+          "Num Segment Join": null,
+          "Num Segment Collapse": null,
+          "Num Status Trigger": null,
+          "Num Status Update": null,
+          "Num Status OTA": null,
+          "Num Status PDU Drop": null,
+          "Num Reassembly Expired": null,
+          "Num Reassembly Start": null,
+          "Num Missed UM PDU": null,
+          "Num Status Trigger Ack SN Only": null,
+          "Num Status Trigger Nack List": null,
+          "Num Status Update Ack SN Only": null,
+          "Num Status Update Nack List": null,
+          "Num Status Ackd": null,
+          "Num Status Nack Lists": null,
+          "RLC Data Bytes": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3000,
+    "samplesParsedSuccessfully": 3000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB84D__NR5G_RLC_DL_Stats.json"
+  }
+}

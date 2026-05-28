@@ -1,0 +1,237 @@
+{
+  "id": "subid",
+  "name": "SUB_ID",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-mac-reset-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_RESET_V2",
+      "name": "EVENT_LTE_MAC_RESET_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_RESET_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_RESET_V2 -> Event -> EVENT_LTE_MAC_RESET_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-timer-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_TIMER_V2",
+      "name": "EVENT_LTE_MAC_TIMER_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_TIMER_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_TIMER_V2 -> Event -> EVENT_LTE_MAC_TIMER_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-result-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_RESULT_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_RESULT_V2 -> Event -> EVENT_LTE_RACH_ACCESS_RESULT_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-start-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_START_V2 -> Event -> EVENT_LTE_RACH_ACCESS_START_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-raid-match-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_RAID_MATCH_V2",
+      "name": "EVENT_LTE_RACH_RAID_MATCH_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_RAID_MATCH_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_RAID_MATCH_V2 -> Event -> EVENT_LTE_RACH_RAID_MATCH_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-timing-advance-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_TIMING_ADVANCE_V2",
+      "name": "EVENT_LTE_TIMING_ADVANCE_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_TIMING_ADVANCE_V2.json",
+      "paths": [
+        "EVENT_LTE_TIMING_ADVANCE_V2 -> Event -> EVENT_LTE_TIMING_ADVANCE_V2 -> SUB_ID"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Sub Id"
+      ]
+    },
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> UL TB Info table -> [] -> Sub Id"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Sub Packets -> [] -> Sub Id"
+      ]
+    },
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "NR5G MAC UL TB Stats -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> sub_id"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb886-nr5g-mac-dl-tb-report",
+      "logcode": "0xB886",
+      "title": "0xB886 NR5G MAC DL TB Report",
+      "name": "NR5G MAC DL TB Report",
+      "category": "MAC",
+      "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+      "paths": [
+        "NR5G MAC DL TB Report -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb889-nr5g-mac-rach-trigger",
+      "logcode": "0xB889",
+      "title": "0xB889 NR5G MAC RACH Trigger",
+      "name": "NR5G MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB889__NR5G_MAC_RACH_Trigger.json",
+      "paths": [
+        "NR5G MAC RACH Trigger -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> Header -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "NR5G MAC CDRX Events Info -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "NR5G MAC UCI Payload Information -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb89c-nr5g-mac-flow-control",
+      "logcode": "0xB89C",
+      "title": "0xB89C NR5G MAC Flow Control",
+      "name": "NR5G MAC Flow Control",
+      "category": "MAC",
+      "dataFile": "0xB89C__NR5G_MAC_Flow_Control.json",
+      "paths": [
+        "NR5G MAC Flow Control -> Sub ID"
+      ]
+    },
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "NR5G MAC CSF Report -> Sub ID"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "0xb0ed-u-emm-identity-response",
+  "logcode": "0xB0ED",
+  "name": "U [EMM] Identity Response",
+  "title": "0xB0ED U [EMM] Identity Response",
+  "category": "NAS",
+  "dataFile": "0xB0ED__U_EMM_Identity_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [EMM] Identity Response": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Message ID": null,
+      "Identity Response": {
+        "Mobile Identity": {
+          "Length": null,
+          "Type of Identity": null,
+          "Odd Even Ind": null,
+          "IMSI": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0xB0ED__U_EMM_Identity_Response.json"
+  }
+}

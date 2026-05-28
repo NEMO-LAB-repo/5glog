@@ -1,0 +1,50 @@
+{
+  "id": "cqipucchresourceindexr10",
+  "name": "cqi-PUCCH-ResourceIndex-r10",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> physicalConfigDedicated -> cqi-ReportConfig-r10 -> cqi-ReportPeriodic-r10 -> setup -> cqi-PUCCH-ResourceIndex-r10"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> physicalConfigDedicated -> cqi-ReportConfig-r10 -> cqi-ReportPeriodic-r10 -> setup -> cqi-PUCCH-ResourceIndex-r10"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> physicalConfigDedicated -> cqi-ReportConfig-r10 -> cqi-ReportPeriodic-r10 -> setup -> cqi-PUCCH-ResourceIndex-r10"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "D [LTE] RRC Connection Reestablishment -> dl-ccch -> message -> c1 -> rrcConnectionReestablishment -> criticalExtensions -> c1 -> rrcConnectionReestablishment-r8 -> radioResourceConfigDedicated -> physicalConfigDedicated -> cqi-ReportConfig-r10 -> cqi-ReportPeriodic-r10 -> setup -> cqi-PUCCH-ResourceIndex-r10"
+      ]
+    }
+  ]
+}

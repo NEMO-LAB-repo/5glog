@@ -1,0 +1,28 @@
+{
+  "id": "maxpower",
+  "name": "Max Power",
+  "records": [
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control -> Records -> [] -> Max Power"
+      ]
+    },
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "NR5G MAC UL TB Stats -> Records -> [] -> Max Power"
+      ]
+    }
+  ]
+}

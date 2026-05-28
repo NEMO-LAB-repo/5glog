@@ -1,0 +1,17 @@
+{
+  "id": "serving",
+  "name": "Serving",
+  "records": [
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> Serving"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "criticalextensionssysteminformationr8",
+  "name": "criticalExtensions -> systemInformation-r8",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2",
+      "name": "D [LTE] System Information : sib2",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2.json",
+      "paths": [
+        "D [LTE] System Information : sib2 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib24-v1530",
+      "name": "D [LTE] System Information : sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4",
+      "name": "D [LTE] System Information : sib4",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4.json",
+      "paths": [
+        "D [LTE] System Information : sib4 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4,sib5",
+      "name": "D [LTE] System Information : sib4,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib8-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib8_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib8",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib8",
+      "name": "D [LTE] System Information : sib8",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib8.json",
+      "paths": [
+        "D [LTE] System Information : sib8 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8"
+      ]
+    }
+  ]
+}

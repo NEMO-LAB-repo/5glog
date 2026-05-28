@@ -1,0 +1,46 @@
+{
+  "id": "0x1ff0-umts-version-response",
+  "logcode": "0x1FF0",
+  "name": "UMTS/Version Response",
+  "title": "0x1FF0 UMTS/Version Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__UMTS_Version_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "UMTS/Version Response": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "UMTS/Version Response": {
+          "3GPP Rev Month": null,
+          "3GPP Rev Year": null,
+          "3GPP Release": null,
+          "Byte": {
+            "[]": null
+          },
+          "DRX Parameter": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__UMTS_Version_Response.json"
+  }
+}

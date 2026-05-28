@@ -1,0 +1,117 @@
+{
+  "id": "eia6",
+  "name": "EIA6",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> UE Network Capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> UE Network Capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request -> Tracking Area Update Request -> UE Network Capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-security-mode-command",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Security Mode Command",
+      "name": "D [MM5G] Security Mode Command",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+      "paths": [
+        "D [MM5G] Security Mode Command -> Security Mode Command -> Replayed S1 UE security capabilities -> EIA6",
+        "D [MM5G] Security Mode Command -> Security Mode Command -> Replayed UE security capabilities -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request -> Registration Request -> S1 UE network capability -> EIA6",
+        "U [MM5G] Registration Request -> Registration Request -> UE security capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Registration Request",
+      "name": "U [MM5G] Registration Request//Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> S1 UE network capability -> EIA6",
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> UE security capability -> EIA6",
+        "U [MM5G] Registration Request//Registration Request -> Registration Request -> UE security capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> S1 UE network capability -> EIA6",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> UE security capability -> EIA6",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> Registration Request -> UE security capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> S1 UE network capability -> EIA6",
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> UE security capability -> EIA6"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Security Mode Command -> Replayed S1 UE security capabilities -> EIA6",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Security Mode Command -> Replayed UE security capabilities -> EIA6",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> S1 UE network capability -> EIA6",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> UE security capability -> EIA6",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> S1 UE network capability -> EIA6",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> UE security capability -> EIA6"
+      ]
+    }
+  ]
+}

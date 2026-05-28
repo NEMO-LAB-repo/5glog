@@ -1,0 +1,28 @@
+{
+  "id": "betaoffsetind",
+  "name": "Beta Offset Ind",
+  "records": [
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUSCH Data -> Beta Offset Ind"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> DCI Info -> [] -> UL -> Beta Offset Ind"
+      ]
+    }
+  ]
+}

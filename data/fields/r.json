@@ -1,0 +1,61 @@
+{
+  "id": "r",
+  "name": "R",
+  "records": [
+    {
+      "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+      "logcode": "0xB84E",
+      "title": "0xB84E NR5G RLC DL Status PDU",
+      "name": "NR5G RLC DL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC DL Status PDU -> PDUs -> [] -> Status PDU -> NACK SN Set -> [] -> R"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> Combined Headers -> [] -> MAC PDU Header -> R"
+      ]
+    },
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> R"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> Payload -> NACK SN Set -> [] -> R"
+      ]
+    },
+    {
+      "id": "0xb873-nr5g-l2-ul-bsr",
+      "logcode": "0xB873",
+      "title": "0xB873 NR5G L2 UL BSR",
+      "name": "NR5G L2 UL BSR",
+      "category": "L2",
+      "dataFile": "0xB873__NR5G_L2_UL_BSR.json",
+      "paths": [
+        "NR5G L2 UL BSR -> TTI Info -> [] -> BSR MCE Buffer -> R"
+      ]
+    }
+  ]
+}

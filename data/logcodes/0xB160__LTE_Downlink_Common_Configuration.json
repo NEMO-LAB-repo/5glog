@@ -1,0 +1,53 @@
+{
+  "id": "0xb160-lte-downlink-common-configuration",
+  "logcode": "0xB160",
+  "name": "LTE Downlink Common Configuration",
+  "title": "0xB160 LTE Downlink Common Configuration",
+  "category": "LTE",
+  "dataFile": "0xB160__LTE_Downlink_Common_Configuration.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE Downlink Common Configuration": {
+      "Versions -> TDD Common Config Present": null,
+      "UL CP Config Present": null,
+      "UL CP": null,
+      "UL Config Present": null,
+      "UL Config": {
+        "UL Cell EARFCN Present": null,
+        "UL Cell EARFCN": null,
+        "UL Bandwidth": null,
+        "Additional Spectrum Emission Present": null,
+        "Additional Spectrum Emission": null
+      },
+      "MIB Info Present": null,
+      "MIB Info": {
+        "Num enodeB Antenna Ports": null,
+        "PHICH Duration": null,
+        "PHICH Resource": null
+      },
+      "PDSCH Config Present": null,
+      "PDSCH Config": {
+        "Reference Signal Power": null
+      },
+      "MBSFN Config Present": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 13,
+    "samplesParsedSuccessfully": 13,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB160__LTE_Downlink_Common_Configuration.json"
+  }
+}

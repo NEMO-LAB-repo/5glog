@@ -1,0 +1,72 @@
+{
+  "id": "mode",
+  "name": "Mode",
+  "records": [
+    {
+      "id": "0x1fea-efs2-diag-open-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Open Request",
+      "name": "EFS2/DIAG Open Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Open_Request.json",
+      "paths": [
+        "EFS2/DIAG Open Request -> Subsystem Dispatch Request Message -> EFS2/DIAG Open Request -> Mode"
+      ]
+    },
+    {
+      "id": "0xb097-lte-rlc-ul-statistics",
+      "logcode": "0xB097",
+      "title": "0xB097 LTE RLC UL Statistics",
+      "name": "LTE RLC UL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+      "paths": [
+        "LTE RLC UL Statistics -> UL Stats -> [] -> RB -> [] -> Mode"
+      ]
+    },
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> DL SRB Integrity Data PDU Subpacket -> Sub Packets -> [] -> mode"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpackets -> UL Cipher Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> mode"
+      ]
+    },
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Statistics -> Sub Packets -> [] -> RBs -> [] -> Mode"
+      ]
+    },
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> UL SRB Integrity Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> mode"
+      ]
+    }
+  ]
+}

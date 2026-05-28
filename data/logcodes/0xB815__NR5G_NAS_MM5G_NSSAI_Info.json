@@ -1,0 +1,46 @@
+{
+  "id": "0xb815-nr5g-nas-mm5g-nssai-info",
+  "logcode": "0xB815",
+  "name": "NR5G NAS MM5G NSSAI Info",
+  "title": "0xB815 NR5G NAS MM5G NSSAI Info",
+  "category": "NAS",
+  "dataFile": "0xB815__NR5G_NAS_MM5G_NSSAI_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G NAS MM5G NSSAI Info": {
+      "Versions -> Reason": null,
+      "PLMN ID": null,
+      "NSSAI List Type": null,
+      "Num NSSAI": null,
+      "NSSAI List": {
+        "[]": {
+          "SST": null,
+          "SD": {
+            "SD Val": {
+              "[]": null
+            }
+          },
+          "Mapping Exists": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 39,
+    "samplesParsedSuccessfully": 39,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB815__NR5G_NAS_MM5G_NSSAI_Info.json"
+  }
+}

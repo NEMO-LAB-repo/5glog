@@ -1,0 +1,64 @@
+{
+  "id": "uesecuritycapability",
+  "name": "UE security capability",
+  "records": [
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request -> Registration Request -> UE security capability"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Registration Request",
+      "name": "U [MM5G] Registration Request//Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> UE security capability",
+        "U [MM5G] Registration Request//Registration Request -> Registration Request -> UE security capability"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> UE security capability",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> Registration Request -> UE security capability"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> UE security capability"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> UE security capability",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> UE security capability"
+      ]
+    }
+  ]
+}

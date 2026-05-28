@@ -1,0 +1,39 @@
+{
+  "id": "tcistateid",
+  "name": "tci-StateId",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> tci-StatesToAddModList -> tci-StateId"
+      ]
+    },
+    {
+      "id": "0xb886-nr5g-mac-dl-tb-report",
+      "logcode": "0xB886",
+      "title": "0xB886 NR5G MAC DL TB Report",
+      "name": "NR5G MAC DL TB Report",
+      "category": "MAC",
+      "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+      "paths": [
+        "NR5G MAC DL TB Report -> Records -> [] -> dl_mce -> [] -> tci_state_pdcch -> CC Info -> [] -> TCI State ID"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> RSRP Records -> [] -> TCI State ID"
+      ]
+    }
+  ]
+}

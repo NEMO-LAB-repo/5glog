@@ -1,0 +1,39 @@
+{
+  "id": "numbersubpackets",
+  "name": "Number Subpackets",
+  "records": [
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Number Subpackets"
+      ]
+    },
+    {
+      "id": "0xb181-lte-ml1-intra-frequency-cell-reselection",
+      "logcode": "0xB181",
+      "title": "0xB181 LTE ML1 Intra Frequency Cell Reselection",
+      "name": "LTE ML1 Intra Frequency Cell Reselection",
+      "category": "ML1",
+      "dataFile": "0xB181__LTE_ML1_Intra_Frequency_Cell_Reselection.json",
+      "paths": [
+        "LTE ML1 Intra Frequency Cell Reselection -> Number Subpackets"
+      ]
+    },
+    {
+      "id": "0xb193-lte-ml1-serving-cell-meas-response",
+      "logcode": "0xB193",
+      "title": "0xB193 LTE ML1 Serving Cell Meas Response",
+      "name": "LTE ML1 Serving Cell Meas Response",
+      "category": "ML1",
+      "dataFile": "0xB193__LTE_ML1_Serving_Cell_Meas_Response.json",
+      "paths": [
+        "LTE ML1 Serving Cell Meas Response -> Number Subpackets"
+      ]
+    }
+  ]
+}

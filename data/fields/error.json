@@ -1,0 +1,17 @@
+{
+  "id": "error",
+  "name": "Error",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-diag-get-item-file-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Get Item File Response",
+      "name": "EFS2/DIAG Get Item File Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json",
+      "paths": [
+        "EFS2/DIAG Get Item File Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Get Item File Response -> Error"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+  "logcode": "0xB96E",
+  "name": "NR5G ML1 Searcher Measurement Config",
+  "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+  "category": "ML1",
+  "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Searcher Measurement Config": {
+      "Record": {
+        "conn_srv_cell": {
+          "earfcn": null,
+          "subfn": null,
+          "cell_id": null
+        },
+        "conn_meas_cfg_bitmasks": {
+          "meas_obj_valid_bitmask": null,
+          "meas_id_valid_bitmask": null,
+          "report_cfg_valid_bitmask": null,
+          "meas_obj_mod_bitmask": null,
+          "meas_id_mod_bitmask": null,
+          "report_cfg_mod_bitmask": null,
+          "other_mod_bitmask": null
+        },
+        "conn_meas_id_cfg": {
+          "num_meas_id": null,
+          "meas_id_conf": {
+            "[]": {
+              "meas_id": null,
+              "meas_obj_id": null,
+              "rpt_cfg_id": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 675,
+    "samplesParsedSuccessfully": 675,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json"
+  }
+}

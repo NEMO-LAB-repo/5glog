@@ -1,0 +1,43 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-cell-resel-success",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+  "title": "0x1FFB EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_CELL_RESEL_SUCCESS.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS": {
+          "scs": null,
+          "phy_cell_id": null,
+          "band": null,
+          "freq": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_CELL_RESEL_SUCCESS.json"
+  }
+}

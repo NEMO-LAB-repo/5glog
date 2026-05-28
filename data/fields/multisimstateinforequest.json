@@ -1,0 +1,18 @@
+{
+  "id": "multisimstateinforequest",
+  "name": "MultiSim State Info Request",
+  "records": [
+    {
+      "id": "0x1fea-multisim-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA MultiSim State Info Request",
+      "name": "MultiSim State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__MultiSim_State_Info_Request.json",
+      "paths": [
+        "MultiSim State Info Request",
+        "MultiSim State Info Request -> Subsystem Dispatch Request Message -> MultiSim State Info Request"
+      ]
+    }
+  ]
+}

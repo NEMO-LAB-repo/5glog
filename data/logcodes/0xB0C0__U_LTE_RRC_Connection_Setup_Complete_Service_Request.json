@@ -1,0 +1,69 @@
+{
+  "id": "0xb0c0-u-lte-rrc-connection-setup-complete-service-request",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] RRC Connection Setup Complete//Service Request",
+  "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Service Request",
+  "category": "RRC",
+  "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Service_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] RRC Connection Setup Complete//Service Request": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> rrcConnectionSetupComplete": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionSetupComplete-r8": {
+            "selectedPLMN-Identity": null,
+            "dedicatedInfoNAS": null,
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "mobilityState-r12": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "dedicatedInfoNAS": {
+        "Direction": null,
+        "Security header or skip ind": null,
+        "Protocol Discriminator": null,
+        "Service Request": {
+          "KSI and sequence number": {
+            "KSI": null,
+            "Sequence number(short)": null
+          },
+          "Message authentication code(short)": {
+            "Short MAC value": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Service_Request.json"
+  }
+}

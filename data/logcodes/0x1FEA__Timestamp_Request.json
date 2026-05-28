@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-timestamp-request",
+  "logcode": "0x1FEA",
+  "name": "Timestamp Request",
+  "title": "0x1FEA Timestamp Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Timestamp_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Timestamp Request": {
+      "Cmd Code": null,
+      "Timestamp Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Timestamp_Request.json"
+  }
+}

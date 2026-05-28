@@ -1,0 +1,54 @@
+{
+  "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+  "logcode": "0xB970",
+  "name": "NR5G ML1 Searcher Idle S Criteria",
+  "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+  "category": "ML1",
+  "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Searcher Idle S Criteria": {
+      "Versions -> System Time": {
+        "Slot Number": null,
+        "SubFrame Number": null,
+        "System Frame Number": null,
+        "SCS": null
+      },
+      "NR ARFCN": null,
+      "Phy Cell ID": null,
+      "Serving SSB Index": null,
+      "q_rxlevmin": null,
+      "q_rxlevmin_offset": null,
+      "p_max": null,
+      "max_ue_tx_pwr": null,
+      "Qoffset Temp": null,
+      "cell_quality_rsrp": null,
+      "s_rxlev": null,
+      "Q Qual Min Present": null,
+      "q_qualmin": null,
+      "Q Qualmin Offset": null,
+      "s_qual": null,
+      "cell_quality_rsrq": null,
+      "Result": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 155,
+    "samplesParsedSuccessfully": 155,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json"
+  }
+}

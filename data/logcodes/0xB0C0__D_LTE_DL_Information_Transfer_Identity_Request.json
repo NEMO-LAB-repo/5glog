@@ -1,0 +1,53 @@
+{
+  "id": "0xb0c0-d-lte-dl-information-transfer-identity-request",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] DL Information Transfer//Identity Request",
+  "title": "0xB0C0 D [LTE] DL Information Transfer//Identity Request",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] DL Information Transfer//Identity Request": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> dlInformationTransfer": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> dlInformationTransfer-r8": {
+            "dedicatedInfoType -> dedicatedInfoNAS": null
+          }
+        }
+      },
+      "dedicatedInfoNAS": {
+        "Direction": null,
+        "Security header or skip ind": null,
+        "Protocol Discriminator": null,
+        "Message ID": null,
+        "Identity Request": {
+          "Identity type": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json"
+  }
+}

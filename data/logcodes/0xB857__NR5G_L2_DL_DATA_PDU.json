@@ -1,0 +1,140 @@
+{
+  "id": "0xb857-nr5g-l2-dl-data-pdu",
+  "logcode": "0xB857",
+  "name": "NR5G L2 DL DATA PDU",
+  "title": "0xB857 NR5G L2 DL DATA PDU",
+  "category": "L2",
+  "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 DL DATA PDU": {
+      "Common State Cfg": {
+        "Num TB": null,
+        "Last Processed TS": null,
+        "Num LCID": null,
+        "Reason": null,
+        "RB Config": {
+          "[]": {
+            "LCID": null,
+            "RLC Mode Value": null,
+            "RLC SN Bits": null,
+            "RLC SN Length Value": null,
+            "RLC RB Index": null,
+            "RB Type": null,
+            "PDCP SN Bits": null,
+            "PDCP SN Length Value": null,
+            "PDCP State Var": {
+              "Rx Next": null,
+              "Next IPA": null
+            },
+            "RLC State var": {
+              "Rx Next": null,
+              "Rx Next Status Trigger": null,
+              "Rx Highest Status": null,
+              "Rx Next Highest": null
+            }
+          }
+        }
+      },
+      "TB Data Agg": {
+        "[]": {
+          "TB Common Info": {
+            "TB Size": null,
+            "System Time": {
+              "Slot": null,
+              "Frame": null
+            },
+            "Num Subheaders": null,
+            "CA ID": null,
+            "TB Path": null,
+            "Num Logged Subheaders": null
+          },
+          "Combined Headers": {
+            "[]": {
+              "MAC PDU Header": {
+                "LCID": null,
+                "Fill": null,
+                "R": null,
+                "L8": null,
+                "L16": null
+              },
+              "RLC PDU Header": {
+                "First Byte RLC Header": null,
+                "Last 4 Bytes Raw": null,
+                "Subheader -> Subheader 6": {
+                  "DC Bit": null,
+                  "P": null,
+                  "SI": null,
+                  "SN 12 Bits": null
+                },
+                "Subheader -> Subheader 8": {
+                  "DC Bit": null,
+                  "P": null,
+                  "SI": null,
+                  "SN 12 Bits": null,
+                  "SO 16 Bits": null
+                },
+                "Subheader -> Subheader 7": {
+                  "DC Bit": null,
+                  "P": null,
+                  "SI": null,
+                  "SN 18 Bits": null
+                },
+                "Subheader -> Subheader 9": {
+                  "DC Bit": null,
+                  "P": null,
+                  "SI": null,
+                  "SN 18 Bits": null,
+                  "SO 16 Bits": null
+                }
+              },
+              "PDCP PDU Header": {
+                "First Byte PDCP Header": null,
+                "DC Bit Outer": null,
+                "Last 2 Bytes Raw": null,
+                "Subheader 1": {
+                  "SN 12 Bits": null
+                },
+                "Subheader 3": {
+                  "DC Bit": null,
+                  "SN 18 Bits": null
+                },
+                "Subheader 2": {
+                  "DC Bit": null,
+                  "SN 12 Bits": null
+                },
+                "Subheader 4": {
+                  "DC Bit": null,
+                  "PDU Type": null
+                }
+              },
+              "Mask": null,
+              "CA ID": null,
+              "Poll Bit": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3370,
+    "samplesParsedSuccessfully": 3370,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB857__NR5G_L2_DL_DATA_PDU.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dltesecuritymodecommand",
+  "name": "D [LTE] Security Mode Command",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-security-mode-command",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Security Mode Command",
+      "name": "D [LTE] Security Mode Command",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Security_Mode_Command.json",
+      "paths": [
+        "D [LTE] Security Mode Command"
+      ]
+    }
+  ]
+}

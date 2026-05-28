@@ -1,0 +1,18 @@
+{
+  "id": "geteventmaskrequest",
+  "name": "Get Event Mask Request",
+  "records": [
+    {
+      "id": "0x1fea-get-event-mask-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Get Event Mask Request",
+      "name": "Get Event Mask Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Get_Event_Mask_Request.json",
+      "paths": [
+        "Get Event Mask Request",
+        "Get Event Mask Request -> Get Event Mask Request"
+      ]
+    }
+  ]
+}

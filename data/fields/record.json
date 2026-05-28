@@ -1,0 +1,94 @@
+{
+  "id": "record",
+  "name": "Record",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> Record"
+      ]
+    },
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "LTE LL1 PDSCH Demapper Configuration -> Record"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record"
+      ]
+    },
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record"
+      ]
+    },
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record"
+      ]
+    },
+    {
+      "id": "0xb173-lte-ml1-pdsch-stat-indication",
+      "logcode": "0xB173",
+      "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+      "name": "LTE ML1 PDSCH Stat Indication",
+      "category": "ML1",
+      "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+      "paths": [
+        "LTE ML1 PDSCH Stat Indication -> Record"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Record"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record"
+      ]
+    }
+  ]
+}

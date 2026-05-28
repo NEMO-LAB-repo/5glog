@@ -1,0 +1,17 @@
+{
+  "id": "recordroute",
+  "name": "Record-Route",
+  "records": [
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_200_OK.json",
+      "paths": [
+        "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK -> Record-Route"
+      ]
+    }
+  ]
+}

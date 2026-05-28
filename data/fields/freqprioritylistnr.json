@@ -1,0 +1,17 @@
+{
+  "id": "freqprioritylistnr",
+  "name": "freqPriorityListNR",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> criticalExtensions -> rrcRelease -> cellReselectionPriorities -> freqPriorityListNR"
+      ]
+    }
+  ]
+}

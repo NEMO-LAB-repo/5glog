@@ -1,0 +1,17 @@
+{
+  "id": "redirectedcarrierinfonrr15",
+  "name": "redirectedCarrierInfo -> nr-r15",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-release-other",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Release : other",
+      "name": "D [LTE] RRC Connection Release : other",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Release_other.json",
+      "paths": [
+        "D [LTE] RRC Connection Release : other -> dl-dcch -> message -> c1 -> rrcConnectionRelease -> criticalExtensions -> c1 -> rrcConnectionRelease-r8 -> redirectedCarrierInfo -> nr-r15"
+      ]
+    }
+  ]
+}

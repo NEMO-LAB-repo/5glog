@@ -1,0 +1,17 @@
+{
+  "id": "nr5gnasplainmessagecontainer",
+  "name": "NR5G NAS Plain Message Container",
+  "records": [
+    {
+      "id": "0xb814-nr5g-nas-plain-message-container",
+      "logcode": "0xB814",
+      "title": "0xB814 NR5G NAS Plain Message Container",
+      "name": "NR5G NAS Plain Message Container",
+      "category": "NAS",
+      "dataFile": "0xB814__NR5G_NAS_Plain_Message_Container.json",
+      "paths": [
+        "NR5G NAS Plain Message Container"
+      ]
+    }
+  ]
+}

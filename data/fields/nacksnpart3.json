@@ -1,0 +1,28 @@
+{
+  "id": "nacksnpart3",
+  "name": "NACK_SN Part 3",
+  "records": [
+    {
+      "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+      "logcode": "0xB84E",
+      "title": "0xB84E NR5G RLC DL Status PDU",
+      "name": "NR5G RLC DL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC DL Status PDU -> PDUs -> [] -> Status PDU -> NACK SN Set -> [] -> NACK_SN Part 3"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> Payload -> NACK SN Set -> [] -> NACK_SN Part 3"
+      ]
+    }
+  ]
+}

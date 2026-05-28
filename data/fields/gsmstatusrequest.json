@@ -1,0 +1,18 @@
+{
+  "id": "gsmstatusrequest",
+  "name": "GSM/Status Request",
+  "records": [
+    {
+      "id": "0x1fea-gsm-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA GSM/Status Request",
+      "name": "GSM/Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__GSM_Status_Request.json",
+      "paths": [
+        "GSM/Status Request",
+        "GSM/Status Request -> Subsystem Dispatch Request Message -> GSM/Status Request"
+      ]
+    }
+  ]
+}

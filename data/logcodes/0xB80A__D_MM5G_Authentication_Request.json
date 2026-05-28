@@ -1,0 +1,60 @@
+{
+  "id": "0xb80a-d-mm5g-authentication-request",
+  "logcode": "0xB80A",
+  "name": "D [MM5G] Authentication Request",
+  "title": "0xB80A D [MM5G] Authentication Request",
+  "category": "NAS",
+  "dataFile": "0xB80A__D_MM5G_Authentication_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [MM5G] Authentication Request": {
+      "Release Version": null,
+      "Direction": null,
+      "Ext. PD": null,
+      "Security header type": null,
+      "Message ID": null,
+      "Authentication Request": {
+        "ngKSI": {
+          "Type of security context flag (TSC)": null,
+          "NAS key set identifier": null
+        },
+        "ABBA": {
+          "Length": null,
+          "set of security features": null
+        },
+        "Authentication parameter RAND": {
+          "IEI": null,
+          "RAND value": null
+        },
+        "Authentication parameter AUTN": {
+          "IEI": null,
+          "Length": null,
+          "AUTN": {
+            "SQN xor AK": null,
+            "AMF": null,
+            "MAC": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB80A__D_MM5G_Authentication_Request.json"
+  }
+}

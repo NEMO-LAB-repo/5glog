@@ -1,0 +1,72 @@
+{
+  "id": "numrb",
+  "name": "Num Rb",
+  "records": [
+    {
+      "id": "0xb082-lte-rlc-dl-am-all-pdu",
+      "logcode": "0xB082",
+      "title": "0xB082 LTE RLC DL AM All PDU",
+      "name": "LTE RLC DL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC DL AM All PDU -> Num Rb"
+      ]
+    },
+    {
+      "id": "0xb087-lte-rlc-dl-statistics",
+      "logcode": "0xB087",
+      "title": "0xB087 LTE RLC DL Statistics",
+      "name": "LTE RLC DL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB087__LTE_RLC_DL_Statistics.json",
+      "paths": [
+        "LTE RLC DL Statistics -> Num RB"
+      ]
+    },
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> Num RB"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats -> Num RB"
+      ]
+    },
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "NR5G RLC DL Stats -> Num RB"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUCCH Data -> Per PUCCH Data -> [] -> Num RB"
+      ]
+    }
+  ]
+}

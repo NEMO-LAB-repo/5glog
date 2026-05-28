@@ -1,0 +1,17 @@
+{
+  "id": "numharqbits",
+  "name": "Num HARQ Bits",
+  "records": [
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "NR5G MAC UCI Payload Information -> Records -> [] -> Channel Info -> [] -> Num HARQ Bits"
+      ]
+    }
+  ]
+}

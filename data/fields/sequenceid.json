@@ -1,0 +1,29 @@
+{
+  "id": "sequenceid",
+  "name": "sequenceId",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> initialUplinkBWP -> srs-Config -> setup -> srs-ResourceToAddModList -> sequenceId",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> srs-Config -> setup -> srs-ResourceToAddModList -> sequenceId"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> CSI Records -> [] -> Sequence ID"
+      ]
+    }
+  ]
+}

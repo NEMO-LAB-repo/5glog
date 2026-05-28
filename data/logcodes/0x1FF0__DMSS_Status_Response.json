@@ -1,0 +1,55 @@
+{
+  "id": "0x1ff0-dmss-status-response",
+  "logcode": "0x1FF0",
+  "name": "DMSS Status Response",
+  "title": "0x1FF0 DMSS Status Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__DMSS_Status_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "DMSS Status Response": {
+      "Cmd Code": null,
+      "DMSS Status Response": {
+        "ESN": null,
+        "RF Mode": null,
+        "MIN1 (Analog)": null,
+        "MIN1 (CDMA)": null,
+        "MIN2 (Analog)": null,
+        "MIN2 (CDMA)": null,
+        "CDMA RX State": null,
+        "CDMA Good Frames": null,
+        "Analog Corrected Frames": null,
+        "Analog Bad Frames": null,
+        "Analog Word Syncs": null,
+        "Entry Reason": null,
+        "Current Channel": null,
+        "CDMA Code Channel": null,
+        "Pilot Base": null,
+        "SID": null,
+        "NID": null,
+        "LOCAID": null,
+        "Analog RSSI": null,
+        "Analog Power": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__DMSS_Status_Response.json"
+  }
+}

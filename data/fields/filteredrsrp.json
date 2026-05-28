@@ -1,0 +1,28 @@
+{
+  "id": "filteredrsrp",
+  "name": "Filtered RSRP",
+  "records": [
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results -> Measured Cell -> [] -> Filtered RSRP"
+      ]
+    },
+    {
+      "id": "0xb19e-lte-ml1-inter-frequency-log",
+      "logcode": "0xB19E",
+      "title": "0xB19E LTE ML1 Inter Frequency Log",
+      "name": "LTE ML1 Inter Frequency Log",
+      "category": "ML1",
+      "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+      "paths": [
+        "LTE ML1 Inter Frequency Log -> Measured Cell -> [] -> Filtered RSRP"
+      ]
+    }
+  ]
+}

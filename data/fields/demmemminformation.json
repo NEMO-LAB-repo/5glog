@@ -1,0 +1,17 @@
+{
+  "id": "demmemminformation",
+  "name": "D [EMM] EMM Information",
+  "records": [
+    {
+      "id": "0xb0ec-d-emm-emm-information",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] EMM Information",
+      "name": "D [EMM] EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_EMM_Information.json",
+      "paths": [
+        "D [EMM] EMM Information"
+      ]
+    }
+  ]
+}

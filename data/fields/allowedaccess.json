@@ -1,0 +1,28 @@
+{
+  "id": "allowedaccess",
+  "name": "Allowed Access",
+  "records": [
+    {
+      "id": "0xb0c2-lte-rrc-serving-cell-info",
+      "logcode": "0xB0C2",
+      "title": "0xB0C2 LTE RRC Serving Cell Info",
+      "name": "LTE RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB0C2__LTE_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "LTE RRC Serving Cell Info -> Allowed Access"
+      ]
+    },
+    {
+      "id": "0xb823-nr5g-rrc-serving-cell-info",
+      "logcode": "0xB823",
+      "title": "0xB823 NR5G RRC Serving Cell Info",
+      "name": "NR5G RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB823__NR5G_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "NR5G RRC Serving Cell Info -> Allowed Access"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "0x1ff0-version-number-response",
+  "logcode": "0x1FF0",
+  "name": "Version Number Response",
+  "title": "0x1FF0 Version Number Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Version_Number_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Version Number Response": {
+      "Cmd Code": null,
+      "Version Number Response": {
+        "Compilation Date": null,
+        "Compilation Time": null,
+        "Release Date": null,
+        "Release Time": null,
+        "Version Directory": null,
+        "Station Class Mark": null,
+        "Mobile CAI Revision": null,
+        "Mobile Model": null,
+        "Mobile Firmware Revision": null,
+        "Slot Cycle Index": null,
+        "MSM Revision": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Version_Number_Response.json"
+  }
+}

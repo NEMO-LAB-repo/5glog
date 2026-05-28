@@ -1,0 +1,33 @@
+{
+  "id": "0xb0eb-lte-nas-emm-security-protected-outgoing-msg",
+  "logcode": "0xB0EB",
+  "name": "LTE NAS EMM Security Protected Outgoing Msg",
+  "title": "0xB0EB LTE NAS EMM Security Protected Outgoing Msg",
+  "category": "NAS",
+  "dataFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE NAS EMM Security Protected Outgoing Msg": {
+      "Release Version": null,
+      "Raw data": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json"
+  }
+}

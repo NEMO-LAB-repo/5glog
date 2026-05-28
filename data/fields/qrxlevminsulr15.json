@@ -1,0 +1,17 @@
+{
+  "id": "qrxlevminsulr15",
+  "name": "q-RxLevMinSUL-r15",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib24-v1530",
+      "name": "D [LTE] System Information : sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib24-v1530 -> carrierFreqListNR-r15 -> [] -> q-RxLevMinSUL-r15"
+      ]
+    }
+  ]
+}

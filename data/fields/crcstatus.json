@@ -1,0 +1,28 @@
+{
+  "id": "crcstatus",
+  "name": "CRC Status",
+  "records": [
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> CRC Status"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Records -> [] -> UCI Info -> [] -> HARQ Data -> [] -> CRC Status"
+      ]
+    }
+  ]
+}

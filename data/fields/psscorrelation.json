@@ -1,0 +1,17 @@
+{
+  "id": "psscorrelation",
+  "name": "PSS Correlation",
+  "records": [
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "LTE ML1 Serving Cell Information -> PSS Correlation"
+      ]
+    }
+  ]
+}

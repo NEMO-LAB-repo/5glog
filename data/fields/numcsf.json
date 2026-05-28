@@ -1,0 +1,17 @@
+{
+  "id": "numcsf",
+  "name": "Num CSF",
+  "records": [
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Records -> [] -> UCI Info -> [] -> Num CSF"
+      ]
+    }
+  ]
+}

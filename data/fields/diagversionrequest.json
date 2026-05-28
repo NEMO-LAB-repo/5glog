@@ -1,0 +1,18 @@
+{
+  "id": "diagversionrequest",
+  "name": "DIAG Version Request",
+  "records": [
+    {
+      "id": "0x1fea-diag-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DIAG Version Request",
+      "name": "DIAG Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DIAG_Version_Request.json",
+      "paths": [
+        "DIAG Version Request",
+        "DIAG Version Request -> DIAG Version Request"
+      ]
+    }
+  ]
+}

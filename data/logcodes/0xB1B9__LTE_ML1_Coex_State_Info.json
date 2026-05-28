@@ -1,0 +1,59 @@
+{
+  "id": "0xb1b9-lte-ml1-coex-state-info",
+  "logcode": "0xB1B9",
+  "name": "LTE ML1 Coex State Info",
+  "title": "0xB1B9 LTE ML1 Coex State Info",
+  "category": "ML1",
+  "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Coex State Info": {
+      "Num of Records": null,
+      "Record": {
+        "[]": {
+          "Sub Frame": null,
+          "Mask": null,
+          "Start Time": null,
+          "End Time": null,
+          "Co-ex State": null,
+          "Connected Mode": null,
+          "High Priority": null,
+          "DL Bandwidth": null,
+          "UL Bandwidth": null,
+          "DL EARFCN": null,
+          "UL EARFCN": null,
+          "Frame Structure": null,
+          "TDD Config": null,
+          "Special Subframe Config": null,
+          "DL CP": null,
+          "UL CP": null,
+          "PHR Backoff enabled": null,
+          "PHR Threshold": null,
+          "PHR MTPL": null,
+          "PHRless Backoff enabled": null,
+          "PHRless Threshold": null,
+          "PHRless MTPL": null,
+          "MSG Status": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 117,
+    "samplesParsedSuccessfully": 117,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB1B9__LTE_ML1_Coex_State_Info.json"
+  }
+}

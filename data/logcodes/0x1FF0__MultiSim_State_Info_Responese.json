@@ -1,0 +1,43 @@
+{
+  "id": "0x1ff0-multisim-state-info-responese",
+  "logcode": "0x1FF0",
+  "name": "MultiSim State Info Responese",
+  "title": "0x1FF0 MultiSim State Info Responese",
+  "category": "Other",
+  "dataFile": "0x1FF0__MultiSim_State_Info_Responese.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "MultiSim State Info Responese": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "MultiSim State Info Responese": {
+          "Active Subs": null,
+          "Standby Pref": null,
+          "Default Data Subs": null,
+          "priority_subs": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__MultiSim_State_Info_Responese.json"
+  }
+}

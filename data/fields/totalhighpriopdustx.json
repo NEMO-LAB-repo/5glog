@@ -1,0 +1,17 @@
+{
+  "id": "totalhighpriopdustx",
+  "name": "Total High Prio PDUs Tx",
+  "records": [
+    {
+      "id": "0xb868-nr5g-rlc-ul-stats",
+      "logcode": "0xB868",
+      "title": "0xB868 NR5G RLC UL Stats",
+      "name": "NR5G RLC UL Stats",
+      "category": "RLC",
+      "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+      "paths": [
+        "NR5G RLC UL Stats -> Per LC -> [] -> Total High Prio PDUs Tx"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "id": "cmdcode",
+  "name": "Cmd Code",
+  "records": [
+    {
+      "id": "0x1fea-call-manager-state-info-of-current-subscription-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Of Current Subscription Request",
+      "name": "Call Manager/State Info Of Current Subscription Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Of_Current_Subscription_Request.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-call-manager-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Request",
+      "name": "Call Manager/State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Request.json",
+      "paths": [
+        "Call Manager/State Info Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-diag-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DIAG Version Request",
+      "name": "DIAG Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DIAG_Version_Request.json",
+      "paths": [
+        "DIAG Version Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-diagnostic-services-key-retrieval-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Diagnostic Services/Key Retrieval Request",
+      "name": "Diagnostic Services/Key Retrieval Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Diagnostic_Services_Key_Retrieval_Request.json",
+      "paths": [
+        "Diagnostic Services/Key Retrieval Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-dmss-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DMSS Status Request",
+      "name": "DMSS Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DMSS_Status_Request.json",
+      "paths": [
+        "DMSS Status Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-close-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Close Request",
+      "name": "EFS2/DIAG Close Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Close_Request.json",
+      "paths": [
+        "EFS2/DIAG Close Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-get-item-file-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Get Item File Request",
+      "name": "EFS2/DIAG Get Item File Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Get_Item_File_Request.json",
+      "paths": [
+        "EFS2/DIAG Get Item File Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-open-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Open Request",
+      "name": "EFS2/DIAG Open Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Open_Request.json",
+      "paths": [
+        "EFS2/DIAG Open Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-read-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Read Request",
+      "name": "EFS2/DIAG Read Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Read_Request.json",
+      "paths": [
+        "EFS2/DIAG Read Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-hello-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Hello Request",
+      "name": "EFS2/Hello Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Hello_Request.json",
+      "paths": [
+        "EFS2/Hello Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-query-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Query Request",
+      "name": "EFS2/Query Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Query_Request.json",
+      "paths": [
+        "EFS2/Query Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-event-report-control-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Event Report Control Request",
+      "name": "Event Report Control Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Event_Report_Control_Request.json",
+      "paths": [
+        "Event Report Control Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-extended-build-id-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Build ID Request",
+      "name": "Extended Build ID Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Build_ID_Request.json",
+      "paths": [
+        "Extended Build ID Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-extended-message-report-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Message Report Config Request",
+      "name": "Extended Message Report Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Message_Report_Config_Request.json",
+      "paths": [
+        "Extended Message Report Config Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-get-event-mask-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Get Event Mask Request",
+      "name": "Get Event Mask Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Get_Event_Mask_Request.json",
+      "paths": [
+        "Get Event Mask Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-gsm-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA GSM/Status Request",
+      "name": "GSM/Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__GSM_Status_Request.json",
+      "paths": [
+        "GSM/Status Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-gsm-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA GSM/Version Request",
+      "name": "GSM/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__GSM_Version_Request.json",
+      "paths": [
+        "GSM/Version Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-logging-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Logging Config Request",
+      "name": "Logging Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Logging_Config_Request.json",
+      "paths": [
+        "Logging Config Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-multisim-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA MultiSim State Info Request",
+      "name": "MultiSim State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__MultiSim_State_Info_Request.json",
+      "paths": [
+        "MultiSim State Info Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-nv-diag-nv-read-extension-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA NV/Diag NV Read Extension Request",
+      "name": "NV/Diag NV Read Extension Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+      "paths": [
+        "NV/Diag NV Read Extension Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-set-event-mask-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Set Event Mask Request",
+      "name": "Set Event Mask Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Set_Event_Mask_Request.json",
+      "paths": [
+        "Set Event Mask Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-status-snapshot-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Status Snapshot Request",
+      "name": "Status Snapshot Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Status_Snapshot_Request.json",
+      "paths": [
+        "Status Snapshot Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-timestamp-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Timestamp Request",
+      "name": "Timestamp Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Timestamp_Request.json",
+      "paths": [
+        "Timestamp Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-umts-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA UMTS/Version Request",
+      "name": "UMTS/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__UMTS_Version_Request.json",
+      "paths": [
+        "UMTS/Version Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-version-number-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Version Number Request",
+      "name": "Version Number Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Version_Number_Request.json",
+      "paths": [
+        "Version Number Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-wcdma-additional-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Additional Status Request",
+      "name": "WCDMA/Additional Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Additional_Status_Request.json",
+      "paths": [
+        "WCDMA/Additional Status Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1fea-wcdma-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Version Request",
+      "name": "WCDMA/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Version_Request.json",
+      "paths": [
+        "WCDMA/Version Request -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+      "name": "Call Manager/State Info Of Current Subscription Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Call Manager/State Info Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-diag-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DIAG Version Response",
+      "name": "DIAG Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DIAG_Version_Response.json",
+      "paths": [
+        "DIAG Version Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-dmss-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DMSS Status Response",
+      "name": "DMSS Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DMSS_Status_Response.json",
+      "paths": [
+        "DMSS Status Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-close-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Close Response",
+      "name": "EFS2/DIAG Close Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Close_Response.json",
+      "paths": [
+        "EFS2/DIAG Close Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-get-item-file-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Get Item File Response",
+      "name": "EFS2/DIAG Get Item File Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json",
+      "paths": [
+        "EFS2/DIAG Get Item File Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-open-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Open Response",
+      "name": "EFS2/DIAG Open Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Open_Response.json",
+      "paths": [
+        "EFS2/DIAG Open Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-read-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Read Response",
+      "name": "EFS2/DIAG Read Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Read_Response.json",
+      "paths": [
+        "EFS2/DIAG Read Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-hello-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Hello Response",
+      "name": "EFS2/Hello Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Hello_Response.json",
+      "paths": [
+        "EFS2/Hello Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-query-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Query Response",
+      "name": "EFS2/Query Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Query_Response.json",
+      "paths": [
+        "EFS2/Query Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-event-report-control-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Event Report Control Response",
+      "name": "Event Report Control Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Event_Report_Control_Response.json",
+      "paths": [
+        "Event Report Control Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-extended-build-id-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Extended Build ID Response",
+      "name": "Extended Build ID Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Extended_Build_ID_Response.json",
+      "paths": [
+        "Extended Build ID Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Version Response",
+      "name": "GSM/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Version_Response.json",
+      "paths": [
+        "GSM/Version Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-logging-config",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Logging Config",
+      "name": "Logging Config",
+      "category": "Other",
+      "dataFile": "0x1FF0__Logging_Config.json",
+      "paths": [
+        "Logging Config -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-multisim-state-info-responese",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 MultiSim State Info Responese",
+      "name": "MultiSim State Info Responese",
+      "category": "Other",
+      "dataFile": "0x1FF0__MultiSim_State_Info_Responese.json",
+      "paths": [
+        "MultiSim State Info Responese -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "NV/Diag NV Read Extension Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-set-event-mask-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Set Event Mask Response",
+      "name": "Set Event Mask Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Set_Event_Mask_Response.json",
+      "paths": [
+        "Set Event Mask Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Status Snapshot Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-timestamp-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Timestamp Response",
+      "name": "Timestamp Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Timestamp_Response.json",
+      "paths": [
+        "Timestamp Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-umts-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 UMTS/Version Response",
+      "name": "UMTS/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__UMTS_Version_Response.json",
+      "paths": [
+        "UMTS/Version Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-version-number-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Version Number Response",
+      "name": "Version Number Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Version_Number_Response.json",
+      "paths": [
+        "Version Number Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-additional-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Additional Status Response",
+      "name": "WCDMA/Additional Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Additional_Status_Response.json",
+      "paths": [
+        "WCDMA/Additional Status Response -> Cmd Code"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Version Response",
+      "name": "WCDMA/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Version_Response.json",
+      "paths": [
+        "WCDMA/Version Response -> Cmd Code"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "0xb0ed-u-emm-service-request",
+  "logcode": "0xB0ED",
+  "name": "U [EMM] Service Request",
+  "title": "0xB0ED U [EMM] Service Request",
+  "category": "NAS",
+  "dataFile": "0xB0ED__U_EMM_Service_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [EMM] Service Request": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Service Request": {
+        "KSI and sequence number": {
+          "KSI": null,
+          "Sequence number(short)": null
+        },
+        "Message authentication code(short)": {
+          "Short MAC value": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0ED__U_EMM_Service_Request.json"
+  }
+}

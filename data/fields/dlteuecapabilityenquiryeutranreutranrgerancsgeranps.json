@@ -1,0 +1,17 @@
+{
+  "id": "dlteuecapabilityenquiryeutranreutranrgerancsgeranps",
+  "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "0x1ff0-efs2-hello-response",
+  "logcode": "0x1FF0",
+  "name": "EFS2/Hello Response",
+  "title": "0x1FF0 EFS2/Hello Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__EFS2_Hello_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EFS2/Hello Response": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "EFS2/Hello Response": {
+          "Target Window Size In Packets": null,
+          "Target Window Size In Bytes": null,
+          "Host Window Size In Packets": null,
+          "Host Window Size In Bytes": null,
+          "Folder Iteration Size In Packets": null,
+          "Folder Iteration Size In Bytes": null,
+          "Current Protocol Revision": null,
+          "Minimum Protocol Revision": null,
+          "Maximum Protocol Revision": null,
+          "Feature Mask": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__EFS2_Hello_Response.json"
+  }
+}

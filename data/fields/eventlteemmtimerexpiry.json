@@ -1,0 +1,18 @@
+{
+  "id": "eventlteemmtimerexpiry",
+  "name": "EVENT_LTE_EMM_TIMER_EXPIRY",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-emm-timer-expiry",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_EXPIRY",
+      "name": "EVENT_LTE_EMM_TIMER_EXPIRY",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_EXPIRY.json",
+      "paths": [
+        "EVENT_LTE_EMM_TIMER_EXPIRY",
+        "EVENT_LTE_EMM_TIMER_EXPIRY -> Event -> EVENT_LTE_EMM_TIMER_EXPIRY"
+      ]
+    }
+  ]
+}

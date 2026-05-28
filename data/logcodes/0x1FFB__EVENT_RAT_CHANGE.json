@@ -1,0 +1,40 @@
+{
+  "id": "0x1ffb-event-rat-change",
+  "logcode": "0x1FFB",
+  "name": "EVENT_RAT_CHANGE",
+  "title": "0x1FFB EVENT_RAT_CHANGE",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_RAT_CHANGE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_RAT_CHANGE": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_RAT_CHANGE": {
+          "activeRAT": null,
+          "prevRAT": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 10,
+    "samplesParsedSuccessfully": 10,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_RAT_CHANGE.json"
+  }
+}

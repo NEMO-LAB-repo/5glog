@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-diag-version-request",
+  "logcode": "0x1FEA",
+  "name": "DIAG Version Request",
+  "title": "0x1FEA DIAG Version Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__DIAG_Version_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "DIAG Version Request": {
+      "Cmd Code": null,
+      "DIAG Version Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__DIAG_Version_Request.json"
+  }
+}

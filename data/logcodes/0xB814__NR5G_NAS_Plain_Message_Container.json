@@ -1,0 +1,34 @@
+{
+  "id": "0xb814-nr5g-nas-plain-message-container",
+  "logcode": "0xB814",
+  "name": "NR5G NAS Plain Message Container",
+  "title": "0xB814 NR5G NAS Plain Message Container",
+  "category": "NAS",
+  "dataFile": "0xB814__NR5G_NAS_Plain_Message_Container.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G NAS Plain Message Container": {
+      "Versions -> Release Version": null,
+      "Raw bytes": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 149,
+    "samplesParsedSuccessfully": 149,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB814__NR5G_NAS_Plain_Message_Container.json"
+  }
+}

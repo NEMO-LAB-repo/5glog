@@ -1,0 +1,86 @@
+{
+  "id": "0xb860-nr5g-pdcp-ul-stats",
+  "logcode": "0xB860",
+  "name": "NR5G PDCP UL Stats",
+  "title": "0xB860 NR5G PDCP UL Stats",
+  "category": "PDCP",
+  "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G PDCP UL Stats": {
+      "Meta": {
+        "Reason": null,
+        "Num RB Logged": null,
+        "Cumulative SRB BMask": null,
+        "Configured SRB BMask": null,
+        "Cumulative DRB Bmask": null,
+        "Configured DRB BMask": null
+      },
+      "Cumulative RB Stats": {
+        "Num PDCP Control PDUs": null,
+        "Num Discard Packets": null,
+        "Num Discard Bytes": null,
+        "Num WM Flow Control": {
+          "Total Count": null,
+          "Count Low": null,
+          "Count High": null,
+          "Count Empty": null,
+          "Count Non Empty": null,
+          "Count DNE Bytes": null
+        },
+        "WM Dropped Packets": null,
+        "WM Dropped Bytes": null,
+        "Num PDCP HO ReTx Bytes": null
+      },
+      "Records": {
+        "[]": {
+          "RB ID": null,
+          "RB Type": null,
+          "RB Mode": null,
+          "PDCP SN Length": null,
+          "RB Path Type": null,
+          "Current PDCP Count": null,
+          "Total Num Discard Packets": null,
+          "Total Num Discard Bytes": null,
+          "Current WM Drop Packets": null,
+          "Num RX Packets": null,
+          "Total Num RX Bytes": null,
+          "Current WM Drop Bytes": null,
+          "Total WM Flow Control": {
+            "Total Count": null,
+            "Count Low": null,
+            "Count High": null,
+            "Count Empty": null,
+            "Count Non Empty": null,
+            "Count DNE Bytes": null
+          },
+          "DNE Bytes": null,
+          "High WM Threshold Bytes": null,
+          "Low WM Threshold Bytes": null,
+          "Num Total PDCP Control PDUs": null,
+          "PDCP Flow State": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2967,
+    "samplesParsedSuccessfully": 2967,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB860__NR5G_PDCP_UL_Stats.json"
+  }
+}

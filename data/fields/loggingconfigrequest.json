@@ -1,0 +1,18 @@
+{
+  "id": "loggingconfigrequest",
+  "name": "Logging Config Request",
+  "records": [
+    {
+      "id": "0x1fea-logging-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Logging Config Request",
+      "name": "Logging Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Logging_Config_Request.json",
+      "paths": [
+        "Logging Config Request",
+        "Logging Config Request -> Logging Config Request"
+      ]
+    }
+  ]
+}

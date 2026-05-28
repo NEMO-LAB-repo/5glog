@@ -1,0 +1,61 @@
+{
+  "id": "paccessnetworkinfo",
+  "name": "P-Access-Network-Info",
+  "records": [
+    {
+      "id": "0x156e-u-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE",
+      "name": "U [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE -> P-Access-Network-Info"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "name": "U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE : 200 OK -> P-Access-Network-Info"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-notify-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "name": "U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_NOTIFY_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_NOTIFY : 200 OK -> P-Access-Network-Info"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "U [IMS] IMS_SIP_REGISTER -> P-Access-Network-Info"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_SUBSCRIBE -> P-Access-Network-Info"
+      ]
+    }
+  ]
+}

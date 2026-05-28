@@ -1,0 +1,18 @@
+{
+  "id": "eventnr5grrciratredirfromnrstart",
+  "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START -> Event -> EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "numtxantennas",
+  "name": "Num TX Antennas",
+  "records": [
+    {
+      "id": "0xb0c1-d-lte-mib",
+      "logcode": "0xB0C1",
+      "title": "0xB0C1 D [LTE] MIB",
+      "name": "D [LTE] MIB",
+      "category": "LTE",
+      "dataFile": "0xB0C1__D_LTE_MIB.json",
+      "paths": [
+        "D [LTE] MIB -> Num TX Antennas"
+      ]
+    }
+  ]
+}

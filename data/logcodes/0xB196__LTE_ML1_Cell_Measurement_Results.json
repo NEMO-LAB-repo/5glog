@@ -1,0 +1,47 @@
+{
+  "id": "0xb196-lte-ml1-cell-measurement-results",
+  "logcode": "0xB196",
+  "name": "LTE ML1 Cell Measurement Results",
+  "title": "0xB196 LTE ML1 Cell Measurement Results",
+  "category": "ML1",
+  "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Cell Measurement Results": {
+      "Versions -> Num Cells": null,
+      "Is 1Rx Mode": null,
+      "Cell Measurement List": {
+        "[]": {
+          "E-ARFCN": null,
+          "Physical Cell ID": null,
+          "Valid Rx": null,
+          "Inst RSRP Rx[0]": null,
+          "Inst RSRP Rx[1]": null,
+          "Inst RSRQ Rx[0]": null,
+          "Inst RSRQ Rx[1]": null,
+          "Inst RSSI Rx[0]": null,
+          "Inst RSSI Rx[1]": null,
+          "Inst RSSI": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 95,
+    "samplesParsedSuccessfully": 95,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json"
+  }
+}

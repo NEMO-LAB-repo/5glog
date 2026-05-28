@@ -1,0 +1,39 @@
+{
+  "id": "modulationtype",
+  "name": "Modulation Type",
+  "records": [
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> UL Grant Info -> [] -> Modulation Type"
+      ]
+    },
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record -> [] -> PUSCH -> Modulation Type"
+      ]
+    },
+    {
+      "id": "0xb173-lte-ml1-pdsch-stat-indication",
+      "logcode": "0xB173",
+      "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+      "name": "LTE ML1 PDSCH Stat Indication",
+      "category": "ML1",
+      "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+      "paths": [
+        "LTE ML1 PDSCH Stat Indication -> Record -> [] -> TB -> [] -> Modulation Type"
+      ]
+    }
+  ]
+}

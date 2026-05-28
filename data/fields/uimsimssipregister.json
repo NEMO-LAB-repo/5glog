@@ -1,0 +1,17 @@
+{
+  "id": "uimsimssipregister",
+  "name": "U [IMS] IMS_SIP_REGISTER",
+  "records": [
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "U [IMS] IMS_SIP_REGISTER"
+      ]
+    }
+  ]
+}

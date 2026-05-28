@@ -1,0 +1,82 @@
+{
+  "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+  "logcode": "0x1FF0",
+  "name": "Call Manager/State Info Of Current Subscription Response",
+  "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Call Manager/State Info Of Current Subscription Response": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "Call Manager/State Info Of Current Subscription Response": {
+          "Call State": null,
+          "Operation Mode": null,
+          "System Mode": null,
+          "Mode Preference": null,
+          "Band Class 0 (A Side)": null,
+          "Band Class 0 (B Side)": null,
+          "Band Class 1": null,
+          "Band Class 2": null,
+          "Band Class 3": null,
+          "Band Class 4": null,
+          "Band Class 5": null,
+          "GSM DCS 1800": null,
+          "GSM 900 Extended": null,
+          "GSM 900 Primary": null,
+          "Band Class 6": null,
+          "Band Class 7": null,
+          "Band Class 8": null,
+          "Band Class 9": null,
+          "Band Class 10": null,
+          "Band Class 11": null,
+          "GSM 450": null,
+          "GSM 480": null,
+          "GSM 750": null,
+          "GSM 850": null,
+          "GSM Railway 900": null,
+          "GSM PCS 1900": null,
+          "WCDMA I MT 2000": null,
+          "WCDMA II PCS": null,
+          "WCDMA III 1700": null,
+          "WCDMA IV 1700": null,
+          "WCDMA V 850": null,
+          "WCDMA VI 1800": null,
+          "Band Class 12": null,
+          "Band Class 14": null,
+          "Band No Change": null,
+          "Home": null,
+          "Affiliated": null,
+          "Roam No Change": null,
+          "Server Domain Preference": null,
+          "Acquire Order Preference": null,
+          "Hybrid Preference": null,
+          "Network Mode Preference": null,
+          "Service Status": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "umm5gregistrationcomplete",
+  "name": "U [MM5G] Registration Complete",
+  "records": [
+    {
+      "id": "0xb80b-u-mm5g-registration-complete",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Complete",
+      "name": "U [MM5G] Registration Complete",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Complete.json",
+      "paths": [
+        "U [MM5G] Registration Complete"
+      ]
+    }
+  ]
+}

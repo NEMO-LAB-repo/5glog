@@ -1,0 +1,30 @@
+{
+  "id": "typeofcipheringalgorithm",
+  "name": "Type of ciphering algorithm",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-security-mode-command",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Security Mode Command",
+      "name": "D [MM5G] Security Mode Command",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+      "paths": [
+        "D [MM5G] Security Mode Command -> Security Mode Command -> Selected EPS NAS security algorithms -> Type of ciphering algorithm",
+        "D [MM5G] Security Mode Command -> Security Mode Command -> Selected NAS security algorithms -> Type of ciphering algorithm"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Security Mode Command -> Selected EPS NAS security algorithms -> Type of ciphering algorithm",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Security Mode Command -> Selected NAS security algorithms -> Type of ciphering algorithm"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "result",
+  "name": "Result",
+  "records": [
+    {
+      "id": "0x1832-ims-registration",
+      "logcode": "0x1832",
+      "title": "0x1832 IMS Registration",
+      "name": "IMS Registration",
+      "category": "IMS",
+      "dataFile": "0x1832__IMS_Registration.json",
+      "paths": [
+        "IMS Registration -> Result"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-raid-match-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_RAID_MATCH_V2",
+      "name": "EVENT_LTE_RACH_RAID_MATCH_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_RAID_MATCH_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_RAID_MATCH_V2 -> Event -> EVENT_LTE_RACH_RAID_MATCH_V2 -> RESULT"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Msg2 - Random Access Response -> Result"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg2 -> Result"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> Result"
+      ]
+    },
+    {
+      "id": "0xb9bf-nr5g-ml1-search-ho-acq-confirm",
+      "logcode": "0xB9BF",
+      "title": "0xB9BF NR5G ML1 Search HO Acq Confirm",
+      "name": "NR5G ML1 Search HO Acq Confirm",
+      "category": "ML1",
+      "dataFile": "0xB9BF__NR5G_ML1_Search_HO_Acq_Confirm.json",
+      "paths": [
+        "NR5G ML1 Search HO Acq Confirm -> Data -> Result"
+      ]
+    }
+  ]
+}

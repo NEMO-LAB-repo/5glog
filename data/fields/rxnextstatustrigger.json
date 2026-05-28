@@ -1,0 +1,28 @@
+{
+  "id": "rxnextstatustrigger",
+  "name": "Rx Next Status Trigger",
+  "records": [
+    {
+      "id": "0xb082-lte-rlc-dl-am-all-pdu",
+      "logcode": "0xB082",
+      "title": "0xB082 LTE RLC DL AM All PDU",
+      "name": "LTE RLC DL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC DL AM All PDU -> Rlc State -> [] -> Rx Next Status Trigger"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> Common State Cfg -> RB Config -> [] -> RLC State var -> Rx Next Status Trigger"
+      ]
+    }
+  ]
+}

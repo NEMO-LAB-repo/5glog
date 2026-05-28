@@ -1,0 +1,39 @@
+{
+  "id": "messagec1dlinformationtransfer",
+  "name": "message -> c1 -> dlInformationTransfer",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-emm-information",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//EMM Information",
+      "name": "D [LTE] DL Information Transfer//EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_EMM_Information.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//EMM Information -> dl-dcch -> message -> c1 -> dlInformationTransfer"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-identity-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Identity Request",
+      "name": "D [LTE] DL Information Transfer//Identity Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Identity Request -> dl-dcch -> message -> c1 -> dlInformationTransfer"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dl-dcch -> message -> c1 -> dlInformationTransfer"
+      ]
+    }
+  ]
+}

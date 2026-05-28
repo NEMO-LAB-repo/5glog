@@ -1,0 +1,18 @@
+{
+  "id": "gsmversionresponse",
+  "name": "GSM/Version Response",
+  "records": [
+    {
+      "id": "0x1ff0-gsm-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Version Response",
+      "name": "GSM/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Version_Response.json",
+      "paths": [
+        "GSM/Version Response",
+        "GSM/Version Response -> Subsystem Dispatch Response Message -> GSM/Version Response"
+      ]
+    }
+  ]
+}

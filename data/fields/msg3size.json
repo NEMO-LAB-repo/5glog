@@ -1,0 +1,17 @@
+{
+  "id": "msg3size",
+  "name": "MSG3 Size",
+  "records": [
+    {
+      "id": "0xb889-nr5g-mac-rach-trigger",
+      "logcode": "0xB889",
+      "title": "0xB889 NR5G MAC RACH Trigger",
+      "name": "NR5G MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB889__NR5G_MAC_RACH_Trigger.json",
+      "paths": [
+        "NR5G MAC RACH Trigger -> MSG3 Size"
+      ]
+    }
+  ]
+}

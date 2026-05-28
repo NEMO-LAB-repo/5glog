@@ -1,0 +1,46 @@
+{
+  "id": "subframe",
+  "name": "SubFrame",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> TB Info -> [] -> TB Common Info -> SubFrame"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Record -> [] -> Sub Frame"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> RAR Window End -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> RAR Window Start -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> System Time -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg2 -> System Time -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg3 -> System Time -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> Contention Resolution End -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> Contention Resolution Start -> SubFrame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> System Time -> SubFrame"
+      ]
+    }
+  ]
+}

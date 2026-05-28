@@ -1,0 +1,19 @@
+{
+  "id": "measurementreportingeventeventb1neighbourthreshold",
+  "name": "Measurement reporting event: Event B1 - Neighbour > threshold",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> featureGroupIndicators -> Measurement reporting event: Event B1 - Neighbour > threshold",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> lateNonCriticalExtension -> fdd-Add-UE-EUTRA-Capabilities-r9 -> featureGroupIndicators-r9 -> Measurement reporting event: Event B1 - Neighbour > threshold",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> lateNonCriticalExtension -> tdd-Add-UE-EUTRA-Capabilities-r9 -> featureGroupIndicators-r9 -> Measurement reporting event: Event B1 - Neighbour > threshold"
+      ]
+    }
+  ]
+}

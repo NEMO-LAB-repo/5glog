@@ -1,0 +1,17 @@
+{
+  "id": "numofrxant",
+  "name": "Num Of Rx Ant",
+  "records": [
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Request -> Num Of Rx Ant"
+      ]
+    }
+  ]
+}

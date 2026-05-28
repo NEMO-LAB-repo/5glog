@@ -1,0 +1,18 @@
+{
+  "id": "eventnasmm5gtimerstop",
+  "name": "EVENT_NAS_MM5G_TIMER_STOP",
+  "records": [
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_STOP",
+      "name": "EVENT_NAS_MM5G_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_STOP.json",
+      "paths": [
+        "EVENT_NAS_MM5G_TIMER_STOP",
+        "EVENT_NAS_MM5G_TIMER_STOP -> Event -> EVENT_NAS_MM5G_TIMER_STOP"
+      ]
+    }
+  ]
+}

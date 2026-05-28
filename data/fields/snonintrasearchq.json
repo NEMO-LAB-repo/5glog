@@ -1,0 +1,40 @@
+{
+  "id": "snonintrasearchq",
+  "name": "S Non Intra Search Q",
+  "records": [
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas Serving Frequency Resel Info -> Rel 9 Info -> S Non Intra Search Q"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> Rel 9 Info -> S Non Intra Search Q"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> cellReselectionServingFreqInfo -> s-NonIntraSearchQ",
+        "SIB2 -> sib2 -> cellReselectionServingFreqInfo -> s-NonIntraSearchQ"
+      ]
+    }
+  ]
+}

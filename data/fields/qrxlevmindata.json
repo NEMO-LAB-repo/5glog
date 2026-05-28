@@ -1,0 +1,28 @@
+{
+  "id": "qrxlevmindata",
+  "name": "Qrxlevmin Data",
+  "records": [
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> SubPackets -> [] -> SubPacket -> Idle Meas Cell Select Request -> Qrxlevmin Data"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> Q_rxlevmin Data"
+      ]
+    }
+  ]
+}

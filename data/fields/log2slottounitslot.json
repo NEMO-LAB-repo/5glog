@@ -1,0 +1,28 @@
+{
+  "id": "log2slottounitslot",
+  "name": "Log2 Slot To Unit Slot",
+  "records": [
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets -> [] -> Control AGC Sub Packet -> Log Header -> Log2 Slot To Unit Slot"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets -> [] -> TX IU Power Sub Packet -> SubVersion -> Log Header -> Log2 Slot To Unit Slot"
+      ]
+    }
+  ]
+}

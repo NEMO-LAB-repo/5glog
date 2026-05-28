@@ -1,0 +1,33 @@
+{
+  "id": "0x1ff0-event-report-control-response",
+  "logcode": "0x1FF0",
+  "name": "Event Report Control Response",
+  "title": "0x1FF0 Event Report Control Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Event_Report_Control_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Event Report Control Response": {
+      "Cmd Code": null,
+      "Event Report Control Response": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Event_Report_Control_Response.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "rsrprx0",
+  "name": "rsrpRx0",
+  "records": [
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Rasters -> [] -> Meas Window -> [] -> SSBorCells -> [] -> rsrpRx0"
+      ]
+    }
+  ]
+}

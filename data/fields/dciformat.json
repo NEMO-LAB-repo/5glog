@@ -1,0 +1,40 @@
+{
+  "id": "dciformat",
+  "name": "DCI Format",
+  "records": [
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> DCI Format"
+      ]
+    },
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control -> Records -> [] -> DCI Format"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> DCI Info -> [] -> DCI Format",
+        "NR5G MAC DCI Info -> Records -> [] -> DCI Info -> [] -> UL -> dci_format"
+      ]
+    }
+  ]
+}

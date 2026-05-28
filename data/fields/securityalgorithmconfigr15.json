@@ -1,0 +1,17 @@
+{
+  "id": "securityalgorithmconfigr15",
+  "name": "securityAlgorithmConfig-r15",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> securityConfigHO-v1530 -> handoverType-v1530 -> fivegc-ToEPC -> securityAlgorithmConfig-r15"
+      ]
+    }
+  ]
+}

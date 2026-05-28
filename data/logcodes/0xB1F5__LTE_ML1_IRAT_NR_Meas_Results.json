@@ -1,0 +1,69 @@
+{
+  "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+  "logcode": "0xB1F5",
+  "name": "LTE ML1 IRAT NR Meas Results",
+  "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+  "category": "ML1",
+  "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 IRAT NR Meas Results": {
+      "Versions -> Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "SubPacket ID": null,
+          "Version": null,
+          "SubPacket Size": null,
+          "SubPacket -> Irat Limited Nr Meas Results": {
+            "Version -> Inst Num": null,
+            "Endc Mode": null,
+            "Num of Freq": null,
+            "RspParam": {
+              "[]": {
+                "ARFCN": null,
+                "Num Cells Detected": null,
+                "Meas Results": {
+                  "[]": {
+                    "PCI": null,
+                    "Num Beams": null,
+                    "Meas Info": {
+                      "Rsrp": null,
+                      "Rsrq": null
+                    },
+                    "MeasInfoPerBeam": {
+                      "[]": {
+                        "Beam Index": null,
+                        "Meas Info": {
+                          "Rsrp": null,
+                          "Rsrq": null
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 59,
+    "samplesParsedSuccessfully": 59,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json"
+  }
+}

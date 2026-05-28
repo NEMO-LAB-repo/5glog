@@ -1,0 +1,139 @@
+{
+  "id": "rattype",
+  "name": "RAT Type",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END -> Event -> EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START -> Event -> EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END -> Event -> EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START -> Event -> EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-end-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_END_EVENT",
+      "name": "EVENT_SIP_REG_END_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_END_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_END_EVENT -> Event -> EVENT_SIP_REG_END_EVENT -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-req-sent-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_REQ_SENT_EVENT",
+      "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_REQ_SENT_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_REQ_SENT_EVENT -> Event -> EVENT_SIP_REG_REQ_SENT_EVENT -> RAT Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_RESP_RCVD_EVENT -> Event -> EVENT_SIP_REG_RESP_RCVD_EVENT -> RAT Type"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> rat-Type"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> rat-Type"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : nr",
+      "name": "U [LTE] UE Capability Information : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> rat-Type"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> rat-Type",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> rat-Type"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> Cell Info -> [] -> RAT Type"
+      ]
+    }
+  ]
+}

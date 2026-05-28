@@ -1,0 +1,39 @@
+{
+  "id": "payload",
+  "name": "Payload",
+  "records": [
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "LTE RLC DL AM Control PDU -> PDUs -> [] -> Payload"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> Payload"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> Payload"
+      ]
+    }
+  ]
+}

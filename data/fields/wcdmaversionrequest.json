@@ -1,0 +1,18 @@
+{
+  "id": "wcdmaversionrequest",
+  "name": "WCDMA/Version Request",
+  "records": [
+    {
+      "id": "0x1fea-wcdma-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Version Request",
+      "name": "WCDMA/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Version_Request.json",
+      "paths": [
+        "WCDMA/Version Request",
+        "WCDMA/Version Request -> Subsystem Dispatch Request Message -> WCDMA/Version Request"
+      ]
+    }
+  ]
+}

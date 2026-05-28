@@ -1,0 +1,17 @@
+{
+  "id": "xztecause",
+  "name": "X-ZTE-Cause",
+  "records": [
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-481-call-transaction-does-not-exist",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_481_Call_Transaction_Does_Not_Exist.json",
+      "paths": [
+        "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist -> X-ZTE-Cause"
+      ]
+    }
+  ]
+}

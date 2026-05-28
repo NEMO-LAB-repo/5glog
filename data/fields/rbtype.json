@@ -1,0 +1,106 @@
+{
+  "id": "rbtype",
+  "name": "RB Type",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> Active RB Info -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> LTE -> RB Type",
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> NR5G -> RB type"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> Common State Cfg -> RB Config -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Records -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> TB Info -> [] -> LC Packet Info -> [] -> RB Type"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> PDCP RB Param -> [] -> RB Type"
+      ]
+    }
+  ]
+}

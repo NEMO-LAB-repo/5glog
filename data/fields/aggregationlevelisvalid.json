@@ -1,0 +1,39 @@
+{
+  "id": "aggregationlevelisvalid",
+  "name": "Aggregation Level is Valid",
+  "records": [
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> common_sspace_0 -> Format_20 -> Aggregation Level is Valid"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> OTA Params -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> common_sspace_0 -> Format_20 -> Aggregation Level is Valid"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> Search Space Add Mod -> [] -> Search Space -> sspace_info -> common_sspace_0 -> Format_20 -> Aggregation Level is Valid"
+      ]
+    }
+  ]
+}

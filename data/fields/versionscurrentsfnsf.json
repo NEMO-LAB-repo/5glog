@@ -1,0 +1,17 @@
+{
+  "id": "versionscurrentsfnsf",
+  "name": "Versions -> Current SFN SF",
+  "records": [
+    {
+      "id": "0xb144-lte-ll1-rach-tx-report",
+      "logcode": "0xB144",
+      "title": "0xB144 LTE LL1 RACH Tx Report",
+      "name": "LTE LL1 RACH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB144__LTE_LL1_RACH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 RACH Tx Report -> Versions -> Current SFN SF"
+      ]
+    }
+  ]
+}

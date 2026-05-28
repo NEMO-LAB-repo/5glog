@@ -1,0 +1,17 @@
+{
+  "id": "ulteulinformationtransfertrackingareaupdatecomplete",
+  "name": "U [LTE] UL Information Transfer//Tracking Area Update Complete",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Complete"
+      ]
+    }
+  ]
+}

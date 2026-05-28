@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrcpagingdrxcycle",
+  "name": "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-paging-drx-cycle",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "name": "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING_DRX_CYCLE.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+        "EVENT_LTE_RRC_PAGING_DRX_CYCLE -> Event -> EVENT_LTE_RRC_PAGING_DRX_CYCLE"
+      ]
+    }
+  ]
+}

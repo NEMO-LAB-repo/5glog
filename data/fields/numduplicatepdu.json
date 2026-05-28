@@ -1,0 +1,50 @@
+{
+  "id": "numduplicatepdu",
+  "name": "Num Duplicate PDU",
+  "records": [
+    {
+      "id": "0xb087-lte-rlc-dl-statistics",
+      "logcode": "0xB087",
+      "title": "0xB087 LTE RLC DL Statistics",
+      "name": "LTE RLC DL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB087__LTE_RLC_DL_Statistics.json",
+      "paths": [
+        "LTE RLC DL Statistics -> RB Stats -> [] -> Num Duplicate PDU"
+      ]
+    },
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> RB Stats -> [] -> Num Duplicate PDU"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats -> RB Stats -> [] -> Num Duplicate PDU"
+      ]
+    },
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "NR5G RLC DL Stats -> RB Stats -> [] -> Num Duplicate PDU"
+      ]
+    }
+  ]
+}

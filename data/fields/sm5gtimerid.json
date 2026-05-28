@@ -1,0 +1,28 @@
+{
+  "id": "sm5gtimerid",
+  "name": "SM5G Timer Id",
+  "records": [
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_START",
+      "name": "EVENT_NAS_MM5G_TIMER_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_START.json",
+      "paths": [
+        "EVENT_NAS_MM5G_TIMER_START -> Event -> EVENT_NAS_MM5G_TIMER_START -> SM5G Timer Id"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_STOP",
+      "name": "EVENT_NAS_MM5G_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_STOP.json",
+      "paths": [
+        "EVENT_NAS_MM5G_TIMER_STOP -> Event -> EVENT_NAS_MM5G_TIMER_STOP -> SM5G Timer Id"
+      ]
+    }
+  ]
+}

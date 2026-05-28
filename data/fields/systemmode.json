@@ -1,0 +1,50 @@
+{
+  "id": "systemmode",
+  "name": "System Mode",
+  "records": [
+    {
+      "id": "0x12c1-cm-call-event",
+      "logcode": "0x12C1",
+      "title": "0x12C1 CM Call Event",
+      "name": "CM Call Event",
+      "category": "Other",
+      "dataFile": "0x12C1__CM_Call_Event.json",
+      "paths": [
+        "CM Call Event -> System Mode"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+      "name": "Call Manager/State Info Of Current Subscription Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+      "paths": [
+        "Call Manager/State Info Of Current Subscription Response -> Subsystem Dispatch Response Message -> Call Manager/State Info Of Current Subscription Response -> System Mode"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Call Manager/State Info Response -> Subsystem Dispatch Response Message -> Call Manager/State Info Response -> System Mode"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message -> GSM/Status Response -> System Mode"
+      ]
+    }
+  ]
+}

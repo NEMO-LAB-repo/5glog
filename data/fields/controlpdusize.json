@@ -1,0 +1,28 @@
+{
+  "id": "controlpdusize",
+  "name": "Control PDU Size",
+  "records": [
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "LTE RLC DL AM Control PDU -> PDUs -> [] -> Control PDU Size"
+      ]
+    },
+    {
+      "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+      "logcode": "0xB841",
+      "title": "0xB841 NR5G PDCP DL Control Pdu",
+      "name": "NR5G PDCP DL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Control Pdu -> Control PDU Size"
+      ]
+    }
+  ]
+}

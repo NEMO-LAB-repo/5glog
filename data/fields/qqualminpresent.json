@@ -1,0 +1,17 @@
+{
+  "id": "qqualminpresent",
+  "name": "Q Qual Min Present",
+  "records": [
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> Q Qual Min Present"
+      ]
+    }
+  ]
+}

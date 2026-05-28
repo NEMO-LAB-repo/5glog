@@ -1,0 +1,70 @@
+{
+  "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+  "logcode": "0xB84E",
+  "name": "NR5G RLC DL Status PDU",
+  "title": "0xB84E NR5G RLC DL Status PDU",
+  "category": "RLC",
+  "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RLC DL Status PDU": {
+      "Versions -> Num Status PDU": null,
+      "PDUs": {
+        "[]": {
+          "Sys Time": {
+            "Slot": null,
+            "Frame": null
+          },
+          "SN Length Value": null,
+          "Status PDU Size": null,
+          "Status PDU": {
+            "DC Bit Value": null,
+            "CPT": null,
+            "ACK_SN Part 1": null,
+            "ACK_SN Part 2": null,
+            "ACK_SN 12 Bits": null,
+            "Header E1": null,
+            "ACK_SN Part 3": null,
+            "ACK_SN 18 Bits": null,
+            "NACK SN Set": {
+              "[]": {
+                "NACK_SN Part 1 Value": null,
+                "NACK_SN 18 Bits Part 2 Value": null,
+                "NACK_SN Part 3": null,
+                "E1": null,
+                "E2": null,
+                "E3": null,
+                "R": null,
+                "NACK_SN 18 Bits": null,
+                "NACK_SN 12 Bits Part 2 Value": null,
+                "NACK_SN 12 Bits": null,
+                "NACK Range": null,
+                "SO Start": null,
+                "SO End": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1208,
+    "samplesParsedSuccessfully": 1208,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json"
+  }
+}

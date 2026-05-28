@@ -1,0 +1,17 @@
+{
+  "id": "emmstate",
+  "name": "EMM State",
+  "records": [
+    {
+      "id": "0xb0ee-lte-nas-emm-state",
+      "logcode": "0xB0EE",
+      "title": "0xB0EE LTE NAS EMM State",
+      "name": "LTE NAS EMM State",
+      "category": "NAS",
+      "dataFile": "0xB0EE__LTE_NAS_EMM_State.json",
+      "paths": [
+        "LTE NAS EMM State -> EMM State"
+      ]
+    }
+  ]
+}

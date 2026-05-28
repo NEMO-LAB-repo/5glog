@@ -1,0 +1,80 @@
+{
+  "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+  "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> ueCapabilityEnquiry": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueCapabilityEnquiry-r8": {
+            "ue-CapabilityRequest": {
+              "[]": null
+            },
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "nonCriticalExtension": {
+                      "requestedFreqBandsNR-MRDC-r15": {
+                        "freq": {
+                          "[0] -> bandInformationEUTRA": {
+                            "bandEUTRA": null
+                          },
+                          "[1] -> bandInformationEUTRA": {
+                            "bandEUTRA": null
+                          },
+                          "[2] -> bandInformationEUTRA": {
+                            "bandEUTRA": null
+                          },
+                          "[3] -> bandInformationNR": {
+                            "bandNR": null
+                          },
+                          "[2] -> bandInformationNR": {
+                            "bandNR": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "requestedFrequencyBands-r11": {
+                  "[]": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 13,
+    "samplesParsedSuccessfully": 13,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json"
+  }
+}

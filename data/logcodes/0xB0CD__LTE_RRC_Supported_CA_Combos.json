@@ -1,0 +1,49 @@
+{
+  "id": "0xb0cd-lte-rrc-supported-ca-combos",
+  "logcode": "0xB0CD",
+  "name": "LTE RRC Supported CA Combos",
+  "title": "0xB0CD LTE RRC Supported CA Combos",
+  "category": "RRC",
+  "dataFile": "0xB0CD__LTE_RRC_Supported_CA_Combos.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RRC Supported CA Combos": {
+      "Versions -> Num Combos": null,
+      "CA Combos": {
+        "[]": {
+          "Num_Band": null,
+          "Sub Packets": {
+            "[]": {
+              "BW Class": {
+                "Band": null,
+                "DL BW Class": null,
+                "UL BW Class": null,
+                "DL Max Antennas Index": null,
+                "UL Max Antennas Index": null,
+                "UL QAM Cap Index": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 12,
+    "samplesParsedSuccessfully": 12,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0CD__LTE_RRC_Supported_CA_Combos.json"
+  }
+}

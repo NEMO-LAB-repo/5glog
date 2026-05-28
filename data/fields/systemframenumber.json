@@ -1,0 +1,219 @@
+{
+  "id": "systemframenumber",
+  "name": "System Frame Number",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-scell-configuration",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_SCELL_CONFIGURATION",
+      "name": "EVENT_LTE_SCELL_CONFIGURATION",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json",
+      "paths": [
+        "EVENT_LTE_SCELL_CONFIGURATION -> Event -> EVENT_LTE_SCELL_CONFIGURATION -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "LTE LL1 PDSCH Demapper Configuration -> Record -> [] -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb12a-lte-ll1-pcfich-decoding-results",
+      "logcode": "0xB12A",
+      "title": "0xB12A LTE LL1 PCFICH Decoding Results",
+      "name": "LTE LL1 PCFICH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PCFICH Decoding Results -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Request (MSG1) Report -> Random Access Request Timing -> System Frame Number",
+        "LTE ML1 Random Access Request (MSG1) Report -> Random Access Response Window End -> System Frame Number",
+        "LTE ML1 Random Access Request (MSG1) Report -> Random Access Response Window Start -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb168-lte-ml1-random-access-response-msg2-report",
+      "logcode": "0xB168",
+      "title": "0xB168 LTE ML1 Random Access Response (MSG2) Report",
+      "name": "LTE ML1 Random Access Response (MSG2) Report",
+      "category": "ML1",
+      "dataFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Response (MSG2) Report -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-BCH-Message -> bcch-bch -> mib -> systemFrameNumber"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> System Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "NR5G MAC CDRX Events Info -> Records -> [] -> System Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> MTPL -> Versions -> Header -> System Frame Number",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Per Symbol -> Versions -> SubVer6 -> Header -> System Frame Number",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Veto Deveto QSleep -> Versions -> Header -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets -> [] -> TX IU Power Sub Packet -> SubVersion -> Log Header -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> System Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> Versions -> System Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Database Update Ext -> System Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb98f-nr5g-ml1-antenna-switch-diversity",
+      "logcode": "0xB98F",
+      "title": "0xB98F NR5G ML1 Antenna Switch Diversity",
+      "name": "NR5G ML1 Antenna Switch Diversity",
+      "category": "ML1",
+      "dataFile": "0xB98F__NR5G_ML1_Antenna_Switch_Diversity.json",
+      "paths": [
+        "NR5G ML1 Antenna Switch Diversity -> Versions -> Systime -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb992-nr5g-ml1-afc-services",
+      "logcode": "0xB992",
+      "title": "0xB992 NR5G ML1 AFC Services",
+      "name": "NR5G ML1 AFC Services",
+      "category": "ML1",
+      "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+      "paths": [
+        "NR5G ML1 AFC Services -> Versions -> Version -> Header -> Current Time -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb9be-nr5g-ml1-search-ho-acq-req",
+      "logcode": "0xB9BE",
+      "title": "0xB9BE NR5G ML1 Search HO Acq Req",
+      "name": "NR5G ML1 Search HO Acq Req",
+      "category": "ML1",
+      "dataFile": "0xB9BE__NR5G_ML1_Search_HO_Acq_Req.json",
+      "paths": [
+        "NR5G ML1 Search HO Acq Req -> System Frame Number"
+      ]
+    },
+    {
+      "id": "0xb9bf-nr5g-ml1-search-ho-acq-confirm",
+      "logcode": "0xB9BF",
+      "title": "0xB9BF NR5G ML1 Search HO Acq Confirm",
+      "name": "NR5G ML1 Search HO Acq Confirm",
+      "category": "ML1",
+      "dataFile": "0xB9BF__NR5G_ML1_Search_HO_Acq_Confirm.json",
+      "paths": [
+        "NR5G ML1 Search HO Acq Confirm -> System Frame Number"
+      ]
+    }
+  ]
+}

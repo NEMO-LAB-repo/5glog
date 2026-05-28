@@ -1,0 +1,74 @@
+{
+  "id": "frequency",
+  "name": "Frequency",
+  "records": [
+    {
+      "id": "0x17f7-wwcoex-power-info",
+      "logcode": "0x17F7",
+      "title": "0x17F7 WWCoex Power Info",
+      "name": "WWCoex Power Info",
+      "category": "Other",
+      "dataFile": "0x17F7__WWCoex_Power_Info.json",
+      "paths": [
+        "WWCoex Power Info -> FrequencyUpdate -> [] -> Frequency",
+        "WWCoex Power Info -> PowerUpdate -> [] -> Frequency"
+      ]
+    },
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Status Snapshot Response -> Status Snapshot Response -> Frequency"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Event -> EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Frequency"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-new-cell-ind-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN -> Event -> EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN -> Frequency"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START -> Event -> EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START -> Frequency"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> Frequency",
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> Frequency -> [] -> Frequency"
+      ]
+    }
+  ]
+}

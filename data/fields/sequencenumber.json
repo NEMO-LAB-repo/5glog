@@ -1,0 +1,119 @@
+{
+  "id": "sequencenumber",
+  "name": "Sequence Number",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-emm-information",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//EMM Information",
+      "name": "D [LTE] DL Information Transfer//EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_EMM_Information.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//EMM Information -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-identity-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Identity Response",
+      "name": "U [LTE] UL Information Transfer//Identity Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Identity_Response.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Identity Response -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Complete -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> NAS Message -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> NAS Message -> Sequence Number"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> Sequence Number",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Sequence Number",
+        "UL-DCCH-Message -> NAS Message -> Sequence Number",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Sequence Number"
+      ]
+    }
+  ]
+}

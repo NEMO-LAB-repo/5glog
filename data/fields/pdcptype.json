@@ -1,0 +1,28 @@
+{
+  "id": "pdcptype",
+  "name": "PDCP Type",
+  "records": [
+    {
+      "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+      "logcode": "0xB841",
+      "title": "0xB841 NR5G PDCP DL Control Pdu",
+      "name": "NR5G PDCP DL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Control Pdu -> PDCP Type"
+      ]
+    },
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> PDCP Type"
+      ]
+    }
+  ]
+}

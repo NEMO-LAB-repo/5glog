@@ -1,0 +1,97 @@
+{
+  "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+  "logcode": "0xB97F",
+  "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+  "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+  "category": "ML1",
+  "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Searcher Measurement Database Update Ext": {
+      "System Time": {
+        "Slot Number": null,
+        "SubFrame Number": null,
+        "System Frame Number": null,
+        "SCS": null
+      },
+      "Num Layers": null,
+      "SSB Periodicity Serv Cell": null,
+      "Frequency Offset Raw": null,
+      "Timing Offset": null,
+      "Component Carrier List": {
+        "[]": {
+          "Raster Freq": null,
+          "Num Cells": null,
+          "Serving Cell Index": null,
+          "Serving Cell PCI": null,
+          "Serving SSB": null,
+          "Serving RX Beam": {
+            "[]": null
+          },
+          "Serving RFIC ID": null,
+          "ServingSubarrayId": {
+            "[]": {
+              "SubArray ID": null
+            }
+          },
+          "Cells": {
+            "[]": {
+              "PCI": null,
+              "PBCH SFN": null,
+              "Num Beams": null,
+              "CellQualityRsrp": {
+                "Quality RSRP": null
+              },
+              "CellQualityRsrq": {
+                "Quality RSRQ": null
+              },
+              "Detected Beams": {
+                "[]": {
+                  "SSB Index": null,
+                  "RX Beam Info": {
+                    "RxBeamId": {
+                      "[]": {
+                        "RX Beam Id": null
+                      }
+                    },
+                    "SSB Ref Timing 1": null,
+                    "SSB Ref Timing 2": null,
+                    "Rsrps": {
+                      "[]": {
+                        "RSRP": null
+                      }
+                    }
+                  },
+                  "Filtered Tx Beam RSRP": null,
+                  "Filtered Tx Beam RSRQ": null,
+                  "L2NR Filtered Tx Beam RSRP L3": null,
+                  "L2NR Filtered Tx Beam RSRQ L3": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3675,
+    "samplesParsedSuccessfully": 3675,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json"
+  }
+}

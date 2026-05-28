@@ -1,0 +1,66 @@
+{
+  "id": "0xb173-lte-ml1-pdsch-stat-indication",
+  "logcode": "0xB173",
+  "name": "LTE ML1 PDSCH Stat Indication",
+  "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+  "category": "ML1",
+  "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 PDSCH Stat Indication": {
+      "Number of Records": null,
+      "Record": {
+        "[]": {
+          "Subframe Number": null,
+          "Frame Number": null,
+          "Number of Resource Blocks": null,
+          "Number of Layers": null,
+          "Number of Transport Blocks": null,
+          "Serving Cell Index": null,
+          "Alt TBS Enabled": null,
+          "TB": {
+            "[]": {
+              "HARQ ID": null,
+              "Redundancy Version": null,
+              "New Data Indicator": null,
+              "CRC Pass": null,
+              "RNTI Type": null,
+              "Transport Block Index": null,
+              "Discarded reTx Present": null,
+              "Discarded ReTx": null,
+              "Did Recombining": null,
+              "Transport Block Size": null,
+              "MCS Index": null,
+              "Number Of RBs": null,
+              "Modulation Type": null,
+              "QED2 Interim Status": null,
+              "QED Iterations": null
+            }
+          },
+          "PMCH ID": null,
+          "Area ID": null,
+          "Alt TBS Index": null,
+          "Alt MCS Enabled": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 34,
+    "samplesParsedSuccessfully": 34,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json"
+  }
+}

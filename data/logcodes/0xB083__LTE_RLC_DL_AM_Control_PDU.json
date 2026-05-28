@@ -1,0 +1,56 @@
+{
+  "id": "0xb083-lte-rlc-dl-am-control-pdu",
+  "logcode": "0xB083",
+  "name": "LTE RLC DL AM Control PDU",
+  "title": "0xB083 LTE RLC DL AM Control PDU",
+  "category": "RLC",
+  "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC DL AM Control PDU": {
+      "Versions -> Num Control PDU": null,
+      "PDUs": {
+        "[]": {
+          "Sys Time": {
+            "Sub FN": null,
+            "SFN": null
+          },
+          "SN Length": null,
+          "Control PDU Size": null,
+          "Payload": {
+            "AM PDU": {
+              "PDU based on D/c union -> Control PDU": {
+                "D/C": null,
+                "cpt": null,
+                "ack_part": null,
+                "Control PDU -> AM Status PDU": {
+                  "ack_part": null,
+                  "RLCDL CTRL-ACK_SN": null,
+                  "E1": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 19,
+    "samplesParsedSuccessfully": 19,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json"
+  }
+}

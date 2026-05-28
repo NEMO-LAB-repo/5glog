@@ -1,0 +1,28 @@
+{
+  "id": "dlnumsfscheduled",
+  "name": "dl_num_sf_scheduled",
+  "records": [
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_activated_metrics -> pcell -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_activated_metrics -> pcell_and_scell_any -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_activated_metrics -> pcell_only -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_activated_metrics -> scell_any -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_configured_metrics -> pcell -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_configured_metrics -> pcell_and_scell_any -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_configured_metrics -> pcell_only -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_configured_metrics -> scell_any -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> total_metrics -> pcell -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> total_metrics -> pcell_and_scell_any -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> total_metrics -> pcell_only -> dl_num_sf_scheduled",
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> total_metrics -> scell_any -> dl_num_sf_scheduled"
+      ]
+    }
+  ]
+}

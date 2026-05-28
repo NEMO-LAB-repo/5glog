@@ -1,0 +1,32 @@
+{
+  "id": "0xb061-lte-mac-rach-trigger",
+  "logcode": "0xB061",
+  "name": "LTE MAC RACH Trigger",
+  "title": "0xB061 LTE MAC RACH Trigger",
+  "category": "MAC",
+  "dataFile": "0xB061__LTE_MAC_RACH_Trigger.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE MAC RACH Trigger": {
+      "Number Of Subpackets": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB061__LTE_MAC_RACH_Trigger.json"
+  }
+}

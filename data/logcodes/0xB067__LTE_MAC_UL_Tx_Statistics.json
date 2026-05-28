@@ -1,0 +1,49 @@
+{
+  "id": "0xb067-lte-mac-ul-tx-statistics",
+  "logcode": "0xB067",
+  "name": "LTE MAC UL Tx Statistics",
+  "title": "0xB067 LTE MAC UL Tx Statistics",
+  "category": "MAC",
+  "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE MAC UL Tx Statistics": {
+      "Number Of Subpackets": null,
+      "Sub Packets": {
+        "[]": {
+          "Header": {
+            "Sub Packet ID": null,
+            "Sub Packet Version": null,
+            "Sub Packet Size": null
+          },
+          "Sub Id": null,
+          "Number of samples": null,
+          "Number of padding BSR": null,
+          "Number of regular BSR": null,
+          "Number of periodic BSR": null,
+          "Number of cancel BSR": null,
+          "Grant received": null,
+          "Grant utilized": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 82,
+    "samplesParsedSuccessfully": 82,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json"
+  }
+}

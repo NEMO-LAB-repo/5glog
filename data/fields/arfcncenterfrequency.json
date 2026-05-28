@@ -1,0 +1,17 @@
+{
+  "id": "arfcncenterfrequency",
+  "name": "ARFCN Center Frequency",
+  "records": [
+    {
+      "id": "0xb9bf-nr5g-ml1-search-ho-acq-confirm",
+      "logcode": "0xB9BF",
+      "title": "0xB9BF NR5G ML1 Search HO Acq Confirm",
+      "name": "NR5G ML1 Search HO Acq Confirm",
+      "category": "ML1",
+      "dataFile": "0xB9BF__NR5G_ML1_Search_HO_Acq_Confirm.json",
+      "paths": [
+        "NR5G ML1 Search HO Acq Confirm -> Data -> HO ACQ Pass Result -> [] -> ARFCN Center Frequency"
+      ]
+    }
+  ]
+}

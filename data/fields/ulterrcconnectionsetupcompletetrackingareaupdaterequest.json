@@ -1,0 +1,17 @@
+{
+  "id": "ulterrcconnectionsetupcompletetrackingareaupdaterequest",
+  "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request"
+      ]
+    }
+  ]
+}

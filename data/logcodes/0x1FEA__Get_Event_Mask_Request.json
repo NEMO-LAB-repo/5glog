@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-get-event-mask-request",
+  "logcode": "0x1FEA",
+  "name": "Get Event Mask Request",
+  "title": "0x1FEA Get Event Mask Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Get_Event_Mask_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Get Event Mask Request": {
+      "Cmd Code": null,
+      "Get Event Mask Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 6,
+    "samplesParsedSuccessfully": 6,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Get_Event_Mask_Request.json"
+  }
+}

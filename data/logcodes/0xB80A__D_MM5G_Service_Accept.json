@@ -1,0 +1,78 @@
+{
+  "id": "0xb80a-d-mm5g-service-accept",
+  "logcode": "0xB80A",
+  "name": "D [MM5G] Service Accept",
+  "title": "0xB80A D [MM5G] Service Accept",
+  "category": "NAS",
+  "dataFile": "0xB80A__D_MM5G_Service_Accept.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [MM5G] Service Accept": {
+      "Release Version": null,
+      "Direction": null,
+      "Ext. PD": null,
+      "Security header type": null,
+      "Message ID": null,
+      "Service Accept": {
+        "PDU session status": {
+          "IEI": null,
+          "Length": null,
+          "PSI_1": null,
+          "PSI_2": null,
+          "PSI_3": null,
+          "PSI_4": null,
+          "PSI_5": null,
+          "PSI_6": null,
+          "PSI_7": null,
+          "PSI_8": null,
+          "PSI_9": null,
+          "PSI_10": null,
+          "PSI_11": null,
+          "PSI_12": null,
+          "PSI_13": null,
+          "PSI_14": null,
+          "PSI_15": null
+        },
+        "PDU session reactivation result": {
+          "IEI": null,
+          "Length": null,
+          "PSI_1": null,
+          "PSI_2": null,
+          "PSI_3": null,
+          "PSI_4": null,
+          "PSI_5": null,
+          "PSI_6": null,
+          "PSI_7": null,
+          "PSI_8": null,
+          "PSI_9": null,
+          "PSI_10": null,
+          "PSI_11": null,
+          "PSI_12": null,
+          "PSI_13": null,
+          "PSI_14": null,
+          "PSI_15": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 146,
+    "samplesParsedSuccessfully": 146,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB80A__D_MM5G_Service_Accept.json"
+  }
+}

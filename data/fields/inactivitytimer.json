@@ -1,0 +1,17 @@
+{
+  "id": "inactivitytimer",
+  "name": "Inactivity Timer",
+  "records": [
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "NR5G MAC CDRX Events Info -> DRX Config -> Inactivity Timer"
+      ]
+    }
+  ]
+}

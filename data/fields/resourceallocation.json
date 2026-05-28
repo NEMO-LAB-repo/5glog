@@ -1,0 +1,31 @@
+{
+  "id": "resourceallocation",
+  "name": "resourceAllocation",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdsch-Config -> setup -> resourceAllocation",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> initialUplinkBWP -> pusch-Config -> setup -> resourceAllocation",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> resourceAllocation",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pusch-Config -> setup -> resourceAllocation"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PRACH Data -> Resource Allocation"
+      ]
+    }
+  ]
+}

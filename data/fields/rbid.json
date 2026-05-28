@@ -1,0 +1,85 @@
+{
+  "id": "rbid",
+  "name": "RB ID",
+  "records": [
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> Active RB Info -> [] -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> LTE -> RB ID",
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> NR5G -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb0e5-lte-nas-esm-bearer-context-info",
+      "logcode": "0xB0E5",
+      "title": "0xB0E5 LTE NAS ESM Bearer Context Info",
+      "name": "LTE NAS ESM Bearer Context Info",
+      "category": "NAS",
+      "dataFile": "0xB0E5__LTE_NAS_ESM_Bearer_Context_Info.json",
+      "paths": [
+        "LTE NAS ESM Bearer Context Info -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb825-nr5g-rrc-configuration-info",
+      "logcode": "0xB825",
+      "title": "0xB825 NR5G RRC Configuration Info",
+      "name": "NR5G RRC Configuration Info",
+      "category": "RRC",
+      "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+      "paths": [
+        "NR5G RRC Configuration Info -> Radio Bearer Info -> [] -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Records -> [] -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> RB ID"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> PDCP RB Param -> [] -> RB Id",
+        "NR5G L2 UL Config -> RLC RB Param -> [] -> RB ID"
+      ]
+    }
+  ]
+}

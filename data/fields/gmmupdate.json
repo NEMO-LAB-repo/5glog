@@ -1,0 +1,17 @@
+{
+  "id": "gmmupdate",
+  "name": "GMM Update",
+  "records": [
+    {
+      "id": "0x7130-umts-nas-gmm-state",
+      "logcode": "0x7130",
+      "title": "0x7130 UMTS NAS GMM State",
+      "name": "UMTS NAS GMM State",
+      "category": "NAS",
+      "dataFile": "0x7130__UMTS_NAS_GMM_State.json",
+      "paths": [
+        "UMTS NAS GMM State -> GMM Update"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "wcdmaversionresponse",
+  "name": "WCDMA/Version Response",
+  "records": [
+    {
+      "id": "0x1ff0-wcdma-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Version Response",
+      "name": "WCDMA/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Version_Response.json",
+      "paths": [
+        "WCDMA/Version Response",
+        "WCDMA/Version Response -> Subsystem Dispatch Response Message -> WCDMA/Version Response"
+      ]
+    }
+  ]
+}

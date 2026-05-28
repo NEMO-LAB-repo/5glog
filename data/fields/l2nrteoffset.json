@@ -1,0 +1,17 @@
+{
+  "id": "l2nrteoffset",
+  "name": "L2NR TE Offset",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-ml1-l2nr-misaligned-gap",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "name": "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_ML1_L2NR_MISALIGNED_GAP.json",
+      "paths": [
+        "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP -> Event -> EVENT_LTE_ML1_L2NR_MISALIGNED_GAP -> L2NR TE Offset"
+      ]
+    }
+  ]
+}

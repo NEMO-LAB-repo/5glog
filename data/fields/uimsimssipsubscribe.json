@@ -1,0 +1,17 @@
+{
+  "id": "uimsimssipsubscribe",
+  "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+  "records": [
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_SUBSCRIBE"
+      ]
+    }
+  ]
+}

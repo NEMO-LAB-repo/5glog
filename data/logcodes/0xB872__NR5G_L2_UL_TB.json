@@ -1,0 +1,71 @@
+{
+  "id": "0xb872-nr5g-l2-ul-tb",
+  "logcode": "0xB872",
+  "name": "NR5G L2 UL TB",
+  "title": "0xB872 NR5G L2 UL TB",
+  "category": "L2",
+  "dataFile": "0xB872__NR5G_L2_UL_TB.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 UL TB": {
+      "Meta": {
+        "Num TTI": null
+      },
+      "TTI Info": {
+        "[]": {
+          "TTI Info Meta": {
+            "Sys Time": {
+              "Slot Number": null,
+              "FN": null
+            },
+            "Num TB": null
+          },
+          "Num TB": {
+            "[]": {
+              "Numerology": null,
+              "Harq ID": null,
+              "Carrier ID": null,
+              "TB Type": null,
+              "RNTI Type": null,
+              "Start PDU Seg": null,
+              "Num Complete PDU": null,
+              "End PDU Seg": null,
+              "Grant Size": null,
+              "Bytes Built": null,
+              "MCE Req Bitmask": null,
+              "MCE Built Bitmask": null,
+              "PHR Reason": null,
+              "BSR Reason": null,
+              "BSR Type": null,
+              "PHR Cancel Reason": null,
+              "MCE Length": null,
+              "McePayloadSize": {
+                "McePayload": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1925,
+    "samplesParsedSuccessfully": 1925,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB872__NR5G_L2_UL_TB.json"
+  }
+}

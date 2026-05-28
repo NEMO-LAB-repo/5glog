@@ -1,0 +1,17 @@
+{
+  "id": "lterlculstatistics",
+  "name": "LTE RLC UL Statistics",
+  "records": [
+    {
+      "id": "0xb097-lte-rlc-ul-statistics",
+      "logcode": "0xB097",
+      "title": "0xB097 LTE RLC UL Statistics",
+      "name": "LTE RLC UL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+      "paths": [
+        "LTE RLC UL Statistics"
+      ]
+    }
+  ]
+}

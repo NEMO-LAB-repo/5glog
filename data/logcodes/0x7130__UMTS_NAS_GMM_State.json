@@ -1,0 +1,33 @@
+{
+  "id": "0x7130-umts-nas-gmm-state",
+  "logcode": "0x7130",
+  "name": "UMTS NAS GMM State",
+  "title": "0x7130 UMTS NAS GMM State",
+  "category": "NAS",
+  "dataFile": "0x7130__UMTS_NAS_GMM_State.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "UMTS NAS GMM State": {
+      "GMM State": null,
+      "GMM Substate": null,
+      "GMM Update": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 20,
+    "samplesParsedSuccessfully": 20,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x7130__UMTS_NAS_GMM_State.json"
+  }
+}

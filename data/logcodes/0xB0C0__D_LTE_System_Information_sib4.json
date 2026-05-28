@@ -1,0 +1,57 @@
+{
+  "id": "0xb0c0-d-lte-system-information-sib4",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] System Information : sib4",
+  "title": "0xB0C0 D [LTE] System Information : sib4",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_System_Information_sib4.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] System Information : sib4": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "bcch-dl-sch": {
+        "message -> c1 -> systemInformation": {
+          "criticalExtensions -> systemInformation-r8": {
+            "sib-TypeAndInfo": {
+              "[0] -> sib4": {
+                "intraFreqNeighCellList": {
+                  "[]": {
+                    "physCellId": null,
+                    "q-OffsetCell": null
+                  }
+                },
+                "intraFreqExcludedCellList": {
+                  "[]": {
+                    "start": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_System_Information_sib4.json"
+  }
+}

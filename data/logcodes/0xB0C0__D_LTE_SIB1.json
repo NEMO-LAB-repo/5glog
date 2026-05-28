@@ -1,0 +1,113 @@
+{
+  "id": "0xb0c0-d-lte-sib1",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] SIB1",
+  "title": "0xB0C0 D [LTE] SIB1",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_SIB1.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] SIB1": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "bcch-dl-sch": {
+        "message -> c1 -> systemInformationBlockType1": {
+          "cellAccessRelatedInfo": {
+            "plmn-IdentityList": {
+              "[]": {
+                "plmn-Identity": {
+                  "mcc": {
+                    "[]": null
+                  },
+                  "mnc": {
+                    "[]": null
+                  }
+                },
+                "cellReservedForOperatorUse": null
+              }
+            },
+            "trackingAreaCode": null,
+            "cellIdentity": null,
+            "cellBarred": null,
+            "intraFreqReselection": null,
+            "csg-Indication": null
+          },
+          "cellSelectionInfo": {
+            "q-RxLevMin": null,
+            "q-RxLevMinOffset": null
+          },
+          "p-Max": null,
+          "freqBandIndicator": null,
+          "schedulingInfoList": {
+            "[]": {
+              "si-Periodicity": null,
+              "sib-MappingInfo": {}
+            }
+          },
+          "si-WindowLength": null,
+          "systemInfoValueTag": null,
+          "nonCriticalExtension": {
+            "lateNonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "nonCriticalExtension": {
+                      "nonCriticalExtension": {
+                        "schedulingInfoList-v12j0": {
+                          "[]": {
+                            "sib-MappingInfo-v12j0": {
+                              "[]": null
+                            }
+                          }
+                        },
+                        "schedulingInfoListExt-r12": {
+                          "[]": {
+                            "si-Periodicity-r12": null,
+                            "sib-MappingInfo-r12": {
+                              "[]": null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "multiBandInfoList": {
+                "[]": null
+              }
+            },
+            "nonCriticalExtension": {
+              "cellSelectionInfo-v920": {
+                "q-QualMin-r9": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 148,
+    "samplesParsedSuccessfully": 148,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_SIB1.json"
+  }
+}

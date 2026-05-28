@@ -1,0 +1,17 @@
+{
+  "id": "rrcstatechangetrigger",
+  "name": "RRC State Change Trigger",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change-trigger",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE_TRIGGER.json",
+      "paths": [
+        "EVENT_LTE_RRC_STATE_CHANGE_TRIGGER -> Event -> EVENT_LTE_RRC_STATE_CHANGE_TRIGGER -> RRC State Change Trigger"
+      ]
+    }
+  ]
+}

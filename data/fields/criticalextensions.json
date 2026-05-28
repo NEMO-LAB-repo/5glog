@@ -1,0 +1,30 @@
+{
+  "id": "criticalextensions",
+  "name": "criticalExtensions",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> dlInformationTransfer -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> securityModeCommand -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> capabilityRequestFilter -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcReconfigurationComplete -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcSetupComplete -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> securityModeComplete -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ulInformationTransfer -> criticalExtensions"
+      ]
+    }
+  ]
+}

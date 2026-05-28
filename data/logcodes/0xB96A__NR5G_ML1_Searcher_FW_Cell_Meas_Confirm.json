@@ -1,0 +1,95 @@
+{
+  "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+  "logcode": "0xB96A",
+  "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+  "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+  "category": "ML1",
+  "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Searcher FW Cell Meas Confirm": {
+      "Header": {
+        "sfn": null,
+        "subfn": null,
+        "slotNum": null,
+        "seqId": null,
+        "status": null,
+        "confCause": null,
+        "confTime": null
+      },
+      "Data Header": {
+        "rasterPointsNum": null,
+        "NBIdBitmask": null,
+        "servingSSB": null,
+        "servingRxBeamId": null
+      },
+      "Rasters": {
+        "[]": {
+          "Raster Header": {
+            "rasterCenterFreq": null,
+            "logicalToPhysicalRxMapping": null,
+            "newGainState": null,
+            "channelResponse1": null,
+            "channelResponse2": null,
+            "totalGain": null,
+            "NBId": null,
+            "SSBSCS": null,
+            "measMode": null,
+            "logicalRxAntennaBitmak": null,
+            "sampleStatus": null,
+            "measWindowNum": null
+          },
+          "Meas Window": {
+            "[]": {
+              "Window Header": {
+                "nrarfcn": null,
+                "carrierIndex": null,
+                "ssborCellsNum": null
+              },
+              "SSBorCells": {
+                "[]": {
+                  "timingDelta": null,
+                  "cellId": null,
+                  "ssbIndex": null,
+                  "lnaGain": null,
+                  "rsrpRx0": null,
+                  "rsrpRx1": null,
+                  "sinrRx0": null,
+                  "sinrRx1": null,
+                  "rssiRx0": null,
+                  "rssiRx1": null,
+                  "rsrqRx0": null,
+                  "rsrqRx1": null,
+                  "rxBeamPair": null,
+                  "measType": null,
+                  "measResultStatus": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "un-decoded": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json"
+  }
+}

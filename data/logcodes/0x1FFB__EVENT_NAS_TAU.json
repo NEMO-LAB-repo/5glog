@@ -1,0 +1,44 @@
+{
+  "id": "0x1ffb-event-nas-tau",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NAS_TAU",
+  "title": "0x1FFB EVENT_NAS_TAU",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NAS_TAU": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NAS_TAU": {
+          "RAT": null,
+          "procedure_type": null,
+          "status": null,
+          "end_reason": null,
+          "cause": null,
+          "as_id": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 10,
+    "samplesParsedSuccessfully": 10,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NAS_TAU.json"
+  }
+}

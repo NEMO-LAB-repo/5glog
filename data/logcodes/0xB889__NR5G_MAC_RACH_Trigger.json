@@ -1,0 +1,44 @@
+{
+  "id": "0xb889-nr5g-mac-rach-trigger",
+  "logcode": "0xB889",
+  "name": "NR5G MAC RACH Trigger",
+  "title": "0xB889 NR5G MAC RACH Trigger",
+  "category": "MAC",
+  "dataFile": "0xB889__NR5G_MAC_RACH_Trigger.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC RACH Trigger": {
+      "Sub ID": null,
+      "Header": {
+        "Num Records": null
+      },
+      "CRNTI": null,
+      "Rach Reason": null,
+      "Carrier Id": null,
+      "First Active UL BWP": null,
+      "RACH Contention": null,
+      "RA Id": null,
+      "MSG3 Size": null,
+      "MSG3": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 180,
+    "samplesParsedSuccessfully": 180,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB889__NR5G_MAC_RACH_Trigger.json"
+  }
+}

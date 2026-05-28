@@ -1,0 +1,18 @@
+{
+  "id": "efs2hellorequest",
+  "name": "EFS2/Hello Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-hello-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Hello Request",
+      "name": "EFS2/Hello Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Hello_Request.json",
+      "paths": [
+        "EFS2/Hello Request",
+        "EFS2/Hello Request -> Subsystem Dispatch Request Message -> EFS2/Hello Request"
+      ]
+    }
+  ]
+}

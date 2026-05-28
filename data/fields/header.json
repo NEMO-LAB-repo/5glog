@@ -1,0 +1,3325 @@
+{
+  "id": "header",
+  "name": "Header",
+  "records": [
+    {
+      "id": "0x12c1-cm-call-event",
+      "logcode": "0x12C1",
+      "title": "0x12C1 CM Call Event",
+      "name": "CM Call Event",
+      "category": "Other",
+      "dataFile": "0x12C1__CM_Call_Event.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE",
+      "name": "D [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-message-202-accepted",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE : 202 Accepted",
+      "name": "D [IMS] IMS_SIP_MESSAGE : 202 Accepted",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE_202_Accepted.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-notify",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_NOTIFY",
+      "name": "D [IMS] IMS_SIP_NOTIFY",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_NOTIFY.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-register-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_REGISTER : 200 OK",
+      "name": "D [IMS] IMS_SIP_REGISTER : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_REGISTER_200_OK.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_200_OK.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-481-call-transaction-does-not-exist",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_481_Call_Transaction_Does_Not_Exist.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE",
+      "name": "U [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "name": "U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-notify-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "name": "U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_NOTIFY_200_OK.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x17f7-wwcoex-power-info",
+      "logcode": "0x17F7",
+      "title": "0x17F7 WWCoex Power Info",
+      "name": "WWCoex Power Info",
+      "category": "Other",
+      "dataFile": "0x17F7__WWCoex_Power_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1832-ims-registration",
+      "logcode": "0x1832",
+      "title": "0x1832 IMS Registration",
+      "name": "IMS Registration",
+      "category": "IMS",
+      "dataFile": "0x1832__IMS_Registration.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x184e-cm-serving-system-msim-event",
+      "logcode": "0x184E",
+      "title": "0x184E CM Serving System MSIM Event",
+      "name": "CM Serving System MSIM Event",
+      "category": "Other",
+      "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-call-manager-state-info-of-current-subscription-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Of Current Subscription Request",
+      "name": "Call Manager/State Info Of Current Subscription Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Of_Current_Subscription_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-call-manager-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Call Manager/State Info Request",
+      "name": "Call Manager/State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Call_Manager_State_Info_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-diag-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DIAG Version Request",
+      "name": "DIAG Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DIAG_Version_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-diagnostic-services-key-retrieval-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Diagnostic Services/Key Retrieval Request",
+      "name": "Diagnostic Services/Key Retrieval Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Diagnostic_Services_Key_Retrieval_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-dmss-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DMSS Status Request",
+      "name": "DMSS Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DMSS_Status_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-close-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Close Request",
+      "name": "EFS2/DIAG Close Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Close_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-get-item-file-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Get Item File Request",
+      "name": "EFS2/DIAG Get Item File Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Get_Item_File_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-open-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Open Request",
+      "name": "EFS2/DIAG Open Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Open_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-diag-read-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Read Request",
+      "name": "EFS2/DIAG Read Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Read_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-hello-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Hello Request",
+      "name": "EFS2/Hello Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Hello_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-efs2-query-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/Query Request",
+      "name": "EFS2/Query Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_Query_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-event-report-control-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Event Report Control Request",
+      "name": "Event Report Control Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Event_Report_Control_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-extended-build-id-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Build ID Request",
+      "name": "Extended Build ID Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Build_ID_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-extended-message-report-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Message Report Config Request",
+      "name": "Extended Message Report Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Message_Report_Config_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-get-event-mask-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Get Event Mask Request",
+      "name": "Get Event Mask Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Get_Event_Mask_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-gsm-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA GSM/Status Request",
+      "name": "GSM/Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__GSM_Status_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-gsm-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA GSM/Version Request",
+      "name": "GSM/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__GSM_Version_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-logging-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Logging Config Request",
+      "name": "Logging Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Logging_Config_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-multisim-state-info-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA MultiSim State Info Request",
+      "name": "MultiSim State Info Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__MultiSim_State_Info_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-nv-diag-nv-read-extension-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA NV/Diag NV Read Extension Request",
+      "name": "NV/Diag NV Read Extension Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-set-event-mask-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Set Event Mask Request",
+      "name": "Set Event Mask Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Set_Event_Mask_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-status-snapshot-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Status Snapshot Request",
+      "name": "Status Snapshot Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Status_Snapshot_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-timestamp-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Timestamp Request",
+      "name": "Timestamp Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Timestamp_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-umts-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA UMTS/Version Request",
+      "name": "UMTS/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__UMTS_Version_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-version-number-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Version Number Request",
+      "name": "Version Number Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Version_Number_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-wcdma-additional-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Additional Status Request",
+      "name": "WCDMA/Additional Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Additional_Status_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1fea-wcdma-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA WCDMA/Version Request",
+      "name": "WCDMA/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__WCDMA_Version_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-of-current-subscription-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Of Current Subscription Response",
+      "name": "Call Manager/State Info Of Current Subscription Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Of_Current_Subscription_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-diag-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DIAG Version Response",
+      "name": "DIAG Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DIAG_Version_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-dmss-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DMSS Status Response",
+      "name": "DMSS Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DMSS_Status_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-close-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Close Response",
+      "name": "EFS2/DIAG Close Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Close_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-get-item-file-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Get Item File Response",
+      "name": "EFS2/DIAG Get Item File Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-open-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Open Response",
+      "name": "EFS2/DIAG Open Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Open_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-diag-read-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Read Response",
+      "name": "EFS2/DIAG Read Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Read_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-hello-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Hello Response",
+      "name": "EFS2/Hello Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Hello_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-efs2-query-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/Query Response",
+      "name": "EFS2/Query Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_Query_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-event-report-control-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Event Report Control Response",
+      "name": "Event Report Control Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Event_Report_Control_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-extended-build-id-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Extended Build ID Response",
+      "name": "Extended Build ID Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Extended_Build_ID_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Version Response",
+      "name": "GSM/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Version_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-logging-config",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Logging Config",
+      "name": "Logging Config",
+      "category": "Other",
+      "dataFile": "0x1FF0__Logging_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-multisim-state-info-responese",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 MultiSim State Info Responese",
+      "name": "MultiSim State Info Responese",
+      "category": "Other",
+      "dataFile": "0x1FF0__MultiSim_State_Info_Responese.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-set-event-mask-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Set Event Mask Response",
+      "name": "Set Event Mask Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Set_Event_Mask_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-timestamp-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Timestamp Response",
+      "name": "Timestamp Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Timestamp_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-umts-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 UMTS/Version Response",
+      "name": "UMTS/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__UMTS_Version_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-version-number-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Version Number Response",
+      "name": "Version Number Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Version_Number_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-additional-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Additional Status Response",
+      "name": "WCDMA/Additional Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Additional_Status_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Version Response",
+      "name": "WCDMA/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Version_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-datamodem-ipa-drop-pkt-ul",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "name": "EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DATAMODEM_IPA_DROP_PKT_UL.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-diag-process-name-id",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DIAG_PROCESS_NAME_ID",
+      "name": "EVENT_DIAG_PROCESS_NAME_ID",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DIAG_PROCESS_NAME_ID.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-diag-qshrink-id",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DIAG_QSHRINK_ID",
+      "name": "EVENT_DIAG_QSHRINK_ID",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DIAG_QSHRINK_ID.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ds-3gpp-wm-mgr",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DS_3GPP_WM_MGR",
+      "name": "EVENT_DS_3GPP_WM_MGR",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DS_3GPP_WM_MGR.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ds-dormancy-status-rm-queue-stats",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "name": "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-gmm-state",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_GMM_STATE",
+      "name": "EVENT_GMM_STATE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_GMM_STATE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-register-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REGISTER_END",
+      "name": "EVENT_IMS_SIP_REGISTER_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTER_END.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-registration-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REGISTRATION_START",
+      "name": "EVENT_IMS_SIP_REGISTRATION_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTRATION_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-request-recv",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_RECV",
+      "name": "EVENT_IMS_SIP_REQUEST_RECV",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_RECV.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-request-send",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_SEND",
+      "name": "EVENT_IMS_SIP_REQUEST_SEND",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_SEND.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-response-send",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_RESPONSE_SEND",
+      "name": "EVENT_IMS_SIP_RESPONSE_SEND",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_RESPONSE_SEND.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-expiry",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_EXPIRY",
+      "name": "EVENT_LTE_EMM_TIMER_EXPIRY",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_EXPIRY.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_START",
+      "name": "EVENT_LTE_EMM_TIMER_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_STOP",
+      "name": "EVENT_LTE_EMM_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_STOP.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-reset-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_RESET_V2",
+      "name": "EVENT_LTE_MAC_RESET_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_RESET_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-timer-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_TIMER_V2",
+      "name": "EVENT_LTE_MAC_TIMER_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_TIMER_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-ml1-l2nr-misaligned-gap",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "name": "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_ML1_L2NR_MISALIGNED_GAP.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-result-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_RESULT_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-start-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-raid-match-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_RAID_MATCH_V2",
+      "name": "EVENT_LTE_RACH_RAID_MATCH_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_RAID_MATCH_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-camped-cell-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "name": "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_CAMPED_CELL_STATUS.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-new-cell-ind-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-paging",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+      "name": "EVENT_LTE_RRC_PAGING",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-paging-drx-cycle",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "name": "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING_DRX_CYCLE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-security-config",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_SECURITY_CONFIG",
+      "name": "EVENT_LTE_RRC_SECURITY_CONFIG",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_SECURITY_CONFIG.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change-trigger",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE_TRIGGER.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-timer-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_TIMER_STATUS",
+      "name": "EVENT_LTE_RRC_TIMER_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_TIMER_STATUS.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-scell-configuration",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_SCELL_CONFIGURATION",
+      "name": "EVENT_LTE_SCELL_CONFIGURATION",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-timing-advance-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_TIMING_ADVANCE_V2",
+      "name": "EVENT_LTE_TIMING_ADVANCE_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_TIMING_ADVANCE_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_START",
+      "name": "EVENT_NAS_MM5G_TIMER_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_STOP",
+      "name": "EVENT_NAS_MM5G_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_STOP.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-tau",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_TAU",
+      "name": "EVENT_NAS_TAU",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-cell-resel-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "name": "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_CELL_RESEL_SUCCESS.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-started-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_STARTED_V2",
+      "name": "EVENT_NR5G_RRC_HO_STARTED_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_STARTED_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_SUCCESS",
+      "name": "EVENT_NR5G_RRC_HO_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_SUCCESS.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-mcg-failure",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_MCG_FAILURE",
+      "name": "EVENT_NR5G_RRC_MCG_FAILURE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_MCG_FAILURE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-new-cell-ind-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "name": "EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_NEW_CELL_IND_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-meas-report-v4",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "name": "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_V2",
+      "name": "EVENT_NR5G_RRC_UL_MSG_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_V2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-qc-gps-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_GPS_EVENT",
+      "name": "EVENT_QC_GPS_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_GPS_EVENT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-qc-reserved",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_RESERVED",
+      "name": "EVENT_QC_RESERVED",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_RESERVED.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-rat-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_RAT_CHANGE",
+      "name": "EVENT_RAT_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_RAT_CHANGE.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-end-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_END_EVENT",
+      "name": "EVENT_SIP_REG_END_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_END_EVENT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-req-sent-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_REQ_SENT_EVENT",
+      "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_REQ_SENT_EVENT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-tcp-qc",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_TCP_QC",
+      "name": "EVENT_TCP_QC",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_TCP_QC.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0x7130-umts-nas-gmm-state",
+      "logcode": "0x7130",
+      "title": "0x7130 UMTS NAS GMM State",
+      "name": "UMTS NAS GMM State",
+      "category": "NAS",
+      "dataFile": "0x7130__UMTS_NAS_GMM_State.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb061-lte-mac-rach-trigger",
+      "logcode": "0xB061",
+      "title": "0xB061 LTE MAC RACH Trigger",
+      "name": "LTE MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB061__LTE_MAC_RACH_Trigger.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "Header",
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Header"
+      ]
+    },
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "Header",
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> Header"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "Header",
+        "LTE MAC UL Tx Statistics -> Sub Packets -> [] -> Header"
+      ]
+    },
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb082-lte-rlc-dl-am-all-pdu",
+      "logcode": "0xB082",
+      "title": "0xB082 LTE RLC DL AM All PDU",
+      "name": "LTE RLC DL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB082__LTE_RLC_DL_AM_All_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb087-lte-rlc-dl-statistics",
+      "logcode": "0xB087",
+      "title": "0xB087 LTE RLC DL Statistics",
+      "name": "LTE RLC DL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB087__LTE_RLC_DL_Statistics.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb097-lte-rlc-ul-statistics",
+      "logcode": "0xB097",
+      "title": "0xB097 LTE RLC UL Statistics",
+      "name": "LTE RLC UL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0b6-lte-pdcp-ul-delay-statistics",
+      "logcode": "0xB0B6",
+      "title": "0xB0B6 LTE PDCP UL Delay Statistics",
+      "name": "LTE PDCP UL Delay Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B6__LTE_PDCP_UL_Delay_Statistics.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-emm-information",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//EMM Information",
+      "name": "D [LTE] DL Information Transfer//EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_EMM_Information.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-identity-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Identity Request",
+      "name": "D [LTE] DL Information Transfer//Identity Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-release-other",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Release : other",
+      "name": "D [LTE] RRC Connection Release : other",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Release_other.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-setup",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Setup",
+      "name": "D [LTE] RRC Connection Setup",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-security-mode-command",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Security Mode Command",
+      "name": "D [LTE] Security Mode Command",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Security_Mode_Command.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2",
+      "name": "D [LTE] System Information : sib2",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib24-v1530",
+      "name": "D [LTE] System Information : sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4",
+      "name": "D [LTE] System Information : sib4",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4,sib5",
+      "name": "D [LTE] System Information : sib4,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4_sib5.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib8-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib8_sib24-v1530.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib8",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib8",
+      "name": "D [LTE] System Information : sib8",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib8.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-utra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_utra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : nr",
+      "name": "D [LTE] UE Capability Enquiry : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-information-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Information Request",
+      "name": "D [LTE] UE Information Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Information_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-measurement-report",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Measurement Report",
+      "name": "U [LTE] Measurement Report",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Measurement_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reconfiguration-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reconfiguration Complete",
+      "name": "U [LTE] RRC Connection Reconfiguration Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reconfiguration_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Complete",
+      "name": "U [LTE] RRC Connection Reestablishment Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-request-otherfailure",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "name": "U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Request_otherFailure.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-data",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Data",
+      "name": "U [LTE] RRC Connection Request : mo-Data",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Data.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-service-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Service Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Service Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Service_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-security-mode-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Security Mode Complete",
+      "name": "U [LTE] Security Mode Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Security_Mode_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : nr",
+      "name": "U [LTE] UE Capability Information : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-information-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Information Response",
+      "name": "U [LTE] UE Information Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Information_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-identity-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Identity Response",
+      "name": "U [LTE] UL Information Transfer//Identity Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Identity_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c1-d-lte-mib",
+      "logcode": "0xB0C1",
+      "title": "0xB0C1 D [LTE] MIB",
+      "name": "D [LTE] MIB",
+      "category": "LTE",
+      "dataFile": "0xB0C1__D_LTE_MIB.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0c2-lte-rrc-serving-cell-info",
+      "logcode": "0xB0C2",
+      "title": "0xB0C2 LTE RRC Serving Cell Info",
+      "name": "LTE RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB0C2__LTE_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0cd-lte-rrc-supported-ca-combos",
+      "logcode": "0xB0CD",
+      "title": "0xB0CD LTE RRC Supported CA Combos",
+      "name": "LTE RRC Supported CA Combos",
+      "category": "RRC",
+      "dataFile": "0xB0CD__LTE_RRC_Supported_CA_Combos.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0e5-lte-nas-esm-bearer-context-info",
+      "logcode": "0xB0E5",
+      "title": "0xB0E5 LTE NAS ESM Bearer Context Info",
+      "name": "LTE NAS ESM Bearer Context Info",
+      "category": "NAS",
+      "dataFile": "0xB0E5__LTE_NAS_ESM_Bearer_Context_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ea-lte-nas-emm-security-protected-incoming-msg",
+      "logcode": "0xB0EA",
+      "title": "0xB0EA LTE NAS EMM Security Protected Incoming Msg",
+      "name": "LTE NAS EMM Security Protected Incoming Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EA__LTE_NAS_EMM_Security_Protected_Incoming_Msg.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0eb-lte-nas-emm-security-protected-outgoing-msg",
+      "logcode": "0xB0EB",
+      "title": "0xB0EB LTE NAS EMM Security Protected Outgoing Msg",
+      "name": "LTE NAS EMM Security Protected Outgoing Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-emm-information",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] EMM Information",
+      "name": "D [EMM] EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_EMM_Information.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-identity-request",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Identity Request",
+      "name": "D [EMM] Identity Request",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Identity_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-identity-response",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Identity Response",
+      "name": "U [EMM] Identity Response",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Identity_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-service-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Service Request",
+      "name": "U [EMM] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Service_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-complete",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Complete",
+      "name": "U [EMM] Tracking Area Update Complete",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb0ee-lte-nas-emm-state",
+      "logcode": "0xB0EE",
+      "title": "0xB0EE LTE NAS EMM State",
+      "name": "LTE NAS EMM State",
+      "category": "NAS",
+      "dataFile": "0xB0EE__LTE_NAS_EMM_State.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb116-lte-ll1-serving-cell-measurement-results",
+      "logcode": "0xB116",
+      "title": "0xB116 LTE LL1 Serving Cell Measurement Results",
+      "name": "LTE LL1 Serving Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb12a-lte-ll1-pcfich-decoding-results",
+      "logcode": "0xB12A",
+      "title": "0xB12A LTE LL1 PCFICH Decoding Results",
+      "name": "LTE LL1 PCFICH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb139-lte-ll1-pusch-tx-report",
+      "logcode": "0xB139",
+      "title": "0xB139 LTE LL1 PUSCH Tx Report",
+      "name": "LTE LL1 PUSCH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb144-lte-ll1-rach-tx-report",
+      "logcode": "0xB144",
+      "title": "0xB144 LTE LL1 RACH Tx Report",
+      "name": "LTE LL1 RACH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB144__LTE_LL1_RACH_Tx_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb14d-lte-ll1-pucch-csf-log",
+      "logcode": "0xB14D",
+      "title": "0xB14D LTE LL1 PUCCH CSF Log",
+      "name": "LTE LL1 PUCCH CSF Log",
+      "category": "ML1",
+      "dataFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb14e-lte-ll1-pusch-csf",
+      "logcode": "0xB14E",
+      "title": "0xB14E LTE LL1 PUSCH CSF",
+      "name": "LTE LL1 PUSCH CSF",
+      "category": "ML1",
+      "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb160-lte-downlink-common-configuration",
+      "logcode": "0xB160",
+      "title": "0xB160 LTE Downlink Common Configuration",
+      "name": "LTE Downlink Common Configuration",
+      "category": "LTE",
+      "dataFile": "0xB160__LTE_Downlink_Common_Configuration.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb168-lte-ml1-random-access-response-msg2-report",
+      "logcode": "0xB168",
+      "title": "0xB168 LTE ML1 Random Access Response (MSG2) Report",
+      "name": "LTE ML1 Random Access Response (MSG2) Report",
+      "category": "ML1",
+      "dataFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb169-lte-ue-identification-message-msg3-report",
+      "logcode": "0xB169",
+      "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+      "name": "LTE UE Identification Message (MSG3) Report",
+      "category": "LTE",
+      "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb16a-lte-contention-resolution-message-msg4-report",
+      "logcode": "0xB16A",
+      "title": "0xB16A LTE Contention Resolution Message (MSG4) Report",
+      "name": "LTE Contention Resolution Message (MSG4) Report",
+      "category": "LTE",
+      "dataFile": "0xB16A__LTE_Contention_Resolution_Message_MSG4_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb173-lte-ml1-pdsch-stat-indication",
+      "logcode": "0xB173",
+      "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+      "name": "LTE ML1 PDSCH Stat Indication",
+      "category": "ML1",
+      "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb181-lte-ml1-intra-frequency-cell-reselection",
+      "logcode": "0xB181",
+      "title": "0xB181 LTE ML1 Intra Frequency Cell Reselection",
+      "name": "LTE ML1 Intra Frequency Cell Reselection",
+      "category": "ML1",
+      "dataFile": "0xB181__LTE_ML1_Intra_Frequency_Cell_Reselection.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb193-lte-ml1-serving-cell-meas-response",
+      "logcode": "0xB193",
+      "title": "0xB193 LTE ML1 Serving Cell Meas Response",
+      "name": "LTE ML1 Serving Cell Meas Response",
+      "category": "ML1",
+      "dataFile": "0xB193__LTE_ML1_Serving_Cell_Meas_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb196-lte-ml1-cell-measurement-results",
+      "logcode": "0xB196",
+      "title": "0xB196 LTE ML1 Cell Measurement Results",
+      "name": "LTE ML1 Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb19e-lte-ml1-inter-frequency-log",
+      "logcode": "0xB19E",
+      "title": "0xB19E LTE ML1 Inter Frequency Log",
+      "name": "LTE ML1 Inter Frequency Log",
+      "category": "ML1",
+      "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb1b2-lte-ml1-common-dc-offset",
+      "logcode": "0xB1B2",
+      "title": "0xB1B2 LTE ML1 Common DC Offset",
+      "name": "LTE ML1 Common DC Offset",
+      "category": "ML1",
+      "dataFile": "0xB1B2__LTE_ML1_Common_DC_Offset.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb1f5-lte-ml1-irat-nr-meas-results",
+      "logcode": "0xB1F5",
+      "title": "0xB1F5 LTE ML1 IRAT NR Meas Results",
+      "name": "LTE ML1 IRAT NR Meas Results",
+      "category": "ML1",
+      "dataFile": "0xB1F5__LTE_ML1_IRAT_NR_Meas_Results.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-authentication-request",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Authentication Request",
+      "name": "D [MM5G] Authentication Request",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Authentication_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-security-mode-command",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Security Mode Command",
+      "name": "D [MM5G] Security Mode Command",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-service-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Service Accept",
+      "name": "D [MM5G] Service Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Service_Accept.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-authentication-response",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Authentication Response",
+      "name": "U [MM5G] Authentication Response",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Authentication_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-complete",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Complete",
+      "name": "U [MM5G] Registration Complete",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Complete.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Registration Request",
+      "name": "U [MM5G] Registration Request//Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Registration_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request",
+      "name": "U [MM5G] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-service-request-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request//Service Request",
+      "name": "U [MM5G] Service Request//Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request_Service_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb80c-nr5g-nas-mm5g-state",
+      "logcode": "0xB80C",
+      "title": "0xB80C NR5G NAS MM5G State",
+      "name": "NR5G NAS MM5G State",
+      "category": "NAS",
+      "dataFile": "0xB80C__NR5G_NAS_MM5G_State.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb814-nr5g-nas-plain-message-container",
+      "logcode": "0xB814",
+      "title": "0xB814 NR5G NAS Plain Message Container",
+      "name": "NR5G NAS Plain Message Container",
+      "category": "NAS",
+      "dataFile": "0xB814__NR5G_NAS_Plain_Message_Container.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb815-nr5g-nas-mm5g-nssai-info",
+      "logcode": "0xB815",
+      "title": "0xB815 NR5G NAS MM5G NSSAI Info",
+      "name": "NR5G NAS MM5G NSSAI Info",
+      "category": "NAS",
+      "dataFile": "0xB815__NR5G_NAS_MM5G_NSSAI_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb822-nr5g-rrc-mib-info",
+      "logcode": "0xB822",
+      "title": "0xB822 NR5G RRC MIB Info",
+      "name": "NR5G RRC MIB Info",
+      "category": "RRC",
+      "dataFile": "0xB822__NR5G_RRC_MIB_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb823-nr5g-rrc-serving-cell-info",
+      "logcode": "0xB823",
+      "title": "0xB823 NR5G RRC Serving Cell Info",
+      "name": "NR5G RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB823__NR5G_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb825-nr5g-rrc-configuration-info",
+      "logcode": "0xB825",
+      "title": "0xB825 NR5G RRC Configuration Info",
+      "name": "NR5G RRC Configuration Info",
+      "category": "RRC",
+      "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb826-nr5g-rrc-supported-ca-combos",
+      "logcode": "0xB826",
+      "title": "0xB826 NR5G RRC Supported CA Combos",
+      "name": "NR5G RRC Supported CA Combos",
+      "category": "RRC",
+      "dataFile": "0xB826__NR5G_RRC_Supported_CA_Combos.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+      "logcode": "0xB840",
+      "title": "0xB840 NR5G PDCP DL Data Pdu",
+      "name": "NR5G PDCP DL Data Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+      "logcode": "0xB841",
+      "title": "0xB841 NR5G PDCP DL Control Pdu",
+      "name": "NR5G PDCP DL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+      "logcode": "0xB84E",
+      "title": "0xB84E NR5G RLC DL Status PDU",
+      "name": "NR5G RLC DL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb868-nr5g-rlc-ul-stats",
+      "logcode": "0xB868",
+      "title": "0xB868 NR5G RLC UL Stats",
+      "name": "NR5G RLC UL Stats",
+      "category": "RLC",
+      "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb872-nr5g-l2-ul-tb",
+      "logcode": "0xB872",
+      "title": "0xB872 NR5G L2 UL TB",
+      "name": "NR5G L2 UL TB",
+      "category": "L2",
+      "dataFile": "0xB872__NR5G_L2_UL_TB.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb873-nr5g-l2-ul-bsr",
+      "logcode": "0xB873",
+      "title": "0xB873 NR5G L2 UL BSR",
+      "name": "NR5G L2 UL BSR",
+      "category": "L2",
+      "dataFile": "0xB873__NR5G_L2_UL_BSR.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb886-nr5g-mac-dl-tb-report",
+      "logcode": "0xB886",
+      "title": "0xB886 NR5G MAC DL TB Report",
+      "name": "NR5G MAC DL TB Report",
+      "category": "MAC",
+      "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb888-nr5g-mac-pdsch-stats",
+      "logcode": "0xB888",
+      "title": "0xB888 NR5G MAC PDSCH Stats",
+      "name": "NR5G MAC PDSCH Stats",
+      "category": "MAC",
+      "dataFile": "0xB888__NR5G_MAC_PDSCH_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb889-nr5g-mac-rach-trigger",
+      "logcode": "0xB889",
+      "title": "0xB889 NR5G MAC RACH Trigger",
+      "name": "NR5G MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB889__NR5G_MAC_RACH_Trigger.json",
+      "paths": [
+        "Header",
+        "NR5G MAC RACH Trigger -> Header"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "Header",
+        "NR5G MAC RACH Attempt -> Header"
+      ]
+    },
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb89c-nr5g-mac-flow-control",
+      "logcode": "0xB89C",
+      "title": "0xB89C NR5G MAC Flow Control",
+      "name": "NR5G MAC Flow Control",
+      "category": "MAC",
+      "dataFile": "0xB89C__NR5G_MAC_Flow_Control.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "Header",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Per Symbol -> Versions -> SubVer6 -> Header"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb959-nr5g-ml1-rlm-stats",
+      "logcode": "0xB959",
+      "title": "0xB959 NR5G ML1 RLM Stats",
+      "name": "NR5G ML1 RLM Stats",
+      "category": "ML1",
+      "dataFile": "0xB959__NR5G_ML1_RLM_Stats.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "Header",
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Header"
+      ]
+    },
+    {
+      "id": "0xb96d-nr5g-ml1-searcher-acq-config-and-response",
+      "logcode": "0xB96D",
+      "title": "0xB96D NR5G ML1 Searcher ACQ Config And Response",
+      "name": "NR5G ML1 Searcher ACQ Config And Response",
+      "category": "ML1",
+      "dataFile": "0xB96D__NR5G_ML1_Searcher_ACQ_Config_And_Response.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb98f-nr5g-ml1-antenna-switch-diversity",
+      "logcode": "0xB98F",
+      "title": "0xB98F NR5G ML1 Antenna Switch Diversity",
+      "name": "NR5G ML1 Antenna Switch Diversity",
+      "category": "ML1",
+      "dataFile": "0xB98F__NR5G_ML1_Antenna_Switch_Diversity.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb992-nr5g-ml1-afc-services",
+      "logcode": "0xB992",
+      "title": "0xB992 NR5G ML1 AFC Services",
+      "name": "NR5G ML1 AFC Services",
+      "category": "ML1",
+      "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+      "paths": [
+        "Header",
+        "NR5G ML1 AFC Services -> Versions -> Version -> Header"
+      ]
+    },
+    {
+      "id": "0xb9a7-nr5g-ml1-dlm2-ca-metrics-request",
+      "logcode": "0xB9A7",
+      "title": "0xB9A7 NR5G ML1 DLM2 CA Metrics Request",
+      "name": "NR5G ML1 DLM2 CA Metrics Request",
+      "category": "ML1",
+      "dataFile": "0xB9A7__NR5G_ML1_DLM2_CA_Metrics_Request.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb9be-nr5g-ml1-search-ho-acq-req",
+      "logcode": "0xB9BE",
+      "title": "0xB9BE NR5G ML1 Search HO Acq Req",
+      "name": "NR5G ML1 Search HO Acq Req",
+      "category": "ML1",
+      "dataFile": "0xB9BE__NR5G_ML1_Search_HO_Acq_Req.json",
+      "paths": [
+        "Header"
+      ]
+    },
+    {
+      "id": "0xb9bf-nr5g-ml1-search-ho-acq-confirm",
+      "logcode": "0xB9BF",
+      "title": "0xB9BF NR5G ML1 Search HO Acq Confirm",
+      "name": "NR5G ML1 Search HO Acq Confirm",
+      "category": "ML1",
+      "dataFile": "0xB9BF__NR5G_ML1_Search_HO_Acq_Confirm.json",
+      "paths": [
+        "Header"
+      ]
+    }
+  ]
+}

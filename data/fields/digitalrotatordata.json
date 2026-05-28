@@ -1,0 +1,17 @@
+{
+  "id": "digitalrotatordata",
+  "name": "Digital Rotator Data",
+  "records": [
+    {
+      "id": "0xb116-lte-ll1-serving-cell-measurement-results",
+      "logcode": "0xB116",
+      "title": "0xB116 LTE LL1 Serving Cell Measurement Results",
+      "name": "LTE LL1 Serving Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE LL1 Serving Cell Measurement Results -> Digital Rotator Data"
+      ]
+    }
+  ]
+}

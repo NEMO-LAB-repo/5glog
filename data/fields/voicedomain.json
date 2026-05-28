@@ -1,0 +1,17 @@
+{
+  "id": "voicedomain",
+  "name": "voice_domain",
+  "records": [
+    {
+      "id": "0x184e-cm-serving-system-msim-event",
+      "logcode": "0x184E",
+      "title": "0x184E CM Serving System MSIM Event",
+      "name": "CM Serving System MSIM Event",
+      "category": "Other",
+      "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+      "paths": [
+        "CM Serving System MSIM Event -> voice_domain"
+      ]
+    }
+  ]
+}

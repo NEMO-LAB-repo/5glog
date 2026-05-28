@@ -1,0 +1,394 @@
+{
+  "id": "0xb952-nr5g-ml1-dl-handover",
+  "logcode": "0xB952",
+  "name": "NR5G ML1 DL Handover",
+  "title": "0xB952 NR5G ML1 DL Handover",
+  "category": "ML1",
+  "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 DL Handover": {
+      "Current SFN time": {
+        "Slot": null,
+        "Sub FN": null,
+        "Sys FN": null,
+        "SCS": null
+      },
+      "OTA Cfg Param": {
+        "Logging time Sub FN": null,
+        "Logging time Sys FN": null,
+        "Num cg add mod": null,
+        "CG Add Mod": {
+          "Log mask": null,
+          "Common Cg Config": {
+            "Cell group Id": null,
+            "Crnti CFG": null,
+            "Target Dl Cell Frequency": null,
+            "Target Phy Cell Id": null,
+            "CFG Mask": null,
+            "CC Id Del Bmask": null,
+            "CC Id addmod bmask": null,
+            "RLM in sync out of sync threshold": null,
+            "Mac main CFG": {
+              "Is Cdrx Config Present": null,
+              "Cdrx Config": {
+                "Enable": null,
+                "Harq Rtt Timer DL": null,
+                "Harq Rtt Timer UL": null,
+                "DRX Slot Offset": null,
+                "Short Cycle Enable": null,
+                "retransmission Timer DL": null,
+                "retransmission Timer UL": null,
+                "On Duration Timer": {
+                  "Type": null,
+                  "MS": null
+                },
+                "Inactivity Timer ms": null,
+                "Long Cycle Param": {
+                  "Long Cycle Duration ms": null,
+                  "Offset": null
+                },
+                "Short Cycle Param": {
+                  "Short Cycle Duration ms": null,
+                  "Short Cycle Timer": null
+                }
+              }
+            }
+          },
+          "Per CC Config": {
+            "Cell Info": {
+              "Band": null,
+              "Phy Cell Id": null,
+              "SSB Sub Carrier Spacing": null,
+              "DL Cell frequency": null
+            },
+            "Duplex Mode": null,
+            "SCC Id": null,
+            "serv_cell_idx": null,
+            "num_coreset_add_mod": null,
+            "num_search_space_add_mod": null,
+            "num_dl_bwp_id_addmod": null,
+            "num_ul_bwp_id_addmod": null,
+            "dl_bwp_id_rel_bmask": null,
+            "dl_bwp_id_addmod_bmask": null,
+            "ul_bwp_id_rel_bmask": null,
+            "ul_bwp_id_addmod_bmask": null,
+            "cfg_mask": null,
+            "CC Common CFG": {
+              "dmrs_type_a_pos": null,
+              "SS PBCH BLK PWR": null,
+              "SSB Period": null,
+              "Rate Match Pattern Id Rel Bmask": null,
+              "Rate Match Pattern Add Mod Mask": null,
+              "CFG Mask": null,
+              "Sub Carr Spacing": null,
+              "SSB POS In Burst Bmask": null,
+              "Lte Crs To Match Around": {
+                "Enable": null,
+                "DL Freq": null,
+                "DL Bandwidth": null,
+                "Num Crs Ports": null,
+                "V Shift": null,
+                "CFG Mask": null,
+                "Num Mbsfn Subframe Config": null
+              },
+              "TDD UL DL CFG": {
+                "Enable": null,
+                "Ref Scs": null,
+                "Pattern2 Enable": null,
+                "Pattern 1": {
+                  "DL Ul trans Period": null,
+                  "Num DL Sym": null,
+                  "Num Ul Sym": null,
+                  "Num DL Slots": null,
+                  "Num Ul Slots": null
+                },
+                "Pattern 2": {
+                  "DL Ul trans Period": null,
+                  "Num DL Sym": null,
+                  "Num Ul Sym": null,
+                  "Num DL Slots": null,
+                  "Num Ul Slots": null
+                }
+              }
+            },
+            "CC Dedicated CFG": {
+              "Tag Id": null,
+              "BWP Inact Timer": null,
+              "First Active DL bwp Id": null,
+              "Default Dl Bwp Id": null,
+              "First Active Ul Bwp": null,
+              "UE Beam lock Fn": null,
+              "Serving Cell mo id": null,
+              "CFG Mask": null,
+              "Scell Deact Timer": null,
+              "Path loss Reference linking": null,
+              "Antenna Info DL": {
+                "Max Mimo Lyr Cfged": null,
+                "Max Num Mimo Lyr": null,
+                "Max Num rx": null
+              },
+              "Pdsch Serv Cell Cfg": {
+                "Enable": null,
+                "XoverHead": null,
+                "Num Harq Processes": null,
+                "Cfg Mask": null,
+                "Pucch Cell": null,
+                "cbg_cfg": {
+                  "Enable": null,
+                  "Max Cbg Per Tb": null,
+                  "Cbg Flush Ind": null
+                }
+              },
+              "Cross Car Scheduling Cfg": {
+                "Scheduling Cell Info": {
+                  "Cross Carrier Scheduling Type": null,
+                  "cross_carr_scheduling_params -> Own": {
+                    "CIF Presence": null
+                  }
+                }
+              },
+              "Lte Crs to Match Around": {
+                "Enable": null,
+                "DL Freq": null,
+                "DL Bandwidth": null,
+                "Num Crs Ports": null,
+                "V Shift": null,
+                "CFG Mask": null,
+                "Num Mbsfn Subframe Config": null
+              }
+            },
+            "DL Frequency Info": {
+              "Abs Freq SSB": null,
+              "Abs Freq Point A": null,
+              "Num Scs Carriers": null,
+              "Multi frequency Band List": {
+                "Num Bands": null,
+                "Frequency Band Indicator": {
+                  "[]": null
+                }
+              },
+              "Scs Spec Carrier List": {
+                "[]": {
+                  "Offset To Carrier": null,
+                  "Carrier BW Prb": null,
+                  "SCS": null,
+                  "Carrier BW": null
+                }
+              }
+            },
+            "UL Frequency Info": {
+              "Abs Freq Point A": null,
+              "P Max": null,
+              "Add Spectrum emission Present": null,
+              "Add Spectrum Emission": null,
+              "Freq Shift 7p5_khz": null,
+              "Num SCS Carriers": null,
+              "Multi Frequency band List": {
+                "Num Bands": null,
+                "Frequency Band Indicator": {
+                  "[]": null
+                }
+              },
+              "Scs Spec Carrier List": {
+                "[]": {
+                  "Offset To Carrier": null,
+                  "Carrier BW Prb": null,
+                  "SCS": null,
+                  "Carrier BW": null
+                }
+              }
+            },
+            "DL BWP Params": {
+              "[]": {
+                "BWP Generic Params": {
+                  "BWP Id": null,
+                  "Loc And BW": null,
+                  "Sub Carrier Spacing": null,
+                  "Cyclic Prefix": null
+                },
+                "CFG mask": null,
+                "DL BWP Common": {
+                  "CFG Mask": null,
+                  "Pdcch Common": {
+                    "Enable": null,
+                    "Coreset Zero Id": null,
+                    "Search Space Zero Id": null,
+                    "Coreset Active bmask": null,
+                    "Coreset Release Bmask": null,
+                    "Search Space Active Bmask": null,
+                    "Search Space Rel Bmask": null,
+                    "Search Space Id RMSI": null,
+                    "Search Space ID OSI": null,
+                    "Search Space ID Paging": null,
+                    "Search Space ID RA": null
+                  },
+                  "Pdsch Common": {
+                    "Enable": null,
+                    "Num Pdsch Alloc List": null,
+                    "Pdsch Time Dom Alloc List": {
+                      "[]": {
+                        "K Present": null,
+                        "Mapping type": null,
+                        "K": null,
+                        "Start Sum and length": null
+                      }
+                    }
+                  }
+                },
+                "DL BWP Dedicated": {
+                  "CFG Mask": null,
+                  "Pdcch CFG DED": {
+                    "Enable": null,
+                    "CFG Mask": null,
+                    "Coreset Rel Bmask": null,
+                    "Coreset Add Mod Bmask": null,
+                    "search_space_rel_bmask": null,
+                    "search_space_add_mod_bmask": null,
+                    "Dl Preemption": {
+                      "Enable": null,
+                      "Time Freq Set": null,
+                      "Int Rnti": null,
+                      "Mon Slot Period Offset": null,
+                      "Num int cfg per cell": null,
+                      "Dci pyload size": null,
+                      "INT CFG Per cell": {
+                        "[]": {
+                          "ServCell Idx": null,
+                          "Pos In DCI": null
+                        }
+                      }
+                    }
+                  },
+                  "Pdsch CFG DED": {
+                    "Enable": null,
+                    "Mcs Table": null,
+                    "Rbg Size": null,
+                    "CFG Mask": null,
+                    "Pdsch Rsc Alloc": null,
+                    "Max Code words Scheduled by DCI": null,
+                    "Vrb to Prb InterLeaver": null,
+                    "Data Scr Id": null,
+                    "Num Pdsch Alloc List": null,
+                    "Num Prb Bundling": {
+                      "Prb Bundling Type": null,
+                      "Static Bundle Size": null,
+                      "Dyncamic Bundle Size Set1": null,
+                      "Dyncamic Bundle Size Set2": null
+                    },
+                    "Pdsch Time Dom alloc list": {
+                      "[]": {
+                        "K Present": null,
+                        "Mapping type": null,
+                        "K": null,
+                        "Start Sum and length": null
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "UL BWP Addmod": {
+              "[]": {
+                "BWP Id": null,
+                "Loc And BW": null,
+                "Sub Carrier Spacing": null,
+                "Cyclic Prefix": null
+              }
+            },
+            "Coreset Add Mod": {
+              "[]": {
+                "Control Resource Set ID": null,
+                "Duration": null,
+                "Freq_Dom_Rsc": null,
+                "TCI_States_Pdcch_To_Add_Bmask": null,
+                "TCI_States_Pdcch_To_Rel_Bmask": null,
+                "TCI_Present_in_DCI": null,
+                "Pdcch Dmrs Scr ID": null,
+                "Precoder Gran": null,
+                "CCE Req Mapping": {
+                  "CCE_Reg_Mapping_type": null,
+                  "Interleaved_CCE_Req_Mapping": {
+                    "Req Bundle Size": null,
+                    "Precoder_Gran": null,
+                    "InterLeaver Rows": null,
+                    "Shift Index": null
+                  }
+                }
+              }
+            },
+            "Search Space Add Mod": {
+              "[]": {
+                "Search Space Id": null,
+                "num_candidates_aggregation_level": {
+                  "Aggregration Level 1": null,
+                  "Aggregration Level 2": null,
+                  "Aggregration Level 4": null,
+                  "Aggregration Level 8": null,
+                  "Aggregration Level 16": null
+                },
+                "CFG Mask": null,
+                "Mon Slot Period": null,
+                "Control Resource Set Id": null,
+                "Mon Slot offeset": null,
+                "Mon sym within slot bmask": null,
+                "Search Space": {
+                  "sspace type": null,
+                  "sspace_info ->": {},
+                  "sspace_info -> common_sspace_0": {
+                    "CFG Mask": null,
+                    "Format_00_and Format_10": {
+                      "Temp1": null
+                    },
+                    "Format_20": {
+                      "Aggregation Level is Valid": null,
+                      "Nr of Candidate SFI": {
+                        "Aggregration Level 1": null,
+                        "Aggregration Level 2": null,
+                        "Aggregration Level 4": null,
+                        "Aggregration Level 8": null,
+                        "Aggregration Level 16": null
+                      }
+                    },
+                    "Format_21": {
+                      "Temp": null
+                    },
+                    "Format_22": {
+                      "Temp": null
+                    },
+                    "Format_23": {
+                      "Mon Period": null,
+                      "Num Pddch Cand": null
+                    }
+                  },
+                  "sspace_info -> UE spec sspace": {
+                    "Format": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 70,
+    "samplesParsedSuccessfully": 70,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB952__NR5G_ML1_DL_Handover.json"
+  }
+}

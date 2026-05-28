@@ -1,0 +1,17 @@
+{
+  "id": "dltedlinformationtransferidentityrequest",
+  "name": "D [LTE] DL Information Transfer//Identity Request",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-identity-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Identity Request",
+      "name": "D [LTE] DL Information Transfer//Identity Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Identity Request"
+      ]
+    }
+  ]
+}

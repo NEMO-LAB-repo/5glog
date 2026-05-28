@@ -1,0 +1,17 @@
+{
+  "id": "ueidentityrandomvalue",
+  "name": "ue-Identity -> randomValue",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Signalling -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> randomValue"
+      ]
+    }
+  ]
+}

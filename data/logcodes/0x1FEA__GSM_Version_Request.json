@@ -1,0 +1,38 @@
+{
+  "id": "0x1fea-gsm-version-request",
+  "logcode": "0x1FEA",
+  "name": "GSM/Version Request",
+  "title": "0x1FEA GSM/Version Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__GSM_Version_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "GSM/Version Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "GSM/Version Request": {}
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__GSM_Version_Request.json"
+  }
+}

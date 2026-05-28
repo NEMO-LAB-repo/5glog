@@ -1,0 +1,28 @@
+{
+  "id": "flushgapcount",
+  "name": "Flush Gap Count",
+  "records": [
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "NR5G MAC UL TB Stats -> Records -> [] -> Flush Gap Count"
+      ]
+    },
+    {
+      "id": "0xb888-nr5g-mac-pdsch-stats",
+      "logcode": "0xB888",
+      "title": "0xB888 NR5G MAC PDSCH Stats",
+      "name": "NR5G MAC PDSCH Stats",
+      "category": "MAC",
+      "dataFile": "0xB888__NR5G_MAC_PDSCH_Stats.json",
+      "paths": [
+        "NR5G MAC PDSCH Stats -> Flush Gap Count"
+      ]
+    }
+  ]
+}

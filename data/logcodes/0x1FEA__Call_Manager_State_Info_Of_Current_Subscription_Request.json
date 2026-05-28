@@ -1,0 +1,38 @@
+{
+  "id": "0x1fea-call-manager-state-info-of-current-subscription-request",
+  "logcode": "0x1FEA",
+  "name": "Call Manager/State Info Of Current Subscription Request",
+  "title": "0x1FEA Call Manager/State Info Of Current Subscription Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Call_Manager_State_Info_Of_Current_Subscription_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Call Manager/State Info Of Current Subscription Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "Call Manager/State Info Of Current Subscription Request": {}
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Call_Manager_State_Info_Of_Current_Subscription_Request.json"
+  }
+}

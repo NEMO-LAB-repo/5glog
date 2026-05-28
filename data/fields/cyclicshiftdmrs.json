@@ -1,0 +1,28 @@
+{
+  "id": "cyclicshiftdmrs",
+  "name": "Cyclic Shift DMRS",
+  "records": [
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> UL Grant Info -> [] -> Cyclic Shift DMRS"
+      ]
+    },
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record -> [] -> PUSCH -> Cyclic Shift DMRS"
+      ]
+    }
+  ]
+}

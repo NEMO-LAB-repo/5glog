@@ -1,0 +1,39 @@
+{
+  "id": "pmaxnrr15",
+  "name": "p-MaxNR-r15",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib24-v1530",
+      "name": "D [LTE] System Information : sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib24-v1530 -> carrierFreqListNR-r15 -> [] -> p-MaxNR-r15"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib24-v1530 -> carrierFreqListNR-r15 -> [] -> p-MaxNR-r15"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib8-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib8_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [3] -> sib24-v1530 -> carrierFreqListNR-r15 -> [] -> p-MaxNR-r15"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "snlength",
+  "name": "SN Length",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> RLC RB Info -> RB Info -> AM -> SN Length"
+      ]
+    },
+    {
+      "id": "0xb083-lte-rlc-dl-am-control-pdu",
+      "logcode": "0xB083",
+      "title": "0xB083 LTE RLC DL AM Control PDU",
+      "name": "LTE RLC DL AM Control PDU",
+      "category": "RLC",
+      "dataFile": "0xB083__LTE_RLC_DL_AM_Control_PDU.json",
+      "paths": [
+        "LTE RLC DL AM Control PDU -> PDUs -> [] -> SN Length"
+      ]
+    },
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> SN Length"
+      ]
+    },
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> DL SRB Integrity Data PDU Subpacket -> Sub Packets -> [] -> sn length"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> LTE -> SN Length",
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> NR5G -> SN length"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpackets -> UL Cipher Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> sn length"
+      ]
+    },
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> UL SRB Integrity Data PDU Subpacket -> PDCPDL CIPHER DATA -> [] -> sn length"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> RLC RB Info -> rb_cfg -> AM -> SN Length"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> SN Length"
+      ]
+    }
+  ]
+}

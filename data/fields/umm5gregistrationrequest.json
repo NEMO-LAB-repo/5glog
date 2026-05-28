@@ -1,0 +1,17 @@
+{
+  "id": "umm5gregistrationrequest",
+  "name": "U [MM5G] Registration Request",
+  "records": [
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request"
+      ]
+    }
+  ]
+}

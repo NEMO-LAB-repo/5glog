@@ -1,0 +1,28 @@
+{
+  "id": "rfparametersv1320",
+  "name": "rf-Parameters-v1320",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> rf-Parameters-v1320"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> rf-Parameters-v1320"
+      ]
+    }
+  ]
+}

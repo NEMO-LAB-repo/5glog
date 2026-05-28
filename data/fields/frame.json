@@ -1,0 +1,145 @@
+{
+  "id": "frame",
+  "name": "Frame",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> TB Info -> [] -> TB Common Info -> Frame"
+      ]
+    },
+    {
+      "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+      "logcode": "0xB840",
+      "title": "0xB840 NR5G PDCP DL Data Pdu",
+      "name": "NR5G PDCP DL Data Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Data Pdu -> Meta Log Buffer -> [] -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+      "logcode": "0xB841",
+      "title": "0xB841 NR5G PDCP DL Control Pdu",
+      "name": "NR5G PDCP DL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Control Pdu -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb84e-nr5g-rlc-dl-status-pdu",
+      "logcode": "0xB84E",
+      "title": "0xB84E NR5G RLC DL Status PDU",
+      "name": "NR5G RLC DL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB84E__NR5G_RLC_DL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC DL Status PDU -> PDUs -> [] -> Sys Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> TB Data Agg -> [] -> TB Common Info -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb886-nr5g-mac-dl-tb-report",
+      "logcode": "0xB886",
+      "title": "0xB886 NR5G MAC DL TB Report",
+      "name": "NR5G MAC DL TB Report",
+      "category": "MAC",
+      "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+      "paths": [
+        "NR5G MAC DL TB Report -> Records -> [] -> fr_sl -> frame"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> RAR Window End -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> RAR Window Start -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg1 -> System Time -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg2 -> System Time -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg3 -> System Time -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> Contention Resolution End -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> Contention Resolution Start -> Frame",
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb896-nr5g-mac-uci-payload-information",
+      "logcode": "0xB896",
+      "title": "0xB896 NR5G MAC UCI Payload Information",
+      "name": "NR5G MAC UCI Payload Information",
+      "category": "MAC",
+      "dataFile": "0xB896__NR5G_MAC_UCI_Payload_Information.json",
+      "paths": [
+        "NR5G MAC UCI Payload Information -> Records -> [] -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb89b-nr5g-mac-uci-information",
+      "logcode": "0xB89B",
+      "title": "0xB89B NR5G MAC UCI Information",
+      "name": "NR5G MAC UCI Information",
+      "category": "MAC",
+      "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+      "paths": [
+        "NR5G MAC UCI Information -> Records -> [] -> System Time -> Frame"
+      ]
+    },
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "NR5G MAC CSF Report -> Records -> [] -> Timestamp -> Frame"
+      ]
+    }
+  ]
+}

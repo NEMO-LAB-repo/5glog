@@ -1,0 +1,90 @@
+{
+  "id": "0x12c1-cm-call-event",
+  "logcode": "0x12C1",
+  "name": "CM Call Event",
+  "title": "0x12C1 CM Call Event",
+  "category": "Other",
+  "dataFile": "0x12C1__CM_Call_Event.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "CM Call Event": {
+      "Call Event": null,
+      "Call Client Id": null,
+      "Call Id": null,
+      "Call State": null,
+      "Call Type": null,
+      "Number": {
+        "Buffer": {},
+        "Length": null,
+        "Digit Mode": null,
+        "Number Type": null,
+        "Numbering Plan": null,
+        "Presentation Indicator": null,
+        "Screening Indicator": null,
+        "Extension Bit": null,
+        "Subaddress Type": null,
+        "Odd Even Indicator": null,
+        "Num Characters": null
+      },
+      "Redirecting Number": {
+        "Buffer": {},
+        "Length": null,
+        "Digit Mode": null,
+        "Number Type": null,
+        "Numbering Plan": null,
+        "Presentation Indicator": null,
+        "Screening Indicator": null,
+        "Extension Bit": null,
+        "Subaddress Type": null,
+        "Odd Even Indicator": null,
+        "Num Characters": null,
+        "Redirecting Reason": null
+      },
+      "Alpha Tag": {
+        "Buffer": {},
+        "Length": null
+      },
+      "Signal Info": {
+        "Signal Info Available": null,
+        "Signal Type": null,
+        "Alert Pitch": null,
+        "Signal": null
+      },
+      "Call End Status": null,
+      "Number of Calls Ended": null,
+      "Call End Info": {
+        "Call Id": null,
+        "Mode Info Type": null
+      },
+      "System Mode": null,
+      "Connect Time": null,
+      "End Time": null,
+      "Recv bytes": null,
+      "Send bytes": null,
+      "Line": null,
+      "Client Id": null,
+      "MSM": null,
+      "Direction": null,
+      "Active Subscription ID": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 310,
+    "samplesParsedSuccessfully": 310,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x12C1__CM_Call_Event.json"
+  }
+}

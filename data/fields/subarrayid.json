@@ -1,0 +1,17 @@
+{
+  "id": "subarrayid",
+  "name": "SubArray ID",
+  "records": [
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Database Update Ext -> Component Carrier List -> [] -> ServingSubarrayId -> [] -> SubArray ID"
+      ]
+    }
+  ]
+}

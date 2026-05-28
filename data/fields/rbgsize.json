@@ -1,0 +1,62 @@
+{
+  "id": "rbgsize",
+  "name": "Rbg Size",
+  "records": [
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> UL Grant Info -> [] -> Rbg Size"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdsch-Config -> setup -> rbg-Size",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> rbg-Size"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Dedicated -> Pdsch CFG DED -> Rbg Size"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> OTA Params -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Dedicated -> Pdsch CFG DED -> Rbg Size"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Dedicated -> Pdsch CFG DED -> Rbg Size"
+      ]
+    }
+  ]
+}

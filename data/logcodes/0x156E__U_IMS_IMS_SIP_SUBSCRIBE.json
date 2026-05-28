@@ -1,0 +1,60 @@
+{
+  "id": "0x156e-u-ims-ims-sip-subscribe",
+  "logcode": "0x156E",
+  "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+  "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+  "category": "IMS",
+  "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [IMS] IMS_SIP_SUBSCRIBE": {
+      "Direction": null,
+      "SDP Presence": null,
+      "SIP Call ID Length": null,
+      "SIP Message Length": null,
+      "SIP Message Logged Bytes": null,
+      "Message ID": null,
+      "Response Status Code": null,
+      "CM Call ID": null,
+      "SIP Call ID": null,
+      "SIP Message": null,
+      "From": null,
+      "To": null,
+      "CSeq": null,
+      "Call-ID": null,
+      "Via": null,
+      "Max-Forwards": null,
+      "Contact": null,
+      "P-Access-Network-Info": null,
+      "Security-Verify": null,
+      "Event": null,
+      "Content-Length": null,
+      "Route": null,
+      "Require": null,
+      "Proxy-Require": null,
+      "P-Preferred-Identity": null,
+      "Expires": null,
+      "User-Agent": null,
+      "}": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json"
+  }
+}

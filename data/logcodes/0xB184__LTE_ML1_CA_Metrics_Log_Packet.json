@@ -1,0 +1,125 @@
+{
+  "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+  "logcode": "0xB184",
+  "name": "LTE ML1 CA Metrics Log Packet",
+  "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+  "category": "ML1",
+  "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 CA Metrics Log Packet": {
+      "Versions -> Version": {
+        "event": null,
+        "num_scells": null,
+        "subfn": null,
+        "sfn": null,
+        "ENDC Mode Enabled": null,
+        "pcell": {
+          "earfcn": null,
+          "pci": null,
+          "band": null,
+          "dl_bw": null
+        },
+        "total_metrics": {
+          "pcell_only": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell_and_scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "elapsed_time": null
+        },
+        "ca_configured_metrics": {
+          "pcell_only": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell_and_scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "elapsed_time": null
+        },
+        "ca_activated_metrics": {
+          "pcell_only": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell_and_scell_any": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "pcell": {
+            "dl_num_sf_scheduled": null,
+            "ul_num_sf_scheduled": null,
+            "dl_tb_size": null,
+            "ul_tb_size": null
+          },
+          "elapsed_time": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 70,
+    "samplesParsedSuccessfully": 70,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json"
+  }
+}

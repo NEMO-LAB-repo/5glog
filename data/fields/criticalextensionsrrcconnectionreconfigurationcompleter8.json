@@ -1,0 +1,17 @@
+{
+  "id": "criticalextensionsrrcconnectionreconfigurationcompleter8",
+  "name": "criticalExtensions -> rrcConnectionReconfigurationComplete-r8",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reconfiguration-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reconfiguration Complete",
+      "name": "U [LTE] RRC Connection Reconfiguration Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reconfiguration_Complete.json",
+      "paths": [
+        "U [LTE] RRC Connection Reconfiguration Complete -> ul-dcch -> message -> c1 -> rrcConnectionReconfigurationComplete -> criticalExtensions -> rrcConnectionReconfigurationComplete-r8"
+      ]
+    }
+  ]
+}

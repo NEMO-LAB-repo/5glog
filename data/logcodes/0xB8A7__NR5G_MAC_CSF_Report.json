@@ -1,0 +1,99 @@
+{
+  "id": "0xb8a7-nr5g-mac-csf-report",
+  "logcode": "0xB8A7",
+  "name": "NR5G MAC CSF Report",
+  "title": "0xB8A7 NR5G MAC CSF Report",
+  "category": "MAC",
+  "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC CSF Report": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "Timestamp": {
+            "Slot": null,
+            "Numerology": null,
+            "Frame": null
+          },
+          "Num CSF Reports": null,
+          "Num CSF Type2 Reports": null,
+          "Reports": {
+            "[]": {
+              "Carrier ID": null,
+              "Resource Carrier ID": null,
+              "Report ID": null,
+              "Report Type": null,
+              "Report Quantity Bitmask": null,
+              "Late CSF": null,
+              "Faked CSF": null,
+              "Num CSI P1 Bits": null,
+              "Num CSI P2 WB Bits": null,
+              "Num CSI P2 SB Odd Bits": null,
+              "Num CSI P2 SB Even Bits": null,
+              "Report Dropped": null,
+              "P1 Dropped": null,
+              "P2 WB Dropped": null,
+              "P2 SB Odd Report Dropped": null,
+              "P2 SB Even Report Dropped": null,
+              "Quantities -> RSRP": {
+                "Resource Set ID": null,
+                "CRI SSBRI Bit Width": null,
+                "RSRP Bit Width": null,
+                "Diff RSRP Bit Width": null,
+                "Num Results": null,
+                "RSRP": {
+                  "[]": null
+                },
+                "SSBRI CRI": {
+                  "[]": null
+                }
+              },
+              "Quantities -> CSI": {
+                "Metrics": {
+                  "CRI": null,
+                  "RI": null,
+                  "WB CQI": null,
+                  "PMI WB X1": null,
+                  "PMI WB X2": null,
+                  "LI": null,
+                  "Num SB": null
+                },
+                "Bit Width": {
+                  "CRI": null,
+                  "RI": null,
+                  "WB CQI": null,
+                  "PMI WB X1": null,
+                  "PMI WB X2": null,
+                  "LI": null,
+                  "PMI SB X2": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3843,
+    "samplesParsedSuccessfully": 3843,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8A7__NR5G_MAC_CSF_Report.json"
+  }
+}

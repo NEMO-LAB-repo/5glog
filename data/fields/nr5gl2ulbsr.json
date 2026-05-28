@@ -1,0 +1,17 @@
+{
+  "id": "nr5gl2ulbsr",
+  "name": "NR5G L2 UL BSR",
+  "records": [
+    {
+      "id": "0xb873-nr5g-l2-ul-bsr",
+      "logcode": "0xB873",
+      "title": "0xB873 NR5G L2 UL BSR",
+      "name": "NR5G L2 UL BSR",
+      "category": "L2",
+      "dataFile": "0xB873__NR5G_L2_UL_BSR.json",
+      "paths": [
+        "NR5G L2 UL BSR"
+      ]
+    }
+  ]
+}

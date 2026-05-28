@@ -1,0 +1,18 @@
+{
+  "id": "eventdsdormancystatusrmqueuestats",
+  "name": "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+  "records": [
+    {
+      "id": "0x1ffb-event-ds-dormancy-status-rm-queue-stats",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "name": "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS.json",
+      "paths": [
+        "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+        "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS -> Event -> EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS"
+      ]
+    }
+  ]
+}

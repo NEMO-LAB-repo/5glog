@@ -1,0 +1,18 @@
+{
+  "id": "eventnr5grrcmcgfailure",
+  "name": "EVENT_NR5G_RRC_MCG_FAILURE",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-mcg-failure",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_MCG_FAILURE",
+      "name": "EVENT_NR5G_RRC_MCG_FAILURE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_MCG_FAILURE.json",
+      "paths": [
+        "EVENT_NR5G_RRC_MCG_FAILURE",
+        "EVENT_NR5G_RRC_MCG_FAILURE -> Event -> EVENT_NR5G_RRC_MCG_FAILURE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "securitymodecomplete",
+  "name": "Security Mode Complete",
+  "records": [
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> Security Mode Complete"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Security Mode Complete",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> securityModeComplete",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> securityModeComplete -> criticalExtensions -> securityModeComplete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "0xb84b-nr5g-l2-dl-config",
+  "logcode": "0xB84B",
+  "name": "NR5G L2 DL Config",
+  "title": "0xB84B NR5G L2 DL Config",
+  "category": "L2",
+  "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 DL Config": {
+      "Submit Reason": null,
+      "Config Mask": null,
+      "Num RB Logged": null,
+      "Config Reason": null,
+      "MCG": {
+        "DRB ID Bmask": null,
+        "SRB ID Bitmask": null,
+        "SRB Cipher Algo": null,
+        "SRB Cipher Key Index": null,
+        "SRB Cipher Key": {
+          "srb_cipher_key1": null,
+          "srb_cipher_key2": null,
+          "srb_cipher_key3": null,
+          "srb_cipher_key4": null
+        },
+        "SRB Integrity Algo": null,
+        "SRB Integrity Key Index": null,
+        "SRB Integrity Key": {
+          "srb_integ_key1": null,
+          "srb_integ_key2": null,
+          "srb_integ_key3": null,
+          "srb_integ_key4": null
+        },
+        "DRB Cipher Algo": null,
+        "DRB Cipher Key Index": null,
+        "DRB Cipher Key": {
+          "drb_cipher_key1": null,
+          "drb_cipher_key2": null,
+          "drb_cipher_key3": null,
+          "drb_cipher_key4": null
+        },
+        "DRB Integrity Algo": null,
+        "DRB Integrity Key Index": null,
+        "DRB Integrity Key": {
+          "drb_integ_key1": null,
+          "drb_integ_key2": null,
+          "drb_integ_key3": null,
+          "drb_integ_key4": null
+        }
+      },
+      "SCG": {
+        "DRB ID Bmask": null,
+        "SRB ID Bitmask": null,
+        "SRB Cipher Algo": null,
+        "SRB Cipher Key Index": null,
+        "SRB Cipher Key": {
+          "srb_cipher_key1": null,
+          "srb_cipher_key2": null,
+          "srb_cipher_key3": null,
+          "srb_cipher_key4": null
+        },
+        "SRB Integrity Algo": null,
+        "SRB Integrity Key Index": null,
+        "SRB Integrity Key": {
+          "srb_integ_key1": null,
+          "srb_integ_key2": null,
+          "srb_integ_key3": null,
+          "srb_integ_key4": null
+        },
+        "DRB Cipher Algo": null,
+        "DRB Cipher Key Index": null,
+        "DRB Cipher Key": {
+          "drb_cipher_key1": null,
+          "drb_cipher_key2": null,
+          "drb_cipher_key3": null,
+          "drb_cipher_key4": null
+        },
+        "DRB Integrity Algo": null,
+        "DRB Integrity Key Index": null,
+        "DRB Integrity Key": {
+          "drb_integ_key1": null,
+          "drb_integ_key2": null,
+          "drb_integ_key3": null,
+          "drb_integ_key4": null
+        }
+      },
+      "PDCP DRB Rel Mask": null,
+      "RLC DRB Rel Mask": null,
+      "PDCP SRB Rel mask": null,
+      "RLC SRB Rel Mask": null,
+      "PDCP DRB Changed Mask": null,
+      "RLC DRB Changed mask": null,
+      "PDCP SRB Changed Mask": null,
+      "RLC SRB Changed mask": null,
+      "RB Config": {
+        "[]": {
+          "RB Mode": null,
+          "RB Index": null,
+          "EPSID": null,
+          "RB Type": null,
+          "PDCP RB Info": {
+            "Config Action": null,
+            "RLC Path": null,
+            "PDCP Path": null,
+            "Config Bmask": null,
+            "Reestablish Pdcp": null,
+            "Discard On Pdcp": null,
+            "Recover Pdcp": null,
+            "Rohc Enable": null,
+            "PDCP Config": {
+              "Config Mask": null,
+              "Discard Timer": null,
+              "Sn Size": null,
+              "Integrity Protection": null,
+              "Status Report Required": null,
+              "Out Of Order Delivery": null,
+              "T Reordering": null,
+              "ROHC Config": {
+                "Max CID": null,
+                "Profile Mask": null,
+                "DRB Continue Rohc": null
+              }
+            }
+          },
+          "RLC RB Info": {
+            "LCID": null,
+            "Action": null,
+            "Config Bitmask": null,
+            "Reestablish RLC": null,
+            "rb_cfg -> AM": {
+              "T Status Prohibit": null,
+              "T Reassembly": null,
+              "SN Length": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 621,
+    "samplesParsedSuccessfully": 621,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB84B__NR5G_L2_DL_Config.json"
+  }
+}

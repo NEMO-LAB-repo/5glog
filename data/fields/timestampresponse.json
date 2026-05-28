@@ -1,0 +1,18 @@
+{
+  "id": "timestampresponse",
+  "name": "Timestamp Response",
+  "records": [
+    {
+      "id": "0x1ff0-timestamp-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Timestamp Response",
+      "name": "Timestamp Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Timestamp_Response.json",
+      "paths": [
+        "Timestamp Response",
+        "Timestamp Response -> Timestamp Response"
+      ]
+    }
+  ]
+}

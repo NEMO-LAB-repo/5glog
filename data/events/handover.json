@@ -1,0 +1,334 @@
+{
+  "id": "handover",
+  "title": "Generic 5G NR Handover Procedure",
+  "description": "Generic 5G NR handover flow with RRC, ML1, MAC, network decision, target access, and user-plane resume.",
+  "commonEvidence": {
+    "hoConfirmedBy": "0x1FFB Encapsulated Event Report: EVENT_NR5G_RRC_HO_STARTED_V2; EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
+    "hoConfirmedByEvents": [
+      "EVENT_NR5G_RRC_HO_STARTED_V2",
+      "EVENT_NR5G_RRC_HO_SUCCESS",
+      "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
+    ],
+    "sourceTargetIdentity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency.",
+    "sourceTargetIdentityFields": [
+      "Physical Cell ID",
+      "Physical Cell Id",
+      "DL Frequency",
+      "Cell Id",
+      "Selected PLMN MCC/MNC",
+      "TAC",
+      "cellIdentity",
+      "Frequency"
+    ]
+  },
+  "steps": {
+    "1": {
+      "title": "1. Measurement Configuration",
+      "layer": "RRC",
+      "decide": "Network configures what UE should measure; UE may then confirm the configuration was applied.",
+      "logcode": "0xB821 pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration with measConfig. UE confirmation can appear as 0xB821 pdu_type 8 UL-DCCH-Message -> c1 -> rrcReconfigurationComplete for the measurement configuration. Fields: measConfig, measObjectToAddModList, reportConfigToAddModList, measIdToAddModList.",
+      "logcodes": [
+        "0xB821"
+      ],
+      "fields": [
+        "RRCReconfigurationComplete",
+        "DL-DCCH-Message",
+        "UL-DCCH-Message",
+        "dl-dcch",
+        "ul-dcch",
+        "rrcReconfiguration",
+        "rrcReconfigurationComplete",
+        "measConfig",
+        "measObjectToAddModList",
+        "reportConfigToAddModList",
+        "measIdToAddModList"
+      ]
+    },
+    "2": {
+      "title": "2. Search / Measure",
+      "layer": "ML1",
+      "decide": "UE/ML1 searches configured frequencies, measures serving and neighbor cells, updates the filtered measurement database, and checks candidate suitability.",
+      "logcode": "0xB96D NR5G ML1 Searcher ACQ Config And Response; 0xB96A NR5G ML1 Searcher FW Cell Meas Confirm; 0xB97F NR5G ML1 Searcher Measurement Database Update Ext; 0xB970 NR5G ML1 Searcher Idle S Criteria. Fields: Raster Freq, Serving Cell PCI, Cells, PCI, RSRP, RSRQ, SINR, CellQualityRsrp, CellQualityRsrq, Detected Beams, SSB Index, q-RxLevMin, q-QualMin.",
+      "logcodes": [
+        "0xB96D",
+        "0xB96A",
+        "0xB97F",
+        "0xB970"
+      ],
+      "fields": [
+        "Raster Freq",
+        "Serving Cell PCI",
+        "Cells",
+        "PCI",
+        "RSRP",
+        "RSRQ",
+        "SINR",
+        "CellQualityRsrp",
+        "CellQualityRsrq",
+        "Detected Beams",
+        "SSB Index",
+        "q-RxLevMin",
+        "q-QualMin"
+      ]
+    },
+    "3": {
+      "title": "3. Measurement Report",
+      "layer": "RRC",
+      "decide": "UE reports neighbor quality to network when a configured reporting event, commonly Event A3, is satisfied.",
+      "logcode": "0xB821 pdu_type 8 UL-DCCH-Message -> c1 -> measurementReport. Fields: measResults, measId, measResultNeighCells, physCellId, rsrp, rsrq, sinr.",
+      "logcodes": [
+        "0xB821"
+      ],
+      "fields": [
+        "UL-DCCH-Message",
+        "ul-dcch",
+        "measurementReport",
+        "measResults",
+        "measId",
+        "measResultNeighCells",
+        "physCellId",
+        "rsrp",
+        "rsrq",
+        "sinr"
+      ]
+    },
+    "4": {
+      "title": "4. Network HO Decision / Preparation",
+      "layer": "Network",
+      "decide": "UE log cannot directly see the network decision; infer it from the later handover command.",
+      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync.",
+      "fields": [
+        "RRCReconfiguration",
+        "reconfigurationWithSync"
+      ]
+    },
+    "5": {
+      "title": "5. RRCReconfiguration w/ Sync",
+      "layer": "RRC",
+      "decide": "Real handover command/config sent to UE.",
+      "logcode": "0xB821 pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration handover command. In NR this is represented by reconfigurationWithSync; some reports describe the same role as mobilityControlInfo. Fields: reconfigurationWithSync, mobilityControlInfo, spCellConfigCommon, physCellId, absoluteFrequencySSB, newUE-Identity, rach-ConfigDedicated, masterKeyUpdate, keySetChangeIndicator, nextHopChainingCount.",
+      "logcodes": [
+        "0xB821"
+      ],
+      "fields": [
+        "DL-DCCH-Message",
+        "dl-dcch",
+        "rrcReconfiguration",
+        "reconfigurationWithSync",
+        "mobilityControlInfo",
+        "spCellConfigCommon",
+        "physCellId",
+        "absoluteFrequencySSB",
+        "newUE-Identity",
+        "rach-ConfigDedicated",
+        "masterKeyUpdate",
+        "keySetChangeIndicator",
+        "nextHopChainingCount"
+      ],
+      "identityLogcodes": [
+        "0xB823",
+        "0xB821"
+      ],
+      "identityFields": [
+        "Physical Cell ID",
+        "Physical Cell Id",
+        "BCCH-DL-SCH-Message",
+        "bcch-dl-sch",
+        "systemInformationBlockType1",
+        "DL Frequency",
+        "Cell Id",
+        "Selected PLMN MCC/MNC",
+        "TAC",
+        "cellIdentity",
+        "Frequency"
+      ],
+      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+    },
+    "6": {
+      "title": "6. Apply Target Config",
+      "layer": "ML1",
+      "decide": "ML1 receives and applies the target-cell physical configuration from the handover command.",
+      "logcode": "0xB952 NR5G ML1 DL Handover is the main evidence. 0xB950 NR5G ML1 DL Common Config and 0xB951 NR5G ML1 DL Dedicated Config may show related common/dedicated target config snippets. Fields: Target Dl Cell Frequency, Target Phy Cell Id, Crnti CFG, CG Add Mod, Cell Info, DL Cell frequency, BWP, CORESET, Search Space, TDD UL DL CFG.",
+      "logcodes": [
+        "0xB952",
+        "0xB950",
+        "0xB951"
+      ],
+      "fields": [
+        "Target Dl Cell Frequency",
+        "Target Phy Cell Id",
+        "Crnti CFG",
+        "CG Add Mod",
+        "Cell Info",
+        "DL Cell frequency",
+        "BWP",
+        "CORESET",
+        "Search Space",
+        "TDD UL DL CFG"
+      ],
+      "identityLogcodes": [
+        "0xB823",
+        "0xB821"
+      ],
+      "identityFields": [
+        "Physical Cell ID",
+        "Physical Cell Id",
+        "BCCH-DL-SCH-Message",
+        "bcch-dl-sch",
+        "systemInformationBlockType1",
+        "DL Frequency",
+        "Cell Id",
+        "Selected PLMN MCC/MNC",
+        "TAC",
+        "cellIdentity",
+        "Frequency"
+      ],
+      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+    },
+    "7": {
+      "title": "7. Handover Execution",
+      "layer": "UE / ML1+MAC",
+      "decide": "UE starts switching from the source cell to the target cell; this is a cross-layer execution interval between RRC command, ML1 target config application, and MAC target access.",
+      "logcode": "0xB952 NR5G ML1 DL Handover plus 0xB9A7 NR5G ML1 DLM2 CA Metrics Request. Fields: Event: HANDOVER_START, Event: HANDOVER_END, PCI, DL EARFCN, Band.",
+      "logcodes": [
+        "0xB952",
+        "0xB9A7"
+      ],
+      "fields": [
+        "Event",
+        "HANDOVER_START",
+        "HANDOVER_END",
+        "PCI",
+        "DL EARFCN",
+        "Band"
+      ]
+    },
+    "8": {
+      "title": "8. Random Access",
+      "layer": "MAC",
+      "decide": "UE starts random access on target cell.",
+      "logcode": "0xB889 NR5G MAC RACH Trigger. Fields: Rach Reason: HANDOVER, CRNTI, RACH Contention, Carrier Id, RA Id. Also 0xB88A NR5G MAC RACH Attempt.",
+      "logcodes": [
+        "0xB889",
+        "0xB88A"
+      ],
+      "fields": [
+        "Rach Reason",
+        "HANDOVER",
+        "CRNTI",
+        "RACH Contention",
+        "Carrier Id",
+        "RA Id"
+      ]
+    },
+    "9": {
+      "title": "9. Random Access Success",
+      "layer": "MAC",
+      "decide": "Random access on the target cell succeeds; if the explicit success field is absent, infer success from later handover completion.",
+      "logcode": "Best evidence: 0xB88A NR5G MAC RACH Attempt with RACH Result: SUCCESS and, when applicable, Contention Type: CONT_FREE. Supporting evidence: 0xB9BF NR5G ML1 Search HO Acq Confirm. Fields: RACH Result, SUCCESS, Contention Type, CONT_FREE, Result, ARFCN, Cell Id.",
+      "logcodes": [
+        "0xB88A",
+        "0xB9BF"
+      ],
+      "fields": [
+        "RACH Result",
+        "SUCCESS",
+        "Contention Type",
+        "CONT_FREE",
+        "Result",
+        "ARFCN",
+        "Cell Id",
+        "RRCReconfigurationComplete"
+      ],
+      "confirm": "If no explicit RA success field appears, use Step 10 and 0x1FFB events as confirmation: EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
+      "confirmLogcodes": [
+        "0x1FFB"
+      ],
+      "confirmFields": [
+        "EVENT_NR5G_RRC_HO_SUCCESS",
+        "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
+      ]
+    },
+    "10": {
+      "title": "10. RRCReconfigurationComplete",
+      "layer": "RRC",
+      "decide": "UE confirms handover completion to target.",
+      "logcode": "0xB821 pdu_type 8 UL-DCCH-Message -> c1 -> rrcReconfigurationComplete. Fields: ul-dcch -> c1 -> rrcReconfigurationComplete, Physical Cell Id, Frequency, rrc-TransactionIdentifier.",
+      "logcodes": [
+        "0xB821"
+      ],
+      "fields": [
+        "UL-DCCH-Message",
+        "ul-dcch",
+        "c1",
+        "rrcReconfigurationComplete",
+        "Physical Cell Id",
+        "Frequency",
+        "rrc-TransactionIdentifier"
+      ],
+      "confirm": "0x1FFB Encapsulated Event Report: EVENT_NR5G_RRC_HO_STARTED_V2; EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
+      "confirmLogcodes": [
+        "0x1FFB"
+      ],
+      "confirmFields": [
+        "EVENT_NR5G_RRC_HO_STARTED_V2",
+        "EVENT_NR5G_RRC_HO_SUCCESS",
+        "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
+      ],
+      "identityLogcodes": [
+        "0xB823",
+        "0xB821"
+      ],
+      "identityFields": [
+        "Physical Cell ID",
+        "Physical Cell Id",
+        "BCCH-DL-SCH-Message",
+        "bcch-dl-sch",
+        "systemInformationBlockType1",
+        "DL Frequency",
+        "Cell Id",
+        "Selected PLMN MCC/MNC",
+        "TAC",
+        "cellIdentity",
+        "Frequency"
+      ],
+      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+    },
+    "11": {
+      "title": "11. Post-HO Operation",
+      "layer": "RRC / Data",
+      "decide": "UE operates on the new serving cell: serving-cell state updates, MIB/SIB decoding starts, and user-plane data resumes.",
+      "logcode": "Post-handover evidence: 0xB825 NR5G RRC Configuration Info, 0xB823 NR5G RRC Serving Cell Info, and 0xB821 broadcast/system-info classes: pdu_type 1 BCCH-BCH-Message -> mib, pdu_type 2 BCCH-DL-SCH-Message -> systemInformationBlockType1, and pdu_type 14/15/16/17 SIB2/SIB3/SIB4/SIB5 when present. If 0xB822 is available, it can also show MIB/SIB decoding. User-plane resume can be inferred from 0xB888 NR5G MAC PDSCH Stats and 0xB881 NR5G MAC UL TB Stats.",
+      "logcodes": [
+        "0xB825",
+        "0xB823",
+        "0xB821",
+        "0xB888",
+        "0xB881"
+      ],
+      "fields": [
+        "BCCH-BCH-Message",
+        "BCCH-DL-SCH-Message",
+        "bcch-bch",
+        "bcch-dl-sch",
+        "systemInformationBlockType1",
+        "mib",
+        "SIB2",
+        "SIB3",
+        "SIB4",
+        "SIB5",
+        "Physical Cell Id",
+        "Physical Cell ID",
+        "Frequency",
+        "Serving Cell",
+        "MIB",
+        "SIB",
+        "Num PDSCH Decode",
+        "Num CRC Pass TB",
+        "TB Bytes",
+        "TB New Tx Bytes",
+        "Num ULSCH Sched"
+      ]
+    }
+  }
+}

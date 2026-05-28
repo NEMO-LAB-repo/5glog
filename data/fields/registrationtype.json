@@ -1,0 +1,50 @@
+{
+  "id": "registrationtype",
+  "name": "Registration Type",
+  "records": [
+    {
+      "id": "0x1832-ims-registration",
+      "logcode": "0x1832",
+      "title": "0x1832 IMS Registration",
+      "name": "IMS Registration",
+      "category": "IMS",
+      "dataFile": "0x1832__IMS_Registration.json",
+      "paths": [
+        "IMS Registration -> Registration Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-end-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_END_EVENT",
+      "name": "EVENT_SIP_REG_END_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_END_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_END_EVENT -> Event -> EVENT_SIP_REG_END_EVENT -> Registration Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-req-sent-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_REQ_SENT_EVENT",
+      "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_REQ_SENT_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_REQ_SENT_EVENT -> Event -> EVENT_SIP_REG_REQ_SENT_EVENT -> Registration Type"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_RESP_RCVD_EVENT -> Event -> EVENT_SIP_REG_RESP_RCVD_EVENT -> Registration Type"
+      ]
+    }
+  ]
+}

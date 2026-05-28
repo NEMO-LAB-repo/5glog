@@ -1,0 +1,28 @@
+{
+  "id": "proceduretype",
+  "name": "procedure_type",
+  "records": [
+    {
+      "id": "0x1ffb-event-nas-tau",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_TAU",
+      "name": "EVENT_NAS_TAU",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+      "paths": [
+        "EVENT_NAS_TAU -> Event -> EVENT_NAS_TAU -> procedure_type"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> RSRP Records -> [] -> Procedure Type"
+      ]
+    }
+  ]
+}

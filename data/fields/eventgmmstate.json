@@ -1,0 +1,18 @@
+{
+  "id": "eventgmmstate",
+  "name": "EVENT_GMM_STATE",
+  "records": [
+    {
+      "id": "0x1ffb-event-gmm-state",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_GMM_STATE",
+      "name": "EVENT_GMM_STATE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_GMM_STATE.json",
+      "paths": [
+        "EVENT_GMM_STATE",
+        "EVENT_GMM_STATE -> Event -> EVENT_GMM_STATE"
+      ]
+    }
+  ]
+}

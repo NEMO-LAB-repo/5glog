@@ -1,0 +1,454 @@
+{
+  "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] RRC Connection Reconfiguration",
+  "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+  "category": "RRC",
+  "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] RRC Connection Reconfiguration": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> rrcConnectionReconfiguration": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8": {
+            "measConfig": {
+              "measObjectToAddModList": {
+                "[]": {
+                  "measObjectId": null,
+                  "measObject -> measObjectEUTRA": {
+                    "carrierFreq": null,
+                    "allowedMeasBandwidth": null,
+                    "presenceAntennaPort1": null,
+                    "neighCellConfig": {
+                      "neighCellConfig": null
+                    },
+                    "excludedCellsToAddModList": {
+                      "[]": {
+                        "cellIndex": null,
+                        "physCellIdRange": {
+                          "start": null
+                        }
+                      }
+                    },
+                    "cellsToAddModList": {
+                      "[]": {
+                        "cellIndex": null,
+                        "physCellId": null,
+                        "cellIndividualOffset": null
+                      }
+                    },
+                    "offsetFreq": null,
+                    "cellForWhichToReportCGI": null
+                  },
+                  "measObject -> measObjectNR-r15": {
+                    "carrierFreq-r15": null,
+                    "rs-ConfigSSB-r15": {
+                      "measTimingConfig-r15": {
+                        "periodicityAndOffset-r15 -> sf20-r15": null,
+                        "ssb-Duration-r15": null
+                      },
+                      "subcarrierSpacingSSB-r15": null,
+                      "ssb-ToMeasure-r15 -> setup -> mediumBitmap-r15": null,
+                      "ssb-ToMeasure-r15 -> setup -> shortBitmap-r15": null
+                    },
+                    "threshRS-Index-r15": {
+                      "nr-RSRP-r15": null
+                    },
+                    "maxRS-IndexCellQual-r15": null,
+                    "quantityConfigSet-r15": null,
+                    "deriveSSB-IndexFromCell-r15": null,
+                    "bandNR-r15 -> setup": null,
+                    "offsetFreq-r15": null
+                  }
+                }
+              },
+              "reportConfigToAddModList": {
+                "[]": {
+                  "reportConfigId": null,
+                  "reportConfig -> reportConfigEUTRA": {
+                    "triggerType -> event": {
+                      "eventId -> eventA3": {
+                        "a3-Offset": null,
+                        "reportOnLeave": null
+                      },
+                      "hysteresis": null,
+                      "timeToTrigger": null,
+                      "eventId -> eventA2": {
+                        "a2-Threshold -> threshold-RSRP": null
+                      },
+                      "eventId -> eventA5": {
+                        "a5-Threshold1 -> threshold-RSRP": null,
+                        "a5-Threshold2 -> threshold-RSRP": null
+                      },
+                      "eventId -> eventA1": {
+                        "a1-Threshold -> threshold-RSRP": null
+                      },
+                      "eventId -> eventA4": {
+                        "a4-Threshold -> threshold-RSRP": null
+                      }
+                    },
+                    "triggerQuantity": null,
+                    "reportQuantity": null,
+                    "maxReportCells": null,
+                    "reportInterval": null,
+                    "reportAmount": null,
+                    "maxReportRS-Index-r15": null,
+                    "triggerType -> periodical": {
+                      "purpose": null
+                    },
+                    "ue-RxTxTimeDiffPeriodical-r9": null,
+                    "reportAddNeighMeas-r10": null,
+                    "si-RequestForHO-r9": null
+                  },
+                  "reportConfig -> reportConfigInterRAT": {
+                    "triggerType -> event": {
+                      "eventId -> eventB1-NR-r15": {
+                        "b1-ThresholdNR-r15 -> nr-RSRP-r15": null,
+                        "reportOnLeave-r15": null
+                      },
+                      "hysteresis": null,
+                      "timeToTrigger": null
+                    },
+                    "maxReportCells": null,
+                    "reportInterval": null,
+                    "reportAmount": null,
+                    "reportQuantityCellNR-r15": {
+                      "ss-rsrp": null,
+                      "ss-rsrq": null,
+                      "ss-sinr": null
+                    },
+                    "maxReportRS-Index-r15": null,
+                    "reportQuantityRS-IndexNR-r15": {
+                      "ss-rsrp": null,
+                      "ss-rsrq": null,
+                      "ss-sinr": null
+                    },
+                    "reportRS-IndexResultsNR": null
+                  }
+                }
+              },
+              "measIdToAddModList": {
+                "[]": {
+                  "measId": null,
+                  "measObjectId": null,
+                  "reportConfigId": null
+                }
+              },
+              "quantityConfig": {
+                "quantityConfigEUTRA": {
+                  "filterCoefficientRSRP": null,
+                  "filterCoefficientRSRQ": null
+                },
+                "quantityConfigNRList-r15": {
+                  "[]": {
+                    "measQuantityCellNR-r15": {},
+                    "measQuantityRS-IndexNR-r15": {}
+                  }
+                }
+              },
+              "s-Measure": null,
+              "measGapConfig -> setup": {
+                "gapOffset -> gp1": null,
+                "gapOffset -> gp0": null
+              },
+              "measObjectToRemoveList": {
+                "[]": null
+              },
+              "reportConfigToRemoveList": {
+                "[]": null
+              },
+              "measIdToRemoveList": {
+                "[]": null
+              },
+              "speedStatePars -> release": null,
+              "mgta-r15": null,
+              "measGapConfig -> release": null,
+              "preRegistrationInfoHRPD": {
+                "preRegistrationAllowed": null
+              }
+            },
+            "radioResourceConfigDedicated": {
+              "mac-MainConfig -> explicitValue": {
+                "drx-Config -> setup": {
+                  "onDurationTimer": null,
+                  "drx-InactivityTimer": null,
+                  "drx-RetransmissionTimer": null,
+                  "longDRX-CycleStartOffset -> sf160": null,
+                  "shortDRX": {
+                    "shortDRX-Cycle": null,
+                    "drxShortCycleTimer": null
+                  },
+                  "longDRX-CycleStartOffset -> sf320": null,
+                  "longDRX-CycleStartOffset -> sf40": null
+                },
+                "timeAlignmentTimerDedicated": null,
+                "ul-SCH-Config": {
+                  "maxHARQ-Tx": null,
+                  "periodicBSR-Timer": null,
+                  "retxBSR-Timer": null,
+                  "ttiBundling": null
+                },
+                "drx-Config -> release": null,
+                "phr-Config -> setup": {
+                  "periodicPHR-Timer": null,
+                  "prohibitPHR-Timer": null,
+                  "dl-PathlossChange": null
+                },
+                "sr-ProhibitTimer-r9": null
+              },
+              "physicalConfigDedicated": {
+                "cqi-ReportConfig-r10": {
+                  "cqi-ReportAperiodic-r10 -> setup": {
+                    "cqi-ReportModeAperiodic-r10": null
+                  },
+                  "nomPDSCH-RS-EPRE-Offset": null,
+                  "cqi-ReportPeriodic-r10 -> setup": {
+                    "cqi-PUCCH-ResourceIndex-r10": null,
+                    "cqi-pmi-ConfigIndex": null,
+                    "cqi-FormatIndicatorPeriodic-r10 -> widebandCQI-r10": {},
+                    "ri-ConfigIndex": null,
+                    "simultaneousAckNackAndCQI": null,
+                    "csi-ConfigIndex-r10 -> release": null
+                  }
+                },
+                "cqi-ReportConfig": {
+                  "cqi-ReportModeAperiodic": null,
+                  "nomPDSCH-RS-EPRE-Offset": null,
+                  "cqi-ReportPeriodic -> setup": {
+                    "cqi-PUCCH-ResourceIndex": null,
+                    "cqi-pmi-ConfigIndex": null,
+                    "cqi-FormatIndicatorPeriodic -> widebandCQI": null,
+                    "ri-ConfigIndex": null,
+                    "simultaneousAckNackAndCQI": null
+                  }
+                },
+                "csi-RS-Config-r10": {
+                  "zeroTxPowerCSI-RS-r10 -> setup": {
+                    "zeroTxPowerResourceConfigList-r12": null,
+                    "zeroTxPowerSubframeConfig-r12": null
+                  },
+                  "zeroTxPowerCSI-RS-r10 -> release": null
+                },
+                "pdsch-ConfigDedicated": {
+                  "p-a": null
+                },
+                "pusch-ConfigDedicated": {
+                  "betaOffset-ACK-Index": null,
+                  "betaOffset-RI-Index": null,
+                  "betaOffset-CQI-Index": null
+                },
+                "antennaInfo -> explicitValue": {
+                  "transmissionMode": null,
+                  "codebookSubsetRestriction -> n2TxAntenna-tm3": null,
+                  "ue-TransmitAntennaSelection -> release": null,
+                  "codebookSubsetRestriction -> n2TxAntenna-tm4": null
+                },
+                "schedulingRequestConfig -> setup": {
+                  "sr-PUCCH-ResourceIndex": null,
+                  "sr-ConfigIndex": null,
+                  "dsr-TransMax": null
+                },
+                "soundingRS-UL-ConfigDedicated -> release": null,
+                "antennaInfo-r10 -> explicitValue-r10": {
+                  "transmissionMode-r10": null,
+                  "codebookSubsetRestriction-r10": null,
+                  "ue-TransmitAntennaSelection -> release": null
+                }
+              },
+              "srb-ToAddModList": {
+                "[]": {
+                  "srb-Identity": null,
+                  "rlc-Config -> explicitValue -> am": {
+                    "ul-AM-RLC": {
+                      "t-PollRetransmit": null,
+                      "pollPDU": null,
+                      "pollByte": null,
+                      "maxRetxThreshold": null
+                    },
+                    "dl-AM-RLC": {
+                      "t-Reordering": null,
+                      "t-StatusProhibit": null
+                    }
+                  },
+                  "logicalChannelConfig -> defaultValue": null
+                }
+              },
+              "drb-ToAddModList": {
+                "[]": {
+                  "eps-BearerIdentity": null,
+                  "drb-Identity": null,
+                  "pdcp-Config": {
+                    "discardTimer": null,
+                    "rlc-AM": {
+                      "statusReportRequired": null
+                    },
+                    "headerCompression -> notUsed": null
+                  },
+                  "rlc-Config -> am": {
+                    "ul-AM-RLC": {
+                      "t-PollRetransmit": null,
+                      "pollPDU": null,
+                      "pollByte": null,
+                      "maxRetxThreshold": null
+                    },
+                    "dl-AM-RLC": {
+                      "t-Reordering": null,
+                      "t-StatusProhibit": null
+                    }
+                  },
+                  "logicalChannelIdentity": null,
+                  "logicalChannelConfig": {
+                    "ul-SpecificParameters": {
+                      "priority": null,
+                      "prioritisedBitRate": null,
+                      "bucketSizeDuration": null,
+                      "logicalChannelGroup": null
+                    }
+                  }
+                }
+              },
+              "sps-Config": {
+                "sps-ConfigDL -> release": null,
+                "sps-ConfigUL -> release": null
+              }
+            },
+            "mobilityControlInfo": {
+              "targetPhysCellId": null,
+              "carrierFreq": {
+                "dl-CarrierFreq": null
+              },
+              "additionalSpectrumEmission": null,
+              "t304": null,
+              "newUE-Identity": null,
+              "radioResourceConfigCommon": {
+                "rach-ConfigCommon": {
+                  "preambleInfo": {
+                    "numberOfRA-Preambles": null
+                  },
+                  "powerRampingParameters": {
+                    "powerRampingStep": null,
+                    "preambleInitialReceivedTargetPower": null
+                  },
+                  "ra-SupervisionInfo": {
+                    "preambleTransMax": null,
+                    "ra-ResponseWindowSize": null,
+                    "mac-ContentionResolutionTimer": null
+                  },
+                  "maxHARQ-Msg3Tx": null
+                },
+                "prach-Config": {
+                  "rootSequenceIndex": null,
+                  "prach-ConfigInfo": {
+                    "prach-ConfigIndex": null,
+                    "highSpeedFlag": null,
+                    "zeroCorrelationZoneConfig": null,
+                    "prach-FreqOffset": null
+                  }
+                },
+                "pdsch-ConfigCommon": {
+                  "referenceSignalPower": null,
+                  "p-b": null
+                },
+                "pusch-ConfigCommon": {
+                  "pusch-ConfigBasic": {
+                    "n-SB": null,
+                    "hoppingMode": null,
+                    "pusch-HoppingOffset": null,
+                    "enable64QAM": null
+                  },
+                  "ul-ReferenceSignalsPUSCH": {
+                    "groupHoppingEnabled": null,
+                    "groupAssignmentPUSCH": null,
+                    "sequenceHoppingEnabled": null,
+                    "cyclicShift": null
+                  }
+                },
+                "phich-Config": {
+                  "phich-Duration": null,
+                  "phich-Resource": null
+                },
+                "pucch-ConfigCommon": {
+                  "deltaPUCCH-Shift": null,
+                  "nRB-CQI": null,
+                  "nCS-AN": null,
+                  "n1PUCCH-AN": null
+                },
+                "soundingRS-UL-ConfigCommon -> release": null,
+                "uplinkPowerControlCommon": {
+                  "p0-NominalPUSCH": null,
+                  "alpha": null,
+                  "p0-NominalPUCCH": null,
+                  "deltaFList-PUCCH": {
+                    "deltaF-PUCCH-Format1": null,
+                    "deltaF-PUCCH-Format1b": null,
+                    "deltaF-PUCCH-Format2": null,
+                    "deltaF-PUCCH-Format2a": null,
+                    "deltaF-PUCCH-Format2b": null
+                  },
+                  "deltaPreambleMsg3": null
+                },
+                "antennaInfoCommon": {
+                  "antennaPortsCount": null
+                },
+                "ul-CyclicPrefixLength": null
+              },
+              "rach-ConfigDedicated": {
+                "ra-PreambleIndex": null,
+                "ra-PRACH-MaskIndex": null
+              }
+            },
+            "securityConfigHO": {
+              "handoverType -> intraLTE": {
+                "securityAlgorithmConfig": {
+                  "cipheringAlgorithm": null,
+                  "integrityProtAlgorithm": null
+                },
+                "keyChangeIndicator": null,
+                "nextHopChainingCount": null
+              }
+            },
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "fullConfig-r9": null,
+                "otherConfig-r9": {
+                  "reportProximityConfig-r9": {}
+                }
+              },
+              "lateNonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "antennaInfoDedicatedPCell-v10i0": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 264,
+    "samplesParsedSuccessfully": 264,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json"
+  }
+}

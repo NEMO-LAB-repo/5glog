@@ -1,0 +1,45 @@
+{
+  "id": "0xb0c0-d-lte-ue-information-request",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] UE Information Request",
+  "title": "0xB0C0 D [LTE] UE Information Request",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_UE_Information_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] UE Information Request": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> ueInformationRequest-r9": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueInformationRequest-r9": {
+            "rach-ReportReq-r9": null,
+            "rlf-ReportReq-r9": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_UE_Information_Request.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "processedhdrultbpayloads",
+  "name": "Processed Hdr UL TB Payloads",
+  "records": [
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> UL TB Info table -> [] -> UL TB Outer Structure -> Processed Hdr UL TB Payloads"
+      ]
+    }
+  ]
+}

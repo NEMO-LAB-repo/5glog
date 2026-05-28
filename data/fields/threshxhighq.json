@@ -1,0 +1,31 @@
+{
+  "id": "threshxhighq",
+  "name": "ThreshX HighQ",
+  "records": [
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> Frequency -> [] -> Params -> Thresh Rel15 -> ThreshX HighQ"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> threshX-Q -> threshX-HighQ",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib5 -> carrierFreqListEUTRA -> threshX-Q -> threshX-HighQ",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> threshX-Q -> threshX-HighQ",
+        "SIB5 -> sib5 -> carrierFreqListEUTRA -> threshX-Q -> threshX-HighQ"
+      ]
+    }
+  ]
+}

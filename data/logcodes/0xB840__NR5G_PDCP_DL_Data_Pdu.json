@@ -1,0 +1,65 @@
+{
+  "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+  "logcode": "0xB840",
+  "name": "NR5G PDCP DL Data Pdu",
+  "title": "0xB840 NR5G PDCP DL Data Pdu",
+  "category": "PDCP",
+  "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G PDCP DL Data Pdu": {
+      "Number Of Meta": null,
+      "Number Of RB": null,
+      "Number Of Log Count": null,
+      "PDCP State": {
+        "[]": {
+          "RB Cfg Index": null,
+          "PDCP SN Length": null,
+          "RX_DELIV": null,
+          "RX_NEXT": null,
+          "NEXT COUNT": null
+        }
+      },
+      "Meta Log Buffer": {
+        "[]": {
+          "System Time": {
+            "Slot": null,
+            "Frame": null
+          },
+          "rx_timetick": null,
+          "Num NLO": null,
+          "RB Cfg Index": null,
+          "Key Index": null,
+          "RLC Path": null,
+          "Route Status": null,
+          "IP Packet Header[0]": null,
+          "IP Packet Header[1]": null,
+          "Start Count": null,
+          "End Count": null,
+          "RLC end SN": null,
+          "Number IP Pkts": null,
+          "Number IP bytes": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 787,
+    "samplesParsedSuccessfully": 787,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json"
+  }
+}

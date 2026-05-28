@@ -1,0 +1,105 @@
+{
+  "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+  "logcode": "0xB187",
+  "name": "LTE Ml1 Idle IRAT Measurement Request",
+  "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+  "category": "ML1",
+  "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE Ml1 Idle IRAT Measurement Request": {
+      "Versions -> Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "SubPacket ID": null,
+          "Version": null,
+          "SubPacket Size": null,
+          "SubPacket -> Idle Meas Config LTE": {
+            "Versions -> E-ARFCN": null,
+            "Physical Cell ID": null,
+            "LTE SFN": null,
+            "Synchronized": null,
+            "CDMA System Time": null,
+            "LTE RTC": null
+          },
+          "SubPacket -> Idle Meas CDMA Config": {
+            "Versions -> CDMA Window Size": null,
+            "HRPD Cell Reselction Parameters": {
+              "Tresel": null,
+              "Tresel Medium Scaling Factor Data": null,
+              "Tresel High Scaling Factor Data": null,
+              "Num Bands": null,
+              "Number of Neighbors": null
+            },
+            "1x Cell Reslection Parameters": {
+              "Tresel": null,
+              "Tresel Medium Scaling Factor Data": null,
+              "Tresel High Scaling Factor Data": null,
+              "Num Bands": null,
+              "Number of Neighbors": null
+            }
+          },
+          "SubPacket -> Idle Meas WCDMA Config": {
+            "Versions -> T Reselection": null,
+            "SF Medium": null,
+            "SF High": null,
+            "Num WCDMA Freq": null
+          },
+          "SubPacket -> Idle GSM Meas Config": {
+            "Versions -> T Resel": null,
+            "SF Med": null,
+            "SF High": null,
+            "Num Freq Groups": null
+          },
+          "SubPacket -> Idle NR Meas Config": {
+            "Version -> Num NR Freq": null,
+            "Tresel": null,
+            "SF Med": null,
+            "SF High": null,
+            "Frequency": {
+              "[]": {
+                "Frequency": null,
+                "Subcarrier Spacing SSB": null,
+                "Cell Resel Prio": null,
+                "Cell Resel Sub Prio Raw": null,
+                "Threshold Low": null,
+                "Threshold High": null,
+                "Is Freq mmW": null,
+                "Skip For Resel Search": null,
+                "P Max": null,
+                "Q Rx Lev Min": null,
+                "Q Rx Lev Min Sul": null,
+                "Params": {
+                  "NR Q Qual Min R15": null,
+                  "Thresh Rel15 Present": null,
+                  "Thresh Rel15": {
+                    "ThreshX LowQ": null,
+                    "ThreshX HighQ": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 17,
+    "samplesParsedSuccessfully": 17,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "0xb0b4-lte-pdcp-ul-statistics",
+  "logcode": "0xB0B4",
+  "name": "LTE PDCP UL Statistics",
+  "title": "0xB0B4 LTE PDCP UL Statistics",
+  "category": "PDCP",
+  "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE PDCP UL Statistics": {
+      "Number Of Subpackets": null,
+      "Sub Packets": {
+        "[]": {
+          "Log Subpacket": {
+            "Subpacket ID": null,
+            "Subpacket Version": null,
+            "Subpacket Size": null
+          },
+          "Number of Radio Bearers": null,
+          "Number of Errors": null,
+          "RBs": {
+            "[]": {
+              "Radio Configuration Index": null,
+              "Mode": null,
+              "PDCP Hdr Len": null,
+              "Num RST": null,
+              "Num Pdcp Ul Buffer Pkt": null,
+              "Num Pdcp Ul Buf Pkt Bytes": null,
+              "UDC Comp State": null,
+              "Num Flow Ctrl Trigger": null,
+              "Num Data PDU Tx": null,
+              "Num Data PDU Tx Bytes": null,
+              "Num Data Bytes from Ps": null,
+              "Num Control PDU Tx": null,
+              "Num Control PDU Tx Bytes": null,
+              "Num Status Report": null,
+              "Num ROHC Ctrl PDU Tx": null,
+              "Num ROHC Fail": null,
+              "Num Discard SDU": null,
+              "Num Discard SDU Bytes": null,
+              "Num PDU HO ReTx": null,
+              "Num PDU HO ReTx Bytes": null,
+              "Num Piggybk Rohc Feedbk Rcvd": null,
+              "Num Rohc Pdu Drop Ho": null,
+              "Num Rohc Pdu Drop Ho Bytes": null,
+              "Num Udc Comp Pkt": null,
+              "Num Udc Comp Pkt Bytes": null,
+              "Num Uncomp Pkts Udc Off": null,
+              "Num Uncomp Bytes Udc Off": null,
+              "Num Uncomp Pkts Udc On": null,
+              "Num Uncomp Bytes Udc On": null,
+              "Num ue Udc Ctrl Pdus": null,
+              "Num Enb Udc Ctrl Pdus": null,
+              "Num Enb Trigg Udc Reset": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 20,
+    "samplesParsedSuccessfully": 20,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0B4__LTE_PDCP_UL_Statistics.json"
+  }
+}

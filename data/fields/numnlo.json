@@ -1,0 +1,17 @@
+{
+  "id": "numnlo",
+  "name": "Num NLO",
+  "records": [
+    {
+      "id": "0xb840-nr5g-pdcp-dl-data-pdu",
+      "logcode": "0xB840",
+      "title": "0xB840 NR5G PDCP DL Data Pdu",
+      "name": "NR5G PDCP DL Data Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB840__NR5G_PDCP_DL_Data_Pdu.json",
+      "paths": [
+        "NR5G PDCP DL Data Pdu -> Meta Log Buffer -> [] -> Num NLO"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "neighcellconfig",
+  "name": "neighCellConfig",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> neighCellConfig",
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> neighCellConfig -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> neighCellConfig",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> neighCellConfig -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig",
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib5 -> interFreqCarrierFreqListExt-r12 -> [] -> neighCellConfig-r12 -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib3 -> intraFreqCellReselectionInfo -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqListExt-r12 -> [] -> neighCellConfig-r12 -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4,sib5",
+      "name": "D [LTE] System Information : sib4,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig",
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqListExt-r12 -> [] -> neighCellConfig-r12 -> neighCellConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig",
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqList -> [] -> neighCellConfig -> neighCellConfig",
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqListExt-r12 -> [] -> neighCellConfig-r12 -> neighCellConfig"
+      ]
+    }
+  ]
+}

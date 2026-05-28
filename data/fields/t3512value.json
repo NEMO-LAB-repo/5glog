@@ -1,0 +1,29 @@
+{
+  "id": "t3512value",
+  "name": "T3512 value",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "D [MM5G] Registration Accept -> Registration Accept -> T3512 value"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> Registration Accept -> T3512 value",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> T3512 value"
+      ]
+    }
+  ]
+}

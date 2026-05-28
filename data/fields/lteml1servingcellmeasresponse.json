@@ -1,0 +1,17 @@
+{
+  "id": "lteml1servingcellmeasresponse",
+  "name": "LTE ML1 Serving Cell Meas Response",
+  "records": [
+    {
+      "id": "0xb193-lte-ml1-serving-cell-meas-response",
+      "logcode": "0xB193",
+      "title": "0xB193 LTE ML1 Serving Cell Meas Response",
+      "name": "LTE ML1 Serving Cell Meas Response",
+      "category": "ML1",
+      "dataFile": "0xB193__LTE_ML1_Serving_Cell_Meas_Response.json",
+      "paths": [
+        "LTE ML1 Serving Cell Meas Response"
+      ]
+    }
+  ]
+}

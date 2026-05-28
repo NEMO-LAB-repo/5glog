@@ -1,0 +1,17 @@
+{
+  "id": "ulconfig",
+  "name": "UL Config",
+  "records": [
+    {
+      "id": "0xb160-lte-downlink-common-configuration",
+      "logcode": "0xB160",
+      "title": "0xB160 LTE Downlink Common Configuration",
+      "name": "LTE Downlink Common Configuration",
+      "category": "LTE",
+      "dataFile": "0xB160__LTE_Downlink_Common_Configuration.json",
+      "paths": [
+        "LTE Downlink Common Configuration -> UL Config"
+      ]
+    }
+  ]
+}

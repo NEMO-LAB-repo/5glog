@@ -1,0 +1,22 @@
+{
+  "id": "dummy",
+  "name": "dummy",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib5 -> carrierFreqListEUTRA -> eutra-FreqNeighCellList -> dummy",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> mac-CellGroupConfig -> phr-Config -> setup -> dummy",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> mac-CellGroupConfig -> phr-Config -> setup -> dummy",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> uplinkConfigCommon -> dummy",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> csi-MeasConfig -> setup -> csi-ReportConfigToAddModList -> dummy",
+        "SIB5 -> sib5 -> carrierFreqListEUTRA -> eutra-FreqNeighCellList -> dummy"
+      ]
+    }
+  ]
+}

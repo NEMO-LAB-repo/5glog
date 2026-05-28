@@ -1,0 +1,28 @@
+{
+  "id": "vocoderdspversion",
+  "name": "Vocoder DSP Version",
+  "records": [
+    {
+      "id": "0x1ff0-gsm-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Version Response",
+      "name": "GSM/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Version_Response.json",
+      "paths": [
+        "GSM/Version Response -> Subsystem Dispatch Response Message -> GSM/Version Response -> Vocoder DSP Version"
+      ]
+    },
+    {
+      "id": "0x1ff0-wcdma-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 WCDMA/Version Response",
+      "name": "WCDMA/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__WCDMA_Version_Response.json",
+      "paths": [
+        "WCDMA/Version Response -> Subsystem Dispatch Response Message -> WCDMA/Version Response -> Vocoder DSP Version"
+      ]
+    }
+  ]
+}

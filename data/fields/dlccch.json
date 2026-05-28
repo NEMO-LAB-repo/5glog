@@ -1,0 +1,39 @@
+{
+  "id": "dlccch",
+  "name": "dl-ccch",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "D [LTE] RRC Connection Reestablishment -> dl-ccch"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-setup",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Setup",
+      "name": "D [LTE] RRC Connection Setup",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+      "paths": [
+        "D [LTE] RRC Connection Setup -> dl-ccch"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch"
+      ]
+    }
+  ]
+}

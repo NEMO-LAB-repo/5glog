@@ -1,0 +1,55 @@
+{
+  "id": "0xb0c0-d-lte-rrc-connection-release-other",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] RRC Connection Release : other",
+  "title": "0xB0C0 D [LTE] RRC Connection Release : other",
+  "category": "RRC",
+  "dataFile": "0xB0C0__D_LTE_RRC_Connection_Release_other.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] RRC Connection Release : other": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> rrcConnectionRelease": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionRelease-r8": {
+            "releaseCause": null,
+            "redirectedCarrierInfo -> nr-r15": {
+              "carrierFreq-r15": null,
+              "subcarrierSpacingSSB-r15": null,
+              "smtc-r15": {
+                "periodicityAndOffset-r15 -> sf20-r15": null,
+                "ssb-Duration-r15": null
+              }
+            },
+            "redirectedCarrierInfo -> eutra": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 21,
+    "samplesParsedSuccessfully": 21,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_RRC_Connection_Release_other.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cellreselprio",
+  "name": "Cell Resel Prio",
+  "records": [
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> Frequency -> [] -> Cell Resel Prio"
+      ]
+    }
+  ]
+}

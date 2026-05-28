@@ -1,0 +1,51 @@
+{
+  "id": "0xb0c0-d-lte-security-mode-command",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] Security Mode Command",
+  "title": "0xB0C0 D [LTE] Security Mode Command",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_Security_Mode_Command.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] Security Mode Command": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> securityModeCommand": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> securityModeCommand-r8": {
+            "securityConfigSMC": {
+              "securityAlgorithmConfig": {
+                "cipheringAlgorithm": null,
+                "integrityProtAlgorithm": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 14,
+    "samplesParsedSuccessfully": 14,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_Security_Mode_Command.json"
+  }
+}

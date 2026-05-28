@@ -1,0 +1,22 @@
+{
+  "id": "aggregationlevel8",
+  "name": "aggregationLevel8",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> pdcch-ConfigCommon -> setup -> commonSearchSpaceList -> nrofCandidates -> aggregationLevel8",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP-RedCap-r17 -> pdcch-ConfigCommon -> setup -> commonSearchSpaceList -> nrofCandidates -> aggregationLevel8",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdcch-Config -> setup -> searchSpacesToAddModList -> nrofCandidates -> aggregationLevel8",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> pdcch-ConfigCommon -> setup -> commonSearchSpaceList -> nrofCandidates -> aggregationLevel8",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Common -> pdcch-ConfigCommon -> setup -> commonSearchSpaceList -> nrofCandidates -> aggregationLevel8",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdcch-Config -> setup -> searchSpacesToAddModList -> nrofCandidates -> aggregationLevel8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "imsregistration",
+  "name": "IMS Registration",
+  "records": [
+    {
+      "id": "0x1832-ims-registration",
+      "logcode": "0x1832",
+      "title": "0x1832 IMS Registration",
+      "name": "IMS Registration",
+      "category": "IMS",
+      "dataFile": "0x1832__IMS_Registration.json",
+      "paths": [
+        "IMS Registration"
+      ]
+    }
+  ]
+}

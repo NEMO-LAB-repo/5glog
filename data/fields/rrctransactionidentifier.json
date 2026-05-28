@@ -1,0 +1,291 @@
+{
+  "id": "rrctransactionidentifier",
+  "name": "rrc-TransactionIdentifier",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-emm-information",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//EMM Information",
+      "name": "D [LTE] DL Information Transfer//EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_EMM_Information.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//EMM Information -> dl-dcch -> message -> c1 -> dlInformationTransfer -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-identity-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Identity Request",
+      "name": "D [LTE] DL Information Transfer//Identity Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Identity_Request.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Identity Request -> dl-dcch -> message -> c1 -> dlInformationTransfer -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dl-dcch -> message -> c1 -> dlInformationTransfer -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "D [LTE] RRC Connection Reestablishment -> dl-ccch -> message -> c1 -> rrcConnectionReestablishment -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-release-other",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Release : other",
+      "name": "D [LTE] RRC Connection Release : other",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Release_other.json",
+      "paths": [
+        "D [LTE] RRC Connection Release : other -> dl-dcch -> message -> c1 -> rrcConnectionRelease -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-setup",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Setup",
+      "name": "D [LTE] RRC Connection Setup",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+      "paths": [
+        "D [LTE] RRC Connection Setup -> dl-ccch -> message -> c1 -> rrcConnectionSetup -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-security-mode-command",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Security Mode Command",
+      "name": "D [LTE] Security Mode Command",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Security_Mode_Command.json",
+      "paths": [
+        "D [LTE] Security Mode Command -> dl-dcch -> message -> c1 -> securityModeCommand -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-utra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_utra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : nr",
+      "name": "D [LTE] UE Capability Enquiry : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : nr -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-information-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Information Request",
+      "name": "D [LTE] UE Information Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Information_Request.json",
+      "paths": [
+        "D [LTE] UE Information Request -> dl-dcch -> message -> c1 -> ueInformationRequest-r9 -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reconfiguration-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reconfiguration Complete",
+      "name": "U [LTE] RRC Connection Reconfiguration Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reconfiguration_Complete.json",
+      "paths": [
+        "U [LTE] RRC Connection Reconfiguration Complete -> ul-dcch -> message -> c1 -> rrcConnectionReconfigurationComplete -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Complete",
+      "name": "U [LTE] RRC Connection Reestablishment Complete",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Complete.json",
+      "paths": [
+        "U [LTE] RRC Connection Reestablishment Complete -> ul-dcch -> message -> c1 -> rrcConnectionReestablishmentComplete -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-service-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Service Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Service Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Service_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Service Request -> ul-dcch -> message -> c1 -> rrcConnectionSetupComplete -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> ul-dcch -> message -> c1 -> rrcConnectionSetupComplete -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-security-mode-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Security Mode Complete",
+      "name": "U [LTE] Security Mode Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Security_Mode_Complete.json",
+      "paths": [
+        "U [LTE] Security Mode Complete -> ul-dcch -> message -> c1 -> securityModeComplete -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : nr",
+      "name": "U [LTE] UE Capability Information : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-information-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Information Response",
+      "name": "U [LTE] UE Information Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Information_Response.json",
+      "paths": [
+        "U [LTE] UE Information Response -> ul-dcch -> message -> c1 -> ueInformationResponse-r9 -> rrc-TransactionIdentifier"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> dlInformationTransfer -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> securityModeCommand -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> capabilityRequestFilter -> rrc-TransactionIdentifier",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> rrc-TransactionIdentifier",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcReconfigurationComplete -> rrc-TransactionIdentifier",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcSetupComplete -> rrc-TransactionIdentifier",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> securityModeComplete -> rrc-TransactionIdentifier",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> rrc-TransactionIdentifier"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "subpacketversion",
+  "name": "Sub Packet Version",
+  "records": [
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Header -> Sub Packet Version"
+      ]
+    },
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> Header -> Sub Packet Version"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Sub Packets -> [] -> Header -> Sub Packet Version"
+      ]
+    },
+    {
+      "id": "0xb097-lte-rlc-ul-statistics",
+      "logcode": "0xB097",
+      "title": "0xB097 LTE RLC UL Statistics",
+      "name": "LTE RLC UL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+      "paths": [
+        "LTE RLC UL Statistics -> UL Stats -> [] -> Log Subpacket -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU -> Subpacket -> [] -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+      "logcode": "0xB0B3",
+      "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+      "name": "LTE PDCP UL Cipher Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL Cipher Data PDU -> Subpacket -> [] -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Statistics -> Sub Packets -> [] -> Log Subpacket -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL SRB Integrity Data PDU -> Subpacket -> [] -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Log Subpacket -> Subpacket Version"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Log Subpacket -> Subpacket Version"
+      ]
+    }
+  ]
+}

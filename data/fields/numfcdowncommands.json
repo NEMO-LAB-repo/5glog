@@ -1,0 +1,28 @@
+{
+  "id": "numfcdowncommands",
+  "name": "Num FC Down Commands",
+  "records": [
+    {
+      "id": "0xb087-lte-rlc-dl-statistics",
+      "logcode": "0xB087",
+      "title": "0xB087 LTE RLC DL Statistics",
+      "name": "LTE RLC DL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB087__LTE_RLC_DL_Statistics.json",
+      "paths": [
+        "LTE RLC DL Statistics -> Num FC Down Commands"
+      ]
+    },
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "NR5G RLC DL Stats -> Num FC Down Commands"
+      ]
+    }
+  ]
+}

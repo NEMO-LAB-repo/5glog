@@ -1,0 +1,18 @@
+{
+  "id": "statussnapshotrequest",
+  "name": "Status Snapshot Request",
+  "records": [
+    {
+      "id": "0x1fea-status-snapshot-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Status Snapshot Request",
+      "name": "Status Snapshot Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Status_Snapshot_Request.json",
+      "paths": [
+        "Status Snapshot Request",
+        "Status Snapshot Request -> Status Snapshot Request"
+      ]
+    }
+  ]
+}

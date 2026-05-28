@@ -1,0 +1,82 @@
+{
+  "id": "0xb89b-nr5g-mac-uci-information",
+  "logcode": "0xB89B",
+  "name": "NR5G MAC UCI Information",
+  "title": "0xB89B NR5G MAC UCI Information",
+  "category": "MAC",
+  "dataFile": "0xB89B__NR5G_MAC_UCI_Information.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC UCI Information": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "System Time": {
+            "Slot": null,
+            "Numerology": null,
+            "Frame": null
+          },
+          "Num UCI Tx": null,
+          "UCI Info": {
+            "[]": {
+              "Channel Type": null,
+              "Carrier Id": null,
+              "Start Symbol": null,
+              "Num Symbols": null,
+              "UCI Request Bitmask": null,
+              "Num HARQ": null,
+              "Num SR": null,
+              "Num CSF": null,
+              "Total HARQ ACK Bits": null,
+              "SR Data": {
+                "[]": {
+                  "SR Id": null,
+                  "SR Request": null
+                }
+              },
+              "CSF Data": {
+                "[]": {
+                  "Carrier Id": null,
+                  "Report Id": null
+                }
+              },
+              "HARQ Data": {
+                "[]": {
+                  "Carrier Id": null,
+                  "HARQ Id": null,
+                  "Bit Offset": null,
+                  "Num Bits": null,
+                  "Is CRC Valid": null,
+                  "Is CRC Late": null,
+                  "CRC Status": null,
+                  "Is PDSCH Valid": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB89B__NR5G_MAC_UCI_Information.json"
+  }
+}

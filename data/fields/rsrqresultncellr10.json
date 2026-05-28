@@ -1,0 +1,17 @@
+{
+  "id": "rsrqresultncellr10",
+  "name": "rsrqResultNCell-r10",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-measurement-report",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Measurement Report",
+      "name": "U [LTE] Measurement Report",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Measurement_Report.json",
+      "paths": [
+        "U [LTE] Measurement Report -> ul-dcch -> message -> c1 -> measurementReport -> criticalExtensions -> c1 -> measurementReport-r8 -> measResults -> measResultServFreqList-r10 -> [] -> measResultBestNeighCell-r10 -> rsrqResultNCell-r10"
+      ]
+    }
+  ]
+}

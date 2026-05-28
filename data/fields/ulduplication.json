@@ -1,0 +1,17 @@
+{
+  "id": "ulduplication",
+  "name": "Ul Duplication",
+  "records": [
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> NR5G -> Ul Duplication"
+      ]
+    }
+  ]
+}

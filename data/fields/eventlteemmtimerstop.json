@@ -1,0 +1,18 @@
+{
+  "id": "eventlteemmtimerstop",
+  "name": "EVENT_LTE_EMM_TIMER_STOP",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-emm-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_STOP",
+      "name": "EVENT_LTE_EMM_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_STOP.json",
+      "paths": [
+        "EVENT_LTE_EMM_TIMER_STOP",
+        "EVENT_LTE_EMM_TIMER_STOP -> Event -> EVENT_LTE_EMM_TIMER_STOP"
+      ]
+    }
+  ]
+}

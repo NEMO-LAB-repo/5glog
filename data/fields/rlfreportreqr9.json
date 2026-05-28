@@ -1,0 +1,17 @@
+{
+  "id": "rlfreportreqr9",
+  "name": "rlf-ReportReq-r9",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-information-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Information Request",
+      "name": "D [LTE] UE Information Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Information_Request.json",
+      "paths": [
+        "D [LTE] UE Information Request -> dl-dcch -> message -> c1 -> ueInformationRequest-r9 -> criticalExtensions -> c1 -> ueInformationRequest-r9 -> rlf-ReportReq-r9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrciratreselfromeutranstartextearfcn",
+  "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Event -> EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN"
+      ]
+    }
+  ]
+}

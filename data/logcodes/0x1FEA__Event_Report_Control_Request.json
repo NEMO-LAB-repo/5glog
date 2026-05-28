@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-event-report-control-request",
+  "logcode": "0x1FEA",
+  "name": "Event Report Control Request",
+  "title": "0x1FEA Event Report Control Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Event_Report_Control_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Event Report Control Request": {
+      "Cmd Code": null,
+      "Event Report Control Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Event_Report_Control_Request.json"
+  }
+}

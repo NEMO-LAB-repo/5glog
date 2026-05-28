@@ -1,0 +1,18 @@
+{
+  "id": "eventimssiprequestsend",
+  "name": "EVENT_IMS_SIP_REQUEST_SEND",
+  "records": [
+    {
+      "id": "0x1ffb-event-ims-sip-request-send",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_SEND",
+      "name": "EVENT_IMS_SIP_REQUEST_SEND",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_SEND.json",
+      "paths": [
+        "EVENT_IMS_SIP_REQUEST_SEND",
+        "EVENT_IMS_SIP_REQUEST_SEND -> Event -> EVENT_IMS_SIP_REQUEST_SEND"
+      ]
+    }
+  ]
+}

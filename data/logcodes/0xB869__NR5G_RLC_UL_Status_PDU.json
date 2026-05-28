@@ -1,0 +1,79 @@
+{
+  "id": "0xb869-nr5g-rlc-ul-status-pdu",
+  "logcode": "0xB869",
+  "name": "NR5G RLC UL Status PDU",
+  "title": "0xB869 NR5G RLC UL Status PDU",
+  "category": "RLC",
+  "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RLC UL Status PDU": {
+      "Meta": {
+        "Num Status PDU": null,
+        "Num Status PDU Dropped": null
+      },
+      "Num Status PDU": {
+        "[]": {
+          "Sys Time": {
+            "Slot Number": null,
+            "FN": null
+          },
+          "LCID": null,
+          "SN Length": null,
+          "Size": null,
+          "Pad Size": null,
+          "Action Type": null,
+          "PDU Type": null,
+          "Payload": {
+            "DC Bit Value": null,
+            "CPT": null,
+            "ACK_SN Part 1": null,
+            "ACK_SN Part 2": null,
+            "ACK_SN 12 Bits": null,
+            "Header E1": null,
+            "ACK_SN Part 3": null,
+            "ACK_SN 18 Bits": null,
+            "NACK SN Set": {
+              "[]": {
+                "NACK_SN Part 1 Value": null,
+                "NACK_SN 18 Bits Part 2 Value": null,
+                "NACK_SN Part 3": null,
+                "E1": null,
+                "E2": null,
+                "E3": null,
+                "R": null,
+                "NACK_SN 18 Bits": null,
+                "NACK Range": null,
+                "SO Start": null,
+                "SO End": null
+              }
+            }
+          },
+          "Pad Payload": {
+            "[]": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1947,
+    "samplesParsedSuccessfully": 1947,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB869__NR5G_RLC_UL_Status_PDU.json"
+  }
+}

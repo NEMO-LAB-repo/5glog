@@ -1,0 +1,18 @@
+{
+  "id": "loggingconfig",
+  "name": "Logging Config",
+  "records": [
+    {
+      "id": "0x1ff0-logging-config",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Logging Config",
+      "name": "Logging Config",
+      "category": "Other",
+      "dataFile": "0x1FF0__Logging_Config.json",
+      "paths": [
+        "Logging Config",
+        "Logging Config -> Logging Config"
+      ]
+    }
+  ]
+}

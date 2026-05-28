@@ -1,0 +1,18 @@
+{
+  "id": "eventsipregreqsentevent",
+  "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+  "records": [
+    {
+      "id": "0x1ffb-event-sip-reg-req-sent-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_REQ_SENT_EVENT",
+      "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_REQ_SENT_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_REQ_SENT_EVENT",
+        "EVENT_SIP_REG_REQ_SENT_EVENT -> Event -> EVENT_SIP_REG_REQ_SENT_EVENT"
+      ]
+    }
+  ]
+}

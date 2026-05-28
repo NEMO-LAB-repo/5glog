@@ -1,0 +1,18 @@
+{
+  "id": "eventdiagprocessnameid",
+  "name": "EVENT_DIAG_PROCESS_NAME_ID",
+  "records": [
+    {
+      "id": "0x1ffb-event-diag-process-name-id",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DIAG_PROCESS_NAME_ID",
+      "name": "EVENT_DIAG_PROCESS_NAME_ID",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DIAG_PROCESS_NAME_ID.json",
+      "paths": [
+        "EVENT_DIAG_PROCESS_NAME_ID",
+        "EVENT_DIAG_PROCESS_NAME_ID -> Event -> EVENT_DIAG_PROCESS_NAME_ID"
+      ]
+    }
+  ]
+}

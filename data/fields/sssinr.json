@@ -1,0 +1,18 @@
+{
+  "id": "sssinr",
+  "name": "ss-sinr",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> reportConfigToAddModList -> [] -> reportConfig -> reportConfigInterRAT -> reportQuantityCellNR-r15 -> ss-sinr",
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> reportConfigToAddModList -> [] -> reportConfig -> reportConfigInterRAT -> reportQuantityRS-IndexNR-r15 -> ss-sinr"
+      ]
+    }
+  ]
+}

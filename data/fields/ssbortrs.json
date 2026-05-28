@@ -1,0 +1,17 @@
+{
+  "id": "ssbortrs",
+  "name": "SSB Or TRS",
+  "records": [
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> SSB Or TRS"
+      ]
+    }
+  ]
+}

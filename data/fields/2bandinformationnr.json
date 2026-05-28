@@ -1,0 +1,29 @@
+{
+  "id": "2bandinformationnr",
+  "name": "[2] -> bandInformationNR",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> nonCriticalExtension -> requestedFreqBandsNR-MRDC-r15 -> freq -> [2] -> bandInformationNR"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> rf-Parameters -> appliedFreqBandListFilter -> [2] -> bandInformationNR",
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> rf-ParametersMRDC -> appliedFreqBandListFilter -> [2] -> bandInformationNR"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "harqackoffsetindex",
+  "name": "HARQ ACK Offset Index",
+  "records": [
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record -> [] -> PUSCH -> HARQ ACK Offset Index"
+      ]
+    }
+  ]
+}

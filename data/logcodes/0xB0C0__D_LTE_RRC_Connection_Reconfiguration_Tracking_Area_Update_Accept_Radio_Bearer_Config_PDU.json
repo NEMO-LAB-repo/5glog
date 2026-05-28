@@ -1,0 +1,315 @@
+{
+  "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+  "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+  "category": "RRC",
+  "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "dl-dcch": {
+        "message -> c1 -> rrcConnectionReconfiguration": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8": {
+            "dedicatedInfoNASList": {},
+            "radioResourceConfigDedicated": {
+              "srb-ToAddModList": {
+                "[]": {
+                  "srb-Identity": null,
+                  "rlc-Config -> explicitValue -> am": {
+                    "ul-AM-RLC": {
+                      "t-PollRetransmit": null,
+                      "pollPDU": null,
+                      "pollByte": null,
+                      "maxRetxThreshold": null
+                    },
+                    "dl-AM-RLC": {
+                      "t-Reordering": null,
+                      "t-StatusProhibit": null
+                    }
+                  },
+                  "logicalChannelConfig -> explicitValue": {
+                    "ul-SpecificParameters": {
+                      "priority": null,
+                      "prioritisedBitRate": null,
+                      "bucketSizeDuration": null,
+                      "logicalChannelGroup": null
+                    }
+                  }
+                }
+              },
+              "drb-ToAddModList": {
+                "[]": {
+                  "eps-BearerIdentity": null,
+                  "drb-Identity": null,
+                  "rlc-Config -> am": {
+                    "ul-AM-RLC": {
+                      "t-PollRetransmit": null,
+                      "pollPDU": null,
+                      "pollByte": null,
+                      "maxRetxThreshold": null
+                    },
+                    "dl-AM-RLC": {
+                      "t-Reordering": null,
+                      "t-StatusProhibit": null
+                    }
+                  },
+                  "logicalChannelIdentity": null,
+                  "logicalChannelConfig": {
+                    "ul-SpecificParameters": {
+                      "priority": null,
+                      "prioritisedBitRate": null,
+                      "bucketSizeDuration": null,
+                      "logicalChannelGroup": null
+                    }
+                  },
+                  "pdcp-Config": {
+                    "discardTimer": null,
+                    "rlc-AM": {
+                      "statusReportRequired": null
+                    },
+                    "headerCompression -> notUsed": null
+                  }
+                }
+              },
+              "mac-MainConfig -> explicitValue": {
+                "timeAlignmentTimerDedicated": null,
+                "phr-Config -> setup": {
+                  "periodicPHR-Timer": null,
+                  "prohibitPHR-Timer": null,
+                  "dl-PathlossChange": null
+                },
+                "ul-SCH-Config": {
+                  "maxHARQ-Tx": null,
+                  "retxBSR-Timer": null,
+                  "ttiBundling": null
+                },
+                "drx-Config -> setup": {
+                  "onDurationTimer": null,
+                  "drx-InactivityTimer": null,
+                  "drx-RetransmissionTimer": null,
+                  "longDRX-CycleStartOffset -> sf160": null,
+                  "shortDRX": {
+                    "shortDRX-Cycle": null,
+                    "drxShortCycleTimer": null
+                  },
+                  "longDRX-CycleStartOffset -> sf320": null
+                }
+              },
+              "physicalConfigDedicated": {
+                "antennaInfo-r10 -> explicitValue-r10": {
+                  "transmissionMode-r10": null,
+                  "codebookSubsetRestriction-r10": null,
+                  "ue-TransmitAntennaSelection -> release": null
+                },
+                "cif-Presence-r10": null,
+                "cqi-ReportConfig-r10": {
+                  "cqi-ReportAperiodic-r10 -> setup": {
+                    "cqi-ReportModeAperiodic-r10": null
+                  },
+                  "nomPDSCH-RS-EPRE-Offset": null,
+                  "cqi-ReportPeriodic-r10 -> setup": {
+                    "cqi-PUCCH-ResourceIndex-r10": null,
+                    "cqi-pmi-ConfigIndex": null,
+                    "cqi-FormatIndicatorPeriodic-r10 -> widebandCQI-r10": {},
+                    "ri-ConfigIndex": null,
+                    "simultaneousAckNackAndCQI": null
+                  }
+                },
+                "cqi-ReportConfig": {
+                  "cqi-ReportModeAperiodic": null,
+                  "nomPDSCH-RS-EPRE-Offset": null,
+                  "cqi-ReportPeriodic -> setup": {
+                    "cqi-PUCCH-ResourceIndex": null,
+                    "cqi-pmi-ConfigIndex": null,
+                    "cqi-FormatIndicatorPeriodic -> widebandCQI": null,
+                    "ri-ConfigIndex": null,
+                    "simultaneousAckNackAndCQI": null
+                  }
+                }
+              }
+            },
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "nonCriticalExtension": {
+                      "nonCriticalExtension": {
+                        "nonCriticalExtension": {
+                          "nonCriticalExtension": {
+                            "nr-RadioBearerConfig1-r15": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Msg auth. code": null,
+      "Sequence Number": null,
+      "2nd Sec. header": null,
+      "2nd PD": null,
+      "Message ID": null,
+      "Tracking Area Update Accept": {
+        "EPS update result": {
+          "EPS update result value": null
+        },
+        "T3412 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "GUTI": {
+          "IEI": null,
+          "Length": null,
+          "Type of identity": null,
+          "Odd Even Ind": null,
+          "GUTI": {
+            "MCC": null,
+            "MNC": null,
+            "Operator": null,
+            "MME Group ID": null,
+            "MME Code": null,
+            "M-TMSI": null
+          }
+        },
+        "TAI list": {
+          "IEI": null,
+          "Length": null,
+          "TAI": {
+            "[]": {
+              "Type of list": null,
+              "Number of elements": null,
+              "MCC": null,
+              "MNC": null,
+              "Operator": null,
+              "TAC": null
+            }
+          }
+        },
+        "EPS bearer context status": {
+          "IEI": null,
+          "Length": null,
+          "EBI(7)": null,
+          "EBI(6)": null,
+          "EBI(5)": null,
+          "EBI(4)": null,
+          "EBI(3)": null,
+          "EBI(2)": null,
+          "EBI(1)": null,
+          "EBI(15)": null,
+          "EBI(14)": null,
+          "EBI(13)": null,
+          "EBI(12)": null,
+          "EBI(11)": null,
+          "EBI(10)": null,
+          "EBI(9)": null,
+          "EBI(8)": null
+        },
+        "T3402 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "T3423 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "Emergency number list": {
+          "IEI": null,
+          "Length": null,
+          "Number": {
+            "[]": {
+              "Emergency Service Category": {
+                "Mountain Rescue": null,
+                "Marine Guard": null,
+                "Fire Brigade": null,
+                "Ambulance": null,
+                "Police": null
+              },
+              "Digits": null
+            }
+          }
+        },
+        "EPS network feature support": {
+          "IEI": null,
+          "Length": null,
+          "Control plane CIoT EPS optimization (CP CIoT)": null,
+          "EMM REGISTERED without PDN connectivity (ERw/oPDN)": null,
+          "Support of EXTENDED SERVICE REQUEST for packet services (ESRPS)": null,
+          "Location services indicator in CS (CS-LCS)": null,
+          "Location services indicator in EPC (EPC-LCS)": null,
+          "Emergency bearer services indicator (EMC BS)": null,
+          "IMS voice over PS session indicator (IMS VoPS)": null,
+          "Signalling for a maximum number of 15 EPS bearer contexts (15 bearers)": null,
+          "Interworking without N26 interface indicator (IWK N26)": null,
+          "Restriction on the use of dual connectivity with NR (RestrictDCNR)": null,
+          "Restriction on enhanced coverage (RestrictEC)": null,
+          "Extended protocol configuration options (ePCO)": null,
+          "Header compression for control plane CIoT EPS optimization (HC-CP CIoT)": null,
+          "S1-u data transfer (S1-U data)": null,
+          "User plane CIoT EPS optimization (UP CIoT)": null
+        }
+      },
+      "nr-RadioBearerConfig1-r15": {
+        "pdu-radioBearerConfig": {
+          "drb-ToAddModList": {
+            "[]": {
+              "cnAssociation -> eps-BearerIdentity": null,
+              "drb-Identity": null,
+              "pdcp-Config": {
+                "drb": {
+                  "discardTimer": null,
+                  "pdcp-SN-SizeUL": null,
+                  "pdcp-SN-SizeDL": null,
+                  "headerCompression -> notUsed": null,
+                  "statusReportRequired": null
+                },
+                "t-Reordering": null
+              }
+            }
+          },
+          "securityConfig": {
+            "securityAlgorithmConfig": {
+              "cipheringAlgorithm": null,
+              "integrityProtAlgorithm": null
+            },
+            "keyToUse": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json"
+  }
+}

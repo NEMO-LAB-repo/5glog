@@ -1,0 +1,55 @@
+{
+  "id": "0xb881-nr5g-mac-ul-tb-stats",
+  "logcode": "0xB881",
+  "name": "NR5G MAC UL TB Stats",
+  "title": "0xB881 NR5G MAC UL TB Stats",
+  "category": "MAC",
+  "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC UL TB Stats": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "TB New Tx Bytes": null,
+          "TB ReTx Bytes": null,
+          "Num MCS": null,
+          "Num PRB": null,
+          "PHR": null,
+          "Max Power": null,
+          "Num New TX TB": null,
+          "Num ReTx TB": null,
+          "RI": null,
+          "CQI": null,
+          "Num PHR": null,
+          "TPC Accum": null,
+          "Num ULSCH Sched": null,
+          "Num No ULSCH Sched": null,
+          "Pcmax": null,
+          "Flush Gap Count": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB881__NR5G_MAC_UL_TB_Stats.json"
+  }
+}

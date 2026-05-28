@@ -1,0 +1,18 @@
+{
+  "id": "efs2diagreadrequest",
+  "name": "EFS2/DIAG Read Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-diag-read-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Read Request",
+      "name": "EFS2/DIAG Read Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Read_Request.json",
+      "paths": [
+        "EFS2/DIAG Read Request",
+        "EFS2/DIAG Read Request -> Subsystem Dispatch Request Message -> EFS2/DIAG Read Request"
+      ]
+    }
+  ]
+}

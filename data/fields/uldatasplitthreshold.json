@@ -1,0 +1,39 @@
+{
+  "id": "uldatasplitthreshold",
+  "name": "Ul Data Split Threshold",
+  "records": [
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Active RB -> [] -> Type -> NR5G -> Ul Data Split Threshold"
+      ]
+    },
+    {
+      "id": "0xb825-nr5g-rrc-configuration-info",
+      "logcode": "0xB825",
+      "title": "0xB825 NR5G RRC Configuration Info",
+      "name": "NR5G RRC Configuration Info",
+      "category": "RRC",
+      "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+      "paths": [
+        "NR5G RRC Configuration Info -> Radio Bearer Info -> [] -> UL Data Split Threshold"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> PDCP RB Param -> [] -> UL Data Split Threshold"
+      ]
+    }
+  ]
+}

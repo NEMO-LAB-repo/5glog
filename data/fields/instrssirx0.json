@@ -1,0 +1,39 @@
+{
+  "id": "instrssirx0",
+  "name": "Inst RSSI Rx[0]",
+  "records": [
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result -> Sub Packets -> [] -> Inst RSSI Rx[0]"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Sub Packets -> [] -> Inst RSSI Rx[0]"
+      ]
+    },
+    {
+      "id": "0xb196-lte-ml1-cell-measurement-results",
+      "logcode": "0xB196",
+      "title": "0xB196 LTE ML1 Cell Measurement Results",
+      "name": "LTE ML1 Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Cell Measurement Results -> Cell Measurement List -> [] -> Inst RSSI Rx[0]"
+      ]
+    }
+  ]
+}

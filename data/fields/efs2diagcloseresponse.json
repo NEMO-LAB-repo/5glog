@@ -1,0 +1,18 @@
+{
+  "id": "efs2diagcloseresponse",
+  "name": "EFS2/DIAG Close Response",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-diag-close-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Close Response",
+      "name": "EFS2/DIAG Close Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Close_Response.json",
+      "paths": [
+        "EFS2/DIAG Close Response",
+        "EFS2/DIAG Close Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Close Response"
+      ]
+    }
+  ]
+}

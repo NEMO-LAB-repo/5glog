@@ -1,0 +1,18 @@
+{
+  "id": "seteventmaskresponse",
+  "name": "Set Event Mask Response",
+  "records": [
+    {
+      "id": "0x1ff0-set-event-mask-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Set Event Mask Response",
+      "name": "Set Event Mask Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Set_Event_Mask_Response.json",
+      "paths": [
+        "Set Event Mask Response",
+        "Set Event Mask Response -> Set Event Mask Response"
+      ]
+    }
+  ]
+}

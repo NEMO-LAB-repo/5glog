@@ -1,0 +1,33 @@
+{
+  "id": "0x1fea-extended-message-report-config-request",
+  "logcode": "0x1FEA",
+  "name": "Extended Message Report Config Request",
+  "title": "0x1FEA Extended Message Report Config Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Extended_Message_Report_Config_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Extended Message Report Config Request": {
+      "Cmd Code": null,
+      "Extended Message Report Config Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FEA__Extended_Message_Report_Config_Request.json"
+  }
+}

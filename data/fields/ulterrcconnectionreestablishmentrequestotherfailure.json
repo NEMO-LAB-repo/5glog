@@ -1,0 +1,17 @@
+{
+  "id": "ulterrcconnectionreestablishmentrequestotherfailure",
+  "name": "U [LTE] RRC Connection Reestablishment Request : otherFailure",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-request-otherfailure",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "name": "U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Request_otherFailure.json",
+      "paths": [
+        "U [LTE] RRC Connection Reestablishment Request : otherFailure"
+      ]
+    }
+  ]
+}

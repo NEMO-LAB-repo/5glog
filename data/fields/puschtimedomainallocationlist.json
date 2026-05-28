@@ -1,0 +1,22 @@
+{
+  "id": "puschtimedomainallocationlist",
+  "name": "pusch-TimeDomainAllocationList",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon-v1700 -> initialUplinkBWP-RedCap-r17 -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> initialUplinkBWP -> pusch-Config -> setup -> pusch-TimeDomainAllocationList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Common -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pusch-Config -> setup -> pusch-TimeDomainAllocationList"
+      ]
+    }
+  ]
+}

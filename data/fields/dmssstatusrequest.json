@@ -1,0 +1,18 @@
+{
+  "id": "dmssstatusrequest",
+  "name": "DMSS Status Request",
+  "records": [
+    {
+      "id": "0x1fea-dmss-status-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA DMSS Status Request",
+      "name": "DMSS Status Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__DMSS_Status_Request.json",
+      "paths": [
+        "DMSS Status Request",
+        "DMSS Status Request -> DMSS Status Request"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "0x1fea-efs2-hello-request",
+  "logcode": "0x1FEA",
+  "name": "EFS2/Hello Request",
+  "title": "0x1FEA EFS2/Hello Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__EFS2_Hello_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EFS2/Hello Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "EFS2/Hello Request": {}
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__EFS2_Hello_Request.json"
+  }
+}

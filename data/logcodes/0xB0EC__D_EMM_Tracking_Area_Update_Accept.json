@@ -1,0 +1,139 @@
+{
+  "id": "0xb0ec-d-emm-tracking-area-update-accept",
+  "logcode": "0xB0EC",
+  "name": "D [EMM] Tracking Area Update Accept",
+  "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+  "category": "NAS",
+  "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [EMM] Tracking Area Update Accept": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Message ID": null,
+      "Tracking Area Update Accept": {
+        "EPS update result": {
+          "EPS update result value": null
+        },
+        "T3412 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "GUTI": {
+          "IEI": null,
+          "Length": null,
+          "Type of identity": null,
+          "Odd Even Ind": null,
+          "GUTI": {
+            "MCC": null,
+            "MNC": null,
+            "Operator": null,
+            "MME Group ID": null,
+            "MME Code": null,
+            "M-TMSI": null
+          }
+        },
+        "TAI list": {
+          "IEI": null,
+          "Length": null,
+          "TAI": {
+            "[]": {
+              "Type of list": null,
+              "Number of elements": null,
+              "MCC": null,
+              "MNC": null,
+              "Operator": null,
+              "TAC": null
+            }
+          }
+        },
+        "EPS bearer context status": {
+          "IEI": null,
+          "Length": null,
+          "EBI(7)": null,
+          "EBI(6)": null,
+          "EBI(5)": null,
+          "EBI(4)": null,
+          "EBI(3)": null,
+          "EBI(2)": null,
+          "EBI(1)": null,
+          "EBI(15)": null,
+          "EBI(14)": null,
+          "EBI(13)": null,
+          "EBI(12)": null,
+          "EBI(11)": null,
+          "EBI(10)": null,
+          "EBI(9)": null,
+          "EBI(8)": null
+        },
+        "T3402 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "T3423 value": {
+          "IEI": null,
+          "Unit": null,
+          "Timer value": null
+        },
+        "Emergency number list": {
+          "IEI": null,
+          "Length": null,
+          "Number": {
+            "[]": {
+              "Emergency Service Category": {
+                "Mountain Rescue": null,
+                "Marine Guard": null,
+                "Fire Brigade": null,
+                "Ambulance": null,
+                "Police": null
+              },
+              "Digits": null
+            }
+          }
+        },
+        "EPS network feature support": {
+          "IEI": null,
+          "Length": null,
+          "Control plane CIoT EPS optimization (CP CIoT)": null,
+          "EMM REGISTERED without PDN connectivity (ERw/oPDN)": null,
+          "Support of EXTENDED SERVICE REQUEST for packet services (ESRPS)": null,
+          "Location services indicator in CS (CS-LCS)": null,
+          "Location services indicator in EPC (EPC-LCS)": null,
+          "Emergency bearer services indicator (EMC BS)": null,
+          "IMS voice over PS session indicator (IMS VoPS)": null,
+          "Signalling for a maximum number of 15 EPS bearer contexts (15 bearers)": null,
+          "Interworking without N26 interface indicator (IWK N26)": null,
+          "Restriction on the use of dual connectivity with NR (RestrictDCNR)": null,
+          "Restriction on enhanced coverage (RestrictEC)": null,
+          "Extended protocol configuration options (ePCO)": null,
+          "Header compression for control plane CIoT EPS optimization (HC-CP CIoT)": null,
+          "S1-u data transfer (S1-U data)": null,
+          "User plane CIoT EPS optimization (UP CIoT)": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 28,
+    "samplesParsedSuccessfully": 28,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+  "logcode": "0xB18F",
+  "name": "LTE ML1 AdvRx IC Cell List",
+  "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+  "category": "ML1",
+  "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 AdvRx IC Cell List": {
+      "Carrier Index": null,
+      "eNB Type": null,
+      "FW mode": null,
+      "Earfcn Data": null,
+      "Earfcn": null,
+      "Num Neighbors": null,
+      "Panic Escape Mask": null,
+      "Valid Sched Rate": null,
+      "Is Carrier Cfg FW": null,
+      "SubFn": null,
+      "TM Mode": null,
+      "Serving": {
+        "Cell ID": null,
+        "DL Bandwidth": null,
+        "Num Antennas": null,
+        "Filt RSRP Data": null,
+        "Cell Type": null,
+        "IC Inr Use Nb": null,
+        "RSRP Use Nb": null
+      },
+      "Neighbors": {
+        "[]": {
+          "Cell ID": null,
+          "DL Bandwidth": null,
+          "Num Antennas": null,
+          "Filt RSRP Data": null,
+          "Cell Type": null,
+          "IC Inr Use Nb": null,
+          "RSRP Use Nb": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 70,
+    "samplesParsedSuccessfully": 70,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json"
+  }
+}

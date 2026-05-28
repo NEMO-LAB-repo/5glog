@@ -1,0 +1,270 @@
+{
+  "id": "mcc",
+  "name": "MCC",
+  "records": [
+    {
+      "id": "0x184e-cm-serving-system-msim-event",
+      "logcode": "0x184E",
+      "title": "0x184E CM Serving System MSIM Event",
+      "name": "CM Serving System MSIM Event",
+      "category": "Other",
+      "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+      "paths": [
+        "CM Serving System MSIM Event -> stack -> [] -> sys_id -> MCC"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message -> GSM/Status Response -> LAI-LAC -> MCC"
+      ]
+    },
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Status Snapshot Response -> Status Snapshot Response -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dedicatedInfoNAS -> Tracking Area Update Accept -> GUTI -> GUTI -> MCC",
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dedicatedInfoNAS -> Tracking Area Update Accept -> TAI list -> TAI -> [] -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> Tracking Area Update Accept -> GUTI -> GUTI -> MCC",
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> Tracking Area Update Accept -> TAI list -> TAI -> [] -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "D [LTE] SIB1 -> bcch-dl-sch -> message -> c1 -> systemInformationBlockType1 -> cellAccessRelatedInfo -> plmn-IdentityList -> [] -> plmn-Identity -> mcc"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-measurement-report",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Measurement Report",
+      "name": "U [LTE] Measurement Report",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Measurement_Report.json",
+      "paths": [
+        "U [LTE] Measurement Report -> ul-dcch -> message -> c1 -> measurementReport -> criticalExtensions -> c1 -> measurementReport-r8 -> measResults -> measResultNeighCells -> measResultListEUTRA -> [] -> cgi-Info -> cellGlobalId -> plmn-Identity -> mcc"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Last visited registered TAI -> MCC",
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-information-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Information Response",
+      "name": "U [LTE] UE Information Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Information_Response.json",
+      "paths": [
+        "U [LTE] UE Information Response -> ul-dcch -> message -> c1 -> ueInformationResponse-r9 -> criticalExtensions -> c1 -> ueInformationResponse-r9 -> rlf-Report-r9 -> failedPCellId-r10 -> cellGlobalId-r10 -> plmn-Identity -> mcc",
+        "U [LTE] UE Information Response -> ul-dcch -> message -> c1 -> ueInformationResponse-r9 -> criticalExtensions -> c1 -> ueInformationResponse-r9 -> rlf-Report-r9 -> previousPCellId-r10 -> plmn-Identity -> mcc",
+        "U [LTE] UE Information Response -> ul-dcch -> message -> c1 -> ueInformationResponse-r9 -> criticalExtensions -> c1 -> ueInformationResponse-r9 -> rlf-Report-r9 -> reestablishmentCellId-r10 -> plmn-Identity -> mcc"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Last visited registered TAI -> MCC",
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0c2-lte-rrc-serving-cell-info",
+      "logcode": "0xB0C2",
+      "title": "0xB0C2 LTE RRC Serving Cell Info",
+      "name": "LTE RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB0C2__LTE_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "LTE RRC Serving Cell Info -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [EMM] Tracking Area Update Accept -> Tracking Area Update Accept -> GUTI -> GUTI -> MCC",
+        "D [EMM] Tracking Area Update Accept -> Tracking Area Update Accept -> TAI list -> TAI -> [] -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request -> Tracking Area Update Request -> Last visited registered TAI -> MCC",
+        "U [EMM] Tracking Area Update Request -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb0ee-lte-nas-emm-state",
+      "logcode": "0xB0EE",
+      "title": "0xB0EE LTE NAS EMM State",
+      "name": "LTE NAS EMM State",
+      "category": "NAS",
+      "dataFile": "0xB0EE__LTE_NAS_EMM_State.json",
+      "paths": [
+        "LTE NAS EMM State -> GUTI -> MCC",
+        "LTE NAS EMM State -> MCC"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "D [MM5G] Registration Accept -> Registration Accept -> 5G-GUTI -> 5G-GUTI -> MCC",
+        "D [MM5G] Registration Accept -> Registration Accept -> Allowed NSSAI -> S-NSSAI -> [] -> SD -> MCC",
+        "D [MM5G] Registration Accept -> Registration Accept -> Configured NSSAI -> S-NSSAI -> [] -> SD -> MCC",
+        "D [MM5G] Registration Accept -> Registration Accept -> TAI list -> Partial tracking area identity list -> [] -> MCC"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "U [MM5G] Registration Request -> Registration Request -> Last visited registered TAI -> MCC",
+        "U [MM5G] Registration Request -> Registration Request -> Requested NSSAI -> S-NSSAI -> [] -> SD -> MCC"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Registration Request",
+      "name": "U [MM5G] Registration Request//Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> Last visited registered TAI -> MCC",
+        "U [MM5G] Registration Request//Registration Request -> MM5G Message -> Registration Request -> Requested NSSAI -> S-NSSAI -> [] -> SD -> MCC",
+        "U [MM5G] Registration Request//Registration Request -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Additional GUTI -> 5G-GUTI -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Last visited registered TAI -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Requested NSSAI -> S-NSSAI -> [] -> SD -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> Registration Request -> Additional GUTI -> 5G-GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Additional GUTI -> 5G-GUTI -> MCC",
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Last visited registered TAI -> MCC",
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> MM5G Message -> Registration Request -> Requested NSSAI -> S-NSSAI -> [] -> SD -> MCC",
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> cellAccessRelatedInfo -> plmn-IdentityInfoList -> plmn-IdentityList -> mcc",
+        "DL-DCCH-Message -> Registration Accept -> 5G-GUTI -> 5G-GUTI -> MCC",
+        "DL-DCCH-Message -> Registration Accept -> Allowed NSSAI -> S-NSSAI -> SD -> MCC",
+        "DL-DCCH-Message -> Registration Accept -> Configured NSSAI -> S-NSSAI -> SD -> MCC",
+        "DL-DCCH-Message -> Registration Accept -> TAI list -> Partial tracking area identity list -> MCC",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> 5G-GUTI -> 5G-GUTI -> MCC",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> Allowed NSSAI -> S-NSSAI -> SD -> MCC",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> Configured NSSAI -> S-NSSAI -> SD -> MCC",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> TAI list -> Partial tracking area identity list -> MCC",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> Additional GUTI -> 5G-GUTI -> MCC",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> Last visited registered TAI -> MCC",
+        "UL-DCCH-Message -> MM5G Message -> Registration Request -> Requested NSSAI -> S-NSSAI -> SD -> MCC",
+        "UL-DCCH-Message -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> MCC",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> 5GS Mobile Identity -> 5G-GUTI -> MCC",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> Additional GUTI -> 5G-GUTI -> MCC",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> Last visited registered TAI -> MCC",
+        "UL-DCCH-Message -> dedicatedNAS-Message -> Registration Request -> Requested NSSAI -> S-NSSAI -> SD -> MCC"
+      ]
+    }
+  ]
+}

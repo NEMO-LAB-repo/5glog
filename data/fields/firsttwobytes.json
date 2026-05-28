@@ -1,0 +1,17 @@
+{
+  "id": "firsttwobytes",
+  "name": "FIRST TWO BYTES",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> TB Info -> [] -> MAC Sdu Info -> [] -> PDCP Group Info -> [] -> Group -> [] -> FIRST TWO BYTES"
+      ]
+    }
+  ]
+}

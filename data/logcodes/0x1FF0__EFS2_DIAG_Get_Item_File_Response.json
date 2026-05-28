@@ -1,0 +1,42 @@
+{
+  "id": "0x1ff0-efs2-diag-get-item-file-response",
+  "logcode": "0x1FF0",
+  "name": "EFS2/DIAG Get Item File Response",
+  "title": "0x1FF0 EFS2/DIAG Get Item File Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EFS2/DIAG Get Item File Response": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Response Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "EFS2/DIAG Get Item File Response": {
+          "Length": null,
+          "Error": null,
+          "Sequence": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 36,
+    "samplesParsedSuccessfully": 36,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__EFS2_DIAG_Get_Item_File_Response.json"
+  }
+}

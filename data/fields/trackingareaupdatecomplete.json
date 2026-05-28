@@ -1,0 +1,28 @@
+{
+  "id": "trackingareaupdatecomplete",
+  "name": "Tracking Area Update Complete",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Complete -> dedicatedInfoNAS -> Tracking Area Update Complete"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-complete",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Complete",
+      "name": "U [EMM] Tracking Area Update Complete",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Complete -> Tracking Area Update Complete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sintrasearchq",
+  "name": "S Intra Search Q",
+  "records": [
+    {
+      "id": "0xb17d-lte-ml1-idle-measurement-request",
+      "logcode": "0xB17D",
+      "title": "0xB17D LTE ML1 Idle Measurement Request",
+      "name": "LTE ML1 Idle Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB17D__LTE_ML1_Idle_Measurement_Request.json",
+      "paths": [
+        "LTE ML1 Idle Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas Intra Frequency Common Config Resel Info -> Rel 9 Info -> S Intra Search Q"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> Rel 9 Info -> S Intra Search Q"
+      ]
+    }
+  ]
+}

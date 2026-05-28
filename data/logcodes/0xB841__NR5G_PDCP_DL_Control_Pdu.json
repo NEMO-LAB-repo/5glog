@@ -1,0 +1,42 @@
+{
+  "id": "0xb841-nr5g-pdcp-dl-control-pdu",
+  "logcode": "0xB841",
+  "name": "NR5G PDCP DL Control Pdu",
+  "title": "0xB841 NR5G PDCP DL Control Pdu",
+  "category": "PDCP",
+  "dataFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G PDCP DL Control Pdu": {
+      "System Time": {
+        "Slot": null,
+        "Frame": null
+      },
+      "Control PDU Size": null,
+      "Control PDU Type": null,
+      "PDCP Type": null,
+      "DC Bit Value": null,
+      "Control PDU Payload -> PDCP Status Report": {
+        "FMC": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 31,
+    "samplesParsedSuccessfully": 31,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB841__NR5G_PDCP_DL_Control_Pdu.json"
+  }
+}

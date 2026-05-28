@@ -1,0 +1,18 @@
+{
+  "id": "extendedmessagereportconfigrequest",
+  "name": "Extended Message Report Config Request",
+  "records": [
+    {
+      "id": "0x1fea-extended-message-report-config-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Message Report Config Request",
+      "name": "Extended Message Report Config Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Message_Report_Config_Request.json",
+      "paths": [
+        "Extended Message Report Config Request",
+        "Extended Message Report Config Request -> Extended Message Report Config Request"
+      ]
+    }
+  ]
+}

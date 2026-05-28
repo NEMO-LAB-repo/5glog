@@ -1,0 +1,28 @@
+{
+  "id": "endtime",
+  "name": "End Time",
+  "records": [
+    {
+      "id": "0x12c1-cm-call-event",
+      "logcode": "0x12C1",
+      "title": "0x12C1 CM Call Event",
+      "name": "CM Call Event",
+      "category": "Other",
+      "dataFile": "0x12C1__CM_Call_Event.json",
+      "paths": [
+        "CM Call Event -> End Time"
+      ]
+    },
+    {
+      "id": "0xb1b9-lte-ml1-coex-state-info",
+      "logcode": "0xB1B9",
+      "title": "0xB1B9 LTE ML1 Coex State Info",
+      "name": "LTE ML1 Coex State Info",
+      "category": "ML1",
+      "dataFile": "0xB1B9__LTE_ML1_Coex_State_Info.json",
+      "paths": [
+        "LTE ML1 Coex State Info -> Record -> [] -> End Time"
+      ]
+    }
+  ]
+}

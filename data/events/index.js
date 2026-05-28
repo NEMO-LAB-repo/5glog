@@ -1,0 +1,14 @@
+window.EVENT_INDEX = [
+  {
+    id: "handover",
+    title: "Handover",
+    view: "handover",
+    dataFile: "data/events/handover.json"
+  },
+  {
+    id: "ue_registration",
+    title: "UE Registration",
+    view: "registration",
+    status: "placeholder"
+  }
+];

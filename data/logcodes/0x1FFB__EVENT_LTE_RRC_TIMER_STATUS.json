@@ -1,0 +1,43 @@
+{
+  "id": "0x1ffb-event-lte-rrc-timer-status",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_RRC_TIMER_STATUS",
+  "title": "0x1FFB EVENT_LTE_RRC_TIMER_STATUS",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_RRC_TIMER_STATUS.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_RRC_TIMER_STATUS": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_RRC_TIMER_STATUS": {
+          "Timer Name": null,
+          "Timer Value": null,
+          "Timer State": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 264,
+    "samplesParsedSuccessfully": 264,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_RRC_TIMER_STATUS.json"
+  }
+}

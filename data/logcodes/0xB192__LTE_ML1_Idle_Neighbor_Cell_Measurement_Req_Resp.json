@@ -1,0 +1,84 @@
+{
+  "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+  "logcode": "0xB192",
+  "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+  "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+  "category": "ML1",
+  "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Idle Neighbor Cell Measurement Req/Resp": {
+      "Number Of Subpackets": null,
+      "Sub Packets": {
+        "[]": {
+          "Log Subpacket": {
+            "Subpacket ID": null,
+            "Subpacket Version": null,
+            "Subpacket Size": null
+          },
+          "Request": {
+            "E-ARFCN": null,
+            "Number Of Cell": null,
+            "Num Of Rx Ant": null,
+            "Duplexing Mode": null,
+            "Sub Packets": {
+              "[]": {
+                "Cell ID": null,
+                "CP Type": null,
+                "Num Of Tx Ant": null,
+                "TTL Enable": null,
+                "FTL Enable": null,
+                "Frequency Offset": null,
+                "Frame Boundary Ref Time": {
+                  "[]": null
+                },
+                "Total Timing Adj": {
+                  "[]": null
+                }
+              }
+            }
+          },
+          "Result": {
+            "E-ARFCN": null,
+            "Num Of Cells": null,
+            "Duplexing Mode": null,
+            "Serving Cell Index": null,
+            "Sub Packets": {
+              "[]": {
+                "Cell ID": null,
+                "Frequency Offset": null,
+                "Inst RSRP Rx[0]": null,
+                "Inst RSRP Rx[1]": null,
+                "Inst RSRP": null,
+                "Inst RSRQ Rx[0]": null,
+                "Inst RSRQ Rx[1]": null,
+                "Inst RSRQ": null,
+                "Inst RSSI Rx[0]": null,
+                "Inst RSSI Rx[1]": null,
+                "Inst RSSI": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 57,
+    "samplesParsedSuccessfully": 57,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "0x1ffb-event-lte-scell-configuration",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_SCELL_CONFIGURATION",
+  "title": "0x1FFB EVENT_LTE_SCELL_CONFIGURATION",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_SCELL_CONFIGURATION": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_SCELL_CONFIGURATION": {
+          "System Frame Number": null,
+          "Subframe Number": null,
+          "Addition Scell ID Mask": null,
+          "Recfg Scell ID Mask": null,
+          "Delete Scell ID Mask": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 6,
+    "samplesParsedSuccessfully": 6,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json"
+  }
+}

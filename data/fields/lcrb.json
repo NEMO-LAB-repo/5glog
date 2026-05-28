@@ -1,0 +1,17 @@
+{
+  "id": "lcrb",
+  "name": "LCRB",
+  "records": [
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Per Symbol -> Versions -> SubVer6 -> Chains -> [] -> LCRB"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "measrespsfn",
+  "name": "Meas Resp Sfn",
+  "records": [
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Meas Resp Sfn"
+      ]
+    }
+  ]
+}

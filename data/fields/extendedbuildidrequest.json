@@ -1,0 +1,18 @@
+{
+  "id": "extendedbuildidrequest",
+  "name": "Extended Build ID Request",
+  "records": [
+    {
+      "id": "0x1fea-extended-build-id-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Extended Build ID Request",
+      "name": "Extended Build ID Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Extended_Build_ID_Request.json",
+      "paths": [
+        "Extended Build ID Request",
+        "Extended Build ID Request -> Extended Build ID Request"
+      ]
+    }
+  ]
+}

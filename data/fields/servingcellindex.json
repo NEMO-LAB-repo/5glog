@@ -1,0 +1,61 @@
+{
+  "id": "servingcellindex",
+  "name": "Serving Cell Index",
+  "records": [
+    {
+      "id": "0xb173-lte-ml1-pdsch-stat-indication",
+      "logcode": "0xB173",
+      "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+      "name": "LTE ML1 PDSCH Stat Indication",
+      "category": "ML1",
+      "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+      "paths": [
+        "LTE ML1 PDSCH Stat Indication -> Record -> [] -> Serving Cell Index"
+      ]
+    },
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results -> Serving Cell Index"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result -> Serving Cell Index"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Serving Cell Index"
+      ]
+    },
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Database Update Ext -> Component Carrier List -> [] -> Serving Cell Index"
+      ]
+    }
+  ]
+}

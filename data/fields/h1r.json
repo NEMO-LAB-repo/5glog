@@ -1,0 +1,17 @@
+{
+  "id": "h1r",
+  "name": "\u0001?\b?h1\tR}",
+  "records": [
+    {
+      "id": "0x156e-d-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE",
+      "name": "D [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "D [IMS] IMS_SIP_MESSAGE -> \u0001?\b?h1\tR}"
+      ]
+    }
+  ]
+}

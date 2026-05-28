@@ -1,0 +1,17 @@
+{
+  "id": "numuncompbytesudcoff",
+  "name": "Num Uncomp Bytes Udc Off",
+  "records": [
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Statistics -> Sub Packets -> [] -> RBs -> [] -> Num Uncomp Bytes Udc Off"
+      ]
+    }
+  ]
+}

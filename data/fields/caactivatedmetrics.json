@@ -1,0 +1,28 @@
+{
+  "id": "caactivatedmetrics",
+  "name": "ca_activated_metrics",
+  "records": [
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet -> Versions -> Version -> ca_activated_metrics"
+      ]
+    },
+    {
+      "id": "0xb9a7-nr5g-ml1-dlm2-ca-metrics-request",
+      "logcode": "0xB9A7",
+      "title": "0xB9A7 NR5G ML1 DLM2 CA Metrics Request",
+      "name": "NR5G ML1 DLM2 CA Metrics Request",
+      "category": "ML1",
+      "dataFile": "0xB9A7__NR5G_ML1_DLM2_CA_Metrics_Request.json",
+      "paths": [
+        "NR5G ML1 DLM2 CA Metrics Request -> CA Activated Metrics"
+      ]
+    }
+  ]
+}

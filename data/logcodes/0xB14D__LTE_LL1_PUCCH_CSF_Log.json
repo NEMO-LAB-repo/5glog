@@ -1,0 +1,60 @@
+{
+  "id": "0xb14d-lte-ll1-pucch-csf-log",
+  "logcode": "0xB14D",
+  "name": "LTE LL1 PUCCH CSF Log",
+  "title": "0xB14D LTE LL1 PUCCH CSF Log",
+  "category": "ML1",
+  "dataFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PUCCH CSF Log": {
+      "Starting Subframe Number": null,
+      "Starting System Frame Number": null,
+      "Carrier Index": null,
+      "Scell Index": null,
+      "PUCCH Reporting Mode": null,
+      "PUCCH Report Type": null,
+      "Size BWP": null,
+      "Number of SubBands": null,
+      "BWP Index": null,
+      "Alt Cqi Table Data": null,
+      "SubBand Label": null,
+      "CQI CW0": null,
+      "CQI CW1": null,
+      "Wideband PMI": null,
+      "CSF Tx Mode": null,
+      "PUCCH Reporting Submode": null,
+      "Num Csirs Ports": null,
+      "Wideband PMI1": null,
+      "Pti": null,
+      "Csi Meas Set Index": null,
+      "Rank Index": null,
+      "CRI": null,
+      "Last Rank Reported UL": null,
+      "UL Frame Number": null,
+      "UL Channel Type": null,
+      "UL Subframe Number": null,
+      "UL Payload Length": null,
+      "W1 I11 FDMIMO": null,
+      "W1 I12 FDMIMO": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 129,
+    "samplesParsedSuccessfully": 129,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "0x1fea-extended-build-id-request",
+  "logcode": "0x1FEA",
+  "name": "Extended Build ID Request",
+  "title": "0x1FEA Extended Build ID Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__Extended_Build_ID_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Extended Build ID Request": {
+      "Cmd Code": null,
+      "Extended Build ID Request": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__Extended_Build_ID_Request.json"
+  }
+}

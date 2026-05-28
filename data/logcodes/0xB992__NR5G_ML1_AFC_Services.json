@@ -1,0 +1,74 @@
+{
+  "id": "0xb992-nr5g-ml1-afc-services",
+  "logcode": "0xB992",
+  "name": "NR5G ML1 AFC Services",
+  "title": "0xB992 NR5G ML1 AFC Services",
+  "category": "ML1",
+  "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 AFC Services": {
+      "Versions -> Version": {
+        "Header": {
+          "Current Time": {
+            "Slot Number": null,
+            "SubFrame Number": null,
+            "System Frame Number": null,
+            "SCS": null
+          },
+          "Log Type": null,
+          "Num CC": null
+        },
+        "Log Data": {
+          "[]": {
+            "Log Data Type -> Loop State Data": {
+              "CC ID": null,
+              "R02": null,
+              "R03": null,
+              "R04": null,
+              "Sub Packets": {
+                "[]": {
+                  "RX FTL SNR": {
+                    "SNR Value": null
+                  }
+                }
+              }
+            },
+            "Log Data Type -> Error Data": {
+              "CC ID": null,
+              "Uncertainty": null,
+              "R0": null,
+              "Init Freq Error Raw": null
+            },
+            "Log Data Type -> ACQ UPDATE Data": {
+              "CC ID": null,
+              "R0": null,
+              "Init Freq Error Raw": null,
+              "Updated Freq Error Raw": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB992__NR5G_ML1_AFC_Services.json"
+  }
+}

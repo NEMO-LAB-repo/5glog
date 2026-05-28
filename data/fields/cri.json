@@ -1,0 +1,52 @@
+{
+  "id": "cri",
+  "name": "CRI",
+  "records": [
+    {
+      "id": "0xb14d-lte-ll1-pucch-csf-log",
+      "logcode": "0xB14D",
+      "title": "0xB14D LTE LL1 PUCCH CSF Log",
+      "name": "LTE LL1 PUCCH CSF Log",
+      "category": "ML1",
+      "dataFile": "0xB14D__LTE_LL1_PUCCH_CSF_Log.json",
+      "paths": [
+        "LTE LL1 PUCCH CSF Log -> CRI"
+      ]
+    },
+    {
+      "id": "0xb14e-lte-ll1-pusch-csf",
+      "logcode": "0xB14E",
+      "title": "0xB14E LTE LL1 PUSCH CSF",
+      "name": "LTE LL1 PUSCH CSF",
+      "category": "ML1",
+      "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+      "paths": [
+        "LTE LL1 PUSCH CSF -> CRI"
+      ]
+    },
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "NR5G MAC CSF Report -> Records -> [] -> Reports -> [] -> Quantities -> CSI -> Bit Width -> CRI",
+        "NR5G MAC CSF Report -> Records -> [] -> Reports -> [] -> Quantities -> CSI -> Metrics -> CRI"
+      ]
+    },
+    {
+      "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+      "logcode": "0xB8E2",
+      "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+      "name": "NR5G LL1 FW CSF Reports",
+      "category": "ML1",
+      "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+      "paths": [
+        "NR5G LL1 FW CSF Reports -> CSI Records -> [] -> CRI",
+        "NR5G LL1 FW CSF Reports -> RSRP Records -> [] -> CRI"
+      ]
+    }
+  ]
+}

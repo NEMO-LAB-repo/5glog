@@ -1,0 +1,73 @@
+{
+  "id": "mappingtype",
+  "name": "mappingType",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> pdsch-ConfigCommon -> setup -> pdsch-TimeDomainAllocationList -> mappingType",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP-RedCap-r17 -> pdsch-ConfigCommon -> setup -> pdsch-TimeDomainAllocationList -> mappingType",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList -> mappingType",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon-v1700 -> initialUplinkBWP-RedCap-r17 -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList -> mappingType",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdsch-Config -> setup -> pdsch-TimeDomainAllocationList -> setup -> mappingType",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> initialUplinkBWP -> pusch-Config -> setup -> pusch-TimeDomainAllocationList -> setup -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> downlinkConfigCommon -> initialDownlinkBWP -> pdsch-ConfigCommon -> setup -> pdsch-TimeDomainAllocationList -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Common -> pdsch-ConfigCommon -> setup -> pdsch-TimeDomainAllocationList -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> pdsch-TimeDomainAllocationList -> setup -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Common -> pusch-ConfigCommon -> setup -> pusch-TimeDomainAllocationList -> mappingType",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pusch-Config -> setup -> pusch-TimeDomainAllocationList -> setup -> mappingType"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUSCH Data -> Mapping Type"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Common -> Pdsch Common -> Pdsch Time Dom Alloc List -> [] -> Mapping type"
+      ]
+    },
+    {
+      "id": "0xb951-nr5g-ml1-dl-dedicated-config",
+      "logcode": "0xB951",
+      "title": "0xB951 NR5G ML1 DL Dedicated Config",
+      "name": "NR5G ML1 DL Dedicated Config",
+      "category": "ML1",
+      "dataFile": "0xB951__NR5G_ML1_DL_Dedicated_Config.json",
+      "paths": [
+        "NR5G ML1 DL Dedicated Config -> OTA Params -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Common -> Pdsch Common -> Pdsch Time Dom Alloc List -> [] -> Mapping type"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Common -> Pdsch Common -> Pdsch Time Dom Alloc List -> [] -> Mapping type",
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL BWP Params -> [] -> DL BWP Dedicated -> Pdsch CFG DED -> Pdsch Time Dom alloc list -> [] -> Mapping type"
+      ]
+    }
+  ]
+}

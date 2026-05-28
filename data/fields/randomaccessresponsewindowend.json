@@ -1,0 +1,17 @@
+{
+  "id": "randomaccessresponsewindowend",
+  "name": "Random Access Response Window End",
+  "records": [
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Request (MSG1) Report -> Random Access Response Window End"
+      ]
+    }
+  ]
+}

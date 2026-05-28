@@ -1,0 +1,41 @@
+{
+  "id": "frequencybandindicator",
+  "name": "Frequency Band Indicator",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Event -> EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Frequency Band Indicator"
+      ]
+    },
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL Frequency Info -> Multi frequency Band List -> Frequency Band Indicator",
+        "NR5G ML1 DL Common Config -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> UL Frequency Info -> Multi Frequency band List -> Frequency Band Indicator"
+      ]
+    },
+    {
+      "id": "0xb952-nr5g-ml1-dl-handover",
+      "logcode": "0xB952",
+      "title": "0xB952 NR5G ML1 DL Handover",
+      "name": "NR5G ML1 DL Handover",
+      "category": "ML1",
+      "dataFile": "0xB952__NR5G_ML1_DL_Handover.json",
+      "paths": [
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> DL Frequency Info -> Multi frequency Band List -> Frequency Band Indicator",
+        "NR5G ML1 DL Handover -> OTA Cfg Param -> CG Add Mod -> Per CC Config -> UL Frequency Info -> Multi Frequency band List -> Frequency Band Indicator"
+      ]
+    }
+  ]
+}

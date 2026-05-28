@@ -1,0 +1,29 @@
+{
+  "id": "imsvoiceoverpssessionovernon3gppaccessindicatorimsvopsn3gpp",
+  "name": "IMS voice over PS session over non-3GPP access indicator (IMS-VoPS-N3GPP)",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "D [MM5G] Registration Accept -> Registration Accept -> 5GS network feature support -> IMS voice over PS session over non-3GPP access indicator (IMS-VoPS-N3GPP)"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> Registration Accept -> 5GS network feature support -> IMS voice over PS session over non-3GPP access indicator (IMS-VoPS-N3GPP)",
+        "DL-DCCH-Message -> dedicatedNAS-Message -> Registration Accept -> 5GS network feature support -> IMS voice over PS session over non-3GPP access indicator (IMS-VoPS-N3GPP)"
+      ]
+    }
+  ]
+}

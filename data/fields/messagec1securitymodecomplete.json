@@ -1,0 +1,17 @@
+{
+  "id": "messagec1securitymodecomplete",
+  "name": "message -> c1 -> securityModeComplete",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-security-mode-complete",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Security Mode Complete",
+      "name": "U [LTE] Security Mode Complete",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Security_Mode_Complete.json",
+      "paths": [
+        "U [LTE] Security Mode Complete -> ul-dcch -> message -> c1 -> securityModeComplete"
+      ]
+    }
+  ]
+}

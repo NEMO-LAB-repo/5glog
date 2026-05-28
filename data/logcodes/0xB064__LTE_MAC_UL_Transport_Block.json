@@ -1,0 +1,71 @@
+{
+  "id": "0xb064-lte-mac-ul-transport-block",
+  "logcode": "0xB064",
+  "name": "LTE MAC UL Transport Block",
+  "title": "0xB064 LTE MAC UL Transport Block",
+  "category": "MAC",
+  "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE MAC UL Transport Block": {
+      "Number Of Subpackets": null,
+      "Upload TB SubPacket": {
+        "[]": {
+          "Header": {
+            "Sub Packet ID": null,
+            "Sub Packet Version": null,
+            "Sub Packet Size": null
+          },
+          "Number of samples": null,
+          "UL TB Info table": {
+            "[]": {
+              "Sub Id": null,
+              "Cell Id": null,
+              "HARQ ID": null,
+              "RNTI Type": null,
+              "Sub-FN": null,
+              "SFN": null,
+              "Grant": null,
+              "RLC PDUs": null,
+              "Num Padding Bytes": null,
+              "BSR event": null,
+              "BSR trig": null,
+              "HDR LEN": null,
+              "UL TB Outer Structure": {
+                "Processed Hdr UL TB": {
+                  "[]": {
+                    "EBit": null,
+                    "LCID_data": null,
+                    "LC_FixedId_Type": null,
+                    "FBit": null,
+                    "7BitsLen": null,
+                    "15BitsLen": null
+                  }
+                },
+                "Processed Hdr UL TB Payloads": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 49,
+    "samplesParsedSuccessfully": 49,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB064__LTE_MAC_UL_Transport_Block.json"
+  }
+}

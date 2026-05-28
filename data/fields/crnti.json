@@ -1,0 +1,39 @@
+{
+  "id": "crnti",
+  "name": "c-RNTI",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-reestablishment-request-otherfailure",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "name": "U [LTE] RRC Connection Reestablishment Request : otherFailure",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Request_otherFailure.json",
+      "paths": [
+        "U [LTE] RRC Connection Reestablishment Request : otherFailure -> ul-ccch -> message -> c1 -> rrcConnectionReestablishmentRequest -> criticalExtensions -> rrcConnectionReestablishmentRequest-r8 -> ue-Identity -> c-RNTI"
+      ]
+    },
+    {
+      "id": "0xb889-nr5g-mac-rach-trigger",
+      "logcode": "0xB889",
+      "title": "0xB889 NR5G MAC RACH Trigger",
+      "name": "NR5G MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB889__NR5G_MAC_RACH_Trigger.json",
+      "paths": [
+        "NR5G MAC RACH Trigger -> CRNTI"
+      ]
+    },
+    {
+      "id": "0xb88a-nr5g-mac-rach-attempt",
+      "logcode": "0xB88A",
+      "title": "0xB88A NR5G MAC RACH Attempt",
+      "name": "NR5G MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+      "paths": [
+        "NR5G MAC RACH Attempt -> RACH Msg4 -> C_RNTI"
+      ]
+    }
+  ]
+}

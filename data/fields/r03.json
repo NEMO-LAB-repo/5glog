@@ -1,0 +1,17 @@
+{
+  "id": "r03",
+  "name": "R03",
+  "records": [
+    {
+      "id": "0xb992-nr5g-ml1-afc-services",
+      "logcode": "0xB992",
+      "title": "0xB992 NR5G ML1 AFC Services",
+      "name": "NR5G ML1 AFC Services",
+      "category": "ML1",
+      "dataFile": "0xB992__NR5G_ML1_AFC_Services.json",
+      "paths": [
+        "NR5G ML1 AFC Services -> Versions -> Version -> Log Data -> [] -> Log Data Type -> Loop State Data -> R03"
+      ]
+    }
+  ]
+}

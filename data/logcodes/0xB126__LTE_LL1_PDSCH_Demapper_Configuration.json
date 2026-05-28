@@ -1,0 +1,59 @@
+{
+  "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+  "logcode": "0xB126",
+  "name": "LTE LL1 PDSCH Demapper Configuration",
+  "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+  "category": "ML1",
+  "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PDSCH Demapper Configuration": {
+      "Carrier Index": null,
+      "Num of Records": null,
+      "Record": {
+        "[]": {
+          "Sub Frame Number": null,
+          "System Frame Number": null,
+          "RNTI type": null,
+          "Number Of TX Antennas": null,
+          "Number Of Rx Antennas": null,
+          "Spatial Rank": null,
+          "PMI": null,
+          "MU Receiver Mode": null,
+          "PMI Index": null,
+          "Transmission Scheme": null,
+          "RB Allocation Slot 0": {
+            "[]": null
+          },
+          "RB Allocation Slot 1": {
+            "[]": null
+          },
+          "Port Enable": null,
+          "BMOD FD Sym Index": null,
+          "PB": null,
+          "Qice Enable Mode": null,
+          "Qice Skip Reason": null,
+          "Csf Dual Rnn Sel": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json"
+  }
+}

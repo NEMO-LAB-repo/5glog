@@ -1,0 +1,17 @@
+{
+  "id": "rlculctrlacksn",
+  "name": "RLCUL CTRL-ACK_SN",
+  "records": [
+    {
+      "id": "0xb092-lte-rlc-ul-am-all-pdu",
+      "logcode": "0xB092",
+      "title": "0xB092 LTE RLC UL AM All PDU",
+      "name": "LTE RLC UL AM All PDU",
+      "category": "RLC",
+      "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+      "paths": [
+        "LTE RLC UL AM All PDU -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL PDU ) -> RLCUL PDU -> [] -> AM PDU -> PDU based on D/c union -> Control PDU -> Control PDU -> AM Status PDU -> RLCUL CTRL-ACK_SN"
+      ]
+    }
+  ]
+}

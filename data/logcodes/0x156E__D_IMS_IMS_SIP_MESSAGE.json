@@ -1,0 +1,52 @@
+{
+  "id": "0x156e-d-ims-ims-sip-message",
+  "logcode": "0x156E",
+  "name": "D [IMS] IMS_SIP_MESSAGE",
+  "title": "0x156E D [IMS] IMS_SIP_MESSAGE",
+  "category": "IMS",
+  "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [IMS] IMS_SIP_MESSAGE": {
+      "Direction": null,
+      "SDP Presence": null,
+      "SIP Call ID Length": null,
+      "SIP Message Length": null,
+      "SIP Message Logged Bytes": null,
+      "Message ID": null,
+      "Response Status Code": null,
+      "CM Call ID": null,
+      "SIP Call ID": null,
+      "SIP Message": null,
+      "Via": null,
+      "To": null,
+      "From": null,
+      "Call-ID": null,
+      "CSeq": null,
+      "Max-Forwards": null,
+      "P-Asserted-Identity": null,
+      "Request-Disposition": null,
+      "Accept-Contact": null,
+      "Content-Type": null,
+      "Content-Length": null,
+      "\u0001?\b?h1\tR}": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary"
+    ],
+    "sourceSchemaFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json"
+  }
+}

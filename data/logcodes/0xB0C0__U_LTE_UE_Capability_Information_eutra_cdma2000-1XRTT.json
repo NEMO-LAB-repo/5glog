@@ -1,0 +1,660 @@
+{
+  "id": "0xb0c0-u-lte-ue-capability-information-eutra-cdma2000-1xrtt",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+  "title": "0xB0C0 U [LTE] UE Capability Information : eutra,cdma2000-1XRTT",
+  "category": "LTE",
+  "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] UE Capability Information : eutra,cdma2000-1XRTT": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> ueCapabilityInformation": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> ueCapabilityInformation-r8": {
+            "ue-CapabilityRAT-ContainerList": {
+              "[]": {
+                "rat-Type": null,
+                "ueCapabilityRAT-Container": {
+                  "accessStratumRelease": null,
+                  "ue-Category": null,
+                  "pdcp-Parameters": {
+                    "supportedROHC-Profiles": {
+                      "profile0x0001-r15": null,
+                      "profile0x0002-r15": null,
+                      "profile0x0003-r15": null,
+                      "profile0x0004-r15": null,
+                      "profile0x0006-r15": null,
+                      "profile0x0101-r15": null,
+                      "profile0x0102-r15": null,
+                      "profile0x0103-r15": null,
+                      "profile0x0104-r15": null
+                    },
+                    "maxNumberROHC-ContextSessions": null
+                  },
+                  "phyLayerParameters": {
+                    "ue-TxAntennaSelectionSupported": null,
+                    "ue-SpecificRefSigsSupported": null
+                  },
+                  "rf-Parameters": {
+                    "supportedBandListEUTRA": {
+                      "[]": {
+                        "bandEUTRA": null,
+                        "halfDuplex": null
+                      }
+                    }
+                  },
+                  "measParameters": {
+                    "bandListEUTRA": {
+                      "[]": {
+                        "interFreqBandList": {
+                          "[]": {
+                            "interFreqNeedForGaps": null
+                          }
+                        },
+                        "interRAT-BandList": {
+                          "[]": {
+                            "interRAT-NeedForGaps": null
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "featureGroupIndicators": {
+                    "Intra-subframe freq hopping for PUSCH scheduled by UL grant; DCI format 3a; Aperiodic CQI/PMI/RI report on PUSCH": null,
+                    "Simultaneous CQI & ACK/NACK on PUCCH (format 2a/2b); Absolute TPC command for PUSCH; Resource alloc type 1 for PDSCH; Periodic CQI/PMI/RI report on PUCCH": null,
+                    "5bit RLC UM SN; 7bit PDCP SN": null,
+                    "Short DRX cycle": null,
+                    "Long DRX cycle; DRX command MAC control element": null,
+                    "Prioritised bit rate": null,
+                    "RLC UM": null,
+                    "EUTRA RRC_CONNECTED to UTRA CELL_DCH PS handover": null,
+                    "EUTRA RRC_CONNECTED to GERAN GSM_Dedicated handover": null,
+                    "EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order; EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order with NACC": null,
+                    "EUTRA RRC_CONNECTED to CDMA2000 1xRTT CS Active handover": null,
+                    "EUTRA RRC_CONNECTED to CDMA2000 HRPD Active handover": null,
+                    "Inter-frequency handover (within FDD or TDD)": null,
+                    "Measurement reporting event": null,
+                    "non-ANR related periodical measurement reporting": null,
+                    "ANR related intra-frequency measurement reporting events": null,
+                    "ANR related inter-frequency measurement reporting events": null,
+                    "ANR related inter-RAT measurement reporting events": null,
+                    "SRB1 and SRB2 for DCCH + 8x AM DRB; SRB1 and SRB2 for DCCH + 5x AM DRB + 3x UM DRB (if indicator 7 is supported)": null,
+                    "Predefined intra- and inter-subframe frequency hopping for PUSCH with N_sb > 1; Predefined inter-subframe frequency hopping for PUSCH with N_sb > 1": null,
+                    "UTRAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                    "GERAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                    "1xRTT measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                    "Inter-frequency measurements and reporting in E-UTRA connected mode": null,
+                    "HRPD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                    "EUTRA RRC_CONNECTED to UTRA CELL_DCH CS handover": null,
+                    "TTI bundling": null,
+                    "Semi-Persistent Scheduling": null,
+                    "Handover between FDD and TDD": null,
+                    "Mechanisms defined for cells broadcasting multi band information": null
+                  },
+                  "interRAT-Parameters": {
+                    "cdma2000-HRPD": {
+                      "supportedBandListHRPD": {
+                        "[]": null
+                      },
+                      "tx-ConfigHRPD": null,
+                      "rx-ConfigHRPD": null
+                    },
+                    "cdma2000-1xRTT": {
+                      "supportedBandList1XRTT": {
+                        "[]": null
+                      },
+                      "tx-Config1XRTT": null,
+                      "rx-Config1XRTT": null
+                    }
+                  },
+                  "nonCriticalExtension": {
+                    "phyLayerParameters-v920": {
+                      "enhancedDualLayerTDD-r9": null
+                    },
+                    "interRAT-ParametersGERAN-v920": {},
+                    "csg-ProximityIndicationParameters-r9": {},
+                    "neighCellSI-AcquisitionParameters-r9": {
+                      "intraFreqSI-AcquisitionForHO-r9": null,
+                      "interFreqSI-AcquisitionForHO-r9": null
+                    },
+                    "son-Parameters-r9": {
+                      "rach-Report-r9": null
+                    },
+                    "nonCriticalExtension": {
+                      "lateNonCriticalExtension": {
+                        "featureGroupIndRel9Add-r9": {
+                          "Inter-RAT ANR features for UTRAN FDD": null,
+                          "Inter-RAT ANR features for GERAN": null,
+                          "Inter-RAT ANR features for 1xRTT": null,
+                          "Inter-RAT ANR features for HRPD": null,
+                          "Inter-RAT ANR features for UTRAN TDD": null,
+                          "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH PS handover": null,
+                          "UTRAN TDD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                          "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH CS handover": null,
+                          "Measurement reporting event": null,
+                          "DCI format 3a": null
+                        },
+                        "fdd-Add-UE-EUTRA-Capabilities-r9": {
+                          "featureGroupIndicators-r9": {
+                            "Intra-subframe freq hopping for PUSCH scheduled by UL grant; DCI format 3a; Aperiodic CQI/PMI/RI report on PUSCH": null,
+                            "Simultaneous CQI & ACK/NACK on PUCCH (format 2a/2b); Absolute TPC command for PUSCH; Resource alloc type 1 for PDSCH; Periodic CQI/PMI/RI report on PUCCH": null,
+                            "5bit RLC UM SN; 7bit PDCP SN": null,
+                            "Short DRX cycle": null,
+                            "Long DRX cycle; DRX command MAC control element": null,
+                            "Prioritised bit rate": null,
+                            "RLC UM": null,
+                            "EUTRA RRC_CONNECTED to UTRA CELL_DCH PS handover": null,
+                            "EUTRA RRC_CONNECTED to GERAN GSM_Dedicated handover": null,
+                            "EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order; EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order with NACC": null,
+                            "EUTRA RRC_CONNECTED to CDMA2000 1xRTT CS Active handover": null,
+                            "EUTRA RRC_CONNECTED to CDMA2000 HRPD Active handover": null,
+                            "Inter-frequency handover (within FDD or TDD)": null,
+                            "Measurement reporting event": null,
+                            "non-ANR related periodical measurement reporting": null,
+                            "ANR related intra-frequency measurement reporting events": null,
+                            "ANR related inter-frequency measurement reporting events": null,
+                            "ANR related inter-RAT measurement reporting events": null,
+                            "SRB1 and SRB2 for DCCH + 8x AM DRB; SRB1 and SRB2 for DCCH + 5x AM DRB + 3x UM DRB (if indicator 7 is supported)": null,
+                            "Predefined intra- and inter-subframe frequency hopping for PUSCH with N_sb > 1; Predefined inter-subframe frequency hopping for PUSCH with N_sb > 1": null,
+                            "UTRAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "GERAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "1xRTT measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "Inter-frequency measurements and reporting in E-UTRA connected mode": null,
+                            "HRPD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "EUTRA RRC_CONNECTED to UTRA CELL_DCH CS handover": null,
+                            "TTI bundling": null,
+                            "Semi-Persistent Scheduling": null,
+                            "Handover between FDD and TDD": null,
+                            "Mechanisms defined for cells broadcasting multi band information": null
+                          },
+                          "featureGroupIndRel9Add-r9": {
+                            "Inter-RAT ANR features for UTRAN FDD": null,
+                            "Inter-RAT ANR features for GERAN": null,
+                            "Inter-RAT ANR features for 1xRTT": null,
+                            "Inter-RAT ANR features for HRPD": null,
+                            "Inter-RAT ANR features for UTRAN TDD": null,
+                            "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH PS handover": null,
+                            "UTRAN TDD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH CS handover": null,
+                            "Measurement reporting event": null,
+                            "DCI format 3a": null
+                          }
+                        },
+                        "tdd-Add-UE-EUTRA-Capabilities-r9": {
+                          "featureGroupIndicators-r9": {
+                            "Intra-subframe freq hopping for PUSCH scheduled by UL grant; DCI format 3a; Aperiodic CQI/PMI/RI report on PUSCH": null,
+                            "Simultaneous CQI & ACK/NACK on PUCCH (format 2a/2b); Absolute TPC command for PUSCH; Resource alloc type 1 for PDSCH; Periodic CQI/PMI/RI report on PUCCH": null,
+                            "5bit RLC UM SN; 7bit PDCP SN": null,
+                            "Short DRX cycle": null,
+                            "Long DRX cycle; DRX command MAC control element": null,
+                            "Prioritised bit rate": null,
+                            "RLC UM": null,
+                            "EUTRA RRC_CONNECTED to UTRA CELL_DCH PS handover": null,
+                            "EUTRA RRC_CONNECTED to GERAN GSM_Dedicated handover": null,
+                            "EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order; EUTRA RRC_CONNECTED to GERAN (Packet) Idle by Cell Change Order with NACC": null,
+                            "EUTRA RRC_CONNECTED to CDMA2000 1xRTT CS Active handover": null,
+                            "EUTRA RRC_CONNECTED to CDMA2000 HRPD Active handover": null,
+                            "Inter-frequency handover (within FDD or TDD)": null,
+                            "Measurement reporting event": null,
+                            "non-ANR related periodical measurement reporting": null,
+                            "ANR related intra-frequency measurement reporting events": null,
+                            "ANR related inter-frequency measurement reporting events": null,
+                            "ANR related inter-RAT measurement reporting events": null,
+                            "SRB1 and SRB2 for DCCH + 8x AM DRB; SRB1 and SRB2 for DCCH + 5x AM DRB + 3x UM DRB (if indicator 7 is supported)": null,
+                            "Predefined intra- and inter-subframe frequency hopping for PUSCH with N_sb > 1; Predefined inter-subframe frequency hopping for PUSCH with N_sb > 1": null,
+                            "UTRAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "GERAN measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "1xRTT measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "Inter-frequency measurements and reporting in E-UTRA connected mode": null,
+                            "HRPD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "EUTRA RRC_CONNECTED to UTRA CELL_DCH CS handover": null,
+                            "TTI bundling": null,
+                            "Semi-Persistent Scheduling": null,
+                            "Handover between FDD and TDD": null,
+                            "Mechanisms defined for cells broadcasting multi band information": null
+                          },
+                          "featureGroupIndRel9Add-r9": {
+                            "Inter-RAT ANR features for UTRAN FDD": null,
+                            "Inter-RAT ANR features for GERAN": null,
+                            "Inter-RAT ANR features for 1xRTT": null,
+                            "Inter-RAT ANR features for HRPD": null,
+                            "Inter-RAT ANR features for UTRAN TDD": null,
+                            "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH PS handover": null,
+                            "UTRAN TDD measurements, reporting and measurement reporting event B2 in E-UTRA connected mode": null,
+                            "EUTRA RRC_CONNECTED to UTRA TDD CELL_DCH CS handover": null,
+                            "Measurement reporting event": null,
+                            "DCI format 3a": null
+                          }
+                        },
+                        "nonCriticalExtension": {
+                          "nonCriticalExtension": {
+                            "nonCriticalExtension": {
+                              "nonCriticalExtension": {
+                                "nonCriticalExtension": {
+                                  "otdoa-PositioningCapabilities-r10": {
+                                    "otdoa-UE-Assisted-r10": null
+                                  },
+                                  "nonCriticalExtension": {
+                                    "rf-Parameters-v10f0": {
+                                      "modifiedMPR-Behavior-r10": {
+                                        "MPR/A-MPR behavior 0": null,
+                                        "MPR/A-MPR behavior 1": null,
+                                        "MPR/A-MPR behavior 2": null,
+                                        "MPR/A-MPR behavior 3": null,
+                                        "MPR/A-MPR behavior 4": null,
+                                        "MPR/A-MPR behavior 5": null,
+                                        "MPR/A-MPR behavior 6": null,
+                                        "MPR/A-MPR behavior 7": null,
+                                        "MPR/A-MPR behavior 8": null,
+                                        "MPR/A-MPR behavior 9": null,
+                                        "MPR/A-MPR behavior 10": null,
+                                        "MPR/A-MPR behavior 11": null,
+                                        "MPR/A-MPR behavior 12": null,
+                                        "MPR/A-MPR behavior 13": null,
+                                        "MPR/A-MPR behavior 14": null,
+                                        "MPR/A-MPR behavior 15": null,
+                                        "MPR/A-MPR behavior 16": null,
+                                        "MPR/A-MPR behavior 17": null,
+                                        "MPR/A-MPR behavior 18": null,
+                                        "MPR/A-MPR behavior 19": null,
+                                        "MPR/A-MPR behavior 20": null,
+                                        "MPR/A-MPR behavior 21": null,
+                                        "MPR/A-MPR behavior 22": null,
+                                        "MPR/A-MPR behavior 23": null,
+                                        "MPR/A-MPR behavior 24": null,
+                                        "MPR/A-MPR behavior 25": null,
+                                        "MPR/A-MPR behavior 26": null,
+                                        "MPR/A-MPR behavior 27": null,
+                                        "MPR/A-MPR behavior 28": null,
+                                        "MPR/A-MPR behavior 29": null,
+                                        "MPR/A-MPR behavior 30": null,
+                                        "MPR/A-MPR behavior 31": null
+                                      }
+                                    },
+                                    "nonCriticalExtension": {
+                                      "rf-Parameters-v10i0": {
+                                        "supportedBandCombination-v10i0": {
+                                          "[]": {
+                                            "bandParameterList-v10i0": {
+                                              "[]": {
+                                                "bandParametersDL-v10i0": {
+                                                  "[]": {
+                                                    "fourLayerTM3-TM4-r10": null
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "nonCriticalExtension": {
+                                        "nonCriticalExtension": {
+                                          "nonCriticalExtension": {
+                                            "rf-Parameters-v12b0": {
+                                              "maxLayersMIMO-Indication-r12": null
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "nonCriticalExtension": {
+                        "ue-Category-v1020": null,
+                        "phyLayerParameters-v1020": {
+                          "tm9-With-8Tx-FDD-r10": null,
+                          "multiClusterPUSCH-WithinCC-r10": null,
+                          "nonContiguousUL-RA-WithinCC-List-r10": {
+                            "[]": {
+                              "nonContiguousUL-RA-WithinCC-Info-r10": null
+                            }
+                          }
+                        },
+                        "rf-Parameters-v1020": {
+                          "supportedBandCombination-r10": {
+                            "[]": {
+                              "[]": {
+                                "bandEUTRA-r10": null,
+                                "bandParametersUL-r10": {
+                                  "[]": {
+                                    "ca-BandwidthClassUL-r10": null
+                                  }
+                                },
+                                "bandParametersDL-r10": {
+                                  "[]": {
+                                    "ca-BandwidthClassDL-r10": null,
+                                    "supportedMIMO-CapabilityDL-r10": null
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "measParameters-v1020": {
+                          "bandCombinationListEUTRA-r10": {
+                            "[]": {
+                              "interFreqBandList": {
+                                "[]": {
+                                  "interFreqNeedForGaps": null
+                                }
+                              },
+                              "interRAT-BandList": {
+                                "[]": {
+                                  "interRAT-NeedForGaps": null
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "featureGroupIndRel10-r10": {
+                          "DMRS with OCC (orthogonal cover code) and SGH (sequence group hopping) disabling": null,
+                          "Trigger type 1 SRS (aperiodic SRS) transmission (Up to X ports)": null,
+                          "PDSCH TM9 when up to 4 CSI reference signal ports are configured": null,
+                          "PDSCH TM9 for TDD when 8 CSI reference signal ports are configured": null,
+                          "PUCCH RM2-0 when PDSCH TM9 is configured and RM2-1 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                          "PUCCH RM2-1 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                          "PUSCH RM2-0 when PDSCH TM9 is configured and RM2-2 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                          "PUSCH RM2-2 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                          "PUCCH RM1-1 submode 1": null,
+                          "PUCCH RM1-1 submode 2": null,
+                          "Measurement reporting trigger Event A6": null,
+                          "SCell addition within the Handover to EUTRA procedure": null,
+                          "Trigger type 0 SRS (periodic SRS) transmission on X Serving Cells": null,
+                          "Reporting of both UTRA CPICH RSCP and Ec/N0 in a Measurement Report": null,
+                          "Time domain ICIC RLM/RRM / ICIC RRM / ICIC CSI measurement sf restriction for the serving cell / neighbour cells": null,
+                          "Relative transmit phase continuity for spatial multiplexing in UL": null
+                        },
+                        "nonCriticalExtension": {
+                          "fdd-Add-UE-EUTRA-Capabilities-v1060": {
+                            "phyLayerParameters-v1060": {
+                              "tm9-With-8Tx-FDD-r10": null
+                            },
+                            "featureGroupIndRel10-v1060": {
+                              "DMRS with OCC (orthogonal cover code) and SGH (sequence group hopping) disabling": null,
+                              "Trigger type 1 SRS (aperiodic SRS) transmission (Up to X ports)": null,
+                              "PDSCH TM9 when up to 4 CSI reference signal ports are configured": null,
+                              "PDSCH TM9 for TDD when 8 CSI reference signal ports are configured": null,
+                              "PUCCH RM2-0 when PDSCH TM9 is configured and RM2-1 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                              "PUCCH RM2-1 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                              "PUSCH RM2-0 when PDSCH TM9 is configured and RM2-2 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                              "PUSCH RM2-2 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                              "PUCCH RM1-1 submode 1": null,
+                              "PUCCH RM1-1 submode 2": null,
+                              "Measurement reporting trigger Event A6": null,
+                              "SCell addition within the Handover to EUTRA procedure": null,
+                              "Trigger type 0 SRS (periodic SRS) transmission on X Serving Cells": null,
+                              "Reporting of both UTRA CPICH RSCP and Ec/N0 in a Measurement Report": null,
+                              "Time domain ICIC RLM/RRM / ICIC RRM / ICIC CSI measurement sf restriction for the serving cell / neighbour cells": null,
+                              "Relative transmit phase continuity for spatial multiplexing in UL": null
+                            }
+                          },
+                          "tdd-Add-UE-EUTRA-Capabilities-v1060": {
+                            "featureGroupIndRel10-v1060": {
+                              "DMRS with OCC (orthogonal cover code) and SGH (sequence group hopping) disabling": null,
+                              "Trigger type 1 SRS (aperiodic SRS) transmission (Up to X ports)": null,
+                              "PDSCH TM9 when up to 4 CSI reference signal ports are configured": null,
+                              "PDSCH TM9 for TDD when 8 CSI reference signal ports are configured": null,
+                              "PUCCH RM2-0 when PDSCH TM9 is configured and RM2-1 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                              "PUCCH RM2-1 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                              "PUSCH RM2-0 when PDSCH TM9 is configured and RM2-2 when PDSCH TM9 and up to 4 CSI reference signal ports are configured": null,
+                              "PUSCH RM2-2 when PDSCH TM9 and 8 CSI reference signal ports are configured": null,
+                              "PUCCH RM1-1 submode 1": null,
+                              "PUCCH RM1-1 submode 2": null,
+                              "Measurement reporting trigger Event A6": null,
+                              "SCell addition within the Handover to EUTRA procedure": null,
+                              "Trigger type 0 SRS (periodic SRS) transmission on X Serving Cells": null,
+                              "Reporting of both UTRA CPICH RSCP and Ec/N0 in a Measurement Report": null,
+                              "Time domain ICIC RLM/RRM / ICIC RRM / ICIC CSI measurement sf restriction for the serving cell / neighbour cells": null,
+                              "Relative transmit phase continuity for spatial multiplexing in UL": null
+                            }
+                          },
+                          "rf-Parameters-v1060": {
+                            "supportedBandCombinationExt-r10": {
+                              "[]": {
+                                "supportedBandwidthCombinationSet-r10": null
+                              }
+                            }
+                          },
+                          "nonCriticalExtension": {
+                            "nonCriticalExtension": {
+                              "pdcp-Parameters-v1130": {
+                                "pdcp-SN-Extension-r11": null
+                              },
+                              "phyLayerParameters-v1130": {
+                                "multiACK-CSI-Reporting-r11": null,
+                                "ss-CCH-InterfHandl-r11": null,
+                                "tdd-SpecialSubframe-r11": null
+                              },
+                              "rf-Parameters-v1130": {},
+                              "measParameters-v1130": {},
+                              "interRAT-ParametersCDMA2000-v1130": {},
+                              "otherParameters-r11": {
+                                "ue-Rx-TxTimeDiffMeasurements-r11": null
+                              },
+                              "nonCriticalExtension": {
+                                "ue-Category-v1170": null,
+                                "nonCriticalExtension": {
+                                  "rf-Parameters-v1180": {
+                                    "freqBandRetrieval-r11": null,
+                                    "requestedBands-r11": {
+                                      "[]": null
+                                    }
+                                  },
+                                  "mbms-Parameters-r11": {
+                                    "mbms-SCell-r11": null
+                                  },
+                                  "nonCriticalExtension": {
+                                    "ue-Category-v11a0": null,
+                                    "nonCriticalExtension": {
+                                      "phyLayerParameters-v1250": {
+                                        "discoverySignalsInDeactSCell-r12": null
+                                      },
+                                      "rf-Parameters-v1250": {
+                                        "supportedBandListEUTRA-v1250": {
+                                          "[]": {
+                                            "dl-256QAM-r12": null,
+                                            "ul-64QAM-r12": null
+                                          }
+                                        },
+                                        "freqBandPriorityAdjustment-r12": null
+                                      },
+                                      "ue-CategoryDL-r12": null,
+                                      "ue-CategoryUL-r12": null,
+                                      "measParameters-v1250": {
+                                        "incMonEUTRA-r12": null,
+                                        "extendedMaxMeasId-r12": null,
+                                        "crs-DiscoverySignalsMeas-r12": null
+                                      },
+                                      "nonCriticalExtension": {
+                                        "ue-CategoryDL-v1260": null,
+                                        "nonCriticalExtension": {
+                                          "nonCriticalExtension": {
+                                            "phyLayerParameters-v1280": {
+                                              "alternativeTBS-Indices-r12": null
+                                            },
+                                            "nonCriticalExtension": {
+                                              "pdcp-Parameters-v1310": {},
+                                              "rlc-Parameters-v1310": {
+                                                "extendedRLC-SN-SO-Field-r13": null
+                                              },
+                                              "phyLayerParameters-v1310": {
+                                                "codebook-HARQ-ACK-r13": null
+                                              },
+                                              "rf-Parameters-v1310": {
+                                                "maximumCCsRetrieval-r13": null,
+                                                "skipFallbackCombinations-r13": null
+                                              },
+                                              "measParameters-v1310": {
+                                                "extendedMaxObjectId-r13": null
+                                              },
+                                              "interRAT-ParametersWLAN-r13": {},
+                                              "wlan-IW-Parameters-v1310": {},
+                                              "lwip-Parameters-r13": {},
+                                              "nonCriticalExtension": {
+                                                "rf-Parameters-v1320": {
+                                                  "supportedBandListEUTRA-v1320": {
+                                                    "[]": {}
+                                                  }
+                                                },
+                                                "nonCriticalExtension": {
+                                                  "ue-CategoryDL-v1330": null,
+                                                  "nonCriticalExtension": {
+                                                    "nonCriticalExtension": {
+                                                      "ce-Parameters-v1350": {},
+                                                      "nonCriticalExtension": {
+                                                        "nonCriticalExtension": {
+                                                          "phyLayerParameters-v1430": {
+                                                            "alternativeTBS-Index-r14": null
+                                                          },
+                                                          "rlc-Parameters-v1430": {
+                                                            "extendedPollByte-r14": null
+                                                          },
+                                                          "otherParameters-v1430": {},
+                                                          "ce-Parameters-v1430": {},
+                                                          "nonCriticalExtension": {
+                                                            "lwa-Parameters-v1440": {},
+                                                            "mac-Parameters-v1440": {},
+                                                            "nonCriticalExtension": {
+                                                              "otherParameters-v1450": {},
+                                                              "nonCriticalExtension": {
+                                                                "otherParameters-v1460": {},
+                                                                "nonCriticalExtension": {
+                                                                  "irat-ParametersNR-r15": {
+                                                                    "en-DC-r15": null,
+                                                                    "eventB2-r15": null,
+                                                                    "supportedBandListEN-DC-r15": {
+                                                                      "[]": {
+                                                                        "bandNR-r15": null
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "pdcp-ParametersNR-r15": {
+                                                                    "rohc-Profiles-r15": {
+                                                                      "profile0x0001-r15": null,
+                                                                      "profile0x0002-r15": null,
+                                                                      "profile0x0003-r15": null,
+                                                                      "profile0x0004-r15": null,
+                                                                      "profile0x0006-r15": null,
+                                                                      "profile0x0101-r15": null,
+                                                                      "profile0x0102-r15": null,
+                                                                      "profile0x0103-r15": null,
+                                                                      "profile0x0104-r15": null
+                                                                    },
+                                                                    "rohc-ProfilesUL-Only-r15": {
+                                                                      "profile0x0006-r15": null
+                                                                    },
+                                                                    "sn-SizeLo-r15": null
+                                                                  },
+                                                                  "nonCriticalExtension": {
+                                                                    "measParameters-v1520": {},
+                                                                    "nonCriticalExtension": {
+                                                                      "neighCellSI-AcquisitionParameters-v1530": {
+                                                                        "reportCGI-NR-NoEN-DC-r15": null
+                                                                      },
+                                                                      "extendedNumberOfDRBs-r15": null,
+                                                                      "nonCriticalExtension": {
+                                                                        "otherParameters-v1540": {},
+                                                                        "irat-ParametersNR-v1540": {
+                                                                          "eutra-EPC-HO-ToNR-FDD-FR1-r15": null,
+                                                                          "eutra-EPC-HO-ToNR-TDD-FR1-r15": null,
+                                                                          "ims-VoiceOverNR-FR1-r15": null,
+                                                                          "sa-NR-r15": null,
+                                                                          "supportedBandListNR-SA-r15": {
+                                                                            "[]": {
+                                                                              "bandNR-r15": null
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "nonCriticalExtension": {
+                                                                          "phyLayerParameters-v1550": {},
+                                                                          "mac-Parameters-v1550": {
+                                                                            "eLCID-Support-r15": null
+                                                                          },
+                                                                          "fdd-Add-UE-EUTRA-Capabilities-v1550": {},
+                                                                          "tdd-Add-UE-EUTRA-Capabilities-v1550": {}
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "IEI": null,
+                  "Length": null,
+                  "Record": {
+                    "[]": {
+                      "Record Identifier": null,
+                      "Record Length": null,
+                      "All Band Classes Included": null,
+                      "Current Band Subclass": null,
+                      "Band Class": {
+                        "[]": {
+                          "Band Class": null,
+                          "All Band Subclasses Included": null,
+                          "Band Subclass Length": null,
+                          "Band Subclass Details": null
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 12,
+    "samplesParsedSuccessfully": 12,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_cdma2000-1XRTT.json"
+  }
+}

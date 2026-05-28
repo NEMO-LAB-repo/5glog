@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrciratredirfromeutranstart",
+  "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+        "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START -> Event -> EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START"
+      ]
+    }
+  ]
+}

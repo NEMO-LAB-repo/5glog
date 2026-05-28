@@ -1,0 +1,54 @@
+{
+  "id": "0xb0c0-d-lte-paging",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] Paging",
+  "title": "0xB0C0 D [LTE] Paging",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_Paging.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] Paging": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "pcch": {
+        "message -> c1 -> paging": {
+          "pagingRecordList": {
+            "[]": {
+              "ue-Identity -> s-TMSI": {
+                "mmec": null,
+                "m-TMSI": null
+              },
+              "cn-Domain": null,
+              "ue-Identity -> imsi": {
+                "[]": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1016,
+    "samplesParsedSuccessfully": 1016,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_Paging.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dropresason",
+  "name": "drop_resason",
+  "records": [
+    {
+      "id": "0x1ffb-event-datamodem-ipa-drop-pkt-ul",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "name": "EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DATAMODEM_IPA_DROP_PKT_UL.json",
+      "paths": [
+        "EVENT_DATAMODEM_IPA_DROP_PKT_UL -> Event -> EVENT_DATAMODEM_IPA_DROP_PKT_UL -> drop_resason"
+      ]
+    }
+  ]
+}

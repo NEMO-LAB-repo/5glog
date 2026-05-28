@@ -1,0 +1,17 @@
+{
+  "id": "numreorderwindowpdu",
+  "name": "Num Reorder Window PDU",
+  "records": [
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> RB Stats -> [] -> Num Reorder Window PDU"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dltesib1",
+  "name": "D [LTE] SIB1",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "D [LTE] SIB1"
+      ]
+    }
+  ]
+}

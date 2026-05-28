@@ -1,0 +1,46 @@
+{
+  "id": "0xb0ec-d-emm-emm-information",
+  "logcode": "0xB0EC",
+  "name": "D [EMM] EMM Information",
+  "title": "0xB0EC D [EMM] EMM Information",
+  "category": "NAS",
+  "dataFile": "0xB0EC__D_EMM_EMM_Information.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [EMM] EMM Information": {
+      "Release Version": null,
+      "Direction": null,
+      "Security header or skip ind": null,
+      "Protocol Discriminator": null,
+      "Message ID": null,
+      "EMM Information": {
+        "Local Time Zone": {
+          "IEI": null,
+          "Time Zone": null
+        },
+        "Universal Time And Local Time Zone": {
+          "IEI": null,
+          "Time": null,
+          "Time Zone": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0EC__D_EMM_EMM_Information.json"
+  }
+}

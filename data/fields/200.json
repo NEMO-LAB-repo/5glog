@@ -1,0 +1,17 @@
+{
+  "id": "200",
+  "name": ">200",
+  "records": [
+    {
+      "id": "0xb0b6-lte-pdcp-ul-delay-statistics",
+      "logcode": "0xB0B6",
+      "title": "0xB0B6 LTE PDCP UL Delay Statistics",
+      "name": "LTE PDCP UL Delay Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B6__LTE_PDCP_UL_Delay_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Delay Statistics -> Subpackets -> [] -> Subpackets -> Subpackets- (UL  Delay Stats) -> RBs -> [] -> Total -> PDCP Delay Pkt Count 2 -> >200"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "mtmsi",
+  "name": "M TMSI",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-paging",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+      "name": "EVENT_LTE_RRC_PAGING",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING -> Event -> EVENT_LTE_RRC_PAGING -> M TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-dl-information-transfer-tracking-area-update-accept",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "name": "D [LTE] DL Information Transfer//Tracking Area Update Accept",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_DL_Information_Transfer_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [LTE] DL Information Transfer//Tracking Area Update Accept -> dedicatedInfoNAS -> Tracking Area Update Accept -> GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "D [LTE] Paging -> pcch -> message -> c1 -> paging -> pagingRecordList -> [] -> ue-Identity -> s-TMSI -> m-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> Tracking Area Update Accept -> GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-data",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Data",
+      "name": "U [LTE] RRC Connection Request : mo-Data",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Data.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Data -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI -> m-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Signalling -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI -> m-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ul-information-transfer-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "name": "U [LTE] UL Information Transfer//Tracking Area Update Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] UL Information Transfer//Tracking Area Update Request -> dedicatedInfoNAS -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [EMM] Tracking Area Update Accept -> Tracking Area Update Accept -> GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb0ee-lte-nas-emm-state",
+      "logcode": "0xB0EE",
+      "title": "0xB0EE LTE NAS EMM State",
+      "name": "LTE NAS EMM State",
+      "category": "NAS",
+      "dataFile": "0xB0EE__LTE_NAS_EMM_State.json",
+      "paths": [
+        "LTE NAS EMM State -> GUTI -> M TMSI"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> NAS Message -> Tracking Area Update Request -> Old GUTI -> GUTI -> M-TMSI"
+      ]
+    }
+  ]
+}

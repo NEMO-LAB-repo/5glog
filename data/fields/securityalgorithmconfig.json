@@ -1,0 +1,64 @@
+{
+  "id": "securityalgorithmconfig",
+  "name": "securityAlgorithmConfig",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> securityConfigHO -> handoverType -> intraLTE -> securityAlgorithmConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> securityConfigHO -> handoverType -> intraLTE -> securityAlgorithmConfig",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> securityConfig -> securityAlgorithmConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> securityConfig -> securityAlgorithmConfig"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-security-mode-command",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Security Mode Command",
+      "name": "D [LTE] Security Mode Command",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Security_Mode_Command.json",
+      "paths": [
+        "D [LTE] Security Mode Command -> dl-dcch -> message -> c1 -> securityModeCommand -> criticalExtensions -> c1 -> securityModeCommand-r8 -> securityConfigSMC -> securityAlgorithmConfig"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> securityConfig -> securityAlgorithmConfig",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> securityModeCommand -> criticalExtensions -> securityModeCommand -> securityConfigSMC -> securityAlgorithmConfig",
+        "RadioBearerConfig -> pdu-radioBearerConfig -> securityConfig -> securityAlgorithmConfig"
+      ]
+    }
+  ]
+}

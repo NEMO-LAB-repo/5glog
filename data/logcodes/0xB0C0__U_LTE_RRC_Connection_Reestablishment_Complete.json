@@ -1,0 +1,46 @@
+{
+  "id": "0xb0c0-u-lte-rrc-connection-reestablishment-complete",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] RRC Connection Reestablishment Complete",
+  "title": "0xB0C0 U [LTE] RRC Connection Reestablishment Complete",
+  "category": "RRC",
+  "dataFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Complete.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] RRC Connection Reestablishment Complete": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> rrcConnectionReestablishmentComplete": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> rrcConnectionReestablishmentComplete-r8": {
+            "nonCriticalExtension": {
+              "rlf-InfoAvailable-r9": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_RRC_Connection_Reestablishment_Complete.json"
+  }
+}

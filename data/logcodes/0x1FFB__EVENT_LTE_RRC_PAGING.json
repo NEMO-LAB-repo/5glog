@@ -1,0 +1,43 @@
+{
+  "id": "0x1ffb-event-lte-rrc-paging",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_RRC_PAGING",
+  "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_RRC_PAGING": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_RRC_PAGING": {
+          "Current UE Paged": null,
+          "UE ID Type": null,
+          "M TMSI": null,
+          "Mmec": null,
+          "CN Domain": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 15,
+    "samplesParsedSuccessfully": 15,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json"
+  }
+}

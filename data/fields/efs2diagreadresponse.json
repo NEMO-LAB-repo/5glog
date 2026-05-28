@@ -1,0 +1,18 @@
+{
+  "id": "efs2diagreadresponse",
+  "name": "EFS2/DIAG Read Response",
+  "records": [
+    {
+      "id": "0x1ff0-efs2-diag-read-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 EFS2/DIAG Read Response",
+      "name": "EFS2/DIAG Read Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__EFS2_DIAG_Read_Response.json",
+      "paths": [
+        "EFS2/DIAG Read Response",
+        "EFS2/DIAG Read Response -> Subsystem Dispatch Response Message -> EFS2/DIAG Read Response"
+      ]
+    }
+  ]
+}

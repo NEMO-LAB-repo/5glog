@@ -1,0 +1,52 @@
+{
+  "id": "ssbindex",
+  "name": "ssb-Index",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultNeighCells -> measResultListNR -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Index",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultBestNeighCell -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Index",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultServingCell -> measResult -> rsIndexResults -> resultsSSB-Indexes -> ssb-Index"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Rasters -> [] -> Meas Window -> [] -> SSBorCells -> [] -> ssbIndex"
+      ]
+    },
+    {
+      "id": "0xb96d-nr5g-ml1-searcher-acq-config-and-response",
+      "logcode": "0xB96D",
+      "title": "0xB96D NR5G ML1 Searcher ACQ Config And Response",
+      "name": "NR5G ML1 Searcher ACQ Config And Response",
+      "category": "ML1",
+      "dataFile": "0xB96D__NR5G_ML1_Searcher_ACQ_Config_And_Response.json",
+      "paths": [
+        "NR5G ML1 Searcher ACQ Config And Response -> Raster List -> [] -> Cell Detect List -> [] -> MIB -> SSB Index"
+      ]
+    },
+    {
+      "id": "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext",
+      "logcode": "0xB97F",
+      "title": "0xB97F NR5G ML1 Searcher Measurement Database Update Ext",
+      "name": "NR5G ML1 Searcher Measurement Database Update Ext",
+      "category": "ML1",
+      "dataFile": "0xB97F__NR5G_ML1_Searcher_Measurement_Database_Update_Ext.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Database Update Ext -> Component Carrier List -> [] -> Cells -> [] -> Detected Beams -> [] -> SSB Index"
+      ]
+    }
+  ]
+}

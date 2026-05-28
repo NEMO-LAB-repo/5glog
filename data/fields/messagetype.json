@@ -1,0 +1,17 @@
+{
+  "id": "messagetype",
+  "name": "Message Type",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_V2",
+      "name": "EVENT_NR5G_RRC_UL_MSG_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_UL_MSG_V2 -> Event -> EVENT_NR5G_RRC_UL_MSG_V2 -> Message Type"
+      ]
+    }
+  ]
+}

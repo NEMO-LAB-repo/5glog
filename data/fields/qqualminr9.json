@@ -1,0 +1,39 @@
+{
+  "id": "qqualminr9",
+  "name": "q-QualMin-r9",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "D [LTE] SIB1 -> bcch-dl-sch -> message -> c1 -> systemInformationBlockType1 -> nonCriticalExtension -> nonCriticalExtension -> cellSelectionInfo-v920 -> q-QualMin-r9"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> q-QualMin-r9"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib3 -> q-QualMin-r9"
+      ]
+    }
+  ]
+}

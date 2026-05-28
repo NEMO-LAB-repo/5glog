@@ -1,0 +1,40 @@
+{
+  "id": "0xb168-lte-ml1-random-access-response-msg2-report",
+  "logcode": "0xB168",
+  "name": "LTE ML1 Random Access Response (MSG2) Report",
+  "title": "0xB168 LTE ML1 Random Access Response (MSG2) Report",
+  "category": "ML1",
+  "dataFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Random Access Response (MSG2) Report": {
+      "Cell Index": null,
+      "RACH Procedure Type": null,
+      "RACH Procedure Mode": null,
+      "RNTI Type": null,
+      "RNTI Value": null,
+      "Timing Advance Included": null,
+      "System Frame Number": null,
+      "Sub Frame Number": null,
+      "Timing Advance": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json"
+  }
+}

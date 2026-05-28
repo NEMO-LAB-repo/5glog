@@ -1,0 +1,50 @@
+{
+  "id": "mcs",
+  "name": "MCS",
+  "records": [
+    {
+      "id": "0xb169-lte-ue-identification-message-msg3-report",
+      "logcode": "0xB169",
+      "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+      "name": "LTE UE Identification Message (MSG3) Report",
+      "category": "LTE",
+      "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+      "paths": [
+        "LTE UE Identification Message (MSG3) Report -> MCS"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUSCH Data -> MCS"
+      ]
+    },
+    {
+      "id": "0xb885-nr5g-mac-dci-info",
+      "logcode": "0xB885",
+      "title": "0xB885 NR5G MAC DCI Info",
+      "name": "NR5G MAC DCI Info",
+      "category": "MAC",
+      "dataFile": "0xB885__NR5G_MAC_DCI_Info.json",
+      "paths": [
+        "NR5G MAC DCI Info -> Records -> [] -> DCI Info -> [] -> UL -> MCS"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> MCS"
+      ]
+    }
+  ]
+}

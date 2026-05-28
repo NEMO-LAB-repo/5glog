@@ -1,0 +1,57 @@
+{
+  "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+  "logcode": "0xB167",
+  "name": "LTE ML1 Random Access Request (MSG1) Report",
+  "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+  "category": "ML1",
+  "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Random Access Request (MSG1) Report": {
+      "Cell Index": null,
+      "Preamble Sequence": null,
+      "Physical Root Index": null,
+      "Cyclic Shift": null,
+      "PRACH TX Power": null,
+      "Beta PRACH": null,
+      "PRACH Frequency Offset": null,
+      "Preamble Format": null,
+      "Duplex Mode": null,
+      "Density Per 10 ms": null,
+      "Random Access Request Timing": {
+        "System Frame Number": null,
+        "Sub Frame Number": null
+      },
+      "Random Access Response Window Start": {
+        "System Frame Number": null,
+        "Sub Frame Number": null
+      },
+      "Random Access Response Window End": {
+        "System Frame Number": null,
+        "Sub Frame Number": null
+      },
+      "RA RNTI": null,
+      "PRACH Actual Tx Power": null,
+      "PRACH Config Index": null,
+      "PRACH RX Freq Error": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json"
+  }
+}

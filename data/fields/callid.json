@@ -1,0 +1,150 @@
+{
+  "id": "callid",
+  "name": "Call Id",
+  "records": [
+    {
+      "id": "0x12c1-cm-call-event",
+      "logcode": "0x12C1",
+      "title": "0x12C1 CM Call Event",
+      "name": "CM Call Event",
+      "category": "Other",
+      "dataFile": "0x12C1__CM_Call_Event.json",
+      "paths": [
+        "CM Call Event -> Call End Info -> Call Id",
+        "CM Call Event -> Call Id"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE",
+      "name": "D [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "D [IMS] IMS_SIP_MESSAGE -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-message-202-accepted",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_MESSAGE : 202 Accepted",
+      "name": "D [IMS] IMS_SIP_MESSAGE : 202 Accepted",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_MESSAGE_202_Accepted.json",
+      "paths": [
+        "D [IMS] IMS_SIP_MESSAGE : 202 Accepted -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-notify",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_NOTIFY",
+      "name": "D [IMS] IMS_SIP_NOTIFY",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_NOTIFY.json",
+      "paths": [
+        "D [IMS] IMS_SIP_NOTIFY -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-register-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_REGISTER : 200 OK",
+      "name": "D [IMS] IMS_SIP_REGISTER : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_REGISTER_200_OK.json",
+      "paths": [
+        "D [IMS] IMS_SIP_REGISTER : 200 OK -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_200_OK.json",
+      "paths": [
+        "D [IMS] IMS_SIP_SUBSCRIBE : 200 OK -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-d-ims-ims-sip-subscribe-481-call-transaction-does-not-exist",
+      "logcode": "0x156E",
+      "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "name": "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+      "category": "IMS",
+      "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_481_Call_Transaction_Does_Not_Exist.json",
+      "paths": [
+        "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE",
+      "name": "U [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-message-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "name": "U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE : 200 OK -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-notify-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "name": "U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_NOTIFY_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_NOTIFY : 200 OK -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-register",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_REGISTER",
+      "name": "U [IMS] IMS_SIP_REGISTER",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_REGISTER.json",
+      "paths": [
+        "U [IMS] IMS_SIP_REGISTER -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-subscribe",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_SUBSCRIBE",
+      "name": "U [IMS] IMS_SIP_SUBSCRIBE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_SUBSCRIBE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_SUBSCRIBE -> Call-ID"
+      ]
+    },
+    {
+      "id": "0x1832-ims-registration",
+      "logcode": "0x1832",
+      "title": "0x1832 IMS Registration",
+      "name": "IMS Registration",
+      "category": "IMS",
+      "dataFile": "0x1832__IMS_Registration.json",
+      "paths": [
+        "IMS Registration -> Call Id"
+      ]
+    }
+  ]
+}

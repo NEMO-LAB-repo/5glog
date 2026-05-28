@@ -1,0 +1,17 @@
+{
+  "id": "currentwmdroppackets",
+  "name": "Current WM Drop Packets",
+  "records": [
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Records -> [] -> Current WM Drop Packets"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "srscarrierhop",
+  "name": "SRS Carrier Hop",
+  "records": [
+    {
+      "id": "0xb826-nr5g-rrc-supported-ca-combos",
+      "logcode": "0xB826",
+      "title": "0xB826 NR5G RRC Supported CA Combos",
+      "name": "NR5G RRC Supported CA Combos",
+      "category": "RRC",
+      "dataFile": "0xB826__NR5G_RRC_Supported_CA_Combos.json",
+      "paths": [
+        "NR5G RRC Supported CA Combos -> CA Combos -> [] -> Per Band Info -> [] -> bw_class -> SRS Carrier Hop"
+      ]
+    }
+  ]
+}

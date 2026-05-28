@@ -1,0 +1,17 @@
+{
+  "id": "ulteueinformationresponse",
+  "name": "U [LTE] UE Information Response",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ue-information-response",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Information Response",
+      "name": "U [LTE] UE Information Response",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Information_Response.json",
+      "paths": [
+        "U [LTE] UE Information Response"
+      ]
+    }
+  ]
+}

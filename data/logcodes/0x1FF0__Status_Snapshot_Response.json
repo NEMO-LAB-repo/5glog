@@ -1,0 +1,52 @@
+{
+  "id": "0x1ff0-status-snapshot-response",
+  "logcode": "0x1FF0",
+  "name": "Status Snapshot Response",
+  "title": "0x1FF0 Status Snapshot Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Status Snapshot Response": {
+      "Cmd Code": null,
+      "Status Snapshot Response": {
+        "ESN": null,
+        "IMSI_S1": null,
+        "IMSI_S2": null,
+        "IMSI_S": null,
+        "IMSI_11_12": null,
+        "MCC": null,
+        "IMSI_ADDR_NUM": null,
+        "SID": null,
+        "NID": null,
+        "Base Station Protocol Revision": null,
+        "Protocol Revision In Use": null,
+        "Mobile Protocol Revision": null,
+        "Band Class": null,
+        "Frequency": null,
+        "Operation Mode": null,
+        "Call Processing State": null,
+        "Call Processing Substate": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Status_Snapshot_Response.json"
+  }
+}

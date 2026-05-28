@@ -1,0 +1,27 @@
+{
+  "id": "periodicityandoffset",
+  "name": "periodicityAndOffset",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> intraFreqCellReselectionInfo -> smtc -> periodicityAndOffset",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> smtc -> periodicityAndOffset",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> initialUplinkBWP -> pucch-Config -> setup -> schedulingRequestResourceToAddModList -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> measObjectToAddModList -> measObject -> measObjectNR -> smtc1 -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> smtc -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> csi-MeasConfig -> setup -> csi-IM-ResourceToAddModList -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> csi-MeasConfig -> setup -> nzp-CSI-RS-ResourceToAddModList -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> zp-CSI-RS-ResourceToAddModList -> periodicityAndOffset",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pucch-Config -> setup -> schedulingRequestResourceToAddModList -> periodicityAndOffset",
+        "SIB2 -> sib2 -> intraFreqCellReselectionInfo -> smtc -> periodicityAndOffset",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> smtc -> periodicityAndOffset"
+      ]
+    }
+  ]
+}

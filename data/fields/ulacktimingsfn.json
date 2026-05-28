@@ -1,0 +1,17 @@
+{
+  "id": "ulacktimingsfn",
+  "name": "UL ACK Timing SFN",
+  "records": [
+    {
+      "id": "0xb16a-lte-contention-resolution-message-msg4-report",
+      "logcode": "0xB16A",
+      "title": "0xB16A LTE Contention Resolution Message (MSG4) Report",
+      "name": "LTE Contention Resolution Message (MSG4) Report",
+      "category": "LTE",
+      "dataFile": "0xB16A__LTE_Contention_Resolution_Message_MSG4_Report.json",
+      "paths": [
+        "LTE Contention Resolution Message (MSG4) Report -> UL ACK Timing SFN"
+      ]
+    }
+  ]
+}

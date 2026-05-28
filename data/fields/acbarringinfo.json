@@ -1,0 +1,17 @@
+{
+  "id": "acbarringinfo",
+  "name": "ac-BarringInfo",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2",
+      "name": "D [LTE] System Information : sib2",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2.json",
+      "paths": [
+        "D [LTE] System Information : sib2 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib2 -> ac-BarringInfo"
+      ]
+    }
+  ]
+}

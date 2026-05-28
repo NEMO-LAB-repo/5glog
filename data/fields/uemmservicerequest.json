@@ -1,0 +1,17 @@
+{
+  "id": "uemmservicerequest",
+  "name": "U [EMM] Service Request",
+  "records": [
+    {
+      "id": "0xb0ed-u-emm-service-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Service Request",
+      "name": "U [EMM] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Service_Request.json",
+      "paths": [
+        "U [EMM] Service Request"
+      ]
+    }
+  ]
+}

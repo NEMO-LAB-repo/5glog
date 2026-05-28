@@ -1,0 +1,50 @@
+{
+  "id": "0xb16e-lte-ml1-pusch-power-control",
+  "logcode": "0xB16E",
+  "name": "LTE ML1 PUSCH Power Control",
+  "title": "0xB16E LTE ML1 PUSCH Power Control",
+  "category": "ML1",
+  "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 PUSCH Power Control": {
+      "Number Of Records": null,
+      "Records": {
+        "[]": {
+          "Cell Index": null,
+          "TX Sys FN": null,
+          "TX Sub FN": null,
+          "DCI Format": null,
+          "TX Type": null,
+          "Num RBs": null,
+          "Transport Block Size": null,
+          "DL Path Loss": null,
+          "F(i)": null,
+          "TPC Frozen": null,
+          "TPC": null,
+          "PUSCH Tx Power": null,
+          "PUSCH Actual Tx power": null,
+          "Max Power": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 25,
+    "samplesParsedSuccessfully": 25,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json"
+  }
+}

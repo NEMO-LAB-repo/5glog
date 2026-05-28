@@ -1,0 +1,84 @@
+{
+  "id": "measid",
+  "name": "meas_id",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-meas-report-v4",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "name": "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4.json",
+      "paths": [
+        "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4 -> Event -> EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4 -> meas_id"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measIdToAddModList -> [] -> measId"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measIdToAddModList -> [] -> measId"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-measurement-report",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] Measurement Report",
+      "name": "U [LTE] Measurement Report",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_Measurement_Report.json",
+      "paths": [
+        "U [LTE] Measurement Report -> ul-dcch -> message -> c1 -> measurementReport -> criticalExtensions -> c1 -> measurementReport-r8 -> measResults -> measId"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> measConfig -> measIdToAddModList -> measId",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measId"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record -> conn_meas_id_cfg -> meas_id_conf -> [] -> meas_id"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> Cell Info -> [] -> Meas Id"
+      ]
+    }
+  ]
+}

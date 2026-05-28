@@ -1,0 +1,129 @@
+{
+  "id": "physicalcellid",
+  "name": "Physical Cell ID",
+  "records": [
+    {
+      "id": "0xb0c1-d-lte-mib",
+      "logcode": "0xB0C1",
+      "title": "0xB0C1 D [LTE] MIB",
+      "name": "D [LTE] MIB",
+      "category": "LTE",
+      "dataFile": "0xB0C1__D_LTE_MIB.json",
+      "paths": [
+        "D [LTE] MIB -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb0c2-lte-rrc-serving-cell-info",
+      "logcode": "0xB0C2",
+      "title": "0xB0C2 LTE RRC Serving Cell Info",
+      "name": "LTE RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB0C2__LTE_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "LTE RRC Serving Cell Info -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results -> Detected Cell -> [] -> Physical Cell ID",
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results -> Measured Cell -> [] -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+      "logcode": "0xB17A",
+      "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+      "name": "LTE ML1 S Criteria Check Procedure",
+      "category": "ML1",
+      "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+      "paths": [
+        "LTE ML1 S Criteria Check Procedure -> SubPackets -> [] -> SubPacket -> Idle Meas Cell Select Request -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas Config LTE -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb196-lte-ml1-cell-measurement-results",
+      "logcode": "0xB196",
+      "title": "0xB196 LTE ML1 Cell Measurement Results",
+      "name": "LTE ML1 Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB196__LTE_ML1_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Cell Measurement Results -> Cell Measurement List -> [] -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb197-lte-ml1-serving-cell-information",
+      "logcode": "0xB197",
+      "title": "0xB197 LTE ML1 Serving Cell Information",
+      "name": "LTE ML1 Serving Cell Information",
+      "category": "ML1",
+      "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+      "paths": [
+        "LTE ML1 Serving Cell Information -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb19e-lte-ml1-inter-frequency-log",
+      "logcode": "0xB19E",
+      "title": "0xB19E LTE ML1 Inter Frequency Log",
+      "name": "LTE ML1 Inter Frequency Log",
+      "category": "ML1",
+      "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+      "paths": [
+        "LTE ML1 Inter Frequency Log -> Detected Cell -> [] -> Physical Cell ID",
+        "LTE ML1 Inter Frequency Log -> Measured Cell -> [] -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb822-nr5g-rrc-mib-info",
+      "logcode": "0xB822",
+      "title": "0xB822 NR5G RRC MIB Info",
+      "name": "NR5G RRC MIB Info",
+      "category": "RRC",
+      "dataFile": "0xB822__NR5G_RRC_MIB_Info.json",
+      "paths": [
+        "NR5G RRC MIB Info -> Physical Cell ID"
+      ]
+    },
+    {
+      "id": "0xb887-nr5g-mac-pdsch-status",
+      "logcode": "0xB887",
+      "title": "0xB887 NR5G MAC PDSCH Status",
+      "name": "NR5G MAC PDSCH Status",
+      "category": "MAC",
+      "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+      "paths": [
+        "NR5G MAC PDSCH Status -> Records -> [] -> PDSCH Status Info -> [] -> Physical cell ID"
+      ]
+    }
+  ]
+}

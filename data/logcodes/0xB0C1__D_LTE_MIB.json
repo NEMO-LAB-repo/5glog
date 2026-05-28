@@ -1,0 +1,37 @@
+{
+  "id": "0xb0c1-d-lte-mib",
+  "logcode": "0xB0C1",
+  "name": "D [LTE] MIB",
+  "title": "0xB0C1 D [LTE] MIB",
+  "category": "LTE",
+  "dataFile": "0xB0C1__D_LTE_MIB.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] MIB": {
+      "Physical Cell ID": null,
+      "E-ARFCN": null,
+      "SFN": null,
+      "Num TX Antennas": null,
+      "DL Bandwidth": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 141,
+    "samplesParsedSuccessfully": 141,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C1__D_LTE_MIB.json"
+  }
+}

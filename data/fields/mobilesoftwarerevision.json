@@ -1,0 +1,17 @@
+{
+  "id": "mobilesoftwarerevision",
+  "name": "Mobile Software Revision",
+  "records": [
+    {
+      "id": "0x1ff0-extended-build-id-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Extended Build ID Response",
+      "name": "Extended Build ID Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Extended_Build_ID_Response.json",
+      "paths": [
+        "Extended Build ID Response -> Extended Build ID Response -> Mobile Software Revision"
+      ]
+    }
+  ]
+}

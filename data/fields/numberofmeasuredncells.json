@@ -1,0 +1,17 @@
+{
+  "id": "numberofmeasuredncells",
+  "name": "Number of measured n-cells",
+  "records": [
+    {
+      "id": "0xb19e-lte-ml1-inter-frequency-log",
+      "logcode": "0xB19E",
+      "title": "0xB19E LTE ML1 Inter Frequency Log",
+      "name": "LTE ML1 Inter Frequency Log",
+      "category": "ML1",
+      "dataFile": "0xB19E__LTE_ML1_Inter_Frequency_Log.json",
+      "paths": [
+        "LTE ML1 Inter Frequency Log -> Number of measured n-cells"
+      ]
+    }
+  ]
+}

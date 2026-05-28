@@ -1,0 +1,17 @@
+{
+  "id": "lteml1connectedmodelteintrafrequencymeasurementresults",
+  "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+  "records": [
+    {
+      "id": "0xb179-lte-ml1-connected-mode-lte-intra-frequency-measurement-results",
+      "logcode": "0xB179",
+      "title": "0xB179 LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "name": "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB179__LTE_ML1_Connected_Mode_LTE_Intra-Frequency_Measurement_Results.json",
+      "paths": [
+        "LTE ML1 Connected Mode LTE Intra-Frequency Measurement Results"
+      ]
+    }
+  ]
+}

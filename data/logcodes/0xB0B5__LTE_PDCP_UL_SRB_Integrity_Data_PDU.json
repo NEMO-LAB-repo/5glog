@@ -1,0 +1,64 @@
+{
+  "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+  "logcode": "0xB0B5",
+  "name": "LTE PDCP UL SRB Integrity Data PDU",
+  "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+  "category": "PDCP",
+  "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE PDCP UL SRB Integrity Data PDU": {
+      "Num Subpackets": null,
+      "Subpacket": {
+        "[]": {
+          "Subpacket ID": null,
+          "Subpacket Version": null,
+          "Subpacket Size": null,
+          "Subpackets -> UL SRB Integrity Data PDU Subpacket": {
+            "Versions -> SRB Ciphering Keys (hex)": null,
+            "SRB Integrity Keys (hex)": null,
+            "SRB Cipher Algo": null,
+            "SRB Integrity Algo": null,
+            "Num PDUs": null,
+            "PDCPDL CIPHER DATA": {
+              "[]": {
+                "cfg idx": null,
+                "mode": null,
+                "sn length": null,
+                "bearer id": null,
+                "valid pdu": null,
+                "pdu size": null,
+                "logged bytes": null,
+                "sub_fn data": null,
+                "sys_fn data": null,
+                "Reserved FN": null,
+                "count (hex)": null,
+                "sn": null,
+                "computed MAC-I (hex)": null,
+                "un-ciphered log_buffer (hex)": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 32,
+    "samplesParsedSuccessfully": 32,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json"
+  }
+}

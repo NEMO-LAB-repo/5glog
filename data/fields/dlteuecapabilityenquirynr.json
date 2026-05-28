@@ -1,0 +1,17 @@
+{
+  "id": "dlteuecapabilityenquirynr",
+  "name": "D [LTE] UE Capability Enquiry : nr",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : nr",
+      "name": "D [LTE] UE Capability Enquiry : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : nr"
+      ]
+    }
+  ]
+}

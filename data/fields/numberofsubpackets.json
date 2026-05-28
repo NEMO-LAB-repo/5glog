@@ -1,0 +1,116 @@
+{
+  "id": "numberofsubpackets",
+  "name": "Number Of Subpackets",
+  "records": [
+    {
+      "id": "0xb061-lte-mac-rach-trigger",
+      "logcode": "0xB061",
+      "title": "0xB061 LTE MAC RACH Trigger",
+      "name": "LTE MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB061__LTE_MAC_RACH_Trigger.json",
+      "paths": [
+        "LTE MAC RACH Trigger -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb097-lte-rlc-ul-statistics",
+      "logcode": "0xB097",
+      "title": "0xB097 LTE RLC UL Statistics",
+      "name": "LTE RLC UL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB097__LTE_RLC_UL_Statistics.json",
+      "paths": [
+        "LTE RLC UL Statistics -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb0b4-lte-pdcp-ul-statistics",
+      "logcode": "0xB0B4",
+      "title": "0xB0B4 LTE PDCP UL Statistics",
+      "name": "LTE PDCP UL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B4__LTE_PDCP_UL_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Statistics -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb0b6-lte-pdcp-ul-delay-statistics",
+      "logcode": "0xB0B6",
+      "title": "0xB0B6 LTE PDCP UL Delay Statistics",
+      "name": "LTE PDCP UL Delay Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0B6__LTE_PDCP_UL_Delay_Statistics.json",
+      "paths": [
+        "LTE PDCP UL Delay Statistics -> Number of SubPackets"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Number Of Subpackets"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Number Of Subpackets"
+      ]
+    }
+  ]
+}

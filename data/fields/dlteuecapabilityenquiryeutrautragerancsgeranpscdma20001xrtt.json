@@ -1,0 +1,17 @@
+{
+  "id": "dlteuecapabilityenquiryeutrautragerancsgeranpscdma20001xrtt",
+  "name": "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-utra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_utra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT"
+      ]
+    }
+  ]
+}

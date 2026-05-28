@@ -1,0 +1,42 @@
+{
+  "id": "0x1ffb-event-lte-rach-access-start-v2",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+  "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_RACH_ACCESS_START_V2": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_RACH_ACCESS_START_V2": {
+          "RACH_CAUSE": null,
+          "RACH_CONTENTION": null,
+          "CELL_ID": null,
+          "SUB_ID": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json"
+  }
+}

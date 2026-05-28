@@ -1,0 +1,86 @@
+{
+  "id": "0xb139-lte-ll1-pusch-tx-report",
+  "logcode": "0xB139",
+  "name": "LTE LL1 PUSCH Tx Report",
+  "title": "0xB139 LTE LL1 PUSCH Tx Report",
+  "category": "ML1",
+  "dataFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PUSCH Tx Report": {
+      "Versions -> Serving Cell ID": null,
+      "Number of Records": null,
+      "Dispatch SFN SF": null,
+      "Records": {
+        "[]": {
+          "Current SFN SF": null,
+          "UL Carrier Index": null,
+          "ACK": null,
+          "CQI": null,
+          "RI": null,
+          "Frequency Hopping": null,
+          "Re-tx Index": null,
+          "Redund Ver": null,
+          "Mirror Hopping": null,
+          "Resource Allocation Type": null,
+          "Start RB Slot 0": null,
+          "Start RB Slot 1": null,
+          "Num of RB": null,
+          "DL Carrier Index": null,
+          "Enable UL DMRS OCC": null,
+          "PUSCH TB Size": null,
+          "Coding Rate Data": null,
+          "Rate Matched ACK Bits": null,
+          "RI Payload": null,
+          "Num RI Bits": null,
+          "ACK Payload": {
+            "[]": null
+          },
+          "ACK/NAK Inp Length 0": null,
+          "ACK/NAK Inp Length 1": null,
+          "Rate Matched RI Bits": null,
+          "UE SRS": null,
+          "SRS Occasion": null,
+          "PUSCH Mod Order": null,
+          "PUSCH Digital Gain": null,
+          "Start RB Cluster1": null,
+          "Num RB Cluster1": null,
+          "Num CQI Bits": null,
+          "Rate Matched CQI Bits": null,
+          "Num DL Carriers": null,
+          "Ack Nack Index": null,
+          "Ack Nack Late": null,
+          "CSF Late": null,
+          "Drop PUSCH": null,
+          "PUSCH Tx Power": null,
+          "CQI Payload": {
+            "[]": null
+          },
+          "Tx Resampler Data": null,
+          "Cyclic Shift of DMRS Symbols Slot 0": null,
+          "Cyclic Shift of DMRS Symbols Slot 1": null,
+          "DMRS Root Slot 0": null,
+          "DMRS Root Slot 1": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 178,
+    "samplesParsedSuccessfully": 178,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json"
+  }
+}

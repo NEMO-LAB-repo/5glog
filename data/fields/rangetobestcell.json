@@ -1,0 +1,18 @@
+{
+  "id": "rangetobestcell",
+  "name": "rangeToBestCell",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> cellReselectionInfoCommon -> rangeToBestCell",
+        "SIB2 -> sib2 -> cellReselectionInfoCommon -> rangeToBestCell"
+      ]
+    }
+  ]
+}

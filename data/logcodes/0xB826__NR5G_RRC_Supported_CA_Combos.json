@@ -1,0 +1,73 @@
+{
+  "id": "0xb826-nr5g-rrc-supported-ca-combos",
+  "logcode": "0xB826",
+  "name": "NR5G RRC Supported CA Combos",
+  "title": "0xB826 NR5G RRC Supported CA Combos",
+  "category": "RRC",
+  "dataFile": "0xB826__NR5G_RRC_Supported_CA_Combos.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RRC Supported CA Combos": {
+      "Versions -> Total Num Combos": null,
+      "starting_index": null,
+      "Num Combos": null,
+      "Source": null,
+      "CA Combos": {
+        "[]": {
+          "Envelope Mode Pruned Out": null,
+          "Simul RXTX Endc": null,
+          "Simul RXTX CA": null,
+          "Muting State": null,
+          "Power Class": null,
+          "Env Mask": null,
+          "BC_ID": null,
+          "Intra Config Type": null,
+          "Num Bands": null,
+          "TDD Ant Switch FDD Disruption": null,
+          "CS Style": null,
+          "RF Envelope_Mode Mask": null,
+          "RF Envelope_Mode Subset Mask": null,
+          "Per Band Info": {
+            "[]": {
+              "bw_class": {
+                "Band": null,
+                "Tech": null,
+                "DL BW Class": null,
+                "DL Max Antennas Index": null,
+                "UL BW Class": null,
+                "UL Max Antennas Index": null,
+                "UL QAM Cap Index": null,
+                "SRS TX Switch Type": null,
+                "Max SCS": null,
+                "DL BW Per CC": null,
+                "UL BW Per CC": null,
+                "SRS Carrier Hop": null,
+                "RX Limit": null,
+                "TX Switch Impact To RX": null,
+                "TX Switch Another Band": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 45,
+    "samplesParsedSuccessfully": 45,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB826__NR5G_RRC_Supported_CA_Combos.json"
+  }
+}

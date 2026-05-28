@@ -1,0 +1,17 @@
+{
+  "id": "ltemacrachtrigger",
+  "name": "LTE MAC RACH Trigger",
+  "records": [
+    {
+      "id": "0xb061-lte-mac-rach-trigger",
+      "logcode": "0xB061",
+      "title": "0xB061 LTE MAC RACH Trigger",
+      "name": "LTE MAC RACH Trigger",
+      "category": "MAC",
+      "dataFile": "0xB061__LTE_MAC_RACH_Trigger.json",
+      "paths": [
+        "LTE MAC RACH Trigger"
+      ]
+    }
+  ]
+}

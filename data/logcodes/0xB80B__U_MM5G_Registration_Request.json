@@ -1,0 +1,229 @@
+{
+  "id": "0xb80b-u-mm5g-registration-request",
+  "logcode": "0xB80B",
+  "name": "U [MM5G] Registration Request",
+  "title": "0xB80B U [MM5G] Registration Request",
+  "category": "NAS",
+  "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [MM5G] Registration Request": {
+      "Release Version": null,
+      "Direction": null,
+      "Ext. PD": null,
+      "Security header type": null,
+      "Message ID": null,
+      "Registration Request": {
+        "ngKSI": {
+          "Type of security context flag (TSC)": null,
+          "NAS key set identifier": null
+        },
+        "5GS registration type": {
+          "Follow-on request bit (FOR)": null,
+          "5GS registration type value": null
+        },
+        "5GS Mobile Identity": {
+          "Length": null,
+          "Identity Type": null,
+          "5G-GUTI": {
+            "MCC": null,
+            "MNC": null,
+            "Operator": null,
+            "AMF Region ID": null,
+            "AMF Set ID": null,
+            "AMF Pointer": null,
+            "5G TMSI": null
+          }
+        },
+        "5GMM capability": {
+          "IEI": null,
+          "Length": null,
+          "Service gap control (SGC)": null,
+          "IP header compression for control plane CIoT 5GS optimization (5G-IPHC-CP CIoT)": null,
+          "N3 data transfer (N3 data)": null,
+          "Control plane CIoT 5GS optimization (5G-CP CIoT)": null,
+          "Restriction on use of enhanced coverage support (RestrictEC)": null,
+          "LTE Positioning Protocol (LPP) capability": null,
+          "Handover support (HO attach)": null,
+          "EPC NAS supported (S1 mode)": null
+        },
+        "UE security capability": {
+          "IEI": null,
+          "Length": null,
+          "EA0_5G": null,
+          "EA1_128_5G": null,
+          "EA2_128_5G": null,
+          "EA3_128_5G": null,
+          "EA4_5G": null,
+          "EA5_5G": null,
+          "EA6_5G": null,
+          "EA7_5G": null,
+          "IA0_5G": null,
+          "IA1_128_5G": null,
+          "IA2_128_5G": null,
+          "IA3_128_5G": null,
+          "IA4_5G": null,
+          "IA5_5G": null,
+          "IA6_5G": null,
+          "IA7_5G": null,
+          "EEA0": null,
+          "EEA1_128": null,
+          "EEA2_128": null,
+          "EEA3_128": null,
+          "EEA4": null,
+          "EEA5": null,
+          "EEA6": null,
+          "EEA7": null,
+          "EIA0": null,
+          "EIA1_128": null,
+          "EIA2_128": null,
+          "EIA3_128": null,
+          "EIA4": null,
+          "EIA5": null,
+          "EIA6": null,
+          "EIA7": null
+        },
+        "Requested NSSAI": {
+          "IEI": null,
+          "Length": null,
+          "S-NSSAI": {
+            "[]": {
+              "Length": null,
+              "Slice/service type (SST)": null,
+              "SD": {
+                "MCC": null,
+                "MNC": null
+              }
+            }
+          }
+        },
+        "Last visited registered TAI": {
+          "IEI": null,
+          "MCC": null,
+          "MNC": null,
+          "Operator": null,
+          "TAC": null
+        },
+        "S1 UE network capability": {
+          "IEI": null,
+          "Length": null,
+          "EEA0": null,
+          "128-EEA1": null,
+          "128-EEA2": null,
+          "128-EEA3": null,
+          "EEA4": null,
+          "EEA5": null,
+          "EEA6": null,
+          "EEA7": null,
+          "EIA0": null,
+          "128-EIA1": null,
+          "128-EIA2": null,
+          "128-EIA3": null,
+          "EIA4": null,
+          "EIA5": null,
+          "EIA6": null,
+          "EIA7": null,
+          "UEA0": null,
+          "UEA1": null,
+          "UEA2": null,
+          "UEA3": null,
+          "UEA4": null,
+          "UEA5": null,
+          "UEA6": null,
+          "UEA7": null,
+          "UCS2 support (UCS2)": null,
+          "UIA1": null,
+          "UIA2": null,
+          "UIA3": null,
+          "UIA4": null,
+          "UIA5": null,
+          "UIA6": null,
+          "UIA7": null,
+          "ProSe direct discovery (ProSe-dd)": null,
+          "the capability for ProSe": null,
+          "H.245 After SRVCC Handover capability (H.245-ASH)": null,
+          "Access class control for CSFB (ACC-CSFB) capability": null,
+          "LTE Positioning Protocol (LPP) capability": null,
+          "Location services (LCS) notification mechanisms capability": null,
+          "1xSRVCC capability": null,
+          "NF capability": null,
+          "Extended protocol configuration options (ePCO)": null,
+          "Header compression for control plane CIoT EPS optimization (HC-CP CIoT)": null,
+          "EMM-REGISTERED without PDN connection (ERw/oPDN)": null,
+          "S1-u data transfer (S1-U data)": null,
+          "User plane CIoT EPS optimization (UP CIoT)": null,
+          "Control plane CIoT EPS optimization (CP CIoT)": null,
+          "ProSe UE-to-network-relay (ProSe-relay)": null,
+          "ProSe direct communication (ProSe-dc)": null,
+          "Signalling for a maximum number of 15 EPS bearer contexts (15 bearers)": null,
+          "Service gap control (SGC)": null,
+          "N1 mode supported (N1mode)": null,
+          "Dual connectivity with NR (DCNR)": null,
+          "Control plane data backoff support (CP backoff)": null,
+          "Restriction on use of enhanced coverage support (RestrictEC)": null,
+          "V2X communication over PC5 (V2X PC5)": null,
+          "Multiple DRB support (multipleDRB)": null
+        },
+        "PDU session status": {
+          "IEI": null,
+          "Length": null,
+          "PSI_1": null,
+          "PSI_2": null,
+          "PSI_3": null,
+          "PSI_4": null,
+          "PSI_5": null,
+          "PSI_6": null,
+          "PSI_7": null,
+          "PSI_8": null,
+          "PSI_9": null,
+          "PSI_10": null,
+          "PSI_11": null,
+          "PSI_12": null,
+          "PSI_13": null,
+          "PSI_14": null,
+          "PSI_15": null
+        },
+        "UE's usage setting": {
+          "IEI": null,
+          "Length": null,
+          "UE's usage setting": null
+        },
+        "LADN indication": {
+          "IEI": null,
+          "Length": null
+        },
+        "Network slicing indication": {
+          "IEI": null,
+          "Default configured NSSAI indication (DCNI)": null,
+          "Network slicing subscription change indication (NSSCI)": null
+        },
+        "5GS update type": {
+          "IEI": null,
+          "Length": null,
+          "EPS Preferred CIoT network behaviour (EPS-PNB-CIoT)": null,
+          "5GS Preferred CIoT network behaviour (5GS PNB-CIoT)": null,
+          "NG-RAN Radio Capability Update (NG-RAN-RCU)": null,
+          "SMS over NAS transport requested (SMS requested)": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 11,
+    "samplesParsedSuccessfully": 11,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB80B__U_MM5G_Registration_Request.json"
+  }
+}

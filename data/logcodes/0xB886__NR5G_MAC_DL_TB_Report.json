@@ -1,0 +1,66 @@
+{
+  "id": "0xb886-nr5g-mac-dl-tb-report",
+  "logcode": "0xB886",
+  "name": "NR5G MAC DL TB Report",
+  "title": "0xB886 NR5G MAC DL TB Report",
+  "category": "MAC",
+  "dataFile": "0xB886__NR5G_MAC_DL_TB_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC DL TB Report": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "fr_sl": {
+            "slot": null,
+            "numerology": null,
+            "frame": null
+          },
+          "num_ca": null,
+          "dl_mce": {
+            "[]": {
+              "Carrier Id": null,
+              "MCE Bitmask": null,
+              "ta_cmd": {
+                "Tag Id": null,
+                "TA Command": null
+              },
+              "tci_state_pdcch": {
+                "Num CA": null,
+                "CC Info": {
+                  "[]": {
+                    "CC ID": null,
+                    "Serving cell ID": null,
+                    "CORESET ID": null,
+                    "TCI State ID": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 515,
+    "samplesParsedSuccessfully": 515,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB886__NR5G_MAC_DL_TB_Report.json"
+  }
+}

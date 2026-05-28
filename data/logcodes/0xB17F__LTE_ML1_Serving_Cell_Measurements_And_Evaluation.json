@@ -1,0 +1,62 @@
+{
+  "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+  "logcode": "0xB17F",
+  "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+  "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+  "category": "ML1",
+  "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Serving Cell Measurements And Evaluation": {
+      "Standards Version": null,
+      "E-ARFCN": null,
+      "Physical Cell ID": null,
+      "Serving Layer Priority": null,
+      "Measured RSRP Data": null,
+      "Avg RSRP Data": null,
+      "Measured RSRQ Data": null,
+      "Avg RSRQ Data": null,
+      "Measured RSSI Data": null,
+      "Q_rxlevmin Data": null,
+      "Q_rxlevmin": null,
+      "P_max Data": null,
+      "P_max": null,
+      "Max UE Tx Power Data": null,
+      "Max UE Tx Power": null,
+      "S_rxlev Data": null,
+      "S_rxlev": null,
+      "Num DRX S Fail": null,
+      "S Intra Search Data": null,
+      "S Intra Search": null,
+      "S Non Intra Search Data": null,
+      "S Non Intra Search": null,
+      "Measurement Rules Updated": null,
+      "Measurement Rules": null,
+      "Rel 9 Info": {
+        "Q Qual Min Data": null,
+        "S Qual Data": null,
+        "S Qual": null,
+        "S Intra Search Q": null,
+        "S Non Intra Search Q": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 62,
+    "samplesParsedSuccessfully": 62,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json"
+  }
+}

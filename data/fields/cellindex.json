@@ -1,0 +1,84 @@
+{
+  "id": "cellindex",
+  "name": "cellIndex",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> cellsToAddModList -> [] -> cellIndex",
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> measConfig -> measObjectToAddModList -> [] -> measObject -> measObjectEUTRA -> excludedCellsToAddModList -> [] -> cellIndex"
+      ]
+    },
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Request (MSG1) Report -> Cell Index"
+      ]
+    },
+    {
+      "id": "0xb168-lte-ml1-random-access-response-msg2-report",
+      "logcode": "0xB168",
+      "title": "0xB168 LTE ML1 Random Access Response (MSG2) Report",
+      "name": "LTE ML1 Random Access Response (MSG2) Report",
+      "category": "ML1",
+      "dataFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Response (MSG2) Report -> Cell Index"
+      ]
+    },
+    {
+      "id": "0xb169-lte-ue-identification-message-msg3-report",
+      "logcode": "0xB169",
+      "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+      "name": "LTE UE Identification Message (MSG3) Report",
+      "category": "LTE",
+      "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+      "paths": [
+        "LTE UE Identification Message (MSG3) Report -> Cell Index"
+      ]
+    },
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> UL Grant Info -> [] -> Cell Index"
+      ]
+    },
+    {
+      "id": "0xb16d-lte-ml1-gm-tx-report",
+      "logcode": "0xB16D",
+      "title": "0xB16D LTE ML1 GM TX Report",
+      "name": "LTE ML1 GM TX Report",
+      "category": "ML1",
+      "dataFile": "0xB16D__LTE_ML1_GM_TX_Report.json",
+      "paths": [
+        "LTE ML1 GM TX Report -> Record -> [] -> Cell Index"
+      ]
+    },
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control -> Records -> [] -> Cell Index"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "startingsfn",
+  "name": "Starting SFN",
+  "records": [
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "NR5G LL1 LOG SERVING SNR -> Starting SFN"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> Starting SFN"
+      ]
+    }
+  ]
+}

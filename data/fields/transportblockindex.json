@@ -1,0 +1,17 @@
+{
+  "id": "transportblockindex",
+  "name": "Transport Block Index",
+  "records": [
+    {
+      "id": "0xb173-lte-ml1-pdsch-stat-indication",
+      "logcode": "0xB173",
+      "title": "0xB173 LTE ML1 PDSCH Stat Indication",
+      "name": "LTE ML1 PDSCH Stat Indication",
+      "category": "ML1",
+      "dataFile": "0xB173__LTE_ML1_PDSCH_Stat_Indication.json",
+      "paths": [
+        "LTE ML1 PDSCH Stat Indication -> Record -> [] -> TB -> [] -> Transport Block Index"
+      ]
+    }
+  ]
+}

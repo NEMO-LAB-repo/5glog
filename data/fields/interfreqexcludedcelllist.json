@@ -1,0 +1,29 @@
+{
+  "id": "interfreqexcludedcelllist",
+  "name": "interFreqExcludedCellList",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqList -> [] -> interFreqExcludedCellList"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> interFreqExcludedCellList",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> interFreqExcludedCellList"
+      ]
+    }
+  ]
+}

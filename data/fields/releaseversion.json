@@ -1,0 +1,237 @@
+{
+  "id": "releaseversion",
+  "name": "Release Version",
+  "records": [
+    {
+      "id": "0xb0ea-lte-nas-emm-security-protected-incoming-msg",
+      "logcode": "0xB0EA",
+      "title": "0xB0EA LTE NAS EMM Security Protected Incoming Msg",
+      "name": "LTE NAS EMM Security Protected Incoming Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EA__LTE_NAS_EMM_Security_Protected_Incoming_Msg.json",
+      "paths": [
+        "LTE NAS EMM Security Protected Incoming Msg -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0eb-lte-nas-emm-security-protected-outgoing-msg",
+      "logcode": "0xB0EB",
+      "title": "0xB0EB LTE NAS EMM Security Protected Outgoing Msg",
+      "name": "LTE NAS EMM Security Protected Outgoing Msg",
+      "category": "NAS",
+      "dataFile": "0xB0EB__LTE_NAS_EMM_Security_Protected_Outgoing_Msg.json",
+      "paths": [
+        "LTE NAS EMM Security Protected Outgoing Msg -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-emm-information",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] EMM Information",
+      "name": "D [EMM] EMM Information",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_EMM_Information.json",
+      "paths": [
+        "D [EMM] EMM Information -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-identity-request",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Identity Request",
+      "name": "D [EMM] Identity Request",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Identity_Request.json",
+      "paths": [
+        "D [EMM] Identity Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [EMM] Tracking Area Update Accept -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-identity-response",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Identity Response",
+      "name": "U [EMM] Identity Response",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Identity_Response.json",
+      "paths": [
+        "U [EMM] Identity Response -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-service-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Service Request",
+      "name": "U [EMM] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Service_Request.json",
+      "paths": [
+        "U [EMM] Service Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-complete",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Complete",
+      "name": "U [EMM] Tracking Area Update Complete",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Complete.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Complete -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb0ed-u-emm-tracking-area-update-request",
+      "logcode": "0xB0ED",
+      "title": "0xB0ED U [EMM] Tracking Area Update Request",
+      "name": "U [EMM] Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB0ED__U_EMM_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [EMM] Tracking Area Update Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-authentication-request",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Authentication Request",
+      "name": "D [MM5G] Authentication Request",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Authentication_Request.json",
+      "paths": [
+        "D [MM5G] Authentication Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "D [MM5G] Registration Accept -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-security-mode-command",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Security Mode Command",
+      "name": "D [MM5G] Security Mode Command",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+      "paths": [
+        "D [MM5G] Security Mode Command -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-service-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Service Accept",
+      "name": "D [MM5G] Service Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Service_Accept.json",
+      "paths": [
+        "D [MM5G] Service Accept -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-authentication-response",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Authentication Response",
+      "name": "U [MM5G] Authentication Response",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Authentication_Response.json",
+      "paths": [
+        "U [MM5G] Authentication Response -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-complete",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Complete",
+      "name": "U [MM5G] Registration Complete",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Complete.json",
+      "paths": [
+        "U [MM5G] Registration Complete -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request",
+      "name": "U [MM5G] Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-registration-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Registration Request",
+      "name": "U [MM5G] Registration Request//Registration Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Registration_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Registration Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-registration-request-tracking-area-update-request-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Registration_Request_Tracking_Area_Update_Request_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Registration Request//Tracking Area Update Request;Registration Request//Tracking Area Update Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-security-mode-complete-registration-request-tracking-area-update-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "name": "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Security_Mode_Complete_Registration_Request_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [MM5G] Security Mode Complete//Registration Request//Tracking Area Update Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request",
+      "name": "U [MM5G] Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request.json",
+      "paths": [
+        "U [MM5G] Service Request -> Release Version"
+      ]
+    },
+    {
+      "id": "0xb80b-u-mm5g-service-request-service-request",
+      "logcode": "0xB80B",
+      "title": "0xB80B U [MM5G] Service Request//Service Request",
+      "name": "U [MM5G] Service Request//Service Request",
+      "category": "NAS",
+      "dataFile": "0xB80B__U_MM5G_Service_Request_Service_Request.json",
+      "paths": [
+        "U [MM5G] Service Request//Service Request -> Release Version"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "cellreselectionsubpriority",
+  "name": "cellReselectionSubPriority",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> cellReselectionServingFreqInfo -> cellReselectionSubPriority",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> cellReselectionSubPriority",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> criticalExtensions -> rrcRelease -> cellReselectionPriorities -> freqPriorityListNR -> cellReselectionSubPriority",
+        "SIB2 -> sib2 -> cellReselectionServingFreqInfo -> cellReselectionSubPriority",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> cellReselectionSubPriority"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "srbintegrityalgo",
+  "name": "SRB Integrity Algo",
+  "records": [
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> DL SRB Integrity Data PDU Subpacket -> SRB Integrity Algo"
+      ]
+    },
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> UL SRB Integrity Data PDU Subpacket -> SRB Integrity Algo"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> MCG -> SRB Integrity Algo",
+        "NR5G L2 DL Config -> SCG -> SRB Integrity Algo"
+      ]
+    },
+    {
+      "id": "0xb871-nr5g-l2-ul-config",
+      "logcode": "0xB871",
+      "title": "0xB871 NR5G L2 UL Config",
+      "name": "NR5G L2 UL Config",
+      "category": "L2",
+      "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+      "paths": [
+        "NR5G L2 UL Config -> Mn Security Config -> SRB Integrity Algo"
+      ]
+    }
+  ]
+}

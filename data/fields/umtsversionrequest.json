@@ -1,0 +1,18 @@
+{
+  "id": "umtsversionrequest",
+  "name": "UMTS/Version Request",
+  "records": [
+    {
+      "id": "0x1fea-umts-version-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA UMTS/Version Request",
+      "name": "UMTS/Version Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__UMTS_Version_Request.json",
+      "paths": [
+        "UMTS/Version Request",
+        "UMTS/Version Request -> Subsystem Dispatch Request Message -> UMTS/Version Request"
+      ]
+    }
+  ]
+}

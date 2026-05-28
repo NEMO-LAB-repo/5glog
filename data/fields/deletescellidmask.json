@@ -1,0 +1,17 @@
+{
+  "id": "deletescellidmask",
+  "name": "Delete Scell ID Mask",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-scell-configuration",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_SCELL_CONFIGURATION",
+      "name": "EVENT_LTE_SCELL_CONFIGURATION",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json",
+      "paths": [
+        "EVENT_LTE_SCELL_CONFIGURATION -> Event -> EVENT_LTE_SCELL_CONFIGURATION -> Delete Scell ID Mask"
+      ]
+    }
+  ]
+}

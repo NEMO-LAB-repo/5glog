@@ -1,0 +1,17 @@
+{
+  "id": "versionscurrentsfntime",
+  "name": "Versions -> Current SFN time",
+  "records": [
+    {
+      "id": "0xb950-nr5g-ml1-dl-common-config",
+      "logcode": "0xB950",
+      "title": "0xB950 NR5G ML1 DL Common Config",
+      "name": "NR5G ML1 DL Common Config",
+      "category": "ML1",
+      "dataFile": "0xB950__NR5G_ML1_DL_Common_Config.json",
+      "paths": [
+        "NR5G ML1 DL Common Config -> Versions -> Current SFN time"
+      ]
+    }
+  ]
+}

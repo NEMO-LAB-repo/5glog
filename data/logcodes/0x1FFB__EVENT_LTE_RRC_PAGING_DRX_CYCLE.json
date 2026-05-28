@@ -1,0 +1,39 @@
+{
+  "id": "0x1ffb-event-lte-rrc-paging-drx-cycle",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+  "title": "0x1FFB EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING_DRX_CYCLE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_RRC_PAGING_DRX_CYCLE": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_RRC_PAGING_DRX_CYCLE": {
+          "DRX Cycle": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 22,
+    "samplesParsedSuccessfully": 22,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_RRC_PAGING_DRX_CYCLE.json"
+  }
+}

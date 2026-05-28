@@ -1,0 +1,39 @@
+{
+  "id": "versionsreason",
+  "name": "Versions -> Reason",
+  "records": [
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> Versions -> Reason"
+      ]
+    },
+    {
+      "id": "0xb0b0-lte-pdcp-ul-config",
+      "logcode": "0xB0B0",
+      "title": "0xB0B0 LTE PDCP UL Config",
+      "name": "LTE PDCP UL Config",
+      "category": "PDCP",
+      "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+      "paths": [
+        "LTE PDCP UL Config -> Subpacket -> [] -> Subpackets -> SubPkt_1 -> Versions -> Reason"
+      ]
+    },
+    {
+      "id": "0xb815-nr5g-nas-mm5g-nssai-info",
+      "logcode": "0xB815",
+      "title": "0xB815 NR5G NAS MM5G NSSAI Info",
+      "name": "NR5G NAS MM5G NSSAI Info",
+      "category": "NAS",
+      "dataFile": "0xB815__NR5G_NAS_MM5G_NSSAI_Info.json",
+      "paths": [
+        "NR5G NAS MM5G NSSAI Info -> Versions -> Reason"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+  "logcode": "0xB8DD",
+  "name": "NR5G LL1 FW Serving FTL",
+  "title": "0xB8DD NR5G LL1 FW Serving FTL",
+  "category": "ML1",
+  "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G LL1 FW Serving FTL": {
+      "Versions -> Version": {
+        "Starting SFN": null,
+        "Sub FN": null,
+        "Cell Id": null,
+        "SSB Or TRS": null,
+        "Carrier Index": null,
+        "Sub Packets": {
+          "[]": {
+            "Inst_FtlSnr": {
+              "SNR Value": null
+            },
+            "FtlSnr": {
+              "SNR Value": null
+            }
+          }
+        },
+        "NRARFCN": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json"
+  }
+}

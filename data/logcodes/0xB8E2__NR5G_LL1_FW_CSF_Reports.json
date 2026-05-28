@@ -1,0 +1,87 @@
+{
+  "id": "0xb8e2-nr5g-ll1-fw-csf-reports",
+  "logcode": "0xB8E2",
+  "name": "NR5G LL1 FW CSF Reports",
+  "title": "0xB8E2 NR5G LL1 FW CSF Reports",
+  "category": "ML1",
+  "dataFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G LL1 FW CSF Reports": {
+      "Versions -> Frame Number": null,
+      "Subframe Number": null,
+      "Num RSRP Records": null,
+      "RSRP Records": {
+        "[]": {
+          "Abs Slot Number": null,
+          "System Slot Number": null,
+          "Carrier ID": null,
+          "Report ID": null,
+          "Report Type": null,
+          "CRI": null,
+          "RX Bitmask": null,
+          "RSRP": {
+            "[]": null
+          },
+          "Procedure Type": null,
+          "Resource ID": null,
+          "Seq ID": null,
+          "TCI State ID": null,
+          "Rx Beam ID": {
+            "[]": null
+          }
+        }
+      },
+      "Num CSI Records": null,
+      "un-decoded field": null,
+      "CSI Records": {
+        "[]": {
+          "Abs Slot Number": null,
+          "System Slot Number": null,
+          "Carrier Index": null,
+          "Report ID": null,
+          "Report Type": null,
+          "Sequence ID": null,
+          "Present Bitmap": null,
+          "CRI": null,
+          "Rank ID": null,
+          "Layer Index": null,
+          "WB CQI": null,
+          "PMI i 11": null,
+          "PMI i 12": null,
+          "PMI i 13": null,
+          "PMI i 2": null,
+          "Num Subband": null,
+          "Is 4RX Report": null,
+          "SB CQI": {
+            "[]": null
+          },
+          "SB PMI i 2": {
+            "[]": null
+          },
+          "WB Spef": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8E2__NR5G_LL1_FW_CSF_Reports.json"
+  }
+}

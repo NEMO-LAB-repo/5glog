@@ -1,0 +1,39 @@
+{
+  "id": "0x1ffb-event-ims-sip-register-end",
+  "logcode": "0x1FFB",
+  "name": "EVENT_IMS_SIP_REGISTER_END",
+  "title": "0x1FFB EVENT_IMS_SIP_REGISTER_END",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTER_END.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_IMS_SIP_REGISTER_END": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_IMS_SIP_REGISTER_END": {
+          "SIP Call ID": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4,
+    "samplesParsedSuccessfully": 4,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_IMS_SIP_REGISTER_END.json"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "0xb092-lte-rlc-ul-am-all-pdu",
+  "logcode": "0xB092",
+  "name": "LTE RLC UL AM All PDU",
+  "title": "0xB092 LTE RLC UL AM All PDU",
+  "category": "RLC",
+  "dataFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC UL AM All PDU": {
+      "Versions -> Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "Subpacket ID": null,
+          "Version": null,
+          "Subpacket Size": null,
+          "SubPackets Union -> SubPacket - ( RLCUL PDU )": {
+            "Versions -> RB Cfg Idx": null,
+            "RB Mode": null,
+            "SN Length": null,
+            "VT(A)": null,
+            "VT(S)": null,
+            "PDU Without Poll": null,
+            "Byte Without Poll": null,
+            "Poll SN": null,
+            "Number of PDUs": null,
+            "RLCUL PDU": {
+              "[]": {
+                "SFN": null,
+                "pdu_bytes": null,
+                "logged_bytes": null,
+                "AM PDU": {
+                  "PDU based on D/c union -> AM PDU": {
+                    "reserved_fn": null,
+                    "sys_fn": null,
+                    "sub_fn": null,
+                    "pdu_bytes": null,
+                    "D/C": null,
+                    "RF": null,
+                    "P": null,
+                    "FI": null,
+                    "E": null,
+                    "SN": null,
+                    "Li Structure": {
+                      "LI": {
+                        "[]": {
+                          "RLCUL DATA LI": null,
+                          "E1": null,
+                          "LI": null,
+                          "E2": null,
+                          "E3": null
+                        }
+                      }
+                    }
+                  },
+                  "PDU based on D/c union -> Control PDU": {
+                    "reserved_fn": null,
+                    "sys_fn": null,
+                    "sub_fn": null,
+                    "pdu_bytes": null,
+                    "D/C": null,
+                    "cpt": null,
+                    "Control PDU -> AM Status PDU": {
+                      "ack_part": null,
+                      "RLCUL CTRL-ACK_SN": null,
+                      "E1": null
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 66,
+    "samplesParsedSuccessfully": 66,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB092__LTE_RLC_UL_AM_All_PDU.json"
+  }
+}

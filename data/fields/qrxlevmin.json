@@ -1,0 +1,135 @@
+{
+  "id": "qrxlevmin",
+  "name": "q-RxLevMin",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-sib1",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] SIB1",
+      "name": "D [LTE] SIB1",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_SIB1.json",
+      "paths": [
+        "D [LTE] SIB1 -> bcch-dl-sch -> message -> c1 -> systemInformationBlockType1 -> cellSelectionInfo -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> q-RxLevMin",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib5 -> interFreqCarrierFreqList -> [] -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib3 -> intraFreqCellReselectionInfo -> q-RxLevMin",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4,sib5",
+      "name": "D [LTE] System Information : sib4,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqList -> [] -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib6 -> carrierFreqListUTRA-FDD -> [] -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb17f-lte-ml1-serving-cell-measurements-and-evaluation",
+      "logcode": "0xB17F",
+      "title": "0xB17F LTE ML1 Serving Cell Measurements And Evaluation",
+      "name": "LTE ML1 Serving Cell Measurements And Evaluation",
+      "category": "ML1",
+      "dataFile": "0xB17F__LTE_ML1_Serving_Cell_Measurements_And_Evaluation.json",
+      "paths": [
+        "LTE ML1 Serving Cell Measurements And Evaluation -> Q_rxlevmin"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> Frequency -> [] -> Q Rx Lev Min"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> intraFreqCellReselectionInfo -> q-RxLevMin",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> q-RxLevMin",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib5 -> carrierFreqListEUTRA -> q-RxLevMin",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> cellSelectionInfo -> q-RxLevMin",
+        "SIB2 -> sib2 -> intraFreqCellReselectionInfo -> q-RxLevMin",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> q-RxLevMin",
+        "SIB5 -> sib5 -> carrierFreqListEUTRA -> q-RxLevMin"
+      ]
+    },
+    {
+      "id": "0xb970-nr5g-ml1-searcher-idle-s-criteria",
+      "logcode": "0xB970",
+      "title": "0xB970 NR5G ML1 Searcher Idle S Criteria",
+      "name": "NR5G ML1 Searcher Idle S Criteria",
+      "category": "ML1",
+      "dataFile": "0xB970__NR5G_ML1_Searcher_Idle_S_Criteria.json",
+      "paths": [
+        "NR5G ML1 Searcher Idle S Criteria -> q_rxlevmin"
+      ]
+    }
+  ]
+}

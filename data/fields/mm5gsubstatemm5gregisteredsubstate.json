@@ -1,0 +1,17 @@
+{
+  "id": "mm5gsubstatemm5gregisteredsubstate",
+  "name": "Mm5gSubState -> Mm5g Registered Substate",
+  "records": [
+    {
+      "id": "0xb80c-nr5g-nas-mm5g-state",
+      "logcode": "0xB80C",
+      "title": "0xB80C NR5G NAS MM5G State",
+      "name": "NR5G NAS MM5G State",
+      "category": "NAS",
+      "dataFile": "0xB80C__NR5G_NAS_MM5G_State.json",
+      "paths": [
+        "NR5G NAS MM5G State -> Mm5gSubState -> Mm5g Registered Substate"
+      ]
+    }
+  ]
+}

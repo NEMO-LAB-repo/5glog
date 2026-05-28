@@ -1,0 +1,42 @@
+{
+  "id": "0xb144-lte-ll1-rach-tx-report",
+  "logcode": "0xB144",
+  "name": "LTE LL1 RACH Tx Report",
+  "title": "0xB144 LTE LL1 RACH Tx Report",
+  "category": "ML1",
+  "dataFile": "0xB144__LTE_LL1_RACH_Tx_Report.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 RACH Tx Report": {
+      "Versions -> Current SFN SF": null,
+      "UL Carrier Index": null,
+      "PRACH Transmit Power": null,
+      "Preamble Sequence": null,
+      "Cycle Shift": null,
+      "Preamble Format": null,
+      "DL Carrier Index": null,
+      "First RB for PRACH Opportunity": null,
+      "Start RB": null,
+      "Logical Root (q)": null,
+      "Tx Resampler Data": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB144__LTE_LL1_RACH_Tx_Report.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dlgrantformattype",
+  "name": "DL Grant Format Type",
+  "records": [
+    {
+      "id": "0xb16c-lte-ml1-dci-information-report",
+      "logcode": "0xB16C",
+      "title": "0xB16C LTE ML1 DCI Information Report",
+      "name": "LTE ML1 DCI Information Report",
+      "category": "ML1",
+      "dataFile": "0xB16C__LTE_ML1_DCI_Information_Report.json",
+      "paths": [
+        "LTE ML1 DCI Information Report -> Record -> [] -> DL Grant Info -> [] -> DL Grant Info -> DL Grant Format Type"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "reason",
+  "name": "Reason",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> Config Info -> Reason"
+      ]
+    },
+    {
+      "id": "0xb087-lte-rlc-dl-statistics",
+      "logcode": "0xB087",
+      "title": "0xB087 LTE RLC DL Statistics",
+      "name": "LTE RLC DL Statistics",
+      "category": "RLC",
+      "dataFile": "0xB087__LTE_RLC_DL_Statistics.json",
+      "paths": [
+        "LTE RLC DL Statistics -> Reason"
+      ]
+    },
+    {
+      "id": "0xb84d-nr5g-rlc-dl-stats",
+      "logcode": "0xB84D",
+      "title": "0xB84D NR5G RLC DL Stats",
+      "name": "NR5G RLC DL Stats",
+      "category": "RLC",
+      "dataFile": "0xB84D__NR5G_RLC_DL_Stats.json",
+      "paths": [
+        "NR5G RLC DL Stats -> Reason"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> Common State Cfg -> Reason"
+      ]
+    },
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Meta -> Reason"
+      ]
+    },
+    {
+      "id": "0xb868-nr5g-rlc-ul-stats",
+      "logcode": "0xB868",
+      "title": "0xB868 NR5G RLC UL Stats",
+      "name": "NR5G RLC UL Stats",
+      "category": "RLC",
+      "dataFile": "0xB868__NR5G_RLC_UL_Stats.json",
+      "paths": [
+        "NR5G RLC UL Stats -> Meta -> Reason"
+      ]
+    },
+    {
+      "id": "0xb890-nr5g-mac-cdrx-events-info",
+      "logcode": "0xB890",
+      "title": "0xB890 NR5G MAC CDRX Events Info",
+      "name": "NR5G MAC CDRX Events Info",
+      "category": "MAC",
+      "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+      "paths": [
+        "NR5G MAC CDRX Events Info -> Records -> [] -> Reason"
+      ]
+    }
+  ]
+}

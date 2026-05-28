@@ -1,0 +1,17 @@
+{
+  "id": "lteml1cametricslogpacket",
+  "name": "LTE ML1 CA Metrics Log Packet",
+  "records": [
+    {
+      "id": "0xb184-lte-ml1-ca-metrics-log-packet",
+      "logcode": "0xB184",
+      "title": "0xB184 LTE ML1 CA Metrics Log Packet",
+      "name": "LTE ML1 CA Metrics Log Packet",
+      "category": "ML1",
+      "dataFile": "0xB184__LTE_ML1_CA_Metrics_Log_Packet.json",
+      "paths": [
+        "LTE ML1 CA Metrics Log Packet"
+      ]
+    }
+  ]
+}

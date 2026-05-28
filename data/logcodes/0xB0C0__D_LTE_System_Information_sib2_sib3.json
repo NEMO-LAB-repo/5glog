@@ -1,0 +1,175 @@
+{
+  "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] System Information : sib2,sib3",
+  "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] System Information : sib2,sib3": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "bcch-dl-sch": {
+        "message -> c1 -> systemInformation": {
+          "criticalExtensions -> systemInformation-r8": {
+            "sib-TypeAndInfo": {
+              "[0] -> sib2": {
+                "radioResourceConfigCommon": {
+                  "rach-ConfigCommon": {
+                    "preambleInfo": {
+                      "numberOfRA-Preambles": null,
+                      "preamblesGroupAConfig": {
+                        "sizeOfRA-PreamblesGroupA": null,
+                        "messageSizeGroupA": null,
+                        "messagePowerOffsetGroupB": null
+                      }
+                    },
+                    "powerRampingParameters": {
+                      "powerRampingStep": null,
+                      "preambleInitialReceivedTargetPower": null
+                    },
+                    "ra-SupervisionInfo": {
+                      "preambleTransMax": null,
+                      "ra-ResponseWindowSize": null,
+                      "mac-ContentionResolutionTimer": null
+                    },
+                    "maxHARQ-Msg3Tx": null
+                  },
+                  "bcch-Config": {
+                    "modificationPeriodCoeff": null
+                  },
+                  "pcch-Config": {
+                    "defaultPagingCycle": null,
+                    "nB": null
+                  },
+                  "prach-Config": {
+                    "rootSequenceIndex": null,
+                    "prach-ConfigInfo": {
+                      "prach-ConfigIndex": null,
+                      "highSpeedFlag": null,
+                      "zeroCorrelationZoneConfig": null,
+                      "prach-FreqOffset": null
+                    }
+                  },
+                  "pdsch-ConfigCommon": {
+                    "referenceSignalPower": null,
+                    "p-b": null
+                  },
+                  "pusch-ConfigCommon": {
+                    "pusch-ConfigBasic": {
+                      "n-SB": null,
+                      "hoppingMode": null,
+                      "pusch-HoppingOffset": null,
+                      "enable64QAM": null
+                    },
+                    "ul-ReferenceSignalsPUSCH": {
+                      "groupHoppingEnabled": null,
+                      "groupAssignmentPUSCH": null,
+                      "sequenceHoppingEnabled": null,
+                      "cyclicShift": null
+                    }
+                  },
+                  "pucch-ConfigCommon": {
+                    "deltaPUCCH-Shift": null,
+                    "nRB-CQI": null,
+                    "nCS-AN": null,
+                    "n1PUCCH-AN": null
+                  },
+                  "soundingRS-UL-ConfigCommon -> release": null,
+                  "uplinkPowerControlCommon": {
+                    "p0-NominalPUSCH": null,
+                    "alpha": null,
+                    "p0-NominalPUCCH": null,
+                    "deltaFList-PUCCH": {
+                      "deltaF-PUCCH-Format1": null,
+                      "deltaF-PUCCH-Format1b": null,
+                      "deltaF-PUCCH-Format2": null,
+                      "deltaF-PUCCH-Format2a": null,
+                      "deltaF-PUCCH-Format2b": null
+                    },
+                    "deltaPreambleMsg3": null
+                  },
+                  "ul-CyclicPrefixLength": null,
+                  "soundingRS-UL-ConfigCommon -> setup": {
+                    "srs-BandwidthConfig": null,
+                    "srs-SubframeConfig": null,
+                    "ackNackSRS-SimultaneousTransmission": null
+                  }
+                },
+                "ue-TimersAndConstants": {
+                  "t300": null,
+                  "t301": null,
+                  "t310": null,
+                  "n310": null,
+                  "t311": null,
+                  "n311": null
+                },
+                "freqInfo": {
+                  "ul-Bandwidth": null,
+                  "additionalSpectrumEmission": null
+                },
+                "timeAlignmentTimerCommon": null,
+                "voiceServiceCauseIndication-r12": null
+              },
+              "[1] -> sib3": {
+                "cellReselectionInfoCommon": {
+                  "q-Hyst": null
+                },
+                "cellReselectionServingFreqInfo": {
+                  "s-NonIntraSearch": null,
+                  "threshServingLow": null,
+                  "cellReselectionPriority": null
+                },
+                "intraFreqCellReselectionInfo": {
+                  "q-RxLevMin": null,
+                  "s-IntraSearch": null,
+                  "presenceAntennaPort1": null,
+                  "neighCellConfig": {
+                    "neighCellConfig": null
+                  },
+                  "t-ReselectionEUTRA": null,
+                  "t-ReselectionEUTRA-SF": {
+                    "sf-Medium": null,
+                    "sf-High": null
+                  },
+                  "allowedMeasBandwidth": null
+                },
+                "s-IntraSearch-v920": {
+                  "s-IntraSearchP-r9": null,
+                  "s-IntraSearchQ-r9": null
+                },
+                "s-NonIntraSearch-v920": {
+                  "s-NonIntraSearchP-r9": null,
+                  "s-NonIntraSearchQ-r9": null
+                },
+                "q-QualMin-r9": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 48,
+    "samplesParsedSuccessfully": 48,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json"
+  }
+}

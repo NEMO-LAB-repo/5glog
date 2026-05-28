@@ -1,0 +1,17 @@
+{
+  "id": "transportblocksizeindex",
+  "name": "Transport Block Size Index",
+  "records": [
+    {
+      "id": "0xb169-lte-ue-identification-message-msg3-report",
+      "logcode": "0xB169",
+      "title": "0xB169 LTE UE Identification Message (MSG3) Report",
+      "name": "LTE UE Identification Message (MSG3) Report",
+      "category": "LTE",
+      "dataFile": "0xB169__LTE_UE_Identification_Message_MSG3_Report.json",
+      "paths": [
+        "LTE UE Identification Message (MSG3) Report -> Transport Block Size Index"
+      ]
+    }
+  ]
+}

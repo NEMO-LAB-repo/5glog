@@ -1,0 +1,17 @@
+{
+  "id": "dlterrcconnectionreestablishment",
+  "name": "D [LTE] RRC Connection Reestablishment",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "D [LTE] RRC Connection Reestablishment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "0xb959-nr5g-ml1-rlm-stats",
+  "logcode": "0xB959",
+  "name": "NR5G ML1 RLM Stats",
+  "title": "0xB959 NR5G ML1 RLM Stats",
+  "category": "ML1",
+  "dataFile": "0xB959__NR5G_ML1_RLM_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 RLM Stats": {
+      "Versions -> Start Time": {
+        "Slot": null,
+        "Sub FN": null,
+        "Sys FN": null,
+        "SCS": null
+      },
+      "RLM Header": {
+        "Carrier ID": null,
+        "Purpose": null,
+        "Evaluation periodicity": null,
+        "BFD Max Count Threshold": null,
+        "BFD Timer": null,
+        "RLM Sync Threshold": null,
+        "Threshold values of Counters": {
+          "Is Timer enabled": null,
+          "T310": null,
+          "N310": null,
+          "N311": null
+        },
+        "Insync Threshold Q24": null,
+        "Outsync Threshold Q24": null,
+        "BLER Cap Raw": null,
+        "Insync A Low Raw": null,
+        "Insync A High Raw": null,
+        "Insync B Low Raw": null,
+        "Insync B high Raw": null,
+        "Outsync A low Raw": null,
+        "Outsync A High Raw": null,
+        "Outsync B low Raw": null,
+        "Outsync B High Raw": null,
+        "Insync SNR Threshold Low Raw": null,
+        "Insync SNR Threshold Mid Raw": null,
+        "Insync SNR Threshold High Raw": null,
+        "Outsync SNR Threshold Low Raw": null,
+        "Outsync SNR Threshold Mid Raw": null,
+        "Outsync SNR Threshold High Raw": null
+      },
+      "Num Eval Request": null,
+      "Data per Evaluation Request": {
+        "[]": {
+          "Slot": null,
+          "Sub FN": null,
+          "Sys FN": null,
+          "Raw SNR": {
+            "SNR Value": null
+          },
+          "IS RLM INST BLER Raw": null,
+          "IS RLM Filtered BLER Raw": null,
+          "OOS RLM INST BLER Raw": null,
+          "OOS RLM INST Filtered BLER Raw": null,
+          "RLM Sync State": null,
+          "Timer Status": null,
+          "Selected Res Index": null,
+          "Selected Res Type": null,
+          "Insync filter length": null,
+          "Insync Samples Ready": null,
+          "N311 Status": null,
+          "Outsync Filter Length": null,
+          "Outsync Samples Ready": null,
+          "N310 Status": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 717,
+    "samplesParsedSuccessfully": 717,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB959__NR5G_ML1_RLM_Stats.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "callmanagerstateinforesponse",
+  "name": "Call Manager/State Info Response",
+  "records": [
+    {
+      "id": "0x1ff0-call-manager-state-info-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Call Manager/State Info Response",
+      "name": "Call Manager/State Info Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Call_Manager_State_Info_Response.json",
+      "paths": [
+        "Call Manager/State Info Response",
+        "Call Manager/State Info Response -> Subsystem Dispatch Response Message -> Call Manager/State Info Response"
+      ]
+    }
+  ]
+}

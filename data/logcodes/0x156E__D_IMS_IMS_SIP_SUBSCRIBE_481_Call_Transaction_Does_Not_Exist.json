@@ -1,0 +1,49 @@
+{
+  "id": "0x156e-d-ims-ims-sip-subscribe-481-call-transaction-does-not-exist",
+  "logcode": "0x156E",
+  "name": "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+  "title": "0x156E D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist",
+  "category": "IMS",
+  "dataFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_481_Call_Transaction_Does_Not_Exist.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [IMS] IMS_SIP_SUBSCRIBE : 481 Call/Transaction Does Not Exist": {
+      "Direction": null,
+      "SDP Presence": null,
+      "SIP Call ID Length": null,
+      "SIP Message Length": null,
+      "SIP Message Logged Bytes": null,
+      "Message ID": null,
+      "Response Status Code": null,
+      "CM Call ID": null,
+      "SIP Call ID": null,
+      "SIP Message": null,
+      "Via": null,
+      "To": null,
+      "From": null,
+      "Call-ID": null,
+      "CSeq": null,
+      "User-Agent": null,
+      "X-ZTE-Cause": null,
+      "Content-Length": null,
+      "}": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary"
+    ],
+    "sourceSchemaFile": "0x156E__D_IMS_IMS_SIP_SUBSCRIBE_481_Call_Transaction_Does_Not_Exist.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "puschtxpower",
+  "name": "PUSCH Tx Power",
+  "records": [
+    {
+      "id": "0xb139-lte-ll1-pusch-tx-report",
+      "logcode": "0xB139",
+      "title": "0xB139 LTE LL1 PUSCH Tx Report",
+      "name": "LTE LL1 PUSCH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB139__LTE_LL1_PUSCH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 PUSCH Tx Report -> Records -> [] -> PUSCH Tx Power"
+      ]
+    },
+    {
+      "id": "0xb16e-lte-ml1-pusch-power-control",
+      "logcode": "0xB16E",
+      "title": "0xB16E LTE ML1 PUSCH Power Control",
+      "name": "LTE ML1 PUSCH Power Control",
+      "category": "ML1",
+      "dataFile": "0xB16E__LTE_ML1_PUSCH_Power_Control.json",
+      "paths": [
+        "LTE ML1 PUSCH Power Control -> Records -> [] -> PUSCH Tx Power"
+      ]
+    }
+  ]
+}

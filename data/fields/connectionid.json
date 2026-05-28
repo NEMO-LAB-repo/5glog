@@ -1,0 +1,17 @@
+{
+  "id": "connectionid",
+  "name": "Connection ID",
+  "records": [
+    {
+      "id": "0xb0e5-lte-nas-esm-bearer-context-info",
+      "logcode": "0xB0E5",
+      "title": "0xB0E5 LTE NAS ESM Bearer Context Info",
+      "name": "LTE NAS ESM Bearer Context Info",
+      "category": "NAS",
+      "dataFile": "0xB0E5__LTE_NAS_ESM_Bearer_Context_Info.json",
+      "paths": [
+        "LTE NAS ESM Bearer Context Info -> Connection ID"
+      ]
+    }
+  ]
+}

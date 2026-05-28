@@ -1,0 +1,17 @@
+{
+  "id": "demmtrackingareaupdateaccept",
+  "name": "D [EMM] Tracking Area Update Accept",
+  "records": [
+    {
+      "id": "0xb0ec-d-emm-tracking-area-update-accept",
+      "logcode": "0xB0EC",
+      "title": "0xB0EC D [EMM] Tracking Area Update Accept",
+      "name": "D [EMM] Tracking Area Update Accept",
+      "category": "NAS",
+      "dataFile": "0xB0EC__D_EMM_Tracking_Area_Update_Accept.json",
+      "paths": [
+        "D [EMM] Tracking Area Update Accept"
+      ]
+    }
+  ]
+}

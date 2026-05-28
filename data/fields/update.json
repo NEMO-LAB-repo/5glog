@@ -1,0 +1,17 @@
+{
+  "id": "update",
+  "name": "Update",
+  "records": [
+    {
+      "id": "0xb1b2-lte-ml1-common-dc-offset",
+      "logcode": "0xB1B2",
+      "title": "0xB1B2 LTE ML1 Common DC Offset",
+      "name": "LTE ML1 Common DC Offset",
+      "category": "ML1",
+      "dataFile": "0xB1B2__LTE_ML1_Common_DC_Offset.json",
+      "paths": [
+        "LTE ML1 Common DC Offset -> Update"
+      ]
+    }
+  ]
+}

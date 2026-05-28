@@ -1,0 +1,40 @@
+{
+  "id": "0x1ffb-event-nas-mm5g-timer-start",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NAS_MM5G_TIMER_START",
+  "title": "0x1FFB EVENT_NAS_MM5G_TIMER_START",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_START.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NAS_MM5G_TIMER_START": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NAS_MM5G_TIMER_START": {
+          "SM5G Timer Id": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 348,
+    "samplesParsedSuccessfully": 348,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_START.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "0x1ffb-event-ds-dormancy-status-rm-queue-stats",
+  "logcode": "0x1FFB",
+  "name": "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+  "title": "0x1FFB EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS": {
+          "UM Physlink Pointer": null,
+          "RM WM RX Current Count": null,
+          "RM WM TX Current Count": null,
+          "Dormancy Status": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS.json"
+  }
+}

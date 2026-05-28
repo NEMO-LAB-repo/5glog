@@ -1,0 +1,68 @@
+{
+  "id": "0xb17a-lte-ml1-s-criteria-check-procedure",
+  "logcode": "0xB17A",
+  "name": "LTE ML1 S Criteria Check Procedure",
+  "title": "0xB17A LTE ML1 S Criteria Check Procedure",
+  "category": "ML1",
+  "dataFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 S Criteria Check Procedure": {
+      "Versions -> Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "SubPacket ID": null,
+          "Version": null,
+          "SubPacket Size": null,
+          "SubPacket -> Idle Meas Cell Select Request": {
+            "Versions -> Standards Version": null,
+            "E-ARFCN": null,
+            "Physical Cell ID": null,
+            "Qrxlevmin Offset Data": null,
+            "Qrxlevmin Data": null,
+            "P_max Data": null,
+            "Max UE Tx Power Data": null,
+            "Srxlev Data": null,
+            "Release 9 Info": {
+              "Q Qual Min Offset": null,
+              "Q Qual Min Data": null,
+              "S Qual Data": null
+            }
+          },
+          "SubPacket -> Idle Meas Serving Cell Measurements": {
+            "Versions -> Standards Version": null,
+            "Inst Measured RSRQ Data": null,
+            "Srxlev Data": null,
+            "Inst Measured RSRP Data": null,
+            "Inst Measured RSSI Data": null,
+            "Display Avg": null,
+            "Avg Measured RSRQ Data": null,
+            "Avg Measured RSRP Data": null,
+            "Avg Measured RSSI Data": null,
+            "Rel 9 Info": {
+              "S Qual Data": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 15,
+    "samplesParsedSuccessfully": 15,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB17A__LTE_ML1_S_Criteria_Check_Procedure.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "efs2diagopenrequest",
+  "name": "EFS2/DIAG Open Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-diag-open-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Open Request",
+      "name": "EFS2/DIAG Open Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Open_Request.json",
+      "paths": [
+        "EFS2/DIAG Open Request",
+        "EFS2/DIAG Open Request -> Subsystem Dispatch Request Message -> EFS2/DIAG Open Request"
+      ]
+    }
+  ]
+}

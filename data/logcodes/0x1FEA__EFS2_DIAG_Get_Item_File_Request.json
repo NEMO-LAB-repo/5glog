@@ -1,0 +1,43 @@
+{
+  "id": "0x1fea-efs2-diag-get-item-file-request",
+  "logcode": "0x1FEA",
+  "name": "EFS2/DIAG Get Item File Request",
+  "title": "0x1FEA EFS2/DIAG Get Item File Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__EFS2_DIAG_Get_Item_File_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EFS2/DIAG Get Item File Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "EFS2/DIAG Get Item File Request": {
+          "Length": null,
+          "Path length": null,
+          "Sequence": null,
+          "path": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 36,
+    "samplesParsedSuccessfully": 36,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__EFS2_DIAG_Get_Item_File_Request.json"
+  }
+}

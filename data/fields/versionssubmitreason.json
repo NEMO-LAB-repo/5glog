@@ -1,0 +1,17 @@
+{
+  "id": "versionssubmitreason",
+  "name": "Versions -> Submit Reason",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> Versions -> Submit Reason"
+      ]
+    }
+  ]
+}

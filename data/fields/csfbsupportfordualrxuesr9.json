@@ -1,0 +1,28 @@
+{
+  "id": "csfbsupportfordualrxuesr9",
+  "name": "csfb-SupportForDualRxUEs-r9",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib8-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib8_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib8 -> csfb-SupportForDualRxUEs-r9"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib8",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib8",
+      "name": "D [LTE] System Information : sib8",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib8.json",
+      "paths": [
+        "D [LTE] System Information : sib8 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib8 -> csfb-SupportForDualRxUEs-r9"
+      ]
+    }
+  ]
+}

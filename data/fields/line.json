@@ -1,0 +1,17 @@
+{
+  "id": "line",
+  "name": "Line",
+  "records": [
+    {
+      "id": "0x12c1-cm-call-event",
+      "logcode": "0x12C1",
+      "title": "0x12C1 CM Call Event",
+      "name": "CM Call Event",
+      "category": "Other",
+      "dataFile": "0x12C1__CM_Call_Event.json",
+      "paths": [
+        "CM Call Event -> Line"
+      ]
+    }
+  ]
+}

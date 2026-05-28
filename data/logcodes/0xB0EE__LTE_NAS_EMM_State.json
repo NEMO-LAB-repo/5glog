@@ -1,0 +1,44 @@
+{
+  "id": "0xb0ee-lte-nas-emm-state",
+  "logcode": "0xB0EE",
+  "name": "LTE NAS EMM State",
+  "title": "0xB0EE LTE NAS EMM State",
+  "category": "NAS",
+  "dataFile": "0xB0EE__LTE_NAS_EMM_State.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE NAS EMM State": {
+      "EMM State": null,
+      "EMM Substate": null,
+      "MCC": null,
+      "MNC": null,
+      "GUTI Valid": null,
+      "GUTI": {
+        "UE ID": null,
+        "MCC": null,
+        "MNC": null,
+        "MME Group ID": null,
+        "MME Code": null,
+        "M TMSI": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 27,
+    "samplesParsedSuccessfully": 27,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0EE__LTE_NAS_EMM_State.json"
+  }
+}

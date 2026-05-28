@@ -1,0 +1,43 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-ho-started-v2",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_HO_STARTED_V2",
+  "title": "0x1FFB EVENT_NR5G_RRC_HO_STARTED_V2",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_STARTED_V2.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_HO_STARTED_V2": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_HO_STARTED_V2": {
+          "Source Phy Cell Id": null,
+          "Source ARFCN": null,
+          "Target Phy Cell Id": null,
+          "Target ARFCN": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 56,
+    "samplesParsedSuccessfully": 56,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_HO_STARTED_V2.json"
+  }
+}

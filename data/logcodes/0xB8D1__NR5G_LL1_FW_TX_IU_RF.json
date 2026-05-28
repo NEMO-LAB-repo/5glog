@@ -1,0 +1,103 @@
+{
+  "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+  "logcode": "0xB8D1",
+  "name": "NR5G LL1 FW TX IU RF",
+  "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+  "category": "ML1",
+  "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G LL1 FW TX IU RF": {
+      "Sub Packets": {
+        "[]": {
+          "Code": null,
+          "Length": null,
+          "Sub6 Per Symbol": {
+            "Variant ID": null,
+            "Version": null,
+            "Versions -> SubVer6": {
+              "Header": {
+                "System Frame Number": null,
+                "Fractional Unit Slot Number": null,
+                "Symbol Index": null,
+                "SCS": null,
+                "Carrier Id": null
+              },
+              "Chains": {
+                "[]": {
+                  "Target Tx Power": null,
+                  "LCRB": null,
+                  "RB Start": null,
+                  "Channel Type": null,
+                  "PA State": null,
+                  "Is AFC Tx Update Needed": null,
+                  "AFC Run Decision": null,
+                  "XPT Mode": null,
+                  "Toggle XSW To UL": null,
+                  "Toggle XSW To DL": null
+                }
+              }
+            }
+          },
+          "Sub6 Veto Deveto QSleep": {
+            "Variant ID": null,
+            "Version": null,
+            "Versions -> Header": {
+              "System Frame Number": null,
+              "Slot Number": null,
+              "SCS": null
+            },
+            "QSleepVote": {
+              "Action Time USTMR": null,
+              "QSleep VOTE": null
+            }
+          },
+          "MTPL": {
+            "Variant ID": null,
+            "Version": null,
+            "Versions -> Header": {
+              "System Frame Number": null,
+              "Fractional Unit Slot Number": null,
+              "Symbol Index": null,
+              "SCS": null,
+              "Carrier Id": null,
+              "MTPL Type": null
+            },
+            "Chains": {
+              "[]": {
+                "MPR": null,
+                "AMPR": null,
+                "Rb Alloc Type": null,
+                "MTPL": null
+              }
+            },
+            "Endc": {
+              "MTPL": null
+            }
+          },
+          "Hex Dump": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "resultsssbcell",
+  "name": "resultsSSB-Cell",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultNeighCells -> measResultListNR -> measResult -> cellResults -> resultsSSB-Cell",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultBestNeighCell -> measResult -> cellResults -> resultsSSB-Cell",
+        "UL-DCCH-Message -> ul-dcch -> c1 -> measurementReport -> criticalExtensions -> measurementReport -> measResults -> measResultServingMOList -> measResultServingCell -> measResult -> cellResults -> resultsSSB-Cell"
+      ]
+    }
+  ]
+}

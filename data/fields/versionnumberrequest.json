@@ -1,0 +1,18 @@
+{
+  "id": "versionnumberrequest",
+  "name": "Version Number Request",
+  "records": [
+    {
+      "id": "0x1fea-version-number-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Version Number Request",
+      "name": "Version Number Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Version_Number_Request.json",
+      "paths": [
+        "Version Number Request",
+        "Version Number Request -> Version Number Request"
+      ]
+    }
+  ]
+}

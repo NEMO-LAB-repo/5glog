@@ -1,0 +1,65 @@
+{
+  "id": "0xb130-lte-ll1-pdcch-decoding-results",
+  "logcode": "0xB130",
+  "name": "LTE LL1 PDCCH Decoding Results",
+  "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+  "category": "ML1",
+  "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PDCCH Decoding Results": {
+      "Carrier Index": null,
+      "Num Records": null,
+      "Record": {
+        "[]": {
+          "Subframe Number": null,
+          "System Frame Number": null,
+          "Band Width": null,
+          "CIF Configured": null,
+          "Two bits CSI Configured": null,
+          "Aperiodic SRS configured": null,
+          "Frame Structure": null,
+          "Num eNB Antennas": null,
+          "DL CP": null,
+          "SSC": null,
+          "CA FDD TDD": null,
+          "Payload": null,
+          "Aggregation Level": null,
+          "Candidate": null,
+          "Search Space Type": null,
+          "DCI Format": null,
+          "Decode Status": null,
+          "Payload Size": null,
+          "Tail Match": null,
+          "Non Zero Symbol Mismatch Count Data": null,
+          "Alt TBS Enabled": null,
+          "Start CCE": null,
+          "Non Zero Llr Count Data": null,
+          "Normal Data": null,
+          "Prune Status": null,
+          "Energy Metric Data": null,
+          "Norm Energy Metric Data": null,
+          "Symbol Error Rate Data": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 813,
+    "samplesParsedSuccessfully": 813,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json"
+  }
+}

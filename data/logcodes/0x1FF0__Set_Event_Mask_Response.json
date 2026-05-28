@@ -1,0 +1,33 @@
+{
+  "id": "0x1ff0-set-event-mask-response",
+  "logcode": "0x1FF0",
+  "name": "Set Event Mask Response",
+  "title": "0x1FF0 Set Event Mask Response",
+  "category": "Other",
+  "dataFile": "0x1FF0__Set_Event_Mask_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Set Event Mask Response": {
+      "Cmd Code": null,
+      "Set Event Mask Response": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Set_Event_Mask_Response.json"
+  }
+}

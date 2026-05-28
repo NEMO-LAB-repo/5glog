@@ -1,0 +1,61 @@
+{
+  "id": "mmec",
+  "name": "Mmec",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-paging",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+      "name": "EVENT_LTE_RRC_PAGING",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING -> Event -> EVENT_LTE_RRC_PAGING -> Mmec"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "D [LTE] Paging -> pcch -> message -> c1 -> paging -> pagingRecordList -> [] -> ue-Identity -> s-TMSI -> mmec"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-data",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Data",
+      "name": "U [LTE] RRC Connection Request : mo-Data",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Data.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Data -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI -> mmec"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-request-mo-signalling",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Request : mo-Signalling",
+      "name": "U [LTE] RRC Connection Request : mo-Signalling",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Request_mo-Signalling.json",
+      "paths": [
+        "U [LTE] RRC Connection Request : mo-Signalling -> ul-ccch -> message -> c1 -> rrcConnectionRequest -> criticalExtensions -> rrcConnectionRequest-r8 -> ue-Identity -> s-TMSI -> mmec"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+      "category": "RRC",
+      "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+      "paths": [
+        "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request -> ul-dcch -> message -> c1 -> rrcConnectionSetupComplete -> criticalExtensions -> c1 -> rrcConnectionSetupComplete-r8 -> registeredMME -> mmec"
+      ]
+    }
+  ]
+}

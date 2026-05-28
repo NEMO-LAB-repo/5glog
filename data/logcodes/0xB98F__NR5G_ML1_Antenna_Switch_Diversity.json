@@ -1,0 +1,63 @@
+{
+  "id": "0xb98f-nr5g-ml1-antenna-switch-diversity",
+  "logcode": "0xB98F",
+  "name": "NR5G ML1 Antenna Switch Diversity",
+  "title": "0xB98F NR5G ML1 Antenna Switch Diversity",
+  "category": "ML1",
+  "dataFile": "0xB98F__NR5G_ML1_Antenna_Switch_Diversity.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G ML1 Antenna Switch Diversity": {
+      "Versions -> Systime": {
+        "Slot Number": null,
+        "SubFrame Number": null,
+        "System Frame Number": null,
+        "SCS": null
+      },
+      "Impacted CCs": null,
+      "Switching CC Mask": null,
+      "ASDIV Success": null,
+      "Num CC": null,
+      "DL Action Time": {
+        "SFN": null,
+        "Sub FN": null,
+        "Slot": null,
+        "SCS": null
+      },
+      "CC Data": {
+        "Switch Mode": null,
+        "Switch Reason": null,
+        "TRM Denial Reason": null,
+        "CC ID": null,
+        "Chain Data": {
+          "[]": {
+            "Chain": null,
+            "Old Antenna ID": null,
+            "Switch Type": null,
+            "New Antenna ID": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 34,
+    "samplesParsedSuccessfully": 34,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB98F__NR5G_ML1_Antenna_Switch_Diversity.json"
+  }
+}

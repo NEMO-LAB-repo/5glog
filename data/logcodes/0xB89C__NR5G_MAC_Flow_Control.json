@@ -1,0 +1,70 @@
+{
+  "id": "0xb89c-nr5g-mac-flow-control",
+  "logcode": "0xB89C",
+  "name": "NR5G MAC Flow Control",
+  "title": "0xB89C NR5G MAC Flow Control",
+  "category": "MAC",
+  "dataFile": "0xB89C__NR5G_MAC_Flow_Control.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC Flow Control": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "FC Reason": null,
+          "UL TX Backoff FC": {
+            "Enabled": null,
+            "Is Initial Target Rate": null,
+            "Initial Target Rate": null,
+            "Minimum Target Rate": null,
+            "Configured Throttle": null,
+            "Current Throttle": null,
+            "Cool Down Time": null,
+            "Step Timer": null,
+            "UL TX Backoff Level": null
+          },
+          "PUCCH Backoff FC": {
+            "Enabled": null,
+            "PUCCH Period": null,
+            "T Up": null,
+            "T Down": null,
+            "Step Timer": null,
+            "PUCCH Backoff Level": null,
+            "PUCCH Timer State": null
+          },
+          "MTPL Backoff FC": {
+            "Enabled": null,
+            "Initial P Backoff": null,
+            "Current P Backoff": null,
+            "P Min": null,
+            "T Up": null,
+            "T Down": null,
+            "Step Timer": null,
+            "MTPL Backoff Level": null,
+            "MTPL Time State": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2604,
+    "samplesParsedSuccessfully": 2604,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB89C__NR5G_MAC_Flow_Control.json"
+  }
+}

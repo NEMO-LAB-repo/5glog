@@ -1,0 +1,40 @@
+{
+  "id": "fractionalunitslotnumber",
+  "name": "Fractional Unit Slot Number",
+  "records": [
+    {
+      "id": "0xb8c9-nr5g-ll1-fw-rx-control-agc",
+      "logcode": "0xB8C9",
+      "title": "0xB8C9 NR5G LL1 FW RX Control AGC",
+      "name": "NR5G LL1 FW RX Control AGC",
+      "category": "ML1",
+      "dataFile": "0xB8C9__NR5G_LL1_FW_RX_Control_AGC.json",
+      "paths": [
+        "NR5G LL1 FW RX Control AGC -> Sub Packets -> [] -> Control AGC Sub Packet -> Log Header -> Fractional Unit Slot Number"
+      ]
+    },
+    {
+      "id": "0xb8d1-nr5g-ll1-fw-tx-iu-rf",
+      "logcode": "0xB8D1",
+      "title": "0xB8D1 NR5G LL1 FW TX IU RF",
+      "name": "NR5G LL1 FW TX IU RF",
+      "category": "ML1",
+      "dataFile": "0xB8D1__NR5G_LL1_FW_TX_IU_RF.json",
+      "paths": [
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> MTPL -> Versions -> Header -> Fractional Unit Slot Number",
+        "NR5G LL1 FW TX IU RF -> Sub Packets -> [] -> Sub6 Per Symbol -> Versions -> SubVer6 -> Header -> Fractional Unit Slot Number"
+      ]
+    },
+    {
+      "id": "0xb8d2-nr5g-ll1-fw-mac-tx-iu-power",
+      "logcode": "0xB8D2",
+      "title": "0xB8D2 NR5G LL1 FW MAC TX IU Power",
+      "name": "NR5G LL1 FW MAC TX IU Power",
+      "category": "ML1",
+      "dataFile": "0xB8D2__NR5G_LL1_FW_MAC_TX_IU_Power.json",
+      "paths": [
+        "NR5G LL1 FW MAC TX IU Power -> Sub Packets -> [] -> TX IU Power Sub Packet -> SubVersion -> Log Header -> Fractional Unit Slot Number"
+      ]
+    }
+  ]
+}

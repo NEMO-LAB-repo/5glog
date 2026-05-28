@@ -1,0 +1,17 @@
+{
+  "id": "callprocessingsubstate",
+  "name": "Call Processing Substate",
+  "records": [
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Status Snapshot Response -> Status Snapshot Response -> Call Processing Substate"
+      ]
+    }
+  ]
+}

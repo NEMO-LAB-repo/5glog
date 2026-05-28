@@ -1,0 +1,51 @@
+{
+  "id": "numtb",
+  "name": "Num Tb",
+  "records": [
+    {
+      "id": "0xb063-lte-mac-dl-transport-block",
+      "logcode": "0xB063",
+      "title": "0xB063 LTE MAC DL Transport Block",
+      "name": "LTE MAC DL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB063__LTE_MAC_DL_Transport_Block.json",
+      "paths": [
+        "LTE MAC DL Transport Block -> TB Log Buff -> Config Info -> Num Tb"
+      ]
+    },
+    {
+      "id": "0xb857-nr5g-l2-dl-data-pdu",
+      "logcode": "0xB857",
+      "title": "0xB857 NR5G L2 DL DATA PDU",
+      "name": "NR5G L2 DL DATA PDU",
+      "category": "L2",
+      "dataFile": "0xB857__NR5G_L2_DL_DATA_PDU.json",
+      "paths": [
+        "NR5G L2 DL DATA PDU -> Common State Cfg -> Num TB"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> Meta -> Num TB"
+      ]
+    },
+    {
+      "id": "0xb872-nr5g-l2-ul-tb",
+      "logcode": "0xB872",
+      "title": "0xB872 NR5G L2 UL TB",
+      "name": "NR5G L2 UL TB",
+      "category": "L2",
+      "dataFile": "0xB872__NR5G_L2_UL_TB.json",
+      "paths": [
+        "NR5G L2 UL TB -> TTI Info -> [] -> Num TB",
+        "NR5G L2 UL TB -> TTI Info -> [] -> TTI Info Meta -> Num TB"
+      ]
+    }
+  ]
+}

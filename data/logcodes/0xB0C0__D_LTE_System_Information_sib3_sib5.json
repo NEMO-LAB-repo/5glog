@@ -1,0 +1,124 @@
+{
+  "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+  "logcode": "0xB0C0",
+  "name": "D [LTE] System Information : sib3,sib5",
+  "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+  "category": "LTE",
+  "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [LTE] System Information : sib3,sib5": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "bcch-dl-sch": {
+        "message -> c1 -> systemInformation": {
+          "criticalExtensions -> systemInformation-r8": {
+            "sib-TypeAndInfo": {
+              "[0] -> sib3": {
+                "cellReselectionInfoCommon": {
+                  "q-Hyst": null
+                },
+                "cellReselectionServingFreqInfo": {
+                  "s-NonIntraSearch": null,
+                  "threshServingLow": null,
+                  "cellReselectionPriority": null
+                },
+                "intraFreqCellReselectionInfo": {
+                  "q-RxLevMin": null,
+                  "p-Max": null,
+                  "s-IntraSearch": null,
+                  "presenceAntennaPort1": null,
+                  "neighCellConfig": {
+                    "neighCellConfig": null
+                  },
+                  "t-ReselectionEUTRA": null
+                },
+                "s-IntraSearch-v920": {
+                  "s-IntraSearchP-r9": null,
+                  "s-IntraSearchQ-r9": null
+                },
+                "s-NonIntraSearch-v920": {
+                  "s-NonIntraSearchP-r9": null,
+                  "s-NonIntraSearchQ-r9": null
+                },
+                "q-QualMin-r9": null
+              },
+              "[1] -> sib5": {
+                "interFreqCarrierFreqList": {
+                  "[]": {
+                    "dl-CarrierFreq": null,
+                    "q-RxLevMin": null,
+                    "p-Max": null,
+                    "t-ReselectionEUTRA": null,
+                    "threshX-High": null,
+                    "threshX-Low": null,
+                    "allowedMeasBandwidth": null,
+                    "presenceAntennaPort1": null,
+                    "cellReselectionPriority": null,
+                    "neighCellConfig": {
+                      "neighCellConfig": null
+                    }
+                  }
+                },
+                "interFreqCarrierFreqList-v1310": {
+                  "[]": {}
+                },
+                "interFreqCarrierFreqListExt-r12": {
+                  "[]": {
+                    "dl-CarrierFreq-r12": null,
+                    "q-RxLevMin-r12": null,
+                    "p-Max-r12": null,
+                    "t-ReselectionEUTRA-r12": null,
+                    "threshX-High-r12": null,
+                    "threshX-Low-r12": null,
+                    "allowedMeasBandwidth-r12": null,
+                    "presenceAntennaPort1-r12": null,
+                    "cellReselectionPriority-r12": null,
+                    "neighCellConfig-r12": {
+                      "neighCellConfig": null
+                    }
+                  }
+                },
+                "interFreqCarrierFreqListExt-v1310": {
+                  "[]": {}
+                },
+                "lateNonCriticalExtension": {
+                  "interFreqCarrierFreqList-v8h0": {
+                    "[]": {
+                      "multiBandInfoList": {
+                        "[]": null
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 47,
+    "samplesParsedSuccessfully": 47,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json"
+  }
+}

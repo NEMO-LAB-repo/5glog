@@ -1,0 +1,18 @@
+{
+  "id": "diagversionresponse",
+  "name": "DIAG Version Response",
+  "records": [
+    {
+      "id": "0x1ff0-diag-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DIAG Version Response",
+      "name": "DIAG Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DIAG_Version_Response.json",
+      "paths": [
+        "DIAG Version Response",
+        "DIAG Version Response -> DIAG Version Response"
+      ]
+    }
+  ]
+}

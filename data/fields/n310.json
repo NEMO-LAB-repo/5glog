@@ -1,0 +1,63 @@
+{
+  "id": "n310",
+  "name": "n310",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2",
+      "name": "D [LTE] System Information : sib2",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2.json",
+      "paths": [
+        "D [LTE] System Information : sib2 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib2 -> ue-TimersAndConstants -> n310"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib2 -> ue-TimersAndConstants -> n310"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib2 -> ue-TimersAndConstants -> n310"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> ue-TimersAndConstants -> n310",
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> rlf-TimersAndConstants -> setup -> n310",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> rlf-TimersAndConstants -> setup -> n310"
+      ]
+    },
+    {
+      "id": "0xb959-nr5g-ml1-rlm-stats",
+      "logcode": "0xB959",
+      "title": "0xB959 NR5G ML1 RLM Stats",
+      "name": "NR5G ML1 RLM Stats",
+      "category": "ML1",
+      "dataFile": "0xB959__NR5G_ML1_RLM_Stats.json",
+      "paths": [
+        "NR5G ML1 RLM Stats -> RLM Header -> Threshold values of Counters -> N310"
+      ]
+    }
+  ]
+}

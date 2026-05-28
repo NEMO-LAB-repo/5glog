@@ -1,0 +1,18 @@
+{
+  "id": "scs60khzonetscs30khzhalftscs15khzquartert",
+  "name": "sCS60KHZoneT-SCS30KHZhalfT-SCS15KHZquarterT",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> downlinkConfigCommon -> pcch-Config -> firstPDCCH-MonitoringOccasionOfPO -> sCS60KHZoneT-SCS30KHZhalfT-SCS15KHZquarterT",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Common -> pdcch-ConfigCommon -> setup -> firstPDCCH-MonitoringOccasionOfPO -> sCS60KHZoneT-SCS30KHZhalfT-SCS15KHZquarterT"
+      ]
+    }
+  ]
+}

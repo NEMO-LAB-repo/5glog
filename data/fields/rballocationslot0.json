@@ -1,0 +1,17 @@
+{
+  "id": "rballocationslot0",
+  "name": "RB Allocation Slot 0",
+  "records": [
+    {
+      "id": "0xb126-lte-ll1-pdsch-demapper-configuration",
+      "logcode": "0xB126",
+      "title": "0xB126 LTE LL1 PDSCH Demapper Configuration",
+      "name": "LTE LL1 PDSCH Demapper Configuration",
+      "category": "ML1",
+      "dataFile": "0xB126__LTE_LL1_PDSCH_Demapper_Configuration.json",
+      "paths": [
+        "LTE LL1 PDSCH Demapper Configuration -> Record -> [] -> RB Allocation Slot 0"
+      ]
+    }
+  ]
+}

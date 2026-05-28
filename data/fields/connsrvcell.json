@@ -1,0 +1,17 @@
+{
+  "id": "connsrvcell",
+  "name": "conn_srv_cell",
+  "records": [
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record -> conn_srv_cell"
+      ]
+    }
+  ]
+}

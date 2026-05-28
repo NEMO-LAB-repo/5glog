@@ -1,0 +1,28 @@
+{
+  "id": "cndomain",
+  "name": "CN Domain",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-paging",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+      "name": "EVENT_LTE_RRC_PAGING",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING -> Event -> EVENT_LTE_RRC_PAGING -> CN Domain"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "D [LTE] Paging -> pcch -> message -> c1 -> paging -> pagingRecordList -> [] -> cn-Domain"
+      ]
+    }
+  ]
+}

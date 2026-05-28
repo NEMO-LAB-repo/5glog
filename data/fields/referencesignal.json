@@ -1,0 +1,30 @@
+{
+  "id": "referencesignal",
+  "name": "referenceSignal",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config -> setup -> tci-StatesToAddModList -> qcl-Type1 -> referenceSignal",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pucch-Config -> setup -> pucch-PowerControl -> pathlossReferenceRSs -> referenceSignal",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Dedicated -> pusch-Config -> setup -> pusch-PowerControl -> pathlossReferenceRSToAddModList -> referenceSignal"
+      ]
+    },
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "NR5G LL1 LOG SERVING SNR -> Reference Signal"
+      ]
+    }
+  ]
+}

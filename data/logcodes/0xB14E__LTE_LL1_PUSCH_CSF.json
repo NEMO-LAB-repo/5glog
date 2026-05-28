@@ -1,0 +1,59 @@
+{
+  "id": "0xb14e-lte-ll1-pusch-csf",
+  "logcode": "0xB14E",
+  "name": "LTE LL1 PUSCH CSF",
+  "title": "0xB14E LTE LL1 PUSCH CSF",
+  "category": "ML1",
+  "dataFile": "0xB14E__LTE_LL1_PUSCH_CSF.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PUSCH CSF": {
+      "Start System Sub-frame Number": null,
+      "Start System Frame Number": null,
+      "Carrier Index": null,
+      "Scell Index": null,
+      "PUSCH Reporting Mode": null,
+      "CSI Meas Set Idx": null,
+      "Rank Index": null,
+      "Number Of Subbands": null,
+      "Wideband CQI CW0": null,
+      "SubBand Size (k)": null,
+      "CSF Tx Mode": null,
+      "SubBand CQI CW0": {
+        "[]": null
+      },
+      "Alt Cqi Table": null,
+      "Num Csirs Ports": null,
+      "CRI": null,
+      "UL Frame Number": null,
+      "UL Subframe Number": null,
+      "UL Payload Length": null,
+      "Wideband PMI1": null,
+      "W1 I11 FDMIMO": null,
+      "W1 I12 FDMIMO": null,
+      "Wideband CQI CW1": null,
+      "Single WB PMI": null,
+      "SubBand CQI CW1": {
+        "[]": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 8,
+    "samplesParsedSuccessfully": 8,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB14E__LTE_LL1_PUSCH_CSF.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ltell1pcfichdecodingresults",
+  "name": "LTE LL1 PCFICH Decoding Results",
+  "records": [
+    {
+      "id": "0xb12a-lte-ll1-pcfich-decoding-results",
+      "logcode": "0xB12A",
+      "title": "0xB12A LTE LL1 PCFICH Decoding Results",
+      "name": "LTE LL1 PCFICH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PCFICH Decoding Results"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "0xb197-lte-ml1-serving-cell-information",
+  "logcode": "0xB197",
+  "name": "LTE ML1 Serving Cell Information",
+  "title": "0xB197 LTE ML1 Serving Cell Information",
+  "category": "ML1",
+  "dataFile": "0xB197__LTE_ML1_Serving_Cell_Information.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Serving Cell Information": {
+      "DL Bandwidth": null,
+      "SFN": null,
+      "E-ARFCN": null,
+      "Physical Cell ID": null,
+      "PBCH Decode Result": null,
+      "PHICH Duration": null,
+      "PHICH Resource": null,
+      "PSS Correlation": null,
+      "SSS Correlation": null,
+      "Ref Time": null,
+      "MIB Payload": null,
+      "Freq Offset": null,
+      "Num Antennas": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 9,
+    "samplesParsedSuccessfully": 9,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB197__LTE_ML1_Serving_Cell_Information.json"
+  }
+}

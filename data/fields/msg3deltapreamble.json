@@ -1,0 +1,20 @@
+{
+  "id": "msg3deltapreamble",
+  "name": "msg3-DeltaPreamble",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> msg3-DeltaPreamble",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformationBlockType1 -> servingCellConfigCommon -> uplinkConfigCommon-v1700 -> initialUplinkBWP-RedCap-r17 -> pusch-ConfigCommon -> setup -> msg3-DeltaPreamble",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> reconfigurationWithSync -> spCellConfigCommon -> uplinkConfigCommon -> initialUplinkBWP -> pusch-ConfigCommon -> setup -> msg3-DeltaPreamble",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> uplinkConfig -> uplinkBWP-ToAddModList -> bwp-Common -> pusch-ConfigCommon -> setup -> msg3-DeltaPreamble"
+      ]
+    }
+  ]
+}

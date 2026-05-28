@@ -1,0 +1,28 @@
+{
+  "id": "msmrevision",
+  "name": "MSM Revision",
+  "records": [
+    {
+      "id": "0x1ff0-extended-build-id-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Extended Build ID Response",
+      "name": "Extended Build ID Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Extended_Build_ID_Response.json",
+      "paths": [
+        "Extended Build ID Response -> Extended Build ID Response -> MSM Revision"
+      ]
+    },
+    {
+      "id": "0x1ff0-version-number-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Version Number Response",
+      "name": "Version Number Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Version_Number_Response.json",
+      "paths": [
+        "Version Number Response -> Version Number Response -> MSM Revision"
+      ]
+    }
+  ]
+}

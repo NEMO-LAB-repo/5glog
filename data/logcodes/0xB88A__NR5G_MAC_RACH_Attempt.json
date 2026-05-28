@@ -1,0 +1,122 @@
+{
+  "id": "0xb88a-nr5g-mac-rach-attempt",
+  "logcode": "0xB88A",
+  "name": "NR5G MAC RACH Attempt",
+  "title": "0xB88A NR5G MAC RACH Attempt",
+  "category": "MAC",
+  "dataFile": "0xB88A__NR5G_MAC_RACH_Attempt.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC RACH Attempt": {
+      "Header": {
+        "Sub ID": null,
+        "Num Records": null
+      },
+      "Num Attempts": null,
+      "SSB ID": null,
+      "CSI-RS ID": null,
+      "Carrier ID": null,
+      "RACH Result": null,
+      "Contention Type": null,
+      "RACH MSG Bitmask": null,
+      "Msg1 SCS": null,
+      "UL BWP SCS": null,
+      "Power Limited": null,
+      "RACH Msg1": {
+        "System Time": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Symbol Start": null,
+        "Preamble Format": null,
+        "PRACH Config": null,
+        "Uroot": null,
+        "RAID": null,
+        "FDM": null,
+        "Cyclic Shift V.": null,
+        "RA_RNTI": null,
+        "RAR Window Start": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "RAR Window End": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Backoff Duration (usec)": null
+      },
+      "RACH Msg2": {
+        "System Time": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Max Backoff Duration": null,
+        "T_RNTI": null,
+        "TA Value": null,
+        "Result": null,
+        "SCS": null
+      },
+      "RACH Msg3": {
+        "System Time": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Msg3 Grant Raw": null,
+        "Msg3 Grant Bytes": null,
+        "HARQ ID": null,
+        "SCS": null,
+        "Mac PDU": null
+      },
+      "RACH Msg4": {
+        "System Time": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Contention Resolution Start": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "Contention Resolution End": {
+          "Frame": null,
+          "SubFrame": null,
+          "Slot": null,
+          "SCS": null
+        },
+        "C_RNTI": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 180,
+    "samplesParsedSuccessfully": 180,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB88A__NR5G_MAC_RACH_Attempt.json"
+  }
+}

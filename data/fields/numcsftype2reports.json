@@ -1,0 +1,17 @@
+{
+  "id": "numcsftype2reports",
+  "name": "Num CSF Type2 Reports",
+  "records": [
+    {
+      "id": "0xb8a7-nr5g-mac-csf-report",
+      "logcode": "0xB8A7",
+      "title": "0xB8A7 NR5G MAC CSF Report",
+      "name": "NR5G MAC CSF Report",
+      "category": "MAC",
+      "dataFile": "0xB8A7__NR5G_MAC_CSF_Report.json",
+      "paths": [
+        "NR5G MAC CSF Report -> Records -> [] -> Num CSF Type2 Reports"
+      ]
+    }
+  ]
+}

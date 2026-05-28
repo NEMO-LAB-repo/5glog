@@ -1,0 +1,17 @@
+{
+  "id": "nr5gnasmm5gnssaiinfo",
+  "name": "NR5G NAS MM5G NSSAI Info",
+  "records": [
+    {
+      "id": "0xb815-nr5g-nas-mm5g-nssai-info",
+      "logcode": "0xB815",
+      "title": "0xB815 NR5G NAS MM5G NSSAI Info",
+      "name": "NR5G NAS MM5G NSSAI Info",
+      "category": "NAS",
+      "dataFile": "0xB815__NR5G_NAS_MM5G_NSSAI_Info.json",
+      "paths": [
+        "NR5G NAS MM5G NSSAI Info"
+      ]
+    }
+  ]
+}

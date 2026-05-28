@@ -1,0 +1,39 @@
+{
+  "id": "0x1ff0-logging-config",
+  "logcode": "0x1FF0",
+  "name": "Logging Config",
+  "title": "0x1FF0 Logging Config",
+  "category": "Other",
+  "dataFile": "0x1FF0__Logging_Config.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "Logging Config": {
+      "Cmd Code": null,
+      "Logging Config": {
+        "Operation": null,
+        "Status": null,
+        "EQUIP": null,
+        "Number": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 38,
+    "samplesParsedSuccessfully": 38,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FF0__Logging_Config.json"
+  }
+}

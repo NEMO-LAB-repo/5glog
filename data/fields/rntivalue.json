@@ -1,0 +1,28 @@
+{
+  "id": "rntivalue",
+  "name": "RNTI Value",
+  "records": [
+    {
+      "id": "0xb168-lte-ml1-random-access-response-msg2-report",
+      "logcode": "0xB168",
+      "title": "0xB168 LTE ML1 Random Access Response (MSG2) Report",
+      "name": "LTE ML1 Random Access Response (MSG2) Report",
+      "category": "ML1",
+      "dataFile": "0xB168__LTE_ML1_Random_Access_Response_MSG2_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Response (MSG2) Report -> RNTI Value"
+      ]
+    },
+    {
+      "id": "0xb883-nr5g-mac-ul-physical-channel-schedule-report",
+      "logcode": "0xB883",
+      "title": "0xB883 NR5G MAC UL Physical Channel Schedule Report",
+      "name": "NR5G MAC UL Physical Channel Schedule Report",
+      "category": "MAC",
+      "dataFile": "0xB883__NR5G_MAC_UL_Physical_Channel_Schedule_Report.json",
+      "paths": [
+        "NR5G MAC UL Physical Channel Schedule Report -> Records -> [] -> Carriers -> [] -> PUSCH Data -> RNTI Value"
+      ]
+    }
+  ]
+}

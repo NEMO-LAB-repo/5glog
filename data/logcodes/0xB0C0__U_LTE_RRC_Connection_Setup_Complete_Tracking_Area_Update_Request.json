@@ -1,0 +1,256 @@
+{
+  "id": "0xb0c0-u-lte-rrc-connection-setup-complete-tracking-area-update-request",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+  "title": "0xB0C0 U [LTE] RRC Connection Setup Complete//Tracking Area Update Request",
+  "category": "RRC",
+  "dataFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] RRC Connection Setup Complete//Tracking Area Update Request": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> rrcConnectionSetupComplete": {
+          "rrc-TransactionIdentifier": null,
+          "criticalExtensions -> c1 -> rrcConnectionSetupComplete-r8": {
+            "selectedPLMN-Identity": null,
+            "dedicatedInfoNAS": null,
+            "nonCriticalExtension": {
+              "nonCriticalExtension": {
+                "nonCriticalExtension": {
+                  "nonCriticalExtension": {
+                    "mobilityState-r12": null,
+                    "nonCriticalExtension": {
+                      "nonCriticalExtension": {
+                        "nonCriticalExtension": {
+                          "nonCriticalExtension": {
+                            "nonCriticalExtension": {
+                              "gummei-Type-v1540": null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "gummei-Type-r10": null
+              }
+            },
+            "registeredMME": {
+              "mmegi": null,
+              "mmec": null
+            }
+          }
+        }
+      },
+      "dedicatedInfoNAS": {
+        "Direction": null,
+        "Security header or skip ind": null,
+        "Protocol Discriminator": null,
+        "Msg auth. code": null,
+        "Sequence Number": null,
+        "2nd Sec. header": null,
+        "2nd PD": null,
+        "Message ID": null,
+        "Tracking Area Update Request": {
+          "neKSI": {
+            "Type of security context flag (TSC)": null,
+            "NAS KSI": null
+          },
+          "EPS update type": {
+            "Active Flag": null,
+            "EPS update type value": null
+          },
+          "Old GUTI": {
+            "Length": null,
+            "Type of identity": null,
+            "Odd Even Ind": null,
+            "GUTI": {
+              "MCC": null,
+              "MNC": null,
+              "Operator": null,
+              "MME Group ID": null,
+              "MME Code": null,
+              "M-TMSI": null
+            }
+          },
+          "UE Network Capability": {
+            "IEI": null,
+            "Length": null,
+            "EEA0": null,
+            "128-EEA1": null,
+            "128-EEA2": null,
+            "128-EEA3": null,
+            "EEA4": null,
+            "EEA5": null,
+            "EEA6": null,
+            "EEA7": null,
+            "EIA0": null,
+            "128-EIA1": null,
+            "128-EIA2": null,
+            "128-EIA3": null,
+            "EIA4": null,
+            "EIA5": null,
+            "EIA6": null,
+            "EIA7": null,
+            "UEA0": null,
+            "UEA1": null,
+            "UEA2": null,
+            "UEA3": null,
+            "UEA4": null,
+            "UEA5": null,
+            "UEA6": null,
+            "UEA7": null,
+            "UCS2 support (UCS2)": null,
+            "UIA1": null,
+            "UIA2": null,
+            "UIA3": null,
+            "UIA4": null,
+            "UIA5": null,
+            "UIA6": null,
+            "UIA7": null,
+            "ProSe direct discovery (ProSe-dd)": null,
+            "the capability for ProSe": null,
+            "H.245 After SRVCC Handover capability (H.245-ASH)": null,
+            "Access class control for CSFB (ACC-CSFB) capability": null,
+            "LTE Positioning Protocol (LPP) capability": null,
+            "Location services (LCS) notification mechanisms capability": null,
+            "1xSRVCC capability": null,
+            "NF capability": null,
+            "Extended protocol configuration options (ePCO)": null,
+            "Header compression for control plane CIoT EPS optimization (HC-CP CIoT)": null,
+            "EMM-REGISTERED without PDN connection (ERw/oPDN)": null,
+            "S1-u data transfer (S1-U data)": null,
+            "User plane CIoT EPS optimization (UP CIoT)": null,
+            "Control plane CIoT EPS optimization (CP CIoT)": null,
+            "ProSe UE-to-network-relay (ProSe-relay)": null,
+            "ProSe direct communication (ProSe-dc)": null,
+            "Signalling for a maximum number of 15 EPS bearer contexts (15 bearers)": null,
+            "Service gap control (SGC)": null,
+            "N1 mode supported (N1mode)": null,
+            "Dual connectivity with NR (DCNR)": null,
+            "Control plane data backoff support (CP backoff)": null,
+            "Restriction on use of enhanced coverage support (RestrictEC)": null,
+            "V2X communication over PC5 (V2X PC5)": null,
+            "Multiple DRB support (multipleDRB)": null
+          },
+          "Last visited registered TAI": {
+            "IEI": null,
+            "MCC": null,
+            "MNC": null,
+            "Operator": null,
+            "TAC": null
+          },
+          "EPS bearer context status": {
+            "IEI": null,
+            "Length": null,
+            "EBI(7)": null,
+            "EBI(6)": null,
+            "EBI(5)": null,
+            "EBI(4)": null,
+            "EBI(3)": null,
+            "EBI(2)": null,
+            "EBI(1)": null,
+            "EBI(15)": null,
+            "EBI(14)": null,
+            "EBI(13)": null,
+            "EBI(12)": null,
+            "EBI(11)": null,
+            "EBI(10)": null,
+            "EBI(9)": null,
+            "EBI(8)": null
+          },
+          "Voice domain preference and UE's usage setting": {
+            "IEI": null,
+            "Length": null,
+            "UE's usage setting": null,
+            "Voice domain preference for E-UTRAN": null
+          },
+          "Old GUTI type": {
+            "IEI": null,
+            "GUTI Type": null
+          },
+          "MS Network Feature Support": {
+            "IEI": null,
+            "Extended periodic timers": null
+          },
+          "UE additional security capability": {
+            "IEI": null,
+            "Length": null,
+            "5G-EA0": null,
+            "128-5G-EA1": null,
+            "128-5G-EA2": null,
+            "128-5G-EA3": null,
+            "5G-EA4": null,
+            "5G-EA5": null,
+            "5G-EA6": null,
+            "5G-EA7": null,
+            "5G-EA8": null,
+            "5G-EA9": null,
+            "5G-EA10": null,
+            "5G-EA11": null,
+            "5G-EA12": null,
+            "5G-EA13": null,
+            "5G-EA14": null,
+            "5G-EA15": null,
+            "5G-IA0": null,
+            "128-5G-IA1": null,
+            "128-5G-IA2": null,
+            "128-5G-IA3": null,
+            "5G-IA4": null,
+            "5G-IA5": null,
+            "5G-IA6": null,
+            "5G-IA7": null,
+            "5G-IA8": null,
+            "5G-IA9": null,
+            "5G-IA10": null,
+            "5G-IA11": null,
+            "5G-IA12": null,
+            "5G-IA13": null,
+            "5G-IA14": null,
+            "5G-IA15": null
+          },
+          "UE status": {
+            "IEI": null,
+            "Length": null,
+            "5GMM registration status (N1 mode reg)": null,
+            "EMM registration status (S1 mode reg)": null
+          },
+          "Non-current neKSI": {
+            "IEI": null,
+            "Type of security context flag (TSC)": null,
+            "NAS KSI": null
+          },
+          "UE radio capability information update needed": {
+            "IEI": null,
+            "UE radio capability information update needed flag (URC upd)": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_RRC_Connection_Setup_Complete_Tracking_Area_Update_Request.json"
+  }
+}

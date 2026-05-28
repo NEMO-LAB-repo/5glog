@@ -1,0 +1,95 @@
+{
+  "id": "0xb887-nr5g-mac-pdsch-status",
+  "logcode": "0xB887",
+  "name": "NR5G MAC PDSCH Status",
+  "title": "0xB887 NR5G MAC PDSCH Status",
+  "category": "MAC",
+  "dataFile": "0xB887__NR5G_MAC_PDSCH_Status.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC PDSCH Status": {
+      "Sub ID": null,
+      "Num Records": null,
+      "Records": {
+        "[]": {
+          "System Time": {
+            "Slot": null,
+            "Numerology": null,
+            "Frame": null
+          },
+          "Num PDSCH Status": null,
+          "PDSCH Status Info": {
+            "[]": {
+              "Tech Id": null,
+              "Opcode": null,
+              "Conn ID": null,
+              "Scell Id Raw": null,
+              "Carrier ID": null,
+              "SFN": null,
+              "Slot": null,
+              "Bandwidth": null,
+              "Band Type": null,
+              "Variant Id": null,
+              "Physical cell ID": null,
+              "EARFCN": null,
+              "TB Index": null,
+              "TB Size": null,
+              "SCS MU": null,
+              "MCS": null,
+              "Num Rbs": null,
+              "RV": null,
+              "HARQ Or MBSFN Area Id": null,
+              "RNTI Type": null,
+              "K1 Or PMCH ID": null,
+              "TCI": null,
+              "Num Layers Raw": null,
+              "Num Layers": null,
+              "Iteration Index": null,
+              "CRC Status": null,
+              "New Tx Flag": null,
+              "NDI": null,
+              "Discard Mode": null,
+              "CRC State": null,
+              "Bypass Decode": null,
+              "Bypass HARQ": null,
+              "Num ReTx": null,
+              "HD Onload Timeout": null,
+              "HARQ Onload Timeout": null,
+              "HD Offload Timeout": null,
+              "HARQ Offload Timeout": null,
+              "Did Recomb": null,
+              "Is IOVec Valid": null,
+              "Mod Type": null,
+              "High Clock Mode": null,
+              "Num RX": null,
+              "RX Antenna Mapping 0": null,
+              "RX Antenna Mapping 1": null,
+              "RX Antenna Mapping 2": null,
+              "RX Antenna Mapping 3": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB887__NR5G_MAC_PDSCH_Status.json"
+  }
+}

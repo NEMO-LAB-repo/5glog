@@ -1,0 +1,76 @@
+{
+  "id": "0xb0b3-lte-pdcp-ul-cipher-data-pdu",
+  "logcode": "0xB0B3",
+  "name": "LTE PDCP UL Cipher Data PDU",
+  "title": "0xB0B3 LTE PDCP UL Cipher Data PDU",
+  "category": "PDCP",
+  "dataFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE PDCP UL Cipher Data PDU": {
+      "Num Subpackets": null,
+      "Subpacket": {
+        "[]": {
+          "Subpacket ID": null,
+          "Subpacket Version": null,
+          "Subpacket Size": null,
+          "Subpackets -> UL Cipher Data PDU Subpacket": {
+            "Versions -> SRB Ciphering Keys (hex)": null,
+            "DRB Ciphering Keys (hex)": null,
+            "SRB Cipher Algo": null,
+            "DRB Cipher Algo": null,
+            "Num PDUs": null,
+            "PDCPDL CIPHER DATA": {
+              "[]": {
+                "cfg idx": null,
+                "mode": null,
+                "sn length": null,
+                "bearer id": null,
+                "valid pdu": null,
+                "pdu size": null,
+                "logged bytes": null,
+                "sub_fn data": null,
+                "sys_fn data": null,
+                "Reserved FN": null,
+                "count (hex)": null,
+                "compressed pdu": null,
+                "pdu type": null,
+                "buffer -> ElsMiniSignBufferBits": {
+                  "ElsMiniSignBuffer": {
+                    "Raw ELS/R": null,
+                    "els sdu": null,
+                    "pdcp sn": null,
+                    "Raw els mini sign": null
+                  },
+                  "Buffer 18bits": {
+                    "DC": null,
+                    "PDCP SN": null
+                  }
+                },
+                "els mini sign": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 50,
+    "samplesParsedSuccessfully": 50,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0B3__LTE_PDCP_UL_Cipher_Data_PDU.json"
+  }
+}

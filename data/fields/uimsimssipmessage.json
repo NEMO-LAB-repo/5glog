@@ -1,0 +1,17 @@
+{
+  "id": "uimsimssipmessage",
+  "name": "U [IMS] IMS_SIP_MESSAGE",
+  "records": [
+    {
+      "id": "0x156e-u-ims-ims-sip-message",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE",
+      "name": "U [IMS] IMS_SIP_MESSAGE",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE"
+      ]
+    }
+  ]
+}

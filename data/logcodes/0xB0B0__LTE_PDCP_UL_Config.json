@@ -1,0 +1,123 @@
+{
+  "id": "0xb0b0-lte-pdcp-ul-config",
+  "logcode": "0xB0B0",
+  "name": "LTE PDCP UL Config",
+  "title": "0xB0B0 LTE PDCP UL Config",
+  "category": "PDCP",
+  "dataFile": "0xB0B0__LTE_PDCP_UL_Config.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE PDCP UL Config": {
+      "Number Subpackets": null,
+      "Subpacket": {
+        "[]": {
+          "Subpacket ID": null,
+          "Subpacket Version": null,
+          "Subpacket Size": null,
+          "Subpackets -> SubPkt_1": {
+            "Versions -> Reason": null,
+            "Security Config": {
+              "SRB Cipher Algo": null,
+              "SRB Cipher Key Idx": null,
+              "SRB Integ Algo": null,
+              "SRB Integ Key Idx": null,
+              "DRB Cipher Algo": null,
+              "DRB Cipher Key Idx": null
+            },
+            "SN Security Config": {
+              "SRB Cipher Algo": null,
+              "SRB Cipher Key Idx": null,
+              "SRB Integ Algo": null,
+              "SRB Integ Key Idx": null,
+              "DRB Cipher Algo": null,
+              "DRB Cipher Key Idx": null
+            },
+            "Array size": null,
+            "Number released RB": null,
+            "Number added/modified RB": null,
+            "Added/Modified RB": {
+              "[]": {
+                "RB Cfg Idx": null,
+                "Action": null
+              }
+            },
+            "Number Nr5G added/modified RB": null,
+            "Number active RB": null,
+            "Active RB": {
+              "[]": {
+                "PDCP Entity Type": null,
+                "Type -> LTE": {
+                  "RB ID": null,
+                  "RB-Cfg Idx": null,
+                  "EPS ID": null,
+                  "RB mode": null,
+                  "RB Type": null,
+                  "SN Length": null,
+                  "Discard timer": null,
+                  "Compression Type": null,
+                  "RoHC Max CID": null,
+                  "RoHC Mask": null,
+                  "UDC Cfg Action": null,
+                  "UDC Context Buffer Size": null,
+                  "UDC Algo Ver": null,
+                  "UDC Dictionary Type": null
+                },
+                "Type -> NR5G": {
+                  "RB ID": null,
+                  "RB-Cfg Idx": null,
+                  "EPS ID": null,
+                  "RB mode": null,
+                  "RB path": null,
+                  "RB type": null,
+                  "SN length": null,
+                  "Discard Timer": null,
+                  "Compression Type": null,
+                  "PDCP Path": null,
+                  "Ul Data Split Threshold Enabled": null,
+                  "Ul Data Split Threshold": null,
+                  "Ul Duplication": null,
+                  "RoHC Max CID": null,
+                  "RoHC Mask": null,
+                  "More Than One Rlc Enabled": null,
+                  "Primary Cell Group ID": null,
+                  "Primary LC ID": null,
+                  "Reestablish PDCP Enabled": null,
+                  "Recover PDCP Enabled": null
+                }
+              }
+            },
+            "Released RB": {
+              "[]": {
+                "RB Cfg Idx": null
+              }
+            },
+            "Nr5G Added/Modified RB": {
+              "[]": {
+                "RB Cfg Idx": null,
+                "Action": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 22,
+    "samplesParsedSuccessfully": 22,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB0B0__LTE_PDCP_UL_Config.json"
+  }
+}

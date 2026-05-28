@@ -1,0 +1,125 @@
+{
+  "id": "treordering",
+  "name": "T Reordering",
+  "records": [
+    {
+      "id": "0xb081-lte-rlc-dl-config-log-packet",
+      "logcode": "0xB081",
+      "title": "0xB081 LTE RLC DL Config Log packet",
+      "name": "LTE RLC DL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC DL Config Log packet -> RB Config -> [] -> PDCP RB Info -> PDCP Config -> T Reordering"
+      ]
+    },
+    {
+      "id": "0xb0a4-lte-pdcp-dl-statistics",
+      "logcode": "0xB0A4",
+      "title": "0xB0A4 LTE PDCP DL Statistics",
+      "name": "LTE PDCP DL Statistics",
+      "category": "PDCP",
+      "dataFile": "0xB0A4__LTE_PDCP_DL_Statistics.json",
+      "paths": [
+        "LTE PDCP DL Statistics -> RB Stats -> [] -> T Reordering"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration",
+      "name": "D [LTE] RRC Connection Reconfiguration",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> rlc-Config -> am -> dl-AM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> srb-ToAddModList -> [] -> rlc-Config -> explicitValue -> am -> dl-AM-RLC -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> rlc-Config -> am -> dl-AM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> rlc-Config -> um-Bi-Directional -> dl-UM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> srb-ToAddModList -> [] -> rlc-Config -> explicitValue -> am -> dl-AM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration//Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> pdcp-Config -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reconfiguration-tracking-area-update-accept-radio-bearer-config-pdu",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "name": "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU)",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reconfiguration_Tracking_Area_Update_Accept_Radio_Bearer_Config_PDU.json",
+      "paths": [
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> drb-ToAddModList -> [] -> rlc-Config -> am -> dl-AM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> dl-dcch -> message -> c1 -> rrcConnectionReconfiguration -> criticalExtensions -> c1 -> rrcConnectionReconfiguration-r8 -> radioResourceConfigDedicated -> srb-ToAddModList -> [] -> rlc-Config -> explicitValue -> am -> dl-AM-RLC -> t-Reordering",
+        "D [LTE] RRC Connection Reconfiguration//Tracking Area Update Accept;Radio Bearer Config (PDU) -> nr-RadioBearerConfig1-r15 -> pdu-radioBearerConfig -> drb-ToAddModList -> [] -> pdcp-Config -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-reestablishment",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Reestablishment",
+      "name": "D [LTE] RRC Connection Reestablishment",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Reestablishment.json",
+      "paths": [
+        "D [LTE] RRC Connection Reestablishment -> dl-ccch -> message -> c1 -> rrcConnectionReestablishment -> criticalExtensions -> c1 -> rrcConnectionReestablishment-r8 -> radioResourceConfigDedicated -> srb-ToAddModList -> [] -> rlc-Config -> explicitValue -> am -> dl-AM-RLC -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-setup",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Setup",
+      "name": "D [LTE] RRC Connection Setup",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+      "paths": [
+        "D [LTE] RRC Connection Setup -> dl-ccch -> message -> c1 -> rrcConnectionSetup -> criticalExtensions -> c1 -> rrcConnectionSetup-r8 -> radioResourceConfigDedicated -> srb-ToAddModList -> [] -> rlc-Config -> explicitValue -> am -> dl-AM-RLC -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> radioBearerConfig -> srb-ToAddModList -> pdcp-Config -> t-Reordering",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> drb-ToAddModList -> pdcp-Config -> t-Reordering",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> radioBearerConfig -> srb-ToAddModList -> pdcp-Config -> t-Reordering",
+        "RadioBearerConfig -> pdu-radioBearerConfig -> drb-ToAddModList -> pdcp-Config -> t-Reordering"
+      ]
+    },
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats -> RB Stats -> [] -> T Reordering"
+      ]
+    },
+    {
+      "id": "0xb84b-nr5g-l2-dl-config",
+      "logcode": "0xB84B",
+      "title": "0xB84B NR5G L2 DL Config",
+      "name": "NR5G L2 DL Config",
+      "category": "L2",
+      "dataFile": "0xB84B__NR5G_L2_DL_Config.json",
+      "paths": [
+        "NR5G L2 DL Config -> RB Config -> [] -> PDCP RB Info -> PDCP Config -> T Reordering"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ueidentityimsi",
+  "name": "ue-Identity -> imsi",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-paging",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] Paging",
+      "name": "D [LTE] Paging",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_Paging.json",
+      "paths": [
+        "D [LTE] Paging -> pcch -> message -> c1 -> paging -> pagingRecordList -> [] -> ue-Identity -> imsi"
+      ]
+    }
+  ]
+}

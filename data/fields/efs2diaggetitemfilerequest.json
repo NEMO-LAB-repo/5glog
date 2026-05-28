@@ -1,0 +1,18 @@
+{
+  "id": "efs2diaggetitemfilerequest",
+  "name": "EFS2/DIAG Get Item File Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-diag-get-item-file-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Get Item File Request",
+      "name": "EFS2/DIAG Get Item File Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Get_Item_File_Request.json",
+      "paths": [
+        "EFS2/DIAG Get Item File Request",
+        "EFS2/DIAG Get Item File Request -> Subsystem Dispatch Request Message -> EFS2/DIAG Get Item File Request"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "0xb081-lte-rlc-dl-config-log-packet",
+  "logcode": "0xB081",
+  "name": "LTE RLC DL Config Log packet",
+  "title": "0xB081 LTE RLC DL Config Log packet",
+  "category": "RLC",
+  "dataFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC DL Config Log packet": {
+      "Versions -> Submit Reason": null,
+      "Config Mask": null,
+      "Num RB Logged": null,
+      "Config Reason": null,
+      "PDCP DRB Rel Mask": null,
+      "RLC DRB Rel Mask": null,
+      "PDCP SRB Rel mask": null,
+      "RLC SRB Rel Mask": null,
+      "PDCP DRB Changed Mask": null,
+      "RLC DRB Changed mask": null,
+      "PDCP SRB Changed Mask": null,
+      "RLC SRB Changed mask": null,
+      "RB Config": {
+        "[]": {
+          "RB Mode": null,
+          "RB Index": null,
+          "EPSID": null,
+          "RB Type": null,
+          "PDCP RB Info": {
+            "Config Action": null,
+            "RLC Path": null,
+            "PDCP Path": null,
+            "Config Bmask": null,
+            "Reestablish Pdcp": null,
+            "Discard On Pdcp": null,
+            "Recover Pdcp": null,
+            "Rohc Enable": null,
+            "PDCP Config": {
+              "Config Mask": null,
+              "Discard Timer": null,
+              "Sn Size": null,
+              "Integrity Protection": null,
+              "Rtatus Report Required": null,
+              "Out Of Order Delivery": null,
+              "T Reordering": null,
+              "ROHC Config": {
+                "Max CID": null,
+                "Profile Mask": null,
+                "DRB Continue Rohc": null
+              }
+            }
+          },
+          "RLC RB Info": {
+            "LCID": null,
+            "Action": null,
+            "Config Bitmask": null,
+            "Reestablish RLC": null,
+            "RB Info -> AM": {
+              "T Status Prohibit": null,
+              "T Reassembly": null,
+              "SN Length": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 18,
+    "samplesParsedSuccessfully": 18,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB081__LTE_RLC_DL_Config_Log_packet.json"
+  }
+}

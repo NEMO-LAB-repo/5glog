@@ -1,0 +1,39 @@
+{
+  "id": "imsparameters",
+  "name": "ims-Parameters",
+  "records": [
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-eutra-nr-eutra-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "name": "U [LTE] UE Capability Information : eutra,nr,eutra-nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_eutra_nr_eutra-nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : eutra,nr,eutra-nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> ims-Parameters"
+      ]
+    },
+    {
+      "id": "0xb0c0-u-lte-ue-capability-information-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 U [LTE] UE Capability Information : nr",
+      "name": "U [LTE] UE Capability Information : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__U_LTE_UE_Capability_Information_nr.json",
+      "paths": [
+        "U [LTE] UE Capability Information : nr -> ul-dcch -> message -> c1 -> ueCapabilityInformation -> criticalExtensions -> c1 -> ueCapabilityInformation-r8 -> ue-CapabilityRAT-ContainerList -> [] -> ueCapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> ims-Parameters"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> ueCapabilityInformation -> criticalExtensions -> ueCapabilityInformation -> ue-CapabilityRAT-ContainerList -> ue-CapabilityRAT-Container -> nonCriticalExtension -> nonCriticalExtension -> ims-Parameters"
+      ]
+    }
+  ]
+}

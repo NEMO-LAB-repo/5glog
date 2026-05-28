@@ -1,0 +1,18 @@
+{
+  "id": "totalcount",
+  "name": "Total Count",
+  "records": [
+    {
+      "id": "0xb860-nr5g-pdcp-ul-stats",
+      "logcode": "0xB860",
+      "title": "0xB860 NR5G PDCP UL Stats",
+      "name": "NR5G PDCP UL Stats",
+      "category": "PDCP",
+      "dataFile": "0xB860__NR5G_PDCP_UL_Stats.json",
+      "paths": [
+        "NR5G PDCP UL Stats -> Cumulative RB Stats -> Num WM Flow Control -> Total Count",
+        "NR5G PDCP UL Stats -> Records -> [] -> Total WM Flow Control -> Total Count"
+      ]
+    }
+  ]
+}

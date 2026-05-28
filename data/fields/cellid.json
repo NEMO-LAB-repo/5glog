@@ -1,0 +1,250 @@
+{
+  "id": "cellid",
+  "name": "cell_id",
+  "records": [
+    {
+      "id": "0x184e-cm-serving-system-msim-event",
+      "logcode": "0x184E",
+      "title": "0x184E CM Serving System MSIM Event",
+      "name": "CM Serving System MSIM Event",
+      "category": "Other",
+      "dataFile": "0x184E__CM_Serving_System_MSIM_Event.json",
+      "paths": [
+        "CM Serving System MSIM Event -> stack -> [] -> cell_id"
+      ]
+    },
+    {
+      "id": "0x1ff0-gsm-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 GSM/Status Response",
+      "name": "GSM/Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__GSM_Status_Response.json",
+      "paths": [
+        "GSM/Status Response -> Subsystem Dispatch Response Message -> GSM/Status Response -> Cell ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-timer-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_TIMER_V2",
+      "name": "EVENT_LTE_MAC_TIMER_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_TIMER_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_TIMER_V2 -> Event -> EVENT_LTE_MAC_TIMER_V2 -> CELL_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-result-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_RESULT_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_RESULT_V2 -> Event -> EVENT_LTE_RACH_ACCESS_RESULT_V2 -> CELL_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-start-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_START_V2 -> Event -> EVENT_LTE_RACH_ACCESS_START_V2 -> CELL_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-raid-match-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_RAID_MATCH_V2",
+      "name": "EVENT_LTE_RACH_RAID_MATCH_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_RAID_MATCH_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_RAID_MATCH_V2 -> Event -> EVENT_LTE_RACH_RAID_MATCH_V2 -> CELL_ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Event -> EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Cell ID"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-new-cell-ind-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN -> Event -> EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN -> Cell ID"
+      ]
+    },
+    {
+      "id": "0xb062-lte-mac-rach-attempt",
+      "logcode": "0xB062",
+      "title": "0xB062 LTE MAC RACH Attempt",
+      "name": "LTE MAC RACH Attempt",
+      "category": "MAC",
+      "dataFile": "0xB062__LTE_MAC_RACH_Attempt.json",
+      "paths": [
+        "LTE MAC RACH Attempt -> Sub Packets -> [] -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb064-lte-mac-ul-transport-block",
+      "logcode": "0xB064",
+      "title": "0xB064 LTE MAC UL Transport Block",
+      "name": "LTE MAC UL Transport Block",
+      "category": "MAC",
+      "dataFile": "0xB064__LTE_MAC_UL_Transport_Block.json",
+      "paths": [
+        "LTE MAC UL Transport Block -> Upload TB SubPacket -> [] -> UL TB Info table -> [] -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb116-lte-ll1-serving-cell-measurement-results",
+      "logcode": "0xB116",
+      "title": "0xB116 LTE LL1 Serving Cell Measurement Results",
+      "name": "LTE LL1 Serving Cell Measurement Results",
+      "category": "ML1",
+      "dataFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json",
+      "paths": [
+        "LTE LL1 Serving Cell Measurement Results -> Cell ID"
+      ]
+    },
+    {
+      "id": "0xb18f-lte-ml1-advrx-ic-cell-list",
+      "logcode": "0xB18F",
+      "title": "0xB18F LTE ML1 AdvRx IC Cell List",
+      "name": "LTE ML1 AdvRx IC Cell List",
+      "category": "ML1",
+      "dataFile": "0xB18F__LTE_ML1_AdvRx_IC_Cell_List.json",
+      "paths": [
+        "LTE ML1 AdvRx IC Cell List -> Neighbors -> [] -> Cell ID",
+        "LTE ML1 AdvRx IC Cell List -> Serving -> Cell ID"
+      ]
+    },
+    {
+      "id": "0xb192-lte-ml1-idle-neighbor-cell-measurement-req-resp",
+      "logcode": "0xB192",
+      "title": "0xB192 LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "name": "LTE ML1 Idle Neighbor Cell Measurement Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB192__LTE_ML1_Idle_Neighbor_Cell_Measurement_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Request -> Sub Packets -> [] -> Cell ID",
+        "LTE ML1 Idle Neighbor Cell Measurement Req/Resp -> Sub Packets -> [] -> Result -> Sub Packets -> [] -> Cell ID"
+      ]
+    },
+    {
+      "id": "0xb195-lte-ml1-connected-mode-neighbor-meas-req-resp",
+      "logcode": "0xB195",
+      "title": "0xB195 LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "name": "LTE ML1 Connected Mode Neighbor Meas Req/Resp",
+      "category": "ML1",
+      "dataFile": "0xB195__LTE_ML1_Connected_Mode_Neighbor_Meas_Req_Resp.json",
+      "paths": [
+        "LTE ML1 Connected Mode Neighbor Meas Req/Resp -> Sub Packets -> [] -> Sub Packets -> [] -> Cell ID"
+      ]
+    },
+    {
+      "id": "0xb823-nr5g-rrc-serving-cell-info",
+      "logcode": "0xB823",
+      "title": "0xB823 NR5G RRC Serving Cell Info",
+      "name": "NR5G RRC Serving Cell Info",
+      "category": "RRC",
+      "dataFile": "0xB823__NR5G_RRC_Serving_Cell_Info.json",
+      "paths": [
+        "NR5G RRC Serving Cell Info -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb825-nr5g-rrc-configuration-info",
+      "logcode": "0xB825",
+      "title": "0xB825 NR5G RRC Configuration Info",
+      "name": "NR5G RRC Configuration Info",
+      "category": "RRC",
+      "dataFile": "0xB825__NR5G_RRC_Configuration_Info.json",
+      "paths": [
+        "NR5G RRC Configuration Info -> NR5G Serving Cell Info -> [] -> Param List -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb8d8-nr5g-ll1-log-serving-snr",
+      "logcode": "0xB8D8",
+      "title": "0xB8D8 NR5G LL1 LOG SERVING SNR",
+      "name": "NR5G LL1 LOG SERVING SNR",
+      "category": "ML1",
+      "dataFile": "0xB8D8__NR5G_LL1_LOG_SERVING_SNR.json",
+      "paths": [
+        "NR5G LL1 LOG SERVING SNR -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb8dd-nr5g-ll1-fw-serving-ftl",
+      "logcode": "0xB8DD",
+      "title": "0xB8DD NR5G LL1 FW Serving FTL",
+      "name": "NR5G LL1 FW Serving FTL",
+      "category": "ML1",
+      "dataFile": "0xB8DD__NR5G_LL1_FW_Serving_FTL.json",
+      "paths": [
+        "NR5G LL1 FW Serving FTL -> Versions -> Version -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm",
+      "logcode": "0xB96A",
+      "title": "0xB96A NR5G ML1 Searcher FW Cell Meas Confirm",
+      "name": "NR5G ML1 Searcher FW Cell Meas Confirm",
+      "category": "ML1",
+      "dataFile": "0xB96A__NR5G_ML1_Searcher_FW_Cell_Meas_Confirm.json",
+      "paths": [
+        "NR5G ML1 Searcher FW Cell Meas Confirm -> Rasters -> [] -> Meas Window -> [] -> SSBorCells -> [] -> cellId"
+      ]
+    },
+    {
+      "id": "0xb96e-nr5g-ml1-searcher-measurement-config",
+      "logcode": "0xB96E",
+      "title": "0xB96E NR5G ML1 Searcher Measurement Config",
+      "name": "NR5G ML1 Searcher Measurement Config",
+      "category": "ML1",
+      "dataFile": "0xB96E__NR5G_ML1_Searcher_Measurement_Config.json",
+      "paths": [
+        "NR5G ML1 Searcher Measurement Config -> Record -> conn_srv_cell -> cell_id"
+      ]
+    },
+    {
+      "id": "0xb96f-nr5g-ml1-searcher-conn-eval",
+      "logcode": "0xB96F",
+      "title": "0xB96F NR5G ML1 Searcher Conn Eval",
+      "name": "NR5G ML1 Searcher Conn Eval",
+      "category": "ML1",
+      "dataFile": "0xB96F__NR5G_ML1_Searcher_Conn_Eval.json",
+      "paths": [
+        "NR5G ML1 Searcher Conn Eval -> Cell Info -> [] -> Cell Id"
+      ]
+    },
+    {
+      "id": "0xb9bf-nr5g-ml1-search-ho-acq-confirm",
+      "logcode": "0xB9BF",
+      "title": "0xB9BF NR5G ML1 Search HO Acq Confirm",
+      "name": "NR5G ML1 Search HO Acq Confirm",
+      "category": "ML1",
+      "dataFile": "0xB9BF__NR5G_ML1_Search_HO_Acq_Confirm.json",
+      "paths": [
+        "NR5G ML1 Search HO Acq Confirm -> Data -> HO ACQ Pass Result -> [] -> Cell Id"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "srbintegritykeyshex",
+  "name": "SRB Integrity Keys (hex)",
+  "records": [
+    {
+      "id": "0xb0b5-lte-pdcp-ul-srb-integrity-data-pdu",
+      "logcode": "0xB0B5",
+      "title": "0xB0B5 LTE PDCP UL SRB Integrity Data PDU",
+      "name": "LTE PDCP UL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0B5__LTE_PDCP_UL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP UL SRB Integrity Data PDU -> Subpacket -> [] -> Subpackets -> UL SRB Integrity Data PDU Subpacket -> SRB Integrity Keys (hex)"
+      ]
+    }
+  ]
+}

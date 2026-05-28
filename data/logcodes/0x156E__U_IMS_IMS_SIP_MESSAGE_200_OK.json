@@ -1,0 +1,49 @@
+{
+  "id": "0x156e-u-ims-ims-sip-message-200-ok",
+  "logcode": "0x156E",
+  "name": "U [IMS] IMS_SIP_MESSAGE : 200 OK",
+  "title": "0x156E U [IMS] IMS_SIP_MESSAGE : 200 OK",
+  "category": "IMS",
+  "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [IMS] IMS_SIP_MESSAGE : 200 OK": {
+      "Direction": null,
+      "SDP Presence": null,
+      "SIP Call ID Length": null,
+      "SIP Message Length": null,
+      "SIP Message Logged Bytes": null,
+      "Message ID": null,
+      "Response Status Code": null,
+      "CM Call ID": null,
+      "SIP Call ID": null,
+      "SIP Message": null,
+      "Via": null,
+      "To": null,
+      "From": null,
+      "Call-ID": null,
+      "CSeq": null,
+      "Content-Length": null,
+      "Server": null,
+      "P-Access-Network-Info": null,
+      "}": {}
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary"
+    ],
+    "sourceSchemaFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json"
+  }
+}

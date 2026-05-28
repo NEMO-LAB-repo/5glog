@@ -1,0 +1,28 @@
+{
+  "id": "preamblesequence",
+  "name": "Preamble Sequence",
+  "records": [
+    {
+      "id": "0xb144-lte-ll1-rach-tx-report",
+      "logcode": "0xB144",
+      "title": "0xB144 LTE LL1 RACH Tx Report",
+      "name": "LTE LL1 RACH Tx Report",
+      "category": "ML1",
+      "dataFile": "0xB144__LTE_LL1_RACH_Tx_Report.json",
+      "paths": [
+        "LTE LL1 RACH Tx Report -> Preamble Sequence"
+      ]
+    },
+    {
+      "id": "0xb167-lte-ml1-random-access-request-msg1-report",
+      "logcode": "0xB167",
+      "title": "0xB167 LTE ML1 Random Access Request (MSG1) Report",
+      "name": "LTE ML1 Random Access Request (MSG1) Report",
+      "category": "ML1",
+      "dataFile": "0xB167__LTE_ML1_Random_Access_Request_MSG1_Report.json",
+      "paths": [
+        "LTE ML1 Random Access Request (MSG1) Report -> Preamble Sequence"
+      ]
+    }
+  ]
+}

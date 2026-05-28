@@ -1,0 +1,17 @@
+{
+  "id": "numberofperiodicbsr",
+  "name": "Number of periodic BSR",
+  "records": [
+    {
+      "id": "0xb067-lte-mac-ul-tx-statistics",
+      "logcode": "0xB067",
+      "title": "0xB067 LTE MAC UL Tx Statistics",
+      "name": "LTE MAC UL Tx Statistics",
+      "category": "MAC",
+      "dataFile": "0xB067__LTE_MAC_UL_Tx_Statistics.json",
+      "paths": [
+        "LTE MAC UL Tx Statistics -> Sub Packets -> [] -> Number of periodic BSR"
+      ]
+    }
+  ]
+}

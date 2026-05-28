@@ -1,0 +1,28 @@
+{
+  "id": "item0916",
+  "name": "Item 09-16",
+  "records": [
+    {
+      "id": "0x1fea-nv-diag-nv-read-extension-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA NV/Diag NV Read Extension Request",
+      "name": "NV/Diag NV Read Extension Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+      "paths": [
+        "NV/Diag NV Read Extension Request -> Subsystem Dispatch Request Message -> NV/Diag NV Read Extension Request -> Item 09-16"
+      ]
+    },
+    {
+      "id": "0x1ff0-nv-diag-nv-read-extension-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 NV/Diag NV Read Extension Response",
+      "name": "NV/Diag NV Read Extension Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__NV_Diag_NV_Read_Extension_Response.json",
+      "paths": [
+        "NV/Diag NV Read Extension Response -> Subsystem Dispatch Response Message -> NV/Diag NV Read Extension Response -> Item 09-16"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "fn",
+  "name": "FN",
+  "records": [
+    {
+      "id": "0xb861-nr5g-pdcp-ul-control-pdu",
+      "logcode": "0xB861",
+      "title": "0xB861 NR5G PDCP UL Control Pdu",
+      "name": "NR5G PDCP UL Control Pdu",
+      "category": "PDCP",
+      "dataFile": "0xB861__NR5G_PDCP_UL_Control_Pdu.json",
+      "paths": [
+        "NR5G PDCP UL Control Pdu -> Control PDU -> [] -> Sys Time -> FN"
+      ]
+    },
+    {
+      "id": "0xb869-nr5g-rlc-ul-status-pdu",
+      "logcode": "0xB869",
+      "title": "0xB869 NR5G RLC UL Status PDU",
+      "name": "NR5G RLC UL Status PDU",
+      "category": "RLC",
+      "dataFile": "0xB869__NR5G_RLC_UL_Status_PDU.json",
+      "paths": [
+        "NR5G RLC UL Status PDU -> Num Status PDU -> [] -> Sys Time -> FN"
+      ]
+    },
+    {
+      "id": "0xb870-nr5g-l2-ul-data-pdu",
+      "logcode": "0xB870",
+      "title": "0xB870 NR5G L2 UL Data Pdu",
+      "name": "NR5G L2 UL Data Pdu",
+      "category": "L2",
+      "dataFile": "0xB870__NR5G_L2_UL_Data_Pdu.json",
+      "paths": [
+        "NR5G L2 UL Data Pdu -> TTI Info -> [] -> Meta -> System Time -> FN"
+      ]
+    },
+    {
+      "id": "0xb872-nr5g-l2-ul-tb",
+      "logcode": "0xB872",
+      "title": "0xB872 NR5G L2 UL TB",
+      "name": "NR5G L2 UL TB",
+      "category": "L2",
+      "dataFile": "0xB872__NR5G_L2_UL_TB.json",
+      "paths": [
+        "NR5G L2 UL TB -> TTI Info -> [] -> TTI Info Meta -> Sys Time -> FN"
+      ]
+    },
+    {
+      "id": "0xb873-nr5g-l2-ul-bsr",
+      "logcode": "0xB873",
+      "title": "0xB873 NR5G L2 UL BSR",
+      "name": "NR5G L2 UL BSR",
+      "category": "L2",
+      "dataFile": "0xB873__NR5G_L2_UL_BSR.json",
+      "paths": [
+        "NR5G L2 UL BSR -> TTI Info -> [] -> SysTime -> FN"
+      ]
+    }
+  ]
+}

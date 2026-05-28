@@ -1,0 +1,138 @@
+{
+  "id": "0xb871-nr5g-l2-ul-config",
+  "logcode": "0xB871",
+  "name": "NR5G L2 UL Config",
+  "title": "0xB871 NR5G L2 UL Config",
+  "category": "L2",
+  "dataFile": "0xB871__NR5G_L2_UL_Config.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 UL Config": {
+      "Meta": {
+        "Submit Reason": null,
+        "Num RB Logged": null,
+        "Num RLC RB Logged": null,
+        "Num RLC2 RB Logged": null,
+        "Configured SRB Bitmask": null,
+        "Configured DRB Bitmask": null,
+        "Config Reason1": null,
+        "Config Reason2": null
+      },
+      "Mn Security Config": {
+        "SRB ID Bitmask": null,
+        "DRB ID Bitmask": null,
+        "SRB Cipher Algo": null,
+        "SRB Cipher Key Index": null,
+        "SRB Integrity Algo": null,
+        "SRB Integrity Key Index": null,
+        "DRB Cipher Algo": null,
+        "LTE Key": null,
+        "DRB Cipher Key Index": null,
+        "DRB Integrity Algo": null,
+        "DRB Integrity Key Index": null,
+        "SRB Cipher Key": {
+          "srb_cipher_key1": null,
+          "srb_cipher_key2": null,
+          "srb_cipher_key3": null,
+          "srb_cipher_key4": null
+        },
+        "SRB Integrity Key": {
+          "srb_integ_key1": null,
+          "srb_integ_key2": null,
+          "srb_integ_key3": null,
+          "srb_integ_key4": null
+        },
+        "DRB Cipher Key": {
+          "drb_cipher_key1": null,
+          "drb_cipher_key2": null,
+          "drb_cipher_key3": null,
+          "drb_cipher_key4": null
+        },
+        "DRB Integrity Key": {
+          "drb_integ_key1": null,
+          "drb_integ_key2": null,
+          "drb_integ_key3": null,
+          "drb_integ_key4": null
+        }
+      },
+      "Sn Security Config": {
+        "DRB ID Bitmask": null,
+        "DRB Cipher Algo": null,
+        "DRB Cipher Key Index": null,
+        "DRB Integrity Algo": null,
+        "DRB Integrity Key Index": null,
+        "LTE Key": null,
+        "DRB Cipher Key": {
+          "drb_cipher_key1": null,
+          "drb_cipher_key2": null,
+          "drb_cipher_key3": null,
+          "drb_cipher_key4": null
+        },
+        "DRB Integrity Key": {
+          "drb_integ_key1": null,
+          "drb_integ_key2": null,
+          "drb_integ_key3": null,
+          "drb_integ_key4": null
+        }
+      },
+      "Deleted RB Bitmask": {
+        "PDCP SRB Bitmask": null,
+        "RLC SRB Bitmask": null,
+        "PDCP DRB Bitmask": null,
+        "RLC DRB Bitmask": null,
+        "RLC2 DRB Bitmask": null
+      },
+      "PDCP RB Param": {
+        "[]": {
+          "RB Id": null,
+          "EPS Id": null,
+          "RB Mode": null,
+          "RB Type": null,
+          "RB Path": null,
+          "Action Type": null,
+          "PDCP SN Length": null,
+          "Status Report Required": null,
+          "ReEstablish PDCP": null,
+          "Recover PDCP": null,
+          "DRB IP": null,
+          "T Pdcp Discard": null,
+          "Primary Cell Group ID": null,
+          "UL Data Split Threshold": null
+        }
+      },
+      "RLC RB Param": {
+        "[]": {
+          "RB ID": null,
+          "LCID": null,
+          "RB Mode": null,
+          "Action Type": null,
+          "RLC SN Length": null,
+          "ReEstablish RLC": null,
+          "Poll Byte": null,
+          "Poll PDU": null,
+          "T Poll Retx": null,
+          "Max Retx Threshold": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 659,
+    "samplesParsedSuccessfully": 659,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB871__NR5G_L2_UL_Config.json"
+  }
+}

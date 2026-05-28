@@ -1,0 +1,52 @@
+{
+  "id": "sfhigh",
+  "name": "sf-High",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> intraFreqCellReselectionInfo -> t-ReselectionEUTRA-SF -> sf-High"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib24-v1530 -> t-ReselectionNR-SF-r15 -> sf-High"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib8-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib8_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib8,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [3] -> sib24-v1530 -> t-ReselectionNR-SF-r15 -> sf-High"
+      ]
+    },
+    {
+      "id": "0xb187-lte-ml1-idle-irat-measurement-request",
+      "logcode": "0xB187",
+      "title": "0xB187 LTE Ml1 Idle IRAT Measurement Request",
+      "name": "LTE Ml1 Idle IRAT Measurement Request",
+      "category": "ML1",
+      "dataFile": "0xB187__LTE_Ml1_Idle_IRAT_Measurement_Request.json",
+      "paths": [
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle GSM Meas Config -> SF High",
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle Meas WCDMA Config -> SF High",
+        "LTE Ml1 Idle IRAT Measurement Request -> SubPackets -> [] -> SubPacket -> Idle NR Meas Config -> SF High"
+      ]
+    }
+  ]
+}

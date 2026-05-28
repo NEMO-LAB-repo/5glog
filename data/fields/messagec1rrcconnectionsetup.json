@@ -1,0 +1,17 @@
+{
+  "id": "messagec1rrcconnectionsetup",
+  "name": "message -> c1 -> rrcConnectionSetup",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-rrc-connection-setup",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] RRC Connection Setup",
+      "name": "D [LTE] RRC Connection Setup",
+      "category": "RRC",
+      "dataFile": "0xB0C0__D_LTE_RRC_Connection_Setup.json",
+      "paths": [
+        "D [LTE] RRC Connection Setup -> dl-ccch -> message -> c1 -> rrcConnectionSetup"
+      ]
+    }
+  ]
+}

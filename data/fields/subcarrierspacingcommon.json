@@ -1,0 +1,39 @@
+{
+  "id": "subcarrierspacingcommon",
+  "name": "subCarrierSpacingCommon",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-BCH-Message -> bcch-bch -> mib -> subCarrierSpacingCommon"
+      ]
+    },
+    {
+      "id": "0xb822-nr5g-rrc-mib-info",
+      "logcode": "0xB822",
+      "title": "0xB822 NR5G RRC MIB Info",
+      "name": "NR5G RRC MIB Info",
+      "category": "RRC",
+      "dataFile": "0xB822__NR5G_RRC_MIB_Info.json",
+      "paths": [
+        "NR5G RRC MIB Info -> Subcarrier Spacing Common"
+      ]
+    },
+    {
+      "id": "0xb96d-nr5g-ml1-searcher-acq-config-and-response",
+      "logcode": "0xB96D",
+      "title": "0xB96D NR5G ML1 Searcher ACQ Config And Response",
+      "name": "NR5G ML1 Searcher ACQ Config And Response",
+      "category": "ML1",
+      "dataFile": "0xB96D__NR5G_ML1_Searcher_ACQ_Config_And_Response.json",
+      "paths": [
+        "NR5G ML1 Searcher ACQ Config And Response -> Raster List -> [] -> Cell Detect List -> [] -> MIB -> Subcarrier Spacing Common"
+      ]
+    }
+  ]
+}

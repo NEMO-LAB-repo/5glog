@@ -1,0 +1,18 @@
+{
+  "id": "efs2diagcloserequest",
+  "name": "EFS2/DIAG Close Request",
+  "records": [
+    {
+      "id": "0x1fea-efs2-diag-close-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA EFS2/DIAG Close Request",
+      "name": "EFS2/DIAG Close Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__EFS2_DIAG_Close_Request.json",
+      "paths": [
+        "EFS2/DIAG Close Request",
+        "EFS2/DIAG Close Request -> Subsystem Dispatch Request Message -> EFS2/DIAG Close Request"
+      ]
+    }
+  ]
+}

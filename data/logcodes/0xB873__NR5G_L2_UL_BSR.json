@@ -1,0 +1,73 @@
+{
+  "id": "0xb873-nr5g-l2-ul-bsr",
+  "logcode": "0xB873",
+  "name": "NR5G L2 UL BSR",
+  "title": "0xB873 NR5G L2 UL BSR",
+  "category": "L2",
+  "dataFile": "0xB873__NR5G_L2_UL_BSR.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G L2 UL BSR": {
+      "Versions -> Meta": {
+        "Num TTI": null,
+        "LCID Prio Bitmask": null
+      },
+      "TTI Info": {
+        "[]": {
+          "SysTime": {
+            "Slot Number": null,
+            "FN": null
+          },
+          "Harq ID": null,
+          "Carrier ID": null,
+          "BSR Trigger Reason": null,
+          "BSR Type": null,
+          "BSR Length": null,
+          "LCG Bitmask": null,
+          "Num LCIDs": null,
+          "FC State": null,
+          "QOS LCID": {
+            "[]": null
+          },
+          "BSR MCE Buffer": {
+            "MCE Type": null,
+            "R": null,
+            "R1": null,
+            "ShortBsr": {
+              "BSR Index": null,
+              "BSR LCG RAW": null
+            },
+            "F": null,
+            "Length": null,
+            "LongBsr": {
+              "LCGx": null,
+              "BSR Index": {
+                "[]": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1744,
+    "samplesParsedSuccessfully": 1744,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB873__NR5G_L2_UL_BSR.json"
+  }
+}

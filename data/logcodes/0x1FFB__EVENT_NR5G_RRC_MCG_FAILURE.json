@@ -1,0 +1,38 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-mcg-failure",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_MCG_FAILURE",
+  "title": "0x1FFB EVENT_NR5G_RRC_MCG_FAILURE",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_MCG_FAILURE.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_MCG_FAILURE": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_MCG_FAILURE": {
+          "Failure Type": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_MCG_FAILURE.json"
+  }
+}

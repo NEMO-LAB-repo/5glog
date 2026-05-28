@@ -1,0 +1,17 @@
+{
+  "id": "nr5gpdcpdlrbsstats",
+  "name": "NR5G PDCP DL Rbs Stats",
+  "records": [
+    {
+      "id": "0xb842-nr5g-pdcp-dl-rbs-stats",
+      "logcode": "0xB842",
+      "title": "0xB842 NR5G PDCP DL Rbs Stats",
+      "name": "NR5G PDCP DL Rbs Stats",
+      "category": "PDCP",
+      "dataFile": "0xB842__NR5G_PDCP_DL_Rbs_Stats.json",
+      "paths": [
+        "NR5G PDCP DL Rbs Stats"
+      ]
+    }
+  ]
+}

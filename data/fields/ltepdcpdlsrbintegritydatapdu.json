@@ -1,0 +1,17 @@
+{
+  "id": "ltepdcpdlsrbintegritydatapdu",
+  "name": "LTE PDCP DL SRB Integrity Data PDU",
+  "records": [
+    {
+      "id": "0xb0a5-lte-pdcp-dl-srb-integrity-data-pdu",
+      "logcode": "0xB0A5",
+      "title": "0xB0A5 LTE PDCP DL SRB Integrity Data PDU",
+      "name": "LTE PDCP DL SRB Integrity Data PDU",
+      "category": "PDCP",
+      "dataFile": "0xB0A5__LTE_PDCP_DL_SRB_Integrity_Data_PDU.json",
+      "paths": [
+        "LTE PDCP DL SRB Integrity Data PDU"
+      ]
+    }
+  ]
+}

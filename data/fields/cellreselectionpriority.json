@@ -1,0 +1,103 @@
+{
+  "id": "cellreselectionpriority",
+  "name": "cellReselectionPriority",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3",
+      "name": "D [LTE] System Information : sib2,sib3",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> cellReselectionServingFreqInfo -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib2-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib2,sib3,sib5",
+      "name": "D [LTE] System Information : sib2,sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib2_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib3 -> cellReselectionServingFreqInfo -> cellReselectionPriority",
+        "D [LTE] System Information : sib2,sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [2] -> sib5 -> interFreqCarrierFreqList -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib3-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib3,sib5",
+      "name": "D [LTE] System Information : sib3,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib3_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib3 -> cellReselectionServingFreqInfo -> cellReselectionPriority",
+        "D [LTE] System Information : sib3,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib4-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib4,sib5",
+      "name": "D [LTE] System Information : sib4,sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib4_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib4,sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [1] -> sib5 -> interFreqCarrierFreqList -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib5",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib5",
+      "name": "D [LTE] System Information : sib5",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib5.json",
+      "paths": [
+        "D [LTE] System Information : sib5 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib5 -> interFreqCarrierFreqList -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib6-sib7-sib24-v1530",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "name": "D [LTE] System Information : sib6,sib7,sib24-v1530",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib6_sib7_sib24-v1530.json",
+      "paths": [
+        "D [LTE] System Information : sib6,sib7,sib24-v1530 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib6 -> carrierFreqListUTRA-FDD -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-system-information-sib8",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] System Information : sib8",
+      "name": "D [LTE] System Information : sib8",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_System_Information_sib8.json",
+      "paths": [
+        "D [LTE] System Information : sib8 -> bcch-dl-sch -> message -> c1 -> systemInformation -> criticalExtensions -> systemInformation-r8 -> sib-TypeAndInfo -> [0] -> sib8 -> parametersHRPD -> cellReselectionParametersHRPD -> bandClassList -> [] -> cellReselectionPriority"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib2 -> cellReselectionServingFreqInfo -> cellReselectionPriority",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib4 -> interFreqCarrierFreqList -> cellReselectionPriority",
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1 -> systemInformation -> criticalExtensions -> systemInformation -> sib-TypeAndInfo -> sib5 -> carrierFreqListEUTRA -> cellReselectionPriority",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> criticalExtensions -> rrcRelease -> cellReselectionPriorities -> freqPriorityListEUTRA -> cellReselectionPriority",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcRelease -> criticalExtensions -> rrcRelease -> cellReselectionPriorities -> freqPriorityListNR -> cellReselectionPriority",
+        "SIB2 -> sib2 -> cellReselectionServingFreqInfo -> cellReselectionPriority",
+        "SIB4 -> sib4 -> interFreqCarrierFreqList -> cellReselectionPriority",
+        "SIB5 -> sib5 -> carrierFreqListEUTRA -> cellReselectionPriority"
+      ]
+    }
+  ]
+}

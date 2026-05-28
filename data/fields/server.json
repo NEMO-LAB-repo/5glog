@@ -1,0 +1,28 @@
+{
+  "id": "server",
+  "name": "Server",
+  "records": [
+    {
+      "id": "0x156e-u-ims-ims-sip-message-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "name": "U [IMS] IMS_SIP_MESSAGE : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_MESSAGE_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_MESSAGE : 200 OK -> Server"
+      ]
+    },
+    {
+      "id": "0x156e-u-ims-ims-sip-notify-200-ok",
+      "logcode": "0x156E",
+      "title": "0x156E U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "name": "U [IMS] IMS_SIP_NOTIFY : 200 OK",
+      "category": "IMS",
+      "dataFile": "0x156E__U_IMS_IMS_SIP_NOTIFY_200_OK.json",
+      "paths": [
+        "U [IMS] IMS_SIP_NOTIFY : 200 OK -> Server"
+      ]
+    }
+  ]
+}

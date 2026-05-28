@@ -1,0 +1,28 @@
+{
+  "id": "sid",
+  "name": "SID",
+  "records": [
+    {
+      "id": "0x1ff0-dmss-status-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 DMSS Status Response",
+      "name": "DMSS Status Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__DMSS_Status_Response.json",
+      "paths": [
+        "DMSS Status Response -> DMSS Status Response -> SID"
+      ]
+    },
+    {
+      "id": "0x1ff0-status-snapshot-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Status Snapshot Response",
+      "name": "Status Snapshot Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Status_Snapshot_Response.json",
+      "paths": [
+        "Status Snapshot Response -> Status Snapshot Response -> SID"
+      ]
+    }
+  ]
+}

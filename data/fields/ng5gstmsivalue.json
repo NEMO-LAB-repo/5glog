@@ -1,0 +1,17 @@
+{
+  "id": "ng5gstmsivalue",
+  "name": "ng-5G-S-TMSI-Value",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "UL-DCCH-Message -> ul-dcch -> c1 -> rrcSetupComplete -> criticalExtensions -> rrcSetupComplete -> ng-5G-S-TMSI-Value"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c1",
+  "name": "c1",
+  "records": [
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "BCCH-DL-SCH-Message -> bcch-dl-sch -> c1",
+        "DL-CCCH-Message -> dl-ccch -> c1",
+        "DL-DCCH-Message -> dl-dcch -> c1",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> capabilityRequestFilter -> criticalExtensions -> c1",
+        "PCCH-Message -> pcch -> c1",
+        "UL-CCCH-Message -> ul-ccch -> c1",
+        "UL-DCCH-Message -> ul-dcch -> c1"
+      ]
+    }
+  ]
+}

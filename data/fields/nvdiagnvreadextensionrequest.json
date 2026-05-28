@@ -1,0 +1,18 @@
+{
+  "id": "nvdiagnvreadextensionrequest",
+  "name": "NV/Diag NV Read Extension Request",
+  "records": [
+    {
+      "id": "0x1fea-nv-diag-nv-read-extension-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA NV/Diag NV Read Extension Request",
+      "name": "NV/Diag NV Read Extension Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+      "paths": [
+        "NV/Diag NV Read Extension Request",
+        "NV/Diag NV Read Extension Request -> Subsystem Dispatch Request Message -> NV/Diag NV Read Extension Request"
+      ]
+    }
+  ]
+}

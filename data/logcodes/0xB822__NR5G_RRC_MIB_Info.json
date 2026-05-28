@@ -1,0 +1,44 @@
+{
+  "id": "0xb822-nr5g-rrc-mib-info",
+  "logcode": "0xB822",
+  "name": "NR5G RRC MIB Info",
+  "title": "0xB822 NR5G RRC MIB Info",
+  "category": "RRC",
+  "dataFile": "0xB822__NR5G_RRC_MIB_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G RRC MIB Info": {
+      "Physical Cell ID": null,
+      "DL Frequency": null,
+      "SFN": null,
+      "Block Index": null,
+      "Half Number": null,
+      "Intra Freq Reselection": null,
+      "Cell Barred": null,
+      "PDCCH Config SIB1": null,
+      "DMRS TypeA Position": null,
+      "SSB Subcarrier Offset": null,
+      "MSB for k_ssb": null,
+      "Subcarrier Spacing Common": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 317,
+    "samplesParsedSuccessfully": 317,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB822__NR5G_RRC_MIB_Info.json"
+  }
+}

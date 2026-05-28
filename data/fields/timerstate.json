@@ -1,0 +1,17 @@
+{
+  "id": "timerstate",
+  "name": "Timer State",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-timer-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_TIMER_STATUS",
+      "name": "EVENT_LTE_RRC_TIMER_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_TIMER_STATUS.json",
+      "paths": [
+        "EVENT_LTE_RRC_TIMER_STATUS -> Event -> EVENT_LTE_RRC_TIMER_STATUS -> Timer State"
+      ]
+    }
+  ]
+}

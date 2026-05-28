@@ -1,0 +1,128 @@
+{
+  "id": "0xb80a-d-mm5g-security-mode-command",
+  "logcode": "0xB80A",
+  "name": "D [MM5G] Security Mode Command",
+  "title": "0xB80A D [MM5G] Security Mode Command",
+  "category": "NAS",
+  "dataFile": "0xB80A__D_MM5G_Security_Mode_Command.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "D [MM5G] Security Mode Command": {
+      "Release Version": null,
+      "Direction": null,
+      "Ext. PD": null,
+      "Security header type": null,
+      "Message ID": null,
+      "Security Mode Command": {
+        "Selected NAS security algorithms": {
+          "Type of ciphering algorithm": null,
+          "Type of integrity protection algorithm": null
+        },
+        "ngKSI": {
+          "Type of security context flag (TSC)": null,
+          "NAS key set identifier": null
+        },
+        "Replayed UE security capabilities": {
+          "Length": null,
+          "EA0_5G": null,
+          "EA1_128_5G": null,
+          "EA2_128_5G": null,
+          "EA3_128_5G": null,
+          "EA4_5G": null,
+          "EA5_5G": null,
+          "EA6_5G": null,
+          "EA7_5G": null,
+          "IA0_5G": null,
+          "IA1_128_5G": null,
+          "IA2_128_5G": null,
+          "IA3_128_5G": null,
+          "IA4_5G": null,
+          "IA5_5G": null,
+          "IA6_5G": null,
+          "IA7_5G": null,
+          "EEA0": null,
+          "EEA1_128": null,
+          "EEA2_128": null,
+          "EEA3_128": null,
+          "EEA4": null,
+          "EEA5": null,
+          "EEA6": null,
+          "EEA7": null,
+          "EIA0": null,
+          "EIA1_128": null,
+          "EIA2_128": null,
+          "EIA3_128": null,
+          "EIA4": null,
+          "EIA5": null,
+          "EIA6": null,
+          "EIA7": null
+        },
+        "Selected EPS NAS security algorithms": {
+          "IEI": null,
+          "Type of ciphering algorithm": null,
+          "Type of integrity protection algorithm": null
+        },
+        "Additional 5G security information": {
+          "IEI": null,
+          "Length": null,
+          "Retransmission of initial NAS message request": null,
+          "Horizontal derivation parameter (HDP)": null
+        },
+        "Replayed S1 UE security capabilities": {
+          "IEI": null,
+          "Length": null,
+          "EEA0": null,
+          "128-EEA1": null,
+          "128-EEA2": null,
+          "128-EEA3": null,
+          "EEA4": null,
+          "EEA5": null,
+          "EEA6": null,
+          "EEA7": null,
+          "EIA0": null,
+          "128-EIA1": null,
+          "128-EIA2": null,
+          "128-EIA3": null,
+          "EIA4": null,
+          "EIA5": null,
+          "EIA6": null,
+          "EIA7": null,
+          "UEA0": null,
+          "UEA1": null,
+          "UEA2": null,
+          "UEA3": null,
+          "UEA4": null,
+          "UEA5": null,
+          "UEA6": null,
+          "UEA7": null,
+          "UIA1": null,
+          "UIA2": null,
+          "UIA3": null,
+          "UIA4": null,
+          "UIA5": null,
+          "UIA6": null,
+          "UIA7": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_02"
+    ],
+    "sourceSchemaFile": "0xB80A__D_MM5G_Security_Mode_Command.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrcstatechange",
+  "name": "EVENT_LTE_RRC_STATE_CHANGE",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE.json",
+      "paths": [
+        "EVENT_LTE_RRC_STATE_CHANGE",
+        "EVENT_LTE_RRC_STATE_CHANGE -> Event -> EVENT_LTE_RRC_STATE_CHANGE"
+      ]
+    }
+  ]
+}

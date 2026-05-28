@@ -1,0 +1,17 @@
+{
+  "id": "3gpprevyear",
+  "name": "3GPP Rev Year",
+  "records": [
+    {
+      "id": "0x1ff0-umts-version-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 UMTS/Version Response",
+      "name": "UMTS/Version Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__UMTS_Version_Response.json",
+      "paths": [
+        "UMTS/Version Response -> Subsystem Dispatch Response Message -> UMTS/Version Response -> 3GPP Rev Year"
+      ]
+    }
+  ]
+}

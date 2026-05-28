@@ -1,0 +1,17 @@
+{
+  "id": "prioritysubs",
+  "name": "priority_subs",
+  "records": [
+    {
+      "id": "0x1ff0-multisim-state-info-responese",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 MultiSim State Info Responese",
+      "name": "MultiSim State Info Responese",
+      "category": "Other",
+      "dataFile": "0x1FF0__MultiSim_State_Info_Responese.json",
+      "paths": [
+        "MultiSim State Info Responese -> Subsystem Dispatch Response Message -> MultiSim State Info Responese -> priority_subs"
+      ]
+    }
+  ]
+}

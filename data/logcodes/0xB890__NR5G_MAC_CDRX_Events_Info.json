@@ -1,0 +1,77 @@
+{
+  "id": "0xb890-nr5g-mac-cdrx-events-info",
+  "logcode": "0xB890",
+  "name": "NR5G MAC CDRX Events Info",
+  "title": "0xB890 NR5G MAC CDRX Events Info",
+  "category": "MAC",
+  "dataFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC CDRX Events Info": {
+      "Sub ID": null,
+      "Num Records": null,
+      "DRX Config": {
+        "DRX Enable": null,
+        "On Duration Timer Fraction": null,
+        "On Duration Time": null,
+        "Inactivity Timer": null,
+        "DL HARQ RTT Timer": null,
+        "UL HARQ RTT Timer": null,
+        "DL Retransmission Timer": null,
+        "UL Retransmission Timer": null,
+        "Long DRX Cycle Start Offset": null,
+        "Long DRX Cycle": null,
+        "Short DRX Cycle Enable": null,
+        "Short DRX Cycle Timer": null,
+        "Short DRX Cycle": null,
+        "DRX Slot Offset": null
+      },
+      "Records": {
+        "[]": {
+          "System Time": {
+            "SCS": null,
+            "System Frame Number": null,
+            "Slot Number": null
+          },
+          "Prev State": null,
+          "Current State": null,
+          "Reason": null,
+          "Current Ref Count": null,
+          "On Duration Start": {
+            "Frame Number": null,
+            "Slot": null
+          },
+          "Short Cycle Timer": {
+            "Frame Number": null,
+            "Slot": null
+          },
+          "Last Grant Time": {
+            "Frame Number": null,
+            "Slot": null
+          },
+          "Active Procedure": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2489,
+    "samplesParsedSuccessfully": 2489,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB890__NR5G_MAC_CDRX_Events_Info.json"
+  }
+}

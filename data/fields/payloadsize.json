@@ -1,0 +1,622 @@
+{
+  "id": "payloadsize",
+  "name": "Payload Size",
+  "records": [
+    {
+      "id": "0x1ffb-event-datamodem-ipa-drop-pkt-ul",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "name": "EVENT_DATAMODEM_IPA_DROP_PKT_UL",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DATAMODEM_IPA_DROP_PKT_UL.json",
+      "paths": [
+        "EVENT_DATAMODEM_IPA_DROP_PKT_UL -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-diag-process-name-id",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DIAG_PROCESS_NAME_ID",
+      "name": "EVENT_DIAG_PROCESS_NAME_ID",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DIAG_PROCESS_NAME_ID.json",
+      "paths": [
+        "EVENT_DIAG_PROCESS_NAME_ID -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-diag-qshrink-id",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DIAG_QSHRINK_ID",
+      "name": "EVENT_DIAG_QSHRINK_ID",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DIAG_QSHRINK_ID.json",
+      "paths": [
+        "EVENT_DIAG_QSHRINK_ID -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ds-3gpp-wm-mgr",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DS_3GPP_WM_MGR",
+      "name": "EVENT_DS_3GPP_WM_MGR",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DS_3GPP_WM_MGR.json",
+      "paths": [
+        "EVENT_DS_3GPP_WM_MGR -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ds-dormancy-status-rm-queue-stats",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "name": "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS.json",
+      "paths": [
+        "EVENT_DS_DORMANCY_STATUS_RM_QUEUE_STATS -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-gmm-state",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_GMM_STATE",
+      "name": "EVENT_GMM_STATE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_GMM_STATE.json",
+      "paths": [
+        "EVENT_GMM_STATE -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-register-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REGISTER_END",
+      "name": "EVENT_IMS_SIP_REGISTER_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTER_END.json",
+      "paths": [
+        "EVENT_IMS_SIP_REGISTER_END -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-registration-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REGISTRATION_START",
+      "name": "EVENT_IMS_SIP_REGISTRATION_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTRATION_START.json",
+      "paths": [
+        "EVENT_IMS_SIP_REGISTRATION_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-request-recv",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_RECV",
+      "name": "EVENT_IMS_SIP_REQUEST_RECV",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_RECV.json",
+      "paths": [
+        "EVENT_IMS_SIP_REQUEST_RECV -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-request-send",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_SEND",
+      "name": "EVENT_IMS_SIP_REQUEST_SEND",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_SEND.json",
+      "paths": [
+        "EVENT_IMS_SIP_REQUEST_SEND -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-ims-sip-response-send",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_RESPONSE_SEND",
+      "name": "EVENT_IMS_SIP_RESPONSE_SEND",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_RESPONSE_SEND.json",
+      "paths": [
+        "EVENT_IMS_SIP_RESPONSE_SEND -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-expiry",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_EXPIRY",
+      "name": "EVENT_LTE_EMM_TIMER_EXPIRY",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_EXPIRY.json",
+      "paths": [
+        "EVENT_LTE_EMM_TIMER_EXPIRY -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_START",
+      "name": "EVENT_LTE_EMM_TIMER_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_START.json",
+      "paths": [
+        "EVENT_LTE_EMM_TIMER_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-emm-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_EMM_TIMER_STOP",
+      "name": "EVENT_LTE_EMM_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_EMM_TIMER_STOP.json",
+      "paths": [
+        "EVENT_LTE_EMM_TIMER_STOP -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-reset-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_RESET_V2",
+      "name": "EVENT_LTE_MAC_RESET_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_RESET_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_RESET_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-mac-timer-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_MAC_TIMER_V2",
+      "name": "EVENT_LTE_MAC_TIMER_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_MAC_TIMER_V2.json",
+      "paths": [
+        "EVENT_LTE_MAC_TIMER_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-ml1-l2nr-misaligned-gap",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "name": "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_ML1_L2NR_MISALIGNED_GAP.json",
+      "paths": [
+        "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-result-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_RESULT_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_RESULT_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_RESULT_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-access-start-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_ACCESS_START_V2",
+      "name": "EVENT_LTE_RACH_ACCESS_START_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_ACCESS_START_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_ACCESS_START_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rach-raid-match-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RACH_RAID_MATCH_V2",
+      "name": "EVENT_LTE_RACH_RAID_MATCH_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RACH_RAID_MATCH_V2.json",
+      "paths": [
+        "EVENT_LTE_RACH_RAID_MATCH_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-camped-cell-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "name": "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_CAMPED_CELL_STATUS.json",
+      "paths": [
+        "EVENT_LTE_RRC_CAMPED_CELL_STATUS -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_END -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-redir-from-eutran-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "name": "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_REDIR_FROM_EUTRAN_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_END -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-irat-resel-from-eutran-start-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_IRAT_RESEL_FROM_EUTRAN_START_EXT_EARFCN -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-new-cell-ind-ext-earfcn",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "name": "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN.json",
+      "paths": [
+        "EVENT_LTE_RRC_NEW_CELL_IND_EXT_EARFCN -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-paging",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING",
+      "name": "EVENT_LTE_RRC_PAGING",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-paging-drx-cycle",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "name": "EVENT_LTE_RRC_PAGING_DRX_CYCLE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_PAGING_DRX_CYCLE.json",
+      "paths": [
+        "EVENT_LTE_RRC_PAGING_DRX_CYCLE -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-security-config",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_SECURITY_CONFIG",
+      "name": "EVENT_LTE_RRC_SECURITY_CONFIG",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_SECURITY_CONFIG.json",
+      "paths": [
+        "EVENT_LTE_RRC_SECURITY_CONFIG -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE.json",
+      "paths": [
+        "EVENT_LTE_RRC_STATE_CHANGE -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-state-change-trigger",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "name": "EVENT_LTE_RRC_STATE_CHANGE_TRIGGER",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_STATE_CHANGE_TRIGGER.json",
+      "paths": [
+        "EVENT_LTE_RRC_STATE_CHANGE_TRIGGER -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-rrc-timer-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_TIMER_STATUS",
+      "name": "EVENT_LTE_RRC_TIMER_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_TIMER_STATUS.json",
+      "paths": [
+        "EVENT_LTE_RRC_TIMER_STATUS -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-scell-configuration",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_SCELL_CONFIGURATION",
+      "name": "EVENT_LTE_SCELL_CONFIGURATION",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_SCELL_CONFIGURATION.json",
+      "paths": [
+        "EVENT_LTE_SCELL_CONFIGURATION -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-lte-timing-advance-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_TIMING_ADVANCE_V2",
+      "name": "EVENT_LTE_TIMING_ADVANCE_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_TIMING_ADVANCE_V2.json",
+      "paths": [
+        "EVENT_LTE_TIMING_ADVANCE_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_START",
+      "name": "EVENT_NAS_MM5G_TIMER_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_START.json",
+      "paths": [
+        "EVENT_NAS_MM5G_TIMER_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-mm5g-timer-stop",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_MM5G_TIMER_STOP",
+      "name": "EVENT_NAS_MM5G_TIMER_STOP",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_MM5G_TIMER_STOP.json",
+      "paths": [
+        "EVENT_NAS_MM5G_TIMER_STOP -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nas-tau",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NAS_TAU",
+      "name": "EVENT_NAS_TAU",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NAS_TAU.json",
+      "paths": [
+        "EVENT_NAS_TAU -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-cell-resel-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "name": "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_CELL_RESEL_SUCCESS.json",
+      "paths": [
+        "EVENT_NR5G_RRC_CELL_RESEL_SUCCESS -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-started-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_STARTED_V2",
+      "name": "EVENT_NR5G_RRC_HO_STARTED_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_STARTED_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_HO_STARTED_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ho-success",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_HO_SUCCESS",
+      "name": "EVENT_NR5G_RRC_HO_SUCCESS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_HO_SUCCESS.json",
+      "paths": [
+        "EVENT_NR5G_RRC_HO_SUCCESS -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_END -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-redir-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_REDIR_FROM_NR_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-start",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START.json",
+      "paths": [
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_START -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-mcg-failure",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_MCG_FAILURE",
+      "name": "EVENT_NR5G_RRC_MCG_FAILURE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_MCG_FAILURE.json",
+      "paths": [
+        "EVENT_NR5G_RRC_MCG_FAILURE -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-new-cell-ind-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "name": "EVENT_NR5G_RRC_NEW_CELL_IND_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_NEW_CELL_IND_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_NEW_CELL_IND_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-meas-report-v4",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "name": "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4.json",
+      "paths": [
+        "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-v2",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_V2",
+      "name": "EVENT_NR5G_RRC_UL_MSG_V2",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_V2.json",
+      "paths": [
+        "EVENT_NR5G_RRC_UL_MSG_V2 -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-qc-gps-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_GPS_EVENT",
+      "name": "EVENT_QC_GPS_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_GPS_EVENT.json",
+      "paths": [
+        "EVENT_QC_GPS_EVENT -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-qc-reserved",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_QC_RESERVED",
+      "name": "EVENT_QC_RESERVED",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_QC_RESERVED.json",
+      "paths": [
+        "EVENT_QC_RESERVED -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-rat-change",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_RAT_CHANGE",
+      "name": "EVENT_RAT_CHANGE",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_RAT_CHANGE.json",
+      "paths": [
+        "EVENT_RAT_CHANGE -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-end-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_END_EVENT",
+      "name": "EVENT_SIP_REG_END_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_END_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_END_EVENT -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-req-sent-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_REQ_SENT_EVENT",
+      "name": "EVENT_SIP_REG_REQ_SENT_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_REQ_SENT_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_REQ_SENT_EVENT -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-sip-reg-resp-rcvd-event",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "name": "EVENT_SIP_REG_RESP_RCVD_EVENT",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_SIP_REG_RESP_RCVD_EVENT.json",
+      "paths": [
+        "EVENT_SIP_REG_RESP_RCVD_EVENT -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0x1ffb-event-tcp-qc",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_TCP_QC",
+      "name": "EVENT_TCP_QC",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_TCP_QC.json",
+      "paths": [
+        "EVENT_TCP_QC -> Event -> Payload Size"
+      ]
+    },
+    {
+      "id": "0xb130-lte-ll1-pdcch-decoding-results",
+      "logcode": "0xB130",
+      "title": "0xB130 LTE LL1 PDCCH Decoding Results",
+      "name": "LTE LL1 PDCCH Decoding Results",
+      "category": "ML1",
+      "dataFile": "0xB130__LTE_LL1_PDCCH_Decoding_Results.json",
+      "paths": [
+        "LTE LL1 PDCCH Decoding Results -> Record -> [] -> Payload Size"
+      ]
+    }
+  ]
+}

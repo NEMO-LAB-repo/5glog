@@ -1,0 +1,18 @@
+{
+  "id": "eventreportcontrolresponse",
+  "name": "Event Report Control Response",
+  "records": [
+    {
+      "id": "0x1ff0-event-report-control-response",
+      "logcode": "0x1FF0",
+      "title": "0x1FF0 Event Report Control Response",
+      "name": "Event Report Control Response",
+      "category": "Other",
+      "dataFile": "0x1FF0__Event_Report_Control_Response.json",
+      "paths": [
+        "Event Report Control Response",
+        "Event Report Control Response -> Event Report Control Response"
+      ]
+    }
+  ]
+}

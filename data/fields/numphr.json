@@ -1,0 +1,17 @@
+{
+  "id": "numphr",
+  "name": "Num PHR",
+  "records": [
+    {
+      "id": "0xb881-nr5g-mac-ul-tb-stats",
+      "logcode": "0xB881",
+      "title": "0xB881 NR5G MAC UL TB Stats",
+      "name": "NR5G MAC UL TB Stats",
+      "category": "MAC",
+      "dataFile": "0xB881__NR5G_MAC_UL_TB_Stats.json",
+      "paths": [
+        "NR5G MAC UL TB Stats -> Records -> [] -> Num PHR"
+      ]
+    }
+  ]
+}

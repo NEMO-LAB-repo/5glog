@@ -1,0 +1,18 @@
+{
+  "id": "eventnr5grrculmsgmeasreportv4",
+  "name": "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+  "records": [
+    {
+      "id": "0x1ffb-event-nr5g-rrc-ul-msg-meas-report-v4",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "name": "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4.json",
+      "paths": [
+        "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
+        "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4 -> Event -> EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4"
+      ]
+    }
+  ]
+}

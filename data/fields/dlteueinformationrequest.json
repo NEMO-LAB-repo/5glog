@@ -1,0 +1,17 @@
+{
+  "id": "dlteueinformationrequest",
+  "name": "D [LTE] UE Information Request",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-information-request",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Information Request",
+      "name": "D [LTE] UE Information Request",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Information_Request.json",
+      "paths": [
+        "D [LTE] UE Information Request"
+      ]
+    }
+  ]
+}

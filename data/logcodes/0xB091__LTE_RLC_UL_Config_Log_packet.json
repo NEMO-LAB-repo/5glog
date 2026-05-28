@@ -1,0 +1,75 @@
+{
+  "id": "0xb091-lte-rlc-ul-config-log-packet",
+  "logcode": "0xB091",
+  "name": "LTE RLC UL Config Log packet",
+  "title": "0xB091 LTE RLC UL Config Log packet",
+  "category": "RLC",
+  "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE RLC UL Config Log packet": {
+      "Number of SubPackets": null,
+      "SubPackets": {
+        "[]": {
+          "Subpacket ID": null,
+          "Version": null,
+          "SubPacket Size": null,
+          "SubPackets Union -> SubPacket - ( RLCUL Configuration )": {
+            "Versions -> Reason": null,
+            "Max Size RBs": null,
+            "ReleasedRB Struct": {
+              "Number of released RB": null,
+              "Released RB Cfg Idx": {
+                "[]": null
+              }
+            },
+            "AddedModifiedRB Struct": {
+              "Number of added/modified RBs": null,
+              "Added/Modified RB": {
+                "[]": {
+                  "RB Cfg Idx": null,
+                  "Action": null
+                }
+              }
+            },
+            "Number of active RB": null,
+            "Active RB Info": {
+              "[]": {
+                "RB Mode": null,
+                "LC ID": null,
+                "RB ID": null,
+                "RB Cfg Idx": null,
+                "RB Type": null,
+                "LTE RLC UL Conf -> LTE RLC UL AM Conf": {
+                  "Poll Byte_data": null,
+                  "Poll PDU_data": null,
+                  "T Poll Retx_data": null,
+                  "Max Retx Threshold_data": null,
+                  "AM SN Length": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 16,
+    "samplesParsedSuccessfully": 16,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json"
+  }
+}

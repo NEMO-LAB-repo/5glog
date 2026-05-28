@@ -1,0 +1,17 @@
+{
+  "id": "tpollretxdata",
+  "name": "T Poll Retx_data",
+  "records": [
+    {
+      "id": "0xb091-lte-rlc-ul-config-log-packet",
+      "logcode": "0xB091",
+      "title": "0xB091 LTE RLC UL Config Log packet",
+      "name": "LTE RLC UL Config Log packet",
+      "category": "RLC",
+      "dataFile": "0xB091__LTE_RLC_UL_Config_Log_packet.json",
+      "paths": [
+        "LTE RLC UL Config Log packet -> SubPackets -> [] -> SubPackets Union -> SubPacket - ( RLCUL Configuration ) -> Active RB Info -> [] -> LTE RLC UL Conf -> LTE RLC UL AM Conf -> T Poll Retx_data"
+      ]
+    }
+  ]
+}

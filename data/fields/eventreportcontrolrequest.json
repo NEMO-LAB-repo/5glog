@@ -1,0 +1,18 @@
+{
+  "id": "eventreportcontrolrequest",
+  "name": "Event Report Control Request",
+  "records": [
+    {
+      "id": "0x1fea-event-report-control-request",
+      "logcode": "0x1FEA",
+      "title": "0x1FEA Event Report Control Request",
+      "name": "Event Report Control Request",
+      "category": "Other",
+      "dataFile": "0x1FEA__Event_Report_Control_Request.json",
+      "paths": [
+        "Event Report Control Request",
+        "Event Report Control Request -> Event Report Control Request"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "0x1ffb-event-nr5g-rrc-irat-resel-from-nr-end",
+  "logcode": "0x1FFB",
+  "name": "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+  "title": "0x1FFB EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END": {
+          "RAT Type": null,
+          "Cause": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 3,
+    "samplesParsedSuccessfully": 3,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_NR5G_RRC_IRAT_RESEL_FROM_NR_END.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "lteml1intrafrequencycellreselection",
+  "name": "LTE ML1 Intra Frequency Cell Reselection",
+  "records": [
+    {
+      "id": "0xb181-lte-ml1-intra-frequency-cell-reselection",
+      "logcode": "0xB181",
+      "title": "0xB181 LTE ML1 Intra Frequency Cell Reselection",
+      "name": "LTE ML1 Intra Frequency Cell Reselection",
+      "category": "ML1",
+      "dataFile": "0xB181__LTE_ML1_Intra_Frequency_Cell_Reselection.json",
+      "paths": [
+        "LTE ML1 Intra Frequency Cell Reselection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "eventimssiprequestrecv",
+  "name": "EVENT_IMS_SIP_REQUEST_RECV",
+  "records": [
+    {
+      "id": "0x1ffb-event-ims-sip-request-recv",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REQUEST_RECV",
+      "name": "EVENT_IMS_SIP_REQUEST_RECV",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REQUEST_RECV.json",
+      "paths": [
+        "EVENT_IMS_SIP_REQUEST_RECV",
+        "EVENT_IMS_SIP_REQUEST_RECV -> Event -> EVENT_IMS_SIP_REQUEST_RECV"
+      ]
+    }
+  ]
+}

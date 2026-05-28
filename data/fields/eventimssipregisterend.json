@@ -1,0 +1,18 @@
+{
+  "id": "eventimssipregisterend",
+  "name": "EVENT_IMS_SIP_REGISTER_END",
+  "records": [
+    {
+      "id": "0x1ffb-event-ims-sip-register-end",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_IMS_SIP_REGISTER_END",
+      "name": "EVENT_IMS_SIP_REGISTER_END",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_IMS_SIP_REGISTER_END.json",
+      "paths": [
+        "EVENT_IMS_SIP_REGISTER_END",
+        "EVENT_IMS_SIP_REGISTER_END -> Event -> EVENT_IMS_SIP_REGISTER_END"
+      ]
+    }
+  ]
+}

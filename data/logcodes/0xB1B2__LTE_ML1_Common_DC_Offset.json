@@ -1,0 +1,35 @@
+{
+  "id": "0xb1b2-lte-ml1-common-dc-offset",
+  "logcode": "0xB1B2",
+  "name": "LTE ML1 Common DC Offset",
+  "title": "0xB1B2 LTE ML1 Common DC Offset",
+  "category": "ML1",
+  "dataFile": "0xB1B2__LTE_ML1_Common_DC_Offset.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE ML1 Common DC Offset": {
+      "Update": null,
+      "Band": null,
+      "Bandwidth Index": null,
+      "E-ARFCN": null
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1072,
+    "samplesParsedSuccessfully": 1072,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB1B2__LTE_ML1_Common_DC_Offset.json"
+  }
+}

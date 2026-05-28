@@ -1,0 +1,41 @@
+{
+  "id": "0xb116-lte-ll1-serving-cell-measurement-results",
+  "logcode": "0xB116",
+  "name": "LTE LL1 Serving Cell Measurement Results",
+  "title": "0xB116 LTE LL1 Serving Cell Measurement Results",
+  "category": "ML1",
+  "dataFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 Serving Cell Measurement Results": {
+      "Sub-frame Number": null,
+      "System FN": null,
+      "Is Idle Mode": null,
+      "Measurement BW": null,
+      "Carrier Type": null,
+      "Cell ID": null,
+      "Digital Rotator Data": null,
+      "Timing Offset Rx": {
+        "[]": null
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 431,
+    "samplesParsedSuccessfully": 431,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB116__LTE_LL1_Serving_Cell_Measurement_Results.json"
+  }
+}

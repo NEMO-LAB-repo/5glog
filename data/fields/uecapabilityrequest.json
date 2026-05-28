@@ -1,0 +1,61 @@
+{
+  "id": "uecapabilityrequest",
+  "name": "ue-CapabilityRequest",
+  "records": [
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,geran-cs,geran-ps,cdma2000-1XRTT -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> ue-CapabilityRequest"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-nr-eutra-nr-geran-cs-geran-ps",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "name": "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_nr_eutra-nr_geran-cs_geran-ps.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,nr,eutra-nr,geran-cs,geran-ps -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> ue-CapabilityRequest"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-eutra-utra-geran-cs-geran-ps-cdma2000-1xrtt",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "name": "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_eutra_utra_geran-cs_geran-ps_cdma2000-1XRTT.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : eutra,utra,geran-cs,geran-ps,cdma2000-1XRTT -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> ue-CapabilityRequest"
+      ]
+    },
+    {
+      "id": "0xb0c0-d-lte-ue-capability-enquiry-nr",
+      "logcode": "0xB0C0",
+      "title": "0xB0C0 D [LTE] UE Capability Enquiry : nr",
+      "name": "D [LTE] UE Capability Enquiry : nr",
+      "category": "LTE",
+      "dataFile": "0xB0C0__D_LTE_UE_Capability_Enquiry_nr.json",
+      "paths": [
+        "D [LTE] UE Capability Enquiry : nr -> dl-dcch -> message -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> ue-CapabilityRequest"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> dl-dcch -> c1 -> ueCapabilityEnquiry -> criticalExtensions -> ueCapabilityEnquiry -> ue-CapabilityRAT-RequestList -> capabilityRequestFilter -> criticalExtensions -> c1 -> ueCapabilityEnquiry-r8 -> ue-CapabilityRequest"
+      ]
+    }
+  ]
+}

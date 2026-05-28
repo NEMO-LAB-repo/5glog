@@ -1,0 +1,40 @@
+{
+  "id": "pdusessionreactivationresult",
+  "name": "PDU session reactivation result",
+  "records": [
+    {
+      "id": "0xb80a-d-mm5g-registration-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Registration Accept",
+      "name": "D [MM5G] Registration Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Registration_Accept.json",
+      "paths": [
+        "D [MM5G] Registration Accept -> Registration Accept -> PDU session reactivation result"
+      ]
+    },
+    {
+      "id": "0xb80a-d-mm5g-service-accept",
+      "logcode": "0xB80A",
+      "title": "0xB80A D [MM5G] Service Accept",
+      "name": "D [MM5G] Service Accept",
+      "category": "NAS",
+      "dataFile": "0xB80A__D_MM5G_Service_Accept.json",
+      "paths": [
+        "D [MM5G] Service Accept -> Service Accept -> PDU session reactivation result"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-DCCH-Message -> Registration Accept -> PDU session reactivation result",
+        "DL-DCCH-Message -> Service Accept -> PDU session reactivation result"
+      ]
+    }
+  ]
+}

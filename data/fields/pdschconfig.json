@@ -1,0 +1,30 @@
+{
+  "id": "pdschconfig",
+  "name": "PDSCH Config",
+  "records": [
+    {
+      "id": "0xb160-lte-downlink-common-configuration",
+      "logcode": "0xB160",
+      "title": "0xB160 LTE Downlink Common Configuration",
+      "name": "LTE Downlink Common Configuration",
+      "category": "LTE",
+      "dataFile": "0xB160__LTE_Downlink_Common_Configuration.json",
+      "paths": [
+        "LTE Downlink Common Configuration -> PDSCH Config"
+      ]
+    },
+    {
+      "id": "0xb821-nr5g-rrc-ota-packet",
+      "logcode": "0xB821",
+      "title": "0xB821 NR5G RRC OTA Packet",
+      "name": "NR5G RRC OTA Packet",
+      "category": "RRC",
+      "dataFile": "0xB821.json",
+      "paths": [
+        "DL-CCCH-Message -> dl-ccch -> c1 -> rrcSetup -> criticalExtensions -> rrcSetup -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdsch-Config",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> downlinkBWP-ToAddModList -> bwp-Dedicated -> pdsch-Config",
+        "DL-DCCH-Message -> dl-dcch -> c1 -> rrcReconfiguration -> criticalExtensions -> rrcReconfiguration -> nonCriticalExtension -> masterCellGroup -> spCellConfig -> spCellConfigDedicated -> initialDownlinkBWP -> pdsch-Config"
+      ]
+    }
+  ]
+}

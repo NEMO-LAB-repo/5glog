@@ -1,0 +1,61 @@
+{
+  "id": "0xb0c0-u-lte-ul-information-transfer-identity-response",
+  "logcode": "0xB0C0",
+  "name": "U [LTE] UL Information Transfer//Identity Response",
+  "title": "0xB0C0 U [LTE] UL Information Transfer//Identity Response",
+  "category": "LTE",
+  "dataFile": "0xB0C0__U_LTE_UL_Information_Transfer_Identity_Response.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "U [LTE] UL Information Transfer//Identity Response": {
+      "LTE RRC Release": null,
+      "NR RRC Release": null,
+      "phyCellId": null,
+      "freq": null,
+      "sfn": null,
+      "Channel": null,
+      "ul-dcch": {
+        "message -> c1 -> ulInformationTransfer": {
+          "criticalExtensions -> c1 -> ulInformationTransfer-r8": {
+            "dedicatedInfoType -> dedicatedInfoNAS": null
+          }
+        }
+      },
+      "dedicatedInfoNAS": {
+        "Direction": null,
+        "Security header or skip ind": null,
+        "Protocol Discriminator": null,
+        "Msg auth. code": null,
+        "Sequence Number": null,
+        "2nd Sec. header": null,
+        "2nd PD": null,
+        "Message ID": null,
+        "Identity Response": {
+          "Mobile Identity": {
+            "Length": null,
+            "Type of Identity": null,
+            "Odd Even Ind": null,
+            "IMSI": null
+          }
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 1,
+    "samplesParsedSuccessfully": 1,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility"
+    ],
+    "sourceSchemaFile": "0xB0C0__U_LTE_UL_Information_Transfer_Identity_Response.json"
+  }
+}

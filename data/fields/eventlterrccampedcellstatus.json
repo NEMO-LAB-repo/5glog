@@ -1,0 +1,18 @@
+{
+  "id": "eventlterrccampedcellstatus",
+  "name": "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+  "records": [
+    {
+      "id": "0x1ffb-event-lte-rrc-camped-cell-status",
+      "logcode": "0x1FFB",
+      "title": "0x1FFB EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "name": "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+      "category": "Other",
+      "dataFile": "0x1FFB__EVENT_LTE_RRC_CAMPED_CELL_STATUS.json",
+      "paths": [
+        "EVENT_LTE_RRC_CAMPED_CELL_STATUS",
+        "EVENT_LTE_RRC_CAMPED_CELL_STATUS -> Event -> EVENT_LTE_RRC_CAMPED_CELL_STATUS"
+      ]
+    }
+  ]
+}

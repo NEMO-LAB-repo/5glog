@@ -1,0 +1,40 @@
+{
+  "id": "0x1ffb-event-tcp-qc",
+  "logcode": "0x1FFB",
+  "name": "EVENT_TCP_QC",
+  "title": "0x1FFB EVENT_TCP_QC",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_TCP_QC.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_TCP_QC": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_TCP_QC": {
+          "sock_fd": null,
+          "tcp_state": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 2,
+    "samplesParsedSuccessfully": 2,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_TCP_QC.json"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "0xb888-nr5g-mac-pdsch-stats",
+  "logcode": "0xB888",
+  "name": "NR5G MAC PDSCH Stats",
+  "title": "0xB888 NR5G MAC PDSCH Stats",
+  "category": "MAC",
+  "dataFile": "0xB888__NR5G_MAC_PDSCH_Stats.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "NR5G MAC PDSCH Stats": {
+      "Num Records": null,
+      "Flush Gap Count": null,
+      "Num Total Slots Raw": null,
+      "Num Total Slots": null,
+      "Num CA": null,
+      "Cumulative Bitmask": null,
+      "Records": {
+        "[]": {
+          "Carrier ID": null,
+          "Num Slots Elapsed": null,
+          "Num PDSCH Decode": null,
+          "Num CRC Pass TB": null,
+          "Num CRC Fail TB": null,
+          "Num ReTx": null,
+          "ACK As NACK": null,
+          "HARQ Failure": null,
+          "CRC Pass TB Bytes": null,
+          "CRC Fail TB Bytes": null,
+          "TB Bytes": null,
+          "Padding Bytes": null,
+          "ReTx Bytes": null,
+          "BLER": null,
+          "Residual BLER": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 4000,
+    "samplesParsedSuccessfully": 4000,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0xB888__NR5G_MAC_PDSCH_Stats.json"
+  }
+}

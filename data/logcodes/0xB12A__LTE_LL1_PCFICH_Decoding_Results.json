@@ -1,0 +1,52 @@
+{
+  "id": "0xb12a-lte-ll1-pcfich-decoding-results",
+  "logcode": "0xB12A",
+  "name": "LTE LL1 PCFICH Decoding Results",
+  "title": "0xB12A LTE LL1 PCFICH Decoding Results",
+  "category": "ML1",
+  "dataFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null,
+      "Version": null
+    },
+    "LTE LL1 PCFICH Decoding Results": {
+      "Versions -> Serving Cell ID": null,
+      "Number of Records": null,
+      "Sub-frame Number": null,
+      "CFI": null,
+      "Carrier Index": null,
+      "System Frame Number": null,
+      "Cm_sz_0": null,
+      "Cm_sz_1": null,
+      "Ue_sz_0": null,
+      "Ue_sz_1": null,
+      "Records": {
+        "[]": {
+          "Sub-frame Offset": null,
+          "PDCCH Demap Status": null,
+          "PCFICH CFI": null,
+          "PHICH TDD MI": null,
+          "Rnti Bitmask": null,
+          "Decode Abort": null,
+          "Is Macro Sleep Sf": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 266,
+    "samplesParsedSuccessfully": 266,
+    "parseSuccessRate": 1,
+    "versionStrategy": "single_version",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0xB12A__LTE_LL1_PCFICH_Decoding_Results.json"
+  }
+}

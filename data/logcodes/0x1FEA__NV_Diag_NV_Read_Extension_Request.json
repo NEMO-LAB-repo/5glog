@@ -1,0 +1,46 @@
+{
+  "id": "0x1fea-nv-diag-nv-read-extension-request",
+  "logcode": "0x1FEA",
+  "name": "NV/Diag NV Read Extension Request",
+  "title": "0x1FEA NV/Diag NV Read Extension Request",
+  "category": "Other",
+  "dataFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "NV/Diag NV Read Extension Request": {
+      "Cmd Code": null,
+      "Subsystem Dispatch Request Message": {
+        "Subsys ID": null,
+        "Subsys Cmd Code": null,
+        "NV/Diag NV Read Extension Request": {
+          "ID": null,
+          "Context": null,
+          "Item 01-08": null,
+          "Item 09-16": null,
+          "Item 17-24": null,
+          "Item 25-32": null,
+          "Status": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 32,
+    "samplesParsedSuccessfully": 32,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0521_2_stationary",
+      "5g_0522_1_mobility",
+      "5g_0523_01",
+      "5g_0523_1"
+    ],
+    "sourceSchemaFile": "0x1FEA__NV_Diag_NV_Read_Extension_Request.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "0x1ffb-event-lte-ml1-l2nr-misaligned-gap",
+  "logcode": "0x1FFB",
+  "name": "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+  "title": "0x1FFB EVENT_LTE_ML1_L2NR_MISALIGNED_GAP",
+  "category": "Other",
+  "dataFile": "0x1FFB__EVENT_LTE_ML1_L2NR_MISALIGNED_GAP.json",
+  "detail": {
+    "Header": {
+      "Timestamp": null,
+      "Log Name": null,
+      "Length": null,
+      "Log Code": null,
+      "Inner Timestamp": null
+    },
+    "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP": {
+      "Length": null,
+      "Event": {
+        "ID": null,
+        "Timestamp": null,
+        "Payload Size": null,
+        "EVENT_LTE_ML1_L2NR_MISALIGNED_GAP": {
+          "Misaligned": null,
+          "LTE Freq": null,
+          "NR Freq": null,
+          "L2NR TE Offset": null
+        }
+      }
+    }
+  },
+  "schemaMeta": {
+    "samplesTotal": 10,
+    "samplesParsedSuccessfully": 10,
+    "parseSuccessRate": 1,
+    "versionStrategy": "unversioned",
+    "observedInTraces": [
+      "5g_0522_1_mobility",
+      "5g_0523_01"
+    ],
+    "sourceSchemaFile": "0x1FFB__EVENT_LTE_ML1_L2NR_MISALIGNED_GAP.json"
+  }
+}
