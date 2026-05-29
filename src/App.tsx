@@ -926,10 +926,10 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   );
 }
 
-function StepEvidenceList({ items, onOpenLogcode }: { items: StepEvidenceItem[]; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+function StepEvidenceList({ items, title = "Evidence", onOpenLogcode }: { items: StepEvidenceItem[]; title?: string; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   return (
     <div className="step-evidence">
-      <div className="step-evidence-title">Evidence</div>
+      <div className="step-evidence-title">{title}</div>
       <div className="step-evidence-list">
         {items.map((item, index) => {
           const fields = item.fields || [];
@@ -969,6 +969,7 @@ function StepEvidenceList({ items, onOpenLogcode }: { items: StepEvidenceItem[];
 
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementRelationStep = step.title.startsWith("2.");
+  const isNetworkInterfaceStep = step.title.startsWith("4.");
   const hasEvidence = Boolean(step.evidence?.length);
 
   return (
@@ -984,7 +985,7 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
         </div>
       ) : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {hasEvidence ? <StepEvidenceList items={step.evidence!} onOpenLogcode={onOpenLogcode} /> : null}
+      {hasEvidence ? <StepEvidenceList items={step.evidence!} title={isNetworkInterfaceStep ? "Interfaces" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
       {step.sequence && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}

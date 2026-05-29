@@ -181,67 +181,24 @@
     "4": {
       "title": "4. Network HO Decision / Preparation",
       "layer": "Network",
-      "decide": "UE log cannot directly see the network decision or interface path. Network preparation depends on topology: same gNB-CU / different DU is mainly F1AP on the CU-DU control path; E1AP may update CU-UP bearer context. Inter-gNB can use Xn, and N2 requires NGAP evidence. From UE-side logs, infer this step from the later handover command.",
-      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync. Xn/N2/F1/E1 details require network-side logs.",
-      "fields": [
-        "RRCReconfiguration",
-        "reconfigurationWithSync",
-        "F1AP",
-        "E1AP",
-        "XnAP",
-        "NGAP"
-      ],
+      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync.",
+      "fields": [],
       "evidence": [
         {
-          "title": "No direct UE logcode",
-          "detail": "The decision and resource preparation happen on network nodes. UE logs usually reveal the result only when the later handover command arrives.",
-          "fields": [
-            "reconfigurationWithSync",
-            "rrcReconfiguration"
-          ]
+          "title": "F1AP",
+          "detail": "CU-CP <-> DU control interface. Main path for same gNB-CU / different DU handover preparation."
         },
         {
-          "title": "Same gNB-CU path",
-          "detail": "The handover preparation/control exchange between gNB-CUCP and source/target DU is mainly F1AP. E1AP is used between CU-CP and CU-UP for bearer context modification when the user-plane context needs updating. It is not an Xn handover.",
-          "fields": [
-            "F1AP: UE Context Setup Request",
-            "F1AP: UE Context Setup Response",
-            "F1AP: UE Context Modification Request",
-            "E1AP: Bearer Modification Request",
-            "E1AP: Bearer Modification Response"
-          ]
+          "title": "E1AP",
+          "detail": "CU-CP <-> CU-UP interface. Updates bearer / user-plane context; not the main HO decision interface."
         },
         {
-          "title": "Inter-gNB Xn path",
-          "detail": "If source and target gNB are different and Xn is available, preparation uses XnAP between gNBs. This is network-side evidence, not visible as a UE logcode.",
-          "fields": [
-            "XnAP Handover Request",
-            "XnAP Handover Request Acknowledge",
-            "XnAP SNStatus Transfer",
-            "XnAP UE Context Release"
-          ]
+          "title": "XnAP",
+          "detail": "source gNB <-> target gNB interface. Used for inter-gNB Xn handover when Xn is available."
         },
         {
-          "title": "Inter-gNB N2 path",
-          "detail": "If Xn is unavailable or N2 handover is selected, preparation goes through AMF using NGAP. UE-only logs are not enough to confirm N2.",
-          "fields": [
-            "NGAP Handover Required",
-            "NGAP Handover Request",
-            "NGAP Handover Command",
-            "NGAP Handover Notify"
-          ]
-        },
-        {
-          "title": "Inference point",
-          "detail": "Infer this step when Step 5 appears with a handover RRCReconfiguration.",
-          "logcodes": [
-            "0xB821"
-          ],
-          "fields": [
-            "DL-DCCH-Message",
-            "rrcReconfiguration",
-            "reconfigurationWithSync"
-          ]
+          "title": "NGAP / N2",
+          "detail": "gNB <-> AMF control interface. Used for N2 handover; UE-side logs alone cannot confirm it."
         }
       ]
     },
