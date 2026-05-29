@@ -19,15 +19,22 @@ button {
 
 .home-screen {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 300px));
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 28px;
   padding: 32px;
   box-sizing: border-box;
 }
 
-.home-screen button {
+.home-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 300px));
+  gap: 28px;
+}
+
+.home-action-grid button {
   height: 110px;
   border: 2px solid #000000;
   border-radius: 6px;
@@ -38,9 +45,10 @@ button {
   cursor: pointer;
 }
 
-.home-screen button:hover,
+.home-action-grid button:hover,
 .column-button:hover,
 .back-button:hover,
+.history-button:hover:not(:disabled),
 .field-record-button:hover,
 .field-index-back:hover,
 .layer-button:hover {
@@ -497,9 +505,10 @@ button {
 
 .viewer-bar {
   width: min(100vw - 32px, 1380px);
-  display: flex;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
   align-items: center;
-  justify-content: space-between;
+  gap: 12px;
   box-sizing: border-box;
 }
 
@@ -514,7 +523,32 @@ button {
   cursor: pointer;
 }
 
+.history-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.history-button {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.history-button:disabled {
+  border-color: #999999;
+  color: #777777;
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 .view-title {
+  justify-self: end;
   font-size: 22px;
   font-weight: 800;
 }
@@ -1246,8 +1280,25 @@ button {
 }
 
 @media (max-width: 760px) {
-  .home-screen {
+  .home-action-grid {
     grid-template-columns: 1fr;
+  }
+
+  .viewer-bar {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .history-controls {
+    justify-content: stretch;
+  }
+
+  .history-button {
+    flex: 1;
+  }
+
+  .view-title {
+    justify-self: start;
   }
 
   .message-note-form {

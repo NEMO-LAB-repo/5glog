@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties, FormEvent } from "react";
 import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel } from "./data";
 import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepEvidenceItem, StepInfo, ViewName } from "./types";
@@ -28,6 +28,38 @@ type MessageLogcodeGroup = {
   category: string;
   records: LogcodeSummary[];
 };
+
+type AppRoute = {
+  view: ViewName;
+  detailId?: string;
+  selectedTerms?: string[];
+  selectedMessageLayer?: string | null;
+  selectedLogcodeGroup?: string | null;
+  messageQuery?: string;
+};
+
+type AppHistoryState = {
+  stack: AppRoute[];
+  index: number;
+};
+
+const initialRoute: AppRoute = { view: "home" };
+
+function normalizeRoute(route: AppRoute): AppRoute {
+  if (route.view !== "message") return { view: route.view };
+  return {
+    view: "message",
+    selectedMessageLayer: route.selectedMessageLayer || null,
+    selectedLogcodeGroup: route.selectedLogcodeGroup || null,
+    detailId: route.detailId,
+    selectedTerms: route.selectedTerms || [],
+    messageQuery: route.messageQuery || ""
+  };
+}
+
+function routesEqual(left: AppRoute, right: AppRoute) {
+  return JSON.stringify(normalizeRoute(left)) === JSON.stringify(normalizeRoute(right));
+}
 
 const logcodeGroupNameOverrides: Record<string, string> = {
   "0x1FFB": "Encapsulated Event Report",
@@ -1350,6 +1382,9 @@ export function App() {
   const [selectedLogcodeGroup, setSelectedLogcodeGroup] = useState<string | null>(null);
   const [messageQuery, setMessageQuery] = useState("");
   const [messageNotes, setMessageNotes] = useState<MessageNotesStore>(loadMessageNotes);
+  const detailLoadSequence = useRef(0);
+  const historyRef = useRef<AppHistoryState>({ stack: [initialRoute], index: 0 });
+  const [historyState, setHistoryState] = useState<AppHistoryState>(historyRef.current);
   const messageLogcodeGroups = useMemo(() => buildMessageLogcodeGroups(logcodeRecords), []);
   const messageLayers = useMemo(() => {
     const counts = new Map<string, number>();
@@ -1389,51 +1424,111 @@ export function App() {
     window.localStorage.setItem(messageNotesStorageKey, JSON.stringify(messageNotes));
   }, [messageNotes]);
 
-  async function openDetail(record: LogcodeRef, terms: string[] = []) {
-    setSelectedTerms(terms);
-    setView("message");
-    setDetailRecord(null);
-    setDetailError("");
-    setDetailStatus("loading");
-
-    try {
-      const fullRecord = await loadLogcodeRecord(record);
-      setDetailRecord(fullRecord);
-      setDetailStatus("ready");
-    } catch (error) {
-      setDetailStatus("error");
-      setDetailError(error instanceof Error ? error.message : "Unable to load logcode detail.");
-    }
+  function setAppHistory(nextHistory: AppHistoryState) {
+    historyRef.current = nextHistory;
+    setHistoryState(nextHistory);
   }
 
-  function closeDetail() {
+  function clearDetailState() {
+    detailLoadSequence.current += 1;
     setDetailRecord(null);
     setDetailStatus("idle");
     setDetailError("");
     setSelectedTerms([]);
   }
 
-  function resetMessageList() {
-    closeDetail();
-    setSelectedMessageLayer(null);
-    setSelectedLogcodeGroup(null);
-    setMessageQuery("");
+  function loadDetailById(detailId: string, terms: string[] = []) {
+    const record = logcodeById.get(detailId);
+    const loadId = detailLoadSequence.current + 1;
+    detailLoadSequence.current = loadId;
+    setSelectedTerms(terms);
+    setDetailRecord(null);
+    setDetailError("");
+
+    if (!record) {
+      setDetailStatus("error");
+      setDetailError(`Unknown logcode id: ${detailId}`);
+      return;
+    }
+
+    setDetailStatus("loading");
+
+    void loadLogcodeRecord(record)
+      .then((fullRecord) => {
+        if (detailLoadSequence.current !== loadId) return;
+        setDetailRecord(fullRecord);
+        setDetailStatus("ready");
+      })
+      .catch((error) => {
+        if (detailLoadSequence.current !== loadId) return;
+        setDetailStatus("error");
+        setDetailError(error instanceof Error ? error.message : "Unable to load logcode detail.");
+      });
+  }
+
+  function applyRoute(route: AppRoute) {
+    const nextRoute = normalizeRoute(route);
+    setView(nextRoute.view);
+
+    if (nextRoute.view !== "message") {
+      setSelectedMessageLayer(null);
+      setSelectedLogcodeGroup(null);
+      setMessageQuery("");
+      clearDetailState();
+      return;
+    }
+
+    setSelectedMessageLayer(nextRoute.selectedMessageLayer || null);
+    setSelectedLogcodeGroup(nextRoute.selectedLogcodeGroup || null);
+    setMessageQuery(nextRoute.messageQuery || "");
+
+    if (nextRoute.detailId) {
+      loadDetailById(nextRoute.detailId, nextRoute.selectedTerms || []);
+    } else {
+      clearDetailState();
+    }
+  }
+
+  function navigate(route: AppRoute) {
+    const nextRoute = normalizeRoute(route);
+    const currentHistory = historyRef.current;
+    const nextStack = currentHistory.stack.slice(0, currentHistory.index + 1);
+    if (routesEqual(nextStack[nextStack.length - 1], nextRoute)) {
+      applyRoute(nextRoute);
+      return;
+    }
+    nextStack.push(nextRoute);
+    setAppHistory({ stack: nextStack, index: nextStack.length - 1 });
+    applyRoute(nextRoute);
+  }
+
+  function goHistory(delta: -1 | 1) {
+    const currentHistory = historyRef.current;
+    const nextIndex = currentHistory.index + delta;
+    if (nextIndex < 0 || nextIndex >= currentHistory.stack.length) return;
+    setAppHistory({ ...currentHistory, index: nextIndex });
+    applyRoute(currentHistory.stack[nextIndex]);
+  }
+
+  function openDetail(record: LogcodeRef, terms: string[] = [], context?: { keepGroup?: boolean }) {
+    const summary = logcodeById.get(record.id) || record;
+    const nextLayer = context?.keepGroup ? selectedMessageLayer : "category" in summary ? summary.category : selectedMessageLayer;
+    const nextGroup = context?.keepGroup ? selectedLogcodeGroup : null;
+    navigate({
+      view: "message",
+      selectedMessageLayer: nextLayer || null,
+      selectedLogcodeGroup: nextGroup || null,
+      detailId: record.id,
+      selectedTerms: terms
+    });
   }
 
   function openLogcodeGroup(group: MessageLogcodeGroup) {
-    closeDetail();
     if (group.records.length === 1) {
       void openDetail(group.records[0]);
       return;
     }
-    setSelectedLogcodeGroup(group.logcode);
-    setMessageQuery("");
-  }
-
-  function closeLogcodeGroup() {
-    closeDetail();
-    setSelectedLogcodeGroup(null);
-    setMessageQuery("");
+    navigate({ view: "message", selectedMessageLayer: group.category, selectedLogcodeGroup: group.logcode });
   }
 
   function addMessageNote(messageId: string, text: string) {
@@ -1473,25 +1568,41 @@ export function App() {
     });
   }
 
+  const historyControls = {
+    canGoBack: historyState.index > 0,
+    canGoForward: historyState.index < historyState.stack.length - 1,
+    onBack: () => goHistory(-1),
+    onForward: () => goHistory(1)
+  };
+
+  function routeBeforeDetail(): AppRoute {
+    if (selectedLogcodeGroup) return { view: "message", selectedMessageLayer, selectedLogcodeGroup };
+    if (selectedMessageLayer) return { view: "message", selectedMessageLayer };
+    return { view: "message" };
+  }
+
   return (
     <main className="app-shell">
       {view === "home" ? (
         <section className="home-screen">
-          <button type="button" onClick={() => setView("event")}>Event</button>
-          <button type="button" onClick={() => { resetMessageList(); setView("message"); }}>Message</button>
-          <button type="button" onClick={() => { closeDetail(); setView("field"); }}>Field</button>
+          <HistoryButtons {...historyControls} />
+          <div className="home-action-grid">
+            <button type="button" onClick={() => navigate({ view: "event" })}>Event</button>
+            <button type="button" onClick={() => navigate({ view: "message" })}>Message</button>
+            <button type="button" onClick={() => navigate({ view: "field" })}>Field</button>
+          </div>
         </section>
       ) : null}
 
       {view === "event" ? (
         <section className="explorer-screen">
-          <TopBar title="Event" onHome={() => setView("home")} />
+          <TopBar title="Event" onHome={() => navigate({ view: "home" })} {...historyControls} />
           <div className="explorer-grid">
             <section className="explorer-column">
               <h2 className="column-title">Event</h2>
               <div className="column-list">
                 {eventIndex.map((eventItem) => (
-                  <button key={eventItem.id} className="column-button" type="button" onClick={() => setView(eventItem.view as ViewName)}>
+                  <button key={eventItem.id} className="column-button" type="button" onClick={() => navigate({ view: eventItem.view as ViewName })}>
                     {eventItem.title}
                   </button>
                 ))}
@@ -1503,7 +1614,7 @@ export function App() {
 
       {view === "message" ? (
         <section className={`explorer-screen ${detailRecord || detailStatus === "loading" || detailStatus === "error" ? "is-detail-view" : ""}`}>
-          <TopBar title="Message" onHome={() => { resetMessageList(); setView("home"); }} />
+          <TopBar title="Message" onHome={() => navigate({ view: "home" })} {...historyControls} />
           <div className="explorer-grid">
             <section className="explorer-column">
               <h2 className="column-title">
@@ -1517,7 +1628,7 @@ export function App() {
               </h2>
               {detailRecord || detailStatus === "loading" || detailStatus === "error" ? (
                 <div className="field-list">
-                  <button className="field-index-back" type="button" onClick={closeDetail}>{selectedGroup ? "Back to variants" : selectedMessageLayer ? "Back to logcodes" : "All layers"}</button>
+                  <button className="field-index-back" type="button" onClick={() => navigate(routeBeforeDetail())}>{selectedGroup ? "Back to variants" : selectedMessageLayer ? "Back to logcodes" : "All layers"}</button>
                   {detailStatus === "loading" ? <div className="status-panel">Loading message detail...</div> : null}
                   {detailStatus === "error" ? <div className="status-panel is-error">{detailError}</div> : null}
                   {detailRecord ? (
@@ -1533,7 +1644,7 @@ export function App() {
               ) : selectedGroup ? (
                 <div className="column-list">
                   <div className="message-layer-bar">
-                    <button className="field-index-back" type="button" onClick={closeLogcodeGroup}>Back to logcodes</button>
+                    <button className="field-index-back" type="button" onClick={() => navigate({ view: "message", selectedMessageLayer })}>Back to logcodes</button>
                     <div className="selected-layer-title">{selectedGroup.title}</div>
                   </div>
                   <label className="search-box">
@@ -1542,7 +1653,7 @@ export function App() {
                   </label>
                   <div className="result-count">{visibleGroupVariants.length} / {selectedGroup.records.length} variants</div>
                   {visibleGroupVariants.map((record) => (
-                    <button key={record.id} className="column-button" type="button" onClick={() => openDetail(record)}>
+                    <button key={record.id} className="column-button" type="button" onClick={() => openDetail(record, [], { keepGroup: true })}>
                       <span>{recordLabel(record)}</span>
                       {noteCountLabel(messageNotes[record.id]) ? <span className="message-note-badge">{noteCountLabel(messageNotes[record.id])}</span> : null}
                     </button>
@@ -1551,7 +1662,7 @@ export function App() {
               ) : selectedMessageLayer ? (
                 <div className="column-list">
                   <div className="message-layer-bar">
-                    <button className="field-index-back" type="button" onClick={resetMessageList}>All layers</button>
+                    <button className="field-index-back" type="button" onClick={() => navigate({ view: "message" })}>All layers</button>
                     <div className="selected-layer-title">{messageLayerLabel(selectedMessageLayer)}</div>
                   </div>
                   <label className="search-box">
@@ -1576,7 +1687,7 @@ export function App() {
               ) : (
                 <div className="layer-list">
                   {messageLayers.map(({ layer, count }) => (
-                    <button key={layer} className="layer-button" type="button" onClick={() => { setSelectedMessageLayer(layer); setMessageQuery(""); }}>
+                    <button key={layer} className="layer-button" type="button" onClick={() => navigate({ view: "message", selectedMessageLayer: layer })}>
                       <span>{messageLayerLabel(layer)}</span>
                       <span className="layer-count">{count} 5G logcode{count === 1 ? "" : "s"}</span>
                     </button>
@@ -1590,7 +1701,7 @@ export function App() {
 
       {view === "field" ? (
         <section className="explorer-screen is-field-view">
-          <TopBar title="Field" onHome={() => { closeDetail(); setView("home"); }} />
+          <TopBar title="Field" onHome={() => navigate({ view: "home" })} {...historyControls} />
           <div className="explorer-grid">
             <section className="explorer-column">
               <h2 className="column-title">Field</h2>
@@ -1602,21 +1713,21 @@ export function App() {
 
       {view === "handover" ? (
         <section className="viewer-screen">
-          <TopBar title="Handover" onHome={() => setView("event")} backLabel="Event / Message" />
+          <TopBar title="Handover" onHome={() => navigate({ view: "event" })} backLabel="Event / Message" {...historyControls} />
           <HandoverDiagram onOpenLogcode={openDetail} />
         </section>
       ) : null}
 
       {view === "nrMeasurementEvents" ? (
         <section className="event-config-screen">
-          <TopBar title="NR Measurement Events" onHome={() => setView("event")} backLabel="Event / Message" />
+          <TopBar title="NR Measurement Events" onHome={() => navigate({ view: "event" })} backLabel="Event / Message" {...historyControls} />
           <NRMeasurementEventsView onOpenLogcode={openDetail} />
         </section>
       ) : null}
 
       {view === "registration" ? (
         <section className="viewer-screen">
-          <TopBar title="UE Registration" onHome={() => setView("event")} backLabel="Event / Message" />
+          <TopBar title="UE Registration" onHome={() => navigate({ view: "event" })} backLabel="Event / Message" {...historyControls} />
           <div className="placeholder-panel">UE Registration</div>
         </section>
       ) : null}
@@ -1624,10 +1735,46 @@ export function App() {
   );
 }
 
-function TopBar({ title, onHome, backLabel = "Home" }: { title: string; onHome: () => void; backLabel?: string }) {
+function HistoryButtons({
+  canGoBack,
+  canGoForward,
+  onBack,
+  onForward
+}: {
+  canGoBack: boolean;
+  canGoForward: boolean;
+  onBack: () => void;
+  onForward: () => void;
+}) {
+  return (
+    <div className="history-controls" aria-label="Navigation history">
+      <button className="history-button" type="button" onClick={onBack} disabled={!canGoBack}>Back</button>
+      <button className="history-button" type="button" onClick={onForward} disabled={!canGoForward}>Forward</button>
+    </div>
+  );
+}
+
+function TopBar({
+  title,
+  onHome,
+  backLabel = "Home",
+  canGoBack,
+  canGoForward,
+  onBack,
+  onForward
+}: {
+  title: string;
+  onHome: () => void;
+  backLabel?: string;
+  canGoBack: boolean;
+  canGoForward: boolean;
+  onBack: () => void;
+  onForward: () => void;
+}) {
   return (
     <div className="viewer-bar">
       <button className="back-button" type="button" onClick={onHome}>{backLabel}</button>
+      <HistoryButtons canGoBack={canGoBack} canGoForward={canGoForward} onBack={onBack} onForward={onForward} />
       <div className="view-title">{title}</div>
     </div>
   );
