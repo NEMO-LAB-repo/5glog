@@ -181,7 +181,7 @@
     "4": {
       "title": "4. Network HO Decision / Preparation",
       "layer": "Network",
-      "decide": "UE log cannot directly see the network decision or interface path. Network preparation depends on topology: same CU/DU uses internal F1/E1 procedures, inter-gNB can use Xn, and N2 requires NGAP evidence. From UE-side logs, infer this step from the later handover command.",
+      "decide": "UE log cannot directly see the network decision or interface path. Network preparation depends on topology: same gNB-CU / different DU is mainly F1AP on the CU-DU control path; E1AP may update CU-UP bearer context. Inter-gNB can use Xn, and N2 requires NGAP evidence. From UE-side logs, infer this step from the later handover command.",
       "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync. Xn/N2/F1/E1 details require network-side logs.",
       "fields": [
         "RRCReconfiguration",
@@ -201,14 +201,14 @@
           ]
         },
         {
-          "title": "Same CU / DU-side path",
-          "detail": "For intra gNB-DU or inter gNB-DU under the same gNB-CU, preparation is mainly F1AP / E1AP inside the gNB architecture, not Xn.",
+          "title": "Same gNB-CU path",
+          "detail": "The handover preparation/control exchange between gNB-CUCP and source/target DU is mainly F1AP. E1AP is used between CU-CP and CU-UP for bearer context modification when the user-plane context needs updating. It is not an Xn handover.",
           "fields": [
-            "F1AP UE Context Setup Request",
-            "F1AP UE Context Setup Response",
-            "F1AP UE Context Modification Request",
-            "E1AP Bearer Modification Request",
-            "E1AP Bearer Modification Response"
+            "F1AP: UE Context Setup Request",
+            "F1AP: UE Context Setup Response",
+            "F1AP: UE Context Modification Request",
+            "E1AP: Bearer Modification Request",
+            "E1AP: Bearer Modification Response"
           ]
         },
         {
