@@ -88,6 +88,12 @@ const builtInLogcodeNotes: Record<string, string[]> = {
   ]
 };
 
+const networkHandoverTypeTerms = [
+  "same gNB-CU / different DU handover",
+  "inter-gNB Xn handover",
+  "N2 handover"
+];
+
 const logcodeVariantSections: Record<string, LogcodeVariantSection[]> = {
   "0x1FFB": [
     {
@@ -959,12 +965,14 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
 }
 
 function StepEvidenceList({ items, title = "Evidence", onOpenLogcode }: { items: StepEvidenceItem[]; title?: string; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const isInterfaceList = title === "Interfaces";
   return (
     <div className="step-evidence">
       <div className="step-evidence-title">{title}</div>
       <div className="step-evidence-list">
         {items.map((item, index) => {
           const fields = item.fields || [];
+          const detailHighlights = isInterfaceList ? networkHandoverTypeTerms : fields;
           return (
             <div className="step-evidence-card" key={`${item.title}-${index}`}>
               <div className="step-evidence-heading">
@@ -981,7 +989,7 @@ function StepEvidenceList({ items, title = "Evidence", onOpenLogcode }: { items:
               </div>
               {item.detail ? (
                 <div className="step-evidence-detail">
-                  <PopupText value={item.detail} logcodes={item.logcodes} fields={fields} onOpenLogcode={onOpenLogcode} />
+                  <PopupText value={item.detail} logcodes={item.logcodes} fields={detailHighlights} onOpenLogcode={onOpenLogcode} />
                 </div>
               ) : null}
               {fields.length ? (
