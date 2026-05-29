@@ -181,19 +181,54 @@
     "4": {
       "title": "4. Network HO Decision / Preparation",
       "layer": "Network",
-      "decide": "UE log cannot directly see the network decision; infer it from the later handover command.",
-      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync.",
+      "decide": "UE log cannot directly see the network decision or interface path. Network preparation depends on topology: same CU/DU uses internal F1/E1 procedures, inter-gNB can use Xn, and N2 requires NGAP evidence. From UE-side logs, infer this step from the later handover command.",
+      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync. Xn/N2/F1/E1 details require network-side logs.",
       "fields": [
         "RRCReconfiguration",
-        "reconfigurationWithSync"
+        "reconfigurationWithSync",
+        "F1AP",
+        "E1AP",
+        "XnAP",
+        "NGAP"
       ],
       "evidence": [
         {
           "title": "No direct UE logcode",
-          "detail": "The network decision/preparation happens in network-side control. UE logs usually reveal it only when the later handover command arrives.",
+          "detail": "The decision and resource preparation happen on network nodes. UE logs usually reveal the result only when the later handover command arrives.",
           "fields": [
             "reconfigurationWithSync",
             "rrcReconfiguration"
+          ]
+        },
+        {
+          "title": "Same CU / DU-side path",
+          "detail": "For intra gNB-DU or inter gNB-DU under the same gNB-CU, preparation is mainly F1AP / E1AP inside the gNB architecture, not Xn.",
+          "fields": [
+            "F1AP UE Context Setup Request",
+            "F1AP UE Context Setup Response",
+            "F1AP UE Context Modification Request",
+            "E1AP Bearer Modification Request",
+            "E1AP Bearer Modification Response"
+          ]
+        },
+        {
+          "title": "Inter-gNB Xn path",
+          "detail": "If source and target gNB are different and Xn is available, preparation uses XnAP between gNBs. This is network-side evidence, not visible as a UE logcode.",
+          "fields": [
+            "XnAP Handover Request",
+            "XnAP Handover Request Acknowledge",
+            "XnAP SNStatus Transfer",
+            "XnAP UE Context Release"
+          ]
+        },
+        {
+          "title": "Inter-gNB N2 path",
+          "detail": "If Xn is unavailable or N2 handover is selected, preparation goes through AMF using NGAP. UE-only logs are not enough to confirm N2.",
+          "fields": [
+            "NGAP Handover Required",
+            "NGAP Handover Request",
+            "NGAP Handover Command",
+            "NGAP Handover Notify"
           ]
         },
         {
@@ -725,6 +760,24 @@
             "TB Bytes",
             "TB New Tx Bytes",
             "Num ULSCH Sched"
+          ]
+        },
+        {
+          "title": "Handover type classification",
+          "detail": "After source and target cell identity are known, split NCI into gNB ID and local cell ID. Same gNB ID with different local cell ID means intra-gNB; different gNB ID means inter-gNB. PCI is not sufficient for this classification.",
+          "logcodes": [
+            "0xB823",
+            "0x1FFB"
+          ],
+          "fields": [
+            "source_nci",
+            "target_nci",
+            "source_gNB_ID",
+            "target_gNB_ID",
+            "source_cell_local_id",
+            "target_cell_local_id",
+            "Physical Cell ID",
+            "Cell Id"
           ]
         }
       ]
