@@ -118,10 +118,6 @@
         "measId",
         "serving PCI",
         "neighbor PCI"
-      ],
-      "note": "0xB970 is idle-mode S-criteria evidence. Do not use it as the connected-mode handover main chain.",
-      "noteLogcodes": [
-        "0xB970"
       ]
     },
     "3": {

@@ -38,9 +38,7 @@ window.EVENT_DATA.handover = {
       decide: "ML1 follows RRC measurement config, searches/acquires cells, measures quality, filters results, evaluates event/TTT, then RRC sends MeasurementReport.",
       logcode: "See the relationship diagram below. Click each logcode box to open its structure.",
       logcodes: ["0xB821", "0xB96E", "0xB96D", "0xB96A", "0xB97F", "0xB96F"],
-      fields: ["measObjectId", "ssbFrequency", "smtc1", "ssb-ToMeasure", "reportConfigId", "eventId", "a3-Offset", "hysteresis", "timeToTrigger", "reportQuantityCell", "raster frequency", "PCI", "SSB", "detected beams", "RSRP", "RSRQ", "SINR", "SSB index", "filtered cell quality", "CellQualityRsrp", "CellQualityRsrq", "Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining", "MeasurementReport", "measId", "serving PCI", "neighbor PCI"],
-      note: "0xB970 is idle-mode S-criteria evidence. Do not use it as the connected-mode handover main chain.",
-      noteLogcodes: ["0xB970"]
+      fields: ["measObjectId", "ssbFrequency", "smtc1", "ssb-ToMeasure", "reportConfigId", "eventId", "a3-Offset", "hysteresis", "timeToTrigger", "reportQuantityCell", "raster frequency", "PCI", "SSB", "detected beams", "RSRP", "RSRQ", "SINR", "SSB index", "filtered cell quality", "CellQualityRsrp", "CellQualityRsrq", "Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining", "MeasurementReport", "measId", "serving PCI", "neighbor PCI"]
     },
     3: {
       title: "3. Measurement Report",
