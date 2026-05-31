@@ -1,0 +1,58 @@
+{
+  "messages": {
+    "0xb96e-nr5g-ml1-searcher-measurement-config": {
+      "notes": [
+        {
+          "id": "ml1-measurement-config-role",
+          "text": "ML1 measurement configuration evidence. It is the ML1-side view of configured measurement objects, SMTC/SSB timing, report config, and event thresholds from RRC measurement control. Use it with 0xB821 RRCReconfiguration measConfig to confirm what the UE was asked to measure.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    },
+    "0xb96d-nr5g-ml1-searcher-acq-config-and-response": {
+      "notes": [
+        {
+          "id": "ml1-search-acq-role",
+          "text": "Search/acquisition evidence. It shows which configured raster/frequency was searched, which candidate PCI/SSB was detected, and whether basic synchronization/MIB evidence exists. Key fields: Raster List, ARFCN, Band, SCS, Num Cell Detect, Cell Detect List, Phy Cell Id, SSB Index, MIB, SFN, RSRP Raw. Timing: early stage before stable 0xB97F database quality and before the RRC MeasurementReport.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    },
+    "0xb96a-nr5g-ml1-searcher-fw-cell-meas-confirm": {
+      "notes": [
+        {
+          "id": "ml1-raw-measure-role",
+          "text": "Instantaneous ML1 measurement evidence. It records raw/near-raw serving or neighbor cell/beam quality such as PCI, frequency/ARFCN, SSB/beam index, RSRP, RSRQ, and SINR. Timing: usually follows or interleaves with 0xB96D search/acquisition and can feed later filtered database updates.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    },
+    "0xb97f-nr5g-ml1-searcher-measurement-database-update-ext": {
+      "notes": [
+        {
+          "id": "ml1-filtered-db-role",
+          "text": "Filtered measurement database evidence. It stores stable serving/neighbor quality after ML1 processing. Key fields: Serving Cell PCI, Raster Freq, Cells, PCI, CellQualityRsrp, CellQualityRsrq, Detected Beams, SSB Index. Timing: this is the ML1 evidence most directly preceding an Event A3-style RRC MeasurementReport.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    },
+    "0xb96f-nr5g-ml1-searcher-conn-eval": {
+      "notes": [
+        {
+          "id": "ml1-connected-event-eval-role",
+          "text": "Connected-mode event evaluation evidence. It shows whether a configured measurement event has entered or is entering report criteria. Key fields: Meas Id, Cell Id, State, Num Reports Sent, TTT Remaining. Timing: it sits after measured/filtered quality and before the RRC MeasurementReport.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    },
+    "0xb970-nr5g-ml1-searcher-idle-s-criteria": {
+      "notes": [
+        {
+          "id": "ml1-idle-s-criteria-role",
+          "text": "Idle-mode suitability / S-criteria evidence. It is useful for cell selection or reselection analysis, but it is not primary connected-mode handover evidence. Keep it as context rather than part of the main handover measurement-report chain.",
+          "createdAt": "2026-05-31T00:00:00.000Z"
+        }
+      ]
+    }
+  }
+}

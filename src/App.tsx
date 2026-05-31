@@ -1,11 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties, FormEvent } from "react";
-import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel } from "./data";
+import type { CSSProperties } from "react";
+import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel, repositoryFieldNotes, repositoryMessageNotes } from "./data";
 import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepEvidenceItem, StepInfo, ViewName } from "./types";
-
-const messageNotesStorageKey = "handover-logcode-message-notes-v1";
-const fieldNotesStorageKey = "handover-logcode-field-notes-v1";
-const noteDeletePasscode = "985807";
 
 type LogcodeVariantItem = {
   label: string;
@@ -65,27 +61,6 @@ const logcodeGroupNameOverrides: Record<string, string> = {
   "0x1FFB": "Encapsulated Event Report",
   "0xB80A": "MM5G NAS Downlink Message",
   "0xB80B": "MM5G NAS Uplink Message"
-};
-
-const builtInLogcodeNotes: Record<string, string[]> = {
-  "0xB96E": [
-    "ML1 measurement configuration evidence. It is the ML1-side view of configured measurement objects, SMTC/SSB timing, report config, and event thresholds from RRC measurement control. Use it with 0xB821 RRCReconfiguration measConfig to confirm what the UE was asked to measure."
-  ],
-  "0xB96D": [
-    "Search/acquisition evidence. It shows which configured raster/frequency was searched, which candidate PCI/SSB was detected, and whether basic synchronization/MIB evidence exists. Key fields: Raster List, ARFCN, Band, SCS, Num Cell Detect, Cell Detect List, Phy Cell Id, SSB Index, MIB, SFN, RSRP Raw. Timing: early stage before stable 0xB97F database quality and before the RRC MeasurementReport."
-  ],
-  "0xB96A": [
-    "Instantaneous ML1 measurement evidence. It records raw/near-raw serving or neighbor cell/beam quality such as PCI, frequency/ARFCN, SSB/beam index, RSRP, RSRQ, and SINR. Timing: usually follows or interleaves with 0xB96D search/acquisition and can feed later filtered database updates."
-  ],
-  "0xB97F": [
-    "Filtered measurement database evidence. It stores stable serving/neighbor quality after ML1 processing. Key fields: Serving Cell PCI, Raster Freq, Cells, PCI, CellQualityRsrp, CellQualityRsrq, Detected Beams, SSB Index. Timing: this is the ML1 evidence most directly preceding an Event A3-style RRC MeasurementReport."
-  ],
-  "0xB96F": [
-    "Connected-mode event evaluation evidence. It shows whether a configured measurement event has entered or is entering report criteria. Key fields: Meas Id, Cell Id, State, Num Reports Sent, TTT Remaining. Timing: it sits after measured/filtered quality and before the RRC MeasurementReport."
-  ],
-  "0xB970": [
-    "Idle-mode suitability / S-criteria evidence. It is useful for cell selection or reselection analysis, but it is not primary connected-mode handover evidence. Keep it as context rather than part of the main handover measurement-report chain."
-  ]
 };
 
 const networkHandoverTypeTerms = [
@@ -382,27 +357,8 @@ function emptyMessageNoteEntry(): MessageNoteEntry {
   };
 }
 
-function loadStoredNotes(storageKey: string): MessageNotesStore {
-  if (typeof window === "undefined") return {};
-  try {
-    const raw = window.localStorage.getItem(storageKey);
-    if (!raw) return {};
-    return sanitizeMessageNotes(JSON.parse(raw));
-  } catch {
-    return {};
-  }
-}
-
-function loadMessageNotes(): MessageNotesStore {
-  return loadStoredNotes(messageNotesStorageKey);
-}
-
-function loadFieldNotes(): MessageNotesStore {
-  return loadStoredNotes(fieldNotesStorageKey);
-}
-
-function sanitizeMessageNotes(value: unknown): MessageNotesStore {
-  const source = isRecord(value) && isRecord(value.messages) ? value.messages : value;
+function sanitizeNotesStore(value: unknown, wrapperKey?: "messages" | "fields"): MessageNotesStore {
+  const source = wrapperKey && isRecord(value) && isRecord(value[wrapperKey]) ? value[wrapperKey] : value;
   if (!isRecord(source)) return {};
 
   return Object.fromEntries(
@@ -666,67 +622,21 @@ function LogcodeDetail({ record, selectedTerms }: { record: LogcodeRecord; selec
   );
 }
 
-function EditableNotesPanel({
+function NotesPanel({
   targetId,
   targetLabel,
   entry,
-  onAddNote,
-  onDeleteNote,
-  builtInNotes = [],
+  sourcePath,
   ariaLabel = "Notes"
 }: {
   targetId: string;
   targetLabel: string;
   entry: MessageNoteEntry;
-  onAddNote: (targetId: string, text: string) => void;
-  onDeleteNote: (targetId: string, noteId: string) => void;
-  builtInNotes?: string[];
+  sourcePath: string;
   ariaLabel?: string;
 }) {
-  const [noteDraft, setNoteDraft] = useState("");
-  const [pendingDeleteNoteId, setPendingDeleteNoteId] = useState<string | null>(null);
-  const [deletePasscodeDraft, setDeletePasscodeDraft] = useState("");
-  const [deleteError, setDeleteError] = useState("");
-
-  useEffect(() => {
-    setNoteDraft("");
-    setPendingDeleteNoteId(null);
-    setDeletePasscodeDraft("");
-    setDeleteError("");
-  }, [targetId]);
-
-  function submitNote(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const text = noteDraft.trim();
-    if (!text) return;
-    onAddNote(targetId, text);
-    setNoteDraft("");
-  }
-
-  function requestDelete(noteId: string) {
-    setPendingDeleteNoteId(noteId);
-    setDeletePasscodeDraft("");
-    setDeleteError("");
-  }
-
-  function cancelDelete() {
-    setPendingDeleteNoteId(null);
-    setDeletePasscodeDraft("");
-    setDeleteError("");
-  }
-
-  function confirmDelete(event: FormEvent<HTMLFormElement>, noteId: string) {
-    event.preventDefault();
-    if (deletePasscodeDraft !== noteDeletePasscode) {
-      setDeleteError("Wrong passcode.");
-      return;
-    }
-    onDeleteNote(targetId, noteId);
-    cancelDelete();
-  }
-
   return (
-    <section className="message-notes-panel" aria-label={ariaLabel}>
+    <section className="message-notes-panel" aria-label={ariaLabel} data-note-target={targetId}>
       <div className="message-notes-header">
         <div>
           <div className="message-notes-title">Notes</div>
@@ -734,52 +644,17 @@ function EditableNotesPanel({
         </div>
       </div>
 
-      {builtInNotes.length ? (
-        <div className="built-in-note-list" aria-label="Built-in notes">
-          {builtInNotes.map((note, index) => (
-            <div key={index} className="built-in-note-card">
-              {note}
-            </div>
-          ))}
-        </div>
-      ) : null}
-
-      <form className="message-note-form" onSubmit={submitNote}>
-        <label>
-          <span>New note</span>
-          <textarea value={noteDraft} onChange={(event) => setNoteDraft(event.target.value)} placeholder="Add evidence, log pattern, caveat, or explanation" />
-        </label>
-        <button type="submit">Add note</button>
-      </form>
+      <div className="message-notes-source">
+        Stored in <code>{sourcePath}</code>. Edit the JSON in a branch and open a GitHub PR.
+      </div>
 
       <div className="message-note-list">
         {entry.notes.length ? entry.notes.map((note) => (
           <article key={note.id} className="message-note-card">
             <div className="message-note-meta">
               <span>{formatNoteTime(note.createdAt)}</span>
-              <button type="button" onClick={() => requestDelete(note.id)}>Delete</button>
             </div>
             <div className="message-note-text">{note.text}</div>
-            {pendingDeleteNoteId === note.id ? (
-              <form className="note-delete-form" onSubmit={(event) => confirmDelete(event, note.id)}>
-                <label>
-                  <span>Passcode</span>
-                  <input
-                    value={deletePasscodeDraft}
-                    onChange={(event) => {
-                      setDeletePasscodeDraft(event.target.value);
-                      setDeleteError("");
-                    }}
-                    type="password"
-                    inputMode="numeric"
-                    autoFocus
-                  />
-                </label>
-                <button type="submit">Confirm delete</button>
-                <button type="button" onClick={cancelDelete}>Cancel</button>
-                {deleteError ? <span className="note-delete-error">{deleteError}</span> : null}
-              </form>
-            ) : null}
           </article>
         )) : <div className="message-note-empty">No notes yet.</div>}
       </div>
@@ -789,47 +664,36 @@ function EditableNotesPanel({
 
 function MessageNotesPanel({
   record,
-  entry,
-  onAddNote,
-  onDeleteNote
+  entry
 }: {
   record: LogcodeRecord;
   entry: MessageNoteEntry;
-  onAddNote: (messageId: string, text: string) => void;
-  onDeleteNote: (messageId: string, noteId: string) => void;
 }) {
   return (
-    <EditableNotesPanel
+    <NotesPanel
       targetId={record.id}
       targetLabel={recordLabel(record)}
       entry={entry}
-      builtInNotes={builtInLogcodeNotes[record.logcode] || []}
+      sourcePath="data/notes/message_notes.json"
       ariaLabel="Message notes"
-      onAddNote={onAddNote}
-      onDeleteNote={onDeleteNote}
     />
   );
 }
 
 function FieldNotesPanel({
   field,
-  entry,
-  onAddNote,
-  onDeleteNote
+  entry
 }: {
   field: FieldIndexEntry;
   entry: MessageNoteEntry;
-  onAddNote: (fieldId: string, text: string) => void;
-  onDeleteNote: (fieldId: string, noteId: string) => void;
 }) {
   return (
-    <EditableNotesPanel
+    <NotesPanel
       targetId={field.id}
       targetLabel={field.name}
       entry={entry}
+      sourcePath="data/notes/field_notes.json"
       ariaLabel="Field notes"
-      onAddNote={onAddNote}
-      onDeleteNote={onDeleteNote}
     />
   );
 }
@@ -1255,7 +1119,7 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
   const [error, setError] = useState("");
   const [selectedField, setSelectedField] = useState<FieldIndexEntry | null>(null);
   const [query, setQuery] = useState("");
-  const [fieldNotes, setFieldNotes] = useState<MessageNotesStore>(loadFieldNotes);
+  const fieldNotes = useMemo(() => sanitizeNotesStore(repositoryFieldNotes, "fields"), []);
   const normalizedQuery = normalizeForMatch(query);
   const fieldById = useMemo(() => new Map(fields.map((field) => [field.id, field])), [fields]);
   const visibleFields = useMemo(() => {
@@ -1286,48 +1150,6 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
     };
   }, []);
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.localStorage.setItem(fieldNotesStorageKey, JSON.stringify(fieldNotes));
-  }, [fieldNotes]);
-
-  function addFieldNote(fieldId: string, text: string) {
-    setFieldNotes((current) => {
-      const entry = current[fieldId] || emptyMessageNoteEntry();
-      return {
-        ...current,
-        [fieldId]: {
-          ...entry,
-          notes: [
-            ...entry.notes,
-            {
-              id: createNoteId(),
-              author: "",
-              text,
-              createdAt: new Date().toISOString()
-            }
-          ],
-          updatedAt: new Date().toISOString()
-        }
-      };
-    });
-  }
-
-  function deleteFieldNote(fieldId: string, noteId: string) {
-    setFieldNotes((current) => {
-      const entry = current[fieldId];
-      if (!entry) return current;
-      return {
-        ...current,
-        [fieldId]: {
-          ...entry,
-          notes: entry.notes.filter((note) => note.id !== noteId),
-          updatedAt: new Date().toISOString()
-        }
-      };
-    });
-  }
-
   if (status === "loading") {
     return <div className="status-panel">Loading field index...</div>;
   }
@@ -1347,8 +1169,6 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
         <FieldNotesPanel
           field={selectedField}
           entry={fieldNotes[selectedField.id] || emptyMessageNoteEntry()}
-          onAddNote={addFieldNote}
-          onDeleteNote={deleteFieldNote}
         />
         {selectedField.records.map((entry) => {
           const record = logcodeById.get(entry.id);
@@ -1389,7 +1209,7 @@ export function App() {
   const [selectedMessageLayer, setSelectedMessageLayer] = useState<string | null>(null);
   const [selectedLogcodeGroup, setSelectedLogcodeGroup] = useState<string | null>(null);
   const [messageQuery, setMessageQuery] = useState("");
-  const [messageNotes, setMessageNotes] = useState<MessageNotesStore>(loadMessageNotes);
+  const messageNotes = useMemo(() => sanitizeNotesStore(repositoryMessageNotes, "messages"), []);
   const detailLoadSequence = useRef(0);
   const historyRef = useRef<AppHistoryState>({ stack: [initialRoute], index: 0 });
   const [historyState, setHistoryState] = useState<AppHistoryState>(historyRef.current);
@@ -1427,10 +1247,6 @@ export function App() {
       return normalizeForMatch(recordLabel(record)).includes(normalizedQuery);
     });
   }, [messageQuery, selectedGroup]);
-
-  useEffect(() => {
-    window.localStorage.setItem(messageNotesStorageKey, JSON.stringify(messageNotes));
-  }, [messageNotes]);
 
   function setAppHistory(nextHistory: AppHistoryState) {
     historyRef.current = nextHistory;
@@ -1539,43 +1355,6 @@ export function App() {
     navigate({ view: "message", selectedMessageLayer: group.category, selectedLogcodeGroup: group.logcode });
   }
 
-  function addMessageNote(messageId: string, text: string) {
-    setMessageNotes((current) => {
-      const entry = current[messageId] || emptyMessageNoteEntry();
-      return {
-        ...current,
-        [messageId]: {
-          ...entry,
-          notes: [
-            ...entry.notes,
-            {
-              id: createNoteId(),
-              author: "",
-              text,
-              createdAt: new Date().toISOString()
-            }
-          ],
-          updatedAt: new Date().toISOString()
-        }
-      };
-    });
-  }
-
-  function deleteMessageNote(messageId: string, noteId: string) {
-    setMessageNotes((current) => {
-      const entry = current[messageId];
-      if (!entry) return current;
-      return {
-        ...current,
-        [messageId]: {
-          ...entry,
-          notes: entry.notes.filter((note) => note.id !== noteId),
-          updatedAt: new Date().toISOString()
-        }
-      };
-    });
-  }
-
   const historyControls = {
     canGoBack: historyState.index > 0,
     canGoForward: historyState.index < historyState.stack.length - 1,
@@ -1643,8 +1422,6 @@ export function App() {
                     <MessageNotesPanel
                       record={detailRecord}
                       entry={messageNotes[detailRecord.id] || emptyMessageNoteEntry()}
-                      onAddNote={addMessageNote}
-                      onDeleteNote={deleteMessageNote}
                     />
                   ) : null}
                   {detailRecord ? <LogcodeDetail record={detailRecord} selectedTerms={selectedTerms} /> : null}

@@ -50,3 +50,13 @@ To rebuild after adding logcodes or events:
 ```sh
 node scripts/build-indexes.js
 ```
+
+## Notes
+
+Team notes live in `notes/message_notes.json` and `notes/field_notes.json`.
+
+- Message note keys are logcode record ids from `generated/logcode_index.json`.
+- Field note keys are field ids from `generated/field_index.json`.
+- Edit notes in a branch and open a GitHub pull request. The public site is static, so notes entered in the browser are not written back to GitHub.
+
+See `notes/README.md` for examples.

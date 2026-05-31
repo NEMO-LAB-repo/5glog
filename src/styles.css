@@ -318,66 +318,19 @@ button {
   font-weight: 800;
 }
 
-.built-in-note-list {
-  display: grid;
-  gap: 8px;
-}
-
-.built-in-note-card {
-  border-left: 6px solid #000000;
-  border-radius: 4px;
+.message-notes-source {
+  border-left: 5px solid #000000;
   background: #f5f5f5;
-  padding: 9px 11px;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 750;
-  line-height: 1.42;
-}
-
-.message-note-form {
-  display: grid;
-  gap: 10px;
-}
-
-.message-note-form {
-  grid-template-columns: minmax(260px, 1fr) auto;
-  align-items: end;
-}
-
-.message-note-form label {
-  display: grid;
-  gap: 5px;
+  padding: 8px 10px;
+  color: #333333;
   font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.message-notes-source code {
+  color: #a00000;
   font-weight: 900;
-}
-
-.message-note-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  border-radius: 6px;
-  background: #ffffff;
-  color: #000000;
-  padding: 8px 10px;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.message-note-form textarea {
-  min-height: 70px;
-  resize: vertical;
-}
-
-.message-note-form button,
-.message-note-meta button {
-  border: 2px solid #000000;
-  border-radius: 6px;
-  background: #ffffff;
-  color: #000000;
-  padding: 8px 10px;
-  font-weight: 900;
-  cursor: pointer;
 }
 
 .message-note-list {
@@ -401,12 +354,6 @@ button {
   font-weight: 800;
 }
 
-.message-note-meta button {
-  margin-left: auto;
-  padding: 4px 8px;
-  font-size: 12px;
-}
-
 .message-note-text {
   margin-top: 7px;
   white-space: pre-wrap;
@@ -414,53 +361,6 @@ button {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
-}
-
-.note-delete-form {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: minmax(160px, 240px) auto auto 1fr;
-  align-items: end;
-  gap: 8px;
-}
-
-.note-delete-form label {
-  display: grid;
-  gap: 4px;
-  color: #000000;
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.note-delete-form input {
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  border-radius: 6px;
-  background: #ffffff;
-  color: #000000;
-  padding: 6px 8px;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.note-delete-form button {
-  border: 2px solid #000000;
-  border-radius: 6px;
-  background: #ffffff;
-  color: #000000;
-  padding: 6px 8px;
-  font-size: 12px;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-.note-delete-error {
-  align-self: center;
-  color: #d60000;
-  font-size: 12px;
-  font-weight: 900;
 }
 
 .message-note-empty {
@@ -1301,11 +1201,4 @@ button {
     justify-self: start;
   }
 
-  .message-note-form {
-    grid-template-columns: 1fr;
-  }
-
-  .note-delete-form {
-    grid-template-columns: 1fr;
-  }
 }

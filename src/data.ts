@@ -3,12 +3,16 @@ import handoverRaw from "../data/events/handover.json";
 import nrMeasurementEventsRaw from "../data/events/nr_measurement_events.json";
 import logcodeBundleRaw from "../data/generated/logcode_bundle.json";
 import logcodeIndexRaw from "../data/generated/logcode_index.json";
+import repositoryFieldNotesRaw from "../data/notes/field_notes.json";
+import repositoryMessageNotesRaw from "../data/notes/message_notes.json";
 import type { EventDefinition, EventIndexItem, FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventDefinition } from "./types";
 
 export const eventIndex = eventIndexRaw as EventIndexItem[];
 export const handoverEvent = handoverRaw as EventDefinition;
 export const nrMeasurementEvents = nrMeasurementEventsRaw as MeasurementEventDefinition;
 export const logcodeRecords = logcodeIndexRaw as LogcodeSummary[];
+export const repositoryMessageNotes = repositoryMessageNotesRaw as unknown;
+export const repositoryFieldNotes = repositoryFieldNotesRaw as unknown;
 const logcodeBundle = logcodeBundleRaw as LogcodeRecord[];
 
 export const logcodeById = new Map(logcodeRecords.map((record) => [record.id, record]));
