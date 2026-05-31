@@ -25,38 +25,101 @@
     "1": {
       "title": "1. Measurement Configuration",
       "layer": "RRC",
-      "decide": "Network configures what UE should measure; UE may then confirm the configuration was applied.",
-      "logcode": "0xB821 pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration with measConfig. UE confirmation can appear as 0xB821 pdu_type 8 UL-DCCH-Message -> c1 -> rrcReconfigurationComplete for the measurement configuration. Fields: measConfig, measObjectToAddModList, reportConfigToAddModList, measIdToAddModList.",
+      "decide": "DL-DCCH-Message -> c1 -> rrcReconfiguration contains measConfig. This config tells the UE what to measure and when to send MeasurementReport.",
+      "logcode": "0xB821 NR5G RRC OTA Packet. DL-DCCH-Message -> c1 -> rrcReconfiguration contains measConfig. Fields: measObjectToAddModList, reportConfigToAddModList, measIdToAddModList.",
       "logcodes": [
         "0xB821"
       ],
       "fields": [
-        "RRCReconfigurationComplete",
         "DL-DCCH-Message",
-        "UL-DCCH-Message",
-        "dl-dcch",
-        "ul-dcch",
         "rrcReconfiguration",
         "rrcReconfigurationComplete",
         "measConfig",
         "measObjectToAddModList",
         "reportConfigToAddModList",
-        "measIdToAddModList"
+        "measIdToAddModList",
+        "reportConfigId",
+        "reportType",
+        "eventTriggered",
+        "eventId",
+        "eventA1",
+        "eventA2",
+        "eventA3",
+        "eventA4",
+        "eventA5",
+        "eventA6",
+        "a3-Offset",
+        "threshold",
+        "hysteresis",
+        "timeToTrigger",
+        "triggerQuantity",
+        "reportQuantity",
+        "maxReportCells",
+        "reportInterval",
+        "reportAmount",
+        "measId",
+        "measObjectId"
       ],
       "evidence": [
         {
-          "title": "Measurement config",
-          "detail": "pdu_type 4 DL-DCCH-Message -> c1 -> rrcReconfiguration with measConfig.",
+          "title": "Logcode / config location",
+          "detail": "0xB821 NR5G RRC OTA Packet. DL-DCCH-Message -> c1 -> rrcReconfiguration contains measConfig.",
           "logcodes": [
             "0xB821"
           ],
           "fields": [
             "DL-DCCH-Message",
             "rrcReconfiguration",
-            "measConfig",
+            "measConfig"
+          ]
+        },
+        {
+          "title": "Measurement object",
+          "detail": "measObjectToAddModList tells the UE what frequency, cell, or measurement object to measure.",
+          "fields": [
             "measObjectToAddModList",
+            "measObjectId"
+          ]
+        },
+        {
+          "title": "Event trigger config",
+          "detail": "reportConfigToAddModList tells the UE when to send MeasurementReport. Important event fields include reportConfigId, reportType -> eventTriggered, eventId -> eventA1 / eventA2 / eventA3 / eventA4 / eventA5 / eventA6, a3-Offset / threshold / hysteresis / timeToTrigger, triggerQuantity, reportQuantity, maxReportCells, reportInterval, and reportAmount.",
+          "fields": [
             "reportConfigToAddModList",
-            "measIdToAddModList"
+            "MeasurementReport",
+            "reportConfigId",
+            "reportType",
+            "eventTriggered",
+            "eventId",
+            "eventA1",
+            "eventA2",
+            "eventA3",
+            "eventA4",
+            "eventA5",
+            "eventA6",
+            "a3-Offset",
+            "threshold",
+            "hysteresis",
+            "timeToTrigger",
+            "triggerQuantity",
+            "reportQuantity",
+            "maxReportCells",
+            "reportInterval",
+            "reportAmount"
+          ]
+        },
+        {
+          "title": "measId mapping",
+          "detail": "measIdToAddModList links measId to measObjectId and reportConfigId. MeasurementReport usually carries only measId, so resolve measId -> reportConfigId -> eventId to know whether it is Event A3, A5, or another event.",
+          "fields": [
+            "measIdToAddModList",
+            "MeasurementReport",
+            "measId",
+            "measObjectId",
+            "reportConfigId",
+            "eventId",
+            "eventA3",
+            "eventA5"
           ]
         },
         {
@@ -71,6 +134,15 @@
             "rrc-TransactionIdentifier"
           ]
         }
+      ],
+      "note": "Event decision comes from reportConfigToAddModList, not from MeasurementReport alone. Example: measId 7 -> reportConfigId 1 -> eventId eventA3.",
+      "noteFields": [
+        "reportConfigToAddModList",
+        "MeasurementReport",
+        "measId",
+        "reportConfigId",
+        "eventId",
+        "eventA3"
       ]
     },
     "2": {
