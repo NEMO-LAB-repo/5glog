@@ -810,6 +810,7 @@ button {
 }
 
 .measurement-relation {
+  position: relative;
   margin-top: 12px;
   border: 2px solid #000000;
   border-radius: 6px;
@@ -914,24 +915,70 @@ button {
   font-weight: 900;
 }
 
-.measurement-step-detail {
-  margin-top: 10px;
+.measurement-substep-popup {
+  position: absolute;
+  top: 48px;
+  right: 18px;
+  z-index: 4;
+  box-sizing: border-box;
+  width: min(440px, calc(100% - 36px));
   border: 2px solid #000000;
   border-radius: 6px;
-  padding: 10px;
-  background: #f7f7f7;
+  background: #ffffff;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.18);
+  padding: 12px 14px 14px;
 }
 
-.measurement-step-detail-heading {
+.measurement-substep-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: #ffffff;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.measurement-substep-title {
+  margin-right: 28px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.measurement-substep-text {
+  margin-top: 8px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.measurement-substep-fields {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 16px;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 9px;
+}
+
+.measurement-substep-field {
+  border: 1px solid #d60000;
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: #d60000;
+  background: #fffafa;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
   font-weight: 900;
 }
 
-.measurement-step-detail-link {
+.measurement-substep-open {
+  margin-top: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
   background: #ffffff;
@@ -939,31 +986,6 @@ button {
   font-size: 12px;
   font-weight: 900;
   cursor: pointer;
-}
-
-.measurement-step-detail-text {
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.35;
-  font-weight: 700;
-}
-
-.measurement-step-detail-fields {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 9px;
-}
-
-.measurement-step-detail-field {
-  border: 1px solid #d60000;
-  border-radius: 4px;
-  padding: 2px 5px;
-  color: #d60000;
-  background: #ffffff;
-  font-family: "Courier New", monospace;
-  font-size: 12px;
-  font-weight: 900;
 }
 
 .measurement-relation-flow {

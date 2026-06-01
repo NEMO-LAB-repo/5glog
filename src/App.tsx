@@ -1035,8 +1035,10 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       fields: measurementRelationNodes[4].fields
     }
   ];
-  const [selectedSequenceKey, setSelectedSequenceKey] = useState(sequenceItems[0].key);
-  const selectedSequenceItem = sequenceItems.find((item) => item.key === selectedSequenceKey) || sequenceItems[0];
+  const [activeSequenceKey, setActiveSequenceKey] = useState<string | null>(null);
+  const activeSequenceItem = activeSequenceKey
+    ? sequenceItems.find((item) => item.key === activeSequenceKey) || null
+    : null;
 
   function messagePath(item: (typeof sequenceItems)[number]) {
     const height = 48;
@@ -1057,8 +1059,12 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
     return item.x1 + headOffset + item.tagWidth / 2;
   }
 
-  function selectSequenceItem(item: (typeof sequenceItems)[number]) {
-    setSelectedSequenceKey(item.key);
+  function openSequenceItem(item: (typeof sequenceItems)[number]) {
+    setActiveSequenceKey(item.key);
+  }
+
+  function closeSequencePopup() {
+    setActiveSequenceKey(null);
   }
 
   return (
@@ -1088,14 +1094,14 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           return (
             <g
               key={item.key}
-              className={`measurement-sequence-message ${item.key === selectedSequenceItem.key ? "is-selected" : ""}`}
+              className={`measurement-sequence-message ${item.key === activeSequenceItem?.key ? "is-selected" : ""}`}
               role="button"
               tabIndex={0}
-              onClick={() => selectSequenceItem(item)}
+              onClick={() => openSequenceItem(item)}
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.key === " ") {
                   event.preventDefault();
-                  selectSequenceItem(item);
+                  openSequenceItem(item);
                 }
               }}
             >
@@ -1108,20 +1114,23 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           );
         })}
       </svg>
-      <div className="measurement-step-detail">
-        <div className="measurement-step-detail-heading">
-          <span>{selectedSequenceItem.codeText} {selectedSequenceItem.label}</span>
-          <button className="measurement-step-detail-link" type="button" onClick={() => onOpenLogcode(selectedSequenceItem.code, selectedSequenceItem.fields)}>
+      {activeSequenceItem ? (
+        <div className="measurement-substep-popup" role="dialog" aria-label={`${activeSequenceItem.codeText} ${activeSequenceItem.label}`}>
+          <button className="measurement-substep-close" type="button" onClick={closeSequencePopup} aria-label="Close substep detail">x</button>
+          <div className="measurement-substep-title">
+            {activeSequenceItem.codeText} {activeSequenceItem.label}
+          </div>
+          <div className="measurement-substep-text">{activeSequenceItem.description}</div>
+          <div className="measurement-substep-fields">
+            {activeSequenceItem.fields.slice(0, 8).map((field) => (
+              <span className="measurement-substep-field" key={field}>{field}</span>
+            ))}
+          </div>
+          <button className="measurement-substep-open" type="button" onClick={() => onOpenLogcode(activeSequenceItem.code, activeSequenceItem.fields)}>
             Open logcode structure
           </button>
         </div>
-        <div className="measurement-step-detail-text">{selectedSequenceItem.description}</div>
-        <div className="measurement-step-detail-fields">
-          {selectedSequenceItem.fields.slice(0, 8).map((field) => (
-            <span className="measurement-step-detail-field" key={field}>{field}</span>
-          ))}
-        </div>
-      </div>
+      ) : null}
       <div className="measurement-relation-note">
         Logical order, not a strict one-time sequence. These logs can repeat and interleave across frequencies, PCIs, and SSB beams before the RRC MeasurementReport.
       </div>
