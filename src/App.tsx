@@ -1141,9 +1141,9 @@ const legacyStepShapes: LegacyStepShape[] = [
     stepNumber: "7",
     tail: "M 720 792 L 760 792",
     body: "M 760 770 L 1342 770 L 1390 792 L 1342 814 L 760 814 Z",
-    divider: { x1: 888, y1: 770, x2: 888, y2: 814 },
-    tag: { x: 824, y: 800, text: "ML1/MAC" },
-    message: { x: 912, y: 801 }
+    divider: { x1: 930, y1: 770, x2: 930, y2: 814 },
+    tag: { x: 845, y: 800, text: "UE internal" },
+    message: { x: 954, y: 801 }
   },
   {
     stepNumber: "8",
@@ -1161,11 +1161,10 @@ const legacyStepShapes: LegacyStepShape[] = [
   },
   {
     stepNumber: "10",
-    tail: "M 720 1010 L 840 1010",
-    body: "M 840 988 L 1832 988 L 1880 1010 L 1832 1032 L 840 1032 Z",
-    divider: { x1: 924, y1: 988, x2: 924, y2: 1032 },
-    tag: { x: 882, y: 1018 },
-    message: { x: 948, y: 1019 }
+    body: "M 720 988 L 1832 988 L 1880 1010 L 1832 1032 L 720 1032 Z",
+    divider: { x1: 804, y1: 988, x2: 804, y2: 1032 },
+    tag: { x: 762, y: 1018 },
+    message: { x: 828, y: 1019 }
   },
   {
     stepNumber: "11",
