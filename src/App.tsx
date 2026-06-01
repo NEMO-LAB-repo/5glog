@@ -919,6 +919,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "measConfig",
       detail: "Air-interface RRC message from network",
+      description: "Source gNB sends an RRCReconfiguration that carries measConfig. This tells UE RRC what objects, frequencies, SSB beams, and event rules should be measured.",
       fields: measurementConfigInput.fields
     },
     {
@@ -934,6 +935,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "ML1 meas config",
       detail: "UE internal config; not network signaling",
+      description: "UE RRC hands the measurement configuration to UE ML1. This is an internal UE-side configuration log, not a message sent by the network.",
       fields: measurementMl1ConfigInput.fields
     },
     {
@@ -949,6 +951,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: measurementRelationNodes[0].label,
       detail: measurementRelationNodes[0].text,
+      description: "UE ML1 searches and acquires configured NR frequencies and SSB beams to find serving and neighbor cells. This is radio observation evidence, not protocol signaling.",
       fields: measurementRelationNodes[0].fields
     },
     {
@@ -964,6 +967,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "Raw Measure",
       detail: measurementRelationNodes[1].text,
+      description: "UE ML1 records raw cell measurements such as PCI, SSB index, RSRP, RSRQ, and SINR. These values are close to the radio measurement source.",
       fields: measurementRelationNodes[1].fields
     },
     {
@@ -979,6 +983,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "Filtered DB",
       detail: measurementRelationNodes[2].text,
+      description: "UE ML1 updates its measurement database with filtered or stabilized cell quality values. This is the evidence used before event evaluation.",
       fields: measurementRelationNodes[2].fields
     },
     {
@@ -994,6 +999,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "Conn Eval",
       detail: "State, TTT Remaining, Num Reports Sent",
+      description: "UE ML1 evaluates the configured connected-mode event condition and time-to-trigger. Key evidence is State, Meas Id, Cell Id, TTT Remaining, and Num Reports Sent.",
       fields: measurementRelationNodes[3].fields
     },
     {
@@ -1009,6 +1015,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "Report trigger",
       detail: "State==ENTERED or TTT=0 + report sent",
+      description: "When the event condition is entered and TTT expires, ML1 provides evidence that an RRC MeasurementReport should be triggered.",
       fields: measurementRelationNodes[3].fields
     },
     {
@@ -1024,9 +1031,12 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "MeasReport",
       detail: measurementRelationNodes[4].text,
+      description: "UE RRC sends the final MeasurementReport to the source gNB. The report usually carries measId and cell quality results; resolve measId through the earlier measConfig to know the event type.",
       fields: measurementRelationNodes[4].fields
     }
   ];
+  const [selectedSequenceKey, setSelectedSequenceKey] = useState(sequenceItems[0].key);
+  const selectedSequenceItem = sequenceItems.find((item) => item.key === selectedSequenceKey) || sequenceItems[0];
 
   function messagePath(item: (typeof sequenceItems)[number]) {
     const height = 48;
@@ -1047,8 +1057,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
     return item.x1 + headOffset + item.tagWidth / 2;
   }
 
-  function openSequenceItem(item: (typeof sequenceItems)[number]) {
-    onOpenLogcode(item.code, item.fields);
+  function selectSequenceItem(item: (typeof sequenceItems)[number]) {
+    setSelectedSequenceKey(item.key);
   }
 
   return (
@@ -1078,12 +1088,15 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           return (
             <g
               key={item.key}
-              className="measurement-sequence-message"
+              className={`measurement-sequence-message ${item.key === selectedSequenceItem.key ? "is-selected" : ""}`}
               role="button"
               tabIndex={0}
-              onClick={() => openSequenceItem(item)}
+              onClick={() => selectSequenceItem(item)}
               onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") openSequenceItem(item);
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  selectSequenceItem(item);
+                }
               }}
             >
               <path d={messagePath(item)} className="measurement-sequence-body" />
@@ -1095,6 +1108,20 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           );
         })}
       </svg>
+      <div className="measurement-step-detail">
+        <div className="measurement-step-detail-heading">
+          <span>{selectedSequenceItem.codeText} {selectedSequenceItem.label}</span>
+          <button className="measurement-step-detail-link" type="button" onClick={() => onOpenLogcode(selectedSequenceItem.code, selectedSequenceItem.fields)}>
+            Open logcode structure
+          </button>
+        </div>
+        <div className="measurement-step-detail-text">{selectedSequenceItem.description}</div>
+        <div className="measurement-step-detail-fields">
+          {selectedSequenceItem.fields.slice(0, 8).map((field) => (
+            <span className="measurement-step-detail-field" key={field}>{field}</span>
+          ))}
+        </div>
+      </div>
       <div className="measurement-relation-note">
         Logical order, not a strict one-time sequence. These logs can repeat and interleave across frequencies, PCIs, and SSB beams before the RRC MeasurementReport.
       </div>
