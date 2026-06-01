@@ -890,21 +890,86 @@ function PopupText({
 }
 
 function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const nodeWidth = 210;
+  const nodeHeight = 78;
+  const nodePositions = [
+    { x: 80, y: 78 },
+    { x: 380, y: 78 },
+    { x: 680, y: 78 },
+    { x: 680, y: 240 },
+    { x: 380, y: 240 },
+    { x: 80, y: 240 }
+  ];
+  const nodeByIndex = (index: number) => ({
+    ...measurementRelationNodes[index],
+    ...nodePositions[index]
+  });
+  const configNode = nodeByIndex(0);
+  const searchNode = nodeByIndex(1);
+  const rawNode = nodeByIndex(2);
+  const filteredNode = nodeByIndex(3);
+  const evalNode = nodeByIndex(4);
+  const reportNode = nodeByIndex(5);
+
+  function centerX(node: { x: number }) {
+    return node.x + nodeWidth / 2;
+  }
+
+  function centerY(node: { y: number }) {
+    return node.y + nodeHeight / 2;
+  }
+
+  function openNode(node: (typeof measurementRelationNodes)[number]) {
+    onOpenLogcode(node.code, node.fields);
+  }
+
   return (
     <div className="measurement-relation">
-      <div className="measurement-relation-title">Measurement log time relationship</div>
-      <div className="measurement-relation-flow">
-        {measurementRelationNodes.map((node, index) => (
-          <div key={node.code} className="measurement-relation-step">
-            <button className="measurement-node" type="button" onClick={() => onOpenLogcode(node.code, node.fields)}>
-              <span className="measurement-node-code">{node.codeLabel || node.code}</span>
-              <span className="measurement-node-label">{node.label}</span>
-              <span className="measurement-node-text">{node.text}</span>
-            </button>
-            {index < measurementRelationNodes.length - 1 ? <span className="measurement-arrow" aria-hidden="true" /> : null}
-          </div>
-        ))}
-      </div>
+      <div className="measurement-relation-title">Measurement flowchart</div>
+      <svg className="measurement-flowchart" viewBox="0 0 960 380" role="img" aria-label="Measurement log flowchart">
+        <defs>
+          <marker id="measurement-flow-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" />
+          </marker>
+        </defs>
+
+        <rect x="24" y="28" width="912" height="314" rx="8" className="measurement-flow-frame" />
+        <text x="48" y="58" className="measurement-flow-lane">RRC config / report</text>
+        <text x="378" y="58" className="measurement-flow-lane">ML1 search, measure, filter, evaluate</text>
+
+        <line x1={configNode.x + nodeWidth} y1={centerY(configNode)} x2={searchNode.x} y2={centerY(searchNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <line x1={searchNode.x + nodeWidth} y1={centerY(searchNode)} x2={rawNode.x} y2={centerY(rawNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <line x1={centerX(rawNode)} y1={rawNode.y + nodeHeight} x2={centerX(filteredNode)} y2={filteredNode.y} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <line x1={filteredNode.x} y1={centerY(filteredNode)} x2={evalNode.x + nodeWidth} y2={centerY(evalNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <line x1={evalNode.x} y1={centerY(evalNode)} x2={reportNode.x + nodeWidth} y2={centerY(reportNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <path d={`M ${centerX(evalNode)} ${evalNode.y} C ${centerX(evalNode)} 212 ${centerX(searchNode)} 190 ${centerX(searchNode)} ${searchNode.y + nodeHeight}`} className="measurement-flow-arrow is-dashed" markerEnd="url(#measurement-flow-arrowhead)" />
+        <text x="502" y="200" className="measurement-flow-loop">if not met, keep measuring</text>
+        <text x="302" y="270" className="measurement-flow-loop">event + TTT passed</text>
+
+        {measurementRelationNodes.map((node, index) => {
+          const position = nodePositions[index];
+          return (
+            <g
+              key={node.code}
+              className="measurement-flow-node"
+              role="button"
+              tabIndex={0}
+              transform={`translate(${position.x} ${position.y})`}
+              onClick={() => openNode(node)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") openNode(node);
+              }}
+            >
+              <rect width={nodeWidth} height={nodeHeight} rx="7" />
+              <circle cx="22" cy="22" r="12" />
+              <text x="22" y="27" className="measurement-flow-index" textAnchor="middle">{index + 1}</text>
+              <text x="44" y="27" className="measurement-flow-code">{node.codeLabel || node.code}</text>
+              <text x="16" y="52" className="measurement-flow-label">{node.label}</text>
+              <text x="16" y="70" className="measurement-flow-text">{node.text}</text>
+            </g>
+          );
+        })}
+      </svg>
       <div className="measurement-relation-note">
         Logical order, not a strict one-time sequence. These logs can repeat and interleave across frequencies, PCIs, and SSB beams before the RRC MeasurementReport.
       </div>
@@ -961,7 +1026,7 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
   const hasEvidence = Boolean(step.evidence?.length);
 
   return (
-    <div className="popup open react-popup" role="dialog">
+    <div className={`popup open react-popup ${isMeasurementRelationStep ? "measurement-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
