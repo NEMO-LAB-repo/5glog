@@ -40,6 +40,8 @@ type AppHistoryState = {
 };
 
 const initialRoute: AppRoute = { view: "home" };
+const localMessageNotesStorageKey = "5glog.localMessageNotes.v1";
+const localFieldNotesStorageKey = "5glog.localFieldNotes.v1";
 
 function normalizeRoute(route: AppRoute): AppRoute {
   if (route.view !== "message") return { view: route.view };
@@ -407,6 +409,58 @@ function noteCountLabel(entry?: MessageNoteEntry): string {
   return `${entry.notes.length} note${entry.notes.length === 1 ? "" : "s"}`;
 }
 
+function readLocalNotesStore(storageKey: string): MessageNotesStore {
+  if (typeof window === "undefined") return {};
+  try {
+    const rawValue = window.localStorage.getItem(storageKey);
+    if (!rawValue) return {};
+    return sanitizeNotesStore(JSON.parse(rawValue));
+  } catch {
+    return {};
+  }
+}
+
+function writeLocalNotesStore(storageKey: string, notes: MessageNotesStore) {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(storageKey, JSON.stringify(notes, null, 2));
+}
+
+function mergeNotesStores(repositoryNotes: MessageNotesStore, localNotes: MessageNotesStore): MessageNotesStore {
+  const targetIds = new Set([...Object.keys(repositoryNotes), ...Object.keys(localNotes)]);
+  return Object.fromEntries([...targetIds].map((targetId) => {
+    const repositoryEntry = repositoryNotes[targetId] || emptyMessageNoteEntry();
+    const localEntry = localNotes[targetId] || emptyMessageNoteEntry();
+    return [targetId, {
+      description: "",
+      notes: [...repositoryEntry.notes, ...localEntry.notes],
+      updatedAt: localEntry.updatedAt || repositoryEntry.updatedAt
+    }];
+  }));
+}
+
+function appendLocalNote(notes: MessageNotesStore, targetId: string, text: string): MessageNotesStore {
+  const trimmedText = text.trim();
+  if (!trimmedText) return notes;
+  const existingEntry = notes[targetId] || emptyMessageNoteEntry();
+  const createdAt = new Date().toISOString();
+  return {
+    ...notes,
+    [targetId]: {
+      description: "",
+      notes: [
+        ...existingEntry.notes,
+        {
+          id: createNoteId(),
+          author: "",
+          text: trimmedText,
+          createdAt
+        }
+      ],
+      updatedAt: createdAt
+    }
+  };
+}
+
 function formatNoteTime(value: string): string {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
@@ -627,14 +681,25 @@ function NotesPanel({
   targetLabel,
   entry,
   sourcePath,
+  onAddNote,
   ariaLabel = "Notes"
 }: {
   targetId: string;
   targetLabel: string;
   entry: MessageNoteEntry;
   sourcePath: string;
+  onAddNote: (targetId: string, text: string) => void;
   ariaLabel?: string;
 }) {
+  const [draftNote, setDraftNote] = useState("");
+  const trimmedDraft = draftNote.trim();
+
+  function submitNote() {
+    if (!trimmedDraft) return;
+    onAddNote(targetId, trimmedDraft);
+    setDraftNote("");
+  }
+
   return (
     <section className="message-notes-panel" aria-label={ariaLabel} data-note-target={targetId}>
       <div className="message-notes-header">
@@ -645,7 +710,20 @@ function NotesPanel({
       </div>
 
       <div className="message-notes-source">
-        Stored in <code>{sourcePath}</code>. Edit the JSON in a branch and open a GitHub PR.
+        Team notes are stored in <code>{sourcePath}</code>. Notes added here are saved in this browser.
+      </div>
+
+      <div className="message-note-form">
+        <label>
+          <span>New note</span>
+          <textarea
+            value={draftNote}
+            onChange={(event) => setDraftNote(event.target.value)}
+            placeholder="Add evidence, log pattern, caveat, or explanation"
+            rows={3}
+          />
+        </label>
+        <button type="button" onClick={submitNote} disabled={!trimmedDraft}>Add note</button>
       </div>
 
       <div className="message-note-list">
@@ -664,10 +742,12 @@ function NotesPanel({
 
 function MessageNotesPanel({
   record,
-  entry
+  entry,
+  onAddNote
 }: {
   record: LogcodeRecord;
   entry: MessageNoteEntry;
+  onAddNote: (targetId: string, text: string) => void;
 }) {
   return (
     <NotesPanel
@@ -675,6 +755,7 @@ function MessageNotesPanel({
       targetLabel={recordLabel(record)}
       entry={entry}
       sourcePath="data/notes/message_notes.json"
+      onAddNote={onAddNote}
       ariaLabel="Message notes"
     />
   );
@@ -682,10 +763,12 @@ function MessageNotesPanel({
 
 function FieldNotesPanel({
   field,
-  entry
+  entry,
+  onAddNote
 }: {
   field: FieldIndexEntry;
   entry: MessageNoteEntry;
+  onAddNote: (targetId: string, text: string) => void;
 }) {
   return (
     <NotesPanel
@@ -693,6 +776,7 @@ function FieldNotesPanel({
       targetLabel={field.name}
       entry={entry}
       sourcePath="data/notes/field_notes.json"
+      onAddNote={onAddNote}
       ariaLabel="Field notes"
     />
   );
@@ -1113,13 +1197,20 @@ function HandoverDiagram({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef
   );
 }
 
-function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void }) {
+function FieldIndexView({
+  fieldNotes,
+  onAddFieldNote,
+  onOpenLogcode
+}: {
+  fieldNotes: MessageNotesStore;
+  onAddFieldNote: (targetId: string, text: string) => void;
+  onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void;
+}) {
   const [fields, setFields] = useState<FieldIndexEntry[]>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [error, setError] = useState("");
   const [selectedField, setSelectedField] = useState<FieldIndexEntry | null>(null);
   const [query, setQuery] = useState("");
-  const fieldNotes = useMemo(() => sanitizeNotesStore(repositoryFieldNotes, "fields"), []);
   const normalizedQuery = normalizeForMatch(query);
   const fieldById = useMemo(() => new Map(fields.map((field) => [field.id, field])), [fields]);
   const visibleFields = useMemo(() => {
@@ -1169,6 +1260,7 @@ function FieldIndexView({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef,
         <FieldNotesPanel
           field={selectedField}
           entry={fieldNotes[selectedField.id] || emptyMessageNoteEntry()}
+          onAddNote={onAddFieldNote}
         />
         {selectedField.records.map((entry) => {
           const record = logcodeById.get(entry.id);
@@ -1209,7 +1301,12 @@ export function App() {
   const [selectedMessageLayer, setSelectedMessageLayer] = useState<string | null>(null);
   const [selectedLogcodeGroup, setSelectedLogcodeGroup] = useState<string | null>(null);
   const [messageQuery, setMessageQuery] = useState("");
-  const messageNotes = useMemo(() => sanitizeNotesStore(repositoryMessageNotes, "messages"), []);
+  const repositoryMessageNotesStore = useMemo(() => sanitizeNotesStore(repositoryMessageNotes, "messages"), []);
+  const repositoryFieldNotesStore = useMemo(() => sanitizeNotesStore(repositoryFieldNotes, "fields"), []);
+  const [localMessageNotes, setLocalMessageNotes] = useState<MessageNotesStore>(() => readLocalNotesStore(localMessageNotesStorageKey));
+  const [localFieldNotes, setLocalFieldNotes] = useState<MessageNotesStore>(() => readLocalNotesStore(localFieldNotesStorageKey));
+  const messageNotes = useMemo(() => mergeNotesStores(repositoryMessageNotesStore, localMessageNotes), [repositoryMessageNotesStore, localMessageNotes]);
+  const fieldNotes = useMemo(() => mergeNotesStores(repositoryFieldNotesStore, localFieldNotes), [repositoryFieldNotesStore, localFieldNotes]);
   const detailLoadSequence = useRef(0);
   const historyRef = useRef<AppHistoryState>({ stack: [initialRoute], index: 0 });
   const [historyState, setHistoryState] = useState<AppHistoryState>(historyRef.current);
@@ -1247,6 +1344,22 @@ export function App() {
       return normalizeForMatch(recordLabel(record)).includes(normalizedQuery);
     });
   }, [messageQuery, selectedGroup]);
+
+  useEffect(() => {
+    writeLocalNotesStore(localMessageNotesStorageKey, localMessageNotes);
+  }, [localMessageNotes]);
+
+  useEffect(() => {
+    writeLocalNotesStore(localFieldNotesStorageKey, localFieldNotes);
+  }, [localFieldNotes]);
+
+  function addMessageNote(targetId: string, text: string) {
+    setLocalMessageNotes((currentNotes) => appendLocalNote(currentNotes, targetId, text));
+  }
+
+  function addFieldNote(targetId: string, text: string) {
+    setLocalFieldNotes((currentNotes) => appendLocalNote(currentNotes, targetId, text));
+  }
 
   function setAppHistory(nextHistory: AppHistoryState) {
     historyRef.current = nextHistory;
@@ -1422,6 +1535,7 @@ export function App() {
                     <MessageNotesPanel
                       record={detailRecord}
                       entry={messageNotes[detailRecord.id] || emptyMessageNoteEntry()}
+                      onAddNote={addMessageNote}
                     />
                   ) : null}
                   {detailRecord ? <LogcodeDetail record={detailRecord} selectedTerms={selectedTerms} /> : null}
@@ -1490,7 +1604,7 @@ export function App() {
           <div className="explorer-grid">
             <section className="explorer-column">
               <h2 className="column-title">Field</h2>
-              <FieldIndexView onOpenLogcode={openDetail} />
+              <FieldIndexView fieldNotes={fieldNotes} onAddFieldNote={addFieldNote} onOpenLogcode={openDetail} />
             </section>
           </div>
         </section>
