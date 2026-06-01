@@ -72,7 +72,7 @@
     "2": {
       "title": "2. Search / Measure",
       "layer": "ML1 / RRC measurement control",
-      "decide": "ML1 follows RRC measurement config, searches/acquires cells, measures quality, filters results, evaluates event/TTT, then RRC sends MeasurementReport.",
+      "decide": "Step 1 delivers the RRC measConfig to UE RRC. Then RRC measurement control gives those rules to ML1; ML1 searches/acquires cells, measures quality, filters results, evaluates event/TTT, then RRC sends MeasurementReport.",
       "logcode": "See the relationship diagram below. Click each logcode box to open its structure.",
       "logcodes": [
         "0xB821",

@@ -181,14 +181,15 @@ const logcodeVariantSections: Record<string, LogcodeVariantSection[]> = {
   ]
 };
 
+const measurementConfigInput = {
+  code: "0xB821",
+  codeLabel: "Step 1: 0xB821 / 0xB96E",
+  label: "measConfig input",
+  text: "RRC rules for ML1",
+  fields: ["measConfig", "measObjectId", "ssbFrequency", "smtc1", "reportConfigId", "eventId", "a3-Offset", "timeToTrigger"]
+};
+
 const measurementRelationNodes = [
-  {
-    code: "0xB96E",
-    codeLabel: "0xB821 / 0xB96E",
-    label: "Config",
-    text: "measObject, SMTC, event rules",
-    fields: ["measConfig", "measObjectId", "ssbFrequency", "smtc1", "reportConfigId", "eventId", "a3-Offset", "timeToTrigger"]
-  },
   {
     code: "0xB96D",
     label: "Search / ACQ",
@@ -890,26 +891,25 @@ function PopupText({
 }
 
 function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const nodeWidth = 210;
+  const nodeWidth = 220;
   const nodeHeight = 78;
   const nodePositions = [
-    { x: 80, y: 78 },
-    { x: 380, y: 78 },
-    { x: 680, y: 78 },
-    { x: 680, y: 240 },
-    { x: 380, y: 240 },
-    { x: 80, y: 240 }
+    { x: 48, y: 112 },
+    { x: 370, y: 112 },
+    { x: 692, y: 112 },
+    { x: 692, y: 250 },
+    { x: 370, y: 250 }
   ];
+  const configInput = { x: 48, y: 34, width: 360, height: 50 };
   const nodeByIndex = (index: number) => ({
     ...measurementRelationNodes[index],
     ...nodePositions[index]
   });
-  const configNode = nodeByIndex(0);
-  const searchNode = nodeByIndex(1);
-  const rawNode = nodeByIndex(2);
-  const filteredNode = nodeByIndex(3);
-  const evalNode = nodeByIndex(4);
-  const reportNode = nodeByIndex(5);
+  const searchNode = nodeByIndex(0);
+  const rawNode = nodeByIndex(1);
+  const filteredNode = nodeByIndex(2);
+  const evalNode = nodeByIndex(3);
+  const reportNode = nodeByIndex(4);
 
   function centerX(node: { x: number }) {
     return node.x + nodeWidth / 2;
@@ -934,20 +934,35 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         </defs>
 
         <rect x="24" y="28" width="912" height="314" rx="8" className="measurement-flow-frame" />
-        <text x="48" y="58" className="measurement-flow-lane">RRC config / report</text>
-        <text x="378" y="58" className="measurement-flow-lane">ML1 search, measure, filter, evaluate</text>
+        <text x="48" y="26" className="measurement-flow-lane">Step 2 uses the measConfig already delivered in Step 1</text>
 
-        <line x1={configNode.x + nodeWidth} y1={centerY(configNode)} x2={searchNode.x} y2={centerY(searchNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <g
+          className="measurement-flow-input"
+          role="button"
+          tabIndex={0}
+          transform={`translate(${configInput.x} ${configInput.y})`}
+          onClick={() => onOpenLogcode(measurementConfigInput.code, measurementConfigInput.fields)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") onOpenLogcode(measurementConfigInput.code, measurementConfigInput.fields);
+          }}
+        >
+          <rect width={configInput.width} height={configInput.height} rx="7" />
+          <text x="16" y="22" className="measurement-flow-code">{measurementConfigInput.codeLabel}</text>
+          <text x="16" y="40" className="measurement-flow-text">{measurementConfigInput.label}: {measurementConfigInput.text}</text>
+        </g>
+
+        <line x1={configInput.x + 120} y1={configInput.y + configInput.height} x2={centerX(searchNode)} y2={searchNode.y} className="measurement-flow-arrow is-input" markerEnd="url(#measurement-flow-arrowhead)" />
         <line x1={searchNode.x + nodeWidth} y1={centerY(searchNode)} x2={rawNode.x} y2={centerY(rawNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <line x1={centerX(rawNode)} y1={rawNode.y + nodeHeight} x2={centerX(filteredNode)} y2={filteredNode.y} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <line x1={filteredNode.x} y1={centerY(filteredNode)} x2={evalNode.x + nodeWidth} y2={centerY(evalNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <line x1={rawNode.x + nodeWidth} y1={centerY(rawNode)} x2={filteredNode.x} y2={centerY(filteredNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
+        <path d={`M ${centerX(filteredNode)} ${filteredNode.y + nodeHeight} L ${centerX(filteredNode)} 220 L ${centerX(evalNode)} 220 L ${centerX(evalNode)} ${evalNode.y}`} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
         <line x1={evalNode.x} y1={centerY(evalNode)} x2={reportNode.x + nodeWidth} y2={centerY(reportNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <path d={`M ${centerX(evalNode)} ${evalNode.y} C ${centerX(evalNode)} 212 ${centerX(searchNode)} 190 ${centerX(searchNode)} ${searchNode.y + nodeHeight}`} className="measurement-flow-arrow is-dashed" markerEnd="url(#measurement-flow-arrowhead)" />
-        <text x="502" y="200" className="measurement-flow-loop">if not met, keep measuring</text>
-        <text x="302" y="270" className="measurement-flow-loop">event + TTT passed</text>
+        <path d={`M ${evalNode.x + 20} ${evalNode.y} C 540 214 220 214 ${centerX(searchNode)} ${searchNode.y + nodeHeight}`} className="measurement-flow-arrow is-dashed" markerEnd="url(#measurement-flow-arrowhead)" />
+        <text x="260" y="214" className="measurement-flow-loop">if event/TTT not met, keep measuring</text>
+        <text x="575" y="294" className="measurement-flow-loop">event + TTT passed</text>
 
         {measurementRelationNodes.map((node, index) => {
           const position = nodePositions[index];
+          const codeLabel = "codeLabel" in node && typeof node.codeLabel === "string" ? node.codeLabel : node.code;
           return (
             <g
               key={node.code}
@@ -962,8 +977,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
             >
               <rect width={nodeWidth} height={nodeHeight} rx="7" />
               <circle cx="22" cy="22" r="12" />
-              <text x="22" y="27" className="measurement-flow-index" textAnchor="middle">{index + 1}</text>
-              <text x="44" y="27" className="measurement-flow-code">{node.codeLabel || node.code}</text>
+              <text x="22" y="27" className="measurement-flow-index" textAnchor="middle">{index + 2}</text>
+              <text x="44" y="27" className="measurement-flow-code">{codeLabel}</text>
               <text x="16" y="52" className="measurement-flow-label">{node.label}</text>
               <text x="16" y="70" className="measurement-flow-text">{node.text}</text>
             </g>
@@ -1088,9 +1103,9 @@ const legacyStepShapes: LegacyStepShape[] = [
   {
     stepNumber: "2",
     body: "M 700 410 L 1072 410 L 1120 432 L 1072 454 L 700 454 Z",
-    divider: { x1: 784, y1: 410, x2: 784, y2: 454 },
-    tag: { x: 742, y: 440, text: "ML1" },
-    message: { x: 808, y: 441 }
+    divider: { x1: 850, y1: 410, x2: 850, y2: 454 },
+    tag: { x: 775, y: 440, text: "RRC->ML1" },
+    message: { x: 872, y: 441, small: true }
   },
   {
     stepNumber: "3",

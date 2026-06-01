@@ -853,6 +853,10 @@ button {
   stroke-width: 3;
 }
 
+.measurement-flow-arrow.is-input {
+  stroke-width: 3;
+}
+
 .measurement-flowchart marker path {
   fill: #000000;
 }
@@ -863,18 +867,22 @@ button {
   font-weight: 900;
 }
 
-.measurement-flow-node {
+.measurement-flow-node,
+.measurement-flow-input {
   cursor: pointer;
 }
 
-.measurement-flow-node rect {
+.measurement-flow-node rect,
+.measurement-flow-input rect {
   fill: #f7f7f7;
   stroke: #000000;
   stroke-width: 3;
 }
 
 .measurement-flow-node:hover rect,
-.measurement-flow-node:focus rect {
+.measurement-flow-node:focus rect,
+.measurement-flow-input:hover rect,
+.measurement-flow-input:focus rect {
   fill: #ffffff;
   stroke-width: 4;
 }
