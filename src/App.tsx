@@ -891,96 +891,199 @@ function PopupText({
 }
 
 function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const nodeWidth = 220;
-  const nodeHeight = 78;
-  const nodePositions = [
-    { x: 48, y: 112 },
-    { x: 370, y: 112 },
-    { x: 692, y: 112 },
-    { x: 692, y: 250 },
-    { x: 370, y: 250 }
+  const lifelines = [
+    { key: "source", label: "Source gNB", x: 115 },
+    { key: "rrc", label: "UE RRC", x: 360 },
+    { key: "ml1", label: "UE ML1", x: 620 },
+    { key: "cells", label: "Serving / Neighbor Cells", x: 910 }
   ];
-  const configInput = { x: 48, y: 34, width: 360, height: 50 };
-  const nodeByIndex = (index: number) => ({
-    ...measurementRelationNodes[index],
-    ...nodePositions[index]
-  });
-  const searchNode = nodeByIndex(0);
-  const rawNode = nodeByIndex(1);
-  const filteredNode = nodeByIndex(2);
-  const evalNode = nodeByIndex(3);
-  const reportNode = nodeByIndex(4);
+  const sequenceItems = [
+    {
+      key: "config",
+      y: 90,
+      x1: lifelines[0].x,
+      x2: lifelines[1].x,
+      direction: "right",
+      tag: "Step 1",
+      tagWidth: 68,
+      code: measurementConfigInput.code,
+      codeText: "0xB821 / 0xB96E",
+      codeWidth: 126,
+      label: "measConfig",
+      detail: "Network delivers measurement rules to UE RRC",
+      fields: measurementConfigInput.fields
+    },
+    {
+      key: "rules",
+      y: 152,
+      x1: lifelines[1].x,
+      x2: lifelines[2].x,
+      direction: "right",
+      tag: "RRC->ML1",
+      tagWidth: 86,
+      code: measurementConfigInput.code,
+      codeText: "0xB821 / 0xB96E",
+      codeWidth: 126,
+      label: "rules to ML1",
+      detail: "RRC measurement control hands rules to ML1",
+      fields: measurementConfigInput.fields
+    },
+    {
+      key: "search",
+      y: 214,
+      x1: lifelines[2].x,
+      x2: lifelines[3].x,
+      direction: "left",
+      tag: "Radio",
+      tagWidth: 64,
+      code: measurementRelationNodes[0].code,
+      codeText: measurementRelationNodes[0].code,
+      codeWidth: 62,
+      label: measurementRelationNodes[0].label,
+      detail: measurementRelationNodes[0].text,
+      fields: measurementRelationNodes[0].fields
+    },
+    {
+      key: "raw",
+      y: 276,
+      x1: lifelines[2].x,
+      x2: lifelines[3].x,
+      direction: "left",
+      tag: "Radio",
+      tagWidth: 64,
+      code: measurementRelationNodes[1].code,
+      codeText: measurementRelationNodes[1].code,
+      codeWidth: 62,
+      label: measurementRelationNodes[1].label,
+      detail: measurementRelationNodes[1].text,
+      fields: measurementRelationNodes[1].fields
+    },
+    {
+      key: "filtered",
+      y: 338,
+      x1: lifelines[2].x - 138,
+      x2: lifelines[2].x + 154,
+      direction: "right",
+      tag: "ML1",
+      tagWidth: 58,
+      code: measurementRelationNodes[2].code,
+      codeText: measurementRelationNodes[2].code,
+      codeWidth: 62,
+      label: measurementRelationNodes[2].label,
+      detail: measurementRelationNodes[2].text,
+      fields: measurementRelationNodes[2].fields
+    },
+    {
+      key: "eval",
+      y: 400,
+      x1: lifelines[2].x - 138,
+      x2: lifelines[2].x + 154,
+      direction: "right",
+      tag: "ML1",
+      tagWidth: 58,
+      code: measurementRelationNodes[3].code,
+      codeText: measurementRelationNodes[3].code,
+      codeWidth: 62,
+      label: "Event / TTT",
+      detail: measurementRelationNodes[3].text,
+      fields: measurementRelationNodes[3].fields
+    },
+    {
+      key: "eval-to-rrc",
+      y: 462,
+      x1: lifelines[1].x,
+      x2: lifelines[2].x,
+      direction: "left",
+      tag: "ML1->RRC",
+      tagWidth: 86,
+      code: measurementRelationNodes[3].code,
+      codeText: measurementRelationNodes[3].code,
+      codeWidth: 62,
+      label: "Event / TTT passed",
+      detail: measurementRelationNodes[3].text,
+      fields: measurementRelationNodes[3].fields
+    },
+    {
+      key: "report",
+      y: 524,
+      x1: lifelines[0].x,
+      x2: lifelines[1].x,
+      direction: "left",
+      tag: "RRC",
+      tagWidth: 58,
+      code: measurementRelationNodes[4].code,
+      codeText: measurementRelationNodes[4].code,
+      codeWidth: 62,
+      label: measurementRelationNodes[4].label,
+      detail: measurementRelationNodes[4].text,
+      fields: measurementRelationNodes[4].fields
+    }
+  ];
 
-  function centerX(node: { x: number }) {
-    return node.x + nodeWidth / 2;
+  function messagePath(item: (typeof sequenceItems)[number]) {
+    const height = 48;
+    const head = 28;
+    if (item.direction === "left") {
+      return `M ${item.x2} ${item.y} L ${item.x1 + head} ${item.y} L ${item.x1} ${item.y + height / 2} L ${item.x1 + head} ${item.y + height} L ${item.x2} ${item.y + height} Z`;
+    }
+    return `M ${item.x1} ${item.y} L ${item.x2 - head} ${item.y} L ${item.x2} ${item.y + height / 2} L ${item.x2 - head} ${item.y + height} L ${item.x1} ${item.y + height} Z`;
   }
 
-  function centerY(node: { y: number }) {
-    return node.y + nodeHeight / 2;
+  function tagDividerX(item: (typeof sequenceItems)[number]) {
+    const headOffset = item.direction === "left" ? 28 : 0;
+    return item.x1 + headOffset + item.tagWidth;
   }
 
-  function openNode(node: (typeof measurementRelationNodes)[number]) {
-    onOpenLogcode(node.code, node.fields);
+  function tagCenterX(item: (typeof sequenceItems)[number]) {
+    const headOffset = item.direction === "left" ? 28 : 0;
+    return item.x1 + headOffset + item.tagWidth / 2;
+  }
+
+  function openSequenceItem(item: (typeof sequenceItems)[number]) {
+    onOpenLogcode(item.code, item.fields);
   }
 
   return (
     <div className="measurement-relation">
-      <div className="measurement-relation-title">Measurement flowchart</div>
-      <svg className="measurement-flowchart" viewBox="0 0 960 380" role="img" aria-label="Measurement log flowchart">
+      <div className="measurement-relation-title">Measurement sequence</div>
+      <svg className="measurement-sequence" viewBox="0 0 1080 620" role="img" aria-label="Measurement log sequence diagram">
         <defs>
-          <marker id="measurement-flow-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <marker id="measurement-sequence-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
             <path d="M 0 0 L 10 5 L 0 10 z" />
           </marker>
         </defs>
 
-        <rect x="24" y="28" width="912" height="314" rx="8" className="measurement-flow-frame" />
-        <text x="48" y="26" className="measurement-flow-lane">Step 2 uses the measConfig already delivered in Step 1</text>
+        <rect x="28" y="26" width="1024" height="568" rx="8" className="measurement-sequence-frame" />
 
-        <g
-          className="measurement-flow-input"
-          role="button"
-          tabIndex={0}
-          transform={`translate(${configInput.x} ${configInput.y})`}
-          onClick={() => onOpenLogcode(measurementConfigInput.code, measurementConfigInput.fields)}
-          onKeyDown={(event) => {
-            if (event.key === "Enter" || event.key === " ") onOpenLogcode(measurementConfigInput.code, measurementConfigInput.fields);
-          }}
-        >
-          <rect width={configInput.width} height={configInput.height} rx="7" />
-          <text x="16" y="22" className="measurement-flow-code">{measurementConfigInput.codeLabel}</text>
-          <text x="16" y="40" className="measurement-flow-text">{measurementConfigInput.label}: {measurementConfigInput.text}</text>
-        </g>
+        {lifelines.map((line) => (
+          <g key={line.key}>
+            <text x={line.x} y="56" className="measurement-sequence-header" textAnchor="middle">{line.label}</text>
+            <line x1={line.x} y1="76" x2={line.x} y2="574" className="measurement-sequence-lifeline" />
+          </g>
+        ))}
 
-        <line x1={configInput.x + 120} y1={configInput.y + configInput.height} x2={centerX(searchNode)} y2={searchNode.y} className="measurement-flow-arrow is-input" markerEnd="url(#measurement-flow-arrowhead)" />
-        <line x1={searchNode.x + nodeWidth} y1={centerY(searchNode)} x2={rawNode.x} y2={centerY(rawNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <line x1={rawNode.x + nodeWidth} y1={centerY(rawNode)} x2={filteredNode.x} y2={centerY(filteredNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <path d={`M ${centerX(filteredNode)} ${filteredNode.y + nodeHeight} L ${centerX(filteredNode)} 220 L ${centerX(evalNode)} 220 L ${centerX(evalNode)} ${evalNode.y}`} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <line x1={evalNode.x} y1={centerY(evalNode)} x2={reportNode.x + nodeWidth} y2={centerY(reportNode)} className="measurement-flow-arrow" markerEnd="url(#measurement-flow-arrowhead)" />
-        <path d={`M ${evalNode.x + 20} ${evalNode.y} C 540 214 220 214 ${centerX(searchNode)} ${searchNode.y + nodeHeight}`} className="measurement-flow-arrow is-dashed" markerEnd="url(#measurement-flow-arrowhead)" />
-        <text x="260" y="214" className="measurement-flow-loop">if event/TTT not met, keep measuring</text>
-        <text x="575" y="294" className="measurement-flow-loop">event + TTT passed</text>
+        <text x="482" y="487" className="measurement-sequence-repeat-text">event not met: ML1 keeps measuring</text>
 
-        {measurementRelationNodes.map((node, index) => {
-          const position = nodePositions[index];
-          const codeLabel = "codeLabel" in node && typeof node.codeLabel === "string" ? node.codeLabel : node.code;
+        {sequenceItems.map((item) => {
+          const dividerX = tagDividerX(item);
+          const textX = dividerX + 16;
           return (
             <g
-              key={node.code}
-              className="measurement-flow-node"
+              key={item.key}
+              className="measurement-sequence-message"
               role="button"
               tabIndex={0}
-              transform={`translate(${position.x} ${position.y})`}
-              onClick={() => openNode(node)}
+              onClick={() => openSequenceItem(item)}
               onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") openNode(node);
+                if (event.key === "Enter" || event.key === " ") openSequenceItem(item);
               }}
             >
-              <rect width={nodeWidth} height={nodeHeight} rx="7" />
-              <circle cx="22" cy="22" r="12" />
-              <text x="22" y="27" className="measurement-flow-index" textAnchor="middle">{index + 2}</text>
-              <text x="44" y="27" className="measurement-flow-code">{codeLabel}</text>
-              <text x="16" y="52" className="measurement-flow-label">{node.label}</text>
-              <text x="16" y="70" className="measurement-flow-text">{node.text}</text>
+              <path d={messagePath(item)} className="measurement-sequence-body" />
+              <line x1={dividerX} y1={item.y} x2={dividerX} y2={item.y + 48} className="measurement-sequence-divider" />
+              <text x={tagCenterX(item)} y={item.y + 30} className="measurement-sequence-tag" textAnchor="middle">{item.tag}</text>
+              <text x={textX} y={item.y + 16} className="measurement-sequence-code">{item.codeText}</text>
+              <text x={textX} y={item.y + 32} className="measurement-sequence-label">{item.label}</text>
+              <text x={textX} y={item.y + 44} className="measurement-sequence-detail">{item.detail}</text>
             </g>
           );
         })}
