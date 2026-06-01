@@ -756,7 +756,7 @@ button {
 }
 
 .popup.react-popup.measurement-popup {
-  width: min(900px, calc(100% - 40px));
+  width: min(1220px, calc(100% - 40px));
 }
 
 .popup {
@@ -892,13 +892,13 @@ button {
 
 .measurement-sequence-code {
   fill: #d60000;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 900;
 }
 
 .measurement-sequence-label {
   fill: #000000;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 900;
 }
 

@@ -917,7 +917,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementConfigInput.code,
       codeText: measurementConfigInput.code,
       codeWidth: 62,
-      label: "RRCReconfiguration + measConfig",
+      label: "measConfig",
       detail: "Air-interface RRC message from network",
       fields: measurementConfigInput.fields
     },
@@ -932,7 +932,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementMl1ConfigInput.code,
       codeText: measurementMl1ConfigInput.code,
       codeWidth: 62,
-      label: measurementMl1ConfigInput.label,
+      label: "ML1 meas config",
       detail: "UE internal config; not network signaling",
       fields: measurementMl1ConfigInput.fields
     },
@@ -962,7 +962,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[1].code,
       codeText: measurementRelationNodes[1].code,
       codeWidth: 62,
-      label: measurementRelationNodes[1].label,
+      label: "Raw Measure",
       detail: measurementRelationNodes[1].text,
       fields: measurementRelationNodes[1].fields
     },
@@ -977,7 +977,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[2].code,
       codeText: measurementRelationNodes[2].code,
       codeWidth: 62,
-      label: measurementRelationNodes[2].label,
+      label: "Filtered DB",
       detail: measurementRelationNodes[2].text,
       fields: measurementRelationNodes[2].fields
     },
@@ -992,7 +992,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[3].code,
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
-      label: "Conn Eval: event state / TTT",
+      label: "Conn Eval",
       detail: "State, TTT Remaining, Num Reports Sent",
       fields: measurementRelationNodes[3].fields
     },
@@ -1007,7 +1007,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[3].code,
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
-      label: "Trigger MeasurementReport",
+      label: "Report trigger",
       detail: "State==ENTERED or TTT=0 + report sent",
       fields: measurementRelationNodes[3].fields
     },
@@ -1022,7 +1022,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[4].code,
       codeText: measurementRelationNodes[4].code,
       codeWidth: 62,
-      label: measurementRelationNodes[4].label,
+      label: "MeasReport",
       detail: measurementRelationNodes[4].text,
       fields: measurementRelationNodes[4].fields
     }
@@ -1089,9 +1089,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
               <path d={messagePath(item)} className="measurement-sequence-body" />
               <line x1={dividerX} y1={item.y} x2={dividerX} y2={item.y + 48} className="measurement-sequence-divider" />
               <text x={tagCenterX(item)} y={item.y + 30} className="measurement-sequence-tag" textAnchor="middle">{item.tag}</text>
-              <text x={textX} y={item.y + 16} className="measurement-sequence-code">{item.codeText}</text>
-              <text x={textX} y={item.y + 32} className="measurement-sequence-label">{item.label}</text>
-              <text x={textX} y={item.y + 44} className="measurement-sequence-detail">{item.detail}</text>
+              <text x={textX} y={item.y + 21} className="measurement-sequence-code">{item.codeText}</text>
+              <text x={textX} y={item.y + 40} className="measurement-sequence-label">{item.label}</text>
             </g>
           );
         })}
