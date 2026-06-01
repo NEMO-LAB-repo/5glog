@@ -72,7 +72,7 @@
     "2": {
       "title": "2. Search / Measure",
       "layer": "ML1 / RRC measurement control",
-      "decide": "Step 1 delivers the RRC measConfig to UE RRC. Then RRC measurement control gives those rules to ML1; ML1 searches/acquires cells, measures quality, filters results, evaluates event/TTT, then RRC sends MeasurementReport.",
+      "decide": "0xB821 delivers RRCReconfiguration with measConfig from source gNB to UE RRC. UE RRC then hands the measurement rules to ML1 via 0xB96E; ML1 searches/acquires cells, records radio observations, filters measurement results, evaluates event/TTT, then UE RRC sends MeasurementReport.",
       "logcode": "See the relationship diagram below. Click each logcode box to open its structure.",
       "logcodes": [
         "0xB821",
@@ -84,6 +84,11 @@
       ],
       "fields": [
         "measObjectId",
+        "conn_meas_id_cfg",
+        "meas_id",
+        "meas_obj_id",
+        "rpt_cfg_id",
+        "report_cfg",
         "ssbFrequency",
         "smtc1",
         "ssb-ToMeasure",
@@ -94,7 +99,9 @@
         "timeToTrigger",
         "reportQuantityCell",
         "raster frequency",
+        "nrarfcn",
         "PCI",
+        "cellId",
         "SSB",
         "detected beams",
         "RSRP",

@@ -183,41 +183,49 @@ const logcodeVariantSections: Record<string, LogcodeVariantSection[]> = {
 
 const measurementConfigInput = {
   code: "0xB821",
-  codeLabel: "Step 1: 0xB821 / 0xB96E",
-  label: "measConfig input",
-  text: "RRC rules for ML1",
+  codeLabel: "Step 1: 0xB821",
+  label: "RRCReconfiguration with measConfig",
+  text: "Network delivers RRC measurement rules to UE RRC",
   fields: ["measConfig", "measObjectId", "ssbFrequency", "smtc1", "reportConfigId", "eventId", "a3-Offset", "timeToTrigger"]
+};
+
+const measurementMl1ConfigInput = {
+  code: "0xB96E",
+  codeLabel: "0xB96E",
+  label: "ML1 Searcher Measurement Config",
+  text: "UE internal measurement config for ML1",
+  fields: ["conn_meas_id_cfg", "meas_id", "meas_obj_id", "rpt_cfg_id", "report_cfg"]
 };
 
 const measurementRelationNodes = [
   {
     code: "0xB96D",
     label: "Search / ACQ",
-    text: "Find freq, PCI, SSB",
-    fields: ["Raster List", "ARFCN", "Phy Cell Id", "SSB Index", "MIB", "RSRP Raw"]
+    text: "Radio observation, not signaling",
+    fields: ["Raster List", "raster frequency", "nrarfcn", "ARFCN", "Phy Cell Id", "PCI", "SSB Index", "MIB", "RSRP Raw"]
   },
   {
     code: "0xB96A",
-    label: "Raw Measure",
-    text: "Instant RSRP / RSRQ / SINR",
-    fields: ["PCI", "ARFCN", "SSB Index", "RSRP", "RSRQ", "SINR"]
+    label: "Raw Cell Measurement",
+    text: "nrarfcn, PCI, SSB, RSRP/RSRQ/SINR",
+    fields: ["nrarfcn", "cellId", "PCI", "ARFCN", "SSB Index", "rsrp", "rsrq", "sinr", "RSRP", "RSRQ", "SINR"]
   },
   {
     code: "0xB97F",
-    label: "Filtered DB",
-    text: "Stable CellQuality",
+    label: "Measurement DB Update",
+    text: "Filtered CellQuality",
     fields: ["Serving Cell PCI", "CellQualityRsrp", "CellQualityRsrq", "Detected Beams"]
   },
   {
     code: "0xB96F",
-    label: "Event Eval",
-    text: "ENTERING / ENTERED, TTT",
+    label: "Conn Eval",
+    text: "State, Meas Id, TTT, reports sent",
     fields: ["Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining"]
   },
   {
     code: "0xB821",
     label: "MeasurementReport",
-    text: "RRC sends final report",
+    text: "UE RRC sends final report",
     fields: ["MeasurementReport", "measId", "measResults", "measResultNeighCells", "physCellId", "rsrp", "rsrq", "sinr"]
   }
 ];
@@ -907,10 +915,10 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       tag: "Step 1",
       tagWidth: 68,
       code: measurementConfigInput.code,
-      codeText: "0xB821 / 0xB96E",
-      codeWidth: 126,
-      label: "measConfig",
-      detail: "Network delivers measurement rules to UE RRC",
+      codeText: measurementConfigInput.code,
+      codeWidth: 62,
+      label: "RRCReconfiguration + measConfig",
+      detail: "Air-interface RRC message from network",
       fields: measurementConfigInput.fields
     },
     {
@@ -921,12 +929,12 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       direction: "right",
       tag: "RRC->ML1",
       tagWidth: 86,
-      code: measurementConfigInput.code,
-      codeText: "0xB821 / 0xB96E",
-      codeWidth: 126,
-      label: "rules to ML1",
-      detail: "RRC measurement control hands rules to ML1",
-      fields: measurementConfigInput.fields
+      code: measurementMl1ConfigInput.code,
+      codeText: measurementMl1ConfigInput.code,
+      codeWidth: 62,
+      label: measurementMl1ConfigInput.label,
+      detail: "UE internal config; not network signaling",
+      fields: measurementMl1ConfigInput.fields
     },
     {
       key: "search",
@@ -934,8 +942,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       x1: lifelines[2].x,
       x2: lifelines[3].x,
       direction: "left",
-      tag: "Radio",
-      tagWidth: 64,
+      tag: "Radio obs.",
+      tagWidth: 86,
       code: measurementRelationNodes[0].code,
       codeText: measurementRelationNodes[0].code,
       codeWidth: 62,
@@ -949,8 +957,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       x1: lifelines[2].x,
       x2: lifelines[3].x,
       direction: "left",
-      tag: "Radio",
-      tagWidth: 64,
+      tag: "Radio obs.",
+      tagWidth: 86,
       code: measurementRelationNodes[1].code,
       codeText: measurementRelationNodes[1].code,
       codeWidth: 62,
@@ -984,8 +992,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[3].code,
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
-      label: "Event / TTT",
-      detail: measurementRelationNodes[3].text,
+      label: "Conn Eval: event state / TTT",
+      detail: "State, TTT Remaining, Num Reports Sent",
       fields: measurementRelationNodes[3].fields
     },
     {
@@ -999,8 +1007,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[3].code,
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
-      label: "Event / TTT passed",
-      detail: measurementRelationNodes[3].text,
+      label: "Trigger MeasurementReport",
+      detail: "State==ENTERED or TTT=0 + report sent",
       fields: measurementRelationNodes[3].fields
     },
     {
