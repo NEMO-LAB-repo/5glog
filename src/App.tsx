@@ -1405,7 +1405,7 @@ function HomeVisual() {
       </g>
 
       <g className="home-three-extract-link">
-        <path d="M 438 236 C 492 230 522 252 548 286" />
+        <path d="M 424 292 C 478 286 520 286 548 306" />
       </g>
 
       <g className="home-three-base" transform="translate(34 112)">
@@ -1424,11 +1424,20 @@ function HomeVisual() {
         <rect x="0" y="0" width="156" height="334" rx="32" />
         <path d="M 58 26 H 98" />
         <path d="M 58 304 H 98" />
-        <path d="M 42 104 H 114" />
-        <path d="M 42 144 H 98" />
-        <path d="M 42 184 H 114" />
-        <path d="M 42 224 H 78" />
-        <text className="home-three-logcode" x="78" y="270" textAnchor="middle">0xB821</text>
+        <path d="M 42 88 H 114" />
+        <path d="M 42 124 H 98" />
+        <path d="M 42 160 H 114" />
+        <g className="home-three-modem" transform="translate(30 196)">
+          <rect x="0" y="0" width="96" height="74" rx="10" />
+          <path d="M -10 16 H 0" />
+          <path d="M -10 36 H 0" />
+          <path d="M -10 56 H 0" />
+          <path d="M 96 16 H 106" />
+          <path d="M 96 36 H 106" />
+          <path d="M 96 56 H 106" />
+          <text className="home-three-modem-label" x="48" y="28" textAnchor="middle">modem</text>
+          <text className="home-three-logcode" x="48" y="58" textAnchor="middle">0xB821</text>
+        </g>
       </g>
 
       <g className="home-three-cellninjia" transform="translate(520 274)">

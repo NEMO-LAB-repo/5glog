@@ -151,7 +151,8 @@ button {
 .home-three-cellninjia,
 .home-three-lens,
 .home-three-parser,
-.home-three-bars {
+.home-three-bars,
+.home-three-modem {
   fill: none;
   stroke: #000000;
   stroke-width: 5;
@@ -185,12 +186,14 @@ button {
 
 .home-three-ue rect,
 .home-three-cellninjia rect,
-.home-three-lens circle {
+.home-three-lens circle,
+.home-three-modem rect {
   fill: #ffffff;
 }
 
 .home-three-ue path,
-.home-three-parser path {
+.home-three-parser path,
+.home-three-modem path {
   stroke-width: 4.5;
 }
 
@@ -200,6 +203,18 @@ button {
   font-size: 26px;
   font-weight: 900;
   stroke: none;
+}
+
+.home-three-modem-label {
+  fill: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  stroke: none;
+}
+
+.home-three-modem .home-three-logcode {
+  font-size: 20px;
 }
 
 .home-three-lens circle:nth-child(2) {
