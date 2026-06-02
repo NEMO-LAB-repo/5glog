@@ -1400,10 +1400,9 @@ function HomeVisual() {
       </defs>
 
       <g className="home-three-radio-link">
-        <path d="M 136 218 C 176 178 232 178 272 218" />
-        <path d="M 122 244 C 170 194 238 194 286 244" />
-        <path d="M 136 270 C 176 310 232 310 272 270" />
-        <path d="M 122 244 C 170 294 238 294 286 244" />
+        <path d="M 176 196 C 202 220 202 260 176 284" />
+        <path d="M 204 188 C 238 220 238 260 204 292" />
+        <path d="M 232 180 C 272 218 272 262 232 300" />
       </g>
 
       <g className="home-three-extract-link">
