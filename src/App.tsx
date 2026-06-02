@@ -1422,6 +1422,10 @@ function HomeVisual() {
       <g className="home-three-ue" transform="translate(294 72)">
         <text className="home-map-title" x="72" y="-34" textAnchor="middle">UE</text>
         <rect x="0" y="0" width="156" height="334" rx="32" />
+        <g className="home-three-ue-waves">
+          <path d="M 164 70 C 188 48 188 26 164 4" />
+          <path d="M 180 90 C 218 56 218 16 180 -18" />
+        </g>
         <path d="M 58 26 H 98" />
         <path d="M 58 304 H 98" />
         <path d="M 42 88 H 114" />
