@@ -1417,16 +1417,17 @@ function HomeVisual() {
         <path d="M 26 102 L 44 102" />
       </g>
 
-      <g className="home-chip-icon" transform="translate(218 216)">
-        <rect x="0" y="0" width="204" height="132" rx="16" />
-        <path d="M -28 26 L 0 26" />
-        <path d="M -28 66 L 0 66" />
-        <path d="M -28 106 L 0 106" />
-        <path d="M 204 26 L 232 26" />
-        <path d="M 204 66 L 232 66" />
-        <path d="M 204 106 L 232 106" />
-        <text x="102" y="56" textAnchor="middle">CellNinjia</text>
-        <text x="102" y="92" textAnchor="middle">extract</text>
+      <g className="home-lens-icon" transform="translate(202 206)">
+        <path className="home-lens-channel" d="M 20 28 L 104 0 L 244 28 L 244 128 L 104 160 L 20 128 Z" />
+        <path className="home-lens-ray" d="M -50 50 L 70 70" />
+        <path className="home-lens-ray" d="M -50 112 L 70 88" />
+        <path className="home-lens-ray" d="M 194 70 L 300 48" />
+        <path className="home-lens-ray" d="M 194 92 L 300 118" />
+        <ellipse cx="132" cy="80" rx="84" ry="62" />
+        <ellipse cx="132" cy="80" rx="52" ry="38" />
+        <path d="M 188 124 L 232 166" />
+        <text x="132" y="74" textAnchor="middle">CellNinjia</text>
+        <text x="132" y="106" textAnchor="middle">inspect</text>
       </g>
 
       <g className="home-log-doc" transform="translate(420 274)">
@@ -1465,10 +1466,10 @@ function HomeVisual() {
       </g>
 
       <g className="home-flow-lines">
-        <path d="M 320 172 L 320 216" />
-        <path d="M 422 282 C 454 278 472 278 488 274" />
-        <path d="M 250 348 C 210 356 174 366 168 380" />
-        <path d="M 356 348 C 386 392 404 430 412 466" />
+        <path d="M 320 172 L 320 222" />
+        <path d="M 426 282 C 454 278 472 278 488 274" />
+        <path d="M 254 348 C 210 356 174 366 168 380" />
+        <path d="M 360 348 C 386 392 404 430 412 466" />
       </g>
 
       <g className="home-visual-badges">

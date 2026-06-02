@@ -150,7 +150,7 @@ button {
 
 .home-tower-icon,
 .home-phone-icon,
-.home-chip-icon,
+.home-lens-icon,
 .home-log-doc,
 .home-schema-card,
 .home-field-card {
@@ -163,15 +163,28 @@ button {
 
 .home-tower-icon circle,
 .home-phone-icon rect,
-.home-chip-icon rect,
 .home-log-doc rect,
 .home-schema-card rect,
 .home-field-card rect {
   fill: #ffffff;
 }
 
-.home-chip-icon rect {
+.home-lens-channel {
   fill: #f7fbff;
+  stroke: #8bb8e8;
+  stroke-width: 7;
+}
+
+.home-lens-ray {
+  fill: none;
+  stroke: #0b5cad;
+  stroke-width: 6;
+}
+
+.home-lens-icon ellipse {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 6;
 }
 
 .home-log-doc rect {
@@ -179,7 +192,7 @@ button {
 }
 
 .home-log-doc text,
-.home-chip-icon text {
+.home-lens-icon text {
   fill: #0b5cad;
   font-family: "Arial", sans-serif;
   font-size: 26px;
@@ -187,7 +200,7 @@ button {
   stroke: none;
 }
 
-.home-chip-icon text + text {
+.home-lens-icon text + text {
   fill: #555555;
   font-size: 23px;
 }
