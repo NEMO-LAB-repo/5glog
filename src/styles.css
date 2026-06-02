@@ -18,31 +18,42 @@ button {
 }
 
 .home-screen {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  padding: 24px 32px;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 16px 18px 18px;
   box-sizing: border-box;
+}
+
+.home-screen > .history-controls {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
 }
 
 .home-landing {
-  width: min(100%, 1220px);
+  display: flex;
+  flex: 1;
+  width: 100%;
 }
 
 .home-hero {
+  flex: 1;
   display: grid;
-  grid-template-columns: minmax(460px, 1fr) minmax(340px, 440px);
-  gap: 34px;
+  grid-template-columns: minmax(560px, 0.95fr) minmax(540px, 1.05fr);
+  gap: clamp(30px, 4vw, 72px);
   align-items: center;
   box-sizing: border-box;
-  min-height: 680px;
+  min-height: calc(100vh - 34px);
   border: 3px solid #000000;
   border-radius: 10px;
   background: #ffffff;
-  padding: 58px 64px;
+  padding: clamp(42px, 5vw, 86px);
 }
 
 .home-hero-copy,
@@ -80,7 +91,7 @@ button {
 }
 
 .home-hero-copy p {
-  max-width: 580px;
+  max-width: 760px;
   margin: 34px 0 0;
   color: #111111;
   font-size: clamp(24px, 2.7vw, 38px);
@@ -119,10 +130,12 @@ button {
   display: block;
   width: 100%;
   height: auto;
-  min-height: 520px;
+  max-height: calc(100vh - 130px);
+  min-height: 620px;
 }
 
-.home-icon-link {
+.home-network-grid path,
+.home-flow-lines path {
   fill: none;
   stroke: #8bb8e8;
   stroke-width: 8;
@@ -130,47 +143,68 @@ button {
   stroke-linejoin: round;
 }
 
-.home-cell-icon {
+.home-flow-lines path {
+  stroke: #0b5cad;
+  stroke-width: 6;
+}
+
+.home-tower-icon,
+.home-phone-icon,
+.home-chip-icon,
+.home-log-doc,
+.home-schema-card,
+.home-field-card {
   fill: none;
   stroke: #000000;
-  stroke-width: 7;
+  stroke-width: 6;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.home-cell-icon circle {
+.home-tower-icon circle,
+.home-phone-icon rect,
+.home-chip-icon rect,
+.home-log-doc rect,
+.home-schema-card rect,
+.home-field-card rect {
   fill: #ffffff;
 }
 
-.home-log-stack rect,
-.home-small-card rect {
+.home-chip-icon rect {
+  fill: #f7fbff;
+}
+
+.home-log-doc rect {
   fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 5;
 }
 
-.home-log-stack path,
-.home-small-card path,
-.home-small-card circle {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-log-stack text {
+.home-log-doc text,
+.home-chip-icon text {
   fill: #0b5cad;
   font-family: "Arial", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 900;
+  stroke: none;
 }
 
-.home-small-card text {
+.home-chip-icon text + text {
+  fill: #555555;
+  font-size: 23px;
+}
+
+.home-schema-card text,
+.home-field-card text,
+.home-visual-badges text {
   fill: #555555;
   font-family: "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 900;
+  stroke: none;
+}
+
+.home-visual-badges text {
+  fill: #0b5cad;
+  font-size: 20px;
 }
 
 .home-summary-grid {
