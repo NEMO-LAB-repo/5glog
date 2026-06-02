@@ -1383,7 +1383,7 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
 
 function HomeVisual() {
   return (
-    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="Cellular network interpreted by CellNinjia">
+    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="CellNinjia extracts diagnostic logs from UE connected to a base station">
       <defs>
         <marker
           id="home-map-arrow"
@@ -1399,79 +1399,55 @@ function HomeVisual() {
         </marker>
       </defs>
 
-      <g className="home-map-network" transform="translate(28 74)">
-        <path className="home-map-shell" d="M 22 28 Q 22 0 50 0 H 280 Q 308 0 308 28 V 428 Q 308 456 280 456 H 50 Q 22 456 22 428 Z" />
-        <text className="home-map-title" x="165" y="58" textAnchor="middle">Cellular network</text>
-
-        <g className="home-map-grid">
-          <path d="M 96 176 C 132 142 198 142 234 176" />
-          <path d="M 72 224 C 126 178 204 178 258 224" />
-          <path d="M 166 230 V 324" />
-          <path d="M 88 332 H 244" />
-          <path d="M 110 206 L 166 248 L 222 206" />
-        </g>
-
-        <g className="home-map-tower" transform="translate(52 110)">
-          <circle cx="45" cy="58" r="10" />
-          <path d="M 45 68 L 18 172" />
-          <path d="M 45 68 L 72 172" />
-          <path d="M 31 101 L 60 112 L 26 134 L 67 153" />
-          <path d="M 10 48 C 16 24 30 12 45 12 C 62 12 76 24 82 48" />
-          <path d="M 0 48 C 9 16 27 0 45 0 C 64 0 83 16 90 48" />
-        </g>
-
-        <g className="home-map-tower" transform="translate(190 110)">
-          <circle cx="45" cy="58" r="10" />
-          <path d="M 45 68 L 18 172" />
-          <path d="M 45 68 L 72 172" />
-          <path d="M 31 101 L 60 112 L 26 134 L 67 153" />
-          <path d="M 10 48 C 16 24 30 12 45 12 C 62 12 76 24 82 48" />
-          <path d="M 0 48 C 9 16 27 0 45 0 C 64 0 83 16 90 48" />
-        </g>
-
-        <g className="home-map-ue" transform="translate(134 166)">
-          <rect x="0" y="0" width="64" height="112" rx="14" />
-          <path d="M 24 16 H 40" />
-          <path d="M 24 96 H 40" />
-        </g>
-
-        <g className="home-map-core" transform="translate(70 326)">
-          <rect x="0" y="0" width="190" height="70" rx="12" />
-          <path d="M 28 18 H 64 V 52 H 28 Z" />
-          <path d="M 78 18 H 114 V 52 H 78 Z" />
-          <path d="M 128 18 H 164 V 52 H 128 Z" />
-        </g>
+      <g className="home-three-radio-link">
+        <path d="M 162 214 C 220 150 296 150 350 214" />
+        <path d="M 360 264 C 300 330 224 330 164 264" />
       </g>
 
-      <g className="home-map-bridge">
-        <path d="M 336 282 C 374 238 410 238 448 282" />
-        <path d="M 336 320 C 376 358 410 358 448 320" />
-        <circle cx="368" cy="284" r="5" />
-        <circle cx="392" cy="306" r="5" />
-        <circle cx="416" cy="286" r="5" />
+      <g className="home-three-extract-link">
+        <path d="M 406 266 C 452 284 484 316 508 364" />
+        <path d="M 418 218 C 486 224 526 254 552 306" />
+        <circle cx="440" cy="280" r="6" />
+        <circle cx="480" cy="318" r="6" />
+        <circle cx="514" cy="366" r="6" />
       </g>
 
-      <g className="home-map-cellninjia" transform="translate(448 74)">
-        <path className="home-map-shell" d="M 0 28 Q 0 0 28 0 H 226 Q 254 0 254 28 V 428 Q 254 456 226 456 H 28 Q 0 456 0 428 Z" />
-        <text className="home-map-title" x="127" y="58" textAnchor="middle">CellNinjia</text>
+      <g className="home-three-base" transform="translate(56 128)">
+        <text className="home-map-title" x="82" y="-34" textAnchor="middle">Base station</text>
+        <circle cx="82" cy="82" r="13" />
+        <path d="M 82 95 L 34 282" />
+        <path d="M 82 95 L 130 282" />
+        <path d="M 60 142 L 105 158 L 48 198 L 118 226 L 40 264 H 124" />
+        <path d="M 32 70 C 42 36 60 20 82 20 C 106 20 124 36 134 70" />
+        <path d="M 10 70 C 24 20 50 -4 82 -4 C 116 -4 142 20 154 70" />
+        <path d="M 54 70 C 61 52 70 44 82 44 C 96 44 105 52 110 70" />
+      </g>
 
-        <g className="home-map-parser" transform="translate(36 116)">
-          <rect x="0" y="0" width="182" height="118" rx="18" />
-          <path d="M 30 36 H 92" />
-          <path d="M 30 60 H 128" />
-          <path d="M 30 84 H 78" />
-          <path className="home-map-parser-arrow" d="M 132 34 L 154 59 L 132 84" />
+      <g className="home-three-ue" transform="translate(300 104)">
+        <text className="home-map-title" x="72" y="-34" textAnchor="middle">UE</text>
+        <rect x="0" y="0" width="144" height="266" rx="30" />
+        <path d="M 52 24 H 92" />
+        <path d="M 52 242 H 92" />
+        <path d="M 34 74 H 110" />
+        <path d="M 34 108 H 92" />
+        <path d="M 34 142 H 110" />
+        <path d="M 34 176 H 76" />
+        <text className="home-three-logcode" x="72" y="213" textAnchor="middle">0xB821</text>
+      </g>
+
+      <g className="home-three-cellninjia" transform="translate(442 318)">
+        <text className="home-map-title" x="124" y="-34" textAnchor="middle">CellNinjia</text>
+        <rect x="0" y="0" width="238" height="172" rx="24" />
+        <g className="home-three-lens" transform="translate(26 34)">
+          <circle cx="54" cy="54" r="48" />
+          <circle cx="54" cy="54" r="23" />
+          <path d="M 88 88 L 126 126" />
         </g>
-
-        <g className="home-map-lens" transform="translate(38 220)">
-          <circle cx="78" cy="78" r="72" />
-          <circle cx="78" cy="78" r="38" />
-          <path d="M 126 130 L 178 182" />
-          <path d="M 34 68 H 76 V 50 H 118" />
-          <path d="M 34 94 H 70 V 116 H 120" />
-          <circle cx="34" cy="68" r="5" />
-          <circle cx="118" cy="50" r="5" />
-          <circle cx="120" cy="116" r="5" />
+        <g className="home-three-parser" transform="translate(138 42)">
+          <path d="M 0 0 H 58" />
+          <path d="M 0 32 H 74" />
+          <path d="M 0 64 H 46" />
+          <path className="home-map-parser-arrow" d="M 72 12 L 98 32 L 72 52" />
         </g>
       </g>
     </svg>

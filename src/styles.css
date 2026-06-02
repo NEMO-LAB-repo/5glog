@@ -134,30 +134,8 @@ button {
   min-height: 620px;
 }
 
-.home-map-arrow {
-  fill: #0b5cad;
-  stroke: none;
-}
-
 #home-map-arrow path {
   fill: #0b5cad;
-}
-
-.home-map-shell,
-.home-map-tower,
-.home-map-ue,
-.home-map-core,
-.home-map-parser,
-.home-map-lens {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-map-shell {
-  fill: #f8fafc;
 }
 
 .home-map-title {
@@ -168,71 +146,68 @@ button {
   stroke: none;
 }
 
-.home-map-grid path {
+.home-three-base,
+.home-three-ue,
+.home-three-cellninjia,
+.home-three-lens,
+.home-three-parser {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-three-radio-link path {
   fill: none;
   stroke: #8bb8e8;
-  stroke-width: 4.2;
+  stroke-width: 7;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.home-map-ue rect,
-.home-map-core rect,
-.home-map-parser rect,
-.home-map-lens circle {
-  fill: #ffffff;
-}
-
-.home-map-core path {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 4.5;
-  stroke-linejoin: round;
-}
-
-.home-map-parser path,
-.home-map-lens path {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-map-parser .home-map-parser-arrow,
-.home-map-lens path {
-  stroke: #0b5cad;
-}
-
-.home-map-lens circle:nth-of-type(2) {
-  stroke-width: 3.8;
-}
-
-.home-map-lens circle:nth-of-type(n + 3) {
-  fill: #0b5cad;
-  stroke: none;
-}
-
-.home-map-bridge path {
-  fill: none;
-  stroke: #0b5cad;
-  stroke-width: 5.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-map-bridge path:first-child {
   marker-end: url(#home-map-arrow);
 }
 
-.home-map-bridge path:nth-child(2) {
-  stroke: #8bb8e8;
+.home-three-extract-link path {
+  fill: none;
+  stroke: #0b5cad;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  marker-end: url(#home-map-arrow);
+}
+
+.home-three-extract-link circle {
+  fill: #0b5cad;
+  stroke: #ffffff;
+  stroke-width: 3;
+}
+
+.home-three-ue rect,
+.home-three-cellninjia rect,
+.home-three-lens circle {
+  fill: #ffffff;
+}
+
+.home-three-ue path,
+.home-three-parser path {
+  stroke-width: 4.5;
+}
+
+.home-three-logcode {
+  fill: #0b5cad;
+  font-family: "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  stroke: none;
+}
+
+.home-three-lens circle:nth-child(2) {
   stroke-width: 4;
 }
 
-.home-map-bridge circle {
-  fill: #0b5cad;
-  stroke: none;
+.home-three-lens path,
+.home-three-parser .home-map-parser-arrow {
+  stroke: #0b5cad;
 }
 
 .home-summary-grid {
