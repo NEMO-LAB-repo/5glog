@@ -164,9 +164,11 @@ button {
 .home-three-radio-link path {
   fill: none;
   stroke: #000000;
-  stroke-width: 5.5;
+  stroke-width: 4;
+  stroke-dasharray: 10 8;
   stroke-linecap: round;
   stroke-linejoin: round;
+  marker-end: url(#home-map-arrow);
 }
 
 .home-three-extract-link path {
