@@ -134,185 +134,64 @@ button {
   min-height: 620px;
 }
 
-.home-flow-lines path {
-  fill: none;
-  stroke: #0b5cad;
-  stroke-width: 3.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  marker-end: url(#home-arrowhead);
-}
-
-.home-arrowhead {
+.home-map-arrow {
   fill: #0b5cad;
   stroke: none;
 }
 
-.home-flow-lines path:nth-child(1),
-.home-flow-lines path:nth-child(2) {
-  stroke: #8bb8e8;
+#home-map-arrow path {
+  fill: #0b5cad;
+}
+
+.home-map-shell,
+.home-map-tower,
+.home-map-ue,
+.home-map-core,
+.home-map-parser,
+.home-map-lens {
+  fill: none;
+  stroke: #000000;
   stroke-width: 4.5;
-}
-
-.home-flow-lines path:nth-child(n + 3) {
-  stroke: #0b5cad;
-  stroke-width: 4;
-}
-
-.home-log-pipe path {
-  fill: none;
-  stroke: #0b5cad;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  marker-end: url(#home-arrowhead);
-}
-
-.home-single-pipe path {
-  stroke-width: 6;
-}
-
-.home-trace-channel path {
-  fill: none;
-  stroke: #0b5cad;
-  stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.home-trace-channel path:first-child {
-  marker-end: url(#home-arrowhead);
+.home-map-shell {
+  fill: #f8fafc;
 }
 
-.home-trace-channel path:nth-child(2) {
-  stroke: #8bb8e8;
-  stroke-width: 4;
-}
-
-.home-trace-pulses rect {
+.home-map-title {
   fill: #0b5cad;
-  stroke: none;
-}
-
-.home-log-pipe text,
-.home-card-title,
-.home-muted-line,
-.home-extract-channel text,
-.home-output-chips text {
   font-family: "Arial", sans-serif;
+  font-size: 28px;
   font-weight: 900;
   stroke: none;
 }
 
-.home-log-pipe text {
-  fill: #555555;
-  font-size: 15px;
-}
-
-.home-source-card,
-.home-network-card,
-.home-log-card,
-.home-cellninjia-card,
-.home-extract-channel,
-.home-output-chips,
-.home-cellninjia-core,
-.home-inspection-lens,
-.home-core-stack,
-.home-mini-tower,
-.home-mini-phone,
-.home-raw-log-card,
-.home-lens-system,
-.home-output-card {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-source-card > rect,
-.home-network-card > rect,
-.home-log-card > rect,
-.home-cellninjia-card > rect,
-.home-extract-channel rect,
-.home-output-chips rect,
-.home-cellninjia-core rect,
-.home-core-stack rect,
-.home-mini-phone rect,
-.home-raw-log-card rect,
-.home-output-card rect {
-  fill: #ffffff;
-}
-
-.home-source-card > rect,
-.home-network-card > rect,
-.home-cellninjia-card > rect {
-  fill: #f8fafc;
-}
-
-.home-log-card > rect,
-.home-extract-channel rect,
-.home-output-chips rect {
-  fill: #ffffff;
-}
-
-.home-core-stack rect:first-child,
-.home-cellninjia-core rect {
-  fill: #ffffff;
-}
-
-.home-core-stack rect:not(:first-child) {
-  fill: #f8fafc;
-}
-
-.home-card-title {
-  fill: #0b5cad;
-  font-size: 24px;
-}
-
-.home-muted-line {
-  fill: #555555;
-  font-size: 18px;
-}
-
-.home-cellninjia-card > .home-card-title {
-  font-size: 30px;
-}
-
-.home-network-card > .home-card-title,
-.home-cellninjia-card > .home-card-title {
-  font-size: 30px;
-}
-
-.home-extract-channel text {
-  fill: #0b5cad;
-  font-size: 18px;
-}
-
-.home-extract-channel path,
-.home-log-card path {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4;
-  stroke-linecap: round;
-}
-
-.home-extract-channel circle {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 4.5;
-}
-
-.home-network-links path {
+.home-map-grid path {
   fill: none;
   stroke: #8bb8e8;
-  stroke-width: 4.5;
+  stroke-width: 4.2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.home-cellninjia-core path,
-.home-inspection-lens path {
+.home-map-ue rect,
+.home-map-core rect,
+.home-map-parser rect,
+.home-map-lens circle {
+  fill: #ffffff;
+}
+
+.home-map-core path {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 4.5;
+  stroke-linejoin: round;
+}
+
+.home-map-parser path,
+.home-map-lens path {
   fill: none;
   stroke: #000000;
   stroke-width: 4.2;
@@ -320,101 +199,40 @@ button {
   stroke-linejoin: round;
 }
 
-.home-cellninjia-core path:last-child,
-.home-inspection-lens path {
+.home-map-parser .home-map-parser-arrow,
+.home-map-lens path {
   stroke: #0b5cad;
 }
 
-.home-inspection-lens circle {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 4.5;
-}
-
-.home-inspection-lens circle:not(:first-child) {
+.home-map-lens circle:nth-of-type(2) {
   stroke-width: 3.8;
 }
 
-.home-output-chips text {
-  fill: #000000;
-  font-size: 14px;
-}
-
-.home-source-signal {
-  fill: none;
-  stroke: #8bb8e8;
-  stroke-width: 4.5;
-}
-
-.home-lens-tunnel {
-  fill: #f7fbff;
-  stroke: #8bb8e8;
-  stroke-width: 5;
-}
-
-.home-lens-spine {
-  fill: none;
-  stroke: #0b5cad;
-  stroke-width: 4;
-}
-
-.home-lens-system ellipse {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 5;
-}
-
-.home-source-card text,
-.home-raw-log-card text,
-.home-lens-system text,
-.home-output-card text,
-.home-visual-badges text {
-  font-family: "Arial", sans-serif;
-  font-weight: 900;
+.home-map-lens circle:nth-of-type(n + 3) {
+  fill: #0b5cad;
   stroke: none;
 }
 
-.home-source-card text,
-.home-raw-log-card text,
-.home-lens-system text,
-.home-output-card text {
-  fill: #0b5cad;
-  font-size: 21px;
-}
-
-.home-raw-log-card text + text {
-  fill: #555555;
-  font-size: 18px;
-}
-
-.home-lens-system text {
-  font-size: 20px;
-}
-
-.home-lens-system text + text {
-  fill: #555555;
-  font-size: 18px;
-}
-
-.home-output-card path {
+.home-map-bridge path {
   fill: none;
-  stroke: #000000;
+  stroke: #0b5cad;
+  stroke-width: 5.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-map-bridge path:first-child {
+  marker-end: url(#home-map-arrow);
+}
+
+.home-map-bridge path:nth-child(2) {
+  stroke: #8bb8e8;
   stroke-width: 4;
 }
 
-.home-output-card circle {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 4;
-}
-
-.home-visual-badges text {
-  fill: #555555;
-  font-size: 18px;
-}
-
-.home-visual-badges text + text {
+.home-map-bridge circle {
   fill: #0b5cad;
+  stroke: none;
 }
 
 .home-summary-grid {
