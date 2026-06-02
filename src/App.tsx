@@ -1486,7 +1486,6 @@ function HomeLanding({ onOpenNrLog }: { onOpenNrLog: () => void }) {
     <section className="home-landing">
       <div className="home-hero">
         <div className="home-hero-copy">
-          <div className="home-kicker">CellNinjia extracted log structures</div>
           <h1>NR Log Explorer</h1>
           <p>
             A structured workspace for reading 5G NR events, logcodes, message schemas, and field paths from extracted diagnostic logs.
