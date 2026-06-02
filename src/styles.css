@@ -160,6 +160,10 @@ button {
   stroke-linejoin: round;
 }
 
+.home-three-base {
+  stroke-width: 4.4;
+}
+
 .home-three-radio-link path {
   fill: none;
   stroke: #000000;

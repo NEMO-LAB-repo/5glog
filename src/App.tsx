@@ -1410,13 +1410,20 @@ function HomeVisual() {
 
       <g className="home-three-base" transform="translate(34 112)">
         <text className="home-map-title" x="92" y="-34" textAnchor="middle">Base station</text>
-        <circle cx="82" cy="82" r="13" />
-        <path d="M 82 95 L 34 282" />
-        <path d="M 82 95 L 130 282" />
-        <path d="M 60 142 L 105 158 L 48 198 L 118 226 L 40 264 H 124" />
-        <path d="M 32 70 C 42 36 60 20 82 20 C 106 20 124 36 134 70" />
-        <path d="M 10 70 C 24 20 50 -4 82 -4 C 116 -4 142 20 154 70" />
-        <path d="M 54 70 C 61 52 70 44 82 44 C 96 44 105 52 110 70" />
+        <path d="M 82 30 V 62" />
+        <circle cx="82" cy="78" r="12" />
+        <path d="M 82 91 L 34 282" />
+        <path d="M 82 91 L 130 282" />
+        <path d="M 68 128 H 96" />
+        <path d="M 58 166 H 106" />
+        <path d="M 48 206 H 116" />
+        <path d="M 38 246 H 126" />
+        <path d="M 34 282 H 130" />
+        <path d="M 70 128 L 106 166 L 48 206 L 126 246 L 34 282" />
+        <path d="M 94 128 L 58 166 L 116 206 L 38 246 L 130 282" />
+        <path d="M 52 66 C 58 48 69 39 82 39 C 96 39 106 48 112 66" />
+        <path d="M 32 66 C 42 32 61 16 82 16 C 104 16 123 32 134 66" />
+        <path d="M 12 66 C 27 14 53 -8 82 -8 C 113 -8 139 14 154 66" />
       </g>
 
       <g className="home-three-ue" transform="translate(294 72)">
