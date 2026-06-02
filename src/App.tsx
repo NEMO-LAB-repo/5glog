@@ -1755,6 +1755,13 @@ export function App() {
       {view === "home" ? (
         <section className="home-screen">
           <HistoryButtons {...historyControls} />
+          <div className="home-intro">
+            <div className="home-kicker">CellNinjia extracted log structures</div>
+            <h1>NR Log Explorer</h1>
+            <p>
+              A shared reference for 5G NR events, logcodes, message structures, fields, and team notes.
+            </p>
+          </div>
           <div className="home-action-grid">
             <button type="button" onClick={() => navigate({ view: "event" })}>Event</button>
             <button type="button" onClick={() => navigate({ view: "message" })}>Message</button>

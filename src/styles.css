@@ -23,9 +23,44 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 28px;
+  gap: 24px;
   padding: 32px;
   box-sizing: border-box;
+}
+
+.home-intro {
+  width: min(100%, 980px);
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 34px 38px;
+  text-align: center;
+}
+
+.home-kicker {
+  margin-bottom: 8px;
+  color: #555555;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.home-intro h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.home-intro p {
+  max-width: 760px;
+  margin: 16px auto 0;
+  color: #111111;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .home-action-grid {
@@ -43,6 +78,35 @@ button {
   font-size: 34px;
   font-weight: 800;
   cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .home-screen {
+    padding: 22px;
+  }
+
+  .home-intro {
+    padding: 24px;
+  }
+
+  .home-intro h1 {
+    font-size: 42px;
+  }
+
+  .home-intro p {
+    font-size: 18px;
+  }
+
+  .home-action-grid {
+    width: min(100%, 360px);
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .home-action-grid button {
+    height: 82px;
+    font-size: 28px;
+  }
 }
 
 .home-action-grid button:hover,
