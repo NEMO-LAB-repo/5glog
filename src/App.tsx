@@ -1383,7 +1383,7 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
 
 function HomeVisual() {
   return (
-    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="Cellular network analyzed by CellNinjia">
+    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="Cellular network inspected by CellNinjia">
       <defs>
         <marker
           id="home-arrowhead"
@@ -1399,48 +1399,81 @@ function HomeVisual() {
         </marker>
       </defs>
 
-      <g className="home-network-card" transform="translate(38 116)">
-        <rect x="0" y="0" width="304" height="432" rx="22" />
-        <text className="home-card-title" x="32" y="56">Cellular network</text>
-        <g className="home-mini-tower" transform="translate(36 116)">
-          <circle cx="58" cy="72" r="12" />
-          <path d="M 58 84 L 26 204" />
-          <path d="M 58 84 L 90 204" />
-          <path d="M 42 126 L 76 140 L 36 164 L 84 186" />
-          <path d="M 14 58 C 20 30 38 14 58 14 C 78 14 96 30 102 58" />
-          <path d="M 0 58 C 11 18 34 0 58 0 C 82 0 105 18 116 58" />
+      <g className="home-network-card" transform="translate(32 72)">
+        <rect x="0" y="0" width="322" height="476" rx="24" />
+        <text className="home-card-title" x="34" y="58">Cellular network</text>
+
+        <g className="home-network-links">
+          <path d="M 98 210 C 142 178 188 178 232 210" />
+          <path d="M 162 242 L 162 328" />
+          <path d="M 78 332 C 112 358 210 358 246 332" />
+          <path d="M 86 210 L 150 246" />
+          <path d="M 236 210 L 174 246" />
         </g>
-        <g className="home-mini-tower" transform="translate(168 116)">
-          <circle cx="58" cy="72" r="12" />
-          <path d="M 58 84 L 26 204" />
-          <path d="M 58 84 L 90 204" />
-          <path d="M 42 126 L 76 140 L 36 164 L 84 186" />
-          <path d="M 14 58 C 20 30 38 14 58 14 C 78 14 96 30 102 58" />
-          <path d="M 0 58 C 11 18 34 0 58 0 C 82 0 105 18 116 58" />
+
+        <g className="home-mini-tower" transform="translate(42 132)">
+          <circle cx="44" cy="62" r="10" />
+          <path d="M 44 72 L 18 174" />
+          <path d="M 44 72 L 70 174" />
+          <path d="M 31 105 L 58 116 L 26 138 L 66 158" />
+          <path d="M 10 50 C 15 26 28 13 44 13 C 60 13 74 26 78 50" />
+          <path d="M 0 50 C 8 17 25 0 44 0 C 64 0 82 17 88 50" />
         </g>
-        <g className="home-mini-phone" transform="translate(118 158)">
-          <rect x="0" y="0" width="68" height="116" rx="14" />
-          <path d="M 26 16 L 42 16" />
-          <path d="M 25 100 L 43 100" />
+
+        <g className="home-mini-tower" transform="translate(190 132)">
+          <circle cx="44" cy="62" r="10" />
+          <path d="M 44 72 L 18 174" />
+          <path d="M 44 72 L 70 174" />
+          <path d="M 31 105 L 58 116 L 26 138 L 66 158" />
+          <path d="M 10 50 C 15 26 28 13 44 13 C 60 13 74 26 78 50" />
+          <path d="M 0 50 C 8 17 25 0 44 0 C 64 0 82 17 88 50" />
         </g>
-        <path className="home-source-signal" d="M 82 238 C 128 194 178 194 224 238" />
-        <path className="home-source-signal" d="M 62 276 C 124 220 184 220 246 276" />
+
+        <g className="home-mini-phone" transform="translate(132 180)">
+          <rect x="0" y="0" width="60" height="104" rx="13" />
+          <path d="M 23 15 L 37 15" />
+          <path d="M 22 90 L 38 90" />
+        </g>
+
+        <g className="home-core-stack" transform="translate(56 334)">
+          <rect x="0" y="0" width="212" height="74" rx="12" />
+          <rect x="18" y="18" width="48" height="38" rx="6" />
+          <rect x="82" y="18" width="48" height="38" rx="6" />
+          <rect x="146" y="18" width="48" height="38" rx="6" />
+        </g>
       </g>
 
-      <g className="home-log-pipe home-single-pipe">
-        <path d="M 342 276 C 372 300 394 300 424 300" />
+      <g className="home-trace-channel">
+        <path d="M 354 296 C 386 270 410 270 442 296" />
+        <path d="M 354 326 C 388 350 410 350 442 320" />
+        <g className="home-trace-pulses">
+          <rect x="372" y="293" width="18" height="10" rx="3" />
+          <rect x="396" y="308" width="18" height="10" rx="3" />
+          <rect x="420" y="292" width="18" height="10" rx="3" />
+        </g>
       </g>
 
-      <g className="home-cellninjia-card" transform="translate(424 122)">
-        <rect x="0" y="0" width="248" height="356" rx="22" />
-        <text className="home-card-title" x="124" y="62" textAnchor="middle">CellNinjia</text>
-        <g className="home-extract-channel" transform="translate(44 108)">
-          <circle cx="80" cy="80" r="70" />
-          <circle cx="80" cy="80" r="36" />
-          <path d="M 126 132 L 178 184" />
-          <path d="M 34 80 L 126 80" />
-          <path d="M 80 34 L 80 126" />
-          <text x="80" y="88" textAnchor="middle">extract</text>
+      <g className="home-cellninjia-card" transform="translate(442 72)">
+        <rect x="0" y="0" width="246" height="476" rx="24" />
+        <text className="home-card-title" x="123" y="58" textAnchor="middle">CellNinjia</text>
+
+        <g className="home-cellninjia-core" transform="translate(34 120)">
+          <rect x="0" y="0" width="178" height="118" rx="18" />
+          <path d="M 28 36 L 94 36" />
+          <path d="M 28 60 L 132 60" />
+          <path d="M 28 84 L 78 84" />
+          <path d="M 132 32 L 150 50 L 132 68" />
+        </g>
+
+        <g className="home-inspection-lens" transform="translate(36 206)">
+          <circle cx="82" cy="82" r="72" />
+          <circle cx="82" cy="82" r="38" />
+          <path d="M 130 134 L 176 180" />
+          <path d="M 42 74 L 76 74 L 76 52 L 116 52" />
+          <path d="M 42 96 L 72 96 L 72 118 L 122 118" />
+          <circle cx="42" cy="74" r="5" />
+          <circle cx="116" cy="52" r="5" />
+          <circle cx="122" cy="118" r="5" />
         </g>
       </g>
     </svg>

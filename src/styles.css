@@ -172,6 +172,28 @@ button {
   stroke-width: 6;
 }
 
+.home-trace-channel path {
+  fill: none;
+  stroke: #0b5cad;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-trace-channel path:first-child {
+  marker-end: url(#home-arrowhead);
+}
+
+.home-trace-channel path:nth-child(2) {
+  stroke: #8bb8e8;
+  stroke-width: 4;
+}
+
+.home-trace-pulses rect {
+  fill: #0b5cad;
+  stroke: none;
+}
+
 .home-log-pipe text,
 .home-card-title,
 .home-muted-line,
@@ -193,6 +215,9 @@ button {
 .home-cellninjia-card,
 .home-extract-channel,
 .home-output-chips,
+.home-cellninjia-core,
+.home-inspection-lens,
+.home-core-stack,
 .home-mini-tower,
 .home-mini-phone,
 .home-raw-log-card,
@@ -211,6 +236,8 @@ button {
 .home-cellninjia-card > rect,
 .home-extract-channel rect,
 .home-output-chips rect,
+.home-cellninjia-core rect,
+.home-core-stack rect,
 .home-mini-phone rect,
 .home-raw-log-card rect,
 .home-output-card rect {
@@ -227,6 +254,15 @@ button {
 .home-extract-channel rect,
 .home-output-chips rect {
   fill: #ffffff;
+}
+
+.home-core-stack rect:first-child,
+.home-cellninjia-core rect {
+  fill: #ffffff;
+}
+
+.home-core-stack rect:not(:first-child) {
+  fill: #f8fafc;
 }
 
 .home-card-title {
@@ -265,6 +301,38 @@ button {
   fill: #ffffff;
   stroke: #000000;
   stroke-width: 4.5;
+}
+
+.home-network-links path {
+  fill: none;
+  stroke: #8bb8e8;
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-cellninjia-core path,
+.home-inspection-lens path {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-cellninjia-core path:last-child,
+.home-inspection-lens path {
+  stroke: #0b5cad;
+}
+
+.home-inspection-lens circle {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 4.5;
+}
+
+.home-inspection-lens circle:not(:first-child) {
+  stroke-width: 3.8;
 }
 
 .home-output-chips text {
