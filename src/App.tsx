@@ -1470,7 +1470,7 @@ function HomeLanding({ onOpenNrLog }: { onOpenNrLog: () => void }) {
           <div className="home-kicker">CellNinjia extracted log structures</div>
           <h1>NR Log Explorer</h1>
           <p>
-            A structured workspace for reading 5G NR events, logcodes, message schemas, field paths, and team notes from extracted diagnostic logs.
+            A structured workspace for reading 5G NR events, logcodes, message schemas, and field paths from extracted diagnostic logs.
           </p>
           <div className="home-hero-actions">
             <button className="home-primary-action" type="button" onClick={onOpenNrLog}>Open NR Log</button>
