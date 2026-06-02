@@ -128,4 +128,4 @@ export type FieldIndexEntry = {
   records: FieldIndexRecord[];
 };
 
-export type ViewName = "home" | "event" | "message" | "field" | "handover" | "nrMeasurementEvents" | "registration";
+export type ViewName = "home" | "nrLog" | "event" | "message" | "field" | "handover" | "nrMeasurementEvents" | "registration";

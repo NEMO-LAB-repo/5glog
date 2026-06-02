@@ -1381,6 +1381,132 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
   );
 }
 
+function HomeVisual() {
+  return (
+    <svg className="home-visual" viewBox="0 0 720 460" role="img" aria-label="NR log extraction and exploration overview">
+      <defs>
+        <marker id="home-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" />
+        </marker>
+      </defs>
+      <rect x="1" y="1" width="718" height="458" rx="14" className="home-visual-frame" />
+      <text x="34" y="50" className="home-visual-title">CellNinjia extraction pipeline</text>
+
+      <g transform="translate(48 96)">
+        <rect x="0" y="0" width="132" height="88" rx="8" className="home-visual-node is-radio" />
+        <text x="66" y="34" className="home-visual-node-title" textAnchor="middle">5G NR logs</text>
+        <text x="66" y="60" className="home-visual-node-sub" textAnchor="middle">QXDM / qlog text</text>
+      </g>
+      <g transform="translate(300 88)">
+        <rect x="0" y="0" width="150" height="104" rx="8" className="home-visual-node is-extract" />
+        <text x="75" y="36" className="home-visual-node-title" textAnchor="middle">CellNinjia</text>
+        <text x="75" y="62" className="home-visual-node-sub" textAnchor="middle">schema extraction</text>
+        <text x="75" y="82" className="home-visual-node-sub" textAnchor="middle">field trees</text>
+      </g>
+      <g transform="translate(548 96)">
+        <rect x="0" y="0" width="132" height="88" rx="8" className="home-visual-node is-explorer" />
+        <text x="66" y="34" className="home-visual-node-title" textAnchor="middle">Explorer</text>
+        <text x="66" y="60" className="home-visual-node-sub" textAnchor="middle">events + notes</text>
+      </g>
+      <line x1="182" y1="140" x2="294" y2="140" className="home-visual-arrow" />
+      <line x1="452" y1="140" x2="542" y2="140" className="home-visual-arrow" />
+
+      <g transform="translate(54 244)">
+        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
+        <text x="20" y="34" className="home-visual-card-title">Event index</text>
+        <text x="20" y="58" className="home-visual-card-sub">handover, registration</text>
+      </g>
+      <g transform="translate(270 244)">
+        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
+        <text x="20" y="34" className="home-visual-card-title">Message index</text>
+        <text x="20" y="58" className="home-visual-card-sub">logcode structures</text>
+      </g>
+      <g transform="translate(486 244)">
+        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
+        <text x="20" y="34" className="home-visual-card-title">Field index</text>
+        <text x="20" y="58" className="home-visual-card-sub">paths and evidence</text>
+      </g>
+
+      <path d="M 614 184 C 614 214 614 220 614 238" className="home-visual-soft-arrow" />
+      <path d="M 614 184 C 500 214 374 214 362 238" className="home-visual-soft-arrow" />
+      <path d="M 614 184 C 434 222 170 216 146 238" className="home-visual-soft-arrow" />
+
+      <g transform="translate(78 372)">
+        <path d="M 0 0 L 540 0" className="home-visual-timeline" />
+        <circle cx="0" cy="0" r="8" className="home-visual-dot is-red" />
+        <circle cx="180" cy="0" r="8" className="home-visual-dot is-blue" />
+        <circle cx="360" cy="0" r="8" className="home-visual-dot is-green" />
+        <circle cx="540" cy="0" r="8" className="home-visual-dot is-orange" />
+        <text x="0" y="34" className="home-visual-tick" textAnchor="middle">procedure</text>
+        <text x="180" y="34" className="home-visual-tick" textAnchor="middle">logcode</text>
+        <text x="360" y="34" className="home-visual-tick" textAnchor="middle">field</text>
+        <text x="540" y="34" className="home-visual-tick" textAnchor="middle">note</text>
+      </g>
+    </svg>
+  );
+}
+
+function HomeLanding({ onOpenNrLog }: { onOpenNrLog: () => void }) {
+  return (
+    <section className="home-landing">
+      <div className="home-hero">
+        <div className="home-hero-copy">
+          <div className="home-kicker">CellNinjia extracted log structures</div>
+          <h1>NR Log Explorer</h1>
+          <p>
+            A structured workspace for reading 5G NR events, logcodes, message schemas, field paths, and team notes from extracted diagnostic logs.
+          </p>
+          <div className="home-hero-actions">
+            <button className="home-primary-action" type="button" onClick={onOpenNrLog}>Open NR Log</button>
+            <span>Start from Event, Message, or Field after entering the log index.</span>
+          </div>
+        </div>
+        <HomeVisual />
+      </div>
+      <div className="home-summary-grid">
+        <div className="home-summary-item">
+          <b>Procedure first</b>
+          <span>Read high-level events before jumping into raw message trees.</span>
+        </div>
+        <div className="home-summary-item">
+          <b>Schema backed</b>
+          <span>Logcode structures are generated from CellNinjia extraction outputs.</span>
+        </div>
+        <div className="home-summary-item">
+          <b>Team editable</b>
+          <span>Notes are stored as JSON so updates can go through GitHub review.</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NrLogIndex({ onOpenEvent, onOpenMessage, onOpenField }: { onOpenEvent: () => void; onOpenMessage: () => void; onOpenField: () => void }) {
+  return (
+    <section className="nr-log-index-panel">
+      <div className="nr-log-index-header">
+        <div className="home-kicker">Choose an index</div>
+        <h2>NR Log</h2>
+        <p>Use these three entry points depending on whether you know the procedure, the logcode, or the field name.</p>
+      </div>
+      <div className="home-action-grid">
+        <button type="button" onClick={onOpenEvent}>
+          <span>Event</span>
+          <small>procedure flow and evidence</small>
+        </button>
+        <button type="button" onClick={onOpenMessage}>
+          <span>Message</span>
+          <small>logcode schemas and variants</small>
+        </button>
+        <button type="button" onClick={onOpenField}>
+          <span>Field</span>
+          <small>field paths across logcodes</small>
+        </button>
+      </div>
+    </section>
+  );
+}
+
 function HandoverDiagram({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void }) {
   const steps = handoverEvent.steps || {};
   const [selectedStep, setSelectedStep] = useState<StepInfo | null>(null);
@@ -1755,18 +1881,18 @@ export function App() {
       {view === "home" ? (
         <section className="home-screen">
           <HistoryButtons {...historyControls} />
-          <div className="home-intro">
-            <div className="home-kicker">CellNinjia extracted log structures</div>
-            <h1>NR Log Explorer</h1>
-            <p>
-              A shared reference for 5G NR events, logcodes, message structures, fields, and team notes.
-            </p>
-          </div>
-          <div className="home-action-grid">
-            <button type="button" onClick={() => navigate({ view: "event" })}>Event</button>
-            <button type="button" onClick={() => navigate({ view: "message" })}>Message</button>
-            <button type="button" onClick={() => navigate({ view: "field" })}>Field</button>
-          </div>
+          <HomeLanding onOpenNrLog={() => navigate({ view: "nrLog" })} />
+        </section>
+      ) : null}
+
+      {view === "nrLog" ? (
+        <section className="explorer-screen nr-log-screen">
+          <TopBar title="NR Log" onHome={() => navigate({ view: "home" })} {...historyControls} />
+          <NrLogIndex
+            onOpenEvent={() => navigate({ view: "event" })}
+            onOpenMessage={() => navigate({ view: "message" })}
+            onOpenField={() => navigate({ view: "field" })}
+          />
         </section>
       ) : null}
 
