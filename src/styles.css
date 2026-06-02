@@ -134,77 +134,89 @@ button {
   min-height: 620px;
 }
 
-.home-network-grid path,
-.home-flow-lines path {
-  fill: none;
-  stroke: #8bb8e8;
-  stroke-width: 8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.home-flow-lines path {
-  stroke: #0b5cad;
-  stroke-width: 6;
-}
-
-.home-tower-icon,
-.home-phone-icon,
-.home-chip-icon,
-.home-log-doc,
-.home-schema-card,
-.home-field-card {
-  fill: none;
+.home-blackbox rect {
+  fill: #f8fafc;
   stroke: #000000;
   stroke-width: 6;
+}
+
+.home-blackbox text,
+.home-flow-stage text,
+.home-explorer-card text,
+.home-visual-badges text {
+  fill: #000000;
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  stroke: none;
+}
+
+.home-blackbox text {
+  font-size: 36px;
+}
+
+.home-blackbox text + text {
+  fill: #555555;
+  font-size: 25px;
+}
+
+.home-blackbox-tower,
+.home-blackbox-phone,
+.home-blackbox-waves,
+.home-flow-stage,
+.home-explorer-card {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.home-tower-icon circle,
-.home-phone-icon rect,
-.home-chip-icon rect,
-.home-log-doc rect,
-.home-schema-card rect,
-.home-field-card rect {
+.home-blackbox-phone rect,
+.home-flow-stage rect,
+.home-explorer-card rect {
   fill: #ffffff;
 }
 
-.home-chip-icon rect {
+.home-blackbox-waves {
+  stroke: #8bb8e8;
+  stroke-width: 7;
+}
+
+.home-flow-stage text {
+  fill: #0b5cad;
+  font-size: 25px;
+}
+
+.home-flow-stage.is-extract rect {
   fill: #f7fbff;
 }
 
-.home-log-doc rect {
+.home-flow-stage.is-extract text + text {
+  fill: #555555;
+  font-size: 23px;
+}
+
+.home-explorer-card rect {
+  fill: #000000;
+}
+
+.home-explorer-card text {
   fill: #ffffff;
+  font-size: 29px;
 }
 
-.home-log-doc text,
-.home-chip-icon text {
-  fill: #0b5cad;
-  font-family: "Arial", sans-serif;
-  font-size: 26px;
-  font-weight: 900;
-  stroke: none;
-}
-
-.home-chip-icon text + text {
-  fill: #555555;
-  font-size: 23px;
-}
-
-.home-schema-card text,
-.home-field-card text,
-.home-visual-badges text {
-  fill: #555555;
-  font-family: "Arial", sans-serif;
-  font-size: 23px;
-  font-weight: 900;
-  stroke: none;
+.home-blackbox-output path {
+  fill: none;
+  stroke: #0b5cad;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  marker-end: url(#home-flow-arrow);
 }
 
 .home-visual-badges text {
-  fill: #0b5cad;
-  font-size: 20px;
+  fill: #555555;
+  font-size: 18px;
 }
 
 .home-summary-grid {
