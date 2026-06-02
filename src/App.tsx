@@ -1383,7 +1383,7 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
 
 function HomeVisual() {
   return (
-    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="Cellular network logs extracted into structured indexes">
+    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="Cellular network diagnostic logs passed through CellNinjia extraction">
       <defs>
         <marker
           id="home-arrowhead"
@@ -1399,87 +1399,82 @@ function HomeVisual() {
         </marker>
       </defs>
 
-      <g className="home-source-card" transform="translate(32 78)">
-        <rect x="0" y="0" width="238" height="190" rx="18" />
-        <text x="24" y="42">Cellular network</text>
-        <g className="home-mini-tower" transform="translate(26 68)">
-          <circle cx="42" cy="54" r="9" />
-          <path d="M 42 64 L 22 136" />
-          <path d="M 42 64 L 64 136" />
-          <path d="M 31 91 L 54 101 L 28 118 L 60 131" />
-          <path d="M 11 45 C 15 24 27 12 42 12 C 57 12 69 24 73 45" />
-          <path d="M 0 44 C 8 14 23 0 42 0 C 61 0 76 14 84 44" />
+      <g className="home-network-card" transform="translate(34 82)">
+        <rect x="0" y="0" width="292" height="246" rx="20" />
+        <text className="home-card-title" x="26" y="46">Cellular network</text>
+        <g className="home-mini-tower" transform="translate(34 82)">
+          <circle cx="48" cy="62" r="10" />
+          <path d="M 48 72 L 24 160" />
+          <path d="M 48 72 L 72 160" />
+          <path d="M 36 102 L 62 114 L 32 132 L 68 148" />
+          <path d="M 12 50 C 17 26 31 14 48 14 C 65 14 79 26 84 50" />
+          <path d="M 0 50 C 9 16 28 0 48 0 C 68 0 87 16 96 50" />
         </g>
-        <g className="home-mini-tower" transform="translate(150 72)">
-          <circle cx="42" cy="54" r="9" />
-          <path d="M 42 64 L 22 136" />
-          <path d="M 42 64 L 64 136" />
-          <path d="M 31 91 L 54 101 L 28 118 L 60 131" />
-          <path d="M 11 45 C 15 24 27 12 42 12 C 57 12 69 24 73 45" />
-          <path d="M 0 44 C 8 14 23 0 42 0 C 61 0 76 14 84 44" />
+        <g className="home-mini-tower" transform="translate(176 82)">
+          <circle cx="48" cy="62" r="10" />
+          <path d="M 48 72 L 24 160" />
+          <path d="M 48 72 L 72 160" />
+          <path d="M 36 102 L 62 114 L 32 132 L 68 148" />
+          <path d="M 12 50 C 17 26 31 14 48 14 C 65 14 79 26 84 50" />
+          <path d="M 0 50 C 9 16 28 0 48 0 C 68 0 87 16 96 50" />
         </g>
-        <g className="home-mini-phone" transform="translate(103 86)">
-          <rect x="0" y="0" width="48" height="82" rx="10" />
-          <path d="M 18 12 L 30 12" />
-          <path d="M 17 70 L 31 70" />
+        <g className="home-mini-phone" transform="translate(123 98)">
+          <rect x="0" y="0" width="56" height="96" rx="12" />
+          <path d="M 22 14 L 34 14" />
+          <path d="M 21 82 L 35 82" />
         </g>
-        <path className="home-source-signal" d="M 80 126 C 112 98 152 98 184 126" />
-        <path className="home-source-signal" d="M 72 150 C 112 116 154 116 194 150" />
+        <path className="home-source-signal" d="M 82 154 C 120 118 176 118 218 154" />
+        <path className="home-source-signal" d="M 70 184 C 122 142 182 142 236 184" />
       </g>
 
-      <g className="home-raw-log-card" transform="translate(44 356)">
-        <rect x="0" y="0" width="248" height="120" rx="16" />
-        <text x="24" y="40">diagnostic logs</text>
-        <text x="24" y="72">0xB821  0xB96A</text>
-        <path d="M 24 94 L 178 94" />
+      <g className="home-log-card" transform="translate(64 382)">
+        <rect x="0" y="0" width="260" height="116" rx="16" />
+        <text className="home-card-title" x="24" y="40">UE diagnostic logs</text>
+        <text className="home-muted-line" x="24" y="72">0xB821  0xB96A  0xB97F</text>
+        <path d="M 24 92 L 204 92" />
       </g>
 
-      <g className="home-flow-lines">
-        <path d="M 270 172 C 308 184 326 224 344 266" />
-        <path d="M 292 416 C 320 406 336 360 348 328" />
-        <path d="M 478 284 C 504 226 516 154 538 132" />
-        <path d="M 484 310 L 538 310" />
-        <path d="M 478 340 C 508 390 520 452 538 462" />
+      <g className="home-log-pipe">
+        <path d="M 326 214 C 358 214 376 214 404 214" />
+        <path d="M 324 438 C 354 424 378 382 404 326" />
+        <text x="342" y="196">log stream</text>
       </g>
 
-      <g className="home-lens-system" transform="translate(330 214)">
-        <path className="home-lens-tunnel" d="M 0 52 L 90 0 L 178 42 L 178 148 L 90 200 L 0 148 Z" />
-        <path className="home-lens-spine" d="M 20 60 L 158 42" />
-        <path className="home-lens-spine" d="M 20 148 L 158 148" />
-        <ellipse cx="92" cy="100" rx="70" ry="58" />
-        <ellipse cx="92" cy="100" rx="38" ry="31" />
-        <path d="M 138 144 L 184 190" />
-        <text x="92" y="91" textAnchor="middle">CellNinjia</text>
-        <text x="92" y="124" textAnchor="middle">extract</text>
-      </g>
+      <g className="home-cellninjia-card" transform="translate(404 78)">
+        <rect x="0" y="0" width="282" height="424" rx="22" />
+        <text className="home-card-title" x="30" y="52">CellNinjia</text>
+        <text className="home-muted-line" x="30" y="82">extract and structure</text>
 
-      <g className="home-output-stack" transform="translate(540 82)">
-        <g className="home-output-card">
-          <rect x="0" y="0" width="168" height="98" rx="14" />
-          <text x="22" y="38">Event</text>
-          <path d="M 24 64 L 58 64 L 58 82 L 122 82" />
-          <circle cx="24" cy="64" r="6" />
-          <circle cx="122" cy="82" r="6" />
+        <g className="home-extract-channel" transform="translate(30 112)">
+          <rect x="0" y="0" width="222" height="132" rx="18" />
+          <path d="M 20 40 L 84 40" />
+          <path d="M 20 62 L 106 62" />
+          <path d="M 20 84 L 74 84" />
+          <circle cx="158" cy="66" r="36" />
+          <circle cx="158" cy="66" r="20" />
+          <path d="M 184 92 L 212 120" />
+          <text x="158" y="71" textAnchor="middle">parse</text>
         </g>
-        <g className="home-output-card" transform="translate(0 152)">
-          <rect x="0" y="0" width="168" height="98" rx="14" />
-          <text x="22" y="38">Message</text>
-          <path d="M 26 62 L 126 62" />
-          <path d="M 26 80 L 96 80" />
-        </g>
-        <g className="home-output-card" transform="translate(0 304)">
-          <rect x="0" y="0" width="168" height="98" rx="14" />
-          <text x="22" y="38">Field</text>
-          <path d="M 26 62 L 90 62" />
-          <path d="M 26 80 L 116 80" />
-          <circle cx="126" cy="62" r="16" />
-          <path d="M 138 74 L 154 90" />
+
+        <g className="home-output-chips" transform="translate(30 292)">
+          <g>
+            <rect x="0" y="0" width="70" height="62" rx="10" />
+            <text x="35" y="38" textAnchor="middle">Event</text>
+          </g>
+          <g transform="translate(81 0)">
+            <rect x="0" y="0" width="82" height="62" rx="10" />
+            <text x="41" y="38" textAnchor="middle">Message</text>
+          </g>
+          <g transform="translate(174 0)">
+            <rect x="0" y="0" width="62" height="62" rx="10" />
+            <text x="31" y="38" textAnchor="middle">Field</text>
+          </g>
         </g>
       </g>
 
       <g className="home-visual-badges">
-        <text x="44" y="524">input: network behavior + UE logs</text>
-        <text x="422" y="560">output: searchable indexes</text>
+        <text x="74" y="540">input: network behavior and UE logs</text>
+        <text x="430" y="540">output: searchable indexes</text>
       </g>
     </svg>
   );

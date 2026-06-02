@@ -159,7 +159,36 @@ button {
   stroke-width: 4;
 }
 
+.home-log-pipe path {
+  fill: none;
+  stroke: #0b5cad;
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  marker-end: url(#home-arrowhead);
+}
+
+.home-log-pipe text,
+.home-card-title,
+.home-muted-line,
+.home-extract-channel text,
+.home-output-chips text {
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  stroke: none;
+}
+
+.home-log-pipe text {
+  fill: #555555;
+  font-size: 15px;
+}
+
 .home-source-card,
+.home-network-card,
+.home-log-card,
+.home-cellninjia-card,
+.home-extract-channel,
+.home-output-chips,
 .home-mini-tower,
 .home-mini-phone,
 .home-raw-log-card,
@@ -173,14 +202,65 @@ button {
 }
 
 .home-source-card > rect,
+.home-network-card > rect,
+.home-log-card > rect,
+.home-cellninjia-card > rect,
+.home-extract-channel rect,
+.home-output-chips rect,
 .home-mini-phone rect,
 .home-raw-log-card rect,
 .home-output-card rect {
   fill: #ffffff;
 }
 
-.home-source-card > rect {
+.home-source-card > rect,
+.home-network-card > rect,
+.home-cellninjia-card > rect {
   fill: #f8fafc;
+}
+
+.home-log-card > rect,
+.home-extract-channel rect,
+.home-output-chips rect {
+  fill: #ffffff;
+}
+
+.home-card-title {
+  fill: #0b5cad;
+  font-size: 24px;
+}
+
+.home-muted-line {
+  fill: #555555;
+  font-size: 18px;
+}
+
+.home-cellninjia-card > .home-card-title {
+  font-size: 30px;
+}
+
+.home-extract-channel text {
+  fill: #0b5cad;
+  font-size: 18px;
+}
+
+.home-extract-channel path,
+.home-log-card path {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.home-extract-channel circle {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 4.5;
+}
+
+.home-output-chips text {
+  fill: #000000;
+  font-size: 14px;
 }
 
 .home-source-signal {
