@@ -134,90 +134,111 @@ button {
   min-height: 620px;
 }
 
-.home-network-grid path,
 .home-flow-lines path {
   fill: none;
   stroke: #8bb8e8;
-  stroke-width: 8;
+  stroke-width: 7;
   stroke-linecap: round;
   stroke-linejoin: round;
+  marker-end: url(#home-arrowhead);
 }
 
 .home-flow-lines path {
   stroke: #0b5cad;
-  stroke-width: 6;
+  stroke-width: 5.5;
 }
 
-.home-tower-icon,
-.home-phone-icon,
-.home-lens-icon,
-.home-log-doc,
-.home-schema-card,
-.home-field-card {
+.home-source-card,
+.home-mini-tower,
+.home-mini-phone,
+.home-raw-log-card,
+.home-lens-system,
+.home-output-card {
   fill: none;
   stroke: #000000;
-  stroke-width: 6;
+  stroke-width: 5.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.home-tower-icon circle,
-.home-phone-icon rect,
-.home-log-doc rect,
-.home-schema-card rect,
-.home-field-card rect {
+.home-source-card > rect,
+.home-mini-phone rect,
+.home-raw-log-card rect,
+.home-output-card rect {
   fill: #ffffff;
 }
 
-.home-lens-channel {
+.home-source-card > rect {
+  fill: #f8fafc;
+}
+
+.home-source-signal {
+  fill: none;
+  stroke: #8bb8e8;
+  stroke-width: 6;
+}
+
+.home-lens-tunnel {
   fill: #f7fbff;
   stroke: #8bb8e8;
   stroke-width: 7;
 }
 
-.home-lens-ray {
+.home-lens-spine {
   fill: none;
   stroke: #0b5cad;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 
-.home-lens-icon ellipse {
+.home-lens-system ellipse {
   fill: #ffffff;
   stroke: #000000;
   stroke-width: 6;
 }
 
-.home-log-doc rect {
+.home-source-card text,
+.home-raw-log-card text,
+.home-lens-system text,
+.home-output-card text,
+.home-visual-badges text {
+  font-family: "Arial", sans-serif;
+  font-weight: 900;
+  stroke: none;
+}
+
+.home-source-card text,
+.home-raw-log-card text,
+.home-lens-system text,
+.home-output-card text {
+  fill: #0b5cad;
+  font-size: 24px;
+}
+
+.home-raw-log-card text + text,
+.home-lens-system text + text {
+  fill: #555555;
+  font-size: 21px;
+}
+
+.home-output-card path {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5;
+}
+
+.home-output-card circle {
   fill: #ffffff;
-}
-
-.home-log-doc text,
-.home-lens-icon text {
-  fill: #0b5cad;
-  font-family: "Arial", sans-serif;
-  font-size: 26px;
-  font-weight: 900;
-  stroke: none;
-}
-
-.home-lens-icon text + text {
-  fill: #555555;
-  font-size: 23px;
-}
-
-.home-schema-card text,
-.home-field-card text,
-.home-visual-badges text {
-  fill: #555555;
-  font-family: "Arial", sans-serif;
-  font-size: 23px;
-  font-weight: 900;
-  stroke: none;
+  stroke: #000000;
+  stroke-width: 5;
 }
 
 .home-visual-badges text {
+  fill: #555555;
+  font-size: 18px;
+}
+
+.home-visual-badges text + text {
   fill: #0b5cad;
-  font-size: 20px;
 }
 
 .home-summary-grid {
