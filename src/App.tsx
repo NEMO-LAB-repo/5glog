@@ -1341,6 +1341,46 @@ function LegacyMessageShape({ shape, step, onSelect }: { shape: LegacyStepShape;
   );
 }
 
+function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
+  return (
+    <section className="handover-intro-panel">
+      <div className="handover-intro-kicker">Event overview</div>
+      <h2>5G NR Handover</h2>
+      <p className="handover-intro-lead">
+        Handover moves a UE from the current serving cell to a better target cell while the UE stays in RRC_CONNECTED state.
+      </p>
+
+      <div className="handover-intro-grid">
+        <div className="handover-intro-block">
+          <h3>What it does</h3>
+          <p>
+            It keeps the connection alive while radio service changes cell. The network sends target-cell configuration, the UE applies it, performs target random access, then confirms completion.
+          </p>
+        </div>
+        <div className="handover-intro-block">
+          <h3>Why it happens</h3>
+          <p>
+            Measurement results show that another cell is more suitable, often because the source signal becomes weak or a neighbor cell becomes better.
+          </p>
+        </div>
+        <div className="handover-intro-block">
+          <h3>How logs prove it</h3>
+          <p>
+            Look for RRC measurement config and report, network handover command, ML1 target config, MAC random access, RRCReconfigurationComplete, then user-plane data resume.
+          </p>
+        </div>
+      </div>
+
+      <div className="handover-intro-action">
+        <button className="handover-diagram-button" type="button" onClick={onOpenDiagram}>
+          Open sequence diagram
+        </button>
+        <span>The sequence diagram shows the RRC, ML1, MAC, network, and target-cell timing.</span>
+      </div>
+    </section>
+  );
+}
+
 function HandoverDiagram({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void }) {
   const steps = handoverEvent.steps || {};
   const [selectedStep, setSelectedStep] = useState<StepInfo | null>(null);
@@ -1526,6 +1566,7 @@ export function App() {
   const [selectedMessageLayer, setSelectedMessageLayer] = useState<string | null>(null);
   const [selectedLogcodeGroup, setSelectedLogcodeGroup] = useState<string | null>(null);
   const [messageQuery, setMessageQuery] = useState("");
+  const [showHandoverDiagram, setShowHandoverDiagram] = useState(false);
   const repositoryMessageNotesStore = useMemo(() => sanitizeNotesStore(repositoryMessageNotes, "messages"), []);
   const repositoryFieldNotesStore = useMemo(() => sanitizeNotesStore(repositoryFieldNotes, "fields"), []);
   const [localMessageNotes, setLocalMessageNotes] = useState<MessageNotesStore>(() => readLocalNotesStore(localMessageNotesStorageKey));
@@ -1631,6 +1672,9 @@ export function App() {
   function applyRoute(route: AppRoute) {
     const nextRoute = normalizeRoute(route);
     setView(nextRoute.view);
+    if (nextRoute.view === "handover") {
+      setShowHandoverDiagram(false);
+    }
 
     if (nextRoute.view !== "message") {
       setSelectedMessageLayer(null);
@@ -1838,7 +1882,18 @@ export function App() {
       {view === "handover" ? (
         <section className="viewer-screen">
           <TopBar title="Handover" onHome={() => navigate({ view: "event" })} backLabel="Event / Message" {...historyControls} />
-          <HandoverDiagram onOpenLogcode={openDetail} />
+          {showHandoverDiagram ? (
+            <>
+              <div className="handover-diagram-toolbar">
+                <button className="field-index-back" type="button" onClick={() => setShowHandoverDiagram(false)}>
+                  Back to introduction
+                </button>
+              </div>
+              <HandoverDiagram onOpenLogcode={openDetail} />
+            </>
+          ) : (
+            <HandoverIntro onOpenDiagram={() => setShowHandoverDiagram(true)} />
+          )}
         </section>
       ) : null}
 
