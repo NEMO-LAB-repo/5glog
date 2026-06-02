@@ -29,16 +29,20 @@ button {
 }
 
 .home-landing {
-  width: min(100%, 1320px);
-  display: grid;
-  gap: 18px;
+  width: min(100%, 1220px);
 }
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(360px, 0.92fr) minmax(520px, 1.08fr);
-  gap: 24px;
-  align-items: stretch;
+  grid-template-columns: minmax(460px, 1fr) minmax(340px, 440px);
+  gap: 34px;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 680px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 58px 64px;
 }
 
 .home-hero-copy,
@@ -54,14 +58,15 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 460px;
-  padding: 38px 42px;
+  min-height: 0;
+  border: 0;
+  padding: 0;
 }
 
 .home-kicker {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   color: #0b5cad;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -69,16 +74,16 @@ button {
 .home-hero-copy h1 {
   margin: 0;
   color: #000000;
-  font-size: 66px;
+  font-size: clamp(70px, 8vw, 118px);
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 0.98;
 }
 
 .home-hero-copy p {
   max-width: 580px;
-  margin: 18px 0 0;
+  margin: 34px 0 0;
   color: #111111;
-  font-size: 22px;
+  font-size: clamp(24px, 2.7vw, 38px);
   font-weight: 800;
   line-height: 1.35;
 }
@@ -86,10 +91,10 @@ button {
 .home-hero-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-top: 32px;
+  gap: 26px;
+  margin-top: 52px;
   color: #555555;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.35;
 }
@@ -100,8 +105,8 @@ button {
   border-radius: 6px;
   background: #000000;
   color: #ffffff;
-  padding: 12px 18px;
-  font-size: 20px;
+  padding: 22px 38px;
+  font-size: 34px;
   font-weight: 900;
   cursor: pointer;
 }
@@ -113,99 +118,59 @@ button {
 .home-visual {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: 460px;
+  height: auto;
+  min-height: 520px;
 }
 
-.home-visual-frame,
-.home-visual-node,
-.home-visual-card {
+.home-icon-link {
+  fill: none;
+  stroke: #8bb8e8;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-cell-icon {
+  fill: none;
   stroke: #000000;
-  stroke-width: 2;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.home-visual-frame {
+.home-cell-icon circle {
   fill: #ffffff;
 }
 
-.home-visual-node.is-radio {
-  fill: #f0f6ff;
+.home-log-stack rect,
+.home-small-card rect {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 5;
 }
 
-.home-visual-node.is-extract {
-  fill: #fff7ed;
+.home-log-stack path,
+.home-small-card path,
+.home-small-card circle {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.home-visual-node.is-explorer {
-  fill: #f0fdf4;
-}
-
-.home-visual-card {
-  fill: #f7f7f7;
-}
-
-.home-visual-title,
-.home-visual-node-title,
-.home-visual-card-title {
-  fill: #000000;
+.home-log-stack text {
+  fill: #0b5cad;
+  font-family: "Arial", sans-serif;
+  font-size: 28px;
   font-weight: 900;
 }
 
-.home-visual-title {
-  font-size: 22px;
-}
-
-.home-visual-node-title,
-.home-visual-card-title {
-  font-size: 17px;
-}
-
-.home-visual-node-sub,
-.home-visual-card-sub,
-.home-visual-tick {
+.home-small-card text {
   fill: #555555;
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.home-visual-arrow,
-.home-visual-soft-arrow {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 2.5;
-  marker-end: url(#home-arrow);
-}
-
-.home-visual-soft-arrow {
-  stroke: #555555;
-  stroke-dasharray: 7 7;
-}
-
-.home-visual-timeline {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 3;
-}
-
-.home-visual-dot {
-  stroke: #000000;
-  stroke-width: 2;
-}
-
-.home-visual-dot.is-red {
-  fill: #e0483e;
-}
-
-.home-visual-dot.is-blue {
-  fill: #2b6cb0;
-}
-
-.home-visual-dot.is-green {
-  fill: #178f73;
-}
-
-.home-visual-dot.is-orange {
-  fill: #d98a1b;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .home-summary-grid {
@@ -307,12 +272,17 @@ button {
     padding: 22px;
   }
 
-  .home-hero,
-  .home-summary-grid {
+  .home-hero {
     grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 32px;
   }
 
-  .home-hero-copy,
+  .home-hero-copy {
+    min-height: 0;
+    padding: 0;
+  }
+
   .nr-log-index-panel {
     min-height: 0;
     padding: 24px;
@@ -320,11 +290,11 @@ button {
 
   .home-hero-copy h1,
   .nr-log-index-header h2 {
-    font-size: 42px;
+    font-size: 54px;
   }
 
   .home-hero-copy p {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .home-hero-actions {
@@ -332,8 +302,14 @@ button {
     flex-direction: column;
   }
 
+  .home-primary-action {
+    font-size: 26px;
+  }
+
   .home-visual {
-    min-height: 330px;
+    justify-self: center;
+    max-width: 420px;
+    min-height: 0;
   }
 
   .home-action-grid {

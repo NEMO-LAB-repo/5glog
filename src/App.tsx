@@ -1383,64 +1383,61 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
 
 function HomeVisual() {
   return (
-    <svg className="home-visual" viewBox="0 0 720 460" role="img" aria-label="NR log extraction and exploration overview">
-      <defs>
-        <marker id="home-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-          <path d="M 0 0 L 10 5 L 0 10 z" />
-        </marker>
-      </defs>
-      <rect x="1" y="1" width="718" height="458" rx="14" className="home-visual-frame" />
-      <text x="34" y="50" className="home-visual-title">CellNinjia extraction pipeline</text>
+    <svg className="home-visual" viewBox="0 0 460 560" role="img" aria-label="Cellular network and diagnostic log icons">
+      <g className="home-icon-cluster">
+        <path className="home-icon-link" d="M 104 144 L 224 96 L 356 150" />
+        <path className="home-icon-link" d="M 104 144 L 210 278 L 356 150" />
+        <path className="home-icon-link" d="M 210 278 L 318 382" />
 
-      <g transform="translate(48 96)">
-        <rect x="0" y="0" width="132" height="88" rx="8" className="home-visual-node is-radio" />
-        <text x="66" y="34" className="home-visual-node-title" textAnchor="middle">5G NR logs</text>
-        <text x="66" y="60" className="home-visual-node-sub" textAnchor="middle">QXDM / qlog text</text>
-      </g>
-      <g transform="translate(300 88)">
-        <rect x="0" y="0" width="150" height="104" rx="8" className="home-visual-node is-extract" />
-        <text x="75" y="36" className="home-visual-node-title" textAnchor="middle">CellNinjia</text>
-        <text x="75" y="62" className="home-visual-node-sub" textAnchor="middle">schema extraction</text>
-        <text x="75" y="82" className="home-visual-node-sub" textAnchor="middle">field trees</text>
-      </g>
-      <g transform="translate(548 96)">
-        <rect x="0" y="0" width="132" height="88" rx="8" className="home-visual-node is-explorer" />
-        <text x="66" y="34" className="home-visual-node-title" textAnchor="middle">Explorer</text>
-        <text x="66" y="60" className="home-visual-node-sub" textAnchor="middle">events + notes</text>
-      </g>
-      <line x1="182" y1="140" x2="294" y2="140" className="home-visual-arrow" />
-      <line x1="452" y1="140" x2="542" y2="140" className="home-visual-arrow" />
+        <g transform="translate(46 70)" className="home-cell-icon">
+          <circle cx="58" cy="74" r="12" />
+          <path d="M 58 86 L 30 178" />
+          <path d="M 58 86 L 88 178" />
+          <path d="M 44 120 L 74 132 L 38 152 L 82 166" />
+          <path d="M 16 62 C 18 38 34 20 58 20 C 82 20 98 38 100 62" />
+          <path d="M 0 60 C 6 20 28 2 58 2 C 90 2 112 20 118 60" />
+          <path d="M 28 64 C 30 50 40 40 58 40 C 76 40 86 50 88 64" />
+        </g>
 
-      <g transform="translate(54 244)">
-        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
-        <text x="20" y="34" className="home-visual-card-title">Event index</text>
-        <text x="20" y="58" className="home-visual-card-sub">handover, registration</text>
-      </g>
-      <g transform="translate(270 244)">
-        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
-        <text x="20" y="34" className="home-visual-card-title">Message index</text>
-        <text x="20" y="58" className="home-visual-card-sub">logcode structures</text>
-      </g>
-      <g transform="translate(486 244)">
-        <rect x="0" y="0" width="184" height="86" rx="8" className="home-visual-card" />
-        <text x="20" y="34" className="home-visual-card-title">Field index</text>
-        <text x="20" y="58" className="home-visual-card-sub">paths and evidence</text>
-      </g>
+        <g transform="translate(268 74)" className="home-cell-icon">
+          <circle cx="58" cy="74" r="12" />
+          <path d="M 58 86 L 30 178" />
+          <path d="M 58 86 L 88 178" />
+          <path d="M 44 120 L 74 132 L 38 152 L 82 166" />
+          <path d="M 16 62 C 18 38 34 20 58 20 C 82 20 98 38 100 62" />
+          <path d="M 0 60 C 6 20 28 2 58 2 C 90 2 112 20 118 60" />
+          <path d="M 28 64 C 30 50 40 40 58 40 C 76 40 86 50 88 64" />
+        </g>
 
-      <path d="M 614 184 C 614 214 614 220 614 238" className="home-visual-soft-arrow" />
-      <path d="M 614 184 C 500 214 374 214 362 238" className="home-visual-soft-arrow" />
-      <path d="M 614 184 C 434 222 170 216 146 238" className="home-visual-soft-arrow" />
+        <g transform="translate(164 214)" className="home-log-stack">
+          <rect x="0" y="0" width="174" height="214" rx="12" />
+          <path d="M 126 0 L 174 48 L 126 48 Z" />
+          <path d="M 24 70 L 112 70" />
+          <path d="M 24 102 L 144 102" />
+          <path d="M 24 134 L 130 134" />
+          <path d="M 24 166 L 86 166" />
+          <text x="24" y="42">0xB821</text>
+        </g>
 
-      <g transform="translate(78 372)">
-        <path d="M 0 0 L 540 0" className="home-visual-timeline" />
-        <circle cx="0" cy="0" r="8" className="home-visual-dot is-red" />
-        <circle cx="180" cy="0" r="8" className="home-visual-dot is-blue" />
-        <circle cx="360" cy="0" r="8" className="home-visual-dot is-green" />
-        <circle cx="540" cy="0" r="8" className="home-visual-dot is-orange" />
-        <text x="0" y="34" className="home-visual-tick" textAnchor="middle">procedure</text>
-        <text x="180" y="34" className="home-visual-tick" textAnchor="middle">logcode</text>
-        <text x="360" y="34" className="home-visual-tick" textAnchor="middle">field</text>
-        <text x="540" y="34" className="home-visual-tick" textAnchor="middle">note</text>
+        <g transform="translate(54 330)" className="home-small-card">
+          <rect x="0" y="0" width="136" height="86" rx="10" />
+          <path d="M 28 26 L 28 62" />
+          <path d="M 44 26 L 44 62" />
+          <path d="M 60 26 L 60 62" />
+          <path d="M 78 38 L 112 38" />
+          <path d="M 78 54 L 104 54" />
+          <text x="20" y="102">schema</text>
+        </g>
+
+        <g transform="translate(300 374)" className="home-small-card">
+          <rect x="0" y="0" width="126" height="82" rx="10" />
+          <path d="M 28 28 L 86 28" />
+          <path d="M 28 44 L 96 44" />
+          <path d="M 28 60 L 70 60" />
+          <circle cx="102" cy="24" r="16" />
+          <path d="M 112 36 L 124 48" />
+          <text x="16" y="98">field</text>
+        </g>
       </g>
     </svg>
   );
@@ -1462,20 +1459,6 @@ function HomeLanding({ onOpenNrLog }: { onOpenNrLog: () => void }) {
           </div>
         </div>
         <HomeVisual />
-      </div>
-      <div className="home-summary-grid">
-        <div className="home-summary-item">
-          <b>Procedure first</b>
-          <span>Read high-level events before jumping into raw message trees.</span>
-        </div>
-        <div className="home-summary-item">
-          <b>Schema backed</b>
-          <span>Logcode structures are generated from CellNinjia extraction outputs.</span>
-        </div>
-        <div className="home-summary-item">
-          <b>Team editable</b>
-          <span>Notes are stored as JSON so updates can go through GitHub review.</span>
-        </div>
       </div>
     </section>
   );
