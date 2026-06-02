@@ -162,10 +162,14 @@ button {
 .home-log-pipe path {
   fill: none;
   stroke: #0b5cad;
-  stroke-width: 4.5;
+  stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
   marker-end: url(#home-arrowhead);
+}
+
+.home-single-pipe path {
+  stroke-width: 6;
 }
 
 .home-log-pipe text,
@@ -235,6 +239,11 @@ button {
   font-size: 18px;
 }
 
+.home-cellninjia-card > .home-card-title {
+  font-size: 30px;
+}
+
+.home-network-card > .home-card-title,
 .home-cellninjia-card > .home-card-title {
   font-size: 30px;
 }
