@@ -1400,8 +1400,10 @@ function HomeVisual() {
       </defs>
 
       <g className="home-three-radio-link">
-        <path d="M 278 218 C 230 178 178 178 130 218" />
-        <path d="M 128 270 C 178 312 232 312 280 270" />
+        <path d="M 136 218 C 176 178 232 178 272 218" />
+        <path d="M 122 244 C 170 194 238 194 286 244" />
+        <path d="M 136 270 C 176 310 232 310 272 270" />
+        <path d="M 122 244 C 170 294 238 294 286 244" />
       </g>
 
       <g className="home-three-extract-link">
@@ -1439,8 +1441,7 @@ function HomeVisual() {
           <path d="M 96 16 H 106" />
           <path d="M 96 36 H 106" />
           <path d="M 96 56 H 106" />
-          <text className="home-three-modem-label" x="48" y="28" textAnchor="middle">modem</text>
-          <text className="home-three-logcode" x="48" y="58" textAnchor="middle">0xB821</text>
+          <text className="home-three-modem-label" x="48" y="44" textAnchor="middle">modem</text>
         </g>
       </g>
 
