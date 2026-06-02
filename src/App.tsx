@@ -1397,15 +1397,23 @@ function HomeVisual() {
         >
           <path d="M 1 1 L 11 6 L 1 11 z" />
         </marker>
+        <marker
+          id="home-red-arrow"
+          viewBox="0 0 12 12"
+          refX="10"
+          refY="6"
+          markerWidth="12"
+          markerHeight="12"
+          markerUnits="userSpaceOnUse"
+          orient="auto"
+        >
+          <path d="M 1 1 L 11 6 L 1 11 z" />
+        </marker>
       </defs>
 
       <g className="home-three-radio-link">
         <path d="M 164 226 L 292 226" />
         <path d="M 292 258 L 164 258" />
-      </g>
-
-      <g className="home-three-extract-link">
-        <path d="M 424 292 C 478 286 520 286 548 306" />
       </g>
 
       <g className="home-three-base" transform="translate(34 112)">
@@ -1448,6 +1456,10 @@ function HomeVisual() {
           <path d="M 96 56 H 106" />
           <text className="home-three-modem-label" x="48" y="44" textAnchor="middle">modem</text>
         </g>
+      </g>
+
+      <g className="home-three-extract-link">
+        <path d="M 430 305 C 462 300 492 300 520 314" />
       </g>
 
       <g className="home-three-cellninjia" transform="translate(520 274)">

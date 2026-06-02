@@ -138,6 +138,10 @@ button {
   fill: #000000;
 }
 
+#home-red-arrow path {
+  fill: #d00000;
+}
+
 .home-map-title {
   fill: #000000;
   font-family: "Arial", sans-serif;
@@ -176,11 +180,11 @@ button {
 
 .home-three-extract-link path {
   fill: none;
-  stroke: #000000;
+  stroke: #d00000;
   stroke-width: 6;
   stroke-linecap: round;
   stroke-linejoin: round;
-  marker-end: url(#home-map-arrow);
+  marker-end: url(#home-red-arrow);
 }
 
 .home-three-extract-link circle {
