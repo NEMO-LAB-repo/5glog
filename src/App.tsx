@@ -1383,7 +1383,7 @@ function HandoverIntro({ onOpenDiagram }: { onOpenDiagram: () => void }) {
 
 function HomeVisual() {
   return (
-    <svg className="home-visual" viewBox="0 0 720 620" role="img" aria-label="CellNinjia extracts diagnostic logs from UE connected to a base station">
+    <svg className="home-visual" viewBox="0 0 720 520" role="img" aria-label="CellNinjia extracts diagnostic logs from UE connected to a base station">
       <defs>
         <marker
           id="home-map-arrow"
@@ -1400,20 +1400,16 @@ function HomeVisual() {
       </defs>
 
       <g className="home-three-radio-link">
-        <path d="M 162 214 C 220 150 296 150 350 214" />
-        <path d="M 360 264 C 300 330 224 330 164 264" />
+        <path d="M 278 218 C 230 178 178 178 130 218" />
+        <path d="M 128 270 C 178 312 232 312 280 270" />
       </g>
 
       <g className="home-three-extract-link">
-        <path d="M 406 266 C 452 284 484 316 508 364" />
-        <path d="M 418 218 C 486 224 526 254 552 306" />
-        <circle cx="440" cy="280" r="6" />
-        <circle cx="480" cy="318" r="6" />
-        <circle cx="514" cy="366" r="6" />
+        <path d="M 438 236 C 492 230 522 252 548 286" />
       </g>
 
-      <g className="home-three-base" transform="translate(56 128)">
-        <text className="home-map-title" x="82" y="-34" textAnchor="middle">Base station</text>
+      <g className="home-three-base" transform="translate(34 112)">
+        <text className="home-map-title" x="92" y="-34" textAnchor="middle">Base station</text>
         <circle cx="82" cy="82" r="13" />
         <path d="M 82 95 L 34 282" />
         <path d="M 82 95 L 130 282" />
@@ -1423,31 +1419,36 @@ function HomeVisual() {
         <path d="M 54 70 C 61 52 70 44 82 44 C 96 44 105 52 110 70" />
       </g>
 
-      <g className="home-three-ue" transform="translate(300 104)">
+      <g className="home-three-ue" transform="translate(294 72)">
         <text className="home-map-title" x="72" y="-34" textAnchor="middle">UE</text>
-        <rect x="0" y="0" width="144" height="266" rx="30" />
-        <path d="M 52 24 H 92" />
-        <path d="M 52 242 H 92" />
-        <path d="M 34 74 H 110" />
-        <path d="M 34 108 H 92" />
-        <path d="M 34 142 H 110" />
-        <path d="M 34 176 H 76" />
-        <text className="home-three-logcode" x="72" y="213" textAnchor="middle">0xB821</text>
+        <rect x="0" y="0" width="156" height="334" rx="32" />
+        <path d="M 58 26 H 98" />
+        <path d="M 58 304 H 98" />
+        <path d="M 42 104 H 114" />
+        <path d="M 42 144 H 98" />
+        <path d="M 42 184 H 114" />
+        <path d="M 42 224 H 78" />
+        <text className="home-three-logcode" x="78" y="270" textAnchor="middle">0xB821</text>
       </g>
 
-      <g className="home-three-cellninjia" transform="translate(442 318)">
-        <text className="home-map-title" x="124" y="-34" textAnchor="middle">CellNinjia</text>
-        <rect x="0" y="0" width="238" height="172" rx="24" />
-        <g className="home-three-lens" transform="translate(26 34)">
-          <circle cx="54" cy="54" r="48" />
-          <circle cx="54" cy="54" r="23" />
-          <path d="M 88 88 L 126 126" />
+      <g className="home-three-cellninjia" transform="translate(520 274)">
+        <text className="home-map-title" x="86" y="-44" textAnchor="middle">CellNinjia</text>
+        <rect x="0" y="0" width="174" height="132" rx="20" />
+        <g className="home-three-lens" transform="translate(20 32)">
+          <circle cx="37" cy="37" r="34" />
+          <path d="M 62 62 L 92 92" />
+          <path d="M 74 74 L 104 104" />
+          <path d="M 30 20 C 44 20 54 28 58 40" />
         </g>
-        <g className="home-three-parser" transform="translate(138 42)">
-          <path d="M 0 0 H 58" />
-          <path d="M 0 32 H 74" />
-          <path d="M 0 64 H 46" />
-          <path className="home-map-parser-arrow" d="M 72 12 L 98 32 L 72 52" />
+        <g className="home-three-parser" transform="translate(114 38)">
+          <path d="M 0 0 H 42" />
+          <path d="M 0 28 H 48" />
+          <path d="M 0 56 H 32" />
+        </g>
+        <g className="home-three-bars" transform="translate(116 88)">
+          <path d="M 0 24 V 42" />
+          <path d="M 18 10 V 42" />
+          <path d="M 36 0 V 42" />
         </g>
       </g>
     </svg>

@@ -150,7 +150,8 @@ button {
 .home-three-ue,
 .home-three-cellninjia,
 .home-three-lens,
-.home-three-parser {
+.home-three-parser,
+.home-three-bars {
   fill: none;
   stroke: #000000;
   stroke-width: 5;
@@ -205,9 +206,9 @@ button {
   stroke-width: 4;
 }
 
-.home-three-lens path,
-.home-three-parser .home-map-parser-arrow {
+.home-three-bars path {
   stroke: #0b5cad;
+  stroke-width: 8;
 }
 
 .home-summary-grid {
