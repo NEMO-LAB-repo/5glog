@@ -136,16 +136,27 @@ button {
 
 .home-flow-lines path {
   fill: none;
-  stroke: #8bb8e8;
-  stroke-width: 7;
+  stroke: #0b5cad;
+  stroke-width: 3.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   marker-end: url(#home-arrowhead);
 }
 
-.home-flow-lines path {
+.home-arrowhead {
+  fill: #0b5cad;
+  stroke: none;
+}
+
+.home-flow-lines path:nth-child(1),
+.home-flow-lines path:nth-child(2) {
+  stroke: #8bb8e8;
+  stroke-width: 4.5;
+}
+
+.home-flow-lines path:nth-child(n + 3) {
   stroke: #0b5cad;
-  stroke-width: 5.5;
+  stroke-width: 4;
 }
 
 .home-source-card,
@@ -156,7 +167,7 @@ button {
 .home-output-card {
   fill: none;
   stroke: #000000;
-  stroke-width: 5.5;
+  stroke-width: 4.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -175,25 +186,25 @@ button {
 .home-source-signal {
   fill: none;
   stroke: #8bb8e8;
-  stroke-width: 6;
+  stroke-width: 4.5;
 }
 
 .home-lens-tunnel {
   fill: #f7fbff;
   stroke: #8bb8e8;
-  stroke-width: 7;
+  stroke-width: 5;
 }
 
 .home-lens-spine {
   fill: none;
   stroke: #0b5cad;
-  stroke-width: 5;
+  stroke-width: 4;
 }
 
 .home-lens-system ellipse {
   fill: #ffffff;
   stroke: #000000;
-  stroke-width: 6;
+  stroke-width: 5;
 }
 
 .home-source-card text,
@@ -211,25 +222,33 @@ button {
 .home-lens-system text,
 .home-output-card text {
   fill: #0b5cad;
-  font-size: 24px;
+  font-size: 21px;
 }
 
-.home-raw-log-card text + text,
+.home-raw-log-card text + text {
+  fill: #555555;
+  font-size: 18px;
+}
+
+.home-lens-system text {
+  font-size: 20px;
+}
+
 .home-lens-system text + text {
   fill: #555555;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .home-output-card path {
   fill: none;
   stroke: #000000;
-  stroke-width: 5;
+  stroke-width: 4;
 }
 
 .home-output-card circle {
   fill: #ffffff;
   stroke: #000000;
-  stroke-width: 5;
+  stroke-width: 4;
 }
 
 .home-visual-badges text {
