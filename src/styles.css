@@ -151,7 +151,6 @@ button {
 .home-three-cellninjia,
 .home-three-lens,
 .home-three-parser,
-.home-three-bars,
 .home-three-modem,
 .home-three-ue-waves {
   fill: none;
@@ -221,11 +220,6 @@ button {
 
 .home-three-lens circle:nth-child(2) {
   stroke-width: 4;
-}
-
-.home-three-bars path {
-  stroke: #000000;
-  stroke-width: 8;
 }
 
 .home-summary-grid {

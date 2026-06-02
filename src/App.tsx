@@ -1454,13 +1454,8 @@ function HomeVisual() {
         </g>
         <g className="home-three-parser" transform="translate(114 38)">
           <path d="M 0 0 H 42" />
-          <path d="M 0 28 H 48" />
-          <path d="M 0 56 H 32" />
-        </g>
-        <g className="home-three-bars" transform="translate(116 88)">
-          <path d="M 0 24 V 42" />
-          <path d="M 18 10 V 42" />
-          <path d="M 36 0 V 42" />
+          <path d="M 0 24 H 50" />
+          <path d="M 0 48 H 44" />
         </g>
       </g>
     </svg>
