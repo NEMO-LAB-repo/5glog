@@ -307,6 +307,16 @@ const handoverPatterns = [
   /\bsuccess\b/i
 ];
 
+const selectedFieldExplanations: Record<string, Record<string, string>> = {
+  "0xB96F": {
+    "Meas Id": "links this ML1 evaluation to measConfig / MeasurementReport measId",
+    "Cell Id": "cell being evaluated for the configured report condition",
+    "State": "ENTERING with TTT=0, or ENTERED, means the event condition is ready/active",
+    "Num Reports Sent": "1 or more means ML1 has already triggered report evidence",
+    "TTT Remaining": "0 means time-to-trigger has expired"
+  }
+};
+
 const messageLayerOrder = ["RRC", "ML1", "MAC", "RLC", "PDCP", "L2", "NAS", "IMS", "LTE", "Other"];
 
 function messageLayerLabel(layer: string): string {
@@ -495,6 +505,34 @@ function isSelected(parts: string[], selectedTerms: string[]): boolean {
   return selectedTerms.some((term) => normalizedParts.includes(normalizeForMatch(term)));
 }
 
+function selectedFieldExplanation(logcode: string | undefined, fieldName: string): string {
+  if (!logcode) return "";
+  const explanations = selectedFieldExplanations[logcode];
+  if (!explanations) return "";
+  const normalizedFieldName = normalizeForMatch(fieldName);
+  return Object.entries(explanations).find(([key]) => normalizeForMatch(key) === normalizedFieldName)?.[1] || "";
+}
+
+function FieldAnnotation({
+  fieldName,
+  logcode,
+  selected,
+  handover
+}: {
+  fieldName: string;
+  logcode?: string;
+  selected: boolean;
+  handover: boolean;
+}) {
+  const explanation = selectedFieldExplanation(logcode, fieldName);
+  if (explanation) {
+    return <span className="field-explanation">({explanation})</span>;
+  }
+  if (selected) return <span className="handover-note">(selected handover field)</span>;
+  if (handover) return <span className="handover-note">(handover-related)</span>;
+  return null;
+}
+
 function parseTreeLine(line: string) {
   const indent = line.match(/^ */)?.[0].length ?? 0;
   const text = line.trim();
@@ -507,7 +545,7 @@ function parseTreeLine(line: string) {
   };
 }
 
-function JsonValue({ value, depth = 0, path = [], selectedTerms = [] }: { value: unknown; depth?: number; path?: string[]; selectedTerms?: string[] }) {
+function JsonValue({ value, depth = 0, path = [], selectedTerms = [], logcode }: { value: unknown; depth?: number; path?: string[]; selectedTerms?: string[]; logcode?: string }) {
   if (value === null) return null;
 
   if (Array.isArray(value)) {
@@ -515,7 +553,7 @@ function JsonValue({ value, depth = 0, path = [], selectedTerms = [] }: { value:
     return (
       <>
         {value.map((item, index) => (
-          <JsonValue key={index} value={item} depth={depth} path={path} selectedTerms={selectedTerms} />
+          <JsonValue key={index} value={item} depth={depth} path={path} selectedTerms={selectedTerms} logcode={logcode} />
         ))}
       </>
     );
@@ -531,9 +569,9 @@ function JsonValue({ value, depth = 0, path = [], selectedTerms = [] }: { value:
           return (
             <div key={nextPath.join(".")}>
               <div className={`json-line ${selected ? "field-hit" : ""} ${handover ? "handover-hit" : ""}`} style={{ "--depth": depth } as CSSProperties}>
-                "{key}": {selected ? <span className="handover-note">(selected handover field)</span> : handover ? <span className="handover-note">(handover-related)</span> : null}
+                "{key}": <FieldAnnotation fieldName={key} logcode={logcode} selected={selected} handover={handover} />
               </div>
-              <JsonValue value={child} depth={depth + 1} path={nextPath} selectedTerms={selectedTerms} />
+              <JsonValue value={child} depth={depth + 1} path={nextPath} selectedTerms={selectedTerms} logcode={logcode} />
             </div>
           );
         })}
@@ -546,7 +584,7 @@ function JsonValue({ value, depth = 0, path = [], selectedTerms = [] }: { value:
   const handover = isHandoverRelated([key, String(value)]);
   return (
     <div className={`json-line ${selected ? "field-hit" : ""} ${handover ? "handover-hit" : ""}`} style={{ "--depth": depth } as CSSProperties}>
-      "{key}": {JSON.stringify(value)} {selected ? <span className="handover-note">(selected handover field)</span> : handover ? <span className="handover-note">(handover-related)</span> : null}
+      "{key}": {JSON.stringify(value)} <FieldAnnotation fieldName={key} logcode={logcode} selected={selected} handover={handover} />
     </div>
   );
 }
@@ -585,7 +623,7 @@ function B821FieldPaths({ record, selectedTerms }: { record: LogcodeRecord; sele
                           const handover = isHandoverRelated([parsed.label, parsed.text]);
                           return (
                             <div key={index} className={`b821-path-line ${selected ? "field-hit" : ""} ${handover ? "handover-hit" : ""}`} style={{ "--depth": parsed.level } as CSSProperties}>
-                              {parsed.label} {selected ? <span className="handover-note">(selected handover field)</span> : handover ? <span className="handover-note">(handover-related)</span> : null}
+                              {parsed.label} <FieldAnnotation fieldName={parsed.label} logcode={record.logcode} selected={selected} handover={handover} />
                             </div>
                           );
                         })}
@@ -678,7 +716,7 @@ function LogcodeDetail({ record, selectedTerms }: { record: LogcodeRecord; selec
           <div className="json-line" style={{ "--depth": 0 } as CSSProperties}>
             "{record.title}":
           </div>
-          <JsonValue value={record.detail} depth={1} selectedTerms={selectedTerms} />
+          <JsonValue value={record.detail} depth={1} selectedTerms={selectedTerms} logcode={record.logcode} />
         </div>
       </div>
     </>

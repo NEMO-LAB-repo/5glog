@@ -42,11 +42,6 @@
           "id": "ml1-connected-event-eval-role",
           "text": "Connected-mode event evaluation evidence. It shows whether a configured measurement event has entered or is entering report criteria. Key fields: Meas Id, Cell Id, State, Num Reports Sent, TTT Remaining. Timing: it sits after measured/filtered quality and before the RRC MeasurementReport.",
           "createdAt": "2026-05-31T00:00:00.000Z"
-        },
-        {
-          "id": "ml1-connected-event-eval-report-trigger",
-          "text": "MeasurementReport trigger summary: in 0xB96F, the UE usually sends MeasurementReport when State = ENTERING, TTT Remaining = 0, and Num Reports Sent = 1; or when State = ENTERED and Num Reports Sent >= 1.",
-          "createdAt": "2026-06-03T00:00:00.000Z"
         }
       ]
     },
