@@ -232,43 +232,8 @@
             "masterKeyUpdate",
             "nextHopChainingCount"
           ]
-        },
-        {
-          "title": "Cell identity cross-check",
-          "detail": "Use serving-cell info and SIB1 to identify source/target cell identity.",
-          "logcodes": [
-            "0xB823",
-            "0xB821"
-          ],
-          "fields": [
-            "Physical Cell ID",
-            "DL Frequency",
-            "Cell Id",
-            "TAC",
-            "BCCH-DL-SCH-Message",
-            "systemInformationBlockType1",
-            "cellIdentity"
-          ]
         }
-      ],
-      "identityLogcodes": [
-        "0xB823",
-        "0xB821"
-      ],
-      "identityFields": [
-        "Physical Cell ID",
-        "Physical Cell Id",
-        "BCCH-DL-SCH-Message",
-        "bcch-dl-sch",
-        "systemInformationBlockType1",
-        "DL Frequency",
-        "Cell Id",
-        "Selected PLMN MCC/MNC",
-        "TAC",
-        "cellIdentity",
-        "Frequency"
-      ],
-      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+      ]
     },
     "6": {
       "title": "6. Apply Target Config",
