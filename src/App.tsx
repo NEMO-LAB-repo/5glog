@@ -1338,19 +1338,89 @@ function HandoverTypeDiagram() {
   );
 }
 
+function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const cards = [
+    {
+      code: "0xB952",
+      title: "DL Handover",
+      role: "main apply log",
+      detail: "target PCI/frequency, C-RNTI, and handover carrier context",
+      fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info", "DL Cell frequency"]
+    },
+    {
+      code: "0xB950",
+      title: "DL Common Config",
+      role: "common cell config",
+      detail: "cell-wide radio config used by ML1 after switching to target",
+      fields: ["DL Frequency Info", "SSB Period", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"]
+    },
+    {
+      code: "0xB951",
+      title: "DL Dedicated Config",
+      role: "UE-specific config",
+      detail: "UE-specific BWP and downlink channel/control config",
+      fields: ["Dedicated BWP", "CORESET", "Search Space", "PDSCH Config", "Serving Cell Config"]
+    }
+  ];
+
+  return (
+    <div className="apply-config-diagram">
+      <div className="apply-config-title">What this step does</div>
+      <div className="apply-config-flow" aria-label="Apply target configuration flow">
+        <div className="apply-config-flow-box">
+          <b>handover command</b>
+          <span>target-cell config from Step 5</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box is-center">
+          <b>UE ML1</b>
+          <span>applies physical target config</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box">
+          <b>target access ready</b>
+          <span>sync + RACH preparation</span>
+        </div>
+      </div>
+
+      <div className="apply-config-subtitle">How to find it in logs</div>
+      <div className="apply-config-grid">
+        {cards.map((card) => (
+          <div className="apply-config-card" key={card.code}>
+            <div className="apply-config-card-head">
+              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
+                {card.code}
+              </button>
+              <span>{card.role}</span>
+            </div>
+            <div className="apply-config-card-title">{card.title}</div>
+            <div className="apply-config-card-detail">{card.detail}</div>
+            <div className="apply-config-fields">
+              {card.fields.slice(0, 5).map((field) => (
+                <span className="apply-config-field" key={field}>{field}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementConfigStep = step.title.startsWith("1.");
   const isMeasurementRelationStep = step.title.startsWith("2.");
   const isNetworkInterfaceStep = step.title.startsWith("4.");
+  const isApplyTargetConfigStep = step.title.startsWith("6.");
   const hasEvidence = Boolean(step.evidence?.length);
 
   return (
-    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""}`} role="dialog">
+    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""} ${isApplyTargetConfigStep ? "target-config-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
-      {step.decide && !isMeasurementConfigStep ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
-      {step.logcode && !isMeasurementRelationStep && !hasEvidence ? (
+      {step.decide && !isMeasurementConfigStep && !isApplyTargetConfigStep ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
+      {step.logcode && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
           <PopupText value={step.logcode} logcodes={step.logcodes} fields={step.fields} onOpenLogcode={onOpenLogcode} />
@@ -1359,8 +1429,9 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       {isMeasurementConfigStep ? <MeasurementConfigDiagram /> : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isNetworkInterfaceStep ? <HandoverTypeDiagram /> : null}
-      {hasEvidence && !isNetworkInterfaceStep ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
-      {step.sequence && !isMeasurementRelationStep && !hasEvidence ? (
+      {isApplyTargetConfigStep ? <ApplyTargetConfigDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {hasEvidence && !isNetworkInterfaceStep && !isApplyTargetConfigStep ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
+      {step.sequence && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}
           <PopupText value={step.sequence} logcodes={step.sequenceLogcodes} fields={step.sequenceFields} onOpenLogcode={onOpenLogcode} />

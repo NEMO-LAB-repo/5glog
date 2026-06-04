@@ -286,42 +286,8 @@
             "Search Space",
             "TDD UL DL CFG"
           ]
-        },
-        {
-          "title": "Target identity cross-check",
-          "detail": "Confirm target PCI/frequency against serving cell info and SIB1.",
-          "logcodes": [
-            "0xB823",
-            "0xB821"
-          ],
-          "fields": [
-            "Physical Cell ID",
-            "DL Frequency",
-            "Cell Id",
-            "BCCH-DL-SCH-Message",
-            "systemInformationBlockType1",
-            "cellIdentity"
-          ]
         }
-      ],
-      "identityLogcodes": [
-        "0xB823",
-        "0xB821"
-      ],
-      "identityFields": [
-        "Physical Cell ID",
-        "Physical Cell Id",
-        "BCCH-DL-SCH-Message",
-        "bcch-dl-sch",
-        "systemInformationBlockType1",
-        "DL Frequency",
-        "Cell Id",
-        "Selected PLMN MCC/MNC",
-        "TAC",
-        "cellIdentity",
-        "Frequency"
-      ],
-      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+      ]
     },
     "7": {
       "title": "7. Handover Execution",

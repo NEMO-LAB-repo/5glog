@@ -1249,6 +1249,10 @@ button {
   width: min(920px, calc(100% - 40px));
 }
 
+.popup.react-popup.target-config-popup {
+  width: min(980px, calc(100% - 40px));
+}
+
 .popup {
   z-index: 20;
   box-sizing: border-box;
@@ -1770,6 +1774,175 @@ button {
   font-size: 12px;
   font-weight: 800;
   line-height: 1.35;
+}
+
+.apply-config-diagram {
+  margin-top: 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.apply-config-title,
+.apply-config-subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.apply-config-subtitle {
+  margin-top: 12px;
+}
+
+.apply-config-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 0;
+}
+
+.apply-config-flow-box {
+  min-height: 72px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 10px 12px;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+}
+
+.apply-config-flow-box.is-center {
+  background: #ffffff;
+}
+
+.apply-config-flow-box b {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.apply-config-flow-box span {
+  color: #555555;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.apply-config-flow-arrow {
+  position: relative;
+  align-self: center;
+  height: 2px;
+  background: #000000;
+}
+
+.apply-config-flow-arrow::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #000000;
+  transform: translateY(-50%);
+}
+
+.apply-config-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.apply-config-card {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 9px 10px;
+}
+
+.apply-config-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.apply-config-card-head span {
+  color: #555555;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.apply-config-code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #d60000;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.apply-config-card-title {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.apply-config-card-detail {
+  min-height: 42px;
+  margin-top: 4px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.28;
+}
+
+.apply-config-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.apply-config-field {
+  border: 1px solid #d60000;
+  border-radius: 4px;
+  background: #fffafa;
+  color: #d60000;
+  padding: 2px 5px;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+@media (max-width: 820px) {
+  .apply-config-flow,
+  .apply-config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-config-flow-arrow {
+    width: 2px;
+    height: 22px;
+    justify-self: center;
+  }
+
+  .apply-config-flow-arrow::after {
+    right: auto;
+    top: auto;
+    bottom: -1px;
+    left: 50%;
+    border-top: 10px solid #000000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .step-evidence {
