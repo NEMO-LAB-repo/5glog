@@ -1296,38 +1296,25 @@ function MeasurementReportDiagram() {
   return (
     <div className="rrc-step-diagram">
       <div className="rrc-step-title">What this step does</div>
-      <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="MeasurementReport step">
-        <defs>
-          <marker id="rrc-report-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-            <path d="M 0 0 L 10 5 L 0 10 z" className="rrc-step-arrowhead" />
-          </marker>
-        </defs>
+      <svg className="rrc-step-svg" viewBox="0 0 820 270" role="img" aria-label="MeasurementReport reported fields">
+        <rect x="240" y="22" width="340" height="76" rx="8" className="rrc-step-message-box" />
+        <text x="410" y="53" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
+        <text x="410" y="79" className="rrc-step-svg-title" textAnchor="middle">MeasurementReport payload</text>
 
-        <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
-        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">UE RRC</text>
-        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">event condition satisfied</text>
+        <rect x="38" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
+        <text x="144" y="163" className="rrc-step-svg-red" textAnchor="middle">measId</text>
+        <text x="144" y="190" className="rrc-step-svg-muted" textAnchor="middle">links report to measConfig</text>
+        <text x="144" y="213" className="rrc-step-svg-muted" textAnchor="middle">resolve event via reportConfigId</text>
 
-        <line x1="222" y1="93" x2="302" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-report-arrow)" />
+        <rect x="304" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
+        <text x="410" y="163" className="rrc-step-svg-title" textAnchor="middle">Serving cell</text>
+        <text x="410" y="190" className="rrc-step-svg-muted" textAnchor="middle">serving PCI</text>
+        <text x="410" y="213" className="rrc-step-svg-red" textAnchor="middle">RSRP / RSRQ / SINR</text>
 
-        <rect x="302" y="40" width="244" height="106" rx="8" className="rrc-step-message-box" />
-        <text x="424" y="75" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
-        <text x="424" y="102" className="rrc-step-svg-title" textAnchor="middle">MeasurementReport</text>
-        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">measId + measured quality</text>
-
-        <line x1="546" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-report-arrow)" />
-
-        <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
-        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">Source gNB</text>
-        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">receives cell quality</text>
-
-        <rect x="86" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="161" y="205" className="rrc-step-svg-label" textAnchor="middle">measId</text>
-
-        <rect x="335" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">serving quality</text>
-
-        <rect x="584" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="659" y="205" className="rrc-step-svg-label" textAnchor="middle">neighbor quality</text>
+        <rect x="570" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
+        <text x="676" y="163" className="rrc-step-svg-title" textAnchor="middle">Neighbor cells</text>
+        <text x="676" y="190" className="rrc-step-svg-red" textAnchor="middle">physCellId</text>
+        <text x="676" y="213" className="rrc-step-svg-red" textAnchor="middle">RSRP / RSRQ / SINR</text>
       </svg>
     </div>
   );
