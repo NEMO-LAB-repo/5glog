@@ -1345,21 +1345,39 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
       title: "DL Handover",
       role: "main apply log",
       detail: "target PCI/frequency, C-RNTI, and handover carrier context",
-      fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info", "DL Cell frequency"]
+      fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info", "DL Cell frequency"],
+      groups: [
+        { label: "target cell", text: "DL freq + PCI" },
+        { label: "UE identity", text: "C-RNTI config" },
+        { label: "carrier context", text: "CG Add Mod" },
+        { label: "cell info", text: "DL Cell frequency" }
+      ]
     },
     {
       code: "0xB950",
       title: "DL Common Config",
       role: "common cell config",
       detail: "cell-wide radio config used by ML1 after switching to target",
-      fields: ["DL Frequency Info", "SSB Period", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"]
+      fields: ["DL Frequency Info", "SSB Period", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"],
+      groups: [
+        { label: "frequency / SSB", text: "DL freq + SSB timing" },
+        { label: "BWP", text: "common bandwidth part" },
+        { label: "PDCCH control", text: "CORESET + Search Space" },
+        { label: "duplex timing", text: "TDD UL/DL config" }
+      ]
     },
     {
       code: "0xB951",
       title: "DL Dedicated Config",
       role: "UE-specific config",
       detail: "UE-specific BWP and downlink channel/control config",
-      fields: ["Dedicated BWP", "CORESET", "Search Space", "PDSCH Config", "Serving Cell Config"]
+      fields: ["Dedicated BWP", "CORESET", "Search Space", "PDSCH Config", "Serving Cell Config"],
+      groups: [
+        { label: "dedicated BWP", text: "UE-specific bandwidth" },
+        { label: "PDCCH", text: "CORESET + Search Space" },
+        { label: "PDSCH", text: "downlink data config" },
+        { label: "serving cell", text: "Serving Cell Config" }
+      ]
     }
   ];
 
@@ -1394,12 +1412,19 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
               <span>{card.role}</span>
             </div>
             <div className="apply-config-card-title">{card.title}</div>
-            <div className="apply-config-card-detail">{card.detail}</div>
-            <div className="apply-config-fields">
-              {card.fields.slice(0, 5).map((field) => (
-                <span className="apply-config-field" key={field}>{field}</span>
+            <div className="apply-config-map" aria-label={`${card.code} configuration map`}>
+              <div className="apply-config-map-center">
+                <span>{card.title}</span>
+                <b>{card.code}</b>
+              </div>
+              {card.groups.map((group) => (
+                <div className="apply-config-map-node" key={group.label}>
+                  <b>{group.label}</b>
+                  <span>{group.text}</span>
+                </div>
               ))}
             </div>
+            <div className="apply-config-card-detail">{card.detail}</div>
           </div>
         ))}
       </div>
