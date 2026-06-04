@@ -1304,7 +1304,7 @@ function MeasurementReportDiagram() {
         <rect x="38" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
         <text x="144" y="163" className="rrc-step-svg-red" textAnchor="middle">measId</text>
         <text x="144" y="190" className="rrc-step-svg-muted" textAnchor="middle">links report to measConfig</text>
-        <text x="144" y="213" className="rrc-step-svg-muted" textAnchor="middle">resolve event via reportConfigId</text>
+        <text x="144" y="213" className="rrc-step-svg-muted" textAnchor="middle">measId -&gt; reportConfigId -&gt; eventId</text>
 
         <rect x="304" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
         <text x="410" y="163" className="rrc-step-svg-title" textAnchor="middle">Serving cell</text>
