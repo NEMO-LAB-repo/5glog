@@ -1219,25 +1219,77 @@ function StepEvidenceList({ items, title = "Evidence", onOpenLogcode }: { items:
   );
 }
 
+function MeasurementConfigDiagram() {
+  return (
+    <div className="measurement-config-diagram">
+      <div className="measurement-config-title">What this step does</div>
+      <div className="measurement-config-flow" aria-label="Measurement configuration flow">
+        <div className="measurement-config-node">
+          <div className="measurement-config-node-title">Source gNB</div>
+          <div className="measurement-config-node-text">creates measurement rules</div>
+        </div>
+        <div className="measurement-config-arrow">
+          <div className="measurement-config-code">0xB821</div>
+          <div className="measurement-config-message">RRCReconfiguration</div>
+          <div className="measurement-config-subtext">DL-DCCH message to UE RRC</div>
+        </div>
+        <div className="measurement-config-node">
+          <div className="measurement-config-node-title">UE RRC</div>
+          <div className="measurement-config-node-text">stores measConfig for later measurement</div>
+        </div>
+      </div>
+
+      <div className="measurement-config-payload">
+        <div className="measurement-config-payload-title">
+          <span className="popup-hot-field">measConfig</span> tells UE three things:
+        </div>
+        <div className="measurement-config-rule-grid">
+          <div className="measurement-config-rule">
+            <div className="measurement-config-rule-field">measObjectToAddModList</div>
+            <div className="measurement-config-rule-title">what to measure</div>
+            <div className="measurement-config-rule-text">NR frequency, SSB timing, cells or beams to observe.</div>
+          </div>
+          <div className="measurement-config-rule">
+            <div className="measurement-config-rule-field">reportConfigToAddModList</div>
+            <div className="measurement-config-rule-title">when to report</div>
+            <div className="measurement-config-rule-text">eventId, threshold, hysteresis, timeToTrigger, report quantity.</div>
+          </div>
+          <div className="measurement-config-rule">
+            <div className="measurement-config-rule-field">measIdToAddModList</div>
+            <div className="measurement-config-rule-title">how rules are linked</div>
+            <div className="measurement-config-rule-text">measId connects one measObject with one reportConfig.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="measurement-config-result">
+        Result: later <span className="popup-hot-field">MeasurementReport</span> usually carries <span className="popup-hot-field">measId</span>. To know whether it was A3/A5/etc., resolve <span className="popup-hot-field">measId</span> to <span className="popup-hot-field">reportConfigId</span> and then <span className="popup-hot-field">eventId</span>.
+      </div>
+    </div>
+  );
+}
+
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const isMeasurementConfigStep = step.title.startsWith("1.");
   const isMeasurementRelationStep = step.title.startsWith("2.");
   const isNetworkInterfaceStep = step.title.startsWith("4.");
   const hasEvidence = Boolean(step.evidence?.length);
 
   return (
-    <div className={`popup open react-popup ${isMeasurementRelationStep ? "measurement-popup" : ""}`} role="dialog">
+    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
-      {step.decide ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
+      {step.decide && !isMeasurementConfigStep ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
       {step.logcode && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
           <PopupText value={step.logcode} logcodes={step.logcodes} fields={step.fields} onOpenLogcode={onOpenLogcode} />
         </div>
       ) : null}
+      {isMeasurementConfigStep ? <MeasurementConfigDiagram /> : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {hasEvidence ? <StepEvidenceList items={step.evidence!} title={isNetworkInterfaceStep ? "Interfaces" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
+      {hasEvidence ? <StepEvidenceList items={step.evidence!} title={isNetworkInterfaceStep ? "Interfaces" : isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
       {step.sequence && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}
