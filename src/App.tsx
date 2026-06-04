@@ -1078,10 +1078,14 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
     ? sequenceItems.find((item) => item.key === activeSequenceKey) || null
     : null;
 
+  function isMl1LocalItem(itemKey: string) {
+    return itemKey === "search" || itemKey === "raw" || itemKey === "filtered" || itemKey === "eval";
+  }
+
   function messagePath(item: (typeof sequenceItems)[number]) {
     const height = 48;
     const head = 28;
-    if (item.key === "search" || item.key === "raw") {
+    if (isMl1LocalItem(item.key)) {
       return `M ${item.x1} ${item.y} L ${item.x2} ${item.y} L ${item.x2} ${item.y + height} L ${item.x1} ${item.y + height} Z`;
     }
     if (item.direction === "left") {
@@ -1168,7 +1172,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           return (
             <g
               key={item.key}
-              className={`measurement-sequence-message ${item.key === "search" || item.key === "raw" ? "is-observation" : ""} ${item.key === activeSequenceItem?.key ? "is-selected" : ""}`}
+              className={`measurement-sequence-message ${isMl1LocalItem(item.key) ? "is-observation" : ""} ${item.key === activeSequenceItem?.key ? "is-selected" : ""}`}
               role="button"
               tabIndex={0}
               onClick={() => openSequenceItem(item)}
