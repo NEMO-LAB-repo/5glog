@@ -34,13 +34,13 @@ window.EVENT_DATA.handover = {
       evidence: [
         {
           title: "Config location",
-          detail: "0xB821 DL-DCCH-Message -> c1 -> rrcReconfiguration contains measConfig. Click 0xB821 to inspect the full field tree in Message detail.",
+          detail: "Open Message detail, then follow the RRC tree down to measConfig.",
           logcodes: ["0xB821"],
           fields: ["DL-DCCH-Message", "rrcReconfiguration", "measConfig"]
         },
         {
           title: "Event trigger lookup",
-          detail: "Event decision comes from reportConfigToAddModList, not from MeasurementReport alone. MeasurementReport usually carries measId; resolve measId -> reportConfigId -> eventId, for example eventA3.",
+          detail: "Use the report ID to map the later MeasurementReport back to the configured trigger event.",
           fields: ["reportConfigToAddModList", "MeasurementReport", "measId", "reportConfigId", "eventId", "eventA3"]
         }
       ]

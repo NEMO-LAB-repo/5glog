@@ -1262,9 +1262,6 @@ function MeasurementConfigDiagram() {
         </div>
       </div>
 
-      <div className="measurement-config-result">
-        Result: later <span className="popup-hot-field">MeasurementReport</span> usually carries <span className="popup-hot-field">measId</span>. To know whether it was A3/A5/etc., resolve <span className="popup-hot-field">measId</span> to <span className="popup-hot-field">reportConfigId</span> and then <span className="popup-hot-field">eventId</span>.
-      </div>
     </div>
   );
 }
