@@ -1112,6 +1112,38 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   }
 
   function MeasurementSubstepVisual({ itemKey }: { itemKey: string }) {
+    if (itemKey === "eval-to-rrc") {
+      return (
+        <div className="measurement-substep-visual measurement-trigger-visual">
+          <div className="measurement-substep-visual-title">Report trigger logic</div>
+          <div className="measurement-trigger-grid">
+            <div className="measurement-trigger-card">
+              <div className="measurement-trigger-heading">New report trigger</div>
+              <div className="measurement-trigger-lines">
+                <div><span>State</span><b>ENTERING</b></div>
+                <div><span>TTT Remaining</span><b>0</b></div>
+                <div><span>Num Reports Sent</span><b>1</b></div>
+              </div>
+              <p>The event condition just entered, TTT expired, and ML1 reports that one MeasurementReport was sent or triggered.</p>
+            </div>
+            <div className="measurement-trigger-card">
+              <div className="measurement-trigger-heading">Already-triggered event state</div>
+              <div className="measurement-trigger-lines">
+                <div><span>State</span><b>ENTERED</b></div>
+                <div><span>TTT Remaining</span><b>65535</b></div>
+                <div><span>Num Reports Sent</span><b>{">= 1"}</b></div>
+              </div>
+              <p>The event is already entered. The TTT timer is no longer running, and at least one MeasurementReport was sent or triggered.</p>
+            </div>
+          </div>
+          <div className="measurement-trigger-confirm">
+            <span>Final confirmation</span>
+            <b>0xB821 MeasurementReport</b>
+            <em>same measId</em>
+          </div>
+        </div>
+      );
+    }
     if (itemKey !== "rules") return null;
     return (
       <div className="measurement-substep-visual">
@@ -1197,11 +1229,13 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           </div>
           <div className="measurement-substep-text">{activeSequenceItem.description}</div>
           <MeasurementSubstepVisual itemKey={activeSequenceItem.key} />
-          <div className="measurement-substep-fields">
-            {activeSequenceItem.fields.slice(0, 8).map((field) => (
-              <span className="measurement-substep-field" key={field}>{field}</span>
-            ))}
-          </div>
+          {activeSequenceItem.key !== "eval-to-rrc" ? (
+            <div className="measurement-substep-fields">
+              {activeSequenceItem.fields.slice(0, 8).map((field) => (
+                <span className="measurement-substep-field" key={field}>{field}</span>
+              ))}
+            </div>
+          ) : null}
           <button className="measurement-substep-open" type="button" onClick={() => onOpenLogcode(activeSequenceItem.code, activeSequenceItem.fields)}>
             Open logcode structure
           </button>
