@@ -938,10 +938,9 @@ function PopupText({
 
 function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const lifelines = [
-    { key: "source", label: "Source gNB", x: 115 },
-    { key: "rrc", label: "UE RRC", x: 360 },
-    { key: "ml1", label: "UE ML1", x: 620 },
-    { key: "cells", label: "Serving / Neighbor Cells", x: 910 }
+    { key: "source", label: "Source gNB", x: 150 },
+    { key: "rrc", label: "UE RRC", x: 430 },
+    { key: "ml1", label: "UE ML1", x: 740 }
   ];
   const sequenceItems = [
     {
@@ -1148,14 +1147,14 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   return (
     <div className="measurement-relation">
       <div className="measurement-relation-title">Measurement sequence</div>
-      <svg className="measurement-sequence" viewBox="0 0 1080 620" role="img" aria-label="Measurement log sequence diagram">
+      <svg className="measurement-sequence" viewBox="0 0 960 620" role="img" aria-label="Measurement log sequence diagram">
         <defs>
           <marker id="measurement-sequence-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
             <path d="M 0 0 L 10 5 L 0 10 z" />
           </marker>
         </defs>
 
-        <rect x="28" y="26" width="1024" height="568" rx="8" className="measurement-sequence-frame" />
+        <rect x="28" y="26" width="904" height="568" rx="8" className="measurement-sequence-frame" />
 
         {lifelines.map((line) => (
           <g key={line.key}>
@@ -1163,8 +1162,6 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
             <line x1={line.x} y1="76" x2={line.x} y2="574" className="measurement-sequence-lifeline" />
           </g>
         ))}
-
-        <text x="482" y="487" className="measurement-sequence-repeat-text">event not met: ML1 keeps measuring</text>
 
         {sequenceItems.map((item) => {
           const dividerX = tagDividerX(item);
