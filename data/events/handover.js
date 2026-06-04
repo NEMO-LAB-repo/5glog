@@ -92,7 +92,7 @@ window.EVENT_DATA.handover = {
     },
     7: {
       title: "7. Handover Execution",
-      layer: "MAC",
+      layer: "ML1 / MAC",
       decide: "UE starts switching from source to target.",
       logcode: "0xB952 plus 0xB9A7 NR5G ML1 DLM2 CA Metrics Request. Fields: Event: HANDOVER_START, Event: HANDOVER_END, PCI, DL EARFCN, Band.",
       logcodes: ["0xB952", "0xB9A7"],

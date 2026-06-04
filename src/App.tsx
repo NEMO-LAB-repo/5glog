@@ -1323,11 +1323,10 @@ const legacyStepShapes: LegacyStepShape[] = [
   },
   {
     stepNumber: "7",
-    tail: "M 720 792 L 760 792",
-    body: "M 760 770 L 1342 770 L 1390 792 L 1342 814 L 760 814 Z",
-    divider: { x1: 940, y1: 770, x2: 940, y2: 814 },
-    tag: { x: 850, y: 800, text: "RRC/ML1/MAC" },
-    message: { x: 954, y: 801 }
+    body: "M 1020 770 L 1342 770 L 1390 792 L 1342 814 L 1020 814 Z",
+    divider: { x1: 1138, y1: 770, x2: 1138, y2: 814 },
+    tag: { x: 1079, y: 800, text: "ML1->MAC" },
+    message: { x: 1162, y: 801, small: true }
   },
   {
     stepNumber: "8",

@@ -368,7 +368,7 @@
     },
     "7": {
       "title": "7. Handover Execution",
-      "layer": "UE / ML1+MAC",
+      "layer": "ML1 / MAC",
       "decide": "UE starts switching from the source cell to the target cell; this is a cross-layer execution interval between RRC command, ML1 target config application, and MAC target access.",
       "logcode": "0xB952 NR5G ML1 DL Handover plus 0xB9A7 NR5G ML1 DLM2 CA Metrics Request. Fields: Event: HANDOVER_START, Event: HANDOVER_END, PCI, DL EARFCN, Band.",
       "logcodes": [
