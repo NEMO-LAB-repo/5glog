@@ -161,19 +161,6 @@
             "rsrq",
             "sinr"
           ]
-        },
-        {
-          "title": "Event support",
-          "detail": "Use this only as timing/supporting evidence for the uplink report.",
-          "logcodes": [
-            "0x1FFB"
-          ],
-          "fields": [
-            "EVENT_NR5G_RRC_UL_MSG_MEAS_REPORT_V4",
-            "Event",
-            "Timestamp",
-            "meas_id"
-          ]
         }
       ]
     },
