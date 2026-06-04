@@ -1354,33 +1354,47 @@ function StepEvidenceList({ items, title = "Evidence", onOpenLogcode }: { items:
 function MeasurementConfigDiagram() {
   return (
     <div className="measurement-config-diagram">
-      <div className="measurement-config-title">What UE measures</div>
-      <svg className="measurement-config-svg" viewBox="0 0 820 260" role="img" aria-label="Measurement targets configured by measConfig">
-        <line x1="410" y1="100" x2="410" y2="70" className="measurement-config-svg-line" />
-        <line x1="410" y1="160" x2="410" y2="190" className="measurement-config-svg-line" />
-        <line x1="330" y1="130" x2="230" y2="130" className="measurement-config-svg-line" />
-        <line x1="490" y1="130" x2="590" y2="130" className="measurement-config-svg-line" />
+      <div className="measurement-config-title">measConfig structure</div>
+      <svg className="measurement-config-svg" viewBox="0 0 820 430" role="img" aria-label="RRC measConfig structure and later measurement output">
+        <line x1="410" y1="72" x2="410" y2="110" className="measurement-config-svg-line" />
+        <line x1="410" y1="162" x2="410" y2="186" className="measurement-config-svg-line" />
+        <line x1="145" y1="186" x2="675" y2="186" className="measurement-config-svg-line" />
+        <line x1="145" y1="186" x2="145" y2="205" className="measurement-config-svg-line" />
+        <line x1="410" y1="186" x2="410" y2="205" className="measurement-config-svg-line" />
+        <line x1="675" y1="186" x2="675" y2="205" className="measurement-config-svg-line" />
 
-        <rect x="305" y="18" width="210" height="52" rx="8" className="measurement-config-svg-box" />
-        <text x="410" y="40" className="measurement-config-svg-title" textAnchor="middle">NR frequency</text>
-        <text x="410" y="58" className="measurement-config-svg-muted" textAnchor="middle">ARFCN / SSB freq</text>
+        <rect x="250" y="18" width="320" height="54" rx="8" className="measurement-config-svg-center" />
+        <text x="410" y="42" className="measurement-config-svg-red-large" textAnchor="middle">0xB821 RRCReconfiguration</text>
+        <text x="410" y="61" className="measurement-config-svg-muted" textAnchor="middle">DL-DCCH message carries measurement rules</text>
 
-        <rect x="40" y="92" width="190" height="76" rx="8" className="measurement-config-svg-box" />
-        <text x="135" y="120" className="measurement-config-svg-title" textAnchor="middle">Serving cell</text>
-        <text x="135" y="141" className="measurement-config-svg-muted" textAnchor="middle">PCI + quality</text>
+        <rect x="310" y="110" width="200" height="52" rx="8" className="measurement-config-svg-center" />
+        <text x="410" y="143" className="measurement-config-svg-red-large" textAnchor="middle">measConfig</text>
 
-        <rect x="330" y="92" width="160" height="76" rx="8" className="measurement-config-svg-center" />
-        <text x="410" y="119" className="measurement-config-svg-title" textAnchor="middle">UE ML1</text>
-        <text x="410" y="140" className="measurement-config-svg-red" textAnchor="middle">measConfig</text>
-        <text x="410" y="157" className="measurement-config-svg-muted" textAnchor="middle">RSRP / RSRQ / SINR</text>
+        <rect x="40" y="205" width="210" height="96" rx="8" className="measurement-config-svg-box" />
+        <text x="145" y="232" className="measurement-config-svg-red-large" textAnchor="middle">measObject</text>
+        <text x="145" y="255" className="measurement-config-svg-title-small" textAnchor="middle">what to measure</text>
+        <text x="145" y="278" className="measurement-config-svg-muted" textAnchor="middle">NR frequency / SSB</text>
+        <text x="145" y="294" className="measurement-config-svg-muted" textAnchor="middle">serving + neighbor cells</text>
 
-        <rect x="590" y="92" width="190" height="76" rx="8" className="measurement-config-svg-box" />
-        <text x="685" y="120" className="measurement-config-svg-title" textAnchor="middle">Neighbor cell</text>
-        <text x="685" y="141" className="measurement-config-svg-muted" textAnchor="middle">PCI + quality</text>
+        <rect x="305" y="205" width="210" height="96" rx="8" className="measurement-config-svg-box" />
+        <text x="410" y="232" className="measurement-config-svg-red-large" textAnchor="middle">reportConfig</text>
+        <text x="410" y="255" className="measurement-config-svg-title-small" textAnchor="middle">when to report</text>
+        <text x="410" y="278" className="measurement-config-svg-muted" textAnchor="middle">eventA3 / eventA5</text>
+        <text x="410" y="294" className="measurement-config-svg-muted" textAnchor="middle">threshold / hysteresis / TTT</text>
 
-        <rect x="305" y="190" width="210" height="52" rx="8" className="measurement-config-svg-box" />
-        <text x="410" y="212" className="measurement-config-svg-title" textAnchor="middle">SSB beams</text>
-        <text x="410" y="230" className="measurement-config-svg-muted" textAnchor="middle">SSB index / timing</text>
+        <rect x="570" y="205" width="210" height="96" rx="8" className="measurement-config-svg-box" />
+        <text x="675" y="232" className="measurement-config-svg-red-large" textAnchor="middle">measId</text>
+        <text x="675" y="255" className="measurement-config-svg-title-small" textAnchor="middle">link between them</text>
+        <text x="675" y="278" className="measurement-config-svg-muted" textAnchor="middle">measId -&gt; measObjectId</text>
+        <text x="675" y="294" className="measurement-config-svg-muted" textAnchor="middle">+ reportConfigId</text>
+
+        <rect x="55" y="340" width="430" height="66" rx="8" className="measurement-config-svg-box" />
+        <text x="75" y="365" className="measurement-config-svg-title-small" textAnchor="start">UE ML1 uses this config to measure</text>
+        <text x="75" y="390" className="measurement-config-svg-red" textAnchor="start">PCI / SSB index / RSRP / RSRQ / SINR</text>
+
+        <rect x="520" y="340" width="245" height="66" rx="8" className="measurement-config-svg-box" />
+        <text x="540" y="365" className="measurement-config-svg-title-small" textAnchor="start">UE RRC reports with</text>
+        <text x="540" y="390" className="measurement-config-svg-red" textAnchor="start">MeasurementReport.measId</text>
       </svg>
     </div>
   );
