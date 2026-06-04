@@ -476,22 +476,6 @@
             "EVENT_NR5G_RRC_NEW_CELL_IND_V2",
             "Timestamp"
           ]
-        },
-        {
-          "title": "New serving cell identity",
-          "detail": "Cross-check the target identity after completion.",
-          "logcodes": [
-            "0xB823",
-            "0xB821"
-          ],
-          "fields": [
-            "Physical Cell ID",
-            "DL Frequency",
-            "Cell Id",
-            "BCCH-DL-SCH-Message",
-            "systemInformationBlockType1",
-            "cellIdentity"
-          ]
         }
       ],
       "confirm": "0x1FFB Encapsulated Event Report: EVENT_NR5G_RRC_HO_STARTED_V2; EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
@@ -502,25 +486,7 @@
         "EVENT_NR5G_RRC_HO_STARTED_V2",
         "EVENT_NR5G_RRC_HO_SUCCESS",
         "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
-      ],
-      "identityLogcodes": [
-        "0xB823",
-        "0xB821"
-      ],
-      "identityFields": [
-        "Physical Cell ID",
-        "Physical Cell Id",
-        "BCCH-DL-SCH-Message",
-        "bcch-dl-sch",
-        "systemInformationBlockType1",
-        "DL Frequency",
-        "Cell Id",
-        "Selected PLMN MCC/MNC",
-        "TAC",
-        "cellIdentity",
-        "Frequency"
-      ],
-      "identity": "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 pdu_type 2 BCCH-DL-SCH-Message -> c1 -> systemInformationBlockType1: cellIdentity, Physical Cell Id, Frequency."
+      ]
     },
     "11": {
       "title": "11. Post-HO Operation",
