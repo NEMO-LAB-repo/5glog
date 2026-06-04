@@ -1292,6 +1292,52 @@ function MeasurementConfigDiagram() {
   );
 }
 
+function HandoverTypeDiagram() {
+  return (
+    <div className="handover-type-diagram">
+      <div className="handover-type-title">5G SA handover types</div>
+      <svg className="handover-type-svg" viewBox="0 0 900 430" role="img" aria-label="5G SA handover type classification">
+        <defs>
+          <marker id="handover-type-arrow-blue" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L8,3 z" className="handover-type-arrow-blue" />
+          </marker>
+          <marker id="handover-type-arrow-red" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L8,3 z" className="handover-type-arrow-red" />
+          </marker>
+        </defs>
+
+        <rect x="290" y="30" width="320" height="72" rx="16" className="handover-type-root" />
+        <text x="450" y="76" className="handover-type-root-text" textAnchor="middle">5G SA Handover</text>
+
+        <path d="M450 102 L450 145 L205 145 L205 180" className="handover-type-connector-blue" markerEnd="url(#handover-type-arrow-blue)" />
+        <path d="M450 102 L450 145 L695 145 L695 180" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
+
+        <rect x="40" y="180" width="330" height="94" rx="16" className="handover-type-intra" />
+        <text x="205" y="224" className="handover-type-blue-text" textAnchor="middle">intra-gNB handover</text>
+        <text x="205" y="252" className="handover-type-muted" textAnchor="middle">same gNB, internal mobility path</text>
+
+        <rect x="530" y="180" width="330" height="94" rx="16" className="handover-type-inter" />
+        <text x="695" y="224" className="handover-type-red-text" textAnchor="middle">inter-gNB handover</text>
+        <text x="695" y="252" className="handover-type-muted" textAnchor="middle">source and target gNB differ</text>
+
+        <path d="M695 274 L695 320 L600 320 L600 350" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
+        <path d="M695 274 L695 320 L800 320 L800 350" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
+
+        <rect x="470" y="350" width="260" height="58" rx="14" className="handover-type-xn" />
+        <text x="600" y="385" className="handover-type-red-small" textAnchor="middle">Xn handover</text>
+        <text x="600" y="404" className="handover-type-mini" textAnchor="middle">XnAP, gNB to gNB</text>
+
+        <rect x="720" y="350" width="160" height="58" rx="14" className="handover-type-xn" />
+        <text x="800" y="385" className="handover-type-red-small" textAnchor="middle">N2 handover</text>
+        <text x="800" y="404" className="handover-type-mini" textAnchor="middle">NGAP via AMF</text>
+      </svg>
+      <div className="handover-type-note">
+        UE logs usually infer this network step from the later 0xB821 handover command; Xn or N2 needs network-side evidence.
+      </div>
+    </div>
+  );
+}
+
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementConfigStep = step.title.startsWith("1.");
   const isMeasurementRelationStep = step.title.startsWith("2.");
@@ -1299,7 +1345,7 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
   const hasEvidence = Boolean(step.evidence?.length);
 
   return (
-    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""}`} role="dialog">
+    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
@@ -1312,7 +1358,8 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       ) : null}
       {isMeasurementConfigStep ? <MeasurementConfigDiagram /> : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {hasEvidence ? <StepEvidenceList items={step.evidence!} title={isNetworkInterfaceStep ? "Interfaces" : isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
+      {isNetworkInterfaceStep ? <HandoverTypeDiagram /> : null}
+      {hasEvidence && !isNetworkInterfaceStep ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
       {step.sequence && !isMeasurementRelationStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}

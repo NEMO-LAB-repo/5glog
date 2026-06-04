@@ -1245,6 +1245,10 @@ button {
   width: min(900px, calc(100% - 40px));
 }
 
+.popup.react-popup.network-type-popup {
+  width: min(920px, calc(100% - 40px));
+}
+
 .popup {
   z-index: 20;
   box-sizing: border-box;
@@ -1666,6 +1670,106 @@ button {
   fill: #d60000;
   font-size: 15px;
   font-weight: 900;
+}
+
+.handover-type-diagram {
+  margin-top: 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.handover-type-title {
+  margin-bottom: 4px;
+  color: #1565c0;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.handover-type-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.handover-type-root,
+.handover-type-intra {
+  fill: #eef7ff;
+  stroke: #1565c0;
+  stroke-width: 4;
+}
+
+.handover-type-inter,
+.handover-type-xn {
+  fill: #fff1f1;
+  stroke: #c62828;
+  stroke-width: 4;
+}
+
+.handover-type-connector-blue {
+  fill: none;
+  stroke: #1565c0;
+  stroke-width: 4;
+}
+
+.handover-type-connector-red {
+  fill: none;
+  stroke: #c62828;
+  stroke-width: 4;
+}
+
+.handover-type-arrow-blue {
+  fill: #1565c0;
+}
+
+.handover-type-arrow-red {
+  fill: #c62828;
+}
+
+.handover-type-root-text {
+  fill: #1565c0;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.handover-type-blue-text {
+  fill: #1565c0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.handover-type-red-text {
+  fill: #c62828;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.handover-type-red-small {
+  fill: #c62828;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.handover-type-muted {
+  fill: #555555;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.handover-type-mini {
+  fill: #555555;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.handover-type-note {
+  margin-top: 4px;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .step-evidence {
