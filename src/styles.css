@@ -1445,6 +1445,62 @@ button {
   line-height: 1.35;
 }
 
+.measurement-substep-visual {
+  margin-top: 10px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.measurement-substep-visual-title {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.measurement-substep-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.measurement-substep-svg-line {
+  stroke: #000000;
+  stroke-width: 2.5;
+  stroke-dasharray: 7 5;
+}
+
+.measurement-substep-svg-box,
+.measurement-substep-svg-center {
+  fill: #f7f7f7;
+  stroke: #000000;
+  stroke-width: 2.5;
+}
+
+.measurement-substep-svg-center {
+  fill: #ffffff;
+}
+
+.measurement-substep-svg-label {
+  fill: #000000;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.measurement-substep-svg-muted {
+  fill: #555555;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.measurement-substep-svg-red {
+  fill: #d60000;
+  font-size: 13px;
+  font-weight: 900;
+}
+
 .measurement-substep-fields {
   display: flex;
   flex-wrap: wrap;

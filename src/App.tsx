@@ -973,7 +973,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "ML1 meas config",
       detail: "UE internal config; not network signaling",
-      description: "UE RRC hands the measurement configuration to UE ML1. This is an internal UE-side configuration log, not a message sent by the network.",
+      description: "UE internal config that tells ML1 which measurement objects and report rules to run.",
       fields: measurementMl1ConfigInput.fields
     },
     {
@@ -1105,6 +1105,39 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
     setActiveSequenceKey(null);
   }
 
+  function MeasurementSubstepVisual({ itemKey }: { itemKey: string }) {
+    if (itemKey !== "rules") return null;
+    return (
+      <div className="measurement-substep-visual">
+        <div className="measurement-substep-visual-title">What ML1 is configured to measure</div>
+        <svg className="measurement-substep-svg" viewBox="0 0 430 230" role="img" aria-label="ML1 measurement config targets">
+          <line x1="215" y1="82" x2="215" y2="56" className="measurement-substep-svg-line" />
+          <line x1="215" y1="148" x2="215" y2="174" className="measurement-substep-svg-line" />
+          <line x1="150" y1="115" x2="92" y2="115" className="measurement-substep-svg-line" />
+          <line x1="280" y1="115" x2="338" y2="115" className="measurement-substep-svg-line" />
+
+          <rect x="142" y="20" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
+          <text x="215" y="42" className="measurement-substep-svg-label" textAnchor="middle">NR frequency</text>
+
+          <rect x="18" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
+          <text x="74" y="109" className="measurement-substep-svg-label" textAnchor="middle">Cells</text>
+          <text x="74" y="128" className="measurement-substep-svg-muted" textAnchor="middle">PCI / SSB</text>
+
+          <rect x="150" y="82" width="130" height="66" rx="7" className="measurement-substep-svg-center" />
+          <text x="215" y="106" className="measurement-substep-svg-label" textAnchor="middle">UE ML1</text>
+          <text x="215" y="126" className="measurement-substep-svg-red" textAnchor="middle">0xB96E config</text>
+
+          <rect x="300" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
+          <text x="356" y="109" className="measurement-substep-svg-label" textAnchor="middle">Quality</text>
+          <text x="356" y="128" className="measurement-substep-svg-muted" textAnchor="middle">RSRP/RSRQ/SINR</text>
+
+          <rect x="142" y="174" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
+          <text x="215" y="197" className="measurement-substep-svg-label" textAnchor="middle">Event / report rule</text>
+        </svg>
+      </div>
+    );
+  }
+
   return (
     <div className="measurement-relation">
       <div className="measurement-relation-title">Measurement sequence</div>
@@ -1159,6 +1192,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
             {activeSequenceItem.codeText} {activeSequenceItem.label}
           </div>
           <div className="measurement-substep-text">{activeSequenceItem.description}</div>
+          <MeasurementSubstepVisual itemKey={activeSequenceItem.key} />
           <div className="measurement-substep-fields">
             {activeSequenceItem.fields.slice(0, 8).map((field) => (
               <span className="measurement-substep-field" key={field}>{field}</span>
