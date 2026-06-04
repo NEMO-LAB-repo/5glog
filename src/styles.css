@@ -1360,6 +1360,11 @@ button {
   stroke-width: 3;
 }
 
+.measurement-sequence-message.is-observation .measurement-sequence-body {
+  fill: #ffffff;
+  stroke-dasharray: 8 6;
+}
+
 .measurement-sequence-message:hover .measurement-sequence-body,
 .measurement-sequence-message:focus .measurement-sequence-body {
   fill: #ffffff;

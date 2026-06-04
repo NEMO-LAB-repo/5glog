@@ -981,15 +981,15 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       y: 214,
       x1: lifelines[2].x,
       x2: lifelines[3].x,
-      direction: "left",
-      tag: "Radio obs.",
-      tagWidth: 86,
+      direction: "right",
+      tag: "ML1 local",
+      tagWidth: 82,
       code: measurementRelationNodes[0].code,
       codeText: measurementRelationNodes[0].code,
       codeWidth: 62,
       label: measurementRelationNodes[0].label,
       detail: measurementRelationNodes[0].text,
-      description: "UE ML1 searches and acquires configured NR frequencies and SSB beams to find serving and neighbor cells. This is radio observation evidence, not protocol signaling.",
+      description: "UE ML1 locally searches/acquires configured NR frequencies and SSB beams. The cells are observed over radio; this is not target-cell signaling to UE.",
       fields: measurementRelationNodes[0].fields
     },
     {
@@ -997,15 +997,15 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       y: 276,
       x1: lifelines[2].x,
       x2: lifelines[3].x,
-      direction: "left",
-      tag: "Radio obs.",
-      tagWidth: 86,
+      direction: "right",
+      tag: "ML1 local",
+      tagWidth: 82,
       code: measurementRelationNodes[1].code,
       codeText: measurementRelationNodes[1].code,
       codeWidth: 62,
       label: "Raw Measure",
       detail: measurementRelationNodes[1].text,
-      description: "UE ML1 records raw cell measurements such as PCI, SSB index, RSRP, RSRQ, and SINR. These values are close to the radio measurement source.",
+      description: "UE ML1 locally records raw cell measurements such as PCI, SSB index, RSRP, RSRQ, and SINR from observed radio signals.",
       fields: measurementRelationNodes[1].fields
     },
     {
@@ -1081,6 +1081,9 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   function messagePath(item: (typeof sequenceItems)[number]) {
     const height = 48;
     const head = 28;
+    if (item.key === "search" || item.key === "raw") {
+      return `M ${item.x1} ${item.y} L ${item.x2} ${item.y} L ${item.x2} ${item.y + height} L ${item.x1} ${item.y + height} Z`;
+    }
     if (item.direction === "left") {
       return `M ${item.x2} ${item.y} L ${item.x1 + head} ${item.y} L ${item.x1} ${item.y + height / 2} L ${item.x1 + head} ${item.y + height} L ${item.x2} ${item.y + height} Z`;
     }
@@ -1165,7 +1168,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           return (
             <g
               key={item.key}
-              className={`measurement-sequence-message ${item.key === activeSequenceItem?.key ? "is-selected" : ""}`}
+              className={`measurement-sequence-message ${item.key === "search" || item.key === "raw" ? "is-observation" : ""} ${item.key === activeSequenceItem?.key ? "is-selected" : ""}`}
               role="button"
               tabIndex={0}
               onClick={() => openSequenceItem(item)}
