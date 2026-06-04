@@ -1257,6 +1257,10 @@ button {
   width: min(980px, calc(100% - 40px));
 }
 
+.popup.react-popup.rach-popup {
+  width: min(980px, calc(100% - 40px));
+}
+
 .popup {
   z-index: 20;
   box-sizing: border-box;

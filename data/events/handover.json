@@ -389,8 +389,8 @@
     "9": {
       "title": "9. Random Access Success",
       "layer": "MAC",
-      "decide": "Random access on the target cell succeeds; if the explicit success field is absent, infer success from later handover completion.",
-      "logcode": "Best evidence: 0xB88A NR5G MAC RACH Attempt with RACH Result: SUCCESS and, when applicable, Contention Type: CONT_FREE. Supporting evidence: 0xB9BF NR5G ML1 Search HO Acq Confirm. Fields: RACH Result, SUCCESS, Contention Type, CONT_FREE, Result, ARFCN, Cell Id.",
+      "decide": "Random access on the target cell succeeds.",
+      "logcode": "Best evidence: 0xB88A NR5G MAC RACH Attempt with RACH Result: SUCCESS and, when applicable, Contention Type: CONT_FREE. Additional target acquisition evidence: 0xB9BF NR5G ML1 Search HO Acq Confirm. Fields: RACH Result, SUCCESS, Contention Type, CONT_FREE, Result, ARFCN, Cell Id.",
       "logcodes": [
         "0xB88A",
         "0xB9BF"
@@ -402,8 +402,7 @@
         "CONT_FREE",
         "Result",
         "ARFCN",
-        "Cell Id",
-        "RRCReconfigurationComplete"
+        "Cell Id"
       ],
       "evidence": [
         {
@@ -430,28 +429,7 @@
             "ARFCN",
             "Cell Id"
           ]
-        },
-        {
-          "title": "Fallback inference",
-          "detail": "If no explicit RA success field appears, infer success from Step 10 and HO success events.",
-          "logcodes": [
-            "0xB821",
-            "0x1FFB"
-          ],
-          "fields": [
-            "rrcReconfigurationComplete",
-            "EVENT_NR5G_RRC_HO_SUCCESS",
-            "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
-          ]
         }
-      ],
-      "confirm": "If no explicit RA success field appears, use Step 10 and 0x1FFB events as confirmation: EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
-      "confirmLogcodes": [
-        "0x1FFB"
-      ],
-      "confirmFields": [
-        "EVENT_NR5G_RRC_HO_SUCCESS",
-        "EVENT_NR5G_RRC_NEW_CELL_IND_V2"
       ]
     },
     "10": {

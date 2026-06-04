@@ -1513,20 +1513,185 @@ function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
   );
 }
 
+function RandomAccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const cards = [
+    {
+      code: "0xB889",
+      title: "RACH trigger",
+      role: "access start",
+      detail: "MAC starts target-cell random access because the trigger reason is handover",
+      fields: ["Rach Reason", "HANDOVER", "CRNTI", "RACH Contention", "Carrier Id", "RA Id"],
+      groups: [
+        { label: "why RA starts", text: "Rach Reason = HANDOVER" },
+        { label: "UE identity", text: "CRNTI" },
+        { label: "access mode", text: "RACH Contention" },
+        { label: "target access id", text: "Carrier Id + RA Id" }
+      ]
+    },
+    {
+      code: "0xB88A",
+      title: "RACH attempt",
+      role: "attempt details",
+      detail: "records the random-access exchange on the target cell when attempt details are present",
+      fields: ["RACH Msg1", "RACH Msg2", "RACH Msg3", "RACH Msg4", "Contention Type", "RACH Result"],
+      groups: [
+        { label: "Msg1", text: "preamble" },
+        { label: "Msg2", text: "random access response" },
+        { label: "Msg3 / Msg4", text: "contention resolution" },
+        { label: "attempt result", text: "Contention Type + RACH Result" }
+      ]
+    }
+  ];
+
+  return (
+    <div className="apply-config-diagram rach-config-diagram">
+      <div className="apply-config-title">What this step does</div>
+      <div className="apply-config-flow" aria-label="Random access flow">
+        <div className="apply-config-flow-box">
+          <b>target cell ready</b>
+          <span>handover execution reaches MAC access</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box is-center">
+          <b>RACH trigger</b>
+          <span>MAC starts random access for handover</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box">
+          <b>RACH attempt</b>
+          <span>Msg1-Msg4 target-cell access exchange</span>
+        </div>
+      </div>
+
+      <div className="apply-config-subtitle">How to find it in logs</div>
+      <div className="apply-config-grid">
+        {cards.map((card) => (
+          <div className="apply-config-card" key={card.code}>
+            <div className="apply-config-card-head">
+              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
+                {card.code}
+              </button>
+              <span>{card.role}</span>
+            </div>
+            <div className="apply-config-card-title">{card.title}</div>
+            <div className="apply-config-map" aria-label={`${card.code} random access map`}>
+              <div className="apply-config-map-center">
+                <span>{card.title}</span>
+                <b>{card.code}</b>
+              </div>
+              {card.groups.map((group) => (
+                <div className="apply-config-map-node" key={group.label}>
+                  <b>{group.label}</b>
+                  <span>{group.text}</span>
+                </div>
+              ))}
+            </div>
+            <div className="apply-config-card-detail">{card.detail}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  const cards = [
+    {
+      code: "0xB88A",
+      title: "MAC RA result",
+      role: "direct RA result",
+      detail: "best direct MAC evidence that random access completed successfully",
+      fields: ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE"],
+      groups: [
+        { label: "final result", text: "RACH Result = SUCCESS" },
+        { label: "contention mode", text: "CONT_FREE when present" },
+        { label: "attempt context", text: "same target-cell attempt" },
+        { label: "handover access", text: "RA finished on target cell" }
+      ]
+    },
+    {
+      code: "0xB9BF",
+      title: "HO acquisition confirm",
+      role: "target acquisition",
+      detail: "ML1 confirms target-cell acquisition after the handover access step",
+      fields: ["Result", "ARFCN", "Cell Id"],
+      groups: [
+        { label: "acq result", text: "Result" },
+        { label: "frequency", text: "ARFCN" },
+        { label: "target cell", text: "Cell Id" },
+        { label: "timing", text: "near RA success" }
+      ]
+    }
+  ];
+
+  return (
+    <div className="apply-config-diagram rach-config-diagram">
+      <div className="apply-config-title">What this step does</div>
+      <div className="apply-config-flow" aria-label="Random access success flow">
+        <div className="apply-config-flow-box">
+          <b>RACH attempt finishes</b>
+          <span>MAC attempt reaches a final status</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box is-center">
+          <b>RA success</b>
+          <span>target-cell random access succeeds</span>
+        </div>
+        <div className="apply-config-flow-arrow" aria-hidden="true" />
+        <div className="apply-config-flow-box">
+          <b>target acquired</b>
+          <span>ML1 confirms handover acquisition</span>
+        </div>
+      </div>
+
+      <div className="apply-config-subtitle">How to find it in logs</div>
+      <div className="apply-config-grid">
+        {cards.map((card) => (
+          <div className="apply-config-card" key={card.code}>
+            <div className="apply-config-card-head">
+              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
+                {card.code}
+              </button>
+              <span>{card.role}</span>
+            </div>
+            <div className="apply-config-card-title">{card.title}</div>
+            <div className="apply-config-map" aria-label={`${card.code} random access success map`}>
+              <div className="apply-config-map-center">
+                <span>{card.title}</span>
+                <b>{card.code}</b>
+              </div>
+              {card.groups.map((group) => (
+                <div className="apply-config-map-node" key={group.label}>
+                  <b>{group.label}</b>
+                  <span>{group.text}</span>
+                </div>
+              ))}
+            </div>
+            <div className="apply-config-card-detail">{card.detail}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementConfigStep = step.title.startsWith("1.");
   const isMeasurementRelationStep = step.title.startsWith("2.");
   const isNetworkInterfaceStep = step.title.startsWith("4.");
   const isApplyTargetConfigStep = step.title.startsWith("6.");
   const isHandoverExecutionStep = step.title.startsWith("7.");
+  const isRandomAccessStep = step.title.startsWith("8.");
+  const isRandomAccessSuccessStep = step.title.startsWith("9.");
   const hasEvidence = Boolean(step.evidence?.length);
+  const usesCustomDiagram = isNetworkInterfaceStep || isApplyTargetConfigStep || isHandoverExecutionStep || isRandomAccessStep || isRandomAccessSuccessStep;
 
   return (
-    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""} ${isApplyTargetConfigStep ? "target-config-popup" : ""} ${isHandoverExecutionStep ? "execution-popup" : ""}`} role="dialog">
+    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""} ${isApplyTargetConfigStep ? "target-config-popup" : ""} ${isHandoverExecutionStep ? "execution-popup" : ""} ${isRandomAccessStep || isRandomAccessSuccessStep ? "rach-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
-      {step.decide && !isMeasurementConfigStep && !isApplyTargetConfigStep && !isHandoverExecutionStep ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
+      {step.decide && !isMeasurementConfigStep && !usesCustomDiagram ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
       {step.logcode && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
@@ -1538,7 +1703,9 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       {isNetworkInterfaceStep ? <HandoverTypeDiagram /> : null}
       {isApplyTargetConfigStep ? <ApplyTargetConfigDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isHandoverExecutionStep ? <HandoverExecutionDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {hasEvidence && !isNetworkInterfaceStep && !isApplyTargetConfigStep && !isHandoverExecutionStep ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
+      {isRandomAccessStep ? <RandomAccessDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {isRandomAccessSuccessStep ? <RandomAccessSuccessDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {hasEvidence && !usesCustomDiagram ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
       {step.sequence && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}
