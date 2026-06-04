@@ -2017,7 +2017,7 @@ type LegacyStepShape = {
   body: string;
   divider: { x1: number; y1: number; x2: number; y2: number };
   tag: { x: number; y: number; text?: string };
-  message: { x: number; y: number; small?: boolean };
+  message: { x: number; y: number; small?: boolean; lines?: string[] };
   tail?: string;
   dashedTail?: boolean;
 };
@@ -2072,7 +2072,7 @@ const legacyStepShapes: LegacyStepShape[] = [
     body: "M 1020 770 L 1342 770 L 1390 792 L 1342 814 L 1020 814 Z",
     divider: { x1: 1138, y1: 770, x2: 1138, y2: 814 },
     tag: { x: 1079, y: 800, text: "ML1->MAC" },
-    message: { x: 1162, y: 801, small: true }
+    message: { x: 1162, y: 789, small: true, lines: ["7. Handover", "Execution"] }
   },
   {
     stepNumber: "8",
@@ -2105,6 +2105,7 @@ const legacyStepShapes: LegacyStepShape[] = [
 ];
 
 function LegacyMessageShape({ shape, step, onSelect }: { shape: LegacyStepShape; step: StepInfo; onSelect: (step: StepInfo) => void }) {
+  const messageLines = shape.message.lines || [step.title];
   return (
     <g
       className="step-label"
@@ -2119,7 +2120,11 @@ function LegacyMessageShape({ shape, step, onSelect }: { shape: LegacyStepShape;
       <path d={shape.body} className="message-body" />
       <path d={`M ${shape.divider.x1} ${shape.divider.y1} L ${shape.divider.x2} ${shape.divider.y2}`} className="message-divider" />
       <text x={shape.tag.x} y={shape.tag.y} className="tag" textAnchor="middle">{shape.tag.text || step.layer}</text>
-      <text x={shape.message.x} y={shape.message.y} className={`msg ${shape.message.small ? "small" : ""}`}>{step.title}</text>
+      <text x={shape.message.x} y={shape.message.y} className={`msg ${shape.message.small ? "small" : ""}`}>
+        {messageLines.map((line, index) => (
+          <tspan key={line} x={shape.message.x} dy={index === 0 ? 0 : 22}>{line}</tspan>
+        ))}
+      </text>
     </g>
   );
 }
