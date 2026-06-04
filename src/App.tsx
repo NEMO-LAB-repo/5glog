@@ -972,7 +972,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeWidth: 62,
       label: "ML1 measurement configuration",
       detail: "UE internal config; not network signaling",
-      description: "UE internal config that tells ML1 which measurement objects and report rules to run.",
+      description: "UE internal config that tells ML1 which measurement objects and report rules to run. It is the rule set ML1 will use, not measured quality values.",
       fields: measurementMl1ConfigInput.fields
     },
     {
@@ -1122,13 +1122,13 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       bottom: [string, string];
     }> = {
       rules: {
-        title: "What ML1 is configured to measure",
-        aria: "ML1 measurement config targets",
+        title: "What 0xB96E configures",
+        aria: "ML1 measurement configuration rules",
         top: ["NR frequency", "ARFCN / SSB freq"],
         left: ["Cells", "PCI / SSB"],
-        center: ["UE ML1", "0xB96E", "measurement configuration"],
-        right: ["Quality", "RSRP/RSRQ/SINR"],
-        bottom: ["Event / report rule", "eventId / time-to-trigger"]
+        center: ["UE ML1 config", "0xB96E", "measurement rules"],
+        right: ["Report rule", "eventId / TTT /\nreport interval"],
+        bottom: ["measId mapping", "measId -> measObjId +\nreportCfgId"]
       },
       search: {
         title: "What ML1 searches and acquires",
@@ -1202,35 +1202,42 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
     }
     const visual = visualMap[itemKey];
     if (!visual) return null;
+
+    function svgTextLines(text: string, x: number, y: number, className: string, anchor: "middle" | "start" = "middle", lineHeight = 13) {
+      return text.split("\n").map((line, index) => (
+        <text key={`${text}-${index}`} x={x} y={y + index * lineHeight} className={className} textAnchor={anchor}>{line}</text>
+      ));
+    }
+
     return (
       <div className="measurement-substep-visual">
         <div className="measurement-substep-visual-title">{visual.title}</div>
         <svg className="measurement-substep-svg" viewBox="0 0 430 230" role="img" aria-label={visual.aria}>
           <line x1="215" y1="82" x2="215" y2="56" className="measurement-substep-svg-line" />
-          <line x1="215" y1="148" x2="215" y2="174" className="measurement-substep-svg-line" />
+          <line x1="215" y1="148" x2="215" y2="170" className="measurement-substep-svg-line" />
           <line x1="150" y1="115" x2="92" y2="115" className="measurement-substep-svg-line" />
           <line x1="280" y1="115" x2="338" y2="115" className="measurement-substep-svg-line" />
 
           <rect x="142" y="20" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
           <text x="215" y="37" className="measurement-substep-svg-label" textAnchor="middle">{visual.top[0]}</text>
-          <text x="215" y="50" className="measurement-substep-svg-muted" textAnchor="middle">{visual.top[1]}</text>
+          {svgTextLines(visual.top[1], 215, 50, "measurement-substep-svg-muted")}
 
           <rect x="18" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
           <text x="74" y="109" className="measurement-substep-svg-label" textAnchor="middle">{visual.left[0]}</text>
-          <text x="74" y="128" className="measurement-substep-svg-muted" textAnchor="middle">{visual.left[1]}</text>
+          {svgTextLines(visual.left[1], 74, 128, "measurement-substep-svg-muted")}
 
           <rect x="150" y="82" width="130" height="66" rx="7" className="measurement-substep-svg-center" />
           <text x="215" y="103" className="measurement-substep-svg-label" textAnchor="middle">{visual.center[0]}</text>
           <text x="215" y="121" className="measurement-substep-svg-red" textAnchor="middle">{visual.center[1]}</text>
-          <text x="215" y="136" className="measurement-substep-svg-muted" textAnchor="middle">{visual.center[2]}</text>
+          {svgTextLines(visual.center[2], 215, 136, "measurement-substep-svg-muted")}
 
           <rect x="300" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
           <text x="356" y="109" className="measurement-substep-svg-label" textAnchor="middle">{visual.right[0]}</text>
-          <text x="356" y="128" className="measurement-substep-svg-muted" textAnchor="middle">{visual.right[1]}</text>
+          {svgTextLines(visual.right[1], 356, 125, "measurement-substep-svg-muted")}
 
-          <rect x="142" y="174" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
-          <text x="215" y="191" className="measurement-substep-svg-label" textAnchor="middle">{visual.bottom[0]}</text>
-          <text x="215" y="204" className="measurement-substep-svg-muted" textAnchor="middle">{visual.bottom[1]}</text>
+          <rect x="120" y="170" width="190" height="48" rx="7" className="measurement-substep-svg-box" />
+          <text x="215" y="188" className="measurement-substep-svg-label" textAnchor="middle">{visual.bottom[0]}</text>
+          {svgTextLines(visual.bottom[1], 215, 202, "measurement-substep-svg-muted", "middle", 12)}
         </svg>
       </div>
     );
