@@ -1112,6 +1112,62 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   }
 
   function MeasurementSubstepVisual({ itemKey }: { itemKey: string }) {
+    const visualMap: Record<string, {
+      title: string;
+      aria: string;
+      top: [string, string];
+      left: [string, string];
+      center: [string, string];
+      right: [string, string];
+      bottom: [string, string];
+    }> = {
+      rules: {
+        title: "What ML1 is configured to measure",
+        aria: "ML1 measurement config targets",
+        top: ["NR frequency", "ARFCN / SSB freq"],
+        left: ["Cells", "PCI / SSB"],
+        center: ["UE ML1", "0xB96E config"],
+        right: ["Quality", "RSRP/RSRQ/SINR"],
+        bottom: ["Event / report rule", "eventId / TTT"]
+      },
+      search: {
+        title: "What ML1 searches and acquires",
+        aria: "ML1 search acquisition targets",
+        top: ["NR frequency", "raster / ARFCN"],
+        left: ["Cells", "candidate PCI"],
+        center: ["UE ML1", "0xB96D Search"],
+        right: ["SSB beams", "SSB index"],
+        bottom: ["Acquired info", "MIB / timing"]
+      },
+      raw: {
+        title: "What ML1 raw-measures",
+        aria: "ML1 raw measurement targets",
+        top: ["Observed cell", "PCI / SSB"],
+        left: ["Power", "RSRP"],
+        center: ["UE ML1", "0xB96A Raw meas"],
+        right: ["Quality", "RSRQ / SINR"],
+        bottom: ["Raw sample", "per beam / cell"]
+      },
+      filtered: {
+        title: "What ML1 stores after filtering",
+        aria: "ML1 filtered measurement database",
+        top: ["Raw samples", "from 0xB96A"],
+        left: ["Serving cell", "CellQuality"],
+        center: ["UE ML1", "0xB97F DB update"],
+        right: ["Neighbor cells", "CellQuality"],
+        bottom: ["Stable values", "CellQualityRsrp/Rsrq"]
+      },
+      eval: {
+        title: "What ML1 evaluates",
+        aria: "ML1 connected mode event evaluation",
+        top: ["Event rule", "reportConfig"],
+        left: ["Measured cell", "Meas Id / Cell Id"],
+        center: ["UE ML1", "0xB96F Eval"],
+        right: ["Event state", "ENTERING / ENTERED"],
+        bottom: ["Trigger evidence", "TTT / report count"]
+      }
+    };
+
     if (itemKey === "eval-to-rrc") {
       return (
         <div className="measurement-substep-visual measurement-trigger-visual">
@@ -1144,33 +1200,36 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         </div>
       );
     }
-    if (itemKey !== "rules") return null;
+    const visual = visualMap[itemKey];
+    if (!visual) return null;
     return (
       <div className="measurement-substep-visual">
-        <div className="measurement-substep-visual-title">What ML1 is configured to measure</div>
-        <svg className="measurement-substep-svg" viewBox="0 0 430 230" role="img" aria-label="ML1 measurement config targets">
+        <div className="measurement-substep-visual-title">{visual.title}</div>
+        <svg className="measurement-substep-svg" viewBox="0 0 430 230" role="img" aria-label={visual.aria}>
           <line x1="215" y1="82" x2="215" y2="56" className="measurement-substep-svg-line" />
           <line x1="215" y1="148" x2="215" y2="174" className="measurement-substep-svg-line" />
           <line x1="150" y1="115" x2="92" y2="115" className="measurement-substep-svg-line" />
           <line x1="280" y1="115" x2="338" y2="115" className="measurement-substep-svg-line" />
 
           <rect x="142" y="20" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
-          <text x="215" y="42" className="measurement-substep-svg-label" textAnchor="middle">NR frequency</text>
+          <text x="215" y="37" className="measurement-substep-svg-label" textAnchor="middle">{visual.top[0]}</text>
+          <text x="215" y="50" className="measurement-substep-svg-muted" textAnchor="middle">{visual.top[1]}</text>
 
           <rect x="18" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
-          <text x="74" y="109" className="measurement-substep-svg-label" textAnchor="middle">Cells</text>
-          <text x="74" y="128" className="measurement-substep-svg-muted" textAnchor="middle">PCI / SSB</text>
+          <text x="74" y="109" className="measurement-substep-svg-label" textAnchor="middle">{visual.left[0]}</text>
+          <text x="74" y="128" className="measurement-substep-svg-muted" textAnchor="middle">{visual.left[1]}</text>
 
           <rect x="150" y="82" width="130" height="66" rx="7" className="measurement-substep-svg-center" />
-          <text x="215" y="106" className="measurement-substep-svg-label" textAnchor="middle">UE ML1</text>
-          <text x="215" y="126" className="measurement-substep-svg-red" textAnchor="middle">0xB96E config</text>
+          <text x="215" y="106" className="measurement-substep-svg-label" textAnchor="middle">{visual.center[0]}</text>
+          <text x="215" y="126" className="measurement-substep-svg-red" textAnchor="middle">{visual.center[1]}</text>
 
           <rect x="300" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
-          <text x="356" y="109" className="measurement-substep-svg-label" textAnchor="middle">Quality</text>
-          <text x="356" y="128" className="measurement-substep-svg-muted" textAnchor="middle">RSRP/RSRQ/SINR</text>
+          <text x="356" y="109" className="measurement-substep-svg-label" textAnchor="middle">{visual.right[0]}</text>
+          <text x="356" y="128" className="measurement-substep-svg-muted" textAnchor="middle">{visual.right[1]}</text>
 
           <rect x="142" y="174" width="146" height="36" rx="7" className="measurement-substep-svg-box" />
-          <text x="215" y="197" className="measurement-substep-svg-label" textAnchor="middle">Event / report rule</text>
+          <text x="215" y="191" className="measurement-substep-svg-label" textAnchor="middle">{visual.bottom[0]}</text>
+          <text x="215" y="204" className="measurement-substep-svg-muted" textAnchor="middle">{visual.bottom[1]}</text>
         </svg>
       </div>
     );
