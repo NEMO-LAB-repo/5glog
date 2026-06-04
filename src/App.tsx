@@ -200,7 +200,7 @@ const measurementMl1ConfigInput = {
 const measurementRelationNodes = [
   {
     code: "0xB96D",
-    label: "Search / ACQ",
+    label: "Search / Acquisition",
     text: "Radio observation, not signaling",
     fields: ["Raster List", "raster frequency", "nrarfcn", "ARFCN", "Phy Cell Id", "PCI", "SSB Index", "MIB", "RSRP Raw"]
   },
@@ -212,14 +212,14 @@ const measurementRelationNodes = [
   },
   {
     code: "0xB97F",
-    label: "Measurement DB Update",
+    label: "Measurement Database Update",
     text: "Filtered CellQuality",
     fields: ["Serving Cell PCI", "CellQualityRsrp", "CellQualityRsrq", "Detected Beams"]
   },
   {
     code: "0xB96F",
-    label: "Conn Eval",
-    text: "State, Meas Id, TTT, reports sent",
+    label: "Connected Evaluation",
+    text: "State, Measurement Id, time-to-trigger, reports sent",
     fields: ["Meas Id", "Cell Id", "State", "Num Reports Sent", "TTT Remaining"]
   },
   {
@@ -311,7 +311,7 @@ const selectedFieldExplanations: Record<string, Record<string, string>> = {
   "0xB96F": {
     "Meas Id": "links this ML1 evaluation to measConfig / MeasurementReport measId",
     "Cell Id": "cell being evaluated for the configured report condition",
-    "State": "ENTERING with TTT=0, or ENTERED, means the event condition is ready/active",
+    "State": "ENTERING with TTT Remaining = 0, or ENTERED, means the event condition is ready/active",
     "Num Reports Sent": "1 or more means ML1 has already triggered report evidence",
     "TTT Remaining": "0 means time-to-trigger has expired"
   }
@@ -938,9 +938,9 @@ function PopupText({
 
 function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const lifelines = [
-    { key: "source", label: "Source gNB", x: 150 },
-    { key: "rrc", label: "UE RRC", x: 430 },
-    { key: "ml1", label: "UE ML1", x: 740 }
+    { key: "source", label: "Source gNB", x: 160 },
+    { key: "rrc", label: "UE RRC", x: 530 },
+    { key: "ml1", label: "UE ML1", x: 900 }
   ];
   const sequenceItems = [
     {
@@ -954,7 +954,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementConfigInput.code,
       codeText: measurementConfigInput.code,
       codeWidth: 62,
-      label: "measConfig",
+      label: "Measurement configuration",
       detail: "Air-interface RRC message from network",
       description: "Source gNB sends an RRCReconfiguration that carries measConfig. This tells UE RRC what objects, frequencies, SSB beams, and event rules should be measured.",
       fields: measurementConfigInput.fields
@@ -970,7 +970,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementMl1ConfigInput.code,
       codeText: measurementMl1ConfigInput.code,
       codeWidth: 62,
-      label: "ML1 meas config",
+      label: "ML1 measurement configuration",
       detail: "UE internal config; not network signaling",
       description: "UE internal config that tells ML1 which measurement objects and report rules to run.",
       fields: measurementMl1ConfigInput.fields
@@ -1002,7 +1002,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[1].code,
       codeText: measurementRelationNodes[1].code,
       codeWidth: 62,
-      label: "Raw Measure",
+      label: "Raw Measurement",
       detail: measurementRelationNodes[1].text,
       description: "UE ML1 locally records raw cell measurements such as PCI, SSB index, RSRP, RSRQ, and SINR from observed radio signals.",
       fields: measurementRelationNodes[1].fields
@@ -1018,7 +1018,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[2].code,
       codeText: measurementRelationNodes[2].code,
       codeWidth: 62,
-      label: "Filtered DB",
+      label: "Filtered Database",
       detail: measurementRelationNodes[2].text,
       description: "UE ML1 updates its measurement database with filtered or stabilized cell quality values. This is the evidence used before event evaluation.",
       fields: measurementRelationNodes[2].fields
@@ -1034,9 +1034,9 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[3].code,
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
-      label: "Conn Eval",
-      detail: "State, TTT Remaining, Num Reports Sent",
-      description: "UE ML1 evaluates the configured connected-mode event condition and time-to-trigger. Key evidence is State, Meas Id, Cell Id, TTT Remaining, and Num Reports Sent.",
+      label: "Connected Evaluation",
+      detail: "State, time-to-trigger remaining, reports sent",
+      description: "UE ML1 evaluates the configured connected-mode event condition and time-to-trigger. Key evidence is State, Meas Id, Cell Id, TTT Remaining (time-to-trigger), and Num Reports Sent.",
       fields: measurementRelationNodes[3].fields
     },
     {
@@ -1051,8 +1051,8 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       codeText: measurementRelationNodes[3].code,
       codeWidth: 62,
       label: "Report trigger",
-      detail: "State==ENTERED or TTT=0 + report sent",
-      description: "When the event condition is entered and TTT expires, ML1 provides evidence that an RRC MeasurementReport should be triggered.",
+      detail: "Event entered or time-to-trigger expired",
+      description: "When the event condition is entered and time-to-trigger expires, ML1 provides evidence that an RRC MeasurementReport should be triggered.",
       fields: measurementRelationNodes[3].fields
     },
     {
@@ -1066,7 +1066,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: measurementRelationNodes[4].code,
       codeText: measurementRelationNodes[4].code,
       codeWidth: 62,
-      label: "MeasReport",
+      label: "MeasurementReport",
       detail: measurementRelationNodes[4].text,
       description: "UE RRC sends the final MeasurementReport to the source gNB. The report usually carries measId and cell quality results; resolve measId through the earlier measConfig to know the event type.",
       fields: measurementRelationNodes[4].fields
@@ -1117,7 +1117,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       aria: string;
       top: [string, string];
       left: [string, string];
-      center: [string, string];
+      center: [string, string, string];
       right: [string, string];
       bottom: [string, string];
     }> = {
@@ -1126,25 +1126,25 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         aria: "ML1 measurement config targets",
         top: ["NR frequency", "ARFCN / SSB freq"],
         left: ["Cells", "PCI / SSB"],
-        center: ["UE ML1", "0xB96E config"],
+        center: ["UE ML1", "0xB96E", "measurement configuration"],
         right: ["Quality", "RSRP/RSRQ/SINR"],
-        bottom: ["Event / report rule", "eventId / TTT"]
+        bottom: ["Event / report rule", "eventId / time-to-trigger"]
       },
       search: {
         title: "What ML1 searches and acquires",
         aria: "ML1 search acquisition targets",
         top: ["NR frequency", "raster / ARFCN"],
         left: ["Cells", "candidate PCI"],
-        center: ["UE ML1", "0xB96D Search"],
+        center: ["UE ML1", "0xB96D", "search acquisition"],
         right: ["SSB beams", "SSB index"],
         bottom: ["Acquired info", "MIB / timing"]
       },
       raw: {
-        title: "What ML1 raw-measures",
+        title: "What ML1 measures as raw radio quality",
         aria: "ML1 raw measurement targets",
         top: ["Observed cell", "PCI / SSB"],
         left: ["Power", "RSRP"],
-        center: ["UE ML1", "0xB96A Raw meas"],
+        center: ["UE ML1", "0xB96A", "raw measurement"],
         right: ["Quality", "RSRQ / SINR"],
         bottom: ["Raw sample", "per beam / cell"]
       },
@@ -1153,7 +1153,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         aria: "ML1 filtered measurement database",
         top: ["Raw samples", "from 0xB96A"],
         left: ["Serving cell", "CellQuality"],
-        center: ["UE ML1", "0xB97F DB update"],
+        center: ["UE ML1", "0xB97F", "measurement database"],
         right: ["Neighbor cells", "CellQuality"],
         bottom: ["Stable values", "CellQualityRsrp/Rsrq"]
       },
@@ -1162,9 +1162,9 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
         aria: "ML1 connected mode event evaluation",
         top: ["Event rule", "reportConfig"],
         left: ["Measured cell", "Meas Id / Cell Id"],
-        center: ["UE ML1", "0xB96F Eval"],
+        center: ["UE ML1", "0xB96F", "connected evaluation"],
         right: ["Event state", "ENTERING / ENTERED"],
-        bottom: ["Trigger evidence", "TTT / report count"]
+        bottom: ["Trigger evidence", "time-to-trigger / report count"]
       }
     };
 
@@ -1180,7 +1180,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
                 <div><span>TTT Remaining</span><b>0</b></div>
                 <div><span>Num Reports Sent</span><b>1</b></div>
               </div>
-              <p>The event condition just entered, TTT expired, and ML1 reports that one MeasurementReport was sent or triggered.</p>
+              <p>The event condition just entered, time-to-trigger expired, and ML1 reports that one MeasurementReport was sent or triggered.</p>
             </div>
             <div className="measurement-trigger-card">
               <div className="measurement-trigger-heading">Already-triggered event state</div>
@@ -1189,7 +1189,7 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
                 <div><span>TTT Remaining</span><b>65535</b></div>
                 <div><span>Num Reports Sent</span><b>{">= 1"}</b></div>
               </div>
-              <p>The event is already entered. The TTT timer is no longer running, and at least one MeasurementReport was sent or triggered.</p>
+              <p>The event is already entered. The time-to-trigger timer is no longer running, and at least one MeasurementReport was sent or triggered.</p>
             </div>
           </div>
           <div className="measurement-trigger-confirm">
@@ -1220,8 +1220,9 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
           <text x="74" y="128" className="measurement-substep-svg-muted" textAnchor="middle">{visual.left[1]}</text>
 
           <rect x="150" y="82" width="130" height="66" rx="7" className="measurement-substep-svg-center" />
-          <text x="215" y="106" className="measurement-substep-svg-label" textAnchor="middle">{visual.center[0]}</text>
-          <text x="215" y="126" className="measurement-substep-svg-red" textAnchor="middle">{visual.center[1]}</text>
+          <text x="215" y="103" className="measurement-substep-svg-label" textAnchor="middle">{visual.center[0]}</text>
+          <text x="215" y="121" className="measurement-substep-svg-red" textAnchor="middle">{visual.center[1]}</text>
+          <text x="215" y="136" className="measurement-substep-svg-muted" textAnchor="middle">{visual.center[2]}</text>
 
           <rect x="300" y="86" width="112" height="58" rx="7" className="measurement-substep-svg-box" />
           <text x="356" y="109" className="measurement-substep-svg-label" textAnchor="middle">{visual.right[0]}</text>
@@ -1238,14 +1239,14 @@ function MeasurementRelationDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   return (
     <div className="measurement-relation">
       <div className="measurement-relation-title">Measurement sequence</div>
-      <svg className="measurement-sequence" viewBox="0 0 960 620" role="img" aria-label="Measurement log sequence diagram">
+      <svg className="measurement-sequence" viewBox="0 0 1100 620" role="img" aria-label="Measurement log sequence diagram">
         <defs>
           <marker id="measurement-sequence-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
             <path d="M 0 0 L 10 5 L 0 10 z" />
           </marker>
         </defs>
 
-        <rect x="28" y="26" width="904" height="568" rx="8" className="measurement-sequence-frame" />
+        <rect x="28" y="26" width="1044" height="568" rx="8" className="measurement-sequence-frame" />
 
         {lifelines.map((line) => (
           <g key={line.key}>
