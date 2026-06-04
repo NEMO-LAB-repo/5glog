@@ -1292,6 +1292,167 @@ function MeasurementConfigDiagram() {
   );
 }
 
+function MeasurementReportDiagram() {
+  return (
+    <div className="rrc-step-diagram">
+      <div className="rrc-step-title">What this step does</div>
+      <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="MeasurementReport step">
+        <defs>
+          <marker id="rrc-report-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" className="rrc-step-arrowhead" />
+          </marker>
+        </defs>
+
+        <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
+        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">UE RRC</text>
+        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">event condition satisfied</text>
+
+        <line x1="222" y1="93" x2="302" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-report-arrow)" />
+
+        <rect x="302" y="40" width="244" height="106" rx="8" className="rrc-step-message-box" />
+        <text x="424" y="75" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
+        <text x="424" y="102" className="rrc-step-svg-title" textAnchor="middle">MeasurementReport</text>
+        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">measId + measured quality</text>
+
+        <line x1="546" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-report-arrow)" />
+
+        <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
+        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">Source gNB</text>
+        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">receives cell quality</text>
+
+        <rect x="86" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="161" y="205" className="rrc-step-svg-label" textAnchor="middle">measId</text>
+
+        <rect x="335" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">serving quality</text>
+
+        <rect x="584" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="659" y="205" className="rrc-step-svg-label" textAnchor="middle">neighbor quality</text>
+      </svg>
+    </div>
+  );
+}
+
+function HandoverCommandDiagram() {
+  return (
+    <div className="rrc-step-diagram">
+      <div className="rrc-step-title">What this step does</div>
+      <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="Handover command with synchronization">
+        <defs>
+          <marker id="rrc-command-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" className="rrc-step-arrowhead" />
+          </marker>
+        </defs>
+
+        <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
+        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">Source gNB</text>
+        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">selects target config</text>
+
+        <line x1="222" y1="93" x2="288" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-command-arrow)" />
+
+        <rect x="288" y="40" width="272" height="106" rx="8" className="rrc-step-message-box" />
+        <text x="424" y="75" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
+        <text x="424" y="102" className="rrc-step-svg-title" textAnchor="middle">RRCReconfiguration w/ Sync</text>
+        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">handover command</text>
+
+        <line x1="560" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-command-arrow)" />
+
+        <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
+        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">UE RRC</text>
+        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">receives target config</text>
+
+        <rect x="74" y="178" width="172" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="160" y="205" className="rrc-step-svg-label" textAnchor="middle">target PCI / freq</text>
+
+        <rect x="324" y="178" width="172" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">new UE identity</text>
+
+        <rect x="574" y="178" width="172" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="660" y="205" className="rrc-step-svg-label" textAnchor="middle">RACH resources</text>
+      </svg>
+    </div>
+  );
+}
+
+function RrcCompletionDiagram() {
+  return (
+    <div className="rrc-step-diagram">
+      <div className="rrc-step-title">What this step does</div>
+      <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="RRCReconfigurationComplete step">
+        <defs>
+          <marker id="rrc-complete-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" className="rrc-step-arrowhead" />
+          </marker>
+        </defs>
+
+        <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
+        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">UE RRC</text>
+        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">target access complete</text>
+
+        <line x1="222" y1="93" x2="288" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-complete-arrow)" />
+
+        <rect x="288" y="40" width="272" height="106" rx="8" className="rrc-step-message-box" />
+        <text x="424" y="75" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
+        <text x="424" y="102" className="rrc-step-svg-title" textAnchor="middle">RRCReconfigurationComplete</text>
+        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">handover completion confirm</text>
+
+        <line x1="560" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#rrc-complete-arrow)" />
+
+        <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
+        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">Target gNB</text>
+        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">accepts completion</text>
+
+        <rect x="158" y="178" width="190" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="253" y="205" className="rrc-step-svg-label" textAnchor="middle">transaction id</text>
+
+        <rect x="472" y="178" width="190" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="567" y="205" className="rrc-step-svg-label" textAnchor="middle">completion timing</text>
+      </svg>
+    </div>
+  );
+}
+
+function PostHoOperationDiagram() {
+  return (
+    <div className="rrc-step-diagram">
+      <div className="rrc-step-title">What this step does</div>
+      <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="Post handover operation step">
+        <defs>
+          <marker id="post-ho-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" className="rrc-step-arrowhead" />
+          </marker>
+        </defs>
+
+        <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
+        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">Target cell</text>
+        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">new serving cell</text>
+
+        <line x1="222" y1="93" x2="302" y2="93" className="rrc-step-arrow" markerEnd="url(#post-ho-arrow)" />
+
+        <rect x="302" y="40" width="244" height="106" rx="8" className="rrc-step-message-box" />
+        <text x="424" y="75" className="rrc-step-svg-title" textAnchor="middle">UE operates</text>
+        <text x="424" y="102" className="rrc-step-svg-red" textAnchor="middle">post-HO state</text>
+        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">serving cell + data resume</text>
+
+        <line x1="546" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#post-ho-arrow)" />
+
+        <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
+        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">User plane</text>
+        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">data resumes</text>
+
+        <rect x="86" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="161" y="205" className="rrc-step-svg-label" textAnchor="middle">serving cell info</text>
+
+        <rect x="335" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">MIB / SIB</text>
+
+        <rect x="584" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
+        <text x="659" y="205" className="rrc-step-svg-label" textAnchor="middle">DL / UL data</text>
+      </svg>
+    </div>
+  );
+}
+
 function HandoverTypeDiagram() {
   return (
     <div className="handover-type-diagram">
@@ -1678,20 +1839,25 @@ function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
 function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: () => void; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
   const isMeasurementConfigStep = step.title.startsWith("1.");
   const isMeasurementRelationStep = step.title.startsWith("2.");
+  const isMeasurementReportStep = step.title.startsWith("3.");
   const isNetworkInterfaceStep = step.title.startsWith("4.");
+  const isHandoverCommandStep = step.title.startsWith("5.");
   const isApplyTargetConfigStep = step.title.startsWith("6.");
   const isHandoverExecutionStep = step.title.startsWith("7.");
   const isRandomAccessStep = step.title.startsWith("8.");
   const isRandomAccessSuccessStep = step.title.startsWith("9.");
+  const isRrcCompletionStep = step.title.startsWith("10.");
+  const isPostHoStep = step.title.startsWith("11.");
   const hasEvidence = Boolean(step.evidence?.length);
   const usesCustomDiagram = isNetworkInterfaceStep || isApplyTargetConfigStep || isHandoverExecutionStep || isRandomAccessStep || isRandomAccessSuccessStep;
+  const usesStructuredStep = isMeasurementConfigStep || isMeasurementReportStep || isHandoverCommandStep || isRrcCompletionStep || isPostHoStep;
 
   return (
-    <div className={`popup open react-popup ${isMeasurementConfigStep ? "measurement-config-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""} ${isApplyTargetConfigStep ? "target-config-popup" : ""} ${isHandoverExecutionStep ? "execution-popup" : ""} ${isRandomAccessStep || isRandomAccessSuccessStep ? "rach-popup" : ""}`} role="dialog">
+    <div className={`popup open react-popup ${usesStructuredStep ? "structured-step-popup" : ""} ${isMeasurementRelationStep ? "measurement-popup" : ""} ${isNetworkInterfaceStep ? "network-type-popup" : ""} ${isApplyTargetConfigStep ? "target-config-popup" : ""} ${isHandoverExecutionStep ? "execution-popup" : ""} ${isRandomAccessStep || isRandomAccessSuccessStep ? "rach-popup" : ""}`} role="dialog">
       <button className="popup-close" type="button" aria-label="Close popup" onClick={onClose}>x</button>
       <h2 className="popup-title">{step.title}</h2>
       <div className="popup-row"><b>Layer:</b> {step.layer}</div>
-      {step.decide && !isMeasurementConfigStep && !usesCustomDiagram ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
+      {step.decide && !usesStructuredStep && !usesCustomDiagram ? <div className="popup-row"><b>How to decide from log:</b> {step.decide}</div> : null}
       {step.logcode && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logcode + key fields:</b>{" "}
@@ -1700,12 +1866,16 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       ) : null}
       {isMeasurementConfigStep ? <MeasurementConfigDiagram /> : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
+      {isMeasurementReportStep ? <MeasurementReportDiagram /> : null}
       {isNetworkInterfaceStep ? <HandoverTypeDiagram /> : null}
+      {isHandoverCommandStep ? <HandoverCommandDiagram /> : null}
       {isApplyTargetConfigStep ? <ApplyTargetConfigDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isHandoverExecutionStep ? <HandoverExecutionDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isRandomAccessStep ? <RandomAccessDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isRandomAccessSuccessStep ? <RandomAccessSuccessDiagram onOpenLogcode={onOpenLogcode} /> : null}
-      {hasEvidence && !usesCustomDiagram ? <StepEvidenceList items={step.evidence!} title={isMeasurementConfigStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
+      {isRrcCompletionStep ? <RrcCompletionDiagram /> : null}
+      {isPostHoStep ? <PostHoOperationDiagram /> : null}
+      {hasEvidence && !usesCustomDiagram ? <StepEvidenceList items={step.evidence!} title={usesStructuredStep ? "How to find it in logs" : "Evidence"} onOpenLogcode={onOpenLogcode} /> : null}
       {step.sequence && !isMeasurementRelationStep && !isApplyTargetConfigStep && !hasEvidence ? (
         <div className="popup-row">
           <b>Logic sequence:</b>{" "}

@@ -1241,7 +1241,7 @@ button {
   width: min(1220px, calc(100% - 40px));
 }
 
-.popup.react-popup.measurement-config-popup {
+.popup.react-popup.structured-step-popup {
   width: min(900px, calc(100% - 40px));
 }
 
@@ -1681,6 +1681,72 @@ button {
 .measurement-config-svg-red {
   fill: #d60000;
   font-size: 15px;
+  font-weight: 900;
+}
+
+.rrc-step-diagram {
+  margin-top: 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.rrc-step-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.rrc-step-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rrc-step-box,
+.rrc-step-message-box,
+.rrc-step-small-box {
+  fill: #f7f7f7;
+  stroke: #000000;
+  stroke-width: 3;
+}
+
+.rrc-step-message-box {
+  fill: #ffffff;
+}
+
+.rrc-step-arrow {
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.rrc-step-arrowhead {
+  fill: #000000;
+}
+
+.rrc-step-svg-title {
+  fill: #000000;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.rrc-step-svg-label {
+  fill: #000000;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.rrc-step-svg-muted {
+  fill: #555555;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.rrc-step-svg-red {
+  fill: #d60000;
+  font-size: 17px;
   font-weight: 900;
 }
 
