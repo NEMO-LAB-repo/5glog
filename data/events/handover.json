@@ -171,14 +171,6 @@
       "fields": [],
       "evidence": [
         {
-          "title": "F1AP",
-          "detail": "CU-CP <-> DU control interface. Main path for same gNB-CU / different DU handover preparation."
-        },
-        {
-          "title": "E1AP",
-          "detail": "CU-CP <-> CU-UP interface. Updates bearer / user-plane context; not the main HO decision interface."
-        },
-        {
           "title": "XnAP",
           "detail": "source gNB <-> target gNB interface. Used for inter-gNB Xn handover when Xn is available."
         },
