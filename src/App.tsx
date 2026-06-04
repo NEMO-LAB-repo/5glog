@@ -1301,20 +1301,26 @@ function MeasurementReportDiagram() {
         <text x="410" y="53" className="rrc-step-svg-red" textAnchor="middle">0xB821</text>
         <text x="410" y="79" className="rrc-step-svg-title" textAnchor="middle">MeasurementReport payload</text>
 
-        <rect x="38" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
-        <text x="144" y="163" className="rrc-step-svg-red" textAnchor="middle">measId</text>
-        <text x="144" y="190" className="rrc-step-svg-muted" textAnchor="middle">links report to measConfig</text>
-        <text x="144" y="213" className="rrc-step-svg-muted" textAnchor="middle">measId -&gt; reportConfigId -&gt; eventId</text>
+        <rect x="20" y="132" width="240" height="104" rx="8" className="rrc-step-box" />
+        <text x="140" y="163" className="rrc-step-svg-red" textAnchor="middle">measId</text>
+        <text x="140" y="190" className="rrc-step-svg-body" textAnchor="middle">
+          links report to <tspan className="rrc-step-svg-red-inline">measConfig</tspan>
+        </text>
+        <text x="140" y="216" className="rrc-step-svg-chain" textAnchor="middle">
+          <tspan className="rrc-step-svg-red-inline">measId</tspan><tspan> -&gt; </tspan><tspan className="rrc-step-svg-red-inline">reportConfigId</tspan><tspan> -&gt; </tspan><tspan className="rrc-step-svg-red-inline">eventId</tspan>
+        </text>
 
-        <rect x="304" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
+        <rect x="290" y="132" width="240" height="104" rx="8" className="rrc-step-box" />
         <text x="410" y="163" className="rrc-step-svg-title" textAnchor="middle">Serving cell</text>
-        <text x="410" y="190" className="rrc-step-svg-muted" textAnchor="middle">serving PCI</text>
+        <text x="410" y="190" className="rrc-step-svg-body" textAnchor="middle">
+          serving <tspan className="rrc-step-svg-red-inline">PCI</tspan>
+        </text>
         <text x="410" y="213" className="rrc-step-svg-red" textAnchor="middle">RSRP / RSRQ / SINR</text>
 
-        <rect x="570" y="132" width="212" height="104" rx="8" className="rrc-step-box" />
-        <text x="676" y="163" className="rrc-step-svg-title" textAnchor="middle">Neighbor cells</text>
-        <text x="676" y="190" className="rrc-step-svg-red" textAnchor="middle">physCellId</text>
-        <text x="676" y="213" className="rrc-step-svg-red" textAnchor="middle">RSRP / RSRQ / SINR</text>
+        <rect x="560" y="132" width="240" height="104" rx="8" className="rrc-step-box" />
+        <text x="680" y="163" className="rrc-step-svg-title" textAnchor="middle">Neighbor cells</text>
+        <text x="680" y="190" className="rrc-step-svg-red" textAnchor="middle">physCellId</text>
+        <text x="680" y="213" className="rrc-step-svg-red" textAnchor="middle">RSRP / RSRQ / SINR</text>
       </svg>
     </div>
   );

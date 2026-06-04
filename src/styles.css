@@ -1738,6 +1738,18 @@ button {
   font-weight: 900;
 }
 
+.rrc-step-svg-body {
+  fill: #000000;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.rrc-step-svg-chain {
+  fill: #000000;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .rrc-step-svg-muted {
   fill: #555555;
   font-size: 13px;
@@ -1747,6 +1759,11 @@ button {
 .rrc-step-svg-red {
   fill: #d60000;
   font-size: 17px;
+  font-weight: 900;
+}
+
+.rrc-step-svg-red-inline {
+  fill: #d60000;
   font-weight: 900;
 }
 
