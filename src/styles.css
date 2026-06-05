@@ -1877,7 +1877,7 @@ button {
 
 .handover-type-title {
   margin-bottom: 4px;
-  color: #1565c0;
+  color: #000000;
   font-size: 18px;
   font-weight: 900;
   text-align: center;
@@ -1890,59 +1890,41 @@ button {
 }
 
 .handover-type-root,
-.handover-type-intra {
-  fill: #eef7ff;
-  stroke: #1565c0;
-  stroke-width: 4;
-}
-
+.handover-type-intra,
 .handover-type-inter,
 .handover-type-xn {
-  fill: #fff1f1;
-  stroke: #c62828;
+  fill: #f7f7f7;
+  stroke: #000000;
   stroke-width: 4;
 }
 
-.handover-type-connector-blue {
-  fill: none;
-  stroke: #1565c0;
-  stroke-width: 4;
-}
-
+.handover-type-connector-blue,
 .handover-type-connector-red {
   fill: none;
-  stroke: #c62828;
+  stroke: #000000;
   stroke-width: 4;
 }
 
-.handover-type-arrow-blue {
-  fill: #1565c0;
-}
-
+.handover-type-arrow-blue,
 .handover-type-arrow-red {
-  fill: #c62828;
+  fill: #000000;
 }
 
 .handover-type-root-text {
-  fill: #1565c0;
+  fill: #000000;
   font-size: 34px;
   font-weight: 900;
 }
 
-.handover-type-blue-text {
-  fill: #1565c0;
-  font-size: 28px;
-  font-weight: 900;
-}
-
+.handover-type-blue-text,
 .handover-type-red-text {
-  fill: #c62828;
+  fill: #d60000;
   font-size: 28px;
   font-weight: 900;
 }
 
 .handover-type-red-small {
-  fill: #c62828;
+  fill: #d60000;
   font-size: 24px;
   font-weight: 900;
 }
