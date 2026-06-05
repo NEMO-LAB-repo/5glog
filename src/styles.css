@@ -2139,6 +2139,51 @@ button {
   font-size: 11px;
 }
 
+.apply-target-log-summary {
+  display: grid;
+  gap: 10px;
+}
+
+.apply-target-log-section {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 10px 12px;
+}
+
+.apply-target-log-title {
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.apply-target-log-row {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px 12px;
+  padding: 7px 0;
+}
+
+.apply-target-log-row + .apply-target-log-row {
+  border-top: 2px solid #000000;
+}
+
+.apply-target-log-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.apply-target-log-fields .popup-hot-field {
+  border: 1px solid #d60000;
+  border-radius: 4px;
+  padding: 1px 5px;
+  background: #fffafa;
+  font-size: 11px;
+}
+
 @media (max-width: 820px) {
   .step-process-flow,
   .step-process-segment {
@@ -2177,6 +2222,10 @@ button {
   }
 
   .step-log-card-points {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-target-log-row {
     grid-template-columns: 1fr;
   }
 }

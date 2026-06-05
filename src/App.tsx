@@ -1690,60 +1690,66 @@ function StepStructuredDiagram({
   );
 }
 
-function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards: StepLogCard[] = [
-    {
-      code: "0xB952",
-      title: "DL Handover",
-      role: "main apply log",
-      detail: "ML1 applies the target downlink cell, UE identity, and handover carrier context.",
-      fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info", "DL Cell frequency"],
-      points: [
-        { label: "target cell", text: "DL frequency + PCI" },
-        { label: "UE identity", text: "C-RNTI config" },
-        { label: "carrier context", text: "CG Add Mod" },
-        { label: "cell info", text: "DL Cell frequency" }
-      ]
-    },
-    {
-      code: "0xB950",
-      title: "DL Common Config",
-      role: "common cell config",
-      detail: "Cell-wide radio configuration used by ML1 after switching to the target cell.",
-      fields: ["DL Frequency Info", "SSB Period", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"],
-      points: [
-        { label: "frequency / SSB", text: "DL frequency + SSB timing" },
-        { label: "BWP", text: "common bandwidth part" },
-        { label: "PDCCH control", text: "CORESET + Search Space" },
-        { label: "duplex timing", text: "TDD UL/DL config" }
-      ]
-    },
-    {
-      code: "0xB951",
-      title: "DL Dedicated Config",
-      role: "UE-specific config",
-      detail: "UE-specific BWP and downlink channel/control configuration for the target context.",
-      fields: ["Dedicated BWP", "CORESET", "Search Space", "PDSCH Config", "Serving Cell Config"],
-      points: [
-        { label: "dedicated BWP", text: "UE-specific bandwidth" },
-        { label: "PDCCH", text: "CORESET + Search Space" },
-        { label: "PDSCH", text: "downlink data config" },
-        { label: "serving cell", text: "Serving Cell Config" }
-      ]
-    }
-  ];
-
+function ApplyTargetLogRow({
+  code,
+  fields,
+  onOpenLogcode
+}: {
+  code: string;
+  fields: string[];
+  onOpenLogcode: (logcode: string, terms: string[]) => void;
+}) {
   return (
-    <StepStructuredDiagram
-      flowLabel="Apply target configuration flow"
-      flowNodes={[
-        { title: "handover command", detail: "target-cell config from Step 5" },
-        { title: "UE ML1", detail: "applies target physical config" },
-        { title: "target access ready", detail: "synchronization + RACH preparation" }
-      ]}
-      cards={cards}
-      onOpenLogcode={onOpenLogcode}
-    />
+    <div className="apply-target-log-row">
+      <button className="step-log-code" type="button" onClick={() => onOpenLogcode(code, fields)}>
+        {code}
+      </button>
+      <div className="apply-target-log-fields">
+        {fields.map((field) => (
+          <span key={field} className="popup-hot-field">{field}</span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  return (
+    <div className="step-structured-diagram">
+      <div className="step-structured-title">What this step does</div>
+      <StepProcessFlow
+        ariaLabel="Apply target configuration flow"
+        nodes={[
+          { title: "handover command", detail: "target-cell config from Step 5" },
+          { title: "UE ML1", detail: "applies target physical config" },
+          { title: "target access ready", detail: "synchronization + RACH preparation" }
+        ]}
+      />
+      <div className="step-structured-subtitle">How to find it in logs</div>
+      <div className="apply-target-log-summary">
+        <div className="apply-target-log-section">
+          <div className="apply-target-log-title">Primary handover evidence:</div>
+          <ApplyTargetLogRow
+            code="0xB952"
+            fields={["Target Phy Cell Id", "Target DL Cell Frequency", "Crnti CFG"]}
+            onOpenLogcode={onOpenLogcode}
+          />
+        </div>
+        <div className="apply-target-log-section">
+          <div className="apply-target-log-title">Target config support:</div>
+          <ApplyTargetLogRow
+            code="0xB950"
+            fields={["DL Frequency Info", "SSB", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"]}
+            onOpenLogcode={onOpenLogcode}
+          />
+          <ApplyTargetLogRow
+            code="0xB951"
+            fields={["Dedicated BWP", "PDCCH/Search Space", "PDSCH Config", "Serving Cell Config"]}
+            onOpenLogcode={onOpenLogcode}
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
