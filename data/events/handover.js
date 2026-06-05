@@ -91,10 +91,10 @@ window.EVENT_DATA.handover = {
     7: {
       title: "7. Handover Execution",
       layer: "ML1 / MAC",
-      decide: "UE starts switching from source to target.",
-      logcode: "0xB952 plus 0xB9A7 NR5G ML1 DLM2 CA Metrics Request. Fields: Event: HANDOVER_START, Event: HANDOVER_END, PCI, DL EARFCN, Band.",
-      logcodes: ["0xB952", "0xB9A7"],
-      fields: ["Event", "HANDOVER_START", "HANDOVER_END", "PCI", "DL EARFCN", "Band"]
+      decide: "UE switches from source-cell context to target-cell context. This is the execution window between target config apply and target RACH.",
+      logcode: "0xB9A7 marks execution timing when Event is HANDOVER_START or HANDOVER_END. 0xB952 provides target context. Key fields: Event, PCI, DL EARFCN, Band, Target Phy Cell Id, Target DL Cell Frequency, Crnti CFG.",
+      logcodes: ["0xB9A7", "0xB952"],
+      fields: ["Event", "HANDOVER_START", "HANDOVER_END", "PCI", "DL EARFCN", "Band", "Target Phy Cell Id", "Target DL Cell Frequency", "Crnti CFG"]
     },
     8: {
       title: "8. Random Access",

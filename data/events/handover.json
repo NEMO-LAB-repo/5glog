@@ -281,11 +281,11 @@
     "7": {
       "title": "7. Handover Execution",
       "layer": "ML1 / MAC",
-      "decide": "UE starts switching from the source cell to the target cell; this is a cross-layer execution interval between RRC command, ML1 target config application, and MAC target access.",
-      "logcode": "0xB952 NR5G ML1 DL Handover plus 0xB9A7 NR5G ML1 DLM2 CA Metrics Request. Fields: Event: HANDOVER_START, Event: HANDOVER_END, PCI, DL EARFCN, Band.",
+      "decide": "UE switches from source-cell context to target-cell context. This is the execution window between target config apply and target RACH.",
+      "logcode": "0xB9A7 marks execution timing when Event is HANDOVER_START or HANDOVER_END. 0xB952 provides target context. Key fields: Event, PCI, DL EARFCN, Band, Target Phy Cell Id, Target DL Cell Frequency, Crnti CFG.",
       "logcodes": [
-        "0xB952",
-        "0xB9A7"
+        "0xB9A7",
+        "0xB952"
       ],
       "fields": [
         "Event",
@@ -293,12 +293,15 @@
         "HANDOVER_END",
         "PCI",
         "DL EARFCN",
-        "Band"
+        "Band",
+        "Target Phy Cell Id",
+        "Target DL Cell Frequency",
+        "Crnti CFG"
       ],
       "evidence": [
         {
-          "title": "Execution timing",
-          "detail": "Use ML1 event values to mark the start/end of the handover execution window.",
+          "title": "0xB9A7 Handover timing",
+          "detail": "Use only when Event is HANDOVER_START or HANDOVER_END.",
           "logcodes": [
             "0xB9A7"
           ],
@@ -312,8 +315,8 @@
           ]
         },
         {
-          "title": "Target context",
-          "detail": "Use the target-cell handover config around the same timestamp.",
+          "title": "0xB952 Target context",
+          "detail": "Confirms the target cell being applied.",
           "logcodes": [
             "0xB952"
           ],

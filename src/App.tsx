@@ -1741,46 +1741,54 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
 }
 
 function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards: StepLogCard[] = [
-    {
-      code: "0xB9A7",
-      title: "Handover timing",
-      role: "execution window",
-      detail: "Use ML1 event values to mark the start/end of the handover execution window.",
-      fields: ["Event", "HANDOVER_START", "HANDOVER_END", "PCI", "DL EARFCN", "Band"],
-      points: [
-        { label: "start marker", text: "HANDOVER_START" },
-        { label: "end marker", text: "HANDOVER_END" },
-        { label: "target radio", text: "PCI + DL EARFCN" },
-        { label: "band context", text: "Band" }
-      ]
-    },
-    {
-      code: "0xB952",
-      title: "Target context",
-      role: "target-cell context",
-      detail: "Use the target-cell handover config around the same timestamp.",
-      fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info"],
-      points: [
-        { label: "target frequency", text: "Target DL Cell Frequency" },
-        { label: "target PCI", text: "Target Phy Cell Id" },
-        { label: "UE identity", text: "C-RNTI config" },
-        { label: "carrier context", text: "CG Add Mod / Cell Info" }
-      ]
-    }
-  ];
-
   return (
-    <StepStructuredDiagram
-      flowLabel="Handover execution flow"
-      flowNodes={[
-        { title: "target config applied", detail: "Step 6 gives ML1 the target cell context" },
-        { title: "ML1 execution window", detail: "switch, synchronize, track start/end" },
-        { title: "MAC target access", detail: "RACH can start after target-cell switch" }
-      ]}
-      cards={cards}
-      onOpenLogcode={onOpenLogcode}
-    />
+    <div className="step-structured-diagram handover-execution-simple">
+      <div className="step-structured-title">What this step does</div>
+      <p className="step-simple-description">
+        UE switches from source-cell context to target-cell context. This is the execution window between target config apply and target RACH.
+      </p>
+      <div className="step-structured-subtitle">How to find it in logs</div>
+      <div className="step-simple-log-list">
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB9A7", ["Event", "HANDOVER_START", "HANDOVER_END", "PCI", "DL EARFCN", "Band"])}
+          >
+            0xB9A7
+          </button>
+          <h3>Handover timing</h3>
+          <p>Use only when Event is:</p>
+          <ul>
+            <li>HANDOVER_START</li>
+            <li>HANDOVER_END</li>
+          </ul>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["Event", "PCI", "DL EARFCN", "Band"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB952", ["Target Phy Cell Id", "Target DL Cell Frequency", "Crnti CFG"])}
+          >
+            0xB952
+          </button>
+          <h3>Target context</h3>
+          <p>Confirms the target cell being applied.</p>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["Target Phy Cell Id", "Target DL Cell Frequency", "Crnti CFG"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }
 
