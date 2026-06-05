@@ -127,12 +127,32 @@ window.EVENT_DATA.handover = {
       identity: "0xB823 NR5G RRC Serving Cell Info: Physical Cell ID, DL Frequency, Cell Id, Selected PLMN MCC/MNC, TAC. 0xB821 SIB1: cellIdentity, Physical Cell Id, Frequency."
     },
     11: {
-      title: "11. Data Resumes",
-      layer: "UP / Data",
-      decide: "User-plane data resumes after handover.",
-      logcode: "No single HO logcode. Infer from MAC/PDCP stats after HO: 0xB888 NR5G MAC PDSCH Stats fields Num PDSCH Decode, Num CRC Pass TB, TB Bytes; 0xB881 NR5G MAC UL TB Stats fields TB New Tx Bytes, Num ULSCH Sched.",
-      logcodes: ["0xB888", "0xB881"],
-      fields: ["Num PDSCH Decode", "Num CRC Pass TB", "TB Bytes", "TB New Tx Bytes", "Num ULSCH Sched"]
+      title: "11. Post-HO Operation",
+      layer: "RRC / MAC / Data",
+      decide: "UE is now operating on the target cell, and user-plane traffic resumes.",
+      logcode: "Post-handover evidence: 0xB823 / 0xB825 confirms the new serving-cell state; 0xB821 shows decoded target-cell MIB/SIB when present; 0xB888 / 0xB881 MAC counters indicate user-plane data resumes.",
+      logcodes: ["0xB823", "0xB825", "0xB821", "0xB888", "0xB881"],
+      fields: ["Physical Cell Id", "DL Frequency", "Cell Id", "Serving Cell", "TAC", "mib", "systemInformationBlockType1", "SIB2", "SIB3", "SIB4", "SIB5", "Num PDSCH Decode", "Num CRC Pass TB", "TB Bytes", "Num ULSCH Sched"],
+      evidence: [
+        {
+          title: "New serving-cell state",
+          detail: "Confirms the UE is camped/served by the new target cell.",
+          logcodes: ["0xB823", "0xB825"],
+          fields: ["Physical Cell Id", "DL Frequency", "Cell Id", "Serving Cell", "TAC"]
+        },
+        {
+          title: "System information after HO",
+          detail: "Shows decoded MIB/SIB messages from the target cell when present.",
+          logcodes: ["0xB821"],
+          fields: ["mib", "systemInformationBlockType1", "SIB2", "SIB3", "SIB4", "SIB5"]
+        },
+        {
+          title: "User-plane data resumes",
+          detail: "No single RRC message says data resumed; infer from MAC DL/UL counters after HO.",
+          logcodes: ["0xB888", "0xB881"],
+          fields: ["Num PDSCH Decode", "Num CRC Pass TB", "TB Bytes", "Num ULSCH Sched"]
+        }
+      ]
     }
   }
 };

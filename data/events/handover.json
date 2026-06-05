@@ -488,49 +488,42 @@
     },
     "11": {
       "title": "11. Post-HO Operation",
-      "layer": "RRC / Data",
-      "decide": "UE operates on the new serving cell: serving-cell state updates, MIB/SIB decoding starts, and user-plane data resumes.",
-      "logcode": "Post-handover evidence: 0xB825 NR5G RRC Configuration Info, 0xB823 NR5G RRC Serving Cell Info, and 0xB821 broadcast/system-info classes: pdu_type 1 BCCH-BCH-Message -> mib, pdu_type 2 BCCH-DL-SCH-Message -> systemInformationBlockType1, and pdu_type 14/15/16/17 SIB2/SIB3/SIB4/SIB5 when present. If 0xB822 is available, it can also show MIB/SIB decoding. User-plane resume can be inferred from 0xB888 NR5G MAC PDSCH Stats and 0xB881 NR5G MAC UL TB Stats.",
+      "layer": "RRC / MAC / Data",
+      "decide": "UE is now operating on the target cell, and user-plane traffic resumes.",
+      "logcode": "Post-handover evidence: 0xB823 / 0xB825 confirms the new serving-cell state; 0xB821 shows decoded target-cell MIB/SIB when present; 0xB888 / 0xB881 MAC counters indicate user-plane data resumes.",
       "logcodes": [
-        "0xB825",
         "0xB823",
+        "0xB825",
         "0xB821",
         "0xB888",
         "0xB881"
       ],
       "fields": [
-        "BCCH-BCH-Message",
-        "BCCH-DL-SCH-Message",
-        "bcch-bch",
-        "bcch-dl-sch",
-        "systemInformationBlockType1",
+        "Physical Cell Id",
+        "DL Frequency",
+        "Cell Id",
+        "Serving Cell",
+        "TAC",
         "mib",
+        "systemInformationBlockType1",
         "SIB2",
         "SIB3",
         "SIB4",
         "SIB5",
-        "Physical Cell Id",
-        "Physical Cell ID",
-        "Frequency",
-        "Serving Cell",
-        "MIB",
-        "SIB",
         "Num PDSCH Decode",
         "Num CRC Pass TB",
         "TB Bytes",
-        "TB New Tx Bytes",
         "Num ULSCH Sched"
       ],
       "evidence": [
         {
           "title": "New serving-cell state",
-          "detail": "Use RRC config/serving-cell records to confirm the UE is operating on the new cell.",
+          "detail": "Confirms the UE is camped/served by the new target cell.",
           "logcodes": [
-            "0xB825",
-            "0xB823"
+            "0xB823",
+            "0xB825"
           ],
           "fields": [
-            "Physical Cell ID",
             "Physical Cell Id",
             "DL Frequency",
             "Cell Id",
@@ -539,14 +532,12 @@
           ]
         },
         {
-          "title": "Broadcast/system info after HO",
-          "detail": "B821 variants show MIB/SIB1/SIB2-SIB5 when decoded after moving to the target cell.",
+          "title": "System information after HO",
+          "detail": "Shows decoded MIB/SIB messages from the target cell when present.",
           "logcodes": [
             "0xB821"
           ],
           "fields": [
-            "BCCH-BCH-Message",
-            "BCCH-DL-SCH-Message",
             "mib",
             "systemInformationBlockType1",
             "SIB2",
@@ -557,7 +548,7 @@
         },
         {
           "title": "User-plane data resumes",
-          "detail": "No single RRC message means data resumed; infer from MAC downlink/uplink counters after HO.",
+          "detail": "No single RRC message says data resumed; infer from MAC DL/UL counters after HO.",
           "logcodes": [
             "0xB888",
             "0xB881"
@@ -566,26 +557,7 @@
             "Num PDSCH Decode",
             "Num CRC Pass TB",
             "TB Bytes",
-            "TB New Tx Bytes",
             "Num ULSCH Sched"
-          ]
-        },
-        {
-          "title": "Handover type classification",
-          "detail": "After source and target cell identity are known, split NCI into gNB ID and local cell ID. Same gNB ID with different local cell ID means intra-gNB; different gNB ID means inter-gNB. PCI is not sufficient for this classification.",
-          "logcodes": [
-            "0xB823",
-            "0x1FFB"
-          ],
-          "fields": [
-            "source_nci",
-            "target_nci",
-            "source_gNB_ID",
-            "target_gNB_ID",
-            "source_cell_local_id",
-            "target_cell_local_id",
-            "Physical Cell ID",
-            "Cell Id"
           ]
         }
       ]

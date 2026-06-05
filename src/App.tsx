@@ -1522,8 +1522,11 @@ function RrcCompletionDiagram() {
 
 function PostHoOperationDiagram() {
   return (
-    <div className="rrc-step-diagram">
+    <div className="rrc-step-diagram post-ho-operation-diagram">
       <div className="rrc-step-title">What this step does</div>
+      <p className="step-simple-description">
+        UE is now operating on the target cell, and user-plane traffic resumes.
+      </p>
       <svg className="rrc-step-svg" viewBox="0 0 820 250" role="img" aria-label="Post handover operation step">
         <defs>
           <marker id="post-ho-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
@@ -1532,30 +1535,32 @@ function PostHoOperationDiagram() {
         </defs>
 
         <rect x="32" y="52" width="190" height="82" rx="8" className="rrc-step-box" />
-        <text x="127" y="86" className="rrc-step-svg-title" textAnchor="middle">Target cell</text>
-        <text x="127" y="112" className="rrc-step-svg-muted" textAnchor="middle">new serving cell</text>
+        <text x="127" y="84" className="rrc-step-svg-title" textAnchor="middle">Target cell</text>
+        <text x="127" y="110" className="rrc-step-svg-muted" textAnchor="middle">new serving cell</text>
+        <text x="127" y="128" className="rrc-step-svg-red-small" textAnchor="middle">0xB823 / 0xB825</text>
 
         <line x1="222" y1="93" x2="302" y2="93" className="rrc-step-arrow" markerEnd="url(#post-ho-arrow)" />
 
         <rect x="302" y="40" width="244" height="106" rx="8" className="rrc-step-message-box" />
-        <text x="424" y="75" className="rrc-step-svg-title" textAnchor="middle">UE operates</text>
-        <text x="424" y="102" className="rrc-step-svg-red" textAnchor="middle">post-HO state</text>
-        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">serving cell + data resume</text>
+        <text x="424" y="74" className="rrc-step-svg-title" textAnchor="middle">UE operates</text>
+        <text x="424" y="101" className="rrc-step-svg-red" textAnchor="middle">post-HO state</text>
+        <text x="424" y="127" className="rrc-step-svg-muted" textAnchor="middle">MIB / SIB when present</text>
 
         <line x1="546" y1="93" x2="626" y2="93" className="rrc-step-arrow" markerEnd="url(#post-ho-arrow)" />
 
         <rect x="626" y="52" width="162" height="82" rx="8" className="rrc-step-box" />
-        <text x="707" y="86" className="rrc-step-svg-title" textAnchor="middle">User plane</text>
-        <text x="707" y="112" className="rrc-step-svg-muted" textAnchor="middle">data resumes</text>
+        <text x="707" y="84" className="rrc-step-svg-title" textAnchor="middle">User plane</text>
+        <text x="707" y="110" className="rrc-step-svg-muted" textAnchor="middle">data resumes</text>
+        <text x="707" y="128" className="rrc-step-svg-red-small" textAnchor="middle">0xB888 / 0xB881</text>
 
         <rect x="86" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="161" y="205" className="rrc-step-svg-label" textAnchor="middle">serving cell info</text>
+        <text x="161" y="205" className="rrc-step-svg-label" textAnchor="middle">serving-cell state</text>
 
         <rect x="335" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">MIB / SIB</text>
+        <text x="410" y="205" className="rrc-step-svg-label" textAnchor="middle">0xB821 MIB / SIB</text>
 
         <rect x="584" y="178" width="150" height="42" rx="7" className="rrc-step-small-box" />
-        <text x="659" y="205" className="rrc-step-svg-label" textAnchor="middle">DL / UL data</text>
+        <text x="659" y="205" className="rrc-step-svg-label" textAnchor="middle">MAC counters</text>
       </svg>
     </div>
   );
