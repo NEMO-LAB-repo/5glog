@@ -2268,6 +2268,63 @@ button {
   gap: 10px;
 }
 
+.step-mini-flow {
+  display: grid;
+  justify-items: center;
+  gap: 0;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.step-flow-box {
+  width: min(440px, 100%);
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 10px 14px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+}
+
+button.step-flow-box {
+  cursor: pointer;
+}
+
+.step-flow-log span {
+  display: inline-block;
+  margin-right: 8px;
+  color: #d60000;
+}
+
+.step-flow-down {
+  width: 2px;
+  height: 28px;
+  background: #000000;
+  position: relative;
+}
+
+.step-flow-down::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: translateX(-50%) rotate(45deg);
+  background: #ffffff;
+}
+
+.step-mini-flow.two-step .step-flow-box {
+  width: min(520px, 100%);
+}
+
 .step-simple-log-card {
   border: 2px solid #000000;
   border-radius: 6px;

@@ -99,21 +99,18 @@ window.EVENT_DATA.handover = {
     8: {
       title: "8. Random Access",
       layer: "MAC",
-      decide: "UE starts random access on target cell.",
-      logcode: "0xB889 NR5G MAC RACH Trigger. Fields: Rach Reason: HANDOVER, CRNTI, RACH Contention, Carrier Id, RA Id. Also 0xB88A NR5G MAC RACH Attempt.",
+      decide: "UE starts random access on the target cell after target config is applied.",
+      logcode: "0xB889 RACH Trigger shows why MAC starts RACH. 0xB88A RACH Attempt shows the actual random-access attempt. Key fields: Rach Reason = HANDOVER, RACH Contention, CRNTI, Carrier Id / RA Id, Msg1, Msg2, Msg3, Msg4, Contention Type, RACH Result.",
       logcodes: ["0xB889", "0xB88A"],
-      fields: ["Rach Reason", "HANDOVER", "CRNTI", "RACH Contention", "Carrier Id", "RA Id"]
+      fields: ["Rach Reason", "HANDOVER", "CRNTI", "RACH Contention", "Carrier Id", "RA Id", "Msg1", "Msg2", "Msg3", "Msg4", "Contention Type", "RACH Result"]
     },
     9: {
       title: "9. Random Access Success",
-      layer: "MAC",
-      decide: "RA/acquisition succeeded or handover proceeds past RA.",
-      logcode: "Best evidence: 0xB9BF NR5G ML1 Search HO Acq Confirm. Fields: Result, ARFCN, Cell Id. If no explicit RA success field, infer from RRCReconfigurationComplete.",
-      logcodes: ["0xB9BF"],
-      fields: ["Result", "ARFCN", "Cell Id", "RRCReconfigurationComplete"],
-      confirm: "If no explicit RA success field appears, use Step 10 and 0x1FFB events as confirmation: EVENT_NR5G_RRC_HO_SUCCESS; EVENT_NR5G_RRC_NEW_CELL_IND_V2.",
-      confirmLogcodes: ["0x1FFB"],
-      confirmFields: ["EVENT_NR5G_RRC_HO_SUCCESS", "EVENT_NR5G_RRC_NEW_CELL_IND_V2"]
+      layer: "MAC / ML1",
+      decide: "UE finishes target-cell random access successfully and target acquisition is confirmed.",
+      logcode: "0xB88A MAC RA Result is direct MAC evidence that RACH succeeded. 0xB9BF HO Acquisition Confirm is ML1 evidence that target-cell acquisition succeeded. Key fields: RACH Result = SUCCESS, Contention Type = CONT_FREE, Result, ARFCN, Cell Id.",
+      logcodes: ["0xB88A", "0xB9BF"],
+      fields: ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE", "Result", "ARFCN", "Cell Id"]
     },
     10: {
       title: "10. RRCReconfigurationComplete",

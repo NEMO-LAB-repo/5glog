@@ -1793,90 +1793,138 @@ function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
 }
 
 function RandomAccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards: StepLogCard[] = [
-    {
-      code: "0xB889",
-      title: "RACH trigger",
-      role: "access start",
-      detail: "MAC starts target-cell random access because the trigger reason is handover.",
-      fields: ["Rach Reason", "HANDOVER", "CRNTI", "RACH Contention", "Carrier Id", "RA Id"],
-      points: [
-        { label: "why RA starts", text: "Rach Reason = HANDOVER" },
-        { label: "UE identity", text: "CRNTI" },
-        { label: "access mode", text: "RACH Contention" },
-        { label: "target access id", text: "Carrier Id + RA Id" }
-      ]
-    },
-    {
-      code: "0xB88A",
-      title: "RACH attempt",
-      role: "attempt details",
-      detail: "Records the random-access exchange on the target cell when attempt details are present.",
-      fields: ["RACH Msg1", "RACH Msg2", "RACH Msg3", "RACH Msg4", "Contention Type", "RACH Result"],
-      points: [
-        { label: "Msg1", text: "preamble" },
-        { label: "Msg2", text: "random access response" },
-        { label: "Msg3 / Msg4", text: "contention resolution" },
-        { label: "attempt result", text: "Contention Type + RACH Result" }
-      ]
-    }
-  ];
-
   return (
-    <StepStructuredDiagram
-      flowLabel="Random access flow"
-      flowNodes={[
-        { title: "target cell ready", detail: "handover execution reaches MAC access" },
-        { title: "RACH trigger", detail: "MAC starts random access for handover" },
-        { title: "RACH attempt", detail: "Msg1-Msg4 target-cell access exchange" }
-      ]}
-      cards={cards}
-      onOpenLogcode={onOpenLogcode}
-    />
+    <div className="step-structured-diagram rach-simple">
+      <div className="step-structured-title">What this step does</div>
+      <p className="step-simple-description">
+        UE starts random access on the target cell after target config is applied.
+      </p>
+      <div className="step-mini-flow" aria-label="Random access flow">
+        <div className="step-flow-box">target cell ready</div>
+        <div className="step-flow-down" aria-hidden="true" />
+        <button
+          className="step-flow-box step-flow-log"
+          type="button"
+          onClick={() => onOpenLogcode("0xB889", ["Rach Reason", "HANDOVER", "RACH Contention", "CRNTI", "Carrier Id", "RA Id"])}
+        >
+          <span>0xB889</span>
+          RACH Trigger
+        </button>
+        <div className="step-flow-down" aria-hidden="true" />
+        <button
+          className="step-flow-box step-flow-log"
+          type="button"
+          onClick={() => onOpenLogcode("0xB88A", ["RACH Msg1", "RACH Msg2", "RACH Msg3", "RACH Msg4", "Contention Type", "RACH Result"])}
+        >
+          <span>0xB88A</span>
+          RACH Attempt
+        </button>
+      </div>
+      <div className="step-structured-subtitle">How to find it in logs</div>
+      <div className="step-simple-log-list">
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB889", ["Rach Reason", "HANDOVER", "RACH Contention", "CRNTI", "Carrier Id", "RA Id"])}
+          >
+            0xB889
+          </button>
+          <h3>RACH Trigger</h3>
+          <p>Shows why MAC starts RACH.</p>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["Rach Reason = HANDOVER", "RACH Contention", "CRNTI", "Carrier Id / RA Id"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB88A", ["RACH Msg1", "RACH Msg2", "RACH Msg3", "RACH Msg4", "Contention Type", "RACH Result"])}
+          >
+            0xB88A
+          </button>
+          <h3>RACH Attempt</h3>
+          <p>Shows the actual random-access attempt.</p>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["Msg1", "Msg2", "Msg3", "Msg4", "Contention Type", "RACH Result"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }
 
 function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards: StepLogCard[] = [
-    {
-      code: "0xB88A",
-      title: "MAC RA result",
-      role: "direct RA result",
-      detail: "Best direct MAC evidence that random access completed successfully.",
-      fields: ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE"],
-      points: [
-        { label: "final result", text: "RACH Result = SUCCESS" },
-        { label: "contention mode", text: "CONT_FREE when present" },
-        { label: "attempt context", text: "same target-cell attempt" },
-        { label: "handover access", text: "RA finished on target cell" }
-      ]
-    },
-    {
-      code: "0xB9BF",
-      title: "HO acquisition confirm",
-      role: "target acquisition",
-      detail: "ML1 confirms target-cell acquisition after the handover access step.",
-      fields: ["Result", "ARFCN", "Cell Id"],
-      points: [
-        { label: "acq result", text: "Result" },
-        { label: "frequency", text: "ARFCN" },
-        { label: "target cell", text: "Cell Id" },
-        { label: "timing", text: "near RA success" }
-      ]
-    }
-  ];
-
   return (
-    <StepStructuredDiagram
-      flowLabel="Random access success flow"
-      flowNodes={[
-        { title: "RACH attempt finishes", detail: "MAC attempt reaches a final status" },
-        { title: "RA success", detail: "target-cell random access succeeds" },
-        { title: "target acquired", detail: "ML1 confirms handover acquisition" }
-      ]}
-      cards={cards}
-      onOpenLogcode={onOpenLogcode}
-    />
+    <div className="step-structured-diagram rach-simple">
+      <div className="step-structured-title">What this step does</div>
+      <p className="step-simple-description">
+        UE finishes target-cell random access successfully and target acquisition is confirmed.
+      </p>
+      <div className="step-mini-flow two-step" aria-label="Random access success flow">
+        <button
+          className="step-flow-box step-flow-log"
+          type="button"
+          onClick={() => onOpenLogcode("0xB88A", ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE"])}
+        >
+          <span>0xB88A</span>
+          RACH Result = SUCCESS
+        </button>
+        <div className="step-flow-down" aria-hidden="true" />
+        <button
+          className="step-flow-box step-flow-log"
+          type="button"
+          onClick={() => onOpenLogcode("0xB9BF", ["Result", "ARFCN", "Cell Id"])}
+        >
+          <span>0xB9BF</span>
+          target acquisition confirm
+        </button>
+      </div>
+      <div className="step-structured-subtitle">How to find it in logs</div>
+      <div className="step-simple-log-list">
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB88A", ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE"])}
+          >
+            0xB88A
+          </button>
+          <h3>MAC RA Result</h3>
+          <p>Direct MAC evidence that RACH succeeded.</p>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["RACH Result = SUCCESS", "Contention Type = CONT_FREE"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+        <section className="step-simple-log-card">
+          <button
+            className="step-log-code"
+            type="button"
+            onClick={() => onOpenLogcode("0xB9BF", ["Result", "ARFCN", "Cell Id"])}
+          >
+            0xB9BF
+          </button>
+          <h3>HO Acquisition Confirm</h3>
+          <p>ML1 evidence that target-cell acquisition succeeded.</p>
+          <div className="step-simple-key-fields">
+            <b>Key fields:</b>
+            {["Result", "ARFCN", "Cell Id"].map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }
 

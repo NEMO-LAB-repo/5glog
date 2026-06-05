@@ -331,8 +331,8 @@
     "8": {
       "title": "8. Random Access",
       "layer": "MAC",
-      "decide": "UE starts random access on target cell.",
-      "logcode": "0xB889 NR5G MAC RACH Trigger. Fields: Rach Reason: HANDOVER, CRNTI, RACH Contention, Carrier Id, RA Id. Also 0xB88A NR5G MAC RACH Attempt.",
+      "decide": "UE starts random access on the target cell after target config is applied.",
+      "logcode": "0xB889 RACH Trigger shows why MAC starts RACH. 0xB88A RACH Attempt shows the actual random-access attempt. Key fields: Rach Reason = HANDOVER, RACH Contention, CRNTI, Carrier Id / RA Id, Msg1, Msg2, Msg3, Msg4, Contention Type, RACH Result.",
       "logcodes": [
         "0xB889",
         "0xB88A"
@@ -343,12 +343,18 @@
         "CRNTI",
         "RACH Contention",
         "Carrier Id",
-        "RA Id"
+        "RA Id",
+        "Msg1",
+        "Msg2",
+        "Msg3",
+        "Msg4",
+        "Contention Type",
+        "RACH Result"
       ],
       "evidence": [
         {
-          "title": "RACH trigger",
-          "detail": "MAC starts random access because of handover.",
+          "title": "0xB889 RACH Trigger",
+          "detail": "Shows why MAC starts RACH.",
           "logcodes": [
             "0xB889"
           ],
@@ -362,8 +368,8 @@
           ]
         },
         {
-          "title": "RACH attempt",
-          "detail": "Detailed Msg1/Msg2/Msg3/Msg4 attempt evidence, when present.",
+          "title": "0xB88A RACH Attempt",
+          "detail": "Shows the actual random-access attempt.",
           "logcodes": [
             "0xB88A"
           ],
@@ -380,9 +386,9 @@
     },
     "9": {
       "title": "9. Random Access Success",
-      "layer": "MAC",
-      "decide": "Random access on the target cell succeeds.",
-      "logcode": "Best evidence: 0xB88A NR5G MAC RACH Attempt with RACH Result: SUCCESS and, when applicable, Contention Type: CONT_FREE. Additional target acquisition evidence: 0xB9BF NR5G ML1 Search HO Acq Confirm. Fields: RACH Result, SUCCESS, Contention Type, CONT_FREE, Result, ARFCN, Cell Id.",
+      "layer": "MAC / ML1",
+      "decide": "UE finishes target-cell random access successfully and target acquisition is confirmed.",
+      "logcode": "0xB88A MAC RA Result is direct MAC evidence that RACH succeeded. 0xB9BF HO Acquisition Confirm is ML1 evidence that target-cell acquisition succeeded. Key fields: RACH Result = SUCCESS, Contention Type = CONT_FREE, Result, ARFCN, Cell Id.",
       "logcodes": [
         "0xB88A",
         "0xB9BF"
@@ -398,8 +404,8 @@
       ],
       "evidence": [
         {
-          "title": "MAC RA success",
-          "detail": "Best direct evidence when the attempt record exposes the final result.",
+          "title": "0xB88A MAC RA Result",
+          "detail": "Direct MAC evidence that RACH succeeded.",
           "logcodes": [
             "0xB88A"
           ],
@@ -411,8 +417,8 @@
           ]
         },
         {
-          "title": "HO acquisition confirm",
-          "detail": "Supporting ML1 evidence that the target-cell acquisition succeeded.",
+          "title": "0xB9BF HO Acquisition Confirm",
+          "detail": "ML1 evidence that target-cell acquisition succeeded.",
           "logcodes": [
             "0xB9BF"
           ],
