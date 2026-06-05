@@ -2016,6 +2016,25 @@ button {
   margin-top: 8px;
 }
 
+.network-prep-term-note {
+  margin-top: 12px;
+  border-left: 4px solid #000000;
+  background: #ffffff;
+  padding: 10px 12px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.network-prep-term-note div + div {
+  margin-top: 6px;
+}
+
+.network-prep-term-note b {
+  font-weight: 900;
+}
+
 @media (max-width: 760px) {
   .network-prep-grid {
     grid-template-columns: 1fr;

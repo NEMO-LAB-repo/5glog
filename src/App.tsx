@@ -1585,6 +1585,14 @@ function NetworkTargetPreparationDiagram() {
               <li>selects the target cell based on MeasurementReport and RRM information</li>
               <li>sends UE context, current configuration, QoS / DRB information, and measurement information to the target side</li>
             </ul>
+            <div className="network-prep-term-note">
+              <div>
+                <b>QoS</b> tells what service quality the traffic needs.
+              </div>
+              <div>
+                <b>DRB</b> tells which radio bearer carries that traffic over the air.
+              </div>
+            </div>
           </div>
           <div className="network-prep-card">
             <h4>Target side</h4>
