@@ -2081,9 +2081,9 @@ const legacyStepShapes: LegacyStepShape[] = [
   {
     stepNumber: "9",
     body: "M 1438 914 L 1880 914 L 1880 958 L 1438 958 L 1390 936 Z",
-    divider: { x1: 1522, y1: 914, x2: 1522, y2: 958 },
-    tag: { x: 1480, y: 944 },
-    message: { x: 1542, y: 945, small: true }
+    divider: { x1: 1548, y1: 914, x2: 1548, y2: 958 },
+    tag: { x: 1493, y: 944, text: "MAC/ML1" },
+    message: { x: 1570, y: 945, small: true }
   },
   {
     stepNumber: "10",
