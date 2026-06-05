@@ -1607,16 +1607,99 @@ function HandoverTypeDiagram() {
   );
 }
 
+type StepFlowNode = {
+  title: string;
+  detail: string;
+};
+
+type StepLogCard = {
+  code: string;
+  title: string;
+  role: string;
+  detail: string;
+  fields: string[];
+  points: Array<{ label: string; text: string }>;
+};
+
+function StepProcessFlow({ nodes, ariaLabel }: { nodes: StepFlowNode[]; ariaLabel: string }) {
+  return (
+    <div className="step-process-flow" aria-label={ariaLabel}>
+      {nodes.map((node, index) => (
+        <div className="step-process-segment" key={`${node.title}-${index}`}>
+          <div className="step-process-node">
+            <b>{node.title}</b>
+            <span>{node.detail}</span>
+          </div>
+          {index < nodes.length - 1 ? <div className="step-process-arrow" aria-hidden="true" /> : null}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StepLogCards({ cards, onOpenLogcode }: { cards: StepLogCard[]; onOpenLogcode: (logcode: string, terms: string[]) => void }) {
+  return (
+    <div className="step-log-card-list">
+      {cards.map((card) => (
+        <div className="step-log-card" key={card.code}>
+          <div className="step-log-card-summary">
+            <button className="step-log-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
+              {card.code}
+            </button>
+            <span>{card.role}</span>
+            <b>{card.title}</b>
+            <p>{card.detail}</p>
+          </div>
+          <div className="step-log-card-points">
+            {card.points.map((point) => (
+              <div className="step-log-point" key={point.label}>
+                <b>{point.label}</b>
+                <span>{point.text}</span>
+              </div>
+            ))}
+          </div>
+          <div className="step-log-card-fields">
+            {card.fields.map((field) => (
+              <span key={field} className="popup-hot-field">{field}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StepStructuredDiagram({
+  flowLabel,
+  flowNodes,
+  cards,
+  onOpenLogcode
+}: {
+  flowLabel: string;
+  flowNodes: StepFlowNode[];
+  cards: StepLogCard[];
+  onOpenLogcode: (logcode: string, terms: string[]) => void;
+}) {
+  return (
+    <div className="step-structured-diagram">
+      <div className="step-structured-title">What this step does</div>
+      <StepProcessFlow nodes={flowNodes} ariaLabel={flowLabel} />
+      <div className="step-structured-subtitle">How to find it in logs</div>
+      <StepLogCards cards={cards} onOpenLogcode={onOpenLogcode} />
+    </div>
+  );
+}
+
 function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards = [
+  const cards: StepLogCard[] = [
     {
       code: "0xB952",
       title: "DL Handover",
       role: "main apply log",
-      detail: "target PCI/frequency, C-RNTI, and handover carrier context",
+      detail: "ML1 applies the target downlink cell, UE identity, and handover carrier context.",
       fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info", "DL Cell frequency"],
-      groups: [
-        { label: "target cell", text: "DL freq + PCI" },
+      points: [
+        { label: "target cell", text: "DL frequency + PCI" },
         { label: "UE identity", text: "C-RNTI config" },
         { label: "carrier context", text: "CG Add Mod" },
         { label: "cell info", text: "DL Cell frequency" }
@@ -1626,10 +1709,10 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
       code: "0xB950",
       title: "DL Common Config",
       role: "common cell config",
-      detail: "cell-wide radio config used by ML1 after switching to target",
+      detail: "Cell-wide radio configuration used by ML1 after switching to the target cell.",
       fields: ["DL Frequency Info", "SSB Period", "BWP", "CORESET", "Search Space", "TDD UL DL CFG"],
-      groups: [
-        { label: "frequency / SSB", text: "DL freq + SSB timing" },
+      points: [
+        { label: "frequency / SSB", text: "DL frequency + SSB timing" },
         { label: "BWP", text: "common bandwidth part" },
         { label: "PDCCH control", text: "CORESET + Search Space" },
         { label: "duplex timing", text: "TDD UL/DL config" }
@@ -1639,9 +1722,9 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
       code: "0xB951",
       title: "DL Dedicated Config",
       role: "UE-specific config",
-      detail: "UE-specific BWP and downlink channel/control config",
+      detail: "UE-specific BWP and downlink channel/control configuration for the target context.",
       fields: ["Dedicated BWP", "CORESET", "Search Space", "PDSCH Config", "Serving Cell Config"],
-      groups: [
+      points: [
         { label: "dedicated BWP", text: "UE-specific bandwidth" },
         { label: "PDCCH", text: "CORESET + Search Space" },
         { label: "PDSCH", text: "downlink data config" },
@@ -1651,65 +1734,28 @@ function ApplyTargetConfigDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
   ];
 
   return (
-    <div className="apply-config-diagram">
-      <div className="apply-config-title">What this step does</div>
-      <div className="apply-config-flow" aria-label="Apply target configuration flow">
-        <div className="apply-config-flow-box">
-          <b>handover command</b>
-          <span>target-cell config from Step 5</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box is-center">
-          <b>UE ML1</b>
-          <span>applies physical target config</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box">
-          <b>target access ready</b>
-          <span>sync + RACH preparation</span>
-        </div>
-      </div>
-
-      <div className="apply-config-subtitle">How to find it in logs</div>
-      <div className="apply-config-grid">
-        {cards.map((card) => (
-          <div className="apply-config-card" key={card.code}>
-            <div className="apply-config-card-head">
-              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
-                {card.code}
-              </button>
-              <span>{card.role}</span>
-            </div>
-            <div className="apply-config-card-title">{card.title}</div>
-            <div className="apply-config-map" aria-label={`${card.code} configuration map`}>
-              <div className="apply-config-map-center">
-                <span>{card.title}</span>
-                <b>{card.code}</b>
-              </div>
-              {card.groups.map((group) => (
-                <div className="apply-config-map-node" key={group.label}>
-                  <b>{group.label}</b>
-                  <span>{group.text}</span>
-                </div>
-              ))}
-            </div>
-            <div className="apply-config-card-detail">{card.detail}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <StepStructuredDiagram
+      flowLabel="Apply target configuration flow"
+      flowNodes={[
+        { title: "handover command", detail: "target-cell config from Step 5" },
+        { title: "UE ML1", detail: "applies target physical config" },
+        { title: "target access ready", detail: "synchronization + RACH preparation" }
+      ]}
+      cards={cards}
+      onOpenLogcode={onOpenLogcode}
+    />
   );
 }
 
 function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards = [
+  const cards: StepLogCard[] = [
     {
       code: "0xB9A7",
       title: "Handover timing",
       role: "execution window",
-      detail: "marks when UE starts and ends the handover execution interval",
+      detail: "Use ML1 event values to mark the start/end of the handover execution window.",
       fields: ["Event", "HANDOVER_START", "HANDOVER_END", "PCI", "DL EARFCN", "Band"],
-      groups: [
+      points: [
         { label: "start marker", text: "HANDOVER_START" },
         { label: "end marker", text: "HANDOVER_END" },
         { label: "target radio", text: "PCI + DL EARFCN" },
@@ -1720,9 +1766,9 @@ function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
       code: "0xB952",
       title: "Target context",
       role: "target-cell context",
-      detail: "ties the execution window to the target cell configured in Step 6",
+      detail: "Use the target-cell handover config around the same timestamp.",
       fields: ["Target Dl Cell Frequency", "Target Phy Cell Id", "Crnti CFG", "CG Add Mod", "Cell Info"],
-      groups: [
+      points: [
         { label: "target frequency", text: "Target DL Cell Frequency" },
         { label: "target PCI", text: "Target Phy Cell Id" },
         { label: "UE identity", text: "C-RNTI config" },
@@ -1732,65 +1778,28 @@ function HandoverExecutionDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: 
   ];
 
   return (
-    <div className="apply-config-diagram execution-config-diagram">
-      <div className="apply-config-title">What this step does</div>
-      <div className="apply-config-flow" aria-label="Handover execution flow">
-        <div className="apply-config-flow-box">
-          <b>target config applied</b>
-          <span>Step 6 gives ML1 the target cell context</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box is-center">
-          <b>ML1 execution window</b>
-          <span>switch, synchronize, and track start/end timing</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box">
-          <b>MAC target access</b>
-          <span>RACH can start after target-cell switch</span>
-        </div>
-      </div>
-
-      <div className="apply-config-subtitle">How to find it in logs</div>
-      <div className="apply-config-grid">
-        {cards.map((card) => (
-          <div className="apply-config-card" key={card.code}>
-            <div className="apply-config-card-head">
-              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
-                {card.code}
-              </button>
-              <span>{card.role}</span>
-            </div>
-            <div className="apply-config-card-title">{card.title}</div>
-            <div className="apply-config-map" aria-label={`${card.code} handover execution map`}>
-              <div className="apply-config-map-center">
-                <span>{card.title}</span>
-                <b>{card.code}</b>
-              </div>
-              {card.groups.map((group) => (
-                <div className="apply-config-map-node" key={group.label}>
-                  <b>{group.label}</b>
-                  <span>{group.text}</span>
-                </div>
-              ))}
-            </div>
-            <div className="apply-config-card-detail">{card.detail}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <StepStructuredDiagram
+      flowLabel="Handover execution flow"
+      flowNodes={[
+        { title: "target config applied", detail: "Step 6 gives ML1 the target cell context" },
+        { title: "ML1 execution window", detail: "switch, synchronize, track start/end" },
+        { title: "MAC target access", detail: "RACH can start after target-cell switch" }
+      ]}
+      cards={cards}
+      onOpenLogcode={onOpenLogcode}
+    />
   );
 }
 
 function RandomAccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards = [
+  const cards: StepLogCard[] = [
     {
       code: "0xB889",
       title: "RACH trigger",
       role: "access start",
-      detail: "MAC starts target-cell random access because the trigger reason is handover",
+      detail: "MAC starts target-cell random access because the trigger reason is handover.",
       fields: ["Rach Reason", "HANDOVER", "CRNTI", "RACH Contention", "Carrier Id", "RA Id"],
-      groups: [
+      points: [
         { label: "why RA starts", text: "Rach Reason = HANDOVER" },
         { label: "UE identity", text: "CRNTI" },
         { label: "access mode", text: "RACH Contention" },
@@ -1801,9 +1810,9 @@ function RandomAccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: strin
       code: "0xB88A",
       title: "RACH attempt",
       role: "attempt details",
-      detail: "records the random-access exchange on the target cell when attempt details are present",
+      detail: "Records the random-access exchange on the target cell when attempt details are present.",
       fields: ["RACH Msg1", "RACH Msg2", "RACH Msg3", "RACH Msg4", "Contention Type", "RACH Result"],
-      groups: [
+      points: [
         { label: "Msg1", text: "preamble" },
         { label: "Msg2", text: "random access response" },
         { label: "Msg3 / Msg4", text: "contention resolution" },
@@ -1813,65 +1822,28 @@ function RandomAccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: strin
   ];
 
   return (
-    <div className="apply-config-diagram rach-config-diagram">
-      <div className="apply-config-title">What this step does</div>
-      <div className="apply-config-flow" aria-label="Random access flow">
-        <div className="apply-config-flow-box">
-          <b>target cell ready</b>
-          <span>handover execution reaches MAC access</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box is-center">
-          <b>RACH trigger</b>
-          <span>MAC starts random access for handover</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box">
-          <b>RACH attempt</b>
-          <span>Msg1-Msg4 target-cell access exchange</span>
-        </div>
-      </div>
-
-      <div className="apply-config-subtitle">How to find it in logs</div>
-      <div className="apply-config-grid">
-        {cards.map((card) => (
-          <div className="apply-config-card" key={card.code}>
-            <div className="apply-config-card-head">
-              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
-                {card.code}
-              </button>
-              <span>{card.role}</span>
-            </div>
-            <div className="apply-config-card-title">{card.title}</div>
-            <div className="apply-config-map" aria-label={`${card.code} random access map`}>
-              <div className="apply-config-map-center">
-                <span>{card.title}</span>
-                <b>{card.code}</b>
-              </div>
-              {card.groups.map((group) => (
-                <div className="apply-config-map-node" key={group.label}>
-                  <b>{group.label}</b>
-                  <span>{group.text}</span>
-                </div>
-              ))}
-            </div>
-            <div className="apply-config-card-detail">{card.detail}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <StepStructuredDiagram
+      flowLabel="Random access flow"
+      flowNodes={[
+        { title: "target cell ready", detail: "handover execution reaches MAC access" },
+        { title: "RACH trigger", detail: "MAC starts random access for handover" },
+        { title: "RACH attempt", detail: "Msg1-Msg4 target-cell access exchange" }
+      ]}
+      cards={cards}
+      onOpenLogcode={onOpenLogcode}
+    />
   );
 }
 
 function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode: string, terms: string[]) => void }) {
-  const cards = [
+  const cards: StepLogCard[] = [
     {
       code: "0xB88A",
       title: "MAC RA result",
       role: "direct RA result",
-      detail: "best direct MAC evidence that random access completed successfully",
+      detail: "Best direct MAC evidence that random access completed successfully.",
       fields: ["RACH Result", "SUCCESS", "Contention Type", "CONT_FREE"],
-      groups: [
+      points: [
         { label: "final result", text: "RACH Result = SUCCESS" },
         { label: "contention mode", text: "CONT_FREE when present" },
         { label: "attempt context", text: "same target-cell attempt" },
@@ -1882,9 +1854,9 @@ function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
       code: "0xB9BF",
       title: "HO acquisition confirm",
       role: "target acquisition",
-      detail: "ML1 confirms target-cell acquisition after the handover access step",
+      detail: "ML1 confirms target-cell acquisition after the handover access step.",
       fields: ["Result", "ARFCN", "Cell Id"],
-      groups: [
+      points: [
         { label: "acq result", text: "Result" },
         { label: "frequency", text: "ARFCN" },
         { label: "target cell", text: "Cell Id" },
@@ -1894,53 +1866,16 @@ function RandomAccessSuccessDiagram({ onOpenLogcode }: { onOpenLogcode: (logcode
   ];
 
   return (
-    <div className="apply-config-diagram rach-config-diagram">
-      <div className="apply-config-title">What this step does</div>
-      <div className="apply-config-flow" aria-label="Random access success flow">
-        <div className="apply-config-flow-box">
-          <b>RACH attempt finishes</b>
-          <span>MAC attempt reaches a final status</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box is-center">
-          <b>RA success</b>
-          <span>target-cell random access succeeds</span>
-        </div>
-        <div className="apply-config-flow-arrow" aria-hidden="true" />
-        <div className="apply-config-flow-box">
-          <b>target acquired</b>
-          <span>ML1 confirms handover acquisition</span>
-        </div>
-      </div>
-
-      <div className="apply-config-subtitle">How to find it in logs</div>
-      <div className="apply-config-grid">
-        {cards.map((card) => (
-          <div className="apply-config-card" key={card.code}>
-            <div className="apply-config-card-head">
-              <button className="apply-config-code" type="button" onClick={() => onOpenLogcode(card.code, card.fields)}>
-                {card.code}
-              </button>
-              <span>{card.role}</span>
-            </div>
-            <div className="apply-config-card-title">{card.title}</div>
-            <div className="apply-config-map" aria-label={`${card.code} random access success map`}>
-              <div className="apply-config-map-center">
-                <span>{card.title}</span>
-                <b>{card.code}</b>
-              </div>
-              {card.groups.map((group) => (
-                <div className="apply-config-map-node" key={group.label}>
-                  <b>{group.label}</b>
-                  <span>{group.text}</span>
-                </div>
-              ))}
-            </div>
-            <div className="apply-config-card-detail">{card.detail}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <StepStructuredDiagram
+      flowLabel="Random access success flow"
+      flowNodes={[
+        { title: "RACH attempt finishes", detail: "MAC attempt reaches a final status" },
+        { title: "RA success", detail: "target-cell random access succeeds" },
+        { title: "target acquired", detail: "ML1 confirms handover acquisition" }
+      ]}
+      cards={cards}
+      onOpenLogcode={onOpenLogcode}
+    />
   );
 }
 
