@@ -62,11 +62,9 @@ window.EVENT_DATA.handover = {
       fields: ["measResults", "measId", "measResultNeighCells", "physCellId", "rsrp", "rsrq", "sinr"]
     },
     4: {
-      title: "4. Network HO Decision / Preparation",
+      title: "4. Network HO Decision / Target Preparation",
       layer: "Network",
-      decide: "UE log cannot directly see the network decision; infer it from the later handover command.",
-      logcode: "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync.",
-      fields: ["RRCReconfiguration", "reconfigurationWithSync"]
+      decide: "The source side selects the target cell and prepares the target side before sending the handover command to UE."
     },
     5: {
       title: "5. RRCReconfiguration w/ Sync",

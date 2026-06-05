@@ -165,20 +165,9 @@
       ]
     },
     "4": {
-      "title": "4. Network HO Decision / Preparation",
+      "title": "4. Network HO Decision / Target Preparation",
       "layer": "Network",
-      "logcode": "No direct UE logcode. Inferred when Step 5 appears: RRCReconfiguration contains reconfigurationWithSync.",
-      "fields": [],
-      "evidence": [
-        {
-          "title": "XnAP",
-          "detail": "source gNB <-> target gNB interface. Used for inter-gNB Xn handover when Xn is available."
-        },
-        {
-          "title": "NGAP / N2",
-          "detail": "gNB <-> AMF control interface. Used for N2 handover; UE-side logs alone cannot confirm it."
-        }
-      ]
+      "decide": "The source side selects the target cell and prepares the target side before sending the handover command to UE."
     },
     "5": {
       "title": "5. RRCReconfiguration w/ Sync",

@@ -1949,6 +1949,73 @@ button {
   line-height: 1.35;
 }
 
+.network-prep-step {
+  margin-top: 14px;
+  display: grid;
+  gap: 14px;
+}
+
+.network-prep-section {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.network-prep-section h3 {
+  margin: 0 0 10px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.network-prep-section p {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.network-prep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.network-prep-card {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 14px;
+}
+
+.network-prep-card h4 {
+  margin: 0 0 10px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.network-prep-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.network-prep-card li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .network-prep-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .step-structured-diagram {
   margin-top: 12px;
   border: 2px solid #000000;

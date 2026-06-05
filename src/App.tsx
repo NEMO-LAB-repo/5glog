@@ -1561,48 +1561,35 @@ function PostHoOperationDiagram() {
   );
 }
 
-function HandoverTypeDiagram() {
+function NetworkTargetPreparationDiagram() {
   return (
-    <div className="handover-type-diagram">
-      <div className="handover-type-title">5G SA handover types</div>
-      <svg className="handover-type-svg" viewBox="0 0 900 430" role="img" aria-label="5G SA handover type classification">
-        <defs>
-          <marker id="handover-type-arrow-blue" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,6 L8,3 z" className="handover-type-arrow-blue" />
-          </marker>
-          <marker id="handover-type-arrow-red" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,6 L8,3 z" className="handover-type-arrow-red" />
-          </marker>
-        </defs>
+    <div className="network-prep-step">
+      <section className="network-prep-section">
+        <h3>What this step does</h3>
+        <p>
+          The source side selects the target cell and prepares the target side before sending the handover command to UE.
+        </p>
+      </section>
 
-        <rect x="290" y="30" width="320" height="72" rx="16" className="handover-type-root" />
-        <text x="450" y="76" className="handover-type-root-text" textAnchor="middle">5G SA Handover</text>
-
-        <path d="M450 102 L450 145 L205 145 L205 180" className="handover-type-connector-blue" markerEnd="url(#handover-type-arrow-blue)" />
-        <path d="M450 102 L450 145 L695 145 L695 180" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
-
-        <rect x="40" y="180" width="330" height="94" rx="16" className="handover-type-intra" />
-        <text x="205" y="224" className="handover-type-blue-text" textAnchor="middle">intra-gNB handover</text>
-        <text x="205" y="252" className="handover-type-muted" textAnchor="middle">same gNB, internal mobility path</text>
-
-        <rect x="530" y="180" width="330" height="94" rx="16" className="handover-type-inter" />
-        <text x="695" y="224" className="handover-type-red-text" textAnchor="middle">inter-gNB handover</text>
-        <text x="695" y="252" className="handover-type-muted" textAnchor="middle">source and target gNB differ</text>
-
-        <path d="M695 274 L695 320 L600 320 L600 350" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
-        <path d="M695 274 L695 320 L800 320 L800 350" className="handover-type-connector-red" markerEnd="url(#handover-type-arrow-red)" />
-
-        <rect x="470" y="350" width="260" height="58" rx="14" className="handover-type-xn" />
-        <text x="600" y="385" className="handover-type-red-small" textAnchor="middle">Xn handover</text>
-        <text x="600" y="404" className="handover-type-mini" textAnchor="middle">XnAP, gNB to gNB</text>
-
-        <rect x="720" y="350" width="160" height="58" rx="14" className="handover-type-xn" />
-        <text x="800" y="385" className="handover-type-red-small" textAnchor="middle">N2 handover</text>
-        <text x="800" y="404" className="handover-type-mini" textAnchor="middle">NGAP via AMF</text>
-      </svg>
-      <div className="handover-type-note">
-        UE logs usually infer this network step from the later 0xB821 handover command; Xn or N2 needs network-side evidence.
-      </div>
+      <section className="network-prep-section">
+        <h3>Preparation contents</h3>
+        <div className="network-prep-grid">
+          <div className="network-prep-card">
+            <h4>Source side</h4>
+            <ul>
+              <li>selects the target cell based on MeasurementReport and RRM information</li>
+              <li>sends UE context, current configuration, QoS / DRB information, and measurement information to the target side</li>
+            </ul>
+          </div>
+          <div className="network-prep-card">
+            <h4>Target side</h4>
+            <ul>
+              <li>performs admission control and checks radio resource availability</li>
+              <li>prepares target-cell configuration, new C-RNTI, RACH resources, and the target RRC configuration container for UE</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
@@ -1916,7 +1903,7 @@ function StepPopup({ step, onClose, onOpenLogcode }: { step: StepInfo; onClose: 
       {isMeasurementConfigStep ? <MeasurementConfigDiagram /> : null}
       {isMeasurementRelationStep ? <MeasurementRelationDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isMeasurementReportStep ? <MeasurementReportDiagram /> : null}
-      {isNetworkInterfaceStep ? <HandoverTypeDiagram /> : null}
+      {isNetworkInterfaceStep ? <NetworkTargetPreparationDiagram /> : null}
       {isHandoverCommandStep ? <HandoverCommandDiagram /> : null}
       {isApplyTargetConfigStep ? <ApplyTargetConfigDiagram onOpenLogcode={onOpenLogcode} /> : null}
       {isHandoverExecutionStep ? <HandoverExecutionDiagram onOpenLogcode={onOpenLogcode} /> : null}
