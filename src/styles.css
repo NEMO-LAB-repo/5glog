@@ -3094,3 +3094,215 @@ button.step-flow-box {
   }
 
 }
+
+/* Field page overview (dlfrequency-style template applied to all fields) */
+.field-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  background: #d9dbe1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* The field page sits inside the fixed-height .explorer-column, so the
+   overview itself must be the scroll container (matching how .field-list
+   used to scroll). Without this the bottom boxes get clipped by the grid's
+   overflow:hidden and cannot be reached. */
+.field-overview.is-field-overview {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+}
+
+/* Inside the field page the notes panel should grow with its content and
+   scroll together with the whole overview, not as its own sub-scroller. */
+.field-overview .message-notes-panel {
+  max-height: none;
+  overflow: visible;
+}
+
+.field-overview-box {
+  border: 2px solid #000000;
+  border-top-width: 6px;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 0 0 16px;
+  display: grid;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  /* Never let a box be compressed by the flex column; each box grows to fit
+     its own content and the whole overview scrolls instead. */
+  flex-shrink: 0;
+}
+
+.field-overview-box > *:not(.field-overview-box-header) {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.field-overview-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f2f2f4;
+  border-bottom: 2px solid #000000;
+}
+
+.field-overview-box-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.field-overview-box-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.field-overview-edit {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.field-overview-edit.is-ghost {
+  background: #ffffff;
+  color: #000000;
+}
+
+.field-overview-edit.is-add {
+  background: #ffffff;
+  color: #000000;
+}
+
+.field-overview-box-body {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+.field-overview-empty {
+  color: #888888;
+  font-style: italic;
+}
+
+.field-overview-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 8px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.field-overview-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-overview-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.field-overview-link:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.field-overview-link:hover .field-match-count {
+  color: #ffffff;
+}
+
+.field-overview-link.is-inert {
+  cursor: default;
+  border-style: dashed;
+  border-color: #999999;
+  color: #777777;
+  font-weight: 600;
+}
+
+.field-overview-link.is-inert:hover {
+  background: #ffffff;
+  color: #777777;
+}
+
+.field-overview-edit-hint {
+  font-size: 12px;
+  color: #666666;
+}
+
+.field-overview-structure-note {
+  font-size: 12px;
+  color: #555555;
+}
+
+.structure-event-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.related-msg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.related-msg-entry {
+  display: grid;
+  gap: 8px;
+  border: 1px solid #d8d8da;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fbfbfc;
+}
+
+.related-msg-entry-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.related-msg-relation {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  white-space: pre-wrap;
+}
+
+.explorer-screen.is-detail-view .field-list.is-overview-scroll {
+  overflow: auto;
+}

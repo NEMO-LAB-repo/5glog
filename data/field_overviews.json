@@ -1,0 +1,14 @@
+{
+  "_comment": "Shared, repository-committed overview content for field pages. Key = field id (the `id` from data/generated/field_index.json). Value = { description, range, related, similar }, all optional. These act as defaults; a local in-page edit (localStorage) overrides them. `related` and `similar` are comma- or newline-separated lists. Remove this _comment entry or leave it; ids starting with '_' are ignored by the app.",
+  "_example-field-id": {
+    "description": "What this field means and how to read it.",
+    "range": "e.g. 0..1023, or an enum of allowed values.",
+    "related": "0xB822, 0xB823",
+    "similar": "OtherFieldName, AnotherField"
+  },
+  "dlfrequency": {
+    "description": "DL Frequency is the downlink carrier frequency point (ARFCN) of a cell. It identifies where the cell's downlink carrier sits in the frequency grid, not a measured signal value. In NR it is carried as an absolute radio-frequency channel number (NR-ARFCN); in LTE as an E-UTRA absolute radio-frequency channel number (EARFCN). It is used together with the Physical Cell Id and Band to uniquely identify a serving or neighbor cell.",
+    "range": "NR-ARFCN: integer 0 – 3279165 (3GPP TS 38.104, global frequency raster). LTE EARFCN: integer 0 – 262143 (3GPP TS 36.101). The raw field is an unsigned integer channel number, not a frequency in Hz; convert via the band-specific NR-ARFCN/EARFCN-to-frequency mapping.",
+    "similar": "UL Frequency, ARFCN, NR-ARFCN, EARFCN, Frequency, dl-CarrierFreq, ssbFrequency, absoluteFrequencySSB, absoluteFrequencyPointA, Band, Physical Cell Id"
+  }
+}

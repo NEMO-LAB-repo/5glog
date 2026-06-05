@@ -1,0 +1,7 @@
+{
+  "_comment": "Shared, repository-committed overview content for message pages. Key = message id (the `id` from data/generated/logcode_index.json, e.g. '0xb822-nr5g-rrc-mib-info'). Value = { description, relatedPairs }, both optional. These are merged onto the generated logcode record at load time, so they survive `npm run build:indexes` (unlike editing data/logcodes/*.json by hand, which is generated and would be overwritten). A local in-page edit (localStorage) overrides these. `relatedPairs` is one entry per line, format: \"<logcode> | <relation text>\". Ids starting with '_' are ignored by the app.",
+  "0xb822-nr5g-rrc-mib-info": {
+    "description": "0xB822 NR5G RRC MIB Info reports the Master Information Block (MIB) that the UE decoded from the PBCH of one NR SSB/cell. The MIB is the first system information a UE reads after SSB detection: it carries the timing (SFN, half-frame, SSB subcarrier offset / k_ssb), the common subcarrier spacing, the PDCCH configuration that points to CORESET#0 for SIB1, the DMRS Type-A position, and the cell-barred / intra-frequency-reselection flags. The log is emitted once per successfully decoded MIB and is keyed by Physical Cell ID and DL Frequency, so it tells you which cell on which NR-ARFCN was decoded, not a measured signal level.",
+    "relatedPairs": "0xB96A | B96A reports the PHY-layer SSB/cell search and measurement results on a given NR-ARFCN, while B822 reports the MIB decoded from the PBCH of one selected cell/SSB from that search process."
+  }
+}

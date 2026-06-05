@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties } from "react";
-import { eventIndex, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel, repositoryFieldNotes, repositoryMessageNotes } from "./data";
+import type { CSSProperties, ReactNode } from "react";
+import { eventIndex, eventsReferencingLogcode, fieldEventsForLogcode, fieldOverviewDefaults, findLogcodeRecord, handoverEvent, loadFieldIndex, loadLogcodeRecord, logcodeById, logcodeRecords, normalizeForMatch, nrMeasurementEvents, recordLabel, repositoryFieldNotes, repositoryMessageNotes } from "./data";
 import type { FieldIndexEntry, LogcodeRecord, LogcodeRef, LogcodeSummary, MeasurementEventInfo, MessageNoteEntry, MessageNotesStore, StepEvidenceItem, StepInfo, ViewName } from "./types";
 
 type LogcodeVariantItem = {
@@ -699,6 +699,277 @@ function LogcodeVariantSections({ record, selectedTerms }: { record: LogcodeReco
         </details>
       ))}
     </div>
+  );
+}
+
+// Shared message overview template (same layout as the B822 field page in
+// 5glog_selfchange). Applied to every message page. Only the Logcode Structure
+// box and the auto-derived Related Event box are populated from data; all other
+// boxes start empty until an editor fills them in.
+function MessageStructureBox({
+  record,
+  selectedTerms
+}: {
+  record: LogcodeRecord;
+  selectedTerms: string[];
+}) {
+  // Data-driven: field→event tags come from event data that references this
+  // logcode. Keyed by normalized field name so event field naming matches the
+  // structure's naming.
+  const fieldEvents = useMemo(() => {
+    const normalized = new Map<string, string>();
+    fieldEventsForLogcode(record.logcode).forEach((event, field) => {
+      normalized.set(normalizeForMatch(field), event);
+    });
+    return normalized;
+  }, [record.logcode]);
+
+  return (
+    <section className="field-overview-box">
+      <div className="field-overview-box-header">
+        <h3 className="field-overview-box-title">Logcode Structure</h3>
+      </div>
+      <div className="field-overview-structure-note">
+        {fieldEvents.size
+          ? "Tags are auto-derived from event data: a field is tagged when an event that references this logcode lists it."
+          : "No event data ties a field of this logcode to an event, so no field is tagged."}
+      </div>
+      <div className="json-tree">
+        <div className="json-line" style={{ "--depth": 0 } as CSSProperties}>"{record.title}":</div>
+        <MessageStructureTree value={record.detail} depth={1} selectedTerms={selectedTerms} fieldEvents={fieldEvents} />
+      </div>
+    </section>
+  );
+}
+
+function MessageStructureTree({ value, depth, selectedTerms, fieldEvents }: { value: unknown; depth: number; selectedTerms: string[]; fieldEvents: Map<string, string> }) {
+  if (value === null || typeof value !== "object") return null;
+  return (
+    <>
+      {Object.entries(value as Record<string, unknown>).map(([key, child]) => {
+        const selected = isSelected([key], selectedTerms);
+        const handover = isHandoverRelated([key]);
+        const eventTag = fieldEvents.get(normalizeForMatch(key));
+        return (
+          <div key={key}>
+            <div className={`json-line ${selected ? "field-hit" : ""} ${handover ? "handover-hit" : ""}`} style={{ "--depth": depth } as CSSProperties}>
+              "{key}":
+              {eventTag ? <span className="structure-event-tag">→ {eventTag}</span> : null}
+            </div>
+            <MessageStructureTree value={child} depth={depth + 1} selectedTerms={selectedTerms} fieldEvents={fieldEvents} />
+          </div>
+        );
+      })}
+    </>
+  );
+}
+
+function MessageOverview({
+  record,
+  selectedTerms,
+  onOpenLogcode,
+  onOpenEvent,
+  onOpenLayer
+}: {
+  record: LogcodeRecord;
+  selectedTerms: string[];
+  onOpenLogcode: (ref: LogcodeRef, terms?: string[]) => void;
+  onOpenEvent: (view: ViewName) => void;
+  onOpenLayer: (layer: string) => void;
+}) {
+  const [overrides, setOverrides] = useState<Record<string, string>>(() => readFieldOverview(record.id));
+
+  // Value precedence per box: local edit (localStorage) > JSON-authored default
+  // (record.overview, from the message's data file) > empty ("No content yet.").
+  const defaults = record.overview ?? {};
+  const values = {
+    description: overrides.description ?? defaults.description ?? "",
+    relatedPairs: overrides.relatedPairs ?? defaults.relatedPairs ?? ""
+  };
+
+  function saveBox(key: string, value: string) {
+    setOverrides((current) => {
+      const next = { ...current, [key]: value };
+      writeFieldOverview(record.id, next);
+      return next;
+    });
+  }
+
+  // Box: related events — data-driven. An event is listed only when its
+  // structured data references this logcode (see eventsReferencingLogcode).
+  const eventItems = useMemo<LinkListItem[]>(() => {
+    return eventsReferencingLogcode(record.logcode).map((event) => {
+      const view = event.view as ViewName | undefined;
+      return view ? { label: event.title, onClick: () => onOpenEvent(view) } : { label: event.title };
+    });
+  }, [record.logcode, onOpenEvent]);
+
+  return (
+    <div className="field-overview message-overview">
+      <section className="field-overview-box">
+        <div className="field-overview-box-header">
+          <h3 className="field-overview-box-title">Logcode &amp; Name</h3>
+        </div>
+        <div className="field-overview-box-body">
+          <strong>{record.logcode}</strong> — {record.name}
+        </div>
+      </section>
+
+      <section className="field-overview-box">
+        <div className="field-overview-box-header">
+          <h3 className="field-overview-box-title">Layer</h3>
+        </div>
+        <div className="field-overview-link-list">
+          <button type="button" className="field-overview-link" onClick={() => onOpenLayer(record.category)}>
+            <span>{messageLayerLabel(record.category)}</span>
+          </button>
+        </div>
+      </section>
+
+      <EditableOverviewBox title="Message description" storedValue={values.description} onSave={(value) => saveBox("description", value)} />
+
+      <MessageStructureBox record={record} selectedTerms={selectedTerms} />
+
+      <section className="field-overview-box">
+        <div className="field-overview-box-header">
+          <h3 className="field-overview-box-title">Related Event</h3>
+        </div>
+        <div className="field-overview-structure-note">
+          Auto-derived from event data: an event appears here only when its definition references {record.logcode}.
+        </div>
+        {eventItems.length ? (
+          <div className="field-overview-link-list">
+            {eventItems.map((item, index) =>
+              item.onClick ? (
+                <button key={`${item.label}-${index}`} type="button" className="field-overview-link" onClick={item.onClick}>
+                  <span>{item.label}</span>
+                </button>
+              ) : (
+                <span key={`${item.label}-${index}`} className="field-overview-link is-inert"><span>{item.label}</span></span>
+              )
+            )}
+          </div>
+        ) : (
+          <div className="field-overview-box-body"><span className="field-overview-empty">No event references this logcode.</span></div>
+        )}
+      </section>
+
+      <RelatedMessagesBox
+        storedValue={values.relatedPairs}
+        onSave={(value) => saveBox("relatedPairs", value)}
+        onOpenLogcode={onOpenLogcode}
+      />
+    </div>
+  );
+}
+
+type RelatedMessagePair = { code: string; relation: string };
+
+function parseRelatedPairs(value: string): RelatedMessagePair[] {
+  return value
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const sep = line.indexOf("|");
+      if (sep === -1) return { code: line.trim(), relation: "" };
+      return { code: line.slice(0, sep).trim(), relation: line.slice(sep + 1).trim() };
+    });
+}
+
+function serializeRelatedPairs(pairs: RelatedMessagePair[]): string {
+  return pairs.map((pair) => `${pair.code} | ${pair.relation}`).join("\n");
+}
+
+function RelatedMessagesBox({
+  storedValue,
+  onSave,
+  onOpenLogcode
+}: {
+  storedValue: string;
+  onSave: (value: string) => void;
+  onOpenLogcode: (ref: LogcodeRef, terms?: string[]) => void;
+}) {
+  const pairs = useMemo(() => parseRelatedPairs(storedValue), [storedValue]);
+  const [editingIndex, setEditingIndex] = useState<number | null>(null);
+  const [draft, setDraft] = useState("");
+
+  function startEdit(index: number) {
+    setEditingIndex(index);
+    setDraft(pairs[index]?.relation ?? "");
+  }
+
+  function saveEdit(index: number) {
+    const next = pairs.map((pair, i) => (i === index ? { ...pair, relation: draft.trim() } : pair));
+    onSave(serializeRelatedPairs(next));
+    setEditingIndex(null);
+  }
+
+  function removePair(index: number) {
+    const next = pairs.filter((_, i) => i !== index);
+    onSave(serializeRelatedPairs(next));
+    setEditingIndex(null);
+  }
+
+  function addNew() {
+    const code = window.prompt("New related message logcode (e.g. 0xB96A):");
+    if (!code) return;
+    const next = [...pairs, { code: code.trim(), relation: "" }];
+    onSave(serializeRelatedPairs(next));
+    startEdit(next.length - 1);
+  }
+
+  return (
+    <section className="field-overview-box">
+      <div className="field-overview-box-header">
+        <h3 className="field-overview-box-title">Related messages</h3>
+        <div className="field-overview-box-actions">
+          <button type="button" className="field-overview-edit is-add" onClick={addNew}>+ Add new</button>
+        </div>
+      </div>
+      <div className="related-msg-list">
+        {pairs.length ? pairs.map((pair, index) => {
+          const summary = findLogcodeRecord(pair.code.startsWith("0x") || pair.code.startsWith("0X") ? pair.code : `0x${pair.code}`, []);
+          return (
+            <div key={`${pair.code}-${index}`} className="related-msg-entry">
+              <div className="related-msg-entry-head">
+                {summary ? (
+                  <button type="button" className="field-overview-link" onClick={() => onOpenLogcode(summary)}>
+                    <span>{recordLabel(summary)}</span>
+                  </button>
+                ) : (
+                  <span className="field-overview-link is-inert"><span>{pair.code}</span></span>
+                )}
+                <div className="field-overview-box-actions">
+                  {editingIndex === index ? (
+                    <>
+                      <button type="button" className="field-overview-edit" onClick={() => saveEdit(index)}>Save</button>
+                      <button type="button" className="field-overview-edit is-ghost" onClick={() => setEditingIndex(null)}>Cancel</button>
+                    </>
+                  ) : (
+                    <>
+                      <button type="button" className="field-overview-edit" onClick={() => startEdit(index)}>✏️ Edit</button>
+                      <button type="button" className="field-overview-edit is-ghost" onClick={() => removePair(index)}>Remove</button>
+                    </>
+                  )}
+                </div>
+              </div>
+              {editingIndex === index ? (
+                <textarea
+                  className="field-overview-textarea"
+                  value={draft}
+                  onChange={(event) => setDraft(event.target.value)}
+                  rows={3}
+                  placeholder="Describe how this message relates to the current one"
+                />
+              ) : (
+                <div className="related-msg-relation">{pair.relation || <span className="field-overview-empty">No relation described yet.</span>}</div>
+              )}
+            </div>
+          );
+        }) : <div className="field-overview-box-body"><span className="field-overview-empty">No related messages yet.</span></div>}
+      </div>
+    </section>
   );
 }
 
@@ -2393,6 +2664,324 @@ function HandoverDiagram({ onOpenLogcode }: { onOpenLogcode: (record: LogcodeRef
   );
 }
 
+function splitListValue(value: string): string[] {
+  return value
+    .split(/[\n,]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+const fieldOverviewStorageKey = "5glog.localFieldOverview.v1";
+
+function readFieldOverview(fieldId: string): Record<string, string> {
+  try {
+    const raw = window.localStorage.getItem(fieldOverviewStorageKey);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw) as Record<string, Record<string, string>>;
+    return parsed[fieldId] || {};
+  } catch {
+    return {};
+  }
+}
+
+function writeFieldOverview(fieldId: string, values: Record<string, string>) {
+  try {
+    const raw = window.localStorage.getItem(fieldOverviewStorageKey);
+    const parsed = raw ? (JSON.parse(raw) as Record<string, Record<string, string>>) : {};
+    parsed[fieldId] = values;
+    window.localStorage.setItem(fieldOverviewStorageKey, JSON.stringify(parsed));
+  } catch {
+    // Ignore storage write failures (private mode, quota, file:// restrictions).
+  }
+}
+
+function EditableOverviewBox({
+  title,
+  storedValue,
+  onSave
+}: {
+  title: string;
+  storedValue: string;
+  onSave: (value: string) => void;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState(storedValue);
+
+  useEffect(() => {
+    if (!editing) setDraft(storedValue);
+  }, [storedValue, editing]);
+
+  function commit() {
+    onSave(draft);
+    setEditing(false);
+  }
+
+  return (
+    <section className="field-overview-box">
+      <div className="field-overview-box-header">
+        <h3 className="field-overview-box-title">{title}</h3>
+        {editing ? (
+          <div className="field-overview-box-actions">
+            <button type="button" className="field-overview-edit" onClick={commit}>Save</button>
+            <button
+              type="button"
+              className="field-overview-edit is-ghost"
+              onClick={() => {
+                setDraft(storedValue);
+                setEditing(false);
+              }}
+            >
+              Cancel
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            className="field-overview-edit"
+            aria-label={`Edit ${title}`}
+            onClick={() => setEditing(true)}
+          >
+            ✏️ Edit
+          </button>
+        )}
+      </div>
+      {editing ? (
+        <textarea
+          className="field-overview-textarea"
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          rows={4}
+        />
+      ) : (
+        <div className="field-overview-box-body">{storedValue || <span className="field-overview-empty">No content yet.</span>}</div>
+      )}
+    </section>
+  );
+}
+
+type LinkListItem = {
+  label: string;
+  meta?: string;
+  onClick?: () => void;
+};
+
+function EditableLinkListBox({
+  title,
+  items,
+  storedValue,
+  onSave,
+  emptyHint,
+  addLabel,
+  footer
+}: {
+  title: string;
+  items: LinkListItem[];
+  storedValue: string;
+  onSave: (value: string) => void;
+  emptyHint: string;
+  addLabel?: string;
+  footer?: ReactNode;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState(storedValue);
+
+  useEffect(() => {
+    if (!editing) setDraft(storedValue);
+  }, [storedValue, editing]);
+
+  function commit() {
+    onSave(draft);
+    setEditing(false);
+  }
+
+  function startAdd() {
+    const base = (editing ? draft : storedValue).replace(/\s+$/, "");
+    setDraft(base ? `${base}\n` : "");
+    setEditing(true);
+  }
+
+  return (
+    <section className="field-overview-box">
+      <div className="field-overview-box-header">
+        <h3 className="field-overview-box-title">{title}</h3>
+        {editing ? (
+          <div className="field-overview-box-actions">
+            <button type="button" className="field-overview-edit" onClick={commit}>Save</button>
+            <button
+              type="button"
+              className="field-overview-edit is-ghost"
+              onClick={() => {
+                setDraft(storedValue);
+                setEditing(false);
+              }}
+            >
+              Cancel
+            </button>
+          </div>
+        ) : (
+          <div className="field-overview-box-actions">
+            {addLabel ? (
+              <button type="button" className="field-overview-edit is-add" onClick={startAdd}>+ {addLabel}</button>
+            ) : null}
+            <button
+              type="button"
+              className="field-overview-edit"
+              aria-label={`Edit ${title}`}
+              onClick={() => setEditing(true)}
+            >
+              ✏️ Edit
+            </button>
+          </div>
+        )}
+      </div>
+      {editing ? (
+        <>
+          <textarea
+            className="field-overview-textarea"
+            value={draft}
+            onChange={(event) => setDraft(event.target.value)}
+            rows={4}
+          />
+          <div className="field-overview-edit-hint">{emptyHint}</div>
+        </>
+      ) : items.length ? (
+        <div className="field-overview-link-list">
+          {items.map((item, index) =>
+            item.onClick ? (
+              <button key={`${item.label}-${index}`} type="button" className="field-overview-link" onClick={item.onClick}>
+                <span>{item.label}</span>
+                {item.meta ? <span className="field-match-count">{item.meta}</span> : null}
+              </button>
+            ) : (
+              <span key={`${item.label}-${index}`} className="field-overview-link is-inert" title="No matching page">
+                <span>{item.label}</span>
+                {item.meta ? <span className="field-match-count">{item.meta}</span> : null}
+              </span>
+            )
+          )}
+        </div>
+      ) : (
+        <div className="field-overview-box-body"><span className="field-overview-empty">No content yet.</span></div>
+      )}
+      {footer}
+    </section>
+  );
+}
+
+// Field page template. Mirrors the dlfrequency overview layout: a description
+// box, a related-logcode box (auto-derived from this field's own logcode
+// associations — the "logcode structure" that stays populated), a value-range
+// box, a similar-fields box, and a notes panel. Every box except related
+// logcode starts empty until content is specified for the field.
+function CustomFieldOverview({
+  field,
+  allFields,
+  fieldNotes,
+  onAddFieldNote,
+  onOpenLogcode,
+  onOpenField,
+  onBack
+}: {
+  field: FieldIndexEntry;
+  allFields: Map<string, FieldIndexEntry>;
+  fieldNotes: MessageNotesStore;
+  onAddFieldNote: (targetId: string, text: string) => void;
+  onOpenLogcode: (record: LogcodeRef, terms?: string[]) => void;
+  onOpenField: (target: FieldIndexEntry) => void;
+  onBack: () => void;
+}) {
+  const [overrides, setOverrides] = useState<Record<string, string>>(() => readFieldOverview(field.id));
+
+  // Value precedence per box: local edit (localStorage) > JSON-authored default
+  // (data/field_overviews.json, keyed by field id) > empty / data-derived.
+  const defaults = fieldOverviewDefaults(field.id);
+  const values: Record<string, string> = {
+    description: overrides.description ?? defaults.description ?? "",
+    range: overrides.range ?? defaults.range ?? "",
+    similar: overrides.similar ?? defaults.similar ?? ""
+  };
+
+  // Related logcode: local edit > JSON default > derived from the field's own
+  // logcode records, so the list stays in sync with the data when unauthored.
+  const relatedStored = overrides.related ?? defaults.related ?? field.records.map((record) => record.logcode).join(", ");
+  const relatedItems = useMemo<LinkListItem[]>(() => {
+    return splitListValue(relatedStored).map((token) => {
+      const code = token.toLowerCase();
+      const match = field.records.find((record) => record.logcode.toLowerCase() === code);
+      const record = match ? logcodeById.get(match.id) : undefined;
+      if (match && record) {
+        const paths = match.pathCount ?? match.paths?.length ?? 0;
+        return {
+          label: recordLabel(record),
+          meta: `${paths} path${paths === 1 ? "" : "s"}`,
+          onClick: () => onOpenLogcode(record, [field.name])
+        };
+      }
+      return { label: token };
+    });
+  }, [relatedStored, field.records, field.name, onOpenLogcode]);
+
+  const similarItems = useMemo<LinkListItem[]>(() => {
+    return splitListValue(values.similar).map((name) => {
+      const target = allFields.get(normalizeForMatch(name));
+      if (target) {
+        return {
+          label: name,
+          meta: `${target.records.length} logcode${target.records.length === 1 ? "" : "s"}`,
+          onClick: () => onOpenField(target)
+        };
+      }
+      return { label: name };
+    });
+  }, [values.similar, allFields, onOpenField]);
+
+  function saveBox(key: string, value: string) {
+    setOverrides((current) => {
+      const next = { ...current, [key]: value };
+      writeFieldOverview(field.id, next);
+      return next;
+    });
+  }
+
+  return (
+    <div className="field-overview is-field-overview">
+      <button className="field-index-back" type="button" onClick={onBack}>All fields</button>
+      <div className="field-match-title">
+        {field.name}
+        <div className="field-match-count">{field.records.length} matching logcode{field.records.length === 1 ? "" : "s"}</div>
+      </div>
+
+      <EditableOverviewBox title="Field description" storedValue={values.description} onSave={(value) => saveBox("description", value)} />
+      <EditableLinkListBox
+        title="Related logcode"
+        items={relatedItems}
+        storedValue={relatedStored}
+        onSave={(value) => saveBox("related", value)}
+        emptyHint="One logcode per line or comma-separated (e.g. 0xB822, 0xB823). Click a logcode to open its message page."
+      />
+      <EditableOverviewBox title="Value range" storedValue={values.range} onSave={(value) => saveBox("range", value)} />
+      <EditableLinkListBox
+        title="Similar fields"
+        items={similarItems}
+        storedValue={values.similar}
+        onSave={(value) => saveBox("similar", value)}
+        emptyHint="One field name per line or comma-separated. Names that match a field open its page; others show as plain text."
+      />
+
+      <section className="field-overview-box">
+        <div className="field-overview-box-header">
+          <h3 className="field-overview-box-title">New Note</h3>
+        </div>
+        <FieldNotesPanel
+          field={field}
+          entry={fieldNotes[field.id] || emptyMessageNoteEntry()}
+          onAddNote={onAddFieldNote}
+        />
+      </section>
+    </div>
+  );
+}
+
 function FieldIndexView({
   fieldNotes,
   onAddFieldNote,
@@ -2447,27 +3036,15 @@ function FieldIndexView({
 
   if (selectedField) {
     return (
-      <div className="field-list">
-        <button className="field-index-back" type="button" onClick={() => setSelectedField(null)}>All fields</button>
-        <div className="field-match-title">
-          {selectedField.name}
-          <div className="field-match-count">{selectedField.records.length} matching logcode{selectedField.records.length === 1 ? "" : "s"}</div>
-        </div>
-        <FieldNotesPanel
-          field={selectedField}
-          entry={fieldNotes[selectedField.id] || emptyMessageNoteEntry()}
-          onAddNote={onAddFieldNote}
-        />
-        {selectedField.records.map((entry) => {
-          const record = logcodeById.get(entry.id);
-          if (!record) return null;
-          return (
-            <button key={entry.id} className="field-record-button" type="button" onClick={() => onOpenLogcode(record, [selectedField.name])}>
-              {recordLabel(record)} <span className="field-match-count">{entry.pathCount ?? entry.paths?.length ?? 0} path{(entry.pathCount ?? entry.paths?.length ?? 0) === 1 ? "" : "s"}</span>
-            </button>
-          );
-        })}
-      </div>
+      <CustomFieldOverview
+        field={selectedField}
+        allFields={fieldById}
+        fieldNotes={fieldNotes}
+        onAddFieldNote={onAddFieldNote}
+        onOpenLogcode={onOpenLogcode}
+        onOpenField={(target) => setSelectedField(target)}
+        onBack={() => setSelectedField(null)}
+      />
     );
   }
 
@@ -2734,18 +3311,19 @@ export function App() {
                       : "Message"}
               </h2>
               {detailRecord || detailStatus === "loading" || detailStatus === "error" ? (
-                <div className="field-list">
+                <div className={`field-list ${detailRecord ? "is-overview-scroll" : ""}`}>
                   <button className="field-index-back" type="button" onClick={() => navigate(routeBeforeDetail())}>{selectedGroup ? "Back to variants" : selectedMessageLayer ? "Back to logcodes" : "All layers"}</button>
                   {detailStatus === "loading" ? <div className="status-panel">Loading message detail...</div> : null}
                   {detailStatus === "error" ? <div className="status-panel is-error">{detailError}</div> : null}
                   {detailRecord ? (
-                    <MessageNotesPanel
+                    <MessageOverview
                       record={detailRecord}
-                      entry={messageNotes[detailRecord.id] || emptyMessageNoteEntry()}
-                      onAddNote={addMessageNote}
+                      selectedTerms={selectedTerms}
+                      onOpenLogcode={openDetail}
+                      onOpenEvent={(view) => navigate({ view })}
+                      onOpenLayer={(layer) => navigate({ view: "message", selectedMessageLayer: layer })}
                     />
                   ) : null}
-                  {detailRecord ? <LogcodeDetail record={detailRecord} selectedTerms={selectedTerms} /> : null}
                 </div>
               ) : selectedGroup ? (
                 <div className="column-list">

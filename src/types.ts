@@ -42,6 +42,12 @@ export type EventIndexItem = {
   status?: string;
 };
 
+export type EventLogcodeLink = {
+  id: string;
+  title: string;
+  view?: string;
+};
+
 export type MeasurementEventInfo = {
   id: string;
   condition: string;
@@ -73,6 +79,20 @@ export type FieldTreeRow = {
   tree: string;
 };
 
+// Editable overview content shared by message and field pages. Every field is
+// optional: a box renders empty ("No content yet.") when its value is absent.
+// Keys here mirror the per-box localStorage override keys, so a JSON value acts
+// as the shared default and a local edit transparently overrides it.
+export type OverviewContent = {
+  description?: string;
+  // One related message per line, format: "<logcode> | <relation text>".
+  relatedPairs?: string;
+  // Field-only boxes (ignored on message pages).
+  range?: string;
+  related?: string;
+  similar?: string;
+};
+
 export type LogcodeRecord = {
   id: string;
   logcode: string;
@@ -82,6 +102,8 @@ export type LogcodeRecord = {
   dataFile?: string;
   detail: unknown;
   fieldTreeTable?: FieldTreeRow[];
+  // Optional shared overview, authored directly in the message's JSON file.
+  overview?: OverviewContent;
 };
 
 export type LogcodeSummary = {
